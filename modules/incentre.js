@@ -209,6 +209,10 @@ function t( key, vars ) {
 	 * Build DOM for one container element
 	 * ---------------------------------------------------------- */
 	function buildWidget( container ) {
+		var lang = ( window.mw && mw.config.get( 'wgUserLanguage' ) ) || 'en';
+		lang = lang.split( '-' )[ 0 ];
+		if ( !messages[ lang ] ) { lang = 'en'; }
+		var msg = messages[ lang ];
 
 		/* -- HTML skeleton -- */
 		container.innerHTML =
@@ -232,10 +236,10 @@ function t( key, vars ) {
 						'<div class="hw-card-title">' +
 							'<span class="hw-badge hw-badge-c">' + msg.incircle + '</span>' +
 						'</div>' +
+						'<div class="hw-row"><span>' + msg.centre        + '</span><span id="hw-ic"></span></div>' +
 						'<div class="hw-row"><span>' + msg.radius        + '</span><span id="hw-ir"></span></div>' +
 						'<div class="hw-row"><span>' + msg.circumference + '</span><span id="hw-icc"></span></div>' +
 						'<div class="hw-row"><span>' + msg.area          + '</span><span id="hw-ia"></span></div>' +
-						'<div class="hw-row"><span>' + msg.centre        + '</span><span id="hw-ic"></span></div>' +
 						'<div class="hw-row"><span>' + msg.touchBC       + '</span><span id="hw-t1"></span></div>' +
 						'<div class="hw-row"><span>' + msg.touchCA       + '</span><span id="hw-t2"></span></div>' +
 						'<div class="hw-row"><span>' + msg.touchAB       + '</span><span id="hw-t3"></span></div>' +
@@ -263,9 +267,15 @@ function t( key, vars ) {
 			];
 		}
 
+		function isDark() {
+			return document.documentElement.classList.contains('skin-theme-clientpref-night') || 
+			       document.documentElement.classList.contains('client-dark-mode') ||
+			       document.body.classList.contains('mw-dark-mode');
+		}
+
 		/* -- colour palette (light / dark) -- */
 		function palette() {
-			var dark = window.matchMedia( '(prefers-color-scheme: dark)' ).matches;
+			var dark = isDark();
 			return {
 				dark:        dark,
 				tri:         dark ? '#AFA9EC' : '#534AB7',
@@ -579,8 +589,11 @@ function t( key, vars ) {
 		}, { passive: false } );
 		canvas.addEventListener( 'touchend', function () { dragging = -1; } );
 
-		/* dark-mode live update */
-		window.matchMedia( '(prefers-color-scheme: dark)' ).addEventListener( 'change', draw );
+		/* dark-mode live update (MediaWiki) */
+		var observer = new MutationObserver( draw );
+		observer.observe( document.documentElement, { attributes: true, attributeFilter: ['class'] } );
+		observer.observe( document.body,            { attributes: true, attributeFilter: ['class'] } );
+
 
 		/* kick off */
 		var ro = new ResizeObserver( resize );

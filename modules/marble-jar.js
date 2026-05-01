@@ -80,11 +80,11 @@ function t( key, vars ) {
     return str;
 }
 
-var COLORS = [
-        { id: 'blue',   label: 'Urdina',   hex: '#3366cc' },
-        { id: 'red',    label: 'Gorria',    hex: '#bf3c2c' },
-        { id: 'green',  label: 'Berdea',  hex: '#177860' },
-        { id: 'orange', label: 'Horia', hex: '#e6a000' }
+    var COLORS = [
+        { id: 'blue',   label: t('colorBlue'),   hex: '#3366cc' },
+        { id: 'red',    label: t('colorRed'),    hex: '#bf3c2c' },
+        { id: 'green',  label: t('colorGreen'),  hex: '#177860' },
+        { id: 'orange', label: t('colorYellow'), hex: '#e6a000' }
     ];
     var TOTAL = 50;
 
@@ -151,7 +151,7 @@ var COLORS = [
         jarContainer.appendChild(svg);
         var shakeBtn = document.createElement('button');
         shakeBtn.className = 'hmj-shake-btn';
-        shakeBtn.textContent = 'Astindu!';
+        shakeBtn.textContent = t('shake');
         jarSection.appendChild(jarContainer);
         jarSection.appendChild(shakeBtn);
 
@@ -163,7 +163,7 @@ var COLORS = [
 
         var totalRow = document.createElement('div');
         totalRow.className = 'hmj-total-row';
-        totalRow.innerHTML = '<span>Guztira:</span>';
+        totalRow.innerHTML = '<span>' + t('total') + ':</span>';
         var totalNum = document.createElement('span');
         totalNum.className = 'hmj-total-num';
         totalNum.textContent = '0';
@@ -176,7 +176,7 @@ var COLORS = [
         probSection.className = 'hmj-prob-section';
         var probTitle = document.createElement('div');
         probTitle.className = 'hmj-prob-title';
-        probTitle.textContent = 'Kanika bat atera eta kolorea asmatzeko probabilitatea\u2026';
+        probTitle.textContent = t('probTitle');
         var probsDiv = document.createElement('div');
         probsDiv.className = 'hmj-probs';
         probSection.appendChild(probTitle);

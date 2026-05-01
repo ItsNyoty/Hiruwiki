@@ -94,49 +94,65 @@
 }
 
 /* =========================================================
- * Dark mode
+ * Dark mode (MediaWiki integration)
  * ========================================================= */
-@media (prefers-color-scheme: dark) {
-
-	.hw-incentre {
-		color: #E8E6DC;
-	}
-
-	.hw-canvas {
-		background: #1e1e1c;
-		border-color: #444441;
-	}
-
-	.hw-card {
-		background: #2C2C2A;
-	}
-
-	.hw-badge-t {
-		background: rgba(175, 169, 236, 0.18);
-		color: #AFA9EC;
-	}
-
-	.hw-badge-c {
-		background: rgba(93, 202, 165, 0.18);
-		color: #5DCAA5;
-	}
-
-	.hw-row {
-		color: #E8E6DC;
-	}
-
-	.hw-row span:first-child {
-		color: #B4B2A9;
-	}
-
-	.hw-row span:last-child {
-		color: #888780;
-	}
-
-	.hw-hint {
-		color: #5F5E5A;
-	}
+html.skin-theme-clientpref-night .hw-incentre,
+html.client-dark-mode .hw-incentre,
+.mw-dark-mode .hw-incentre {
+	color: #E8E6DC;
 }
+
+html.skin-theme-clientpref-night .hw-canvas,
+html.client-dark-mode .hw-canvas,
+.mw-dark-mode .hw-canvas {
+	background: #1e1e1c;
+	border-color: #444441;
+}
+
+html.skin-theme-clientpref-night .hw-card,
+html.client-dark-mode .hw-card,
+.mw-dark-mode .hw-card {
+	background: #2C2C2A;
+}
+
+html.skin-theme-clientpref-night .hw-badge-t,
+html.client-dark-mode .hw-badge-t,
+.mw-dark-mode .hw-badge-t {
+	background: rgba(175, 169, 236, 0.18);
+	color: #AFA9EC;
+}
+
+html.skin-theme-clientpref-night .hw-badge-c,
+html.client-dark-mode .hw-badge-c,
+.mw-dark-mode .hw-badge-c {
+	background: rgba(93, 202, 165, 0.18);
+	color: #5DCAA5;
+}
+
+html.skin-theme-clientpref-night .hw-row,
+html.client-dark-mode .hw-row,
+.mw-dark-mode .hw-row {
+	color: #E8E6DC;
+}
+
+html.skin-theme-clientpref-night .hw-row span:first-child,
+html.client-dark-mode .hw-row span:first-child,
+.mw-dark-mode .hw-row span:first-child {
+	color: #B4B2A9;
+}
+
+html.skin-theme-clientpref-night .hw-row span:last-child,
+html.client-dark-mode .hw-row span:last-child,
+.mw-dark-mode .hw-row span:last-child {
+	color: #888780;
+}
+
+html.skin-theme-clientpref-night .hw-hint,
+html.client-dark-mode .hw-hint,
+.mw-dark-mode .hw-hint {
+	color: #5F5E5A;
+}
+
 
 /* =========================================================
  * Narrow screens — stack the two cards vertically
