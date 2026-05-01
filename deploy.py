@@ -23,6 +23,7 @@ WIKI_LANGS = {
     "frwiki": "fr",
     "nlwiki": "nl",
     "betanl": "nl",
+    "mediawiki": "en",
 }
 
 DEFAULT_SITE = "https://en.wikipedia.org/w/api.php"
@@ -198,6 +199,7 @@ def resolve_api_url(site):
         "frwiki": "https://fr.wikipedia.org/w/api.php",
         "nlwiki": "https://nl.wikipedia.org/w/api.php",
         "betanl": "https://nl.wikipedia.beta.wmcloud.org/w/api.php",
+        "mediawiki": "https://www.mediawiki.org/w/api.php",
     }
     
     if site in shorthands:
@@ -208,7 +210,7 @@ def resolve_api_url(site):
 
 def main():
     parser = argparse.ArgumentParser(description="Deploy Hiruwiki files to MediaWiki")
-    parser.add_argument("-s", "--site", help="Wiki site URL or shorthand (enwiki, testwiki)")
+    parser.add_argument("-s", "--site", help="Wiki site URL or shorthand (enwiki, testwiki, mediawiki)")
     parser.add_argument("-u", "--username", help="Bot username")
     parser.add_argument("-p", "--password", help="Bot password")
     parser.add_argument("--token", help="OAuth2 access token")
@@ -278,7 +280,6 @@ def main():
         sys.exit(1)
 
     git_hash = get_git_hash()
-    all_modules = []
     
     for local_path, remote_title in deploy_list:
 
@@ -330,48 +331,6 @@ def main():
                     print(f"  Successfully deployed.")
                 except Exception as e:
                     print(f"  Error saving {remote_title}: {e}")
-
-        # Automated Template Creation/Deletion Logic
-        if local_path.startswith(MODULES_DIR + "/") and local_path.endswith(".js"):
-            module_id = os.path.basename(local_path).replace(".js", "")
-            translated_name = i18n_data.get(module_id, {}).get(target_lang, {}).get("_name", module_id)
-            all_modules.append((translated_name, module_id))
-            template_title = f"{TEMPLATES_BASE}/{translated_name}"
-            id_template_title = f"{TEMPLATES_BASE}/{module_id}"
-            
-            if args.create:
-                print(f"  Checking module template {template_title} ({module_id})...")
-                try:
-                    tpl_page = client.read_page(template_title)
-                    if tpl_page["missing"]:
-                        tpl_content = (
-                            f'<div class="hiruwiki" data-module="{module_id}"></div>\n'
-                            f'<includeonly>[[{CATEGORY_BASE}]]</includeonly>'
-                        )
-                        tpl_summary = f"Create Hiruwiki module template for {module_id} ({translated_name})"
-                        client.save_page(template_title, tpl_content, tpl_summary)
-                        print(f"    Successfully created template.")
-                    else:
-                        print(f"    Template already exists.")
-                except Exception as e:
-                    print(f"    Error processing module template: {e}")
-
-    # Create master template list
-
-    if args.create and all_modules:
-        print(f"Updating master template list at Wikipedia:Hiruwiki...")
-        all_modules.sort(key=lambda x: x[0])  # Sort by translated name
-        list_content = "This is a list of all available Hiruwiki module templates:\n"
-        for translated, mid in all_modules:
-            list_content += f"* [[{TEMPLATES_BASE}/{translated}|{translated}]]\n"
-        list_content += f"\n<noinclude>[[{CATEGORY_BASE}]]</noinclude>"
-
-        
-        try:
-            client.save_page("Wikipedia:Hiruwiki", list_content, "Update master module list")
-            print("  Successfully updated master list.")
-        except Exception as e:
-            print(f"  Error updating master list: {e}")
 
 if __name__ == "__main__":
 
