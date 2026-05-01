@@ -374,7 +374,7 @@ def main():
     # Create master template list
 
     if args.create and all_modules:
-        print(f"Updating master template list at {TEMPLATES_BASE}...")
+        print(f"Updating master template list at Wikipedia:Hiruwiki...")
         all_modules.sort(key=lambda x: x[0])  # Sort by translated name
         list_content = "This is a list of all available Hiruwiki module templates:\n"
         for translated, mid in all_modules:
@@ -383,7 +383,7 @@ def main():
 
         
         try:
-            client.save_page(TEMPLATES_BASE, list_content, "Update master module list")
+            client.save_page("Wikipedia:Hiruwiki", list_content, "Update master module list")
             print("  Successfully updated master list.")
         except Exception as e:
             print(f"  Error updating master list: {e}")
