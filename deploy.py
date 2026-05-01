@@ -335,16 +335,23 @@ def main():
             translated_name = i18n_data.get(module_id, {}).get(target_lang, {}).get("_name", module_id)
             all_modules.append((translated_name, module_id))
             template_title = f"{TEMPLATES_BASE}/{translated_name}"
+            id_template_title = f"{TEMPLATES_BASE}/{module_id}"
             
             if args.delete:
-                if args.dry:
-                    print(f"  Dry run: Would delete template {template_title}")
-                else:
-                    try:
-                        client.delete_page(template_title, f"Hiruwiki cleanup: delete template for {module_id}")
-                        print(f"    Successfully deleted template.")
-                    except Exception as e:
-                        print(f"    Error deleting template: {e}")
+                targets = [template_title]
+                if id_template_title != template_title:
+                    targets.append(id_template_title)
+                
+                for target in targets:
+                    if args.dry:
+                        print(f"  Dry run: Would delete template {target}")
+                    else:
+                        try:
+                            client.delete_page(target, f"Hiruwiki cleanup: delete template for {module_id}")
+                            print(f"    Successfully deleted template {target}.")
+                        except Exception as e:
+                            print(f"    Error deleting template {target}: {e}")
+
             elif args.create:
                 print(f"  Checking module template {template_title} ({module_id})...")
                 try:
