@@ -55,8 +55,10 @@ class MediaWikiClient:
     def request(self, data=None, headers=None):
         if headers is None:
             headers = {}
+        headers["User-Agent"] = "HiruwikiDeployer/1.0 (https://github.com/ItsNyoty/Hiruwiki)"
         if self.token:
             headers["Authorization"] = f"Bearer {self.token}"
+
         
         url = self.api_url
         if data and not isinstance(data, bytes):
