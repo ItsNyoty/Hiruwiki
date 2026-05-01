@@ -41,7 +41,8 @@ DOC_TEMPLATE_CONTENT = """<!--
 {{#if:{{{content|}}}|{{{content}}}|{{#ifexist:{{{1|{{FULLPAGENAME}}/doc}}} | {{ {{{1|{{FULLPAGENAME}}/doc}}} }} }}}}
 <div style="clear: both;"></div></div><!--End of green documentation box--><noinclude>
 [[{CATEGORY_BASE} documentation templates]]
-</noinclude>""".format(CATEGORY_BASE=CATEGORY_BASE)
+</noinclude>""".replace("{CATEGORY_BASE}", CATEGORY_BASE)
+
 
 
 ONWIKI_HEADER = """/* 
