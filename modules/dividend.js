@@ -26,6 +26,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Dividend and Divisor",
         "eq_lbl_dividend": "dividend",
         "eq_lbl_divisor": "divisor",
         "eq_lbl_quotient": "quotient",
@@ -45,6 +46,7 @@ var messages = /* I18N_START */ {
         "repadd_less": "{N} is less than {D}, so the quotient is 0 and the whole value is the remainder."
     },
     "es": {
+        "_name": "Dividendo y divisor",
         "eq_lbl_dividend": "dividendo",
         "eq_lbl_divisor": "divisor",
         "eq_lbl_quotient": "cociente",
@@ -64,6 +66,7 @@ var messages = /* I18N_START */ {
         "repadd_less": "{N} es menor que {D}, por lo que el cociente es 0 y el valor completo es el resto."
     },
     "eu": {
+        "_name": "Zatikizuna eta zatitzailea",
         "eq_lbl_dividend": "zatikizuna",
         "eq_lbl_divisor": "zatitzailea",
         "eq_lbl_quotient": "zatidura",
@@ -83,6 +86,7 @@ var messages = /* I18N_START */ {
         "repadd_less": "{N} {D} baino txikiagoa da, beraz zatidura 0 da eta balio osoa hondarra da."
     },
     "fr": {
+        "_name": "Dividende et diviseur",
         "eq_lbl_dividend": "dividende",
         "eq_lbl_divisor": "diviseur",
         "eq_lbl_quotient": "quotient",
@@ -102,6 +106,7 @@ var messages = /* I18N_START */ {
         "repadd_less": "{N} est inférieur à {D}, donc le quotient est 0 et toute la valeur est le reste."
     },
     "nl": {
+        "_name": "Deeltal en deler",
         "eq_lbl_dividend": "deeltal",
         "eq_lbl_divisor": "deler",
         "eq_lbl_quotient": "quotiënt",

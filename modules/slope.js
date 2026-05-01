@@ -4,18 +4,23 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Slope",
         "undefined": "Vertical line → slope undefined"
     },
     "es": {
+        "_name": "Pendiente",
         "undefined": "Línea vertical → pendiente indefinida"
     },
     "eu": {
+        "_name": "Maldia",
         "undefined": "Lerro bertikala → malda ezarri gabe"
     },
     "fr": {
+        "_name": "Pente",
         "undefined": "Ligne verticale → pente indéfinie"
     },
     "nl": {
+        "_name": "Helling",
         "undefined": "Verticale lijn → helling ongedefinieerd"
     }
 } /* I18N_END */;

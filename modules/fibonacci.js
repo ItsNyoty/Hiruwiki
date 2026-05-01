@@ -26,6 +26,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Fibonacci Sequence",
         "card_phi_lbl": "Golden ratio φ",
         "card_phi_sub": "(1 + √5) / 2 = 1.6180339887…",
         "card_ratio_error": "error from φ:",
@@ -44,6 +45,7 @@ var messages = /* I18N_START */ {
         "step_label": "Step {step} of {total}"
     },
     "es": {
+        "_name": "Sucesión de Fibonacci",
         "card_phi_lbl": "Proporción áurea φ",
         "card_phi_sub": "(1 + √5) / 2 = 1.6180339887…",
         "card_ratio_error": "error respecto a φ:",
@@ -62,6 +64,7 @@ var messages = /* I18N_START */ {
         "step_label": "Paso {step} de {total}"
     },
     "eu": {
+        "_name": "Fibonacci sekuentzia",
         "card_phi_lbl": "Urrezko arrazoia φ",
         "card_phi_sub": "(1 + √5) / 2 = 1,6180339887…",
         "card_ratio_error": "φ-rekiko errorea:",
@@ -80,6 +83,7 @@ var messages = /* I18N_START */ {
         "step_label": "{step}. urratsa {total}tik"
     },
     "fr": {
+        "_name": "Suite de Fibonacci",
         "card_phi_lbl": "Nombre d'or φ",
         "card_phi_sub": "(1 + √5) / 2 = 1.6180339887…",
         "card_ratio_error": "erreur par rapport à φ :",
@@ -98,6 +102,7 @@ var messages = /* I18N_START */ {
         "step_label": "Étape {step} sur {total}"
     },
     "nl": {
+        "_name": "Rij van Fibonacci",
         "card_phi_lbl": "Gulden snede φ",
         "card_phi_sub": "(1 + √5) / 2 = 1.6180339887…",
         "card_ratio_error": "fout ten opzichte van φ:",

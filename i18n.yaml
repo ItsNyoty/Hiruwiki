@@ -744,8 +744,8 @@ incentre:
     touchCA: Raakpunt CA
     triangle: Driehoek
 integer-coordinates:
-  en:
-    _name: Integer Coordinates
+  en: &id001
+    _name: Positive Coordinates
     btnChallenge: 🎯 Challenge
     btnCheck: Check ✓
     btnExplore: 🔭 Explore
@@ -757,8 +757,8 @@ integer-coordinates:
     movePrompt: Move ★ to:<br>({targetX}, {targetY})
     pointLabel: 'Point:'
     titleExplore: Explore Coordinate System
-  es:
-    _name: Coordenadas enteras
+  es: &id002
+    _name: Coordenadas positivas
     btnChallenge: 🎯 Reto
     btnCheck: Comprobar ✓
     btnExplore: 🔭 Explorar
@@ -770,8 +770,8 @@ integer-coordinates:
     movePrompt: Mueve ★ a:<br>({targetX}, {targetY})
     pointLabel: 'Punto:'
     titleExplore: Explorar el sistema de coordenadas
-  eu:
-    _name: Koordenatu osoak
+  eu: &id003
+    _name: Koordenatu positiboak
     btnChallenge: 🎯 Erronka
     btnCheck: Zuzendu ✓
     btnExplore: 🔭 Esploratu
@@ -785,8 +785,8 @@ integer-coordinates:
     movePrompt: Mugitu ★ hona:<br>({targetX}, {targetY})
     pointLabel: 'Puntua:'
     titleExplore: Esploratu koordenatuen sistema
-  fr:
-    _name: Coordonnées entières
+  fr: &id004
+    _name: Coordonnées positives
     btnChallenge: 🎯 Défi
     btnCheck: Vérifier ✓
     btnExplore: 🔭 Explorer
@@ -798,8 +798,8 @@ integer-coordinates:
     movePrompt: Déplacez ★ vers :<br>({targetX}, {targetY})
     pointLabel: 'Point :'
     titleExplore: Explorer le système de coordonnées
-  nl:
-    _name: Gehele coördinaten
+  nl: &id005
+    _name: Positieve coördinaten
     btnChallenge: 🎯 Uitdaging
     btnCheck: Controleren ✓
     btnExplore: 🔭 Verkennen
@@ -1066,6 +1066,12 @@ percent:
     label_recovered: hersteld
     label_scale: 'SCHAAL: VOLLEDIGE BREEDTE = 200'
     label_start: start
+positive-coordinates:
+  en: *id001
+  es: *id002
+  eu: *id003
+  fr: *id004
+  nl: *id005
 pythagoras:
   en:
     _name: Pythagorean Theorem
@@ -1634,6 +1640,7 @@ triangles:
   en:
     _name: Triangles
     acute: acute
+    angles: Angles
     area: Area
     byAngles: 'By angles: '
     bySides: 'By sides: '
@@ -1650,6 +1657,7 @@ triangles:
   es:
     _name: Triángulos
     acute: acutángulo
+    angles: Ángulos
     area: Área
     byAngles: 'Por ángulos: '
     bySides: 'Por lados: '
@@ -1666,6 +1674,7 @@ triangles:
   eu:
     _name: Hirukiak
     acute: zorrotza
+    angles: Angeluak
     area: Azalera
     byAngles: 'Angeluen arabera: '
     bySides: 'Aldeen arabera: '
@@ -1682,6 +1691,7 @@ triangles:
   fr:
     _name: Triangles
     acute: acutangle
+    angles: Angles
     area: Aire
     byAngles: 'Par angles : '
     bySides: 'Par côtés : '
@@ -1698,6 +1708,7 @@ triangles:
   nl:
     _name: Driehoeken
     acute: scherphoekig
+    angles: Hoeken
     area: Oppervlakte
     byAngles: 'Op basis van hoeken: '
     bySides: 'Op basis van zijden: '

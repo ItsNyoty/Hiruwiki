@@ -6,6 +6,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Monte Carlo Pi",
         "addPoints": "+ Add points",
         "approxPi": "Approximation of π",
         "insideCircle": "Inside circle",
@@ -17,6 +18,7 @@ var messages = /* I18N_START */ {
         "totalPoints": "Total points"
     },
     "es": {
+        "_name": "Monte Carlo Pi",
         "addPoints": "+ Añadir puntos",
         "approxPi": "Aproximación de π",
         "insideCircle": "Dentro del círculo",
@@ -28,6 +30,7 @@ var messages = /* I18N_START */ {
         "totalPoints": "Total de puntos"
     },
     "eu": {
+        "_name": "Monte Carlo Pi",
         "addPoints": "+ Puntuak gehitu",
         "approxPi": "π-ren hurbilketa",
         "insideCircle": "Zirkuluaren barruan",
@@ -39,6 +42,7 @@ var messages = /* I18N_START */ {
         "totalPoints": "Puntu kopurua"
     },
     "fr": {
+        "_name": "Monte Carlo Pi",
         "addPoints": "+ Ajouter des points",
         "approxPi": "Approximation de π",
         "insideCircle": "À l'intérieur du cercle",
@@ -50,6 +54,7 @@ var messages = /* I18N_START */ {
         "totalPoints": "Total des points"
     },
     "nl": {
+        "_name": "Monte Carlo Pi",
         "addPoints": "+ Punten toevoegen",
         "approxPi": "Benadering van π",
         "insideCircle": "Binnen de cirkel",

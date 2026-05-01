@@ -4,7 +4,9 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Triangles",
         "acute": "acute",
+        "angles": "Angles",
         "area": "Area",
         "byAngles": "By angles: ",
         "bySides": "By sides: ",
@@ -20,7 +22,9 @@ var messages = /* I18N_START */ {
         "sides": "Sides"
     },
     "es": {
+        "_name": "Triángulos",
         "acute": "acutángulo",
+        "angles": "Ángulos",
         "area": "Área",
         "byAngles": "Por ángulos: ",
         "bySides": "Por lados: ",
@@ -36,7 +40,9 @@ var messages = /* I18N_START */ {
         "sides": "Lados"
     },
     "eu": {
+        "_name": "Hirukiak",
         "acute": "zorrotza",
+        "angles": "Angeluak",
         "area": "Azalera",
         "byAngles": "Angeluen arabera: ",
         "bySides": "Aldeen arabera: ",
@@ -52,7 +58,9 @@ var messages = /* I18N_START */ {
         "sides": "Aldeak"
     },
     "fr": {
+        "_name": "Triangles",
         "acute": "acutangle",
+        "angles": "Angles",
         "area": "Aire",
         "byAngles": "Par angles : ",
         "bySides": "Par côtés : ",
@@ -68,7 +76,9 @@ var messages = /* I18N_START */ {
         "sides": "Côtés"
     },
     "nl": {
+        "_name": "Driehoeken",
         "acute": "scherphoekig",
+        "angles": "Hoeken",
         "area": "Oppervlakte",
         "byAngles": "Op basis van hoeken: ",
         "bySides": "Op basis van zijden: ",
@@ -389,9 +399,9 @@ function classifySides() {
   var b = dist(vertices[0], vertices[2]);
   var c = dist(vertices[0], vertices[1]);
   var e = 0.05;
-  if (Math.abs(a - b) < e && Math.abs(b - c) < e) { return t("aldekidea"); }
-  if (Math.abs(a - b) < e || Math.abs(a - c) < e || Math.abs(b - c) < e) { return t("isoszelea"); }
-  return t("eskaleno");
+  if (Math.abs(a - b) < e && Math.abs(b - c) < e) { return t("equilateral"); }
+  if (Math.abs(a - b) < e || Math.abs(a - c) < e || Math.abs(b - c) < e) { return t("isosceles"); }
+  return t("scalene");
 }
 
 function classifyAngles() {
@@ -399,10 +409,11 @@ function classifyAngles() {
   var B = angleBetween(vertices[2], vertices[1], vertices[0]) * 180 / Math.PI;
   var C = angleBetween(vertices[0], vertices[2], vertices[1]) * 180 / Math.PI;
   var e = 0.5;
-  if (Math.abs(A - 90) < e || Math.abs(B - 90) < e || Math.abs(C - 90) < e) { return t("zuzena"); }
-  if (A > 90 || B > 90 || C > 90) { return t("kamutsa"); }
-  return t("zorrotza");
+  if (Math.abs(A - 90) < e || Math.abs(B - 90) < e || Math.abs(C - 90) < e) { return t("right"); }
+  if (A > 90 || B > 90 || C > 90) { return t("obtuse"); }
+  return t("acute");
 }
+
 
 function triangleArea() {
   var a = vertices[0], b = vertices[1], c = vertices[2];

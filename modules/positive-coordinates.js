@@ -5,6 +5,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Positive Coordinates",
         "btnChallenge": "🎯 Challenge",
         "btnCheck": "Check ✓",
         "btnExplore": "🔭 Explore",
@@ -18,6 +19,7 @@ var messages = /* I18N_START */ {
         "titleExplore": "Explore Coordinate System"
     },
     "es": {
+        "_name": "Coordenadas positivas",
         "btnChallenge": "🎯 Reto",
         "btnCheck": "Comprobar ✓",
         "btnExplore": "🔭 Explorar",
@@ -31,6 +33,7 @@ var messages = /* I18N_START */ {
         "titleExplore": "Explorar el sistema de coordenadas"
     },
     "eu": {
+        "_name": "Koordenatu positiboak",
         "btnChallenge": "🎯 Erronka",
         "btnCheck": "Zuzendu ✓",
         "btnExplore": "🔭 Esploratu",
@@ -44,6 +47,7 @@ var messages = /* I18N_START */ {
         "titleExplore": "Esploratu koordenatuen sistema"
     },
     "fr": {
+        "_name": "Coordonnées positives",
         "btnChallenge": "🎯 Défi",
         "btnCheck": "Vérifier ✓",
         "btnExplore": "🔭 Explorer",
@@ -57,6 +61,7 @@ var messages = /* I18N_START */ {
         "titleExplore": "Explorer le système de coordonnées"
     },
     "nl": {
+        "_name": "Positieve coördinaten",
         "btnChallenge": "🎯 Uitdaging",
         "btnCheck": "Controleren ✓",
         "btnExplore": "🔭 Verkennen",
@@ -427,21 +432,23 @@ document.querySelectorAll( '.hiruwiki[data-module="positive-coordinates"]' ).for
       feedbackEl.textContent = ''; feedbackEl.className = 'cex-feedback';
       checkBtn.disabled = false;
       nextBtn.style.visibility = 'hidden';
-      promptBar.innerHTML =
-        'Mugitu ★ hona:<br>(<span class="cex-target-x">' + targetX +
-        '</span>, <span class="cex-target-y">' + targetY + '</span>)';
+      promptBar.innerHTML = t('movePrompt', { 
+        targetX: '<span class="cex-target-x">' + targetX + '</span>', 
+        targetY: '<span class="cex-target-y">' + targetY + '</span>' 
+      });
       draw();
     }
 
     function checkAnswer() {
       checked = true; correct = ( ptX === targetX && ptY === targetY );
       if ( correct ) {
-        feedbackEl.textContent = '✓ Zuzen!';
+        feedbackEl.textContent = t('feedbackCorrect');
         feedbackEl.className   = 'cex-feedback cex-feedback-ok';
       } else {
-        feedbackEl.textContent = '✗ Ez da zuzena. Izar ahula zen erantzun zuzena.';
+        feedbackEl.textContent = t('feedbackWrong');
         feedbackEl.className   = 'cex-feedback cex-feedback-err';
       }
+
       checkBtn.disabled = true;
       nextBtn.style.visibility = 'visible';
       draw();

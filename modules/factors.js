@@ -26,6 +26,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Prime Factors",
         "gcd_formula_eq": " = ",
         "gcd_none": "(none — coprime)",
         "gcd_title": "GCD — keep only shared factors",
@@ -42,6 +43,7 @@ var messages = /* I18N_START */ {
         "legend_shared": "shared (used for GCD)"
     },
     "es": {
+        "_name": "Factores primos",
         "gcd_formula_eq": " = ",
         "gcd_none": "(ninguno — coprimos)",
         "gcd_title": "MCD — conservar solo los factores compartidos",
@@ -58,6 +60,7 @@ var messages = /* I18N_START */ {
         "legend_shared": "compartidos (usados para MCD)"
     },
     "eu": {
+        "_name": "Faktore lehenak",
         "gcd_formula_eq": " = ",
         "gcd_none": "(bat ere ez — elkarrekiko lehenak)",
         "gcd_title": "ZKH — partekatutako faktoreak bakarrik gordetzen dira",
@@ -74,6 +77,7 @@ var messages = /* I18N_START */ {
         "legend_shared": "partekatua (ZKHrako erabilia)"
     },
     "fr": {
+        "_name": "Facteurs premiers",
         "gcd_formula_eq": " = ",
         "gcd_none": "(aucun — premiers entre eux)",
         "gcd_title": "PGCD — ne garder que les facteurs partagés",
@@ -90,6 +94,7 @@ var messages = /* I18N_START */ {
         "legend_shared": "partagé (utilisé pour le PGCD)"
     },
     "nl": {
+        "_name": "Priemfactoren",
         "gcd_formula_eq": " = ",
         "gcd_none": "(geen — onderling ondeelbaar)",
         "gcd_title": "GGD — behoud alleen gedeelde factoren",

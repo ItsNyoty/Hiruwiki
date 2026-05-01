@@ -4,6 +4,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Quadrilaterals",
         "areaDiagHalf": "Formula: A = (d₁ × d₂) / 2\nd₁ (AC) = {0} cm\nd₂ (BD) = {1} cm\n= ({0} × {1}) / 2",
         "areaGaussHeader": "Gauss formula (shoelace):\nA = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|\n",
         "areaGaussSum": "\nΣ = {0}\nA = ½ × |{0}|",
@@ -35,6 +36,7 @@ var messages = /* I18N_START */ {
         "unitCm2": "cm²"
     },
     "es": {
+        "_name": "Cuadriláteros",
         "areaDiagHalf": "Fórmula: A = (d₁ × d₂) / 2\nd₁ (AC) = {0} cm\nd₂ (BD) = {1} cm\n= ({0} × {1}) / 2",
         "areaGaussHeader": "Fórmula de Gauss (shoelace):\nA = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|\n",
         "areaGaussSum": "\nΣ = {0}\nA = ½ × |{0}|",
@@ -66,6 +68,7 @@ var messages = /* I18N_START */ {
         "unitCm2": "cm²"
     },
     "eu": {
+        "_name": "Koadrilateroak",
         "areaDiagHalf": "Formula: A = (d₁ × d₂) / 2\nd₁ (AC) = {0} cm\nd₂ (BD) = {1} cm\n= ({0} × {1}) / 2",
         "areaGaussHeader": "Gaussen formula:\nA = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|\n",
         "areaGaussSum": "\nΣ = {0}\nA = ½ × |{0}|",
@@ -97,6 +100,7 @@ var messages = /* I18N_START */ {
         "unitCm2": "cm²"
     },
     "fr": {
+        "_name": "Quadrilatères",
         "areaDiagHalf": "Formule : A = (d₁ × d₂) / 2\nd₁ (AC) = {0} cm\nd₂ (BD) = {1} cm\n= ({0} × {1}) / 2",
         "areaGaussHeader": "Formule de Gauss (shoelace) :\nA = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|\n",
         "areaGaussSum": "\nΣ = {0}\nA = ½ × |{0}|",
@@ -128,6 +132,7 @@ var messages = /* I18N_START */ {
         "unitCm2": "cm²"
     },
     "nl": {
+        "_name": "Vierhoeken",
         "areaDiagHalf": "Formule: A = (d₁ × d₂) / 2\nd₁ (AC) = {0} cm\nd₂ (BD) = {1} cm\n= ({0} × {1}) / 2",
         "areaGaussHeader": "Gauss formule (shoelace):\nA = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|\n",
         "areaGaussSum": "\nΣ = {0}\nA = ½ × |{0}|",

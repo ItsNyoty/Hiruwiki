@@ -6,18 +6,23 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Triangle Angles",
         "reset": "Reset"
     },
     "es": {
+        "_name": "Ángulos del triángulo",
         "reset": "Reiniciar"
     },
     "eu": {
+        "_name": "Hirukiaren angeluak",
         "reset": "Berrezarri"
     },
     "fr": {
+        "_name": "Angles du triangle",
         "reset": "Réinitialiser"
     },
     "nl": {
+        "_name": "Hoeken van een driehoek",
         "reset": "Reset"
     }
 } /* I18N_END */;

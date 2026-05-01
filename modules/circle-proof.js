@@ -5,6 +5,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Circle Proof",
         "animStopped": "Animation stopped.",
         "area": "Area",
         "areaAnimStatus": "Sectors reassemble into a rectangle: width = πr, height = r.",
@@ -24,6 +25,7 @@ var messages = /* I18N_START */ {
         "visualProof": "Visual proof"
     },
     "es": {
+        "_name": "Prueba del círculo",
         "animStopped": "Animación detenida.",
         "area": "Área",
         "areaAnimStatus": "Los sectores se vuelven a ensamblar en un rectángulo: ancho = πr, alto = r.",
@@ -43,6 +45,7 @@ var messages = /* I18N_START */ {
         "visualProof": "Prueba visual"
     },
     "eu": {
+        "_name": "Zirkuluaren froga",
         "animStopped": "Animazioa gelditu da.",
         "area": "Azalera",
         "areaAnimStatus": "Zatiak elkartzen dira laukizuzen bat egiteko: zabalera = πr, altuera = r.",
@@ -62,6 +65,7 @@ var messages = /* I18N_START */ {
         "visualProof": "Froga bisuala"
     },
     "fr": {
+        "_name": "Preuve du cercle",
         "animStopped": "Animation arrêtée.",
         "area": "Aire",
         "areaAnimStatus": "Les secteurs se réassemblent en un rectangle : largeur = πr, hauteur = r.",
@@ -81,6 +85,7 @@ var messages = /* I18N_START */ {
         "visualProof": "Preuve visuelle"
     },
     "nl": {
+        "_name": "Cirkel bewijs",
         "animStopped": "Animatie gestopt.",
         "area": "Oppervlakte",
         "areaAnimStatus": "De sectoren vormen een rechthoek: breedte = πr, hoogte = r.",

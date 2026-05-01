@@ -6,30 +6,35 @@
 var messages = /* I18N_START */ {
     "en": {
         "3triangles": "3 triangles × 180°",
+        "_name": "Pentagon Angles",
         "interiorAngles": "Interior angles",
         "reset": "↺ Reset",
         "total": "Total"
     },
     "es": {
         "3triangles": "3 triángulos × 180°",
+        "_name": "Ángulos del pentágono",
         "interiorAngles": "Ángulos interiores",
         "reset": "↺ Reiniciar",
         "total": "Total"
     },
     "eu": {
         "3triangles": "3 triangelu × 180°",
+        "_name": "Pentagonoaren angeluak",
         "interiorAngles": "Barne angeluak",
         "reset": "↺ Berrezarri",
         "total": "Guztira"
     },
     "fr": {
         "3triangles": "3 triangles × 180°",
+        "_name": "Angles du pentagone",
         "interiorAngles": "Angles intérieurs",
         "reset": "↺ Réinitialiser",
         "total": "Total"
     },
     "nl": {
         "3triangles": "3 driehoeken × 180°",
+        "_name": "Hoeken van een vijfhoek",
         "interiorAngles": "Binnenhoeken",
         "reset": "↺ Reset",
         "total": "Totaal"

@@ -7,6 +7,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Angle Guess",
         "difference": "Difference:",
         "finalScore": "Final score",
         "hint": "Move the blue dot to set the angle",
@@ -20,6 +21,7 @@ var messages = /* I18N_START */ {
         "yourGuess": "Your guess:"
     },
     "es": {
+        "_name": "Adivinar ángulo",
         "difference": "Diferencia:",
         "finalScore": "Puntuación final",
         "hint": "Mueve el punto azul para establecer el ángulo",
@@ -33,6 +35,7 @@ var messages = /* I18N_START */ {
         "yourGuess": "Tu elección:"
     },
     "eu": {
+        "_name": "Angelua asmatu",
         "difference": "Aldea:",
         "finalScore": "Azken emaitza",
         "hint": "Puntu urdina mugitu angelua zehazteko",
@@ -46,6 +49,7 @@ var messages = /* I18N_START */ {
         "yourGuess": "Zure aukera:"
     },
     "fr": {
+        "_name": "Deviner l’angle",
         "difference": "Différence :",
         "finalScore": "Score final",
         "hint": "Déplacez le point bleu pour régler l'angle",
@@ -59,6 +63,7 @@ var messages = /* I18N_START */ {
         "yourGuess": "Votre estimation :"
     },
     "nl": {
+        "_name": "Hoek gokken",
         "difference": "Verschil:",
         "finalScore": "Eindscore",
         "hint": "Verplaats de blauwe stip om de hoek in te stellen",

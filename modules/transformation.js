@@ -5,6 +5,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Transformations",
         "angle": "Angle",
         "enlargement": "Enlargement",
         "hintEnlargement": "Move the orange point to set the center of enlargement.",
@@ -19,6 +20,7 @@ var messages = /* I18N_START */ {
         "vertical": "Vertical"
     },
     "es": {
+        "_name": "Transformaciones",
         "angle": "Ángulo",
         "enlargement": "Homotecia",
         "hintEnlargement": "Mueve el punto naranja para establecer el centro de la homotecia.",
@@ -33,6 +35,7 @@ var messages = /* I18N_START */ {
         "vertical": "Vertical"
     },
     "eu": {
+        "_name": "Transformazioak",
         "angle": "Angelua",
         "enlargement": "Eskala",
         "hintEnlargement": "Puntu laranja mugitu eskalaren jatorria ezartzeko.",
@@ -47,6 +50,7 @@ var messages = /* I18N_START */ {
         "vertical": "Bertikala"
     },
     "fr": {
+        "_name": "Transformations",
         "angle": "Angle",
         "enlargement": "Homothétie",
         "hintEnlargement": "Déplacez le point orange pour définir le centre de l'homothétie.",
@@ -61,6 +65,7 @@ var messages = /* I18N_START */ {
         "vertical": "Vertical"
     },
     "nl": {
+        "_name": "Transformaties",
         "angle": "Hoek",
         "enlargement": "Vergroting",
         "hintEnlargement": "Verplaats het oranje punt om het centrum van de vergroting in te stellen.",

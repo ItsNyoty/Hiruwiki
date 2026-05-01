@@ -4,6 +4,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Angles",
         "bisector": "Bisector",
         "bisectorResult": "Bisector: {0}°",
         "complement": "Complementary",
@@ -13,6 +14,7 @@ var messages = /* I18N_START */ {
         "supplement": "Supplementary"
     },
     "es": {
+        "_name": "Ángulos",
         "bisector": "Bisectriz",
         "bisectorResult": "Bisectriz: {0}°",
         "complement": "Complementario",
@@ -22,6 +24,7 @@ var messages = /* I18N_START */ {
         "supplement": "Suplementario"
     },
     "eu": {
+        "_name": "Angeluak",
         "bisector": "Erdikaria",
         "bisectorResult": "Erdikaria: {0}°",
         "complement": "Osagarria",
@@ -31,6 +34,7 @@ var messages = /* I18N_START */ {
         "supplement": "Betegarria"
     },
     "fr": {
+        "_name": "Angles",
         "bisector": "Bissectrice",
         "bisectorResult": "Bissectrice : {0}°",
         "complement": "Complémentaire",
@@ -40,6 +44,7 @@ var messages = /* I18N_START */ {
         "supplement": "Supplémentaire"
     },
     "nl": {
+        "_name": "Hoeken",
         "bisector": "Bissectrice",
         "bisectorResult": "Bissectrice: {0}°",
         "complement": "Complementair",

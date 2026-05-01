@@ -7,6 +7,7 @@ var messages = /* I18N_START */ {
     "en": {
         "2quads": "2 quadrilaterals × 360°",
         "4triangles": "4 triangles × 180°",
+        "_name": "Hexagon Angles",
         "interiorAngles": "Interior angles",
         "reset": "↺ Reset",
         "total": "Total"
@@ -14,6 +15,7 @@ var messages = /* I18N_START */ {
     "es": {
         "2quads": "2 cuadriláteros × 360°",
         "4triangles": "4 triángulos × 180°",
+        "_name": "Ángulos del hexágono",
         "interiorAngles": "Ángulos interiores",
         "reset": "↺ Reiniciar",
         "total": "Total"
@@ -21,6 +23,7 @@ var messages = /* I18N_START */ {
     "eu": {
         "2quads": "2 lauki × 360°",
         "4triangles": "4 triangelu × 180°",
+        "_name": "Hexagonoaren angeluak",
         "interiorAngles": "Barne angeluak",
         "reset": "↺ Berrezarri",
         "total": "Guztira"
@@ -28,6 +31,7 @@ var messages = /* I18N_START */ {
     "fr": {
         "2quads": "2 quadrilatères × 360°",
         "4triangles": "4 triangles × 180°",
+        "_name": "Angles de l’hexagone",
         "interiorAngles": "Angles intérieurs",
         "reset": "↺ Réinitialiser",
         "total": "Total"
@@ -35,6 +39,7 @@ var messages = /* I18N_START */ {
     "nl": {
         "2quads": "2 vierhoeken × 360°",
         "4triangles": "4 driehoeken × 180°",
+        "_name": "Hoeken van een zeshoek",
         "interiorAngles": "Binnenhoeken",
         "reset": "↺ Reset",
         "total": "Totaal"

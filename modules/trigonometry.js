@@ -9,6 +9,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Trigonometry",
         "angle": "Angle &theta;",
         "cosDesc": "The blue line is the <strong>adjacent</strong> side &mdash; the horizontal distance from the origin to the base of the perpendicular. cos&nbsp;&theta;&nbsp;=&nbsp;adjacent&nbsp;&divide;&nbsp;hypotenuse&nbsp;(=&nbsp;1).",
         "cosFormula": "adjacent / hypotenuse",
@@ -20,6 +21,7 @@ var messages = /* I18N_START */ {
         "tanFormula": "opposite / adjacent"
     },
     "es": {
+        "_name": "Trigonometría",
         "angle": "Ángulo &theta;",
         "cosDesc": "La línea azul es el lado <strong>adyacente</strong> &mdash; la distancia horizontal desde el origen hasta la base de la perpendicular. cos&nbsp;&theta;&nbsp;=&nbsp;adyacente&nbsp;&divide;&nbsp;hipotenusa&nbsp;(=&nbsp;1).",
         "cosFormula": "adyacente / hipotenusa",
@@ -31,6 +33,7 @@ var messages = /* I18N_START */ {
         "tanFormula": "opuesto / adyacente"
     },
     "eu": {
+        "_name": "Trigonometria",
         "angle": "Angelua &theta;",
         "cosDesc": "Lerro urdina alde <strong>auzokidea</strong> da &mdash; jatorritik elkartzutaren oinarrira dagoen distantzia horizontala. cos&nbsp;&theta;&nbsp;=&nbsp;auzokidea&nbsp;&divide;&nbsp;hipotenisa&nbsp;(=&nbsp;1).",
         "cosFormula": "auzokidea / hipotenusa",
@@ -42,6 +45,7 @@ var messages = /* I18N_START */ {
         "tanFormula": "aurkakoa / auzokidea"
     },
     "fr": {
+        "_name": "Trigonométrie",
         "angle": "Angle &theta;",
         "cosDesc": "La ligne bleue est le côté <strong>adjacent</strong> &mdash; la distance horizontale de l'origine à la base de la perpendiculaire. cos&nbsp;&theta;&nbsp;=&nbsp;adyacente&nbsp;&divide;&nbsp;hypoténuse&nbsp;(=&nbsp;1).",
         "cosFormula": "adjacent / hypoténuse",
@@ -53,6 +57,7 @@ var messages = /* I18N_START */ {
         "tanFormula": "opposé / adjacent"
     },
     "nl": {
+        "_name": "Goniometrie",
         "angle": "Hoek &theta;",
         "cosDesc": "De blauwe lijn is de <strong>aanliggende</strong> zijde &mdash; de horizontale afstand van de oorsprong tot de basis van de loodlijn. cos&nbsp;&theta;&nbsp;=&nbsp;aanliggende&nbsp;&divide;&nbsp;schuine&nbsp;zijde&nbsp;(=&nbsp;1).",
         "cosFormula": "aanliggende / schuine",

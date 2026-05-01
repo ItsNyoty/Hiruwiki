@@ -8,6 +8,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Triangle Area",
         "btnProve": "Prove it",
         "btnReset": "Reset",
         "labelArea": "Area",
@@ -17,6 +18,7 @@ var messages = /* I18N_START */ {
         "proofResultTri": " → Triangle = ½ × {area} = <strong>{triArea} cm²</strong>"
     },
     "es": {
+        "_name": "Área del triángulo",
         "btnProve": "Pruébalo",
         "btnReset": "Reiniciar",
         "labelArea": "Área",
@@ -26,6 +28,7 @@ var messages = /* I18N_START */ {
         "proofResultTri": " → Triángulo = ½ × {area} = <strong>{triArea} cm²</strong>"
     },
     "eu": {
+        "_name": "Hirukiaren azalera",
         "btnProve": "Froga ezazu",
         "btnReset": "Berrezarri",
         "labelArea": "Azalera",
@@ -35,6 +38,7 @@ var messages = /* I18N_START */ {
         "proofResultTri": " → Triangeluarena = ½ × {area} = <strong>{triArea} cm²</strong>"
     },
     "fr": {
+        "_name": "Aire du triangle",
         "btnProve": "Prouver",
         "btnReset": "Réinitialiser",
         "labelArea": "Aire",
@@ -44,6 +48,7 @@ var messages = /* I18N_START */ {
         "proofResultTri": " → Triangle = ½ × {area} = <strong>{triArea} cm²</strong>"
     },
     "nl": {
+        "_name": "Oppervlakte van een driehoek",
         "btnProve": "Bewijs het",
         "btnReset": "Reset",
         "labelArea": "Oppervlakte",

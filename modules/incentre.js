@@ -13,6 +13,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Incentre",
         "angleA": "Angle A",
         "angleB": "Angle B",
         "angleC": "Angle C",
@@ -34,6 +35,7 @@ var messages = /* I18N_START */ {
         "triangle": "Triangle"
     },
     "es": {
+        "_name": "Incentro",
         "angleA": "Ángulo A",
         "angleB": "Ángulo B",
         "angleC": "Ángulo C",
@@ -55,6 +57,7 @@ var messages = /* I18N_START */ {
         "triangle": "Triángulo"
     },
     "eu": {
+        "_name": "Inzentroa",
         "angleA": "A angelua",
         "angleB": "B angelua",
         "angleC": "C angelua",
@@ -76,6 +79,7 @@ var messages = /* I18N_START */ {
         "triangle": "Triangelua"
     },
     "fr": {
+        "_name": "Incentre",
         "angleA": "Angle A",
         "angleB": "Angle B",
         "angleC": "Angle C",
@@ -97,6 +101,7 @@ var messages = /* I18N_START */ {
         "triangle": "Triangle"
     },
     "nl": {
+        "_name": "Incentrum",
         "angleA": "Hoek A",
         "angleB": "Hoek B",
         "angleC": "Hoek C",

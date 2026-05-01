@@ -5,30 +5,35 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Quadrangle Angles",
         "interiorAngles": "Interior angles",
         "reset": "Reset",
         "sum": "Sum",
         "total": "Total"
     },
     "es": {
+        "_name": "Ángulos del cuadrilátero",
         "interiorAngles": "Ángulos interiores",
         "reset": "Reiniciar",
         "sum": "Suma",
         "total": "Total"
     },
     "eu": {
+        "_name": "Koadrilateroaren angeluak",
         "interiorAngles": "Barne angeluak",
         "reset": "Berrezarri",
         "sum": "Batuketa",
         "total": "Guztira"
     },
     "fr": {
+        "_name": "Angles du quadrilatère",
         "interiorAngles": "Angles intérieurs",
         "reset": "Réinitialiser",
         "sum": "Somme",
         "total": "Total"
     },
     "nl": {
+        "_name": "Hoeken van een vierhoek",
         "interiorAngles": "Binnenhoeken",
         "reset": "Reset",
         "sum": "Som",

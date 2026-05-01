@@ -4,26 +4,31 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Pythagorean Theorem",
         "angleDeg": "angle = ",
         "lockRight": "right angle",
         "reset": "Reset"
     },
     "es": {
+        "_name": "Teorema de Pitágoras",
         "angleDeg": "ángulo = ",
         "lockRight": "ángulo recto",
         "reset": "Reiniciar"
     },
     "eu": {
+        "_name": "Pitagorasen teorema",
         "angleDeg": "angelua = ",
         "lockRight": "angelu zuzena",
         "reset": "Berrezarri"
     },
     "fr": {
+        "_name": "Théorème de Pythagore",
         "angleDeg": "angle = ",
         "lockRight": "angle droit",
         "reset": "Réinitialiser"
     },
     "nl": {
+        "_name": "Stelling van Pythagoras",
         "angleDeg": "hoek = ",
         "lockRight": "rechte hoek",
         "reset": "Reset"

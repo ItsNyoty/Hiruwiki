@@ -22,6 +22,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Percentages",
         "axis_neg": "−100%",
         "axis_pos": "+100%",
         "axis_zero": "0%",
@@ -37,6 +38,7 @@ var messages = /* I18N_START */ {
         "label_start": "start"
     },
     "es": {
+        "_name": "Porcentajes",
         "axis_neg": "−100%",
         "axis_pos": "+100%",
         "axis_zero": "0%",
@@ -52,6 +54,7 @@ var messages = /* I18N_START */ {
         "label_start": "inicio"
     },
     "eu": {
+        "_name": "Ehunekoak",
         "axis_neg": "−% 100",
         "axis_pos": "+% 100",
         "axis_zero": "% 0",
@@ -67,6 +70,7 @@ var messages = /* I18N_START */ {
         "label_start": "hasiera"
     },
     "fr": {
+        "_name": "Pourcentages",
         "axis_neg": "−100%",
         "axis_pos": "+100%",
         "axis_zero": "0%",
@@ -82,6 +86,7 @@ var messages = /* I18N_START */ {
         "label_start": "début"
     },
     "nl": {
+        "_name": "Percentages",
         "axis_neg": "−100%",
         "axis_pos": "+100%",
         "axis_zero": "0%",

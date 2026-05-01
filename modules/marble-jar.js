@@ -5,6 +5,7 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Probability Jar",
         "colorBlue": "Blue",
         "colorGreen": "Green",
         "colorRed": "Red",
@@ -15,6 +16,7 @@ var messages = /* I18N_START */ {
         "total": "Total"
     },
     "es": {
+        "_name": "Frasco de probabilidades",
         "colorBlue": "Azul",
         "colorGreen": "Verde",
         "colorRed": "Rojo",
@@ -25,6 +27,7 @@ var messages = /* I18N_START */ {
         "total": "Total"
     },
     "eu": {
+        "_name": "Probabilitate ontzia",
         "colorBlue": "Urdina",
         "colorGreen": "Berdea",
         "colorRed": "Gorria",
@@ -35,6 +38,7 @@ var messages = /* I18N_START */ {
         "total": "Guztira"
     },
     "fr": {
+        "_name": "Pot de probabilités",
         "colorBlue": "Bleu",
         "colorGreen": "Vert",
         "colorRed": "Rouge",
@@ -45,6 +49,7 @@ var messages = /* I18N_START */ {
         "total": "Total"
     },
     "nl": {
+        "_name": "Kanspot",
         "colorBlue": "Blauw",
         "colorGreen": "Groen",
         "colorRed": "Rood",

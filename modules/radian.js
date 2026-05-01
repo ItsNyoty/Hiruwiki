@@ -4,18 +4,23 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
+        "_name": "Radians",
         "rad": "rad"
     },
     "es": {
+        "_name": "Radianes",
         "rad": "rad"
     },
     "eu": {
+        "_name": "Radianak",
         "rad": "rad"
     },
     "fr": {
+        "_name": "Radians",
         "rad": "rad"
     },
     "nl": {
+        "_name": "Radialen",
         "rad": "rad"
     }
 } /* I18N_END */;
