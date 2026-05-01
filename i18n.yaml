@@ -1,5 +1,6 @@
 angle-guess:
   en:
+    _name: Angle Guess
     difference: 'Difference:'
     finalScore: Final score
     hint: Move the blue dot to set the angle
@@ -12,6 +13,7 @@ angle-guess:
     tryAgain: Try again
     yourGuess: 'Your guess:'
   es:
+    _name: Adivinar ángulo
     difference: 'Diferencia:'
     finalScore: Puntuación final
     hint: Mueve el punto azul para establecer el ángulo
@@ -24,6 +26,7 @@ angle-guess:
     tryAgain: Intentar de nuevo
     yourGuess: 'Tu elección:'
   eu:
+    _name: Angelua asmatu
     difference: 'Aldea:'
     finalScore: Azken emaitza
     hint: Puntu urdina mugitu angelua zehazteko
@@ -36,6 +39,7 @@ angle-guess:
     tryAgain: Berriz saiatu
     yourGuess: 'Zure aukera:'
   fr:
+    _name: Deviner l’angle
     difference: 'Différence :'
     finalScore: Score final
     hint: Déplacez le point bleu pour régler l'angle
@@ -48,6 +52,7 @@ angle-guess:
     tryAgain: Réessayer
     yourGuess: 'Votre estimation :'
   nl:
+    _name: Hoek gokken
     difference: 'Verschil:'
     finalScore: Eindscore
     hint: Verplaats de blauwe stip om de hoek in te stellen
@@ -61,6 +66,7 @@ angle-guess:
     yourGuess: 'Jouw gok:'
 angles:
   en:
+    _name: Angles
     bisector: Bisector
     bisectorResult: 'Bisector: {0}°'
     complement: Complementary
@@ -69,6 +75,7 @@ angles:
     resultAngle: '{0} angle: {1}°'
     supplement: Supplementary
   es:
+    _name: Ángulos
     bisector: Bisectriz
     bisectorResult: 'Bisectriz: {0}°'
     complement: Complementario
@@ -77,6 +84,7 @@ angles:
     resultAngle: 'Ángulo {0}: {1}°'
     supplement: Suplementario
   eu:
+    _name: Angeluak
     bisector: Erdikaria
     bisectorResult: 'Erdikaria: {0}°'
     complement: Osagarria
@@ -85,6 +93,7 @@ angles:
     resultAngle: 'Angelu {0}: {1}°'
     supplement: Betegarria
   fr:
+    _name: Angles
     bisector: Bissectrice
     bisectorResult: 'Bissectrice : {0}°'
     complement: Complémentaire
@@ -93,6 +102,7 @@ angles:
     resultAngle: 'Angle {0} : {1}°'
     supplement: Supplémentaire
   nl:
+    _name: Hoeken
     bisector: Bissectrice
     bisectorResult: 'Bissectrice: {0}°'
     complement: Complementair
@@ -102,6 +112,7 @@ angles:
     supplement: Supplementair
 circle-proof:
   en:
+    _name: Circle Proof
     animStopped: Animation stopped.
     area: Area
     areaAnimStatus: 'Sectors reassemble into a rectangle: width = πr, height = r.'
@@ -120,6 +131,7 @@ circle-proof:
     title: Circle Calculator
     visualProof: Visual proof
   es:
+    _name: Prueba del círculo
     animStopped: Animación detenida.
     area: Área
     areaAnimStatus: 'Los sectores se vuelven a ensamblar en un rectángulo: ancho =
@@ -140,6 +152,7 @@ circle-proof:
     title: Calculadora de Círculos
     visualProof: Prueba visual
   eu:
+    _name: Zirkuluaren froga
     animStopped: Animazioa gelditu da.
     area: Azalera
     areaAnimStatus: 'Zatiak elkartzen dira laukizuzen bat egiteko: zabalera = πr,
@@ -160,6 +173,7 @@ circle-proof:
     title: Zirkulu kalkuladorea
     visualProof: Froga bisuala
   fr:
+    _name: Preuve du cercle
     animStopped: Animation arrêtée.
     area: Aire
     areaAnimStatus: 'Les secteurs se réassemblent en un rectangle : largeur = πr,
@@ -179,6 +193,7 @@ circle-proof:
     title: Calculateur de Cercle
     visualProof: Preuve visuelle
   nl:
+    _name: Cirkel bewijs
     animStopped: Animatie gestopt.
     area: Oppervlakte
     areaAnimStatus: 'De sectoren vormen een rechthoek: breedte = πr, hoogte = r.'
@@ -199,6 +214,7 @@ circle-proof:
     visualProof: Visueel bewijs
 dividend:
   en:
+    _name: Dividend and Divisor
     eq_lbl_dividend: dividend
     eq_lbl_divisor: divisor
     eq_lbl_quotient: quotient
@@ -225,6 +241,7 @@ dividend:
     repadd_less: '{N} is less than {D}, so the quotient is 0 and the whole value is
       the remainder.'
   es:
+    _name: Dividendo y divisor
     eq_lbl_dividend: dividendo
     eq_lbl_divisor: divisor
     eq_lbl_quotient: cociente
@@ -251,6 +268,7 @@ dividend:
     repadd_less: '{N} es menor que {D}, por lo que el cociente es 0 y el valor completo
       es el resto.'
   eu:
+    _name: Zatikizuna eta zatitzailea
     eq_lbl_dividend: zatikizuna
     eq_lbl_divisor: zatitzailea
     eq_lbl_quotient: zatidura
@@ -277,6 +295,7 @@ dividend:
     repadd_less: '{N} {D} baino txikiagoa da, beraz zatidura 0 da eta balio osoa hondarra
       da.'
   fr:
+    _name: Dividende et diviseur
     eq_lbl_dividend: dividende
     eq_lbl_divisor: diviseur
     eq_lbl_quotient: quotient
@@ -304,6 +323,7 @@ dividend:
     repadd_less: '{N} est inférieur à {D}, donc le quotient est 0 et toute la valeur
       est le reste.'
   nl:
+    _name: Deeltal en deler
     eq_lbl_dividend: deeltal
     eq_lbl_divisor: deler
     eq_lbl_quotient: quotiënt
@@ -331,6 +351,7 @@ dividend:
       is de rest.'
 factors:
   en:
+    _name: Prime Factors
     gcd_formula_eq: ' = '
     gcd_none: (none — coprime)
     gcd_title: GCD — keep only shared factors
@@ -356,6 +377,7 @@ factors:
     legend_onlyB: unique to B
     legend_shared: shared (used for GCD)
   es:
+    _name: Factores primos
     gcd_formula_eq: ' = '
     gcd_none: (ninguno — coprimos)
     gcd_title: MCD — conservar solo los factores compartidos
@@ -382,6 +404,7 @@ factors:
     legend_onlyB: solo de B
     legend_shared: compartidos (usados para MCD)
   eu:
+    _name: Faktore lehenak
     gcd_formula_eq: ' = '
     gcd_none: (bat ere ez — elkarrekiko lehenak)
     gcd_title: ZKH — partekatutako faktoreak bakarrik gordetzen dira
@@ -408,6 +431,7 @@ factors:
     legend_onlyB: Bri bakarrik dagokiona
     legend_shared: partekatua (ZKHrako erabilia)
   fr:
+    _name: Facteurs premiers
     gcd_formula_eq: ' = '
     gcd_none: (aucun — premiers entre eux)
     gcd_title: PGCD — ne garder que les facteurs partagés
@@ -434,6 +458,7 @@ factors:
     legend_onlyB: unique à B
     legend_shared: partagé (utilisé pour le PGCD)
   nl:
+    _name: Priemfactoren
     gcd_formula_eq: ' = '
     gcd_none: (geen — onderling ondeelbaar)
     gcd_title: GGD — behoud alleen gedeelde factoren
@@ -461,6 +486,7 @@ factors:
     legend_shared: gedeeld (voor GGD)
 fibonacci:
   en:
+    _name: Fibonacci Sequence
     card_phi_lbl: Golden ratio φ
     card_phi_sub: (1 + √5) / 2 = 1.6180339887…
     card_ratio_error: 'error from φ:'
@@ -484,6 +510,7 @@ fibonacci:
     sec_steps: Step through the Fibonacci sequence
     step_label: Step {step} of {total}
   es:
+    _name: Sucesión de Fibonacci
     card_phi_lbl: Proporción áurea φ
     card_phi_sub: (1 + √5) / 2 = 1.6180339887…
     card_ratio_error: 'error respecto a φ:'
@@ -506,6 +533,7 @@ fibonacci:
     sec_steps: Pasos de la secuencia de Fibonacci
     step_label: Paso {step} de {total}
   eu:
+    _name: Fibonacci sekuentzia
     card_phi_lbl: Urrezko arrazoia φ
     card_phi_sub: (1 + √5) / 2 = 1,6180339887…
     card_ratio_error: 'φ-rekiko errorea:'
@@ -528,6 +556,7 @@ fibonacci:
     sec_steps: Fibonacci segidaren urratsak
     step_label: '{step}. urratsa {total}tik'
   fr:
+    _name: Suite de Fibonacci
     card_phi_lbl: Nombre d'or φ
     card_phi_sub: (1 + √5) / 2 = 1.6180339887…
     card_ratio_error: 'erreur par rapport à φ :'
@@ -550,6 +579,7 @@ fibonacci:
     sec_steps: Étapes de la suite de Fibonacci
     step_label: Étape {step} sur {total}
   nl:
+    _name: Rij van Fibonacci
     card_phi_lbl: Gulden snede φ
     card_phi_sub: (1 + √5) / 2 = 1.6180339887…
     card_ratio_error: 'fout ten opzichte van φ:'
@@ -575,35 +605,41 @@ hexagon-angles:
   en:
     2quads: 2 quadrilaterals × 360°
     4triangles: 4 triangles × 180°
+    _name: Hexagon Angles
     interiorAngles: Interior angles
     reset: ↺ Reset
     total: Total
   es:
     2quads: 2 cuadriláteros × 360°
     4triangles: 4 triángulos × 180°
+    _name: Ángulos del hexágono
     interiorAngles: Ángulos interiores
     reset: ↺ Reiniciar
     total: Total
   eu:
     2quads: 2 lauki × 360°
     4triangles: 4 triangelu × 180°
+    _name: Hexagonoaren angeluak
     interiorAngles: Barne angeluak
     reset: ↺ Berrezarri
     total: Guztira
   fr:
     2quads: 2 quadrilatères × 360°
     4triangles: 4 triangles × 180°
+    _name: Angles de l’hexagone
     interiorAngles: Angles intérieurs
     reset: ↺ Réinitialiser
     total: Total
   nl:
     2quads: 2 vierhoeken × 360°
     4triangles: 4 driehoeken × 180°
+    _name: Hoeken van een zeshoek
     interiorAngles: Binnenhoeken
     reset: ↺ Reset
     total: Totaal
 incentre:
   en:
+    _name: Incentre
     angleA: Angle A
     angleB: Angle B
     angleC: Angle C
@@ -624,6 +660,7 @@ incentre:
     touchCA: Touch pt. CA
     triangle: Triangle
   es:
+    _name: Incentro
     angleA: Ángulo A
     angleB: Ángulo B
     angleC: Ángulo C
@@ -644,6 +681,7 @@ incentre:
     touchCA: Pt. tangencia CA
     triangle: Triángulo
   eu:
+    _name: Inzentroa
     angleA: A angelua
     angleB: B angelua
     angleC: C angelua
@@ -664,6 +702,7 @@ incentre:
     touchCA: CA tangentea
     triangle: Triangelua
   fr:
+    _name: Incentre
     angleA: Angle A
     angleB: Angle B
     angleC: Angle C
@@ -684,6 +723,7 @@ incentre:
     touchCA: Pt de contact CA
     triangle: Triangle
   nl:
+    _name: Incentrum
     angleA: Hoek A
     angleB: Hoek B
     angleC: Hoek C
@@ -705,6 +745,7 @@ incentre:
     triangle: Driehoek
 integer-coordinates:
   en:
+    _name: Integer Coordinates
     btnChallenge: 🎯 Challenge
     btnCheck: Check ✓
     btnExplore: 🔭 Explore
@@ -717,6 +758,7 @@ integer-coordinates:
     pointLabel: 'Point:'
     titleExplore: Explore Coordinate System
   es:
+    _name: Coordenadas enteras
     btnChallenge: 🎯 Reto
     btnCheck: Comprobar ✓
     btnExplore: 🔭 Explorar
@@ -729,6 +771,7 @@ integer-coordinates:
     pointLabel: 'Punto:'
     titleExplore: Explorar el sistema de coordenadas
   eu:
+    _name: Koordenatu osoak
     btnChallenge: 🎯 Erronka
     btnCheck: Zuzendu ✓
     btnExplore: 🔭 Esploratu
@@ -743,6 +786,7 @@ integer-coordinates:
     pointLabel: 'Puntua:'
     titleExplore: Esploratu koordenatuen sistema
   fr:
+    _name: Coordonnées entières
     btnChallenge: 🎯 Défi
     btnCheck: Vérifier ✓
     btnExplore: 🔭 Explorer
@@ -755,6 +799,7 @@ integer-coordinates:
     pointLabel: 'Point :'
     titleExplore: Explorer le système de coordonnées
   nl:
+    _name: Gehele coördinaten
     btnChallenge: 🎯 Uitdaging
     btnCheck: Controleren ✓
     btnExplore: 🔭 Verkennen
@@ -768,6 +813,7 @@ integer-coordinates:
     titleExplore: Verken het coördinatenstelsel
 marble-jar:
   en:
+    _name: Probability Jar
     colorBlue: Blue
     colorGreen: Green
     colorRed: Red
@@ -777,6 +823,7 @@ marble-jar:
     shake: Shake!
     total: Total
   es:
+    _name: Frasco de probabilidades
     colorBlue: Azul
     colorGreen: Verde
     colorRed: Rojo
@@ -786,6 +833,7 @@ marble-jar:
     shake: ¡Agitar!
     total: Total
   eu:
+    _name: Probabilitate ontzia
     colorBlue: Urdina
     colorGreen: Berdea
     colorRed: Gorria
@@ -795,6 +843,7 @@ marble-jar:
     shake: Astindu!
     total: Guztira
   fr:
+    _name: Pot de probabilités
     colorBlue: Bleu
     colorGreen: Vert
     colorRed: Rouge
@@ -804,6 +853,7 @@ marble-jar:
     shake: Secouer !
     total: Total
   nl:
+    _name: Kanspot
     colorBlue: Blauw
     colorGreen: Groen
     colorRed: Rood
@@ -814,6 +864,7 @@ marble-jar:
     total: Totaal
 monte-carlo:
   en:
+    _name: Monte Carlo Pi
     addPoints: + Add points
     approxPi: Approximation of π
     insideCircle: Inside circle
@@ -824,6 +875,7 @@ monte-carlo:
     reset: ↺ Reset
     totalPoints: Total points
   es:
+    _name: Monte Carlo Pi
     addPoints: + Añadir puntos
     approxPi: Aproximación de π
     insideCircle: Dentro del círculo
@@ -834,6 +886,7 @@ monte-carlo:
     reset: ↺ Reiniciar
     totalPoints: Total de puntos
   eu:
+    _name: Monte Carlo Pi
     addPoints: + Puntuak gehitu
     approxPi: π-ren hurbilketa
     insideCircle: Zirkuluaren barruan
@@ -844,6 +897,7 @@ monte-carlo:
     reset: ↺ Berrezarri
     totalPoints: Puntu kopurua
   fr:
+    _name: Monte Carlo Pi
     addPoints: + Ajouter des points
     approxPi: Approximation de π
     insideCircle: À l'intérieur du cercle
@@ -854,6 +908,7 @@ monte-carlo:
     reset: ↺ Réinitialiser
     totalPoints: Total des points
   nl:
+    _name: Monte Carlo Pi
     addPoints: + Punten toevoegen
     approxPi: Benadering van π
     insideCircle: Binnen de cirkel
@@ -866,31 +921,37 @@ monte-carlo:
 pentagon-angles:
   en:
     3triangles: 3 triangles × 180°
+    _name: Pentagon Angles
     interiorAngles: Interior angles
     reset: ↺ Reset
     total: Total
   es:
     3triangles: 3 triángulos × 180°
+    _name: Ángulos del pentágono
     interiorAngles: Ángulos interiores
     reset: ↺ Reiniciar
     total: Total
   eu:
     3triangles: 3 triangelu × 180°
+    _name: Pentagonoaren angeluak
     interiorAngles: Barne angeluak
     reset: ↺ Berrezarri
     total: Guztira
   fr:
     3triangles: 3 triangles × 180°
+    _name: Angles du pentagone
     interiorAngles: Angles intérieurs
     reset: ↺ Réinitialiser
     total: Total
   nl:
     3triangles: 3 driehoeken × 180°
+    _name: Hoeken van een vijfhoek
     interiorAngles: Binnenhoeken
     reset: ↺ Reset
     total: Totaal
 percent:
   en:
+    _name: Percentages
     axis_neg: −100%
     axis_pos: +100%
     axis_zero: 0%
@@ -912,6 +973,7 @@ percent:
     label_scale: 'SCALE: FULL BAR WIDTH = 200'
     label_start: start
   es:
+    _name: Porcentajes
     axis_neg: −100%
     axis_pos: +100%
     axis_zero: 0%
@@ -935,6 +997,7 @@ percent:
     label_scale: 'ESCALA: ANCHO TOTAL = 200'
     label_start: inicio
   eu:
+    _name: Ehunekoak
     axis_neg: −% 100
     axis_pos: +% 100
     axis_zero: '% 0'
@@ -957,6 +1020,7 @@ percent:
     label_scale: 'ESKALA: BARRA OSOA = 200'
     label_start: hasiera
   fr:
+    _name: Pourcentages
     axis_neg: −100%
     axis_pos: +100%
     axis_zero: 0%
@@ -980,6 +1044,7 @@ percent:
     label_scale: 'ÉCHELLE : LARGEUR TOTALE DE LA BARRE = 200'
     label_start: début
   nl:
+    _name: Percentages
     axis_neg: −100%
     axis_pos: +100%
     axis_zero: 0%
@@ -1003,53 +1068,64 @@ percent:
     label_start: start
 pythagoras:
   en:
+    _name: Pythagorean Theorem
     angleDeg: 'angle = '
     lockRight: right angle
     reset: Reset
   es:
+    _name: Teorema de Pitágoras
     angleDeg: 'ángulo = '
     lockRight: ángulo recto
     reset: Reiniciar
   eu:
+    _name: Pitagorasen teorema
     angleDeg: 'angelua = '
     lockRight: angelu zuzena
     reset: Berrezarri
   fr:
+    _name: Théorème de Pythagore
     angleDeg: 'angle = '
     lockRight: angle droit
     reset: Réinitialiser
   nl:
+    _name: Stelling van Pythagoras
     angleDeg: 'hoek = '
     lockRight: rechte hoek
     reset: Reset
 quadrangle-angles:
   en:
+    _name: Quadrangle Angles
     interiorAngles: Interior angles
     reset: Reset
     sum: Sum
     total: Total
   es:
+    _name: Ángulos del cuadrilátero
     interiorAngles: Ángulos interiores
     reset: Reiniciar
     sum: Suma
     total: Total
   eu:
+    _name: Koadrilateroaren angeluak
     interiorAngles: Barne angeluak
     reset: Berrezarri
     sum: Batuketa
     total: Guztira
   fr:
+    _name: Angles du quadrilatère
     interiorAngles: Angles intérieurs
     reset: Réinitialiser
     sum: Somme
     total: Total
   nl:
+    _name: Hoeken van een vierhoek
     interiorAngles: Binnenhoeken
     reset: Reset
     sum: Som
     total: Totaal
 quadrangles:
   en:
+    _name: Quadrilaterals
     areaDiagHalf: 'Formula: A = (d₁ × d₂) / 2
 
       d₁ (AC) = {0} cm
@@ -1112,6 +1188,7 @@ quadrangles:
     unitCm: cm
     unitCm2: cm²
   es:
+    _name: Cuadriláteros
     areaDiagHalf: 'Fórmula: A = (d₁ × d₂) / 2
 
       d₁ (AC) = {0} cm
@@ -1174,6 +1251,7 @@ quadrangles:
     unitCm: cm
     unitCm2: cm²
   eu:
+    _name: Koadrilateroak
     areaDiagHalf: 'Formula: A = (d₁ × d₂) / 2
 
       d₁ (AC) = {0} cm
@@ -1236,6 +1314,7 @@ quadrangles:
     unitCm: cm
     unitCm2: cm²
   fr:
+    _name: Quadrilatères
     areaDiagHalf: 'Formule : A = (d₁ × d₂) / 2
 
       d₁ (AC) = {0} cm
@@ -1298,6 +1377,7 @@ quadrangles:
     unitCm: cm
     unitCm2: cm²
   nl:
+    _name: Vierhoeken
     areaDiagHalf: 'Formule: A = (d₁ × d₂) / 2
 
       d₁ (AC) = {0} cm
@@ -1361,28 +1441,39 @@ quadrangles:
     unitCm2: cm²
 radian:
   en:
+    _name: Radians
     rad: rad
   es:
+    _name: Radianes
     rad: rad
   eu:
+    _name: Radianak
     rad: rad
   fr:
+    _name: Radians
     rad: rad
   nl:
+    _name: Radialen
     rad: rad
 slope:
   en:
+    _name: Slope
     undefined: Vertical line → slope undefined
   es:
+    _name: Pendiente
     undefined: Línea vertical → pendiente indefinida
   eu:
+    _name: Maldia
     undefined: Lerro bertikala → malda ezarri gabe
   fr:
+    _name: Pente
     undefined: Ligne verticale → pente indéfinie
   nl:
+    _name: Helling
     undefined: Verticale lijn → helling ongedefinieerd
 transformation:
   en:
+    _name: Transformations
     angle: Angle
     enlargement: Enlargement
     hintEnlargement: Move the orange point to set the center of enlargement.
@@ -1396,6 +1487,7 @@ transformation:
     translation: Translation
     vertical: Vertical
   es:
+    _name: Transformaciones
     angle: Ángulo
     enlargement: Homotecia
     hintEnlargement: Mueve el punto naranja para establecer el centro de la homotecia.
@@ -1409,6 +1501,7 @@ transformation:
     translation: Traslación
     vertical: Vertical
   eu:
+    _name: Transformazioak
     angle: Angelua
     enlargement: Eskala
     hintEnlargement: Puntu laranja mugitu eskalaren jatorria ezartzeko.
@@ -1422,6 +1515,7 @@ transformation:
     translation: Translazioa
     vertical: Bertikala
   fr:
+    _name: Transformations
     angle: Angle
     enlargement: Homothétie
     hintEnlargement: Déplacez le point orange pour définir le centre de l'homothétie.
@@ -1435,6 +1529,7 @@ transformation:
     translation: Translation
     vertical: Vertical
   nl:
+    _name: Transformaties
     angle: Hoek
     enlargement: Vergroting
     hintEnlargement: Verplaats het oranje punt om het centrum van de vergroting in
@@ -1450,17 +1545,23 @@ transformation:
     vertical: Verticaal
 triangle-angles:
   en:
+    _name: Triangle Angles
     reset: Reset
   es:
+    _name: Ángulos del triángulo
     reset: Reiniciar
   eu:
+    _name: Hirukiaren angeluak
     reset: Berrezarri
   fr:
+    _name: Angles du triangle
     reset: Réinitialiser
   nl:
+    _name: Hoeken van een driehoek
     reset: Reset
 triangle-area:
   en:
+    _name: Triangle Area
     btnProve: Prove it
     btnReset: Reset
     labelArea: Area
@@ -1469,6 +1570,7 @@ triangle-area:
     proofResultPara: Parallelogram area = b × h = <strong>{b} × {h} = {area} cm²</strong>
     proofResultTri: ' → Triangle = ½ × {area} = <strong>{triArea} cm²</strong>'
   es:
+    _name: Área del triángulo
     btnProve: Pruébalo
     btnReset: Reiniciar
     labelArea: Área
@@ -1477,6 +1579,7 @@ triangle-area:
     proofResultPara: Área del paralelogramo = b × h = <strong>{b} × {h} = {area} cm²</strong>
     proofResultTri: ' → Triángulo = ½ × {area} = <strong>{triArea} cm²</strong>'
   eu:
+    _name: Hirukiaren azalera
     btnProve: Froga ezazu
     btnReset: Berrezarri
     labelArea: Azalera
@@ -1486,6 +1589,7 @@ triangle-area:
       cm²</strong>
     proofResultTri: ' → Triangeluarena = ½ × {area} = <strong>{triArea} cm²</strong>'
   fr:
+    _name: Aire du triangle
     btnProve: Prouver
     btnReset: Réinitialiser
     labelArea: Aire
@@ -1495,6 +1599,7 @@ triangle-area:
       cm²</strong>
     proofResultTri: ' → Triangle = ½ × {area} = <strong>{triArea} cm²</strong>'
   nl:
+    _name: Oppervlakte van een driehoek
     btnProve: Bewijs het
     btnReset: Reset
     labelArea: Oppervlakte
@@ -1505,23 +1610,29 @@ triangle-area:
     proofResultTri: ' → Driehoek = ½ × {area} = <strong>{triArea} cm²</strong>'
 triangle-centroid:
   en:
+    _name: Triangle Centroid
     centroid: Centroid
     hint: Move vertices to see how the centroid position changes
   es:
+    _name: Baricentro del triángulo
     centroid: Baricentro
     hint: Mueve los vértices para ver cómo cambia la posición del baricentro.
   eu:
+    _name: Hirukiaren barizentroa
     centroid: Zentroidea
     hint: Mugitu erpinak barizentroaren kokapena nola aldatzen den ikusteko
   fr:
+    _name: Centre de gravité du triangle
     centroid: Centre de gravité
     hint: Déplacez les sommets pour voir comment la position du centre de gravité
       change.
   nl:
+    _name: Zwaartepunt van een driehoek
     centroid: Zwaartepunt
     hint: Verplaats de hoekpunten om te zien hoe de positie van het zwaartepunt verandert.
 triangles:
   en:
+    _name: Triangles
     acute: acute
     area: Area
     byAngles: 'By angles: '
@@ -1537,6 +1648,7 @@ triangles:
     scalene: scalene
     sides: Sides
   es:
+    _name: Triángulos
     acute: acutángulo
     area: Área
     byAngles: 'Por ángulos: '
@@ -1552,6 +1664,7 @@ triangles:
     scalene: escaleno
     sides: Lados
   eu:
+    _name: Hirukiak
     acute: zorrotza
     area: Azalera
     byAngles: 'Angeluen arabera: '
@@ -1567,6 +1680,7 @@ triangles:
     scalene: eskaleno
     sides: Aldeak
   fr:
+    _name: Triangles
     acute: acutangle
     area: Aire
     byAngles: 'Par angles : '
@@ -1582,6 +1696,7 @@ triangles:
     scalene: scalène
     sides: Côtés
   nl:
+    _name: Driehoeken
     acute: scherphoekig
     area: Oppervlakte
     byAngles: 'Op basis van hoeken: '
@@ -1598,6 +1713,7 @@ triangles:
     sides: Zijden
 trigonometry:
   en:
+    _name: Trigonometry
     angle: Angle &theta;
     cosDesc: The blue line is the <strong>adjacent</strong> side &mdash; the horizontal
       distance from the origin to the base of the perpendicular. cos&nbsp;&theta;&nbsp;=&nbsp;adjacent&nbsp;&divide;&nbsp;hypotenuse&nbsp;(=&nbsp;1).
@@ -1611,6 +1727,7 @@ trigonometry:
       height is tan&nbsp;&theta;, since tan&nbsp;&theta;&nbsp;=&nbsp;opposite&nbsp;&divide;&nbsp;adjacent&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
     tanFormula: opposite / adjacent
   es:
+    _name: Trigonometría
     angle: Ángulo &theta;
     cosDesc: La línea azul es el lado <strong>adyacente</strong> &mdash; la distancia
       horizontal desde el origen hasta la base de la perpendicular. cos&nbsp;&theta;&nbsp;=&nbsp;adyacente&nbsp;&divide;&nbsp;hipotenusa&nbsp;(=&nbsp;1).
@@ -1624,6 +1741,7 @@ trigonometry:
       altura es tan&nbsp;&theta;, ya que tan&nbsp;&theta;&nbsp;=&nbsp;opuesto&nbsp;&divide;&nbsp;adyacente&nbsp;=&nbsp;sen&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
     tanFormula: opuesto / adyacente
   eu:
+    _name: Trigonometria
     angle: Angelua &theta;
     cosDesc: Lerro urdina alde <strong>auzokidea</strong> da &mdash; jatorritik elkartzutaren
       oinarrira dagoen distantzia horizontala. cos&nbsp;&theta;&nbsp;=&nbsp;auzokidea&nbsp;&divide;&nbsp;hipotenisa&nbsp;(=&nbsp;1).
@@ -1638,6 +1756,7 @@ trigonometry:
       baita.
     tanFormula: aurkakoa / auzokidea
   fr:
+    _name: Trigonométrie
     angle: Angle &theta;
     cosDesc: La ligne bleue est le côté <strong>adjacent</strong> &mdash; la distance
       horizontale de l'origine à la base de la perpendiculaire. cos&nbsp;&theta;&nbsp;=&nbsp;adyacente&nbsp;&divide;&nbsp;hypoténuse&nbsp;(=&nbsp;1).
@@ -1651,6 +1770,7 @@ trigonometry:
       hauteur est tan&nbsp;&theta;, car tan&nbsp;&theta;&nbsp;=&nbsp;opposé&nbsp;&divide;&nbsp;adjacent&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
     tanFormula: opposé / adjacent
   nl:
+    _name: Goniometrie
     angle: Hoek &theta;
     cosDesc: De blauwe lijn is de <strong>aanliggende</strong> zijde &mdash; de horizontale
       afstand van de oorsprong tot de basis van de loodlijn. cos&nbsp;&theta;&nbsp;=&nbsp;aanliggende&nbsp;&divide;&nbsp;schuine&nbsp;zijde&nbsp;(=&nbsp;1).

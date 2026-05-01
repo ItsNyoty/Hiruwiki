@@ -9,8 +9,22 @@ import subprocess
 import difflib
 from http.cookiejar import CookieJar
 from datetime import datetime
+try:
+    import yaml
+except ImportError:
+    yaml = None
 
 # --- Configuration ---
+WIKI_LANGS = {
+    "enwiki": "en",
+    "testwiki": "en",
+    "euwiki": "eu",
+    "eswiki": "es",
+    "frwiki": "fr",
+    "nlwiki": "nl",
+    "betanl": "nl",
+}
+
 DEFAULT_SITE = "https://en.wikipedia.org/w/api.php"
 GADGET_BASE = "MediaWiki:Gadget-"
 MODULES_BASE = "MediaWiki:Hiruwiki/modules/"
@@ -183,8 +197,17 @@ def main():
 
     args = parser.parse_args()
     creds = load_credentials()
+    
+    i18n_data = {}
+    if yaml and os.path.exists("i18n.yaml"):
+        with open("i18n.yaml", "r", encoding="utf-8") as f:
+            i18n_data = yaml.safe_load(f) or {}
 
+    site_key = args.site or creds.get("apiUrl")
+    target_lang = WIKI_LANGS.get(site_key, "en")
+    
     username = args.username or creds.get("username")
+
     password = args.password or creds.get("password")
     token = args.token or creds.get("accessToken")
     api_url = resolve_api_url(args.site or creds.get("apiUrl"))
@@ -274,22 +297,25 @@ def main():
 
         # Automated Template Creation Logic
         if args.create and local_path.startswith(MODULES_DIR + "/") and local_path.endswith(".js"):
-            module_name = os.path.basename(local_path).replace(".js", "")
-            all_modules.append(module_name)
-            template_title = f"{TEMPLATES_BASE}/{module_name}"
+            module_id = os.path.basename(local_path).replace(".js", "")
+            translated_name = i18n_data.get(module_id, {}).get(target_lang, {}).get("_name", module_id)
+            all_modules.append((translated_name, module_id))
+            template_title = f"{TEMPLATES_BASE}/{translated_name}"
+
 
             
-            print(f"  Checking module template {template_title}...")
+            print(f"  Checking module template {template_title} ({module_id})...")
             try:
                 tpl_page = client.read_page(template_title)
                 if tpl_page["missing"]:
                     tpl_content = (
-                        f'<div class="hiruwiki" data-module="{module_name}"></div>\n'
+                        f'<div class="hiruwiki" data-module="{module_id}"></div>\n'
                         f'<includeonly>[[{CATEGORY_BASE}]]</includeonly>'
                     )
-                    tpl_summary = f"Create Hiruwiki module template for {module_name}"
+                    tpl_summary = f"Create Hiruwiki module template for {module_id} ({translated_name})"
                     client.save_page(template_title, tpl_content, tpl_summary)
                     print(f"    Successfully created template.")
+
                 else:
                     print(f"    Template already exists.")
             except Exception as e:
@@ -298,11 +324,12 @@ def main():
     # Create master template list
     if args.create and all_modules:
         print(f"Updating master template list at {TEMPLATES_BASE}...")
-        all_modules.sort()
+        all_modules.sort(key=lambda x: x[0])  # Sort by translated name
         list_content = "This is a list of all available Hiruwiki module templates:\n"
-        for m in all_modules:
-            list_content += f"* [[{TEMPLATES_BASE}/{m}|{m}]]\n"
+        for translated, mid in all_modules:
+            list_content += f"* [[{TEMPLATES_BASE}/{translated}|{translated}]]\n"
         list_content += f"\n<noinclude>[[{CATEGORY_BASE}]]</noinclude>"
+
         
         try:
             client.save_page(TEMPLATES_BASE, list_content, "Update master module list")
