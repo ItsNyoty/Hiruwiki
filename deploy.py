@@ -229,8 +229,10 @@ def main():
         sys.exit(1)
 
     git_hash = get_git_hash()
+    all_modules = []
     
     for local_path, remote_title in deploy_list:
+
         print(f"Processing {local_path} -> {remote_title}...")
         
         try:
@@ -273,7 +275,9 @@ def main():
         # Automated Template Creation Logic
         if args.create and local_path.startswith(MODULES_DIR + "/") and local_path.endswith(".js"):
             module_name = os.path.basename(local_path).replace(".js", "")
+            all_modules.append(module_name)
             template_title = f"{TEMPLATES_BASE}/{module_name}"
+
             
             print(f"  Checking module template {template_title}...")
             try:
@@ -291,5 +295,21 @@ def main():
             except Exception as e:
                 print(f"    Error processing module template: {e}")
 
+    # Create master template list
+    if args.create and all_modules:
+        print(f"Updating master template list at {TEMPLATES_BASE}...")
+        all_modules.sort()
+        list_content = "This is a list of all available Hiruwiki module templates:\n"
+        for m in all_modules:
+            list_content += f"* [[{TEMPLATES_BASE}/{m}|{m}]]\n"
+        list_content += f"\n<noinclude>[[{CATEGORY_BASE}]]</noinclude>"
+        
+        try:
+            client.save_page(TEMPLATES_BASE, list_content, "Update master module list")
+            print("  Successfully updated master list.")
+        except Exception as e:
+            print(f"  Error updating master list: {e}")
+
 if __name__ == "__main__":
+
     main()
