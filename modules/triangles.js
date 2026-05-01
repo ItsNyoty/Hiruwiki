@@ -86,7 +86,7 @@ var messages = /* I18N_START */ {
         "equilateral": "gelijkzijdig",
         "isosceles": "gelijkbenig",
         "measurements": "Afmetingen",
-        "obtuse": "stompnoekig",
+        "obtuse": "stomphoekig",
         "perimeter": "Omtrek",
         "reset": "↺ Reset",
         "right": "rechthoekig",

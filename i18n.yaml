@@ -1716,7 +1716,7 @@ triangles:
     equilateral: gelijkzijdig
     isosceles: gelijkbenig
     measurements: Afmetingen
-    obtuse: stompnoekig
+    obtuse: stomphoekig
     perimeter: Omtrek
     reset: ↺ Reset
     right: rechthoekig
