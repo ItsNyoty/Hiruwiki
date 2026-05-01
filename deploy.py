@@ -215,7 +215,7 @@ def main():
     parser.add_argument("-d", "--dry", action="store_true", help="Dry run: show diffs only")
     parser.add_argument("-c", "--create", action="store_true", help="Create pages if missing")
     parser.add_argument("-y", "--yes", action="store_true", help="Skip confirmation prompts")
-    parser.add_argument("--delete", action="store_true", help="Delete the specified files/templates from the wiki")
+    parser.add_argument("--delete", action="store_true", help="Delete the specified files from the wiki")
     parser.add_argument("files", nargs="*", help="Specific files to deploy/delete (default: all)")
 
 
@@ -339,22 +339,7 @@ def main():
             template_title = f"{TEMPLATES_BASE}/{translated_name}"
             id_template_title = f"{TEMPLATES_BASE}/{module_id}"
             
-            if args.delete:
-                targets = [template_title]
-                if id_template_title != template_title:
-                    targets.append(id_template_title)
-                
-                for target in targets:
-                    if args.dry:
-                        print(f"  Dry run: Would delete template {target}")
-                    else:
-                        try:
-                            client.delete_page(target, f"Hiruwiki cleanup: delete template for {module_id}")
-                            print(f"    Successfully deleted template {target}.")
-                        except Exception as e:
-                            print(f"    Error deleting template {target}: {e}")
-
-            elif args.create:
+            if args.create:
                 print(f"  Checking module template {template_title} ({module_id})...")
                 try:
                     tpl_page = client.read_page(template_title)
