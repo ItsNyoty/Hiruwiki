@@ -203,7 +203,8 @@ def main():
 
     deploy_list = []
     if not args.files or CORE_FILE in args.files:
-        deploy_list.append((CORE_FILE, GADGET_BASE + CORE_FILE))
+        deploy_list.append((CORE_FILE, "MediaWiki:" + CORE_FILE))
+
 
     if os.path.exists(MODULES_DIR):
         for f in sorted(os.listdir(MODULES_DIR)):

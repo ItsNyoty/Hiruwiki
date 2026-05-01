@@ -35,6 +35,10 @@ To deploy the gadget to a wiki:
     ```
     The script automatically maps local files to the correct `MediaWiki:` namespace pages.
 
+    > [!IMPORTANT]
+    > **Permissions**: To deploy JS/CSS files to the `MediaWiki:` namespace, your account must have **Interface Administrator** rights on the target wiki. If you get a permission error, visit `Special:UserRights` to grant yourself the `interface-admin` group (if you are an administrator).
+
+
 ## How to Contribute Translations
 1. Edit the strings in [i18n.yaml](i18n.yaml).
 2. Run the build script:
