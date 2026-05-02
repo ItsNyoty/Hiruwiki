@@ -323,3 +323,31 @@ qqq:
     tanDesc: Description of the tangent function shown in the proof panel. Uses HTML
       entities and formatting.
     tanFormula: Formula for tangent (opposite / adjacent)
+  integer-coordinates:
+    _name: Name of the Positive Coordinates module (integer grid variant)
+    btnChallenge: Button label to switch to challenge mode
+    btnCheck: Button label to check the player's answer
+    btnExplore: Button label to switch to explore mode
+    btnNext: Button label to proceed to the next challenge
+    feedbackCorrect: Feedback shown when the player places the star correctly
+    feedbackWrong: Feedback shown when the player places the star incorrectly
+    hintChallenge: Instruction text shown in challenge mode
+    hintExplore: Instruction text shown in explore mode
+    movePrompt: 'Prompt telling the player where to move the star. Uses HTML. Parameters:
+      {targetX} = target X coordinate, {targetY} = target Y coordinate.'
+    pointLabel: 'Label for the current point coordinates. Followed by coordinate values.'
+    titleExplore: Title shown in explore mode
+  positive-coordinates:
+    _name: Name of the Positive Coordinates module
+    btnChallenge: Button label to switch to challenge mode
+    btnCheck: Button label to check the player's answer
+    btnExplore: Button label to switch to explore mode
+    btnNext: Button label to proceed to the next challenge
+    feedbackCorrect: Feedback shown when the player places the star correctly
+    feedbackWrong: Feedback shown when the player places the star incorrectly
+    hintChallenge: Instruction text shown in challenge mode
+    hintExplore: Instruction text shown in explore mode
+    movePrompt: 'Prompt telling the player where to move the star. Uses HTML. Parameters:
+      {targetX} = target X coordinate, {targetY} = target Y coordinate.'
+    pointLabel: 'Label for the current point coordinates. Followed by coordinate values.'
+    titleExplore: Title shown in explore mode
