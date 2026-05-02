@@ -25,6 +25,7 @@
   min-height: 420px;
 }
 
+
 .hiruwiki[data-module="triangles"] .triangle-canvas-wrap {
   flex: 1 1 0;
   min-width: 0;
@@ -195,11 +196,11 @@
 }
 
 .hiruwiki[data-module="triangles"] .triangle-controls button:hover {
-  background: #9f3526;
+  background: var(--background-color-destructive-subtle, #fbe4e4);
 }
 
 .hiruwiki[data-module="triangles"] .triangle-controls button:active {
-  background: #612419;
+  background: var(--background-color-destructive-subtle, #fbe4e4);
 }
 
 /* ── SVG elements ── */
