@@ -2,16 +2,16 @@
   font-family: Montserrat, Arial, sans-serif;
   margin: 1em 0;
   --blue: var(--color-progressive, #1976d2);
-  --red: #f44336;
-  --green: #1bb934;
-  --orange: #ff9800;
-  --panel-bg: #f8f9fc;
-  --panel-border: #e2e6f0;
+  --red: var(--color-destructive, #f44336);
+  --green: var(--color-success, #1bb934);
+  --orange: var(--color-warning, #ff9800);
+  --panel-bg: var(--background-color-neutral-subtle, #f8f9fc);
+  --panel-border: var(--border-color-base, #e2e6f0);
   --canvas-bg: var(--background-color-base, #ffffff);
-  --text-main: #1a1d2e;
-  --text-muted: #7a8099;
+  --text-main: var(--color-base, #1a1d2e);
+  --text-muted: var(--color-subtle, #7a8099);
   --accent: var(--color-progressive, #1976d2);
---color-destructive: var(--color-destructive, #bf3c2c);
+  --color-destructive: var(--color-destructive, #bf3c2c);
 }
 
 /* ── Layout ── */
@@ -52,7 +52,7 @@
 }
 
 .hiruwiki[data-module="triangles"] .triangle-panel-header {
-  background: var(--text-main);
+  background: var(--background-color-neutral, #1a1d2e);
   color: var(--background-color-base, #fff);
   font-family: Montserrat, Arial, sans-serif;
   font-size: 13px;
@@ -131,13 +131,13 @@
 }
 
 .hiruwiki[data-module="triangles"] .triangle-badge-sides {
-  background: #e3f0fd;
-  color: var(--blue);
+  background: var(--background-color-progressive-subtle, #e3f0fd);
+  color: var(--color-progressive, #1976d2);
 }
 
 .hiruwiki[data-module="triangles"] .triangle-badge-angles {
-  background: #e6f9ea;
-  color: #158a25;
+  background: var(--background-color-success-subtle, #e6f9ea);
+  color: var(--color-success, #158a25);
 }
 
 /* ── Measurements table ── */
@@ -204,7 +204,7 @@
 
 /* ── SVG elements ── */
 .hiruwiki[data-module="triangles"] .triangle-grid line {
-  stroke: #e8ecf5;
+  stroke: var(--border-color-base, #e8ecf5);
 }
 
 .hiruwiki[data-module="triangles"] .triangle-fill {

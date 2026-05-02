@@ -9,7 +9,7 @@
 
 .hiruwiki[data-module="triangle-angles"] svg {
     border: 1px solid var(--border-color-base, #ccc);
-    background: #f9f9f9;
+    background: var(--background-color-base, #f9f9f9);
     cursor: crosshair;
     touch-action: none;
 }

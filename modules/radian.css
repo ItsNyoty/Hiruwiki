@@ -1,5 +1,5 @@
 /* radian.css */
-.radius { stroke:black; stroke-width:2; }
+.radius { stroke: var(--color-base, black); stroke-width:2; }
 .arc { fill:none; stroke-width:6; }
 
 .tickSmall { stroke:var(--color-placeholder, #aaa); stroke-width:1; }
@@ -9,11 +9,11 @@
 .tickLabel { font-size:12px; fill:var(--color-base, #333); }
 .radianTick { stroke-width:2; }
 
-.handle { fill:white; stroke:black; stroke-width:2; cursor:pointer; }
+.handle { fill: var(--background-color-base, white); stroke: var(--color-base, black); stroke-width:2; cursor:pointer; }
 
 .label { font-size:16px; font-weight:bold; dominant-baseline:middle; }
 
 .baseIndicator { stroke-width:6; }
-.baseDot { stroke:black; stroke-width:2; fill:white; }
+.baseDot { stroke: var(--color-base, black); stroke-width:2; fill: var(--background-color-base, white); }
 
-svg.hiruwiki-svg { background:var(--background-color-neutral-subtle, #fafafa); border:1px solid var(--border-color-base, #ccc); touch-action:none; }
+svg.hiruwiki-svg { background: var(--background-color-base, #fafafa); border:1px solid var(--border-color-base, #ccc); touch-action:none; }

@@ -193,9 +193,11 @@ var SIZE = 320;
 
         function drawBase() {
             ctx.clearRect( 0, 0, SIZE, SIZE );
+            ctx.fillStyle = hiruwiki.getThemeColor('background-color-base', '#ffffff');
+            ctx.fillRect( 0, 0, SIZE, SIZE );
 
             // Grid
-            ctx.strokeStyle = 'rgba(128,128,128,0.18)';
+            ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', 'rgba(128,128,128,0.18)');
             ctx.lineWidth = 0.5;
             var step = SIZE / 10;
             for ( var i = 0; i <= SIZE; i += step ) {
@@ -204,14 +206,14 @@ var SIZE = 320;
             }
 
             // Border
-            ctx.strokeStyle = 'rgba(128,128,128,0.4)';
+            ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', 'rgba(128,128,128,0.4)');
             ctx.lineWidth = 0.5;
             ctx.strokeRect( 0, 0, SIZE, SIZE );
 
             // Quarter-circle arc
             ctx.beginPath();
             ctx.arc( 0, SIZE, SIZE - 1, -Math.PI / 2, 0 );
-            ctx.strokeStyle = 'rgba(60,60,60,0.6)';
+            ctx.strokeStyle = hiruwiki.getThemeColor('color-base', 'rgba(60,60,60,0.6)');
             ctx.lineWidth = 1.5;
             ctx.stroke();
         }
@@ -224,10 +226,10 @@ var SIZE = 320;
                 var cx = Math.round( px * ( SIZE - 1 ) );
                 var cy = SIZE - 1 - Math.round( py * ( SIZE - 1 ) );
                 if ( dist <= 1 ) {
-                    ctx.fillStyle = 'rgba(208,85,56,0.7)';
+                    ctx.fillStyle = hiruwiki.getThemeColor('color-destructive', 'rgba(208,85,56,0.7)');
                     inside++;
                 } else {
-                    ctx.fillStyle = 'rgba(24,95,165,0.7)';
+                    ctx.fillStyle = hiruwiki.getThemeColor('color-progressive', 'rgba(24,95,165,0.7)');
                     outside++;
                 }
                 ctx.beginPath();

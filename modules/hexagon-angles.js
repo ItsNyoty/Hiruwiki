@@ -385,11 +385,11 @@ var SVG_W  = 580, SVG_H = 520;
         start=end;
       }
       var c=document.createElementNS(SVG_NS,'circle');
-      c.setAttribute('r','12'); c.setAttribute('fill','white'); svgPie.appendChild(c);
+      c.setAttribute('r','12'); c.setAttribute('fill', hiruwiki.getThemeColor('background-color-base', 'white')); svgPie.appendChild(c);
       var t=document.createElementNS(SVG_NS,'text');
       t.setAttribute('text-anchor','middle'); t.setAttribute('dominant-baseline','central');
       t.setAttribute('font-family','Arial,sans-serif'); t.setAttribute('font-size','7');
-      t.setAttribute('font-weight','bold'); t.setAttribute('fill',hiruwiki.getThemeColor('color-subtle', '#666');
+      t.setAttribute('font-weight','bold'); t.setAttribute('fill',hiruwiki.getThemeColor('color-subtle', '#666'));
       t.textContent='360\u00b0'; svgPie.appendChild(t);
     }
 

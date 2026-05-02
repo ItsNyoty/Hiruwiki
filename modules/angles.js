@@ -194,7 +194,7 @@ function initAngleApplet(container){
 
     function drawLabel(x,y,text,color){
 
-        ctx.fillStyle="white";
+        ctx.fillStyle = hiruwiki.getThemeColor('background-color-base', 'white');
 
         ctx.beginPath();
         ctx.arc(x,y,16,0,Math.PI*2);
@@ -237,8 +237,8 @@ function initAngleApplet(container){
 
         drawGrid();
 
-        drawRay(0,"black",3);
-        drawRay(angle,"black",3);
+        drawRay(0, hiruwiki.getThemeColor('color-base', 'black'), 3);
+        drawRay(angle, hiruwiki.getThemeColor('color-base', 'black'), 3);
 
         drawSector(0,angle,"rgba(0,150,255,0.25)");
 

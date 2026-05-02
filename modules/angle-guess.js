@@ -177,7 +177,7 @@ function t( key, vars ) {
   // ── Drawing ───────────────────────────────────────────────────
   function drawGrid() {
     ctx.save();
-    ctx.strokeStyle = 'rgba(0,0,0,0.06)';
+    ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', 'rgba(0,0,0,0.06)');
     ctx.lineWidth = 1;
     for ( var x = 20; x < canvas.width;  x += 20 ) {
       ctx.beginPath(); ctx.moveTo( x, 0 ); ctx.lineTo( x, canvas.height ); ctx.stroke();

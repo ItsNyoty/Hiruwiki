@@ -81,7 +81,10 @@ function fromCanvas(x,y){
 
 function drawGrid(){
 
- ctx.clearRect(0,0,size,size);
+  ctx.clearRect(0,0,size,size);
+  ctx.fillStyle = hiruwiki.getThemeColor('background-color-base', '#ffffff');
+  ctx.fillRect(0,0,size,size);
+
 
  for(let i=-range;i<=range;i++){
 
@@ -129,7 +132,7 @@ function drawCoordinateLabel(text,x,y,alignRight,above){
  const tx = alignRight ? x-w-8 : x+8;
  const ty = above ? y-h-6 : y+6;
 
- ctx.fillStyle="white";
+  ctx.fillStyle = hiruwiki.getThemeColor('background-color-base', 'white');
  ctx.fillRect(tx-padding,ty-padding,w,h);
 
  ctx.strokeStyle=hiruwiki.getThemeColor('border-color-base', '#ccc');
@@ -220,7 +223,7 @@ function drawLine(){
  const p2=points[1];
 
  ctx.lineWidth=2;
- ctx.strokeStyle="black";
+  ctx.strokeStyle = hiruwiki.getThemeColor('color-base', 'black');
 
  if(p1.x===p2.x){
 
