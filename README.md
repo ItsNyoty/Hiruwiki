@@ -72,7 +72,7 @@ To deploy the gadget to a mediawiki:
    This will update the `/* I18N_START */` blocks in the corresponding `.js` files in the `modules/` folder.
 
 ## Credits
-- **Original Development**: Euskal Wikilarien Kultura Elkartea.
+- **Original Development**: [Theklan](https://eu.wikipedia.org/wiki/Lankide:Theklan), Euskal Wikilarien Kultura Elkartea (Northwestern Europe Hackathon 2026).
 - **Global Port & Localization Engine**: [ItsNyoty](https://github.com/ItsNyoty) (Wikimania Hackathon 2026).
 
 ---
