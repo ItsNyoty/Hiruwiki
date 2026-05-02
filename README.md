@@ -47,6 +47,16 @@ To deploy the gadget to a mediawiki:
     ```
     The script automatically maps local files to the correct `MediaWiki:` namespace pages on MediaWiki.org.
 
+3.  **Deploy Templates**:
+    ```bash
+    # Dry run for templates
+    python deploy_templates.py --site mediawiki --dry
+
+    # Deploy all templates (will prompt for confirmation)
+    python deploy_templates.py --site mediawiki --create
+    ```
+    This script maps files in `templates/*.wiki` to `Template:Hiruwiki/*`.
+
 
     > [!IMPORTANT]
     > **Permissions**: To deploy JS/CSS files to the `MediaWiki:` namespace, your account must have **Interface Administrator** rights on the target wiki. If you get a permission error, visit `Special:UserRights` to grant yourself the `interface-admin` group (if you are an administrator).
