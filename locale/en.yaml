@@ -335,3 +335,29 @@ en:
     tanDesc: The orange line is drawn at x&nbsp;=&nbsp;1, tangent to the circle. Its
       height is tan&nbsp;&theta;, since tan&nbsp;&theta;&nbsp;=&nbsp;opposite&nbsp;&divide;&nbsp;adjacent&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
     tanFormula: opposite / adjacent
+  integer-coordinates:
+    _name: Positive Coordinates
+    btnChallenge: 🎯 Challenge
+    btnCheck: Check ✓
+    btnExplore: 🔭 Explore
+    btnNext: Next →
+    feedbackCorrect: ✓ Correct!
+    feedbackWrong: ✗ Incorrect. The faint star was the correct answer.
+    hintChallenge: Move ★ to the proposed coordinates and click Check
+    hintExplore: Move ★ by clicking on it — it snaps to integers
+    movePrompt: Move ★ to:<br>({targetX}, {targetY})
+    pointLabel: 'Point:'
+    titleExplore: Explore Coordinate System
+  positive-coordinates:
+    _name: Positive Coordinates
+    btnChallenge: 🎯 Challenge
+    btnCheck: Check ✓
+    btnExplore: 🔭 Explore
+    btnNext: Next →
+    feedbackCorrect: ✓ Correct!
+    feedbackWrong: ✗ Incorrect. The faint star was the correct answer.
+    hintChallenge: Move ★ to the proposed coordinates and click Check
+    hintExplore: Move ★ by clicking on it — it snaps to integers
+    movePrompt: Move ★ to:<br>({targetX}, {targetY})
+    pointLabel: 'Point:'
+    titleExplore: Explore Coordinate System

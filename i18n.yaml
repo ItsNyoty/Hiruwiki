@@ -744,7 +744,7 @@ incentre:
     touchCA: Raakpunt CA
     triangle: Driehoek
 integer-coordinates:
-  en: &id001
+  en: 
     _name: Positive Coordinates
     btnChallenge: 🎯 Challenge
     btnCheck: Check ✓
@@ -757,7 +757,7 @@ integer-coordinates:
     movePrompt: Move ★ to:<br>({targetX}, {targetY})
     pointLabel: 'Point:'
     titleExplore: Explore Coordinate System
-  es: &id002
+  es:
     _name: Coordenadas positivas
     btnChallenge: 🎯 Reto
     btnCheck: Comprobar ✓
@@ -770,7 +770,7 @@ integer-coordinates:
     movePrompt: Mueve ★ a:<br>({targetX}, {targetY})
     pointLabel: 'Punto:'
     titleExplore: Explorar el sistema de coordenadas
-  eu: &id003
+  eu:
     _name: Koordenatu positiboak
     btnChallenge: 🎯 Erronka
     btnCheck: Zuzendu ✓
@@ -785,7 +785,7 @@ integer-coordinates:
     movePrompt: Mugitu ★ hona:<br>({targetX}, {targetY})
     pointLabel: 'Puntua:'
     titleExplore: Esploratu koordenatuen sistema
-  fr: &id004
+  fr:
     _name: Coordonnées positives
     btnChallenge: 🎯 Défi
     btnCheck: Vérifier ✓
@@ -798,7 +798,7 @@ integer-coordinates:
     movePrompt: Déplacez ★ vers :<br>({targetX}, {targetY})
     pointLabel: 'Point :'
     titleExplore: Explorer le système de coordonnées
-  nl: &id005
+  nl:
     _name: Positieve coördinaten
     btnChallenge: 🎯 Uitdaging
     btnCheck: Controleren ✓

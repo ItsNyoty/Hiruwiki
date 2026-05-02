@@ -339,3 +339,29 @@ nl:
     tanDesc: De oranje lijn is getekend op x&nbsp;=&nbsp;1, rakend aan de cirkel.
       De hoogte is tan&nbsp;&theta;, aangezien tan&nbsp;&theta;&nbsp;=&nbsp;overstaande&nbsp;&divide;&nbsp;aanliggende&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
     tanFormula: overstaande / aanliggende
+  integer-coordinates:
+    _name: Positieve coördinaten
+    btnChallenge: 🎯 Uitdaging
+    btnCheck: Controleren ✓
+    btnExplore: 🔭 Verkennen
+    btnNext: Volgende →
+    feedbackCorrect: ✓ Klopt!
+    feedbackWrong: ✗ Onjuist. De zwakke ster was het juiste antwoord.
+    hintChallenge: Verplaats ★ naar de voorgestelde coördinaten en klik op Controleren
+    hintExplore: Verplaats ★ door erop te klikken — springt naar gehele getallen
+    movePrompt: Verplaats ★ naar:<br>({targetX}, {targetY})
+    pointLabel: 'Punt:'
+    titleExplore: Verken het coördinatenstelsel
+  positive-coordinates:
+    _name: Positieve coördinaten
+    btnChallenge: 🎯 Uitdaging
+    btnCheck: Controleren ✓
+    btnExplore: 🔭 Verkennen
+    btnNext: Volgende →
+    feedbackCorrect: ✓ Klopt!
+    feedbackWrong: ✗ Onjuist. De zwakke ster was het juiste antwoord.
+    hintChallenge: Verplaats ★ naar de voorgestelde coördinaten en klik op Controleren
+    hintExplore: Verplaats ★ door erop te klikken — springt naar gehele getallen
+    movePrompt: Verplaats ★ naar:<br>({targetX}, {targetY})
+    pointLabel: 'Punt:'
+    titleExplore: Verken het coördinatenstelsel

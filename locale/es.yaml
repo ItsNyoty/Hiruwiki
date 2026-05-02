@@ -339,3 +339,29 @@ es:
     tanDesc: La línea naranja se dibuja en x&nbsp;=&nbsp;1, tangente al círculo. Su
       altura es tan&nbsp;&theta;, ya que tan&nbsp;&theta;&nbsp;=&nbsp;opuesto&nbsp;&divide;&nbsp;adyacente&nbsp;=&nbsp;sen&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
     tanFormula: opuesto / adyacente
+  integer-coordinates:
+    _name: Coordenadas positivas
+    btnChallenge: 🎯 Reto
+    btnCheck: Comprobar ✓
+    btnExplore: 🔭 Explorar
+    btnNext: Siguiente →
+    feedbackCorrect: ✓ ¡Correcto!
+    feedbackWrong: ✗ Incorrecto. La estrella tenue era la respuesta correcta.
+    hintChallenge: Mueve ★ a las coordenadas propuestas y pulsa Comprobar
+    hintExplore: Mueve ★ haciendo clic en él — se ajusta a enteros
+    movePrompt: Mueve ★ a:<br>({targetX}, {targetY})
+    pointLabel: 'Punto:'
+    titleExplore: Explorar el sistema de coordenadas
+  positive-coordinates:
+    _name: Coordenadas positivas
+    btnChallenge: 🎯 Reto
+    btnCheck: Comprobar ✓
+    btnExplore: 🔭 Explorar
+    btnNext: Siguiente →
+    feedbackCorrect: ✓ ¡Correcto!
+    feedbackWrong: ✗ Incorrecto. La estrella tenue era la respuesta correcta.
+    hintChallenge: Mueve ★ a las coordenadas propuestas y pulsa Comprobar
+    hintExplore: Mueve ★ haciendo clic en él — se ajusta a enteros
+    movePrompt: Mueve ★ a:<br>({targetX}, {targetY})
+    pointLabel: 'Punto:'
+    titleExplore: Explorar el sistema de coordenadas

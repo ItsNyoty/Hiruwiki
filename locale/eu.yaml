@@ -340,3 +340,33 @@ eu:
       Bere altuera tan&nbsp;&theta; da, tan&nbsp;=&nbsp;aurkakoa&nbsp;&divide;&nbsp;auzokidea&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;
       baita.
     tanFormula: aurkakoa / auzokidea
+  integer-coordinates:
+    _name: Koordenatu positiboak
+    btnChallenge: 🎯 Erronka
+    btnCheck: Zuzendu ✓
+    btnExplore: 🔭 Esploratu
+    btnNext: Hurrengoa →
+    feedbackCorrect: ✓ Zuzen!
+    feedbackWrong: ✗ Ez da zuzena. Izar ahula zen erantzun zuzena.
+    hintChallenge: Mugi ezazu ★ proposatutako koordenatuetara eta klik egin Zuzendu
+      botoian
+    hintExplore: Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen
+      ditu
+    movePrompt: Mugitu ★ hona:<br>({targetX}, {targetY})
+    pointLabel: 'Puntua:'
+    titleExplore: Esploratu koordenatuen sistema
+  positive-coordinates:
+    _name: Koordenatu positiboak
+    btnChallenge: 🎯 Erronka
+    btnCheck: Zuzendu ✓
+    btnExplore: 🔭 Esploratu
+    btnNext: Hurrengoa →
+    feedbackCorrect: ✓ Zuzen!
+    feedbackWrong: ✗ Ez da zuzena. Izar ahula zen erantzun zuzena.
+    hintChallenge: Mugi ezazu ★ proposatutako koordenatuetara eta klik egin Zuzendu
+      botoian
+    hintExplore: Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen
+      ditu
+    movePrompt: Mugitu ★ hona:<br>({targetX}, {targetY})
+    pointLabel: 'Puntua:'
+    titleExplore: Esploratu koordenatuen sistema

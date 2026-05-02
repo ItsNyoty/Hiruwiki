@@ -341,3 +341,29 @@ fr:
     tanDesc: La ligne orange est tracée à x&nbsp;=&nbsp;1, tangente au cercle. Sa
       hauteur est tan&nbsp;&theta;, car tan&nbsp;&theta;&nbsp;=&nbsp;opposé&nbsp;&divide;&nbsp;adjacent&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
     tanFormula: opposé / adjacent
+  integer-coordinates:
+    _name: Coordonnées positives
+    btnChallenge: 🎯 Défi
+    btnCheck: Vérifier ✓
+    btnExplore: 🔭 Explorer
+    btnNext: Suivant →
+    feedbackCorrect: ✓ Correct !
+    feedbackWrong: ✗ Incorrect. L'étoile pâle était la bonne réponse.
+    hintChallenge: Déplacez ★ vers les coordonnées proposées et cliquez sur Vérifier
+    hintExplore: Déplacez ★ en cliquant dessus — il s'accroche aux entiers
+    movePrompt: Déplacez ★ vers :<br>({targetX}, {targetY})
+    pointLabel: 'Point :'
+    titleExplore: Explorer le système de coordonnées
+  positive-coordinates:
+    _name: Coordonnées positives
+    btnChallenge: 🎯 Défi
+    btnCheck: Vérifier ✓
+    btnExplore: 🔭 Explorer
+    btnNext: Suivant →
+    feedbackCorrect: ✓ Correct !
+    feedbackWrong: ✗ Incorrect. L'étoile pâle était la bonne réponse.
+    hintChallenge: Déplacez ★ vers les coordonnées proposées et cliquez sur Vérifier
+    hintExplore: Déplacez ★ en cliquant dessus — il s'accroche aux entiers
+    movePrompt: Déplacez ★ vers :<br>({targetX}, {targetY})
+    pointLabel: 'Point :'
+    titleExplore: Explorer le système de coordonnées

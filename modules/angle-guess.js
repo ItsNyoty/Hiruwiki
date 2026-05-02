@@ -74,7 +74,7 @@ var messages = /* I18N_START */ {
         "roundOver": "Ronde afgelopen",
         "target": "Doel:",
         "tryAgain": "Probeer opnieuw",
-        "yourGuess": "Jouw gok:"
+        "yourGuess": "Uw gok:"
     }
 } /* I18N_END */;
 function t( key, vars ) {
