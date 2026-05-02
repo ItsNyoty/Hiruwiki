@@ -4,8 +4,8 @@
     display: flex;
     gap: 0;
     min-height: 520px;
-    background: #fff;
-    border: 1px solid #a2a9b1;
+    background: var(--background-color-base, #fff);
+    border: 1px solid var(--color-placeholder, #a2a9b1);
     border-radius: 4px;
     overflow: hidden;
     font-family: Montserrat, Arial, sans-serif;
@@ -28,18 +28,18 @@
 .hwt-panel {
     width: 200px;
     flex-shrink: 0;
-    border-left: 1px solid #a2a9b1;
+    border-left: 1px solid var(--color-placeholder, #a2a9b1);
     display: flex;
     flex-direction: column;
     padding: 14px 12px;
     gap: 10px;
-    background: #f8f9fa;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
 }
 
 .hwt-panel-title {
     font-size: 12pt;
     font-weight: bold;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     letter-spacing: 0.05em;
     text-transform: uppercase;
 }
@@ -52,10 +52,10 @@
 
 .hwt-tbtn {
     padding: 7px 10px;
-    border: 1px solid #a2a9b1;
+    border: 1px solid var(--color-placeholder, #a2a9b1);
     border-radius: 2px;
-    background: #fff;
-    color: #202122;
+    background: var(--background-color-base, #fff);
+    color: var(--color-base, #202122);
     font-size: 13pt;
     cursor: pointer;
     text-align: left;
@@ -65,13 +65,13 @@
 
 .hwt-tbtn:hover {
     background: #eaf3ff;
-    border-color: #3366cc;
+    border-color: var(--color-progressive, #3366cc);
 }
 
 .hwt-tbtn.hwt-active {
-    background: #3366cc;
+    background: var(--color-progressive, #3366cc);
     border-color: #2a55a5;
-    color: #fff;
+    color: var(--background-color-base, #fff);
     font-weight: bold;
 }
 
@@ -83,7 +83,7 @@
 
 .hwt-ctrl-label {
     font-size: 12pt;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,22 +91,22 @@
 
 .hwt-ctrl-val {
     font-weight: bold;
-    color: #202122;
+    color: var(--color-base, #202122);
 }
 
 .hwt-ctrl-block input[type="range"] {
     width: 100%;
-    accent-color: #3366cc;
+    accent-color: var(--color-progressive, #3366cc);
     cursor: pointer;
 }
 
 .hwt-divider {
     height: 1px;
-    background: #a2a9b1;
+    background: var(--color-placeholder, #a2a9b1);
 }
 
 .hwt-hint {
     font-size:11pt;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     line-height: 1.5;
 }

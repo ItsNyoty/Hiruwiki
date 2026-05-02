@@ -318,7 +318,7 @@ document.querySelectorAll( '.hiruwiki[data-module="positive-coordinates"]' ).for
       ctx.restore();
 
       ctx.save();
-      ctx.font = '11px Montserrat, Arial, sans-serif'; ctx.fillStyle = '#555';
+      ctx.font = '11px Montserrat, Arial, sans-serif'; ctx.fillStyle = hiruwiki.getThemeColor('color-subtle', '#555');
       for ( i = 1; i <= X_MAX; i++ ) {
         ctx.textAlign = 'center';
         ctx.fillText( i, PAD_LEFT + i * CELL, CH - PAD_BOTTOM + 14 );

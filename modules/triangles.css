@@ -1,17 +1,17 @@
 .hiruwiki[data-module="triangles"] {
   font-family: Montserrat, Arial, sans-serif;
   margin: 1em 0;
-  --blue: #1976d2;
+  --blue: var(--color-progressive, #1976d2);
   --red: #f44336;
   --green: #1bb934;
   --orange: #ff9800;
   --panel-bg: #f8f9fc;
   --panel-border: #e2e6f0;
-  --canvas-bg: #ffffff;
+  --canvas-bg: var(--background-color-base, #ffffff);
   --text-main: #1a1d2e;
   --text-muted: #7a8099;
-  --accent: #1976d2;
---color-destructive: #bf3c2c;
+  --accent: var(--color-progressive, #1976d2);
+--color-destructive: var(--color-destructive, #bf3c2c);
 }
 
 /* ── Layout ── */
@@ -53,7 +53,7 @@
 
 .hiruwiki[data-module="triangles"] .triangle-panel-header {
   background: var(--text-main);
-  color: #fff;
+  color: var(--background-color-base, #fff);
   font-family: Montserrat, Arial, sans-serif;
   font-size: 13px;
   font-weight: 800;
@@ -109,12 +109,12 @@
 }
 
 /* ── Side dot colours ── */
-.hiruwiki[data-module="triangles"] .triangle-dot--a { background: #1976d2; }
+.hiruwiki[data-module="triangles"] .triangle-dot--a { background: var(--color-progressive, #1976d2); }
 .hiruwiki[data-module="triangles"] .triangle-dot--b { background: #9c27b0; }
 .hiruwiki[data-module="triangles"] .triangle-dot--c { background: #e65100; }
 
 /* ── Side label colours (SVG) ── */
-.hiruwiki[data-module="triangles"] .triangle-side-label--a { fill: #1976d2; }
+.hiruwiki[data-module="triangles"] .triangle-side-label--a { fill: var(--color-progressive, #1976d2); }
 .hiruwiki[data-module="triangles"] .triangle-side-label--b { fill: #9c27b0; }
 .hiruwiki[data-module="triangles"] .triangle-side-label--c { fill: #e65100; }
 
@@ -182,7 +182,7 @@
 .hiruwiki[data-module="triangles"] .triangle-controls button {
   width: 100%;
   background: var(--color-destructive);
-  color: #fff;
+  color: var(--background-color-base, #fff);
   border: none;
   padding: 9px 12px;
   border-radius: 5px;
@@ -218,7 +218,7 @@
   stroke-linecap: round;
 }
 
-.hiruwiki[data-module="triangles"] .triangle-shape--a { stroke: #1976d2; }
+.hiruwiki[data-module="triangles"] .triangle-shape--a { stroke: var(--color-progressive, #1976d2); }
 .hiruwiki[data-module="triangles"] .triangle-shape--b { stroke: #9c27b0; }
 .hiruwiki[data-module="triangles"] .triangle-shape--c { stroke: #e65100; }
 

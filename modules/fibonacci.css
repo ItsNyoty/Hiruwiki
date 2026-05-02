@@ -7,7 +7,7 @@
 .hw-fib {
     font-family: sans-serif;
     font-size: 14px;
-    color: #202122;
+    color: var(--color-base, #202122);
     padding: 0.75em 0;
     max-width: 680px;
 }
@@ -17,7 +17,7 @@
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 0.06em;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     margin-bottom: 10px;
     text-transform: uppercase;
 }
@@ -34,24 +34,24 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1.5px solid #c8ccd1;
-    background: #ffffff;
+    border: 1.5px solid var(--border-color-base, #c8ccd1);
+    background: var(--background-color-base, #ffffff);
     font-size: 20px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #202122;
+    color: var(--color-base, #202122);
     flex-shrink: 0;
     transition: background 0.15s;
 }
 
-.hw-fib-btn:hover { background: #f8f9fa; }
+.hw-fib-btn:hover { background: var(--background-color-neutral-subtle, #f8f9fa); }
 .hw-fib-btn:disabled { opacity: 0.3; cursor: default; }
 
 .hw-fib-step-label {
     font-size: 13px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     flex: 1;
     text-align: center;
 }
@@ -80,7 +80,7 @@
 
 .hw-fib-seq-sep {
     font-size: 13px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
 }
 
 /* ── Addition block ─────────────────────────────────────────────────────────── */
@@ -90,7 +90,7 @@
     justify-content: center;
     gap: 10px;
     padding: 20px;
-    background: #f8f9fa;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
     border: 1px solid #eaecf0;
     border-radius: 8px;
     flex-wrap: wrap;
@@ -109,7 +109,7 @@
 
 .hw-fib-op {
     font-size: 32px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     font-weight: 300;
 }
 
@@ -122,7 +122,7 @@
 }
 
 .hw-fib-rcard {
-    background: #f8f9fa;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
     border: 2px solid #eaecf0;
     border-radius: 4px;
     padding: 14px 16px;
@@ -134,7 +134,7 @@
     font-weight: bold;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     margin-bottom: 8px;
 }
 
@@ -147,7 +147,7 @@
 
 .hw-fib-rcard-sub {
     font-size: 12px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     margin-top: 6px;
 }
 
@@ -172,7 +172,7 @@
 
 .hw-fib-ratio-op {
     font-size: 18px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
 }
 
 .hw-fib-ratio-result {
@@ -196,18 +196,18 @@
 
 /* ── Insight ────────────────────────────────────────────────────────────────── */
 .hw-fib-insight {
-    background: #f8f9fa;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
     border: 1px solid #eaecf0;
     border-radius: 4px;
     padding: 10px 14px;
     font-size: 13px;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     line-height: 1.7;
     min-height: 48px;
 }
 
 .hw-fib-insight strong {
-    color: #202122;
+    color: var(--color-base, #202122);
     font-weight: bold;
 }
 

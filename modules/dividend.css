@@ -7,7 +7,7 @@
 .hw-div {
     font-family: sans-serif;
     font-size: 14px;
-    color: #202122;
+    color: var(--color-base, #202122);
     padding: 0.75em 0;
     max-width: 720px;
 }
@@ -17,7 +17,7 @@
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 0.06em;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     margin-bottom: 8px;
     text-transform: uppercase;
 }
@@ -33,7 +33,7 @@
 .hw-div-ctrl-lbl {
     font-size: 12px;
     font-weight: bold;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     margin-bottom: 5px;
 }
 
@@ -54,7 +54,7 @@
     min-width: 44px;
     text-align: right;
     font-variant-numeric: tabular-nums;
-    color: #202122;
+    color: var(--color-base, #202122);
 }
 
 .hw-div-badge-divisor {
@@ -68,7 +68,7 @@
     gap: 8px;
     flex-wrap: wrap;
     padding: 14px 18px;
-    background: #f8f9fa;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
     border: 1px solid #eaecf0;
     border-radius: 4px;
     margin-bottom: 1.25em;
@@ -84,7 +84,7 @@
     font-size: 26px;
     font-weight: bold;
     font-variant-numeric: tabular-nums;
-    color: #202122;
+    color: var(--color-base, #202122);
     transition: color 0.25s;
 }
 
@@ -98,14 +98,14 @@
 
 .hw-div-eq-lbl {
     font-size: 11px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     margin-top: 2px;
     text-align: center;
 }
 
 .hw-div-eq-op {
     font-size: 20px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     padding: 0 2px;
     transition: opacity 0.25s;
 }
@@ -131,7 +131,7 @@
 .hw-div-gap {
     width: 3px;
     height: 100%;
-    background: #ffffff;
+    background: var(--background-color-base, #ffffff);
     flex-shrink: 0;
 }
 
@@ -152,7 +152,7 @@
 .hw-div-bar-lbl {
     position: absolute;
     font-size: 11px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     white-space: nowrap;
     transform: translateX(-50%);
     transition: left 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -161,7 +161,7 @@
 /* ── Repeated addition ──────────────────────────────────────────────────────── */
 .hw-div-repadd {
     font-size: 13px;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     line-height: 2;
     min-height: 28px;
     margin-bottom: 1.25em;
@@ -185,18 +185,18 @@
 
 /* ── Insight box ────────────────────────────────────────────────────────────── */
 .hw-div-insight {
-    background: #f8f9fa;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
     border: 1px solid #eaecf0;
     border-radius: 4px;
     padding: 10px 14px;
     font-size: 13px;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     line-height: 1.7;
     min-height: 48px;
 }
 
 .hw-div-insight strong {
-    color: #202122;
+    color: var(--color-base, #202122);
     font-weight: bold;
 }
 

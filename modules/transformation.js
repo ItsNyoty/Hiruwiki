@@ -184,7 +184,7 @@ function init( el ) {
         /* ── drawing helpers ── */
         function drawGrid() {
             ctx.clearRect( 0, 0, W, H );
-            ctx.fillStyle = '#fff';
+            ctx.fillStyle = hiruwiki.getThemeColor('background-color-base', '#fff');
             ctx.fillRect( 0, 0, W, H );
 
             ctx.strokeStyle = 'rgba(0,0,0,0.07)';

@@ -59,7 +59,7 @@ container.innerHTML = `
 
 <defs>
 <pattern id="${gridId}" width="20" height="20" patternUnits="userSpaceOnUse">
-<path d="M 20 0 L 0 0 0 20" fill="none" stroke="#ccc" stroke-width="0.5"/>
+<path d="M 20 0 L 0 0 0 20" fill="none" stroke=hiruwiki.getThemeColor('border-color-base', '#ccc') stroke-width="0.5"/>
 </pattern>
 </defs>
 

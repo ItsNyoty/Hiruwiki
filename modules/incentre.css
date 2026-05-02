@@ -7,7 +7,7 @@
 	font-family: sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
-	color: #1A1A18;
+	color: var(--color-base, #1A1A18);
 	margin: 1em 0;
 }
 
@@ -18,9 +18,9 @@
 	height: 440px;
 	cursor: crosshair;
 	touch-action: none;
-	border: 0.5px solid #D3D1C7;
+	border: 0.5px solid var(--border-color-base, #D3D1C7);
 	border-radius: 4px;
-	background: #ffffff;
+	background: var(--background-color-base, #ffffff);
 	box-sizing: border-box;
 }
 
@@ -34,7 +34,7 @@
 
 /* Individual card */
 .hw-card {
-	background: #F1EFE8;
+	background: var(--background-color-neutral-subtle, #F1EFE8);
 	border-radius: 6px;
 	padding: 10px 14px;
 	box-sizing: border-box;
@@ -61,7 +61,7 @@
 
 .hw-badge-c {
 	background: rgba(15, 110, 86, 0.14);
-	color: #0F6E56;
+	color: var(--color-success, #0F6E56);
 }
 
 /* Stat rows */
@@ -70,16 +70,16 @@
 	justify-content: space-between;
 	align-items: baseline;
 	font-size: 13px;
-	color: #1A1A18;
+	color: var(--color-base, #1A1A18);
 	margin-bottom: 2px;
 }
 
 .hw-row span:first-child {
-	color: #3d3d3a;
+	color: var(--color-base, #3d3d3a);
 }
 
 .hw-row span:last-child {
-	color: #5F5E5A;
+	color: var(--color-subtle, #5F5E5A);
 	font-size: 12px;
 	min-width: 70px;
 	text-align: right;
@@ -88,7 +88,7 @@
 /* Hint line below the stats */
 .hw-hint {
 	font-size: 11px;
-	color: #888780;
+	color: var(--color-placeholder, #888780);
 	text-align: center;
 	margin: 6px 0 0;
 }
@@ -106,7 +106,7 @@ html.skin-theme-clientpref-night .hw-canvas,
 html.client-dark-mode .hw-canvas,
 .mw-dark-mode .hw-canvas {
 	background: #1e1e1c;
-	border-color: #444441;
+	border-color: var(--border-color-base, #444441);
 }
 
 html.skin-theme-clientpref-night .hw-card,
@@ -119,14 +119,14 @@ html.skin-theme-clientpref-night .hw-badge-t,
 html.client-dark-mode .hw-badge-t,
 .mw-dark-mode .hw-badge-t {
 	background: rgba(175, 169, 236, 0.18);
-	color: #AFA9EC;
+	color: var(--color-progressive, #AFA9EC);
 }
 
 html.skin-theme-clientpref-night .hw-badge-c,
 html.client-dark-mode .hw-badge-c,
 .mw-dark-mode .hw-badge-c {
 	background: rgba(93, 202, 165, 0.18);
-	color: #5DCAA5;
+	color: var(--color-success, #5DCAA5);
 }
 
 html.skin-theme-clientpref-night .hw-row,
@@ -138,19 +138,19 @@ html.client-dark-mode .hw-row,
 html.skin-theme-clientpref-night .hw-row span:first-child,
 html.client-dark-mode .hw-row span:first-child,
 .mw-dark-mode .hw-row span:first-child {
-	color: #B4B2A9;
+	color: var(--color-placeholder, #B4B2A9);
 }
 
 html.skin-theme-clientpref-night .hw-row span:last-child,
 html.client-dark-mode .hw-row span:last-child,
 .mw-dark-mode .hw-row span:last-child {
-	color: #888780;
+	color: var(--color-placeholder, #888780);
 }
 
 html.skin-theme-clientpref-night .hw-hint,
 html.client-dark-mode .hw-hint,
 .mw-dark-mode .hw-hint {
-	color: #5F5E5A;
+	color: var(--color-subtle, #5F5E5A);
 }
 
 

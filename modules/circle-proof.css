@@ -1,18 +1,18 @@
 .hiruwiki-circle-proof {
     display: flex;
     min-height: 560px;
-    border: 1px solid #a2a9b1;
+    border: 1px solid var(--color-placeholder, #a2a9b1);
     border-radius: 4px;
     overflow: hidden;
     font-family: sans-serif;
-    background: #fff;
+    background: var(--background-color-base, #fff);
 }
 
 .hiruwiki-cp-canvas-panel {
     flex: 1;
     min-width: 0;
-    background: #f8f9fa;
-    border-right: 1px solid #a2a9b1;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
+    border-right: 1px solid var(--color-placeholder, #a2a9b1);
     position: relative;
 }
 
@@ -29,14 +29,14 @@
     display: flex;
     flex-direction: column;
     gap: 14px;
-    background: #fff;
+    background: var(--background-color-base, #fff);
     box-sizing: border-box;
 }
 
 .hiruwiki-cp-section-title {
     font-size: 11px;
     font-weight: bold;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     text-transform: uppercase;
     letter-spacing: 0.07em;
 }
@@ -45,13 +45,13 @@
     display: flex;
     justify-content: space-between;
     font-size: 13px;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     margin-bottom: 5px;
 }
 
 .hiruwiki-cp-slider-val {
     font-weight: bold;
-    color: #202122;
+    color: var(--color-base, #202122);
 }
 
 .hiruwiki-cp-slider {
@@ -60,26 +60,26 @@
 
 .hiruwiki-cp-divider {
     border: none;
-    border-top: 1px solid #a2a9b1;
+    border-top: 1px solid var(--color-placeholder, #a2a9b1);
     margin: 0;
 }
 
 .hiruwiki-cp-metric {
-    background: #f8f9fa;
-    border: 1px solid #a2a9b1;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
+    border: 1px solid var(--color-placeholder, #a2a9b1);
     border-radius: 3px;
     padding: 9px 11px;
 }
 
 .hiruwiki-cp-metric-label {
     font-size: 11px;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     margin-bottom: 1px;
 }
 
 .hiruwiki-cp-metric-formula {
     font-size: 11px;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     font-family: monospace;
     margin-bottom: 3px;
 }
@@ -87,7 +87,7 @@
 .hiruwiki-cp-metric-value {
     font-size: 18px;
     font-weight: bold;
-    color: #202122;
+    color: var(--color-base, #202122);
 }
 
 .hiruwiki-cp-tab-row {
@@ -97,49 +97,49 @@
 
 .hiruwiki-cp-tab {
     flex: 1;
-    border: 1px solid #a2a9b1;
+    border: 1px solid var(--color-placeholder, #a2a9b1);
     border-radius: 3px;
-    background: #fff;
+    background: var(--background-color-base, #fff);
     padding: 7px 4px;
     font-size: 13px;
     font-weight: bold;
     cursor: pointer;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 
 .hiruwiki-cp-tab.active {
-    background: #eaf3fb;
-    color: #0645ad;
-    border-color: #0645ad;
+    background: var(--background-color-progressive-subtle, #eaf3fb);
+    color: var(--color-progressive, #0645ad);
+    border-color: var(--color-progressive, #0645ad);
 }
 
 .hiruwiki-cp-prove-btn {
-    border: 1px solid #a2a9b1;
+    border: 1px solid var(--color-placeholder, #a2a9b1);
     border-radius: 3px;
-    background: #fff;
+    background: var(--background-color-base, #fff);
     padding: 9px 12px;
     font-size: 14px;
     font-weight: bold;
     cursor: pointer;
-    color: #202122;
+    color: var(--color-base, #202122);
     width: 100%;
     transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
 
 .hiruwiki-cp-prove-btn:hover {
-    background: #f8f9fa;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
 }
 
 .hiruwiki-cp-prove-btn.running {
-    background: #d5fdf4;
-    color: #14866d;
-    border-color: #14866d;
+    background: var(--background-color-success-subtle, #d5fdf4);
+    color: var(--color-success, #14866d);
+    border-color: var(--color-success, #14866d);
 }
 
 .hiruwiki-cp-status {
     font-size: 12px;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     line-height: 1.6;
     min-height: 32px;
 }

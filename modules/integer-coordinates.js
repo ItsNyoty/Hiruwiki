@@ -345,16 +345,16 @@ document.querySelectorAll( '.hiruwiki[data-module="integer-coordinates"]' ).forE
 
       /* Ticks and labels */
       ctx.save();
-      ctx.font = '9px Montserrat, Arial, sans-serif'; ctx.fillStyle = '#555';
+      ctx.font = '9px Montserrat, Arial, sans-serif'; ctx.fillStyle = hiruwiki.getThemeColor('color-subtle', '#555');
       for ( v = X_MIN; v <= X_MAX; v++ ) {
         x = PAD_LEFT + ( v - X_MIN ) * CELL;
         if ( v !== 0 && v % 5 === 0 ) {
           ctx.textAlign = 'center';
           ctx.fillText( v, x, originC.y + 13 );
-          ctx.beginPath(); ctx.strokeStyle = '#888'; ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.strokeStyle = hiruwiki.getThemeColor('color-placeholder', '#888'); ctx.lineWidth = 1;
           ctx.moveTo( x, originC.y - 3 ); ctx.lineTo( x, originC.y + 3 ); ctx.stroke();
         } else if ( v !== 0 ) {
-          ctx.beginPath(); ctx.strokeStyle = '#ccc'; ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', '#ccc'); ctx.lineWidth = 1;
           ctx.moveTo( x, originC.y - 2 ); ctx.lineTo( x, originC.y + 2 ); ctx.stroke();
         }
       }
@@ -363,14 +363,14 @@ document.querySelectorAll( '.hiruwiki[data-module="integer-coordinates"]' ).forE
         if ( v !== 0 && v % 5 === 0 ) {
           ctx.textAlign = 'right';
           ctx.fillText( v, originC.x - 4, y + 3 );
-          ctx.beginPath(); ctx.strokeStyle = '#888'; ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.strokeStyle = hiruwiki.getThemeColor('color-placeholder', '#888'); ctx.lineWidth = 1;
           ctx.moveTo( originC.x - 3, y ); ctx.lineTo( originC.x + 3, y ); ctx.stroke();
         } else if ( v !== 0 ) {
-          ctx.beginPath(); ctx.strokeStyle = '#ccc'; ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', '#ccc'); ctx.lineWidth = 1;
           ctx.moveTo( originC.x - 2, y ); ctx.lineTo( originC.x + 2, y ); ctx.stroke();
         }
       }
-      ctx.textAlign = 'right'; ctx.fillStyle = '#555';
+      ctx.textAlign = 'right'; ctx.fillStyle = hiruwiki.getThemeColor('color-subtle', '#555');
       ctx.fillText( '0', originC.x - 4, originC.y + 12 );
       ctx.restore();
 

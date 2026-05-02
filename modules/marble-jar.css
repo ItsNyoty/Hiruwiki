@@ -7,7 +7,7 @@
     font-family: sans-serif;
     font-size: 14px;
     line-height: 1.4;
-    color: #202122; /* Wikimedia base text */
+    color: var(--color-base, #202122); /* Wikimedia base text */
 }
 
 /* Layout wrapper */
@@ -74,7 +74,7 @@
 
 .hmj-shake-btn:hover {
     background: #4a8fc4;
-    color: #fff;
+    color: var(--background-color-base, #fff);
 }
 
 .hmj-shake-btn:active {
@@ -136,7 +136,7 @@
     font-weight: 500;
     padding: 2px 6px;
     border-radius: 20px;
-    color: #fff;
+    color: var(--background-color-base, #fff);
     flex-shrink: 0;
 }
 
@@ -146,17 +146,17 @@
     align-items: center;
     gap: 6px;
     padding: 8px 0 12px;
-    border-top: 1px solid #a2a9b1;
-    border-bottom: 1px solid #a2a9b1;
+    border-top: 1px solid var(--color-placeholder, #a2a9b1);
+    border-bottom: 1px solid var(--color-placeholder, #a2a9b1);
     margin-bottom: 12px;
     font-size: 13px;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
 }
 
 .hmj-total-num {
     font-size: 16px;
     font-weight: 500;
-    color: #202122;
+    color: var(--color-base, #202122);
 }
 
 /* ---- Probability section ---- */
@@ -166,7 +166,7 @@
 
 .hmj-prob-title {
     font-size: 13px;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     margin-bottom: 10px;
     line-height: 1.5;
 }
@@ -219,7 +219,7 @@
 
 .hmj-eq {
     font-size: 11px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     margin: 0 1px;
 }
 
@@ -227,5 +227,5 @@
 .hmj-impossible {
     font-size: 12px;
     font-style: italic;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
 }

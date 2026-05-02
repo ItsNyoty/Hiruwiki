@@ -7,7 +7,7 @@
 .hw-percent {
     font-family: sans-serif;
     font-size: 14px;
-    color: #202122;
+    color: var(--color-base, #202122);
     padding: 0.75em 0;
     max-width: 720px;
 }
@@ -17,7 +17,7 @@
     font-size: 11px;
     font-weight: bold;
     letter-spacing: 0.06em;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     margin-bottom: 6px;
     text-transform: uppercase;
 }
@@ -41,7 +41,7 @@
     min-width: 72px;
     text-align: right;
     font-variant-numeric: tabular-nums;
-    color: #202122;
+    color: var(--color-base, #202122);
 }
 
 /* Axis labels aligned under the slider track only, not the full row */
@@ -54,7 +54,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 11px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
 }
 
 /* ── Flow connector ─────────────────────────────────────────────────────────── */
@@ -72,28 +72,28 @@
 }
 
 .hw-pct-conn-box {
-    border: 1px solid #c8ccd1;
+    border: 1px solid var(--border-color-base, #c8ccd1);
     border-radius: 4px;
     padding: 8px 10px;
     text-align: center;
     width: 100%;
-    background: #f8f9fa;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
 }
 
 .hw-pct-conn-box-after {
-    background: #f8f9fa;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
 }
 
 .hw-pct-conn-val {
     font-size: 22px;
     font-weight: bold;
     font-variant-numeric: tabular-nums;
-    color: #202122;
+    color: var(--color-base, #202122);
 }
 
 .hw-pct-conn-lbl {
     font-size: 11px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     margin-top: 2px;
 }
 
@@ -113,14 +113,14 @@
     font-weight: bold;
     text-align: center;
     white-space: nowrap;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
 }
 
 .hw-pct-conn-line {
     width: 100%;
     height: 2px;
     border-radius: 1px;
-    background: #c8ccd1;
+    background: var(--border-color-base, #c8ccd1);
     position: relative;
 }
 
@@ -130,12 +130,12 @@
     top: -5px;
     border: 6px solid transparent;
     border-left-width: 9px;
-    border-left-color: #c8ccd1;
+    border-left-color: var(--border-color-base, #c8ccd1);
 }
 
 .hw-pct-conn-abs {
     font-size: 11px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
 }
 
 /* ── Bar section ────────────────────────────────────────────────────────────── */
@@ -174,7 +174,7 @@
     align-items: center;
     font-size: 13px;
     font-weight: bold;
-    color: #ffffff;
+    color: var(--background-color-base, #ffffff);
     padding-left: 9px;
     white-space: nowrap;
     pointer-events: none;
@@ -188,7 +188,7 @@
     top: 16px;
     height: calc(40px + 24px);
     border-radius: 1px;
-    background: #a2a9b1;
+    background: var(--color-placeholder, #a2a9b1);
     pointer-events: none;
     transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -219,17 +219,17 @@
 
 /* ── Insight box ────────────────────────────────────────────────────────────── */
 .hw-pct-insight {
-    background: #f8f9fa;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
     border: 1px solid #eaecf0;
     border-radius: 4px;
     padding: 10px 14px;
     font-size: 13px;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     line-height: 1.7;
     min-height: 48px;
 }
 
 .hw-pct-insight strong {
-    color: #202122;
+    color: var(--color-base, #202122);
     font-weight: bold;
 }

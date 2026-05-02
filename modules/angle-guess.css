@@ -7,8 +7,8 @@
   align-items: center;
   gap: 14px;
   padding: 24px 28px 20px;
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--background-color-base, #fff);
+  border: 1px solid var(--border-color-base, #ddd);
   border-radius: 12px;
   box-shadow: 0 4px 18px rgba(0,0,0,0.1);
   max-width: 500px;
@@ -29,13 +29,13 @@
 
 .angle-guess-infobar {
   width: 100%;
-  background: #f7f7f5;
-  border: 1px solid #ddd;
+  background: var(--background-color-neutral-subtle, #f7f7f5);
+  border: 1px solid var(--border-color-base, #ddd);
   border-radius: 6px;
   padding: 8px 14px;
   font-size: 0.82rem;
   letter-spacing: 0.05em;
-  color: #666;
+  color: var(--color-subtle, #666);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -43,7 +43,7 @@
   box-sizing: border-box;
 }
 .angle-guess-infobar span   { white-space: nowrap; }
-.angle-guess-infobar .ag-val { color: #111; font-weight: bold; }
+.angle-guess-infobar .ag-val { color: var(--color-base, #111); font-weight: bold; }
 
 .angle-guess-btn {
   padding: 9px 26px;
@@ -51,19 +51,19 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   background: transparent;
-  color: #3a6a80;
-  border: 1px solid #3a6a80;
+  color: var(--color-progressive, #3a6a80);
+  border: 1px solid var(--color-progressive, #3a6a80);
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.18s, color 0.18s;
   font-family: Montserrat, Arial, sans-serif;
 }
-.angle-guess-btn:hover    { background: #3a6a80; color: #fff; }
+.angle-guess-btn:hover    { background: var(--color-progressive, #3a6a80); color: var(--background-color-base, #fff); }
 .angle-guess-btn:disabled { opacity: 0.35; cursor: default; }
 
 .angle-guess-hint {
   font-size: 0.75rem;
-  color: #aaa;
+  color: var(--color-placeholder, #aaa);
   letter-spacing: 0.06em;
   margin-top: -4px;
 }
@@ -80,8 +80,8 @@
 .angle-guess-overlay.ag-show { display: flex; }
 
 .angle-guess-popup {
-  background: #fff;
-  border: 1px solid #ccc;
+  background: var(--background-color-base, #fff);
+  border: 1px solid var(--border-color-base, #ccc);
   border-radius: 12px;
   padding: 36px 44px;
   text-align: center;
@@ -93,11 +93,11 @@
   from { transform: scale(0.85); opacity: 0; }
   to   { transform: scale(1);    opacity: 1; }
 }
-.angle-guess-popup h2     { font-size: 1.3rem; color: #3a6a80; letter-spacing: 0.15em; margin: 0 0 10px; }
-.angle-guess-popup p      { font-size: 1rem; color: #555; margin-bottom: 4px; }
+.angle-guess-popup h2     { font-size: 1.3rem; color: var(--color-progressive, #3a6a80); letter-spacing: 0.15em; margin: 0 0 10px; }
+.angle-guess-popup p      { font-size: 1rem; color: var(--color-subtle, #555); margin-bottom: 4px; }
 .angle-guess-popup .ag-big {
   font-size: 2.4rem;
-  color: #222;
+  color: var(--color-base, #222);
   font-weight: bold;
   display: block;
   margin: 8px 0 18px;

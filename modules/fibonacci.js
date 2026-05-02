@@ -359,17 +359,17 @@ function drawChart( root, step ) {
     function yPos( v ) { return pad.top + ch - ( v - yMin ) / ( yMax - yMin ) * ch; }
 
     ctx.fillStyle = '#f8f8f7'; ctx.fillRect( 0, 0, W, H );
-    ctx.fillStyle = '#ffffff'; ctx.fillRect( pad.left, pad.top, cw, ch );
+    ctx.fillStyle = hiruwiki.getThemeColor('background-color-base', '#ffffff'); ctx.fillRect( pad.left, pad.top, cw, ch );
 
     ctx.strokeStyle = '#e5e5e5'; ctx.lineWidth = 1;
     [ 1.2, 1.4, 1.6, 1.8, 2.0 ].forEach( function ( v ) {
         var y = yPos( v );
         ctx.beginPath(); ctx.moveTo( pad.left, y ); ctx.lineTo( pad.left + cw, y ); ctx.stroke();
-        ctx.fillStyle = '#aaa'; ctx.font = '11px sans-serif'; ctx.textAlign = 'right';
+        ctx.fillStyle = hiruwiki.getThemeColor('color-placeholder', '#aaa'); ctx.font = '11px sans-serif'; ctx.textAlign = 'right';
         ctx.fillText( v.toFixed( 1 ), pad.left - 6, y + 4 );
     } );
 
-    ctx.fillStyle = '#aaa'; ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
+    ctx.fillStyle = hiruwiki.getThemeColor('color-placeholder', '#aaa'); ctx.font = '11px sans-serif'; ctx.textAlign = 'center';
     for ( var s2 = 1; s2 <= MAX_STEPS; s2 += 2 ) {
         ctx.fillText( s2, xPos( s2 - 1 ), H - pad.bottom + 16 );
     }
@@ -407,7 +407,7 @@ function drawChart( root, step ) {
     var cx = xPos( step - 1 ), cy = yPos( ratios[ step - 1 ] );
     ctx.beginPath(); ctx.arc( cx, cy, 7, 0, Math.PI * 2 );
     ctx.fillStyle = '#4A90D9'; ctx.fill();
-    ctx.strokeStyle = '#fff'; ctx.lineWidth = 2.5;
+    ctx.strokeStyle = hiruwiki.getThemeColor('background-color-base', '#fff'); ctx.lineWidth = 2.5;
     ctx.beginPath(); ctx.arc( cx, cy, 7, 0, Math.PI * 2 ); ctx.stroke();
 
     var err = Math.abs( ratios[ step - 1 ] - PHI );

@@ -152,11 +152,11 @@ function initTrigonometry(container) {
 
         /* ── Colour helpers ─────────────────────────────────────── */
         var C = {
-            sin:   '#1D9E75',
-            cos:   '#185FA5',
-            tan:   '#BA7517',
-            hyp:   '#888780',
-            angle: '#993556'
+            sin:   hiruwiki.getThemeColor('color-success', '#1d9e75'),
+            cos:   hiruwiki.getThemeColor('color-progressive', '#185fa5'),
+            tan:   hiruwiki.getThemeColor('color-warning', '#BA7517'),
+            hyp:   hiruwiki.getThemeColor('color-placeholder', '#888780'),
+            angle: hiruwiki.getThemeColor('color-destructive', '#993556')
         };
 
         function isDark() {
@@ -166,12 +166,11 @@ function initTrigonometry(container) {
         }
 
         function palette() {
-            var dark = isDark();
             return {
-                bg:   dark ? '#1e1e1c' : '#ffffff',
-                grid: dark ? '#3a3a38' : '#d3d1c7',
-                axis: dark ? '#5f5e5a' : '#b4b2a9',
-                text: dark ? '#c2c0b6' : '#3d3d3a'
+                bg:   hiruwiki.getThemeColor('background-color-base', '#ffffff'),
+                grid: hiruwiki.getThemeColor('border-color-base', '#d3d1c7'),
+                axis: hiruwiki.getThemeColor('color-placeholder', '#b4b2a9'),
+                text: hiruwiki.getThemeColor('color-base', '#3d3d3a')
             };
         }
 

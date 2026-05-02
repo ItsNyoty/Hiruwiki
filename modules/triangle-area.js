@@ -209,9 +209,9 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
         function drawVtx(pt, label) {
             ctx.save();
             ctx.beginPath(); ctx.arc(pt.x, pt.y, 7, 0, Math.PI * 2);
-            ctx.fillStyle = '#444'; ctx.fill();
+            ctx.fillStyle = hiruwiki.getThemeColor('color-subtle', '#444'); ctx.fill();
             ctx.font = 'bold 15px sans-serif';
-            ctx.fillStyle = '#333';
+            ctx.fillStyle = hiruwiki.getThemeColor('color-base', '#333');
             var ox = label === 'A' ? -20 : label === 'B' ? 12 : 10;
             var oy = label === 'C' ? -13 : 20;
             ctx.fillText(label, pt.x + ox, pt.y + oy);
@@ -238,7 +238,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
 
             // Dashed height line
             ctx.save(); ctx.setLineDash([5, 5]);
-            ctx.strokeStyle = '#BA7517'; ctx.lineWidth = 1.5;
+            ctx.strokeStyle = hiruwiki.getThemeColor('color-warning', '#BA7517'); ctx.lineWidth = 1.5;
             ctx.beginPath(); ctx.moveTo(P3.x, P3.y); ctx.lineTo(foot.x, foot.y); ctx.stroke();
             ctx.setLineDash([]); ctx.restore();
 
@@ -251,13 +251,13 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
                 ctx.lineTo(foot.x - ux * s + nx * s, foot.y - uy * s + ny * s);
                 ctx.lineTo(foot.x + nx * s, foot.y + ny * s);
                 ctx.closePath();
-                ctx.strokeStyle = '#BA7517'; ctx.lineWidth = 1; ctx.stroke();
+                ctx.strokeStyle = hiruwiki.getThemeColor('color-warning', '#BA7517'); ctx.lineWidth = 1; ctx.stroke();
             }
 
             // h label (offset perpendicular to height)
             var mx = (P3.x + foot.x) / 2, my = (P3.y + foot.y) / 2;
             ctx.save(); ctx.font = '500 15px sans-serif';
-            ctx.fillStyle = '#BA7517'; ctx.textAlign = 'center';
+            ctx.fillStyle = hiruwiki.getThemeColor('color-warning', '#BA7517'); ctx.textAlign = 'center';
             ctx.fillText('h = ' + m.hCm + ' cm', mx - fdy / flen * 16, my + fdx / flen * 16);
             ctx.restore();
 
@@ -268,7 +268,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             var toCx = P3.x - (P1.x + P2.x) / 2, toCy = P3.y - (P1.y + P2.y) / 2;
             var sign = (toCx * bnx + toCy * bny) > 0 ? -1 : 1;
             ctx.save(); ctx.font = '500 15px sans-serif';
-            ctx.fillStyle = '#333'; ctx.textAlign = 'center';
+            ctx.fillStyle = hiruwiki.getThemeColor('color-base', '#333'); ctx.textAlign = 'center';
             ctx.fillText('b = ' + m.bCm + ' cm',
                 (P1.x + P2.x) / 2 + sign * bnx * 24,
                 (P1.y + P2.y) / 2 + sign * bny * 24);
@@ -295,7 +295,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             var dirR = rotDir(F, mP2P3, P2, P3, P1);
             var angR = Math.PI * e * dirR;
             var rF = rotPt(F, mP2P3, angR), rP2 = rotPt(P2, mP2P3, angR), rP3 = rotPt(P3, mP2P3, angR);
-            fillPoly([rF, rP2, rP3], 'rgba(24,95,165,0.25)', '#185FA5', 2);
+            fillPoly([rF, rP2, rP3], 'rgba(24,95,165,0.25)', hiruwiki.getThemeColor('color-progressive', '#185fa5'), 2);
 
             if (e >= 0.99) {
                 ctx.save();
@@ -303,7 +303,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
                 ctx.moveTo(P1.x, P1.y); ctx.lineTo(P2.x, P2.y);
                 ctx.lineTo(rP3.x, rP3.y); ctx.lineTo(lP3.x, lP3.y);
                 ctx.closePath();
-                ctx.strokeStyle = '#333'; ctx.lineWidth = 1.5;
+                ctx.strokeStyle = hiruwiki.getThemeColor('color-base', '#333'); ctx.lineWidth = 1.5;
                 ctx.setLineDash([6, 3]); ctx.stroke(); ctx.setLineDash([]);
                 ctx.restore();
 
@@ -316,12 +316,12 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
 
         function draw(ts) {
             ctx.clearRect(0, 0, W, H);
-            ctx.fillStyle = '#f8f9fa'; ctx.fillRect(0, 0, W, H);
+            ctx.fillStyle = hiruwiki.getThemeColor('background-color-neutral-subtle', '#f8f9fa'); ctx.fillRect(0, 0, W, H);
             drawGrid();
             var m = metrics();
-            fillPoly([V.A, V.B, V.C], 'rgba(29,158,117,0.14)', '#1D9E75', 2);
+            fillPoly([V.A, V.B, V.C], 'rgba(29,158,117,0.14)', hiruwiki.getThemeColor('color-success', '#1d9e75'), 2);
             // Highlight longest side (base)
-            ctx.save(); ctx.strokeStyle = '#1D9E75'; ctx.lineWidth = 3.5;
+            ctx.save(); ctx.strokeStyle = hiruwiki.getThemeColor('color-success', '#1d9e75'); ctx.lineWidth = 3.5;
             ctx.beginPath(); ctx.moveTo(m.P1.x, m.P1.y); ctx.lineTo(m.P2.x, m.P2.y); ctx.stroke();
             ctx.restore();
             drawScene(m);

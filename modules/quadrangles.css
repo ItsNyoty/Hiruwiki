@@ -7,7 +7,7 @@
   display: flex;
   gap: 0;
   min-height: 520px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color-base, #ccc);
   border-radius: 6px;
   overflow: hidden;
 }
@@ -52,18 +52,18 @@
 }
 
 .hiruwiki[data-module="quadrangles"] .quad-grid line {
-  stroke: #ddd;
+  stroke: var(--border-color-base, #ddd);
   stroke-width: 0.5px;
 }
 
 .hiruwiki[data-module="quadrangles"] .quad-shape {
   fill: rgba(25, 118, 210, 0.07);
-  stroke: #1976d2;
+  stroke: var(--color-progressive, #1976d2);
   stroke-width: 2;
 }
 
 .hiruwiki[data-module="quadrangles"] .quad-diagonal {
-  stroke: #888;
+  stroke: var(--color-placeholder, #888);
   stroke-dasharray: 5 4;
   stroke-width: 1;
   fill: none;
@@ -78,7 +78,7 @@
 .hiruwiki[data-module="quadrangles"] .quad-side-label {
   font-size: 11px;
   text-anchor: middle;
-  fill: #888;
+  fill: var(--color-placeholder, #888);
 }
 
 .hiruwiki[data-module="quadrangles"] .quad-point-label {
@@ -109,7 +109,7 @@
 .hiruwiki[data-module="quadrangles"] .quad-side {
   width: 230px;
   flex-shrink: 0;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid var(--border-color-base, #ccc);
   display: flex;
   flex-direction: column;
   background: #f8f8f8;
@@ -118,7 +118,7 @@
 
 .hiruwiki[data-module="quadrangles"] .quad-side-section {
   padding: 12px 14px 10px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color-base, #ddd);
 }
 
 .hiruwiki[data-module="quadrangles"] .quad-side-section:last-child {
@@ -131,7 +131,7 @@
   font-weight: bold;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #888;
+  color: var(--color-placeholder, #888);
   margin-bottom: 8px;
 }
 
@@ -139,7 +139,7 @@
   display: inline-block;
   font-size: 13px;
   font-weight: bold;
-  color: #0645ad;
+  color: var(--color-progressive, #0645ad);
   background: #eaf0fb;
   padding: 3px 10px;
   border-radius: 20px;
@@ -154,7 +154,7 @@
 
 .hiruwiki[data-module="quadrangles"] .quad-stat-key {
   font-size: 12px;
-  color: #555;
+  color: var(--color-subtle, #555);
 }
 
 .hiruwiki[data-module="quadrangles"] .quad-stat-key.quad-diag-key {
@@ -165,28 +165,28 @@
   font-size: 13px;
   font-weight: bold;
   font-variant-numeric: tabular-nums;
-  color: #111;
+  color: var(--color-base, #111);
 }
 
 .hiruwiki[data-module="quadrangles"] .quad-stat-val.quad-diag-val {
-  color: #888;
+  color: var(--color-placeholder, #888);
   font-weight: normal;
 }
 
 .hiruwiki[data-module="quadrangles"] .quad-stat-divider {
   margin-top: 5px;
   padding-top: 5px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--border-color-base, #ddd);
 }
 
 .hiruwiki[data-module="quadrangles"] .quad-stat-key.quad-perim-key {
   font-weight: bold;
-  color: #111;
+  color: var(--color-base, #111);
 }
 
 .hiruwiki[data-module="quadrangles"] .quad-area-box {
-  background: #fff;
-  border: 1px solid #ddd;
+  background: var(--background-color-base, #fff);
+  border: 1px solid var(--border-color-base, #ddd);
   border-radius: 4px;
   padding: 10px;
   margin-top: 4px;
@@ -194,7 +194,7 @@
 
 .hiruwiki[data-module="quadrangles"] .quad-area-steps {
   font-size: 12px;
-  color: #555;
+  color: var(--color-subtle, #555);
   line-height: 1.7;
   white-space: pre-line;
 }
@@ -202,14 +202,14 @@
 .hiruwiki[data-module="quadrangles"] .quad-area-result {
   font-size: 18px;
   font-weight: bold;
-  color: #111;
+  color: var(--color-base, #111);
   margin-top: 6px;
   padding-top: 6px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--border-color-base, #ddd);
 }
 
 .hiruwiki[data-module="quadrangles"] .quad-area-unit {
   font-size: 12px;
   font-weight: normal;
-  color: #888;
+  color: var(--color-placeholder, #888);
 }

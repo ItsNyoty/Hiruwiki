@@ -86,7 +86,7 @@ function drawGrid(){
  for(let i=-range;i<=range;i++){
 
   ctx.beginPath();
-  ctx.strokeStyle = i===0 ? "#000" : "#ddd";
+  ctx.strokeStyle = i===0 ? hiruwiki.getThemeColor('color-base', '#000') : hiruwiki.getThemeColor('border-color-base', '#ddd');
 
   ctx.moveTo(toCanvasX(i),0);
   ctx.lineTo(toCanvasX(i),size);
@@ -101,7 +101,7 @@ function drawGrid(){
 
 function drawAxesArrows(){
 
- ctx.fillStyle="#000";
+ ctx.fillStyle=hiruwiki.getThemeColor('color-base', '#000');
  let arrow=8;
 
  ctx.beginPath();
@@ -132,10 +132,10 @@ function drawCoordinateLabel(text,x,y,alignRight,above){
  ctx.fillStyle="white";
  ctx.fillRect(tx-padding,ty-padding,w,h);
 
- ctx.strokeStyle="#ccc";
+ ctx.strokeStyle=hiruwiki.getThemeColor('border-color-base', '#ccc');
  ctx.strokeRect(tx-padding,ty-padding,w,h);
 
- ctx.fillStyle="#000";
+ ctx.fillStyle=hiruwiki.getThemeColor('color-base', '#000');
  ctx.fillText(text,tx,ty+h-4);
 }
 

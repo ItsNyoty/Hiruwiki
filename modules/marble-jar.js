@@ -81,8 +81,8 @@ function t( key, vars ) {
 }
 
     var COLORS = [
-        { id: 'blue',   label: t('colorBlue'),   hex: '#3366cc' },
-        { id: 'red',    label: t('colorRed'),    hex: '#bf3c2c' },
+        { id: 'blue',   label: t('colorBlue'),   hex: hiruwiki.getThemeColor('color-progressive', '#3366cc') },
+        { id: 'red',    label: t('colorRed'),    hex: hiruwiki.getThemeColor('color-destructive', '#bf3c2c') },
         { id: 'green',  label: t('colorGreen'),  hex: '#177860' },
         { id: 'orange', label: t('colorYellow'), hex: '#e6a000' }
     ];
@@ -253,7 +253,7 @@ function t( key, vars ) {
             // Count label
             var txt = svgEl('text', {
                 x: 130, y: 22, 'text-anchor': 'middle',
-                'font-size': 13, fill: '#666', 'font-family': 'sans-serif'
+                'font-size': 13, fill: hiruwiki.getThemeColor('color-subtle', '#666'), 'font-family': 'sans-serif'
             });
             txt.textContent = marbleOrder.length + ' / ' + TOTAL;
             svg.appendChild(txt);

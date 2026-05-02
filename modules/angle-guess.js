@@ -194,15 +194,15 @@ function t( key, vars ) {
     ctx.arc( CENTER.x, CENTER.y, outerR, Math.PI, 2 * Math.PI );
     ctx.arc( CENTER.x, CENTER.y, innerR, 2 * Math.PI, Math.PI, true );
     ctx.closePath();
-    ctx.fillStyle = '#d8dde3'; ctx.fill();
-    ctx.strokeStyle = '#b0bbc5'; ctx.lineWidth = 1; ctx.stroke();
+    ctx.fillStyle = hiruwiki.getThemeColor('background-color-neutral-subtle', '#d8dde3'); ctx.fill();
+    ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', '#b0bbc5'); ctx.lineWidth = 1; ctx.stroke();
   }
 
   function drawColoredProtractor( maxDeg ) {
     var outerR = RADIUS, innerR = RADIUS - BAND_WIDTH;
     for ( var d = 0; d < maxDeg; d++ ) {
       var diff  = Math.abs( d - targetAngle );
-      var color = diff <= 3 ? '#50dc78' : diff <= 8 ? '#e6b432' : '#dc5050';
+      var color = diff <= 3 ? hiruwiki.getThemeColor('color-success', '#50dc78') : diff <= 8 ? hiruwiki.getThemeColor('color-warning', '#e6b432') : hiruwiki.getThemeColor('color-destructive', '#dc5050');
       ctx.beginPath();
       ctx.arc( CENTER.x, CENTER.y, outerR, -degToRad( d ),     -degToRad( d + 1 ), true );
       ctx.arc( CENTER.x, CENTER.y, innerR, -degToRad( d + 1 ), -degToRad( d ),     false );
@@ -215,11 +215,11 @@ function t( key, vars ) {
     ctx.save();
     var ex = CENTER.x + RADIUS + ARROW_EXTRA;
     ctx.beginPath(); ctx.moveTo( CENTER.x - 10, CENTER.y ); ctx.lineTo( ex, CENTER.y );
-    ctx.strokeStyle = '#444'; ctx.lineWidth = 2; ctx.stroke();
+    ctx.strokeStyle = hiruwiki.getThemeColor('color-subtle', '#444'); ctx.lineWidth = 2; ctx.stroke();
     ctx.beginPath(); ctx.moveTo( ex, CENTER.y );
     ctx.lineTo( ex - ARROW_SIZE, CENTER.y - ARROW_SIZE / 2 );
     ctx.lineTo( ex - ARROW_SIZE, CENTER.y + ARROW_SIZE / 2 );
-    ctx.closePath(); ctx.fillStyle = '#444'; ctx.fill();
+    ctx.closePath(); ctx.fillStyle = hiruwiki.getThemeColor('color-subtle', '#444'); ctx.fill();
     ctx.restore();
   }
 
@@ -231,10 +231,10 @@ function t( key, vars ) {
     ctx.arc( CENTER.x, CENTER.y, 44, 0, -rad, true ); ctx.closePath();
     ctx.fillStyle = 'rgba(40,100,180,0.12)'; ctx.fill();
     ctx.beginPath(); ctx.moveTo( CENTER.x, CENTER.y ); ctx.lineTo( hp.x, hp.y );
-    ctx.strokeStyle = '#2866c0'; ctx.lineWidth = 2.5; ctx.stroke();
+    ctx.strokeStyle = hiruwiki.getThemeColor('color-progressive', '#2866c0'); ctx.lineWidth = 2.5; ctx.stroke();
     ctx.beginPath(); ctx.arc( hp.x, hp.y, HANDLE_R, 0, 2 * Math.PI );
-    ctx.fillStyle = '#2866c0'; ctx.fill();
-    ctx.strokeStyle = '#fff'; ctx.lineWidth = 2; ctx.stroke();
+    ctx.fillStyle = hiruwiki.getThemeColor('color-progressive', '#2866c0'); ctx.fill();
+    ctx.strokeStyle = hiruwiki.getThemeColor('background-color-base', '#fff'); ctx.lineWidth = 2; ctx.stroke();
     ctx.restore();
   }
 
@@ -243,14 +243,14 @@ function t( key, vars ) {
     ctx.save();
     ctx.beginPath(); ctx.moveTo( CENTER.x, CENTER.y );
     ctx.lineTo( CENTER.x + Math.cos( rad ) * RADIUS, CENTER.y - Math.sin( rad ) * RADIUS );
-    ctx.strokeStyle = '#50dc78'; ctx.lineWidth = 2.5;
+    ctx.strokeStyle = hiruwiki.getThemeColor('color-success', '#50dc78'); ctx.lineWidth = 2.5;
     ctx.setLineDash( [ 6, 4 ] ); ctx.stroke(); ctx.setLineDash( [] );
     ctx.restore();
   }
 
   function drawHUD() {
     ctx.save();
-    ctx.fillStyle = '#3a6a80'; ctx.font = '13px Montserrat, sans-serif';
+    ctx.fillStyle = hiruwiki.getThemeColor('color-progressive', '#3a6a80'); ctx.font = '13px Montserrat, sans-serif';
     ctx.textAlign = 'left';  ctx.fillText( t('round') + ' ' + round + ' / ' + MAX_ROUNDS, 12, 20 );
     ctx.textAlign = 'right'; ctx.fillText( t('points') + ' ' + totalScore, canvas.width - 12, 20 );
     ctx.restore();
@@ -258,7 +258,7 @@ function t( key, vars ) {
 
   function draw() {
     ctx.clearRect( 0, 0, canvas.width, canvas.height );
-    ctx.fillStyle = '#f9f9f7'; ctx.fillRect( 0, 0, canvas.width, canvas.height );
+    ctx.fillStyle = hiruwiki.getThemeColor('background-color-neutral-subtle', '#f9f9f7'); ctx.fillRect( 0, 0, canvas.width, canvas.height );
     drawGrid();
     if ( revealing ) drawColoredProtractor( revealAngle ); else drawProtractorBase();
     drawBaselineArrow();

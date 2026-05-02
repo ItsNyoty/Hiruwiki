@@ -20,6 +20,13 @@
         mw.loader.load(cssUrl, 'text/css');
     }
 
+    window.hiruwiki = {
+        getThemeColor: function (token, fallback) {
+            const val = getComputedStyle(document.documentElement).getPropertyValue('--' + token).trim();
+            return val || fallback;
+        }
+    };
+
     function scanPage() {
 
         document.querySelectorAll('.hiruwiki').forEach(function (el) {

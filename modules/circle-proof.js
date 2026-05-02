@@ -274,7 +274,7 @@ var PX_PER_CM = 30;
         // ── Drawing ──────────────────────────────────────────────────
         var BLUE  = '#378ADD';
         var AMBER = '#EF9F27';
-        var GREEN = '#1D9E75';
+        var GREEN = hiruwiki.getThemeColor('color-success', '#1d9e75');
 
         function redraw() {
             ctx.clearRect( 0, 0, canvas.width, canvas.height );
@@ -302,7 +302,7 @@ var PX_PER_CM = 30;
             ctx.beginPath();
             ctx.moveTo( cx, cy );
             ctx.lineTo( cx + rPx, cy );
-            ctx.strokeStyle = '#72777d';
+            ctx.strokeStyle = hiruwiki.getThemeColor('color-placeholder', '#72777d');
             ctx.lineWidth = 1;
             ctx.setLineDash( [ 4, 3 ] );
             ctx.stroke();
@@ -310,11 +310,11 @@ var PX_PER_CM = 30;
             // centre dot
             ctx.beginPath();
             ctx.arc( cx, cy, 3, 0, Math.PI * 2 );
-            ctx.fillStyle = '#72777d';
+            ctx.fillStyle = hiruwiki.getThemeColor('color-placeholder', '#72777d');
             ctx.fill();
             // r label
             ctx.font = '14px sans-serif';
-            ctx.fillStyle = '#72777d';
+            ctx.fillStyle = hiruwiki.getThemeColor('color-placeholder', '#72777d');
             ctx.textAlign = 'center';
             ctx.textBaseline = 'bottom';
             ctx.fillText( 'r = ' + rCm.toFixed( 1 ) + ' cm', cx + rPx / 2, cy - 6 );
@@ -353,7 +353,7 @@ var PX_PER_CM = 30;
                 var x0 = cx - d1 / 2, x1 = cx + d1 / 2;
                 ctx.beginPath(); ctx.moveTo( x0, line1Y ); ctx.lineTo( x1, line1Y );
                 ctx.strokeStyle = BLUE; ctx.lineWidth = 3.5; ctx.stroke();
-                ctx.strokeStyle = '#202122'; ctx.lineWidth = 1.5;
+                ctx.strokeStyle = hiruwiki.getThemeColor('color-base', '#202122'); ctx.lineWidth = 1.5;
                 ctx.beginPath(); ctx.moveTo( x0, line1Y - 8 ); ctx.lineTo( x0, line1Y + 8 ); ctx.stroke();
                 ctx.beginPath(); ctx.moveTo( x1, line1Y - 8 ); ctx.lineTo( x1, line1Y + 8 ); ctx.stroke();
                 if ( t1 > 0.94 ) {
@@ -370,7 +370,7 @@ var PX_PER_CM = 30;
                 var xa = cx - d2 / 2, xb = cx + d2 / 2;
                 ctx.beginPath(); ctx.moveTo( xa, line2Y ); ctx.lineTo( xb, line2Y );
                 ctx.strokeStyle = AMBER; ctx.lineWidth = 3.5; ctx.stroke();
-                ctx.strokeStyle = '#202122'; ctx.lineWidth = 1.5;
+                ctx.strokeStyle = hiruwiki.getThemeColor('color-base', '#202122'); ctx.lineWidth = 1.5;
                 ctx.beginPath(); ctx.moveTo( xa, line2Y - 8 ); ctx.lineTo( xa, line2Y + 8 ); ctx.stroke();
                 ctx.beginPath(); ctx.moveTo( xb, line2Y - 8 ); ctx.lineTo( xb, line2Y + 8 ); ctx.stroke();
                 if ( t2 > 0.94 ) {
@@ -384,7 +384,7 @@ var PX_PER_CM = 30;
             // final summary
             if ( t >= 0.99 ) {
                 ctx.font = 'bold 15px sans-serif';
-                ctx.fillStyle = '#202122';
+                ctx.fillStyle = hiruwiki.getThemeColor('color-base', '#202122');
                 ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
                 ctx.fillText( 'C = 2πr = ' + ( 2 * Math.PI * rCm ).toFixed( 2 ) + ' cm', cx, line1Y - 14 );
             }
@@ -434,7 +434,7 @@ var PX_PER_CM = 30;
             if ( t > 0.88 ) {
                 var alpha = Math.min( ( t - 0.88 ) / 0.12, 1 );
                 ctx.globalAlpha = alpha;
-                ctx.strokeStyle = '#202122'; ctx.lineWidth = 1.5;
+                ctx.strokeStyle = hiruwiki.getThemeColor('color-base', '#202122'); ctx.lineWidth = 1.5;
                 ctx.setLineDash( [ 5, 3 ] );
                 ctx.strokeRect( rectX, rectCY - rectH / 2, rectW, rectH );
                 ctx.setLineDash( [] );
@@ -450,7 +450,7 @@ var PX_PER_CM = 30;
 
                 if ( t > 0.97 ) {
                     ctx.font = 'bold 15px sans-serif';
-                    ctx.fillStyle = '#202122';
+                    ctx.fillStyle = hiruwiki.getThemeColor('color-base', '#202122');
                     ctx.textAlign = 'center'; ctx.textBaseline = 'bottom';
                     ctx.fillText(
                         'A = πr × r = πr² = ' + ( Math.PI * rCm * rCm ).toFixed( 2 ) + ' cm²',

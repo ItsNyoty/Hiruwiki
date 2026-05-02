@@ -18,7 +18,7 @@
 
 .mc-canvas {
     display: block;
-    border: 1px solid #a2a9b1;
+    border: 1px solid var(--color-placeholder, #a2a9b1);
     border-radius: 4px;
 }
 
@@ -26,7 +26,7 @@
     display: flex;
     gap: 16px;
     font-size: 12px;
-    color: #555;
+    color: var(--color-subtle, #555);
     align-items: center;
     padding: 0 2px;
 }
@@ -40,7 +40,7 @@
 }
 
 .mc-legend-dot--inside  { background: #D05538; }
-.mc-legend-dot--outside { background: #185FA5; }
+.mc-legend-dot--outside { background: var(--color-progressive, #185FA5); }
 
 .mc-panel {
     flex: 1 1 200px;
@@ -51,15 +51,15 @@
 }
 
 .mc-formula-box {
-    background: #f8f9fa;
-    border: 1px solid #a2a9b1;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
+    border: 1px solid var(--color-placeholder, #a2a9b1);
     border-radius: 4px;
     padding: 14px;
 }
 
 .mc-formula-title {
     font-size: 12px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     margin-bottom: 10px;
 }
 
@@ -69,7 +69,7 @@
     gap: 8px;
     font-size: 14px;
     font-weight: bold;
-    color: #202122;
+    color: var(--color-base, #202122);
 }
 
 .mc-frac {
@@ -83,7 +83,7 @@
     font-size: 13px;
     font-weight: bold;
     color: #D05538;
-    border-bottom: 1.5px solid #a2a9b1;
+    border-bottom: 1.5px solid var(--color-placeholder, #a2a9b1);
     padding: 0 6px 2px;
     min-width: 60px;
     text-align: center;
@@ -92,7 +92,7 @@
 .mc-frac-den {
     font-size: 13px;
     font-weight: bold;
-    color: #202122;
+    color: var(--color-base, #202122);
     padding: 2px 6px 0;
     min-width: 60px;
     text-align: center;
@@ -101,7 +101,7 @@
 .mc-approx-result {
     font-size: 15px;
     font-weight: bold;
-    color: #185FA5;
+    color: var(--color-progressive, #185FA5);
 }
 
 .mc-stats-row {
@@ -110,8 +110,8 @@
 }
 
 .mc-stat-card {
-    background: #f8f9fa;
-    border: 1px solid #a2a9b1;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
+    border: 1px solid var(--color-placeholder, #a2a9b1);
     border-radius: 4px;
     padding: 10px 12px;
     flex: 1;
@@ -124,18 +124,18 @@
 
 .mc-stat-label {
     font-size: 12px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     margin-bottom: 4px;
 }
 
 .mc-stat-value {
     font-size: 20px;
     font-weight: bold;
-    color: #202122;
+    color: var(--color-base, #202122);
 }
 
 .mc-stat-value--inside  { color: #D05538; }
-.mc-stat-value--outside { color: #185FA5; }
+.mc-stat-value--outside { color: var(--color-progressive, #185FA5); }
 
 .mc-controls {
     display: flex;
@@ -151,7 +151,7 @@
 
 .mc-ctrl-label {
     font-size: 12px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     white-space: nowrap;
 }
 
@@ -164,7 +164,7 @@
     font-weight: bold;
     min-width: 36px;
     text-align: right;
-    color: #202122;
+    color: var(--color-base, #202122);
 }
 
 .mc-btn {
@@ -172,10 +172,10 @@
     font-size: 13px;
     padding: 7px 0;
     cursor: pointer;
-    background: #f8f9fa;
-    border: 1px solid #a2a9b1;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
+    border: 1px solid var(--color-placeholder, #a2a9b1);
     border-radius: 2px;
-    color: #202122;
+    color: var(--color-base, #202122);
 }
 
 .mc-btn:hover {
@@ -185,7 +185,7 @@
 .mc-btn--reset {
   font-size: 12px;
 background-color: var(--background-color-destructive, #bf3c2c);
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color-base, #ccc);
   color: white;
   padding: 6px;
   cursor: pointer;
@@ -194,7 +194,7 @@ background-color: var(--background-color-destructive, #bf3c2c);
 }
 
 .mc-btn--reset:hover {
-  border-color: #333;
+  border-color: var(--color-base, #333);
  background-color: var(--background-color-destructive--hover, #9f3526);
 }
 

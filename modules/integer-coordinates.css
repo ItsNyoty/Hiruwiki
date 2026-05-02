@@ -4,7 +4,7 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
-  background: #fff;
+  background: var(--background-color-base, #fff);
   border: 2px solid #c8d6e5;
   border-radius: 12px;
   padding: 10px 12px 12px;
@@ -38,7 +38,7 @@
 }
 
 .icx-mode-btn.icx-active {
-  background: #fff;
+  background: var(--background-color-base, #fff);
   color: #2c3e50;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.13);
   font-weight: bold;
@@ -155,7 +155,7 @@
 
 .icx-check-btn {
   background: #2980b9;
-  color: #fff;
+  color: var(--background-color-base, #fff);
 }
 
 .icx-check-btn:hover:not(:disabled) {
@@ -169,7 +169,7 @@
 
 .icx-next-btn {
   background: #27ae60;
-  color: #fff;
+  color: var(--background-color-base, #fff);
   visibility: hidden;
 }
 

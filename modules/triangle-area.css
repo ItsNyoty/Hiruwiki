@@ -9,8 +9,8 @@
     display: block;
     width: 100%;
     border-radius: 4px;
-    border: 1px solid #a2a9b1;
-    background: #f8f9fa;
+    border: 1px solid var(--color-placeholder, #a2a9b1);
+    background: var(--background-color-neutral-subtle, #f8f9fa);
     touch-action: none;
     cursor: default;
 }
@@ -21,9 +21,9 @@
     align-items: center;
     flex-wrap: wrap;
     padding: 10px 14px;
-    border: 1px solid #a2a9b1;
+    border: 1px solid var(--color-placeholder, #a2a9b1);
     border-top: none;
-    background: #ffffff;
+    background: var(--background-color-base, #ffffff);
     border-radius: 0 0 4px 4px;
 }
 
@@ -37,7 +37,7 @@
 
 .hiruwiki-triangle-area .ta-label {
     font-size: 11px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
     text-transform: uppercase;
     letter-spacing: 0.04em;
 }
@@ -45,18 +45,18 @@
 .hiruwiki-triangle-area .ta-value {
     font-size: 20px;
     font-weight: 500;
-    color: #202122;
+    color: var(--color-base, #202122);
 }
 
 .hiruwiki-triangle-area .ta-formula {
     font-size: 12px;
-    color: #72777d;
+    color: var(--color-placeholder, #72777d);
 }
 
 .hiruwiki-triangle-area .ta-proof-result {
     display: none;
     font-size: 13px;
-    color: #54595d;
+    color: var(--color-subtle, #54595d);
     width: 100%;
     border-top: 1px solid #eaecf0;
     margin-top: 8px;
@@ -66,7 +66,7 @@
 .hiruwiki-triangle-area .ta-btn {
     padding: 8px 18px;
     border-radius: 2px;
-    border: 1px solid #a2a9b1;
+    border: 1px solid var(--color-placeholder, #a2a9b1);
     background-color: var(--background-color-progressive, #36c);
     color: white;
     font-size: 14px;

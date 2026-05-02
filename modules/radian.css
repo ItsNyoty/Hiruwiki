@@ -2,11 +2,11 @@
 .radius { stroke:black; stroke-width:2; }
 .arc { fill:none; stroke-width:6; }
 
-.tickSmall { stroke:#aaa; stroke-width:1; }
-.tickMedium { stroke:#777; stroke-width:2; }
-.tickMajor { stroke:#333; stroke-width:3; }
+.tickSmall { stroke:var(--color-placeholder, #aaa); stroke-width:1; }
+.tickMedium { stroke:var(--color-placeholder, #777); stroke-width:2; }
+.tickMajor { stroke:var(--color-base, #333); stroke-width:3; }
 
-.tickLabel { font-size:12px; fill:#333; }
+.tickLabel { font-size:12px; fill:var(--color-base, #333); }
 .radianTick { stroke-width:2; }
 
 .handle { fill:white; stroke:black; stroke-width:2; cursor:pointer; }
@@ -16,4 +16,4 @@
 .baseIndicator { stroke-width:6; }
 .baseDot { stroke:black; stroke-width:2; fill:white; }
 
-svg.hiruwiki-svg { background:#fafafa; border:1px solid #ccc; touch-action:none; }
+svg.hiruwiki-svg { background:var(--background-color-neutral-subtle, #fafafa); border:1px solid var(--border-color-base, #ccc); touch-action:none; }

@@ -129,7 +129,7 @@ function initCentroid( container ) {
             var triColor    = dark ? '#7F77DD' : '#534AB7';
             var triFill     = dark ? 'rgba(127,119,221,0.13)' : 'rgba(83,74,183,0.09)';
             var medianColor = dark ? 'rgba(29,158,117,0.7)'   : 'rgba(15,110,86,0.65)';
-            var cenColor    = dark ? '#EF9F27' : '#BA7517';
+            var cenColor    = dark ? '#EF9F27' : hiruwiki.getThemeColor('color-warning', '#BA7517');
             var vertColor   = dark ? '#AFA9EC' : '#3C3489';
             var textPrimary = dark ? '#f0eefc' : '#26215C';
 
@@ -168,7 +168,7 @@ function initCentroid( container ) {
             ctx.arc( cen.x, cen.y, 7, 0, 2 * Math.PI );
             ctx.fillStyle   = cenColor;
             ctx.fill();
-            ctx.strokeStyle = dark ? '#412402' : '#fff';
+            ctx.strokeStyle = dark ? '#412402' : hiruwiki.getThemeColor('background-color-base', '#fff');
             ctx.lineWidth   = 2;
             ctx.stroke();
             ctx.restore();
@@ -193,7 +193,7 @@ function initCentroid( container ) {
                 ctx.arc( v.x, v.y, 9, 0, 2 * Math.PI );
                 ctx.fillStyle   = vertColor;
                 ctx.fill();
-                ctx.strokeStyle = dark ? '#26215C' : '#fff';
+                ctx.strokeStyle = dark ? '#26215C' : hiruwiki.getThemeColor('background-color-base', '#fff');
                 ctx.lineWidth   = 2;
                 ctx.stroke();
                 ctx.restore();

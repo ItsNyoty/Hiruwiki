@@ -87,7 +87,7 @@ var SVG_W  = 580, SVG_H = 520;
     pat.setAttribute('height','20'); pat.setAttribute('patternUnits','userSpaceOnUse');
     var gp = document.createElementNS(SVG_NS,'path');
     gp.setAttribute('d','M 20 0 L 0 0 0 20'); gp.setAttribute('fill','none');
-    gp.setAttribute('stroke','#ccc'); gp.setAttribute('stroke-width','0.5');
+    gp.setAttribute('stroke',hiruwiki.getThemeColor('border-color-base', '#ccc')); gp.setAttribute('stroke-width','0.5');
     pat.appendChild(gp); defs.appendChild(pat); svgEl.appendChild(defs);
     var gr = document.createElementNS(SVG_NS,'rect');
     gr.setAttribute('width','100%'); gr.setAttribute('height','100%');
@@ -112,14 +112,14 @@ var SVG_W  = 580, SVG_H = 520;
     var fanDiags = [];
     for (var di=0;di<3;di++){
       var dl = document.createElementNS(SVG_NS,'line');
-      dl.setAttribute('stroke','#aaa'); dl.setAttribute('stroke-width','1');
+      dl.setAttribute('stroke',hiruwiki.getThemeColor('color-placeholder', '#aaa'); dl.setAttribute('stroke-width','1');
       dl.setAttribute('stroke-dasharray','5,4'); svgEl.appendChild(dl);
       fanDiags.push(dl);
     }
 
     // Quad split diagonal (1, different style)
     var quadDiag = document.createElementNS(SVG_NS,'line');
-    quadDiag.setAttribute('stroke','#888'); quadDiag.setAttribute('stroke-width','1.5');
+    quadDiag.setAttribute('stroke',hiruwiki.getThemeColor('color-placeholder', '#888'); quadDiag.setAttribute('stroke-width','1.5');
     quadDiag.setAttribute('stroke-dasharray','8,4'); svgEl.appendChild(quadDiag);
 
     // Arcs, labels, circles
@@ -178,7 +178,7 @@ var SVG_W  = 580, SVG_H = 520;
       var bg=document.createElementNS(SVG_NS,'rect');
       bg.setAttribute('x','0'); bg.setAttribute('y','0');
       bg.setAttribute('width','160'); bg.setAttribute('height','14');
-      bg.setAttribute('fill','#eee'); bg.setAttribute('rx','3');
+      bg.setAttribute('fill',hiruwiki.getThemeColor('border-color-base', '#eee')); bg.setAttribute('rx','3');
       bsvg.appendChild(bg); triBarBgs.push(bg);
       var segs=[];
       for(var si=0;si<3;si++){
@@ -191,7 +191,7 @@ var SVG_W  = 580, SVG_H = 520;
       var border=document.createElementNS(SVG_NS,'rect');
       border.setAttribute('x','0'); border.setAttribute('y','0');
       border.setAttribute('width','160'); border.setAttribute('height','14');
-      border.setAttribute('fill','none'); border.setAttribute('stroke','#ccc');
+      border.setAttribute('fill','none'); border.setAttribute('stroke',hiruwiki.getThemeColor('border-color-base', '#ccc'));
       border.setAttribute('stroke-width','1'); border.setAttribute('rx','3');
       bsvg.appendChild(border);
       var lbl180=document.createElementNS(SVG_NS,'text');
@@ -389,7 +389,7 @@ var SVG_W  = 580, SVG_H = 520;
       var t=document.createElementNS(SVG_NS,'text');
       t.setAttribute('text-anchor','middle'); t.setAttribute('dominant-baseline','central');
       t.setAttribute('font-family','Arial,sans-serif'); t.setAttribute('font-size','7');
-      t.setAttribute('font-weight','bold'); t.setAttribute('fill','#666');
+      t.setAttribute('font-weight','bold'); t.setAttribute('fill',hiruwiki.getThemeColor('color-subtle', '#666');
       t.textContent='360\u00b0'; svgPie.appendChild(t);
     }
 

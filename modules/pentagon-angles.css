@@ -12,7 +12,7 @@
   width: 100%;
   height: auto;
   display: block;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color-base, #ccc);
   background: #f9f9f9;
   cursor: crosshair;
 }
@@ -20,9 +20,9 @@
 .pentagon-angles .qa-panel {
   width: 210px;
   flex-shrink: 0;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color-base, #ccc);
   border-left: none;
-  background: #fff;
+  background: var(--background-color-base, #fff);
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -54,7 +54,7 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: #999;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-color-base, #eee);
   padding-bottom: 8px;
   margin: 0 0 2px 0;
 }
@@ -81,7 +81,7 @@
 .pentagon-angles .qa-bar-wrap {
   flex: 1;
   height: 5px;
-  background: #eee;
+  background: var(--border-color-base, #eee);
   border-radius: 3px;
   overflow: hidden;
 }
@@ -100,7 +100,7 @@
 }
 
 .pentagon-angles .qa-sum-section {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border-color-base, #eee);
   padding-top: 10px;
   display: flex;
   flex-direction: column;
@@ -123,7 +123,7 @@
 }
 
 .pentagon-angles .qa-total-row {
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--border-color-base, #eee);
   padding-top: 8px;
   display: flex;
   justify-content: space-between;
@@ -140,7 +140,7 @@
 .pentagon-angles .qa-total-val {
   font-size: 18px;
   font-weight: bold;
-  color: #333;
+  color: var(--color-base, #333);
 }
 
 .pentagon-angles .qa-tri-row {
@@ -151,14 +151,14 @@
 
 .pentagon-angles .qa-tri-label {
   font-size: 10px;
-  color: #aaa;
+  color: var(--color-placeholder, #aaa);
   font-style: italic;
 }
 
 .pentagon-angles .qa-reset-btn {
   font-size: 12px;
 background-color: var(--background-color-destructive, #bf3c2c);
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color-base, #ccc);
   color: white;
   padding: 6px;
   cursor: pointer;
@@ -167,7 +167,7 @@ background-color: var(--background-color-destructive, #bf3c2c);
 }
 
 .pentagon-angles .qa-reset-btn:hover {
-  border-color: #333;
+  border-color: var(--color-base, #333);
  background-color: var(--background-color-destructive--hover, #9f3526);
 }
 

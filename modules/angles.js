@@ -140,7 +140,7 @@ function initAngleApplet(container){
 
     function drawGrid(){
 
-        ctx.strokeStyle="#eee";
+        ctx.strokeStyle=hiruwiki.getThemeColor('border-color-base', '#eee');
 
         for(let x=0;x<canvas.width;x+=25){
             ctx.beginPath();
@@ -156,7 +156,7 @@ function initAngleApplet(container){
             ctx.stroke();
         }
 
-        ctx.strokeStyle="#f0f0f0";
+        ctx.strokeStyle=hiruwiki.getThemeColor('border-color-base', '#f0f0f0');
 
         for(let r=50;r<=R;r+=50){
             ctx.beginPath();

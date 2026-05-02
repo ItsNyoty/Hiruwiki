@@ -86,7 +86,7 @@ var SVG_W  = 540, SVG_H = 480;
     var gridPath = document.createElementNS( SVG_NS, 'path' );
     gridPath.setAttribute( 'd', 'M 20 0 L 0 0 0 20' );
     gridPath.setAttribute( 'fill', 'none' );
-    gridPath.setAttribute( 'stroke', '#ccc' );
+    gridPath.setAttribute( 'stroke', hiruwiki.getThemeColor('border-color-base', '#ccc') );
     gridPath.setAttribute( 'stroke-width', '0.5' );
     pat.appendChild( gridPath );
     defs.appendChild( pat );
@@ -311,7 +311,7 @@ var SVG_W  = 540, SVG_H = 480;
       t.setAttribute( 'font-family', 'Arial, sans-serif' );
       t.setAttribute( 'font-size', '8' );
       t.setAttribute( 'font-weight', 'bold' );
-      t.setAttribute( 'fill', '#666' );
+      t.setAttribute( 'fill', hiruwiki.getThemeColor('color-subtle', '#666') );
       t.textContent = '360\u00b0';
       pieSVG.appendChild( t );
     }

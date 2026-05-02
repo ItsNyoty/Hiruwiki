@@ -267,30 +267,22 @@ function t( key, vars ) {
 			];
 		}
 
-		function isDark() {
-			return document.documentElement.classList.contains('skin-theme-clientpref-night') || 
-			       document.documentElement.classList.contains('client-dark-mode') ||
-			       document.body.classList.contains('mw-dark-mode');
-		}
-
-		/* -- colour palette (light / dark) -- */
+		/* -- colour palette -- */
 		function palette() {
-			var dark = isDark();
 			return {
-				dark:        dark,
-				tri:         dark ? '#AFA9EC' : '#534AB7',
-				circ:        dark ? '#5DCAA5' : '#0F6E56',
-				rad:         dark ? '#FAC775' : '#BA7517',
-				bis:         dark ? 'rgba(175,169,236,.28)' : 'rgba(83,74,183,.20)',
-				touch:       dark ? '#ED93B1' : '#993556',
-				contact:     dark ? '#F09595' : '#E24B4A',
-				text:        dark ? '#E8E6DC' : '#1A1A18',
-				ruleBg:      dark ? 'rgba(44,44,42,.7)'    : 'rgba(241,239,232,.85)',
-				ruleTick:    dark ? '#5F5E5A' : '#B4B2A9',
-				ruleText:    dark ? '#9c9a92' : '#888780',
-				gridMm:      dark ? 'rgba(255,255,255,.04)' : 'rgba(0,0,0,.04)',
-				gridCm:      dark ? 'rgba(255,255,255,.08)' : 'rgba(0,0,0,.08)',
-				dotBg:       dark ? '#1A1A18' : '#ffffff'
+				tri:         hiruwiki.getThemeColor('color-progressive', '#534AB7'),
+				circ:        hiruwiki.getThemeColor('color-success', '#0F6E56'),
+				rad:         hiruwiki.getThemeColor('color-warning', '#BA7517'),
+				bis:         hiruwiki.getThemeColor('background-color-progressive-subtle', 'rgba(83,74,183,.20)'),
+				touch:       hiruwiki.getThemeColor('color-destructive', '#993556'),
+				contact:     hiruwiki.getThemeColor('color-error', '#E24B4A'),
+				text:        hiruwiki.getThemeColor('color-base', '#1a1a18'),
+				ruleBg:      hiruwiki.getThemeColor('background-color-neutral-subtle', 'rgba(241,239,232,.85)'),
+				ruleTick:    hiruwiki.getThemeColor('border-color-base', '#B4B2A9'),
+				ruleText:    hiruwiki.getThemeColor('color-placeholder', '#888780'),
+				gridMm:      'rgba(128,128,128,.04)',
+				gridCm:      'rgba(128,128,128,.08)',
+				dotBg:       hiruwiki.getThemeColor('background-color-base', '#ffffff')
 			};
 		}
 
