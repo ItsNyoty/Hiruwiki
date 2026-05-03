@@ -119,27 +119,42 @@ var messages = /* I18N_START */ {
         "sec_sequence": "Reeks tot nu toe",
         "sec_steps": "Stap door de Fibonacci-reeks",
         "step_label": "Stap {step} van {total}"
+    },
+    "qqq": {
+        "_name": "Name of the Fibonacci Sequence module",
+        "card_phi_lbl": "Label for the golden ratio φ card",
+        "card_phi_sub": "Subtitle showing the formula and decimal value of the golden ratio",
+        "card_ratio_error": "Label for the error from φ, followed by a numeric value",
+        "card_ratio_lbl": "Label for the current ratio F(n+1) ÷ F(n) card",
+        "chart_step": "X-axis label for the convergence chart",
+        "diff": "Label prefix for the difference value in the sequence display. Followed by a number.",
+        "insight_close": "Insight text shown when the ratio is close to φ but not yet converged. Uses HTML. Parameters: {fa} = left addend, {fb} = right addend, {fr} = sum, {ratio} = current ratio, {error} = error from φ.",
+        "insight_converged": "Insight text shown when the ratio has converged to 6 decimal places. Uses HTML. Parameters: {fa} = left addend, {fb} = right addend, {fr} = sum, {ratio} = current ratio, {error} = error from φ.",
+        "insight_normal": "Insight text shown during normal steps. Uses HTML. Parameters: {fa} = left addend, {fb} = right addend, {fr} = sum, {ratio} = current ratio, {error} = error from φ.",
+        "insight_step1": "Insight text shown at the first step of the Fibonacci sequence. Uses HTML.",
+        "insight_step2": "Insight text shown at the second step of the Fibonacci sequence. Uses HTML.",
+        "sec_addition": "Section heading for the addition display",
+        "sec_chart": "Section heading for the convergence chart",
+        "sec_sequence": "Section heading for the sequence display",
+        "sec_steps": "Section heading for the step-through controls",
+        "step_label": "Label showing the current step. Parameters: {step} = current step number, {total} = total number of steps."
     }
-} /* I18N_END */;
-function t( key, vars ) {
-    var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-    lang = lang.split('-')[0];
-    if (!messages[lang]) lang = 'en';
-    var dict = messages[lang] || {};
-    var str = dict[key] || (messages['en'] && messages['en'][key]) || key;
-    if ( vars ) {
-        if ( Array.isArray( vars ) ) {
-            vars.forEach( function ( val, i ) {
-                str = str.replace( new RegExp( '\{' + i + '\}', 'g' ), val );
-            } );
-        } else {
-            Object.keys( vars ).forEach( function ( k ) {
-                str = str.replace( new RegExp( '\{' + k + '\}', 'g' ), vars[ k ] );
-            } );
-        }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
     }
     return str;
 }
+
 
 
 
@@ -412,7 +427,7 @@ function drawChart( root, step ) {
 
     var err = Math.abs( ratios[ step - 1 ] - PHI );
     ctx.fillStyle = '#4A90D9'; ctx.font = 'bold 11px sans-serif'; ctx.textAlign = 'center';
-    ctx.fillText( 'aldea: ' + err.toFixed( 5 ), cx, cy < pad.top + 24 ? cy + 18 : cy - 12 );
+    ctx.fillText( t( 'diff' ) + ' ' + err.toFixed( 5 ), cx, cy < pad.top + 24 ? cy + 18 : cy - 12 );
 }
 
 /* ── MOUNT ────────────────────────────────────────────────────────────────── */

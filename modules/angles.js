@@ -6,73 +6,79 @@ var messages = /* I18N_START */ {
     "en": {
         "_name": "Angles",
         "bisector": "Bisector",
-        "bisectorResult": "Bisector: {0}°",
+        "bisectorResult": "Bisector: $1°",
         "complement": "Complementary",
         "explement": "Explementary",
         "notDefined": "Not defined for this angle",
-        "resultAngle": "{0} angle: {1}°",
+        "resultAngle": "$1 angle: $2°",
         "supplement": "Supplementary"
     },
     "es": {
         "_name": "Ángulos",
         "bisector": "Bisectriz",
-        "bisectorResult": "Bisectriz: {0}°",
+        "bisectorResult": "Bisectriz: $1°",
         "complement": "Complementario",
         "explement": "Explementario",
         "notDefined": "No definido para este ángulo",
-        "resultAngle": "Ángulo {0}: {1}°",
+        "resultAngle": "Ángulo $1: $2°",
         "supplement": "Suplementario"
     },
     "eu": {
         "_name": "Angeluak",
         "bisector": "Erdikaria",
-        "bisectorResult": "Erdikaria: {0}°",
+        "bisectorResult": "Erdikaria: $1°",
         "complement": "Osagarria",
         "explement": "Konjubatua",
         "notDefined": "Angelu honentzat definitu gabe",
-        "resultAngle": "Angelu {0}: {1}°",
+        "resultAngle": "Angelu $1: $2°",
         "supplement": "Betegarria"
     },
     "fr": {
         "_name": "Angles",
         "bisector": "Bissectrice",
-        "bisectorResult": "Bissectrice : {0}°",
+        "bisectorResult": "Bissectrice : $1°",
         "complement": "Complémentaire",
         "explement": "Explémentaire",
         "notDefined": "Non défini pour cet angle",
-        "resultAngle": "Angle {0} : {1}°",
+        "resultAngle": "Angle $1 : $2°",
         "supplement": "Supplémentaire"
     },
     "nl": {
         "_name": "Hoeken",
         "bisector": "Bissectrice",
-        "bisectorResult": "Bissectrice: {0}°",
+        "bisectorResult": "Bissectrice: $1°",
         "complement": "Complementair",
         "explement": "Explementair",
         "notDefined": "Niet gedefinieerd voor deze hoek",
-        "resultAngle": "Hoek {0}: {1}°",
+        "resultAngle": "Hoek $1: $2°",
         "supplement": "Supplementair"
+    },
+    "qqq": {
+        "_name": "Name of the Angles module",
+        "bisector": "Button label for the bisector mode",
+        "bisectorResult": "Result text showing the bisector angle. Parameters: $1 = bisector angle in degrees.",
+        "complement": "Button label for the complementary angle mode",
+        "explement": "Button label for the explementary angle mode",
+        "notDefined": "Message shown when the selected angle operation is not defined for the current angle (e.g. complement of an angle ≥ 90°)",
+        "resultAngle": "Result text showing a computed angle. Parameters: $1 = angle type name (e.g. \"Complementary\"), $2 = angle in degrees.",
+        "supplement": "Button label for the supplementary angle mode"
     }
-} /* I18N_END */;
-function t( key, vars ) {
-    var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-    lang = lang.split('-')[0];
-    if (!messages[lang]) lang = 'en';
-    var dict = messages[lang] || {};
-    var str = dict[key] || (messages['en'] && messages['en'][key]) || key;
-    if ( vars ) {
-        if ( Array.isArray( vars ) ) {
-            vars.forEach( function ( val, i ) {
-                str = str.replace( new RegExp( '\{' + i + '\}', 'g' ), val );
-            } );
-        } else {
-            Object.keys( vars ).forEach( function ( k ) {
-                str = str.replace( new RegExp( '\{' + k + '\}', 'g' ), vars[ k ] );
-            } );
-        }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
     }
     return str;
 }
+
 
 
 /* -------------------------

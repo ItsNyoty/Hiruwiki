@@ -64,27 +64,35 @@ var messages = /* I18N_START */ {
         "pointsPerStep": "Punten per stap",
         "reset": "↺ Reset",
         "totalPoints": "Totaal aantal punten"
+    },
+    "qqq": {
+        "_name": "Name of the Monte Carlo Pi module",
+        "addPoints": "Button label to add more random points to the simulation",
+        "approxPi": "Label for the current approximation of π",
+        "insideCircle": "Label for the count of points inside the circle",
+        "insideRed": "Legend label for points inside the circle (shown in red)",
+        "outsideBlue": "Legend label for points outside the circle (shown in blue)",
+        "outsideCircle": "Label for the count of points outside the circle",
+        "pointsPerStep": "Label for the number of points added per step",
+        "reset": "Button label to reset the simulation",
+        "totalPoints": "Label for the total number of points"
     }
-} /* I18N_END */;
-function t( key, vars ) {
-    var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-    lang = lang.split('-')[0];
-    if (!messages[lang]) lang = 'en';
-    var dict = messages[lang] || {};
-    var str = dict[key] || (messages['en'] && messages['en'][key]) || key;
-    if ( vars ) {
-        if ( Array.isArray( vars ) ) {
-            vars.forEach( function ( val, i ) {
-                str = str.replace( new RegExp( '\{' + i + '\}', 'g' ), val );
-            } );
-        } else {
-            Object.keys( vars ).forEach( function ( k ) {
-                str = str.replace( new RegExp( '\{' + k + '\}', 'g' ), vars[ k ] );
-            } );
-        }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
     }
     return str;
 }
+
 
 var SIZE = 320;
 

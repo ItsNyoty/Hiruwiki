@@ -67,27 +67,35 @@ var messages = /* I18N_START */ {
         "sinFormula": "overstaande / schuine",
         "tanDesc": "De oranje lijn is getekend op x&nbsp;=&nbsp;1, rakend aan de cirkel. De hoogte is tan&nbsp;&theta;, aangezien tan&nbsp;&theta;&nbsp;=&nbsp;overstaande&nbsp;&divide;&nbsp;aanliggende&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.",
         "tanFormula": "overstaande / aanliggende"
+    },
+    "qqq": {
+        "_name": "Name of the Trigonometry module",
+        "angle": "Label for the angle θ slider. Uses &theta; HTML entity.",
+        "cosDesc": "Description of the cosine function shown in the proof panel. Uses HTML entities and formatting.",
+        "cosFormula": "Formula for cosine (adjacent / hypotenuse)",
+        "hideProof": "Button label to hide the trigonometric proof panel",
+        "prove": "Button label to show the trigonometric proof panel",
+        "sinDesc": "Description of the sine function shown in the proof panel. Uses HTML entities and formatting.",
+        "sinFormula": "Formula for sine (opposite / hypotenuse)",
+        "tanDesc": "Description of the tangent function shown in the proof panel. Uses HTML entities and formatting.",
+        "tanFormula": "Formula for tangent (opposite / adjacent)"
     }
-} /* I18N_END */;
-function t( key, vars ) {
-    var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-    lang = lang.split('-')[0];
-    if (!messages[lang]) lang = 'en';
-    var dict = messages[lang] || {};
-    var str = dict[key] || (messages['en'] && messages['en'][key]) || key;
-    if ( vars ) {
-        if ( Array.isArray( vars ) ) {
-            vars.forEach( function ( val, i ) {
-                str = str.replace( new RegExp( '\{' + i + '\}', 'g' ), val );
-            } );
-        } else {
-            Object.keys( vars ).forEach( function ( k ) {
-                str = str.replace( new RegExp( '\{' + k + '\}', 'g' ), vars[ k ] );
-            } );
-        }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
     }
     return str;
 }
+
 
 function initTrigonometry(container) {
         if (container.dataset.trigInit) { return; }

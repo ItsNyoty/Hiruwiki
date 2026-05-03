@@ -121,27 +121,45 @@ var messages = /* I18N_START */ {
         "touchBC": "Raakpunt BC",
         "touchCA": "Raakpunt CA",
         "triangle": "Driehoek"
+    },
+    "qqq": {
+        "_name": "Name of the Incentre module",
+        "angleA": "Label for angle A of the triangle",
+        "angleB": "Label for angle B of the triangle",
+        "angleC": "Label for angle C of the triangle",
+        "area": "Label for the triangle area",
+        "centre": "Label for the incentre point I",
+        "circumference": "Label for the incircle circumference",
+        "formula": "Formula showing how the inradius is calculated (r = Area / s)",
+        "hint": "Instruction text for the interactive triangle. Includes scale information.",
+        "incircle": "Section heading for the incircle properties",
+        "perimeter": "Label for the triangle perimeter",
+        "radius": "Label for the inradius, with variable name in parentheses",
+        "scaleUnit": "Unit abbreviation used for measurements (centimetres)",
+        "sideA": "Label for side a (BC) of the triangle",
+        "sideB": "Label for side b (CA) of the triangle",
+        "sideC": "Label for side c (AB) of the triangle",
+        "touchAB": "Label for the tangent point on side AB",
+        "touchBC": "Label for the tangent point on side BC",
+        "touchCA": "Label for the tangent point on side CA",
+        "triangle": "Section heading for the triangle properties"
     }
-} /* I18N_END */;
-function t( key, vars ) {
-    var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-    lang = lang.split('-')[0];
-    if (!messages[lang]) lang = 'en';
-    var dict = messages[lang] || {};
-    var str = dict[key] || (messages['en'] && messages['en'][key]) || key;
-    if ( vars ) {
-        if ( Array.isArray( vars ) ) {
-            vars.forEach( function ( val, i ) {
-                str = str.replace( new RegExp( '\{' + i + '\}', 'g' ), val );
-            } );
-        } else {
-            Object.keys( vars ).forEach( function ( k ) {
-                str = str.replace( new RegExp( '\{' + k + '\}', 'g' ), vars[ k ] );
-            } );
-        }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
     }
     return str;
 }
+
 
 
 	/* ----------------------------------------------------------

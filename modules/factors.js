@@ -109,27 +109,40 @@ var messages = /* I18N_START */ {
         "legend_onlyA": "alleen van A",
         "legend_onlyB": "alleen van B",
         "legend_shared": "gedeeld (voor GGD)"
+    },
+    "qqq": {
+        "_name": "Name of the Prime Factors module",
+        "gcd_formula_eq": "Equals sign used in the GCD formula display",
+        "gcd_none": "Text shown when two numbers share no prime factors (are coprime)",
+        "gcd_title": "Heading for the GCD (Greatest Common Divisor) section",
+        "insight_coprime": "Insight text shown when the two numbers are coprime. Uses HTML. Parameters: {A} = first number, {B} = second number, {AB} = their product, {L} = LCM.",
+        "insight_shared_many": "Insight text shown when the two numbers share multiple prime factors. Uses HTML. Parameters: {A} = first number, {B} = second number, {primes} = shared primes, {AB} = product, {G} = GCD, {L} = LCM, {GL} = GCD × LCM.",
+        "insight_shared_one": "Insight text shown when the two numbers share exactly one prime factor. Uses HTML. Parameters: {A} = first number, {B} = second number, {primes} = shared prime, {AB} = product, {G} = GCD, {L} = LCM, {GL} = GCD × LCM.",
+        "label_choose": "Heading for the input section where the user selects two numbers",
+        "label_factors": "Heading for the prime factors display section",
+        "label_how": "Heading for the section explaining how GCD and LCM are built",
+        "lcm_formula_eq": "Equals sign used in the LCM formula display",
+        "lcm_title": "Heading for the LCM (Least Common Multiple) section",
+        "legend_onlyA": "Legend label for factor blocks unique to number A",
+        "legend_onlyB": "Legend label for factor blocks unique to number B",
+        "legend_shared": "Legend label for factor blocks shared between A and B (used for GCD)"
     }
-} /* I18N_END */;
-function t( key, vars ) {
-    var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-    lang = lang.split('-')[0];
-    if (!messages[lang]) lang = 'en';
-    var dict = messages[lang] || {};
-    var str = dict[key] || (messages['en'] && messages['en'][key]) || key;
-    if ( vars ) {
-        if ( Array.isArray( vars ) ) {
-            vars.forEach( function ( val, i ) {
-                str = str.replace( new RegExp( '\{' + i + '\}', 'g' ), val );
-            } );
-        } else {
-            Object.keys( vars ).forEach( function ( k ) {
-                str = str.replace( new RegExp( '\{' + k + '\}', 'g' ), vars[ k ] );
-            } );
-        }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
     }
     return str;
 }
+
 
 
 

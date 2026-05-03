@@ -103,27 +103,43 @@ var messages = /* I18N_START */ {
         "tabCirc": "Omtrek",
         "title": "Cirkel Calculator",
         "visualProof": "Visueel bewijs"
+    },
+    "qqq": {
+        "_name": "Name of the Circle Proof module",
+        "animStopped": "Status message shown when the user stops the animation",
+        "area": "Label for the area metric",
+        "areaAnimStatus": "Status message shown during the area proof animation, explaining that sectors reassemble into a rectangle",
+        "areaReviewStatus": "Status message shown after the area proof animation completes",
+        "circAnimStatus": "Status message shown during the circumference proof animation, explaining that semi-circles unroll into lines",
+        "circReviewStatus": "Status message shown after the circumference proof animation completes",
+        "circumference": "Label for the circumference metric",
+        "initStatus": "Initial status message prompting the user to choose a proof",
+        "proveIt": "Button label to start the proof animation. Includes ▶ play symbol.",
+        "radius": "Label for the radius slider",
+        "readyStatus": "Status message shown after selecting a proof tab, before starting the animation",
+        "review": "Button label shown after animation completes, to replay. Includes ▶ play symbol.",
+        "stop": "Button label to stop a running animation. Includes ■ stop symbol.",
+        "tabArea": "Tab label for the area proof",
+        "tabCirc": "Tab label for the circumference proof",
+        "title": "Title of the circle calculator sidebar",
+        "visualProof": "Section heading for the visual proof controls"
     }
-} /* I18N_END */;
-function t( key, vars ) {
-    var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-    lang = lang.split('-')[0];
-    if (!messages[lang]) lang = 'en';
-    var dict = messages[lang] || {};
-    var str = dict[key] || (messages['en'] && messages['en'][key]) || key;
-    if ( vars ) {
-        if ( Array.isArray( vars ) ) {
-            vars.forEach( function ( val, i ) {
-                str = str.replace( new RegExp( '\{' + i + '\}', 'g' ), val );
-            } );
-        } else {
-            Object.keys( vars ).forEach( function ( k ) {
-                str = str.replace( new RegExp( '\{' + k + '\}', 'g' ), vars[ k ] );
-            } );
-        }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
     }
     return str;
 }
+
 
 var PX_PER_CM = 30;
 
@@ -218,8 +234,8 @@ var PX_PER_CM = 30;
                 proveBtn.classList.remove( 'running' );
                 proveBtn.textContent = '' + t('review') + '';
                 status.textContent = proofMode === 'C'
-                    ? '✓ Goiko πr + Beheko πr = C = 2πr.'
-                    : '✓ Zabalera = πr, altuera = r → A = πr².';
+                    ? t('circReviewStatus')
+                    : t('areaReviewStatus');
             }
             redraw();
             if ( animating ) { rafId = requestAnimationFrame( tick ); }

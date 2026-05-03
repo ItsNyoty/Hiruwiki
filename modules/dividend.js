@@ -124,27 +124,43 @@ var messages = /* I18N_START */ {
         "repadd_exact": "— is precies deelbaar!",
         "repadd_leftover": "blijft over",
         "repadd_less": "{N} is kleiner dan {D}, dus het quotiënt is 0 en de gehele waarde is de rest."
+    },
+    "qqq": {
+        "_name": "Name of the Dividend and Divisor module",
+        "eq_lbl_dividend": "Label for the dividend in the division equation display",
+        "eq_lbl_divisor": "Label for the divisor in the division equation display",
+        "eq_lbl_quotient": "Label for the quotient in the division equation display",
+        "eq_lbl_remainder": "Label for the remainder in the division equation display",
+        "insight_exact": "Insight text shown when division is exact (no remainder). Uses HTML. Parameters: {N} = dividend, {D} = divisor, {Q} = quotient, {s} = plural suffix for \"chunk\" (empty when Q=1, \"s\" otherwise).",
+        "insight_less": "Insight text shown when the dividend is smaller than the divisor. Uses HTML. Parameters: {N} = dividend, {D} = divisor.",
+        "insight_normal": "Insight text shown for normal division with a remainder. Uses HTML. Parameters: {N} = dividend, {D} = divisor, {Q} = quotient, {R} = remainder, {QD} = quotient × divisor.",
+        "label_bar": "Label for the bar visualisation section. Followed by the divisor value and units.",
+        "label_bar_units": "Unit label displayed after the divisor value in the bar view",
+        "label_choose": "Heading for the input section where the user selects dividend and divisor",
+        "label_dividend": "Label for the dividend input slider, with a parenthetical explanation",
+        "label_divisor": "Label for the divisor input slider, with a parenthetical explanation",
+        "label_equation": "Heading for the division equation section",
+        "label_repadd": "Heading for the repeated addition section",
+        "repadd_exact": "Text appended to the repeated addition when division is exact",
+        "repadd_leftover": "Text shown after the leftover value in the repeated addition",
+        "repadd_less": "Text shown in the repeated addition section when the dividend is less than the divisor. Parameters: {N} = dividend, {D} = divisor."
     }
-} /* I18N_END */;
-function t( key, vars ) {
-    var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-    lang = lang.split('-')[0];
-    if (!messages[lang]) lang = 'en';
-    var dict = messages[lang] || {};
-    var str = dict[key] || (messages['en'] && messages['en'][key]) || key;
-    if ( vars ) {
-        if ( Array.isArray( vars ) ) {
-            vars.forEach( function ( val, i ) {
-                str = str.replace( new RegExp( '\{' + i + '\}', 'g' ), val );
-            } );
-        } else {
-            Object.keys( vars ).forEach( function ( k ) {
-                str = str.replace( new RegExp( '\{' + k + '\}', 'g' ), vars[ k ] );
-            } );
-        }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
     }
     return str;
 }
+
 
 
 

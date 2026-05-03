@@ -100,27 +100,39 @@ var messages = /* I18N_START */ {
         "label_recovered": "hersteld",
         "label_scale": "SCHAAL: VOLLEDIGE BREEDTE = 200",
         "label_start": "start"
+    },
+    "qqq": {
+        "_name": "Name of the Percentages module",
+        "axis_neg": "Label at the left end of the slider axis (−100%)",
+        "axis_pos": "Label at the right end of the slider axis (+100%)",
+        "axis_zero": "Label at the centre of the slider axis (0%)",
+        "hint": "Instruction text explaining how to use the slider",
+        "insight_full_loss": "Insight text shown when the loss is exactly 100%. Uses HTML.",
+        "insight_gain": "Insight text shown for a percentage gain. Uses HTML. Parameters: {pct} = percentage applied, {result} = value after gain, {recovery} = percentage needed to return to 100.",
+        "insight_loss": "Insight text shown for a percentage loss. Uses HTML. Parameters: {pct} = percentage applied, {result} = value after loss, {recovery} = percentage needed to return to 100.",
+        "insight_zero": "Insight text shown when the slider is at zero (no change)",
+        "label_after": "Label on the bar visualisation for the value after the percentage change",
+        "label_apply": "Heading for the percentage change control section",
+        "label_recovered": "Label on the bar visualisation for the recovery bar",
+        "label_scale": "Label explaining the scale of the bar visualisation",
+        "label_start": "Label on the bar visualisation for the starting value"
     }
-} /* I18N_END */;
-function t( key, vars ) {
-    var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-    lang = lang.split('-')[0];
-    if (!messages[lang]) lang = 'en';
-    var dict = messages[lang] || {};
-    var str = dict[key] || (messages['en'] && messages['en'][key]) || key;
-    if ( vars ) {
-        if ( Array.isArray( vars ) ) {
-            vars.forEach( function ( val, i ) {
-                str = str.replace( new RegExp( '\{' + i + '\}', 'g' ), val );
-            } );
-        } else {
-            Object.keys( vars ).forEach( function ( k ) {
-                str = str.replace( new RegExp( '\{' + k + '\}', 'g' ), vars[ k ] );
-            } );
-        }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
     }
     return str;
 }
+
 
 
 

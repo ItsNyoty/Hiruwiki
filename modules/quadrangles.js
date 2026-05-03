@@ -5,14 +5,14 @@
 var messages = /* I18N_START */ {
     "en": {
         "_name": "Quadrilaterals",
-        "areaDiagHalf": "Formula: A = (d₁ × d₂) / 2\nd₁ (AC) = {0} cm\nd₂ (BD) = {1} cm\n= ({0} × {1}) / 2",
+        "areaDiagHalf": "Formula: A = (d₁ × d₂) / 2\nd₁ (AC) = $1 cm\nd₂ (BD) = $2 cm\n= ($1 × $2) / 2",
         "areaGaussHeader": "Gauss formula (shoelace):\nA = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|",
-        "areaGaussSum": "Σ = {0}\nA = ½ × |{0}|",
-        "areaGaussTerm": "(x{0}·y{1} − x{1}·y{0}) = {2}",
-        "areaParallelogram": "Formula: A = base × height\nbase (AB) = {0} cm\nheight = {1} cm\n= {0} × {1}",
-        "areaRectangle": "Formula: A = width × height\n= {0} × {1}",
-        "areaSquare": "Formula: A = side²\n= {0}²",
-        "areaTrapezoid": "Formula: A = (b₁ + b₂) / 2 × h\nb₁ (AB) = {0} cm\nb₂ (CD) = {1} cm\nheight = {2} cm\n= ({0} + {1}) / 2 × {2}",
+        "areaGaussSum": "Σ = $1\nA = ½ × |$1|",
+        "areaGaussTerm": "(x$1·y$2 − x$2·y$1) = $3",
+        "areaParallelogram": "Formula: A = base × height\nbase (AB) = $1 cm\nheight = $2 cm\n= $1 × $2",
+        "areaRectangle": "Formula: A = width × height\n= $1 × $2",
+        "areaSquare": "Formula: A = side²\n= $1²",
+        "areaTrapezoid": "Formula: A = (b₁ + b₂) / 2 × h\nb₁ (AB) = $1 cm\nb₂ (CD) = $2 cm\nheight = $3 cm\n= ($1 + $2) / 2 × $3",
         "headingArea": "Area",
         "headingClassification": "Classification",
         "headingSides": "Sides and diagonals",
@@ -37,14 +37,14 @@ var messages = /* I18N_START */ {
     },
     "es": {
         "_name": "Cuadriláteros",
-        "areaDiagHalf": "Fórmula: A = (d₁ × d₂) / 2\nd₁ (AC) = {0} cm\nd₂ (BD) = {1} cm\n= ({0} × {1}) / 2",
+        "areaDiagHalf": "Fórmula: A = (d₁ × d₂) / 2\nd₁ (AC) = $1 cm\nd₂ (BD) = $2 cm\n= ($1 × $2) / 2",
         "areaGaussHeader": "Fórmula de Gauss (shoelace):\nA = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|",
-        "areaGaussSum": "Σ = {0}\nA = ½ × |{0}|",
-        "areaGaussTerm": "(x{0}·y{1} − x{1}·y{0}) = {2}",
-        "areaParallelogram": "Fórmula: A = base × altura\nbase (AB) = {0} cm\naltura = {1} cm\n= {0} × {1}",
-        "areaRectangle": "Fórmula: A = base × altura\n= {0} × {1}",
-        "areaSquare": "Fórmula: A = lado²\n= {0}²",
-        "areaTrapezoid": "Fórmula: A = (b₁ + b₂) / 2 × h\nb₁ (AB) = {0} cm\nb₂ (CD) = {1} cm\naltura = {2} cm\n= ({0} + {1}) / 2 × {2}",
+        "areaGaussSum": "Σ = $1\nA = ½ × |$1|",
+        "areaGaussTerm": "(x$1·y$2 − x$2·y$1) = $3",
+        "areaParallelogram": "Fórmula: A = base × altura\nbase (AB) = $1 cm\naltura = $2 cm\n= $1 × $2",
+        "areaRectangle": "Fórmula: A = base × altura\n= $1 × $2",
+        "areaSquare": "Fórmula: A = lado²\n= $1²",
+        "areaTrapezoid": "Fórmula: A = (b₁ + b₂) / 2 × h\nb₁ (AB) = $1 cm\nb₂ (CD) = $2 cm\naltura = $3 cm\n= ($1 + $2) / 2 × $3",
         "headingArea": "Área",
         "headingClassification": "Clasificación",
         "headingSides": "Lados y diagonales",
@@ -69,14 +69,14 @@ var messages = /* I18N_START */ {
     },
     "eu": {
         "_name": "Koadrilateroak",
-        "areaDiagHalf": "Formula: A = (d₁ × d₂) / 2\nd₁ (AC) = {0} cm\nd₂ (BD) = {1} cm\n= ({0} × {1}) / 2",
+        "areaDiagHalf": "Formula: A = (d₁ × d₂) / 2\nd₁ (AC) = $1 cm\nd₂ (BD) = $2 cm\n= ($1 × $2) / 2",
         "areaGaussHeader": "Gaussen formula:\nA = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|",
-        "areaGaussSum": "Σ = {0}\nA = ½ × |{0}|",
-        "areaGaussTerm": "(x{0}·y{1} − x{1}·y{0}) = {2}",
-        "areaParallelogram": "Formula: A = oinarria × altuera\noinarria (AB) = {0} cm\naltuera = {1} cm\n= {0} × {1}",
-        "areaRectangle": "Formula: A = zabalera × altuera\n= {0} × {1}",
-        "areaSquare": "Formula: A = aldea²\n= {0}²",
-        "areaTrapezoid": "Formula: A = (b₁ + b₂) / 2 × h\nb₁ (AB) = {0} cm\nb₂ (CD) = {1} cm\naltuera = {2} cm\n= ({0} + {1}) / 2 × {2}",
+        "areaGaussSum": "Σ = $1\nA = ½ × |$1|",
+        "areaGaussTerm": "(x$1·y$2 − x$2·y$1) = $3",
+        "areaParallelogram": "Formula: A = oinarria × altuera\noinarria (AB) = $1 cm\naltuera = $2 cm\n= $1 × $2",
+        "areaRectangle": "Formula: A = zabalera × altuera\n= $1 × $2",
+        "areaSquare": "Formula: A = aldea²\n= $1²",
+        "areaTrapezoid": "Formula: A = (b₁ + b₂) / 2 × h\nb₁ (AB) = $1 cm\nb₂ (CD) = $2 cm\naltuera = $3 cm\n= ($1 + $2) / 2 × $3",
         "headingArea": "Azalera",
         "headingClassification": "Sailkapena",
         "headingSides": "Aldeak eta diagonalak",
@@ -101,14 +101,14 @@ var messages = /* I18N_START */ {
     },
     "fr": {
         "_name": "Quadrilatères",
-        "areaDiagHalf": "Formule : A = (d₁ × d₂) / 2\nd₁ (AC) = {0} cm\nd₂ (BD) = {1} cm\n= ({0} × {1}) / 2",
+        "areaDiagHalf": "Formule : A = (d₁ × d₂) / 2\nd₁ (AC) = $1 cm\nd₂ (BD) = $2 cm\n= ($1 × $2) / 2",
         "areaGaussHeader": "Formule de Gauss (shoelace) :\nA = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|",
-        "areaGaussSum": "Σ = {0}\nA = ½ × |{0}|",
-        "areaGaussTerm": "(x{0}·y{1} − x{1}·y{0}) = {2}",
-        "areaParallelogram": "Formule : A = base × hauteur\nbase (AB) = {0} cm\nhauteur = {1} cm\n= {0} × {1}",
-        "areaRectangle": "Formule : A = largeur × hauteur\n= {0} × {1}",
-        "areaSquare": "Formule : A = côté²\n= {0}²",
-        "areaTrapezoid": "Formule : A = (b₁ + b₂) / 2 × h\nb₁ (AB) = {0} cm\nb₂ (CD) = {1} cm\nhauteur = {2} cm\n= ({0} + {1}) / 2 × {2}",
+        "areaGaussSum": "Σ = $1\nA = ½ × |$1|",
+        "areaGaussTerm": "(x$1·y$2 − x$2·y$1) = $3",
+        "areaParallelogram": "Formule : A = base × hauteur\nbase (AB) = $1 cm\nhauteur = $2 cm\n= $1 × $2",
+        "areaRectangle": "Formule : A = largeur × hauteur\n= $1 × $2",
+        "areaSquare": "Formule : A = côté²\n= $1²",
+        "areaTrapezoid": "Formule : A = (b₁ + b₂) / 2 × h\nb₁ (AB) = $1 cm\nb₂ (CD) = $2 cm\nhauteur = $3 cm\n= ($1 + $2) / 2 × $3",
         "headingArea": "Aire",
         "headingClassification": "Classification",
         "headingSides": "Côtés et diagonales",
@@ -133,14 +133,14 @@ var messages = /* I18N_START */ {
     },
     "nl": {
         "_name": "Vierhoeken",
-        "areaDiagHalf": "Formule: A = (d₁ × d₂) / 2\nd₁ (AC) = {0} cm\nd₂ (BD) = {1} cm\n= ({0} × {1}) / 2",
+        "areaDiagHalf": "Formule: A = (d₁ × d₂) / 2\nd₁ (AC) = $1 cm\nd₂ (BD) = $2 cm\n= ($1 × $2) / 2",
         "areaGaussHeader": "Gauss formule (shoelace):\nA = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|",
-        "areaGaussSum": "Σ = {0}\nA = ½ × |{0}|",
-        "areaGaussTerm": "(x{0}·y{1} − x{1}·y{0}) = {2}",
-        "areaParallelogram": "Formule: A = basis × hoogte\nbasis (AB) = {0} cm\nhoogte = {1} cm\n= {0} × {1}",
-        "areaRectangle": "Formule: A = breedte × hoogte\n= {0} × {1}",
-        "areaSquare": "Formule: A = zijde²\n= {0}²",
-        "areaTrapezoid": "Formule: A = (b₁ + b₂) / 2 × h\nb₁ (AB) = {0} cm\nb₂ (CD) = {1} cm\nhoogte = {2} cm\n= ({0} + {1}) / 2 × {2}",
+        "areaGaussSum": "Σ = $1\nA = ½ × |$1|",
+        "areaGaussTerm": "(x$1·y$2 − x$2·y$1) = $3",
+        "areaParallelogram": "Formule: A = basis × hoogte\nbasis (AB) = $1 cm\nhoogte = $2 cm\n= $1 × $2",
+        "areaRectangle": "Formule: A = breedte × hoogte\n= $1 × $2",
+        "areaSquare": "Formule: A = zijde²\n= $1²",
+        "areaTrapezoid": "Formule: A = (b₁ + b₂) / 2 × h\nb₁ (AB) = $1 cm\nb₂ (CD) = $2 cm\nhoogte = $3 cm\n= ($1 + $2) / 2 × $3",
         "headingArea": "Oppervlakte",
         "headingClassification": "Classificatie",
         "headingSides": "Zijden en diagonalen",
@@ -162,27 +162,55 @@ var messages = /* I18N_START */ {
         "shapeTrapezoid": "trapezium",
         "unitCm": "cm",
         "unitCm2": "cm²"
+    },
+    "qqq": {
+        "_name": "Name of the Quadrilaterals module",
+        "areaDiagHalf": "Area formula for a kite using diagonals. Parameters: $1 = diagonal d₁ length, $2 = diagonal d₂ length.",
+        "areaGaussHeader": "Header text for the Gauss (shoelace) formula section",
+        "areaGaussSum": "Sum line of the Gauss formula. Parameters: $1 = the computed sum Σ.",
+        "areaGaussTerm": "Individual term of the Gauss formula. Parameters: $1 = first vertex index, $2 = second vertex index, $3 = computed term value.",
+        "areaParallelogram": "Area formula for a parallelogram. Parameters: $1 = base length, $2 = height.",
+        "areaRectangle": "Area formula for a rectangle. Parameters: $1 = width, $2 = height.",
+        "areaSquare": "Area formula for a square. Parameters: $1 = side length.",
+        "areaTrapezoid": "Area formula for a trapezoid. Parameters: $1 = base b₁ length, $2 = base b₂ length, $3 = height.",
+        "headingArea": "Section heading for the area calculation",
+        "headingClassification": "Section heading for the shape classification",
+        "headingSides": "Section heading for sides and diagonals measurements",
+        "labelDiag1": "Label for diagonal d₁ (AC)",
+        "labelDiag2": "Label for diagonal d₂ (BD)",
+        "labelPerimeter": "Label for the perimeter value",
+        "presetKite": "Preset button label for a kite shape",
+        "presetParallelogram": "Preset button label for a parallelogram shape",
+        "presetRectangle": "Preset button label for a rectangle shape",
+        "presetSquare": "Preset button label for a square shape",
+        "presetTrapezoid": "Preset button label for a trapezoid shape",
+        "shapeCrossed": "Classification name for a crossed (self-intersecting) quadrilateral",
+        "shapeGeneral": "Classification name for a general quadrilateral",
+        "shapeKite": "Classification name for a kite",
+        "shapeParallelogram": "Classification name for a parallelogram",
+        "shapeRectangle": "Classification name for a rectangle",
+        "shapeRhombus": "Classification name for a rhombus",
+        "shapeSquare": "Classification name for a square",
+        "shapeTrapezoid": "Classification name for a trapezoid",
+        "unitCm": "Unit abbreviation for centimetres",
+        "unitCm2": "Unit abbreviation for square centimetres"
     }
-} /* I18N_END */;
-function t( key, vars ) {
-    var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-    lang = lang.split('-')[0];
-    if (!messages[lang]) lang = 'en';
-    var dict = messages[lang] || {};
-    var str = dict[key] || (messages['en'] && messages['en'][key]) || key;
-    if ( vars ) {
-        if ( Array.isArray( vars ) ) {
-            vars.forEach( function ( val, i ) {
-                str = str.replace( new RegExp( '\{' + i + '\}', 'g' ), val );
-            } );
-        } else {
-            Object.keys( vars ).forEach( function ( k ) {
-                str = str.replace( new RegExp( '\{' + k + '\}', 'g' ), vars[ k ] );
-            } );
-        }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
     }
     return str;
 }
+
 
 
 // ── Widget ───────────────────────────────────────────────────────────────────

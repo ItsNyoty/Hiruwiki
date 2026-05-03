@@ -56,27 +56,33 @@ var messages = /* I18N_START */ {
         "labelHeight": "Hoogte (h)",
         "proofResultPara": "Oppervlakte parallellogram = b × h = <strong>{b} × {h} = {area} cm²</strong>",
         "proofResultTri": "→ Driehoek = ½ × {area} = <strong>{triArea} cm²</strong>"
+    },
+    "qqq": {
+        "_name": "Name of the Triangle Area module",
+        "btnProve": "Button label to start the area proof animation",
+        "btnReset": "Button label to reset the triangle",
+        "labelArea": "Label for the computed area value",
+        "labelBase": "Label for the base measurement, with variable name in parentheses",
+        "labelHeight": "Label for the height measurement, with variable name in parentheses",
+        "proofResultPara": "Proof result text for the parallelogram area. Uses HTML. Parameters: {b} = base, {h} = height, {area} = parallelogram area.",
+        "proofResultTri": "Proof result text for the triangle area (half the parallelogram). Uses HTML. Parameters: {area} = parallelogram area, {triArea} = triangle area."
     }
-} /* I18N_END */;
-function t( key, vars ) {
-    var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-    lang = lang.split('-')[0];
-    if (!messages[lang]) lang = 'en';
-    var dict = messages[lang] || {};
-    var str = dict[key] || (messages['en'] && messages['en'][key]) || key;
-    if ( vars ) {
-        if ( Array.isArray( vars ) ) {
-            vars.forEach( function ( val, i ) {
-                str = str.replace( new RegExp( '\{' + i + '\}', 'g' ), val );
-            } );
-        } else {
-            Object.keys( vars ).forEach( function ( k ) {
-                str = str.replace( new RegExp( '\{' + k + '\}', 'g' ), vars[ k ] );
-            } );
-        }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
     }
     return str;
 }
+
 
 var W = 680, H = 430, CM = 37.8, DUR = 1600;
 

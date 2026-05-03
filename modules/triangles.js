@@ -92,27 +92,41 @@ var messages = /* I18N_START */ {
         "right": "rechthoekig",
         "scalene": "ongelijkzijdig",
         "sides": "Zijden"
+    },
+    "qqq": {
+        "_name": "Name of the Triangles module",
+        "acute": "Classification name for an acute triangle (all angles < 90°)",
+        "angles": "Section heading for the angles display",
+        "area": "Label for the triangle area",
+        "byAngles": "Label prefix for the angle-based classification. Followed by the classification name.",
+        "bySides": "Label prefix for the side-based classification. Followed by the classification name.",
+        "classification": "Section heading for the triangle classification",
+        "equilateral": "Classification name for an equilateral triangle (all sides equal)",
+        "isosceles": "Classification name for an isosceles triangle (two sides equal)",
+        "measurements": "Section heading for the measurements display",
+        "obtuse": "Classification name for an obtuse triangle (one angle > 90°)",
+        "perimeter": "Label for the triangle perimeter",
+        "reset": "Button label to reset the triangle",
+        "right": "Classification name for a right triangle (one angle = 90°)",
+        "scalene": "Classification name for a scalene triangle (no sides equal)",
+        "sides": "Section heading for the sides display"
     }
-} /* I18N_END */;
-function t( key, vars ) {
-    var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-    lang = lang.split('-')[0];
-    if (!messages[lang]) lang = 'en';
-    var dict = messages[lang] || {};
-    var str = dict[key] || (messages['en'] && messages['en'][key]) || key;
-    if ( vars ) {
-        if ( Array.isArray( vars ) ) {
-            vars.forEach( function ( val, i ) {
-                str = str.replace( new RegExp( '\{' + i + '\}', 'g' ), val );
-            } );
-        } else {
-            Object.keys( vars ).forEach( function ( k ) {
-                str = str.replace( new RegExp( '\{' + k + '\}', 'g' ), vars[ k ] );
-            } );
-        }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
     }
     return str;
 }
+
 
 function initTriangleWidget(container) {
 

@@ -79,25 +79,90 @@ def main():
             
         module_dict = translations[dict_key]
         
+        # Convert {0}, {1} to $1, $2 for banana-i18n
+        for lang in module_dict:
+            for key in module_dict[lang]:
+                val = module_dict[lang][key]
+                if isinstance(val, str):
+                    module_dict[lang][key] = re.sub(r'\{([0-9]+)\}', lambda m: f"${int(m.group(1)) + 1}", val)
+        
         # Serialize to formatted JSON string
         json_str = json.dumps(module_dict, indent=4, ensure_ascii=False)
-        
-        # We want to format the JSON string slightly to fit the JS syntax better
-        # (optional, but nice and my personal preference so I'm keeping it)
         
         filepath = os.path.join(modules_dir, filename)
         with open(filepath, 'r', encoding='utf-8') as f:
             content = f.read()
             
-        # Look for the injection block
-        pattern = re.compile(r'/\*\s*I18N_START\s*\*/.*?/\*\s*I18N_END\s*\*/', re.DOTALL)
+        # Look for the I18N block
+        i18n_pattern = re.compile(r'/\*\s*I18N_START\s*\*/.*?/\*\s*I18N_END\s*\*/', re.DOTALL)
+        i18n_match = i18n_pattern.search(content)
         
-        if not pattern.search(content):
+        if not i18n_match:
             print(f"Warning: No I18N_START/I18N_END block found in {filename}.")
             continue
             
-        replacement = f"/* I18N_START */ {json_str} /* I18N_END */"
-        new_content = pattern.sub(lambda m: replacement, content)
+        banana_init = f"""
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {{
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {{
+        Object.keys(vars).forEach(function(k) {{
+            str = str.replace(new RegExp('\\\\{{' + k + '\\\\}}', 'g'), vars[k]);
+        }});
+    }}
+    return str;
+}}
+""".strip()
+
+        replacement = f"/* I18N_START */ {json_str} /* I18N_END */\n{banana_init}\n"
+
+        # Search for all 'function t' blocks and 'var lang =' initializations 
+        # that follow the I18N block.
+        # We want to find the furthest point we should replace.
+        search_start = i18n_match.end()
+        last_replace_pos = search_start
+        
+        # Look for any 'var lang =', 'var banana =', 'banana.load', or 'function t' 
+        # that appears within a reasonable distance (e.g., 500 chars) of each other.
+        while True:
+            # Look for the next relevant construct
+            m = re.search(r'\s*(?:var lang =|var banana =|banana\.load|function t\(\s*key,\s*vars\s*\)\s*\{)', content[last_replace_pos:last_replace_pos + 1000], re.DOTALL)
+            if not m:
+                break
+                
+            entry_pos = last_replace_pos + m.start()
+            # If it's a function, find its end
+            if 'function t' in m.group(0):
+                # Simple brace matching for the function
+                brace_count = 0
+                found_start = False
+                for i in range(entry_pos + m.end() - 1, len(content)):
+                    if content[i] == '{':
+                        brace_count += 1
+                        found_start = True
+                    elif content[i] == '}':
+                        brace_count -= 1
+                    
+                    if found_start and brace_count == 0:
+                        last_replace_pos = i + 1
+                        break
+                else:
+                    # Failed to find matching brace, stop here
+                    break
+            else:
+                # It's a single line init, just find the end of line
+                eol = content.find('\n', entry_pos)
+                if eol == -1:
+                    last_replace_pos = len(content)
+                else:
+                    last_replace_pos = eol + 1
+        
+        # Replace from the start of I18N block to last_replace_pos
+        new_content = content[:i18n_match.start()] + replacement + content[last_replace_pos:]
         
         if new_content != content:
             with open(filepath, 'w', encoding='utf-8') as f:
