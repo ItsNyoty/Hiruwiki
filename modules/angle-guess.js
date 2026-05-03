@@ -15,7 +15,7 @@ var messages = /* I18N_START */ {
         "points": "Points:",
         "pts": "pts",
         "round": "Round:",
-        "roundOver": "Round over",
+        "roundOver": "Game over",
         "target": "Target:",
         "tryAgain": "Try again",
         "yourGuess": "Your guess:"
@@ -105,6 +105,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 // ── Find mount point ──────────────────────────────────────────

@@ -69,6 +69,7 @@ function t(key, vars) {
 }
 
 
+
 var SVG_W  = 580, SVG_H = 520;
   var SVG_NS = 'http://www.w3.org/2000/svg';
   var KEYS   = ['A','B','C','D','E','F'];

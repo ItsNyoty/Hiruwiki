@@ -44,6 +44,7 @@ function t(key, vars) {
 }
 
 
+
 // Find all radian modules
   document.querySelectorAll('.hiruwiki[data-module="radian"]').forEach(function(container) {
 
