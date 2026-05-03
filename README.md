@@ -1,23 +1,8 @@
 # Hiruwiki
 
-Hiruwiki is a system for displaying graphical proofs in geometry and mathematics, developed by the Basque Wikimedia Chapter (**Euskal Wikilarien Kultura Elkartea**). The name is a play on the word *hiruki* (triangle), as many geometric proofs are performed using triangles.
+Hiruwiki is a system for displaying graphical proofs in geometry and mathematics, developed by **Theklan** from the Basque Wikimedia Chapter (**Euskal Wikilarien Kultura Elkartea**) during the ***Northwestern Europe Hackathon 2026**. The name is a play on the word *hiruki* (triangle), as many geometric proofs are performed using triangles.
 
 This project has been ported by **ItsNyoty** to a global MediaWiki gadget during the **Wikimania Hackathon 2026**, introducing a decentralized localization architecture and comprehensive multi-language support.
-
-## Supported Languages
-Currently, the system supports:
-- English (`en`)
-- Basque (`eu`)
-- Spanish (`es`)
-- French (`fr`)
-- Dutch (`nl`)
-
-## Project Structure
-- **`i18n.yaml`**: The master registry for all translations.
-- **`build_i18n.py`**: Automated script to inject translations from the YAML file into the individual module JS files.
-- **`deploy.py`**: A zero-dependency Python script to deploy files to MediaWiki.
-- **`modules/`**: Directory containing 25+ interactive geometric proof widgets.
-- **`Gadget-hiruwiki-core.js`**: The main MediaWiki gadget loader.
 
 ## MediaWiki Configuration
 Add the following to **`MediaWiki:Gadgets-definition`**:
@@ -63,13 +48,7 @@ To deploy the gadget to a mediawiki:
 
 
 ## How to Contribute Translations
-1. Edit the strings in [i18n.yaml](i18n.yaml).
-2. Run the build script:
-
-   ```bash
-   python build_i18n.py
-   ```
-   This will update the `/* I18N_START */` blocks in the corresponding `.js` files in the `modules/` folder.
+You can contribute translations on [translatewiki.net](https://translatewiki.net/w/i.php?title=Special%3ATranslate&group=hiruwiki).
 
 ## Credits
 - **Original Development**: [Theklan](https://eu.wikipedia.org/wiki/Lankide:Theklan), Euskal Wikilarien Kultura Elkartea (Northwestern Europe Hackathon 2026).
