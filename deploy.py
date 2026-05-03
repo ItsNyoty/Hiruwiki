@@ -252,6 +252,10 @@ def main():
     if not args.files or CORE_FILE in args.files:
         deploy_list.append((CORE_FILE, "MediaWiki:" + CORE_FILE))
 
+    BANANA_FILE = "banana-i18n.js"
+    if not args.files or BANANA_FILE in args.files:
+        deploy_list.append((BANANA_FILE, "MediaWiki:Hiruwiki/" + BANANA_FILE))
+
     if os.path.exists(MODULES_DIR):
         for f in sorted(os.listdir(MODULES_DIR)):
             if f.endswith((".js", ".css")):

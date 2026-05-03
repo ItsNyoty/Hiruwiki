@@ -27,7 +27,12 @@
 
         // load JS after banana-i18n is ready
         getBanana().done(function () {
-            mw.loader.load(jsUrl);
+            $.getScript(jsUrl)
+                .fail(function(jqxhr, settings, exception) {
+                    console.error('Hiruwiki: Failed to load module ' + name, exception);
+                });
+        }).fail(function() {
+            console.error('Hiruwiki: Failed to load banana-i18n library');
         });
     }
 
