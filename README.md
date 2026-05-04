@@ -15,7 +15,10 @@ Then, create the page **`MediaWiki:Gadget-hiruwiki-core.js`** on your wiki and a
 mw.loader.load('https://www.mediawiki.org/w/index.php?title=MediaWiki:Gadget-hiruwiki-core.js&action=raw&ctype=text/javascript');
 ```
 
-## Deployment
+## How to Contribute Translations
+You can contribute translations on [translatewiki.net](https://translatewiki.net/w/i.php?title=Special%3ATranslate&group=hiruwiki).
+
+## Other ways of deployment
 
 To deploy the gadget to a mediawiki:
 1.  **Configure Credentials**:
@@ -45,10 +48,6 @@ To deploy the gadget to a mediawiki:
 
     > [!IMPORTANT]
     > **Permissions**: To deploy JS/CSS files to the `MediaWiki:` namespace, your account must have **Interface Administrator** rights on the target wiki. If you get a permission error, visit `Special:UserRights` to grant yourself the `interface-admin` group (if you are an administrator).
-
-
-## How to Contribute Translations
-You can contribute translations on [translatewiki.net](https://translatewiki.net/w/i.php?title=Special%3ATranslate&group=hiruwiki).
 
 ## Credits
 - **Original Development**: [Theklan](https://eu.wikipedia.org/wiki/Lankide:Theklan), Euskal Wikilarien Kultura Elkartea (Northwestern Europe Hackathon 2026).
