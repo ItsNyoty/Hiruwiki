@@ -19,6 +19,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     if: |
       (github.event_name == 'push' && github.actor == 'translatewiki') ||
       (github.event_name == 'workflow_dispatch' && (github.actor == 'ItsNyoty' || github.actor == 'theklan'))
