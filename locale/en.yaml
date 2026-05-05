@@ -56,8 +56,7 @@ en:
       Notice the red piece (<strong>{R}</strong>) is always shorter than one blue
       chunk (<strong>{D}</strong>). The remainder is always strictly less than the
       divisor. Check: <strong>{Q} × {D} + {R} = {QD} + {R} = {N}</strong> ✓'
-    label_bar: Bar view — each blue chunk =
-    label_bar_units: units
+    label_bar_description: 'Bar view — each blue chunk = {{PLURAL:$1|$1 unit|$1 units}}'
     label_choose: Choose dividend and divisor
     label_dividend: Dividend (the number being divided)
     label_divisor: Divisor (the chunk size)

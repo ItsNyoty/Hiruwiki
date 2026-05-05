@@ -69,9 +69,8 @@ qqq:
     insight_normal: 'Insight text shown for normal division with a remainder. Uses
       HTML. Parameters: {N} = dividend, {D} = divisor, {Q} = quotient, {R} = remainder,
       {QD} = quotient × divisor.'
-    label_bar: Label for the bar visualisation section. Followed by the divisor value
-      and units.
-    label_bar_units: Unit label displayed after the divisor value in the bar view
+    label_bar_description: 'Label for the bar visualisation section showing the chunk
+      size. Uses PLURAL. Parameters: $1 = the divisor (chunk size).'
     label_choose: Heading for the input section where the user selects dividend and
       divisor
     label_dividend: Label for the dividend input slider, with a parenthetical explanation
