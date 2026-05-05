@@ -21,14 +21,28 @@ def main():
         
         with open(filepath, 'r', encoding='utf-8') as f:
             content = f.read()
-            file_data = yaml.safe_load(content)
             
+            try:
+                file_data = yaml.safe_load(content)
+            except yaml.YAMLError:
+                # Common issue: unquoted '=' or other special characters as values.
+                # Attempt to fix by quoting values that are just '='.
+                fixed_content = re.sub(r'(\s*[\w-]+):\s*=\s*(\n|$)', r'\1: "="\2', content)
+                try:
+                    file_data = yaml.safe_load(fixed_content)
+                except yaml.YAMLError:
+                    print(f"Error: Failed to parse {filename} even with automatic fixes.")
+                    continue
+
             # If the file was incorrectly split and has leading indentation on all lines,
             # safe_load might return a dict with None values or just fail to nest.
             # We check if we need to dedent.
             if file_data and all(v is None for v in file_data.values()):
                 import textwrap
-                file_data = yaml.safe_load(textwrap.dedent(content))
+                try:
+                    file_data = yaml.safe_load(textwrap.dedent(content))
+                except yaml.YAMLError:
+                    continue
 
             if not file_data:
                 continue
