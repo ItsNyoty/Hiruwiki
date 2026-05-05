@@ -3,23 +3,11 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Pythagorean Theorem",
-        "angleDeg": "angle =",
-        "lockRight": "right angle",
-        "reset": "Reset"
-    },
     "es": {
         "_name": "Teorema de Pitágoras",
         "angleDeg": "ángulo =",
         "lockRight": "ángulo recto",
         "reset": "Reiniciar"
-    },
-    "eu": {
-        "_name": "Pitagorasen teorema",
-        "angleDeg": "angelua =",
-        "lockRight": "angelu zuzena",
-        "reset": "Berrezarri"
     },
     "fr": {
         "_name": "Théorème de Pythagore",
@@ -27,17 +15,47 @@ var messages = /* I18N_START */ {
         "lockRight": "angle droit",
         "reset": "Réinitialiser"
     },
-    "nl": {
-        "_name": "Stelling van Pythagoras",
-        "angleDeg": "hoek =",
-        "lockRight": "rechte hoek",
-        "reset": "Reset"
+    "ga": {
+        "_name": "Teoirim Phíotagaráis",
+        "angleDeg": "uillinn =",
+        "lockRight": "uillinn dheis",
+        "reset": "Athshocraigh"
     },
     "qqq": {
         "_name": "Name of the Pythagorean Theorem module",
         "angleDeg": "Label prefix for the angle value. Followed by a number in degrees.",
         "lockRight": "Checkbox label to lock the triangle to a right angle",
         "reset": "Button label to reset the triangle"
+    },
+    "nl": {
+        "_name": "Stelling van Pythagoras",
+        "angleDeg": "hoek =",
+        "lockRight": "rechte hoek",
+        "reset": "Reset"
+    },
+    "en": {
+        "_name": "Pythagorean Theorem",
+        "angleDeg": "angle =",
+        "lockRight": "right angle",
+        "reset": "Reset"
+    },
+    "ca": {
+        "_name": "Teorema de Pitàgores",
+        "angleDeg": "angle =",
+        "lockRight": "angle recte",
+        "reset": "Reinicia"
+    },
+    "ko": {
+        "_name": "피타고라스 정리",
+        "angleDeg": "각도 =",
+        "lockRight": "직각",
+        "reset": "초기화"
+    },
+    "eu": {
+        "_name": "Pitagorasen teorema",
+        "angleDeg": "angelua =",
+        "lockRight": "angelu zuzena",
+        "reset": "Berrezarri"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -54,6 +72,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 

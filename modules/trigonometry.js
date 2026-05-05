@@ -8,18 +8,6 @@
     
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Trigonometry",
-        "angle": "Angle &theta;",
-        "cosDesc": "The blue line is the <strong>adjacent</strong> side &mdash; the horizontal distance from the origin to the base of the perpendicular. cos&nbsp;&theta;&nbsp;=&nbsp;adjacent&nbsp;&divide;&nbsp;hypotenuse&nbsp;(=&nbsp;1).",
-        "cosFormula": "adjacent / hypotenuse",
-        "hideProof": "Hide proof",
-        "prove": "Prove",
-        "sinDesc": "The green line is the <strong>opposite</strong> side &mdash; the vertical distance from the point on the circle to the x-axis. sin&nbsp;&theta;&nbsp;=&nbsp;opposite&nbsp;&divide;&nbsp;hypotenuse&nbsp;(=&nbsp;1).",
-        "sinFormula": "opposite / hypotenuse",
-        "tanDesc": "The orange line is drawn at x&nbsp;=&nbsp;1, tangent to the circle. Its height is tan&nbsp;&theta;, since tan&nbsp;&theta;&nbsp;=&nbsp;opposite&nbsp;&divide;&nbsp;adjacent&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.",
-        "tanFormula": "opposite / adjacent"
-    },
     "es": {
         "_name": "Trigonometría",
         "angle": "Ángulo &theta;",
@@ -31,18 +19,6 @@ var messages = /* I18N_START */ {
         "sinFormula": "opuesto / hipotenusa",
         "tanDesc": "La línea naranja se dibuja en x&nbsp;=&nbsp;1, tangente al círculo. Su altura es tan&nbsp;&theta;, ya que tan&nbsp;&theta;&nbsp;=&nbsp;opuesto&nbsp;&divide;&nbsp;adyacente&nbsp;=&nbsp;sen&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.",
         "tanFormula": "opuesto / adyacente"
-    },
-    "eu": {
-        "_name": "Trigonometria",
-        "angle": "Angelua &theta;",
-        "cosDesc": "Lerro urdina alde <strong>auzokidea</strong> da &mdash; jatorritik elkartzutaren oinarrira dagoen distantzia horizontala. cos&nbsp;&theta;&nbsp;=&nbsp;auzokidea&nbsp;&divide;&nbsp;hipotenisa&nbsp;(=&nbsp;1).",
-        "cosFormula": "auzokidea / hipotenusa",
-        "hideProof": "Froga ezkutatu",
-        "prove": "Frogatu",
-        "sinDesc": "Lerro berdea <strong>aurkako</strong> aldea da &mdash; zirkulu puntutik x-ardatzera dagoen distantzia bertikala sin&nbsp;&theta;&nbsp;=&nbsp;aurkakoa&nbsp;&divide;&nbsp;hipotenusa&nbsp;(=&nbsp;1).",
-        "sinFormula": "aurkakoa / hipotenusa",
-        "tanDesc": "Lerro laranja x&nbsp;=&nbsp;1 denean marrazten da, zirkuluarekiko tangentea. Bere altuera tan&nbsp;&theta; da, tan&nbsp;=&nbsp;aurkakoa&nbsp;&divide;&nbsp;auzokidea&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta; baita.",
-        "tanFormula": "aurkakoa / auzokidea"
     },
     "fr": {
         "_name": "Trigonométrie",
@@ -56,17 +32,17 @@ var messages = /* I18N_START */ {
         "tanDesc": "La ligne orange est tracée à x&nbsp;=&nbsp;1, tangente au cercle. Sa hauteur est tan&nbsp;&theta;, car tan&nbsp;&theta;&nbsp;=&nbsp;opposé&nbsp;&divide;&nbsp;adjacent&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.",
         "tanFormula": "opposé / adjacent"
     },
-    "nl": {
-        "_name": "Goniometrie",
-        "angle": "Hoek &theta;",
-        "cosDesc": "De blauwe lijn is de <strong>aanliggende</strong> zijde &mdash; de horizontale afstand van de oorsprong tot de basis van de loodlijn. cos&nbsp;&theta;&nbsp;=&nbsp;aanliggende&nbsp;&divide;&nbsp;schuine&nbsp;zijde&nbsp;(=&nbsp;1).",
-        "cosFormula": "aanliggende / schuine",
-        "hideProof": "Verberg bewijs",
-        "prove": "Bewijs",
-        "sinDesc": "De groene lijn is de <strong>overstaande</strong> zijde &mdash; de verticale afstand van het punt op de cirkel tot de x-as. sin&nbsp;&theta;&nbsp;=&nbsp;overstaande&nbsp;&divide;&nbsp;schuine&nbsp;zijde&nbsp;(=&nbsp;1).",
-        "sinFormula": "overstaande / schuine",
-        "tanDesc": "De oranje lijn is getekend op x&nbsp;=&nbsp;1, rakend aan de cirkel. De hoogte is tan&nbsp;&theta;, aangezien tan&nbsp;&theta;&nbsp;=&nbsp;overstaande&nbsp;&divide;&nbsp;aanliggende&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.",
-        "tanFormula": "overstaande / aanliggende"
+    "ga": {
+        "_name": "Triantánacht",
+        "angle": "Uillinn &theta;",
+        "cosDesc": "Is í an líne ghorm an taobh **cóngarach** &mdash; an fad cothrománach ón mbunphointe go dtí bun an ingearaigh. cos &theta;&nbsp;=&nbsp;cóngarach&nbsp;&nbsp;&nbsp;hipotenuse&nbsp;(=&nbsp;1).",
+        "cosFormula": "cóngarach / taobhagán",
+        "hideProof": "Folaigh cruthúnas",
+        "prove": "Cruthaigh",
+        "sinDesc": "Is í an líne uaine an taobh **os coinne** &mdash; an fad ingearach ón bpointe ar an gciorcal go dtí an ais-x. sin &theta;&nbsp;=&nbsp;os coinne&nbsp;&nbsp;divide;&nbsp;hipotenuse&nbsp;(=&nbsp;1).",
+        "sinFormula": "os coinne / taobhagán",
+        "tanDesc": "Tarraingítear an líne oráiste ag  x&nbsp;=&nbsp;1, tadhlaí don chiorcal. Is é a airde tan&nbsp;&theta;, ós rud é tan&nbsp;&theta;&nbsp;=&nbsp;opposite&nbsp;&divide;&nbsp;adjacent&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.",
+        "tanFormula": "os coinne / cóngarach"
     },
     "qqq": {
         "_name": "Name of the Trigonometry module",
@@ -79,6 +55,55 @@ var messages = /* I18N_START */ {
         "sinFormula": "Formula for sine (opposite / hypotenuse)",
         "tanDesc": "Description of the tangent function shown in the proof panel. Uses HTML entities and formatting.",
         "tanFormula": "Formula for tangent (opposite / adjacent)"
+    },
+    "it": {
+        "_name": "Trigonometria",
+        "prove": "Dimostra"
+    },
+    "nl": {
+        "_name": "Goniometrie",
+        "angle": "Hoek &theta;",
+        "cosDesc": "De blauwe lijn is de <strong>aanliggende</strong> zijde &mdash; de horizontale afstand van de oorsprong tot de basis van de loodlijn. cos&nbsp;&theta;&nbsp;=&nbsp;aanliggende&nbsp;&divide;&nbsp;schuine&nbsp;zijde&nbsp;(=&nbsp;1).",
+        "cosFormula": "aanliggende / schuine",
+        "hideProof": "Verberg bewijs",
+        "prove": "Bewijs",
+        "sinDesc": "De groene lijn is de <strong>overstaande</strong> zijde &mdash; de verticale afstand van het punt op de cirkel tot de x-as. sin&nbsp;&theta;&nbsp;=&nbsp;overstaande&nbsp;&divide;&nbsp;schuine&nbsp;zijde&nbsp;(=&nbsp;1).",
+        "sinFormula": "overstaande / schuine",
+        "tanDesc": "De oranje lijn is getekend op x&nbsp;=&nbsp;1, rakend aan de cirkel. De hoogte is tan&nbsp;&theta;, aangezien tan&nbsp;&theta;&nbsp;=&nbsp;overstaande&nbsp;&divide;&nbsp;aanliggende&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.",
+        "tanFormula": "overstaande / aanliggende"
+    },
+    "en": {
+        "_name": "Trigonometry",
+        "angle": "Angle &theta;",
+        "cosDesc": "The blue line is the <strong>adjacent</strong> side &mdash; the horizontal distance from the origin to the base of the perpendicular. cos&nbsp;&theta;&nbsp;=&nbsp;adjacent&nbsp;&divide;&nbsp;hypotenuse&nbsp;(=&nbsp;1).",
+        "cosFormula": "adjacent / hypotenuse",
+        "hideProof": "Hide proof",
+        "prove": "Prove",
+        "sinDesc": "The green line is the <strong>opposite</strong> side &mdash; the vertical distance from the point on the circle to the x-axis. sin&nbsp;&theta;&nbsp;=&nbsp;opposite&nbsp;&divide;&nbsp;hypotenuse&nbsp;(=&nbsp;1).",
+        "sinFormula": "opposite / hypotenuse",
+        "tanDesc": "The orange line is drawn at x&nbsp;=&nbsp;1, tangent to the circle. Its height is tan&nbsp;&theta;, since tan&nbsp;&theta;&nbsp;=&nbsp;opposite&nbsp;&divide;&nbsp;adjacent&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.",
+        "tanFormula": "opposite / adjacent"
+    },
+    "ca": {
+        "_name": "Trigonometria",
+        "angle": "Angle &theta;"
+    },
+    "ko": {
+        "_name": "삼각법",
+        "angle": "각도 &theta;",
+        "hideProof": "증명 숨기기"
+    },
+    "eu": {
+        "_name": "Trigonometria",
+        "angle": "Angelua &theta;",
+        "cosDesc": "Lerro urdina alde <strong>auzokidea</strong> da &mdash; jatorritik elkartzutaren oinarrira dagoen distantzia horizontala. cos&nbsp;&theta;&nbsp;=&nbsp;auzokidea&nbsp;&divide;&nbsp;hipotenisa&nbsp;(=&nbsp;1).",
+        "cosFormula": "auzokidea / hipotenusa",
+        "hideProof": "Froga ezkutatu",
+        "prove": "Frogatu",
+        "sinDesc": "Lerro berdea <strong>aurkako</strong> aldea da &mdash; zirkulu puntutik x-ardatzera dagoen distantzia bertikala sin&nbsp;&theta;&nbsp;=&nbsp;aurkakoa&nbsp;&divide;&nbsp;hipotenusa&nbsp;(=&nbsp;1).",
+        "sinFormula": "aurkakoa / hipotenusa",
+        "tanDesc": "Lerro laranja x&nbsp;=&nbsp;1 denean marrazten da, zirkuluarekiko tangentea. Bere altuera tan&nbsp;&theta; da, tan&nbsp;=&nbsp;aurkakoa&nbsp;&divide;&nbsp;auzokidea&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta; baita.",
+        "tanFormula": "aurkakoa / auzokidea"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -95,6 +120,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 

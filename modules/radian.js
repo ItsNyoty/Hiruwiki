@@ -3,29 +3,41 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Radians",
-        "rad": "rad"
-    },
     "es": {
         "_name": "Radianes",
-        "rad": "rad"
-    },
-    "eu": {
-        "_name": "Radianak",
         "rad": "rad"
     },
     "fr": {
         "_name": "Radians",
         "rad": "rad"
     },
-    "nl": {
-        "_name": "Radialen",
+    "ga": {
+        "_name": "Raidiáin",
         "rad": "rad"
     },
     "qqq": {
         "_name": "Name of the Radians module",
         "rad": "Abbreviation for radians"
+    },
+    "nl": {
+        "_name": "Radialen",
+        "rad": "rad"
+    },
+    "en": {
+        "_name": "Radians",
+        "rad": "rad"
+    },
+    "ca": {
+        "_name": "Radians",
+        "rad": "rad"
+    },
+    "ko": {
+        "_name": "라디안",
+        "rad": "rad"
+    },
+    "eu": {
+        "_name": "Radianak",
+        "rad": "rad"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -42,6 +54,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 

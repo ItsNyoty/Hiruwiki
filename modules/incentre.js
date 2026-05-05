@@ -12,28 +12,6 @@
 	
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Incentre",
-        "angleA": "Angle A",
-        "angleB": "Angle B",
-        "angleC": "Angle C",
-        "area": "Area",
-        "centre": "Centre I",
-        "circumference": "Circumference",
-        "formula": "r = Area / s",
-        "hint": "Drag any vertex · Scale: 1 cm = 40 px",
-        "incircle": "Incircle",
-        "perimeter": "Perimeter",
-        "radius": "Radius (r)",
-        "scaleUnit": "cm",
-        "sideA": "Side a (BC)",
-        "sideB": "Side b (CA)",
-        "sideC": "Side c (AB)",
-        "touchAB": "Touch pt. AB",
-        "touchBC": "Touch pt. BC",
-        "touchCA": "Touch pt. CA",
-        "triangle": "Triangle"
-    },
     "es": {
         "_name": "Incentro",
         "angleA": "Ángulo A",
@@ -55,28 +33,6 @@ var messages = /* I18N_START */ {
         "touchBC": "Pt. tangencia BC",
         "touchCA": "Pt. tangencia CA",
         "triangle": "Triángulo"
-    },
-    "eu": {
-        "_name": "Inzentroa",
-        "angleA": "A angelua",
-        "angleB": "B angelua",
-        "angleC": "C angelua",
-        "area": "Azalera",
-        "centre": "I intzentroa",
-        "circumference": "Zirkunferentzia",
-        "formula": "r = Azalera / s",
-        "hint": "Erpinak mugitu ditzakezu - Eskala: 1 cm= 40 px",
-        "incircle": "Zirkulu inskribatua",
-        "perimeter": "Perimetroa",
-        "radius": "Erradioa (r)",
-        "scaleUnit": "cm",
-        "sideA": "a aldea (BC)",
-        "sideB": "b aldea (CA)",
-        "sideC": "c aldea (AB)",
-        "touchAB": "AB tangentea",
-        "touchBC": "BC tangentea",
-        "touchCA": "CA tangentea",
-        "triangle": "Triangelua"
     },
     "fr": {
         "_name": "Incentre",
@@ -100,27 +56,27 @@ var messages = /* I18N_START */ {
         "touchCA": "Pt de contact CA",
         "triangle": "Triangle"
     },
-    "nl": {
-        "_name": "Incentrum",
-        "angleA": "Hoek A",
-        "angleB": "Hoek B",
-        "angleC": "Hoek C",
-        "area": "Oppervlakte",
-        "centre": "Middelpunt I",
-        "circumference": "Omtrek",
-        "formula": "r = Oppervlakte / s",
-        "hint": "Sleep een hoekpunt · Schaal: 1 cm = 40 px",
-        "incircle": "Ingebedde cirkel",
-        "perimeter": "Omtrek",
-        "radius": "Straal (r)",
+    "ga": {
+        "_name": "Lárionad",
+        "angleA": "Uillinn A",
+        "angleB": "Uillinn B",
+        "angleC": "Uillinn C",
+        "area": "Limistéar",
+        "centre": "Ionad I",
+        "circumference": "Imlíne",
+        "formula": "r = Achar / s",
+        "hint": "Tarraing aon bhuaicphointe · Scála: 1 cm = 40 px",
+        "incircle": "I gciorcal",
+        "perimeter": "Imlíne",
+        "radius": "Ga (r)",
         "scaleUnit": "cm",
-        "sideA": "Zijde a (BC)",
-        "sideB": "Zijde b (CA)",
-        "sideC": "Zijde c (AB)",
-        "touchAB": "Raakpunt AB",
-        "touchBC": "Raakpunt BC",
-        "touchCA": "Raakpunt CA",
-        "triangle": "Driehoek"
+        "sideA": "Taobh a (BC)",
+        "sideB": "Taobh b (CA)",
+        "sideC": "Taobh c (AB)",
+        "touchAB": "Teagmháil pt. AB",
+        "touchBC": "Teagmháil pt. BC",
+        "touchCA": "Teagmháil pt. CA",
+        "triangle": "Triantán"
     },
     "qqq": {
         "_name": "Name of the Incentre module",
@@ -143,6 +99,103 @@ var messages = /* I18N_START */ {
         "touchBC": "Label for the tangent point on side BC",
         "touchCA": "Label for the tangent point on side CA",
         "triangle": "Section heading for the triangle properties"
+    },
+    "it": {
+        "angleA": "Angolo A"
+    },
+    "nl": {
+        "_name": "Incentrum",
+        "angleA": "Hoek A",
+        "angleB": "Hoek B",
+        "angleC": "Hoek C",
+        "area": "Oppervlakte",
+        "centre": "Middelpunt I",
+        "circumference": "Omtrek",
+        "formula": "r = Oppervlakte / s",
+        "hint": "Sleep een hoekpunt · Schaal: 1 cm = 40 px",
+        "incircle": "Ingebedde cirkel",
+        "perimeter": "Omtrek",
+        "radius": "Straal (r)",
+        "scaleUnit": "cm",
+        "sideA": "Zijde a (BC)",
+        "sideB": "Zijde b (CA)",
+        "sideC": "Zijde c (AB)",
+        "touchAB": "Raakpunt AB",
+        "touchBC": "Raakpunt BC",
+        "touchCA": "Raakpunt CA",
+        "triangle": "Driehoek"
+    },
+    "en": {
+        "_name": "Incentre",
+        "angleA": "Angle A",
+        "angleB": "Angle B",
+        "angleC": "Angle C",
+        "area": "Area",
+        "centre": "Centre I",
+        "circumference": "Circumference",
+        "formula": "r = Area / s",
+        "hint": "Drag any vertex · Scale: 1 cm = 40 px",
+        "incircle": "Incircle",
+        "perimeter": "Perimeter",
+        "radius": "Radius (r)",
+        "scaleUnit": "cm",
+        "sideA": "Side a (BC)",
+        "sideB": "Side b (CA)",
+        "sideC": "Side c (AB)",
+        "touchAB": "Touch pt. AB",
+        "touchBC": "Touch pt. BC",
+        "touchCA": "Touch pt. CA",
+        "triangle": "Triangle"
+    },
+    "ca": {
+        "angleA": "Angle A",
+        "angleB": "Angle B",
+        "angleC": "Angle C",
+        "area": "Àrea",
+        "circumference": "Circumferència",
+        "scaleUnit": "cm"
+    },
+    "ko": {
+        "angleA": "각 A",
+        "angleB": "각 B",
+        "angleC": "각 C",
+        "area": "면적",
+        "centre": "내심 I",
+        "circumference": "원둘레",
+        "formula": "r = 면적 / s",
+        "incircle": "내접원",
+        "perimeter": "둘레",
+        "radius": "반지름 (r)",
+        "scaleUnit": "cm",
+        "sideA": "선분 a (BC)",
+        "sideB": "선분 b (CA)",
+        "sideC": "선분 c (AB)",
+        "touchAB": "AB 위 수선의 발",
+        "touchBC": "BC 위 수선의 발",
+        "touchCA": "CA 위 수선의 발",
+        "triangle": "삼각형"
+    },
+    "eu": {
+        "_name": "Inzentroa",
+        "angleA": "A angelua",
+        "angleB": "B angelua",
+        "angleC": "C angelua",
+        "area": "Azalera",
+        "centre": "I intzentroa",
+        "circumference": "Zirkunferentzia",
+        "formula": "r = Azalera / s",
+        "hint": "Erpinak mugitu ditzakezu - Eskala: 1 cm= 40 px",
+        "incircle": "Zirkulu inskribatua",
+        "perimeter": "Perimetroa",
+        "radius": "Erradioa (r)",
+        "scaleUnit": "cm",
+        "sideA": "a aldea (BC)",
+        "sideB": "b aldea (CA)",
+        "sideC": "c aldea (AB)",
+        "touchAB": "AB tangentea",
+        "touchBC": "BC tangentea",
+        "touchCA": "CA tangentea",
+        "triangle": "Triangelua"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -159,6 +212,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 

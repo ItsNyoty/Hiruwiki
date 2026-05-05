@@ -3,29 +3,37 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Slope",
-        "undefined": "Vertical line → slope undefined"
-    },
     "es": {
         "_name": "Pendiente",
         "undefined": "Línea vertical → pendiente indefinida"
-    },
-    "eu": {
-        "_name": "Maldia",
-        "undefined": "Lerro bertikala → malda ezarri gabe"
     },
     "fr": {
         "_name": "Pente",
         "undefined": "Ligne verticale → pente indéfinie"
     },
-    "nl": {
-        "_name": "Helling",
-        "undefined": "Verticale lijn → helling ongedefinieerd"
+    "ga": {
+        "_name": "Fána",
+        "undefined": "Líne ingearach → fána neamhshainithe"
     },
     "qqq": {
         "_name": "Name of the Slope module",
         "undefined": "Message shown when the line is vertical and the slope is undefined"
+    },
+    "nl": {
+        "_name": "Helling",
+        "undefined": "Verticale lijn → helling ongedefinieerd"
+    },
+    "en": {
+        "_name": "Slope",
+        "undefined": "Vertical line → slope undefined"
+    },
+    "ko": {
+        "_name": "기울기",
+        "undefined": "수직선 → 기울기 정의 안 됨"
+    },
+    "eu": {
+        "_name": "Maldia",
+        "undefined": "Lerro bertikala → malda ezarri gabe"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -42,6 +50,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 

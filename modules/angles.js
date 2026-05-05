@@ -3,16 +3,6 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Angles",
-        "bisector": "Bisector",
-        "bisectorResult": "Bisector: $1°",
-        "complement": "Complementary",
-        "explement": "Explementary",
-        "notDefined": "Not defined for this angle",
-        "resultAngle": "$1 angle: $2°",
-        "supplement": "Supplementary"
-    },
     "es": {
         "_name": "Ángulos",
         "bisector": "Bisectriz",
@@ -22,16 +12,6 @@ var messages = /* I18N_START */ {
         "notDefined": "No definido para este ángulo",
         "resultAngle": "Ángulo $1: $2°",
         "supplement": "Suplementario"
-    },
-    "eu": {
-        "_name": "Angeluak",
-        "bisector": "Erdikaria",
-        "bisectorResult": "Erdikaria: $1°",
-        "complement": "Osagarria",
-        "explement": "Konjubatua",
-        "notDefined": "Angelu honentzat definitu gabe",
-        "resultAngle": "Angelu $1: $2°",
-        "supplement": "Betegarria"
     },
     "fr": {
         "_name": "Angles",
@@ -43,15 +23,15 @@ var messages = /* I18N_START */ {
         "resultAngle": "Angle $1 : $2°",
         "supplement": "Supplémentaire"
     },
-    "nl": {
-        "_name": "Hoeken",
-        "bisector": "Bissectrice",
-        "bisectorResult": "Bissectrice: $1°",
-        "complement": "Complementair",
-        "explement": "Explementair",
-        "notDefined": "Niet gedefinieerd voor deze hoek",
-        "resultAngle": "Hoek $1: $2°",
-        "supplement": "Supplementair"
+    "ga": {
+        "_name": "Uillinneacha",
+        "bisector": "Déroinnteoir",
+        "bisectorResult": "Déroinnteoir: $1°",
+        "complement": "Comhlántach",
+        "explement": "Turgnamhach",
+        "notDefined": "Gan sainmhíniú don uillinn seo",
+        "resultAngle": "uillinn $1: $2°",
+        "supplement": "Forlíontach"
     },
     "qqq": {
         "_name": "Name of the Angles module",
@@ -62,6 +42,64 @@ var messages = /* I18N_START */ {
         "notDefined": "Message shown when the selected angle operation is not defined for the current angle (e.g. complement of an angle ≥ 90°)",
         "resultAngle": "Result text showing a computed angle. Parameters: $1 = angle type name (e.g. \"Complementary\"), $2 = angle in degrees.",
         "supplement": "Button label for the supplementary angle mode"
+    },
+    "it": {
+        "_name": "Angoli",
+        "bisector": "Bisettrice",
+        "bisectorResult": "Bisettrice: $1°",
+        "complement": "Complementare",
+        "explement": "Esplementare",
+        "notDefined": "Non definito per questo angolo",
+        "resultAngle": "$1 angolo: $2°",
+        "supplement": "Supplementare"
+    },
+    "nl": {
+        "_name": "Hoeken",
+        "bisector": "Bissectrice",
+        "bisectorResult": "Bissectrice: $1°",
+        "complement": "Complementair",
+        "explement": "Explementair",
+        "notDefined": "Niet gedefinieerd voor deze hoek",
+        "resultAngle": "Hoek $1: $2°",
+        "supplement": "Supplementair"
+    },
+    "en": {
+        "_name": "Angles",
+        "bisector": "Bisector",
+        "bisectorResult": "Bisector: $1°",
+        "complement": "Complementary",
+        "explement": "Explementary",
+        "notDefined": "Not defined for this angle",
+        "resultAngle": "$1 angle: $2°",
+        "supplement": "Supplementary"
+    },
+    "ca": {
+        "_name": "Angles",
+        "bisector": "Bisectriu",
+        "bisectorResult": "Bisectriu: $1°",
+        "complement": "Complementari",
+        "explement": "Explementari",
+        "notDefined": "No definit per a aquest angle",
+        "supplement": "Suplementari"
+    },
+    "ko": {
+        "_name": "각도",
+        "bisector": "이등분",
+        "bisectorResult": "이등분: $1°",
+        "complement": "여각",
+        "explement": "공액각",
+        "resultAngle": "$1: $2°",
+        "supplement": "보각"
+    },
+    "eu": {
+        "_name": "Angeluak",
+        "bisector": "Erdikaria",
+        "bisectorResult": "Erdikaria: $1°",
+        "complement": "Osagarria",
+        "explement": "Konjubatua",
+        "notDefined": "Angelu honentzat definitu gabe",
+        "resultAngle": "Angelu $1: $2°",
+        "supplement": "Betegarria"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -78,6 +116,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 

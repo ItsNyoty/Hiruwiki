@@ -4,17 +4,6 @@
     
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Probability Jar",
-        "colorBlue": "Blue",
-        "colorGreen": "Green",
-        "colorRed": "Red",
-        "colorYellow": "Yellow",
-        "impossible": "Impossible",
-        "probTitle": "Probability of picking a marble and guessing its color…",
-        "shake": "Shake!",
-        "total": "Total"
-    },
     "es": {
         "_name": "Frasco de probabilidades",
         "colorBlue": "Azul",
@@ -25,17 +14,6 @@ var messages = /* I18N_START */ {
         "probTitle": "Probabilidad de sacar una canica y adivinar su color…",
         "shake": "¡Agitar!",
         "total": "Total"
-    },
-    "eu": {
-        "_name": "Probabilitate ontzia",
-        "colorBlue": "Urdina",
-        "colorGreen": "Berdea",
-        "colorRed": "Gorria",
-        "colorYellow": "Horia",
-        "impossible": "Ezinezkoa",
-        "probTitle": "Kanika bat atera eta kolorea asmatzeko probabilitatea…",
-        "shake": "Astindu!",
-        "total": "Guztira"
     },
     "fr": {
         "_name": "Pot de probabilités",
@@ -48,16 +26,16 @@ var messages = /* I18N_START */ {
         "shake": "Secouer !",
         "total": "Total"
     },
-    "nl": {
-        "_name": "Kanspot",
-        "colorBlue": "Blauw",
-        "colorGreen": "Groen",
-        "colorRed": "Rood",
-        "colorYellow": "Geel",
-        "impossible": "Onmogelijk",
-        "probTitle": "Kans om een knikker te pakken en de kleur te raden…",
-        "shake": "Schudden!",
-        "total": "Totaal"
+    "ga": {
+        "_name": "Jar Dóchúlachta",
+        "colorBlue": "Gorm",
+        "colorGreen": "Glas",
+        "colorRed": "Dearg",
+        "colorYellow": "Buí",
+        "impossible": "Dodhéanta",
+        "probTitle": "An dóchúlacht go roghnófar marmair agus go mbuailfear a dhath…",
+        "shake": "Croith!",
+        "total": "Iomlán"
     },
     "qqq": {
         "_name": "Name of the Probability Jar module",
@@ -69,6 +47,58 @@ var messages = /* I18N_START */ {
         "probTitle": "Heading describing the probability scenario",
         "shake": "Button label to shake the jar and randomise marbles",
         "total": "Label for the total number of marbles"
+    },
+    "it": {
+        "colorBlue": "Blu",
+        "colorGreen": "Verde",
+        "colorRed": "Rosso",
+        "colorYellow": "Giallo"
+    },
+    "nl": {
+        "_name": "Kanspot",
+        "colorBlue": "Blauw",
+        "colorGreen": "Groen",
+        "colorRed": "Rood",
+        "colorYellow": "Geel",
+        "impossible": "Onmogelijk",
+        "probTitle": "Kans om een knikker te pakken en de kleur te raden…",
+        "shake": "Schudden!",
+        "total": "Totaal"
+    },
+    "en": {
+        "_name": "Probability Jar",
+        "colorBlue": "Blue",
+        "colorGreen": "Green",
+        "colorRed": "Red",
+        "colorYellow": "Yellow",
+        "impossible": "Impossible",
+        "probTitle": "Probability of picking a marble and guessing its color…",
+        "shake": "Shake!",
+        "total": "Total"
+    },
+    "ca": {
+        "total": "Total"
+    },
+    "ko": {
+        "_name": "확률 항아리",
+        "colorBlue": "파란색",
+        "colorGreen": "녹색",
+        "colorRed": "빨간색",
+        "colorYellow": "노란색",
+        "impossible": "불가능",
+        "shake": "흔들기!",
+        "total": "합계"
+    },
+    "eu": {
+        "_name": "Probabilitate ontzia",
+        "colorBlue": "Urdina",
+        "colorGreen": "Berdea",
+        "colorRed": "Gorria",
+        "colorYellow": "Horia",
+        "impossible": "Ezinezkoa",
+        "probTitle": "Kanika bat atera eta kolorea asmatzeko probabilitatea…",
+        "shake": "Astindu!",
+        "total": "Guztira"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -85,6 +115,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 

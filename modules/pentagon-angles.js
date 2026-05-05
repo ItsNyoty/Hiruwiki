@@ -4,26 +4,12 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "3triangles": "3 triangles × 180°",
-        "_name": "Pentagon Angles",
-        "interiorAngles": "Interior angles",
-        "reset": "↺ Reset",
-        "total": "Total"
-    },
     "es": {
         "3triangles": "3 triángulos × 180°",
         "_name": "Ángulos del pentágono",
         "interiorAngles": "Ángulos interiores",
         "reset": "↺ Reiniciar",
         "total": "Total"
-    },
-    "eu": {
-        "3triangles": "3 triangelu × 180°",
-        "_name": "Pentagonoaren angeluak",
-        "interiorAngles": "Barne angeluak",
-        "reset": "↺ Berrezarri",
-        "total": "Guztira"
     },
     "fr": {
         "3triangles": "3 triangles × 180°",
@@ -32,12 +18,12 @@ var messages = /* I18N_START */ {
         "reset": "↺ Réinitialiser",
         "total": "Total"
     },
-    "nl": {
-        "3triangles": "3 driehoeken × 180°",
-        "_name": "Hoeken van een vijfhoek",
-        "interiorAngles": "Binnenhoeken",
-        "reset": "↺ Reset",
-        "total": "Totaal"
+    "ga": {
+        "3triangles": "3 thriantán × 180°",
+        "_name": "Uillinneacha an Pheinteagáin",
+        "interiorAngles": "Uillinneacha inmheánacha",
+        "reset": "↺ Athshocraigh",
+        "total": "Iomlán"
     },
     "qqq": {
         "3triangles": "Decomposition label showing 3 triangles × 180°",
@@ -45,6 +31,37 @@ var messages = /* I18N_START */ {
         "interiorAngles": "Heading for the interior angles section",
         "reset": "Button label to reset the visualisation",
         "total": "Label for the total sum of interior angles"
+    },
+    "nl": {
+        "3triangles": "3 driehoeken × 180°",
+        "_name": "Hoeken van een vijfhoek",
+        "interiorAngles": "Binnenhoeken",
+        "reset": "↺ Reset",
+        "total": "Totaal"
+    },
+    "en": {
+        "3triangles": "3 triangles × 180°",
+        "_name": "Pentagon Angles",
+        "interiorAngles": "Interior angles",
+        "reset": "↺ Reset",
+        "total": "Total"
+    },
+    "ca": {
+        "3triangles": "3 triangles × 180°",
+        "_name": "Angles del Pentàgon",
+        "interiorAngles": "Angles interiors",
+        "total": "Total"
+    },
+    "ko": {
+        "reset": "↺ 초기화",
+        "total": "합계"
+    },
+    "eu": {
+        "3triangles": "3 triangelu × 180°",
+        "_name": "Pentagonoaren angeluak",
+        "interiorAngles": "Barne angeluak",
+        "reset": "↺ Berrezarri",
+        "total": "Guztira"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -61,6 +78,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 

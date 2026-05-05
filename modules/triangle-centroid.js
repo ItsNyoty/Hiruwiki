@@ -9,35 +9,44 @@
     
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Triangle Centroid",
-        "centroid": "Centroid",
-        "hint": "Move vertices to see how the centroid position changes"
-    },
     "es": {
         "_name": "Baricentro del triángulo",
         "centroid": "Baricentro",
         "hint": "Mueve los vértices para ver cómo cambia la posición del baricentro."
-    },
-    "eu": {
-        "_name": "Hirukiaren barizentroa",
-        "centroid": "Zentroidea",
-        "hint": "Mugitu erpinak barizentroaren kokapena nola aldatzen den ikusteko"
     },
     "fr": {
         "_name": "Centre de gravité du triangle",
         "centroid": "Centre de gravité",
         "hint": "Déplacez les sommets pour voir comment la position du centre de gravité change."
     },
-    "nl": {
-        "_name": "Zwaartepunt van een driehoek",
-        "centroid": "Zwaartepunt",
-        "hint": "Verplaats de hoekpunten om te zien hoe de positie van het zwaartepunt verandert."
+    "ga": {
+        "_name": "Lárphointe Triantáin",
+        "centroid": "Lárphointe",
+        "hint": "Bog na buaicphointí chun a fheiceáil conas a athraíonn suíomh an mheánphointe"
     },
     "qqq": {
         "_name": "Name of the Triangle Centroid module",
         "centroid": "Label for the centroid point",
         "hint": "Instruction text telling the user to drag vertices"
+    },
+    "nl": {
+        "_name": "Zwaartepunt van een driehoek",
+        "centroid": "Zwaartepunt",
+        "hint": "Verplaats de hoekpunten om te zien hoe de positie van het zwaartepunt verandert."
+    },
+    "en": {
+        "_name": "Triangle Centroid",
+        "centroid": "Centroid",
+        "hint": "Move vertices to see how the centroid position changes"
+    },
+    "ko": {
+        "_name": "삼각형 무게중심",
+        "centroid": "무게중심"
+    },
+    "eu": {
+        "_name": "Hirukiaren barizentroa",
+        "centroid": "Zentroidea",
+        "hint": "Mugitu erpinak barizentroaren kokapena nola aldatzen den ikusteko"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -54,6 +63,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 

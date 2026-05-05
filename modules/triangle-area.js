@@ -7,20 +7,6 @@
     
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Triangle Area",
-        "btnProve": "Prove it",
-        "btnReset": "Reset",
-        "labelArea": "Area",
-        "labelBase": "Base (b)",
-        "labelHeight": "Height (h)",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "proofResultPara": "Parallelogram area = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ Triangle = ½ × {area} = <strong>{triArea} cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²"
-    },
     "es": {
         "_name": "Área del triángulo",
         "btnProve": "Pruébalo",
@@ -32,20 +18,6 @@ var messages = /* I18N_START */ {
         "labelHeightShort": "h",
         "proofResultPara": "Área del paralelogramo = b × h = <strong>{b} × {h} = {area} cm²</strong>",
         "proofResultTri": "→ Triángulo = ½ × {area} = <strong>{triArea} cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²"
-    },
-    "eu": {
-        "_name": "Hirukiaren azalera",
-        "btnProve": "Froga ezazu",
-        "btnReset": "Berrezarri",
-        "labelArea": "Azalera",
-        "labelBase": "Oinarria (b)",
-        "labelHeight": "Altuera (h)",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "proofResultPara": "Paralelogramoaren azalera = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ Triangeluarena = ½ × {area} = <strong>{triArea} cm²</strong>",
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
@@ -63,17 +35,17 @@ var messages = /* I18N_START */ {
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
-    "nl": {
-        "_name": "Oppervlakte van een driehoek",
-        "btnProve": "Bewijs het",
-        "btnReset": "Reset",
-        "labelArea": "Oppervlakte",
-        "labelBase": "Basis (b)",
-        "labelHeight": "Hoogte (h)",
+    "ga": {
+        "_name": "Limistéar an Triantáin",
+        "btnProve": "Cruthaigh é",
+        "btnReset": "Athshocraigh",
+        "labelArea": "Limistéar",
+        "labelBase": "Bonn (b)",
+        "labelHeight": "Airde (u)",
         "labelBaseShort": "b",
         "labelHeightShort": "h",
-        "proofResultPara": "Oppervlakte parallellogram = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ Driehoek = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "proofResultPara": "Achar comhthreomharáin = b × h = <strong>{b} × {h} = {area} cm²</strong>",
+        "proofResultTri": "→ Triantán = ½ × {area} = <strong>{triArea} cm²</strong>",
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
@@ -90,6 +62,69 @@ var messages = /* I18N_START */ {
         "proofResultTri": "Proof result text for the triangle area (half the parallelogram). Uses HTML. Parameters: {area} = parallelogram area, {triArea} = triangle area.",
         "unitCm": "Unit of length (centimeters)",
         "unitCm2": "Unit of area (square centimeters)"
+    },
+    "it": {
+        "unitCm": "cm",
+        "unitCm2": "cm²"
+    },
+    "nl": {
+        "_name": "Oppervlakte van een driehoek",
+        "btnProve": "Bewijs het",
+        "btnReset": "Reset",
+        "labelArea": "Oppervlakte",
+        "labelBase": "Basis (b)",
+        "labelHeight": "Hoogte (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Oppervlakte parallellogram = b × h = <strong>{b} × {h} = {area} cm²</strong>",
+        "proofResultTri": "→ Driehoek = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²"
+    },
+    "en": {
+        "_name": "Triangle Area",
+        "btnProve": "Prove it",
+        "btnReset": "Reset",
+        "labelArea": "Area",
+        "labelBase": "Base (b)",
+        "labelHeight": "Height (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Parallelogram area = b × h = <strong>{b} × {h} = {area} cm²</strong>",
+        "proofResultTri": "→ Triangle = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²"
+    },
+    "ca": {
+        "btnReset": "Reinicia",
+        "labelArea": "Àrea",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "unitCm": "cm",
+        "unitCm2": "cm²"
+    },
+    "ko": {
+        "_name": "삼각형 면적",
+        "btnReset": "초기화",
+        "labelArea": "면적",
+        "labelBase": "밑변 (b)",
+        "labelHeight": "높이 (h)",
+        "proofResultPara": "평행사변형 넓이 = b × h = <strong>{b} × {h} = {area} cm²</strong>",
+        "proofResultTri": "→ 삼각형 = ½ × {area} = <strong>{triArea} cm²</strong>"
+    },
+    "eu": {
+        "_name": "Hirukiaren azalera",
+        "btnProve": "Froga ezazu",
+        "btnReset": "Berrezarri",
+        "labelArea": "Azalera",
+        "labelBase": "Oinarria (b)",
+        "labelHeight": "Altuera (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Paralelogramoaren azalera = b × h = <strong>{b} × {h} = {area} cm²</strong>",
+        "proofResultTri": "→ Triangeluarena = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -106,6 +141,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 

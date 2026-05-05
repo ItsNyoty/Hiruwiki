@@ -5,29 +5,39 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Triangle Angles",
-        "reset": "Reset"
-    },
     "es": {
         "_name": "Ángulos del triángulo",
         "reset": "Reiniciar"
-    },
-    "eu": {
-        "_name": "Hirukiaren angeluak",
-        "reset": "Berrezarri"
     },
     "fr": {
         "_name": "Angles du triangle",
         "reset": "Réinitialiser"
     },
-    "nl": {
-        "_name": "Hoeken van een driehoek",
-        "reset": "Reset"
+    "ga": {
+        "_name": "Uillinneacha Triantáin",
+        "reset": "Athshocraigh"
     },
     "qqq": {
         "_name": "Name of the Triangle Angles module",
         "reset": "Button label to reset the triangle"
+    },
+    "nl": {
+        "_name": "Hoeken van een driehoek",
+        "reset": "Reset"
+    },
+    "en": {
+        "_name": "Triangle Angles",
+        "reset": "Reset"
+    },
+    "ca": {
+        "reset": "Reinicia"
+    },
+    "ko": {
+        "reset": "초기화"
+    },
+    "eu": {
+        "_name": "Hirukiaren angeluak",
+        "reset": "Berrezarri"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -44,6 +54,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 

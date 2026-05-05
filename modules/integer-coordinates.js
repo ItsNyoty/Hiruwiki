@@ -4,20 +4,6 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Positive Coordinates",
-        "btnChallenge": "🎯 Challenge",
-        "btnCheck": "Check ✓",
-        "btnExplore": "🔭 Explore",
-        "btnNext": "Next →",
-        "feedbackCorrect": "✓ Correct!",
-        "feedbackWrong": "✗ Incorrect. The faint star was the correct answer.",
-        "hintChallenge": "Move ★ to the proposed coordinates and click Check",
-        "hintExplore": "Move ★ by clicking on it — it snaps to integers",
-        "movePrompt": "Move ★ to:<br>({targetX}, {targetY})",
-        "pointLabel": "Point:",
-        "titleExplore": "Explore Coordinate System"
-    },
     "es": {
         "_name": "Coordenadas positivas",
         "btnChallenge": "🎯 Reto",
@@ -31,20 +17,6 @@ var messages = /* I18N_START */ {
         "movePrompt": "Mueve ★ a:<br>({targetX}, {targetY})",
         "pointLabel": "Punto:",
         "titleExplore": "Explorar el sistema de coordenadas"
-    },
-    "eu": {
-        "_name": "Koordenatu positiboak",
-        "btnChallenge": "🎯 Erronka",
-        "btnCheck": "Zuzendu ✓",
-        "btnExplore": "🔭 Esploratu",
-        "btnNext": "Hurrengoa →",
-        "feedbackCorrect": "✓ Zuzen!",
-        "feedbackWrong": "✗ Ez da zuzena. Izar ahula zen erantzun zuzena.",
-        "hintChallenge": "Mugi ezazu ★ proposatutako koordenatuetara eta klik egin Zuzendu botoian",
-        "hintExplore": "Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen ditu",
-        "movePrompt": "Mugitu ★ hona:<br>({targetX}, {targetY})",
-        "pointLabel": "Puntua:",
-        "titleExplore": "Esploratu koordenatuen sistema"
     },
     "fr": {
         "_name": "Coordonnées positives",
@@ -60,19 +32,19 @@ var messages = /* I18N_START */ {
         "pointLabel": "Point :",
         "titleExplore": "Explorer le système de coordonnées"
     },
-    "nl": {
-        "_name": "Positieve coördinaten",
-        "btnChallenge": "🎯 Uitdaging",
-        "btnCheck": "Controleren ✓",
-        "btnExplore": "🔭 Verkennen",
-        "btnNext": "Volgende →",
-        "feedbackCorrect": "✓ Klopt!",
-        "feedbackWrong": "✗ Onjuist. De zwakke ster was het juiste antwoord.",
-        "hintChallenge": "Verplaats ★ naar de voorgestelde coördinaten en klik op Controleren",
-        "hintExplore": "Verplaats ★ door erop te klikken — springt naar gehele getallen",
-        "movePrompt": "Verplaats ★ naar:<br>({targetX}, {targetY})",
-        "pointLabel": "Punt:",
-        "titleExplore": "Verken het coördinatenstelsel"
+    "ga": {
+        "_name": "Comhordanáidí Dearfacha",
+        "btnChallenge": "🎯 Dúshlán",
+        "btnCheck": "Seiceáil ✓",
+        "btnExplore": "🔭 Taiscéal",
+        "btnNext": "Ar Aghaidh →",
+        "feedbackCorrect": "✓ Ceart!",
+        "feedbackWrong": "✗ Mícheart. Ba é an réalta lag an freagra ceart.",
+        "hintChallenge": "Bog ★ go dtí na comhordanáidí atá beartaithe agus cliceáil Seiceáil",
+        "hintExplore": "Bog ★ trí chliceáil air — snapálann sé chuig slánuimhreacha",
+        "movePrompt": "Bog ★ go:<br>({targetX}, {targetY})",
+        "pointLabel": "Pointe:",
+        "titleExplore": "Iniúchadh a dhéanamh ar an gCóras Comhordanáidí"
     },
     "qqq": {
         "_name": "Name of the Positive Coordinates module (integer grid variant)",
@@ -87,6 +59,64 @@ var messages = /* I18N_START */ {
         "movePrompt": "Prompt telling the player where to move the star. Uses HTML. Parameters: {targetX} = target X coordinate, {targetY} = target Y coordinate.",
         "pointLabel": "Label for the current point coordinates. Followed by coordinate values.",
         "titleExplore": "Title shown in explore mode"
+    },
+    "it": {
+        "_name": "Coordinate positive",
+        "btnNext": "Successivo →",
+        "feedbackCorrect": "✓ Corretto!",
+        "pointLabel": "Punto:"
+    },
+    "nl": {
+        "_name": "Positieve coördinaten",
+        "btnChallenge": "🎯 Uitdaging",
+        "btnCheck": "Controleren ✓",
+        "btnExplore": "🔭 Verkennen",
+        "btnNext": "Volgende →",
+        "feedbackCorrect": "✓ Klopt!",
+        "feedbackWrong": "✗ Onjuist. De zwakke ster was het juiste antwoord.",
+        "hintChallenge": "Verplaats ★ naar de voorgestelde coördinaten en klik op Controleren",
+        "hintExplore": "Verplaats ★ door erop te klikken — springt naar gehele getallen",
+        "movePrompt": "Verplaats ★ naar:<br>({targetX}, {targetY})",
+        "pointLabel": "Punt:",
+        "titleExplore": "Verken het coördinatenstelsel"
+    },
+    "en": {
+        "_name": "Positive Coordinates",
+        "btnChallenge": "🎯 Challenge",
+        "btnCheck": "Check ✓",
+        "btnExplore": "🔭 Explore",
+        "btnNext": "Next →",
+        "feedbackCorrect": "✓ Correct!",
+        "feedbackWrong": "✗ Incorrect. The faint star was the correct answer.",
+        "hintChallenge": "Move ★ to the proposed coordinates and click Check",
+        "hintExplore": "Move ★ by clicking on it — it snaps to integers",
+        "movePrompt": "Move ★ to:<br>({targetX}, {targetY})",
+        "pointLabel": "Point:",
+        "titleExplore": "Explore Coordinate System"
+    },
+    "ca": {
+        "btnNext": "Endavant →",
+        "feedbackCorrect": "✓ Correcte!"
+    },
+    "ko": {
+        "btnCheck": "확인 ✓",
+        "btnNext": "다음 →",
+        "feedbackCorrect": "✓ 정답입니다!",
+        "pointLabel": "점수:"
+    },
+    "eu": {
+        "_name": "Koordenatu positiboak",
+        "btnChallenge": "🎯 Erronka",
+        "btnCheck": "Zuzendu ✓",
+        "btnExplore": "🔭 Esploratu",
+        "btnNext": "Hurrengoa →",
+        "feedbackCorrect": "✓ Zuzen!",
+        "feedbackWrong": "✗ Ez da zuzena. Izar ahula zen erantzun zuzena.",
+        "hintChallenge": "Mugi ezazu ★ proposatutako koordenatuetara eta klik egin Zuzendu botoian",
+        "hintExplore": "Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen ditu",
+        "movePrompt": "Mugitu ★ hona:<br>({targetX}, {targetY})",
+        "pointLabel": "Puntua:",
+        "titleExplore": "Esploratu koordenatuen sistema"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -103,6 +133,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 
