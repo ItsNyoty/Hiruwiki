@@ -19,6 +19,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: |
+      (github.event_name == 'push' && github.actor == 'translatewiki') ||
+      (github.event_name == 'workflow_dispatch' && (github.actor == 'ItsNyoty' || github.actor == 'theklan'))
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -59,6 +62,7 @@ jobs:
           python deploy.py \
             --yes \
             --create \
+            --dry \
             --site "${{ github.event.inputs.site || secrets.WIKI_API_URL }}" \
             --username "${{ secrets.WIKI_USERNAME }}" \
             --password "${{ secrets.WIKI_PASSWORD }}"
