@@ -64,7 +64,6 @@ jobs:
           python deploy.py \
             --yes \
             --create \
-            --dry \
             --site "${{ github.event.inputs.site || secrets.WIKI_API_URL }}" \
             --username "${{ secrets.WIKI_USERNAME }}" \
             --password "${{ secrets.WIKI_PASSWORD }}"
