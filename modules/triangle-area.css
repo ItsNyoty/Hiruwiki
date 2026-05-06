@@ -12,7 +12,7 @@
     border: 1px solid var(--color-placeholder, #a2a9b1);
     background: var(--background-color-neutral-subtle, #f8f9fa);
     touch-action: none;
-    cursor: default;
+    cursor: crosshair;
 }
 
 .hiruwiki-triangle-area .ta-info-bar {
