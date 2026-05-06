@@ -453,7 +453,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
         function onMove(e) {
             var pos = cpos(e);
             if (!dragging) {
-                cvs.style.cursor = hitV(pos) ? 'grab' : 'default';
+                cvs.style.cursor = hitV(pos) ? 'grab' : 'crosshair';
                 return;
             }
             pos.x = Math.max(20, Math.min(W - 20, pos.x));
@@ -469,7 +469,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
         cvs.addEventListener('mousemove', onMove);
         cvs.addEventListener('touchmove', function (e) { onMove(e); e.preventDefault(); }, { passive: false });
 
-        function onUp() { dragging = null; cvs.style.cursor = 'default'; }
+        function onUp() { dragging = null; cvs.style.cursor = 'crosshair'; }
         window.addEventListener('mouseup', onUp);
         window.addEventListener('touchend', onUp);
 
