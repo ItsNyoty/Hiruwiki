@@ -143,8 +143,7 @@ var messages = /* I18N_START */ {
         "insight_exact": "<strong>{N} ÷ {D} = {Q}</strong> exactly — no remainder. The bar fills perfectly into <strong>{Q}</strong> equal chunk{s}. This means <strong>{D}</strong> is a divisor of <strong>{N}</strong>.",
         "insight_less": "<strong>{N}</strong> is smaller than the divisor <strong>{D}</strong>, so it fits <strong>0</strong> whole chunks. The entire value is the remainder. The remainder is always less than the divisor.",
         "insight_normal": "<strong>{N} ÷ {D} = {Q}</strong> remainder <strong>{R}</strong>. Notice the red piece (<strong>{R}</strong>) is always shorter than one blue chunk (<strong>{D}</strong>). The remainder is always strictly less than the divisor. Check: <strong>{Q} × {D} + {R} = {QD} + {R} = {N}</strong> ✓",
-        "label_bar": "Bar view — each blue chunk =",
-        "label_bar_units": "units",
+        "label_bar_description": "Bar view — each blue chunk = {{PLURAL:$1|$1 unit|$1 units}}",
         "label_choose": "Choose dividend and divisor",
         "label_dividend": "Dividend (the number being divided)",
         "label_divisor": "Divisor (the chunk size)",
@@ -268,11 +267,7 @@ function buildHTML( root ) {
         '</div>' +
 
         /* Bar */
-        '<div class="hw-div-sec">' +
-            '<span id="hw-div-lbl-bar"></span> ' +
-            '<strong id="hw-div-chunk-size">5</strong> ' +
-            '<span id="hw-div-lbl-bar-units"></span>' +
-        '</div>' +
+        '<div class="hw-div-sec" id="hw-div-lbl-bar-full"></div>' +
         '<div class="hw-div-bar-wrap" id="hw-div-bar-wrap"></div>' +
         '<div class="hw-div-bar-labels" id="hw-div-bar-labels"></div>' +
 
@@ -292,8 +287,6 @@ function initText( root ) {
     root.querySelector( '#hw-div-lbl-dividend'    ).textContent = t( 'label_dividend'  );
     root.querySelector( '#hw-div-lbl-divisor'     ).textContent = t( 'label_divisor'   );
     root.querySelector( '#hw-div-lbl-equation'    ).textContent = t( 'label_equation'  );
-    root.querySelector( '#hw-div-lbl-bar'         ).textContent = t( 'label_bar'       );
-    root.querySelector( '#hw-div-lbl-bar-units'   ).textContent = t( 'label_bar_units' );
     root.querySelector( '#hw-div-lbl-repadd'      ).textContent = t( 'label_repadd'    );
     root.querySelector( '#hw-div-eq-lbl-dividend' ).textContent = t( 'eq_lbl_dividend' );
     root.querySelector( '#hw-div-eq-lbl-quotient' ).textContent = t( 'eq_lbl_quotient' );
@@ -314,7 +307,7 @@ function update( root ) {
     /* Badges */
     root.querySelector( '#hw-div-badge-dividend' ).textContent = N;
     root.querySelector( '#hw-div-badge-divisor'  ).textContent = D;
-    root.querySelector( '#hw-div-chunk-size'     ).textContent = D;
+    root.querySelector( '#hw-div-lbl-bar-full'   ).textContent = t( 'label_bar_description', [D] );
 
     /* Equation numbers */
     root.querySelector( '#hw-div-eq-dividend'  ).textContent = N;
