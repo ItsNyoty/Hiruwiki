@@ -88,9 +88,9 @@ container.innerHTML = `
 <text class="angle-label angleB"></text>
 <text class="angle-label angleC"></text>
 
-<circle class="pointA" r="8" fill="red" cursor="pointer"/>
-<circle class="pointB" r="8" fill="green" cursor="pointer"/>
-<circle class="pointC" r="8" fill="blue" cursor="pointer"/>
+<circle class="pointA" r="8" fill="red"/>
+<circle class="pointB" r="8" fill="green"/>
+<circle class="pointC" r="8" fill="blue"/>
 
 <foreignObject x="10" y="10" width="80" height="30">
 <body xmlns="http://www.w3.org/1999/xhtml">
@@ -290,10 +290,12 @@ function startDrag(p){
 return function(evt){
 evt.preventDefault();
 dragPoint=p;
+svg.style.cursor='grabbing';
 };
 }
 
 Object.values(points).forEach(function(p){
+p.style.cursor='grab';
 p.addEventListener("mousedown",startDrag(p));
 p.addEventListener("touchstart",startDrag(p),{passive:false});
 });
@@ -319,6 +321,7 @@ svg.addEventListener("touchmove",move,{passive:false});
 
 function stopDrag(){
 dragPoint=null;
+svg.style.cursor='crosshair';
 }
 
 svg.addEventListener("mouseup",stopDrag);
