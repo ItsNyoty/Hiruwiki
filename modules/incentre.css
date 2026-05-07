@@ -85,12 +85,32 @@
 	text-align: right;
 }
 
-/* Hint line below the stats */
-.hw-hint {
-	font-size: 11px;
-	color: var(--color-placeholder, #888780);
-	text-align: center;
-	margin: 6px 0 0;
+/* Footer — shared layout with all other Hiruwiki modules */
+.hw-incentre ~ .hw-footer {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 8px;
+	padding: 7px 12px;
+	border: 0.5px solid var(--border-color-base, #D3D1C7);
+	border-radius: 4px;
+	background: var(--background-color-neutral-subtle, #F1EFE8);
+	font-family: sans-serif;
+	font-size: 11.5px;
+	color: var(--color-subtle, #5F5E5A);
+	line-height: 1.4;
+}
+
+.hw-incentre ~ .hw-footer img {
+	width: 22px;
+	height: 22px;
+	opacity: 0.8;
+	flex-shrink: 0;
+}
+
+.hw-incentre ~ .hw-footer strong {
+	color: var(--color-progressive, #534AB7);
+	font-weight: 600;
 }
 
 /* =========================================================
@@ -147,10 +167,12 @@ html.client-dark-mode .hw-row span:last-child,
 	color: var(--color-placeholder, #888780);
 }
 
-html.skin-theme-clientpref-night .hw-hint,
-html.client-dark-mode .hw-hint,
-.mw-dark-mode .hw-hint {
-	color: var(--color-subtle, #5F5E5A);
+html.skin-theme-clientpref-night .hw-incentre ~ .hw-footer,
+html.client-dark-mode .hw-incentre ~ .hw-footer,
+.mw-dark-mode .hw-incentre ~ .hw-footer {
+	background: #2C2C2A;
+	border-color: #444441;
+	color: var(--color-subtle, #B4B2A9);
 }
 
 
