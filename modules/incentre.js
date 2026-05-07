@@ -320,8 +320,22 @@ function t(key, vars) {
 						'<div class="hw-row"><span>' + msg.formula       + '</span><span id="hw-rf"></span></div>' +
 					'</div>' +
 				'</div>' +
-				'<p class="hw-hint">' + msg.hint + '</p>' +
 			'</div>';
+
+		// Footer — hint text from this module's own i18n, not loaded externally
+		var footer = document.createElement( 'div' );
+		footer.className = 'hw-footer';
+		var fImg = document.createElement( 'img' );
+		fImg.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hiruwiki.svg/32px-Hiruwiki.svg.png';
+		fImg.alt = 'Hiruwiki'; fImg.width = 22; fImg.height = 22;
+		var fText = document.createElement( 'span' );
+		fText.innerHTML = msg.hint.replace(
+			/(visualización interactiva|visualisation interactive|interactieve visualisatie|léirshamhlú idirghníomhach|visualització interactiva|대화형 시각화|bistaratzaile interaktibo|interactive visualization)/i,
+			'<strong>$1</strong>'
+		);
+		footer.appendChild( fImg );
+		footer.appendChild( fText );
+		container.appendChild( footer );
 
 		var canvas = container.querySelector( '.hw-canvas' );
 		var ctx    = canvas.getContext( '2d' );
@@ -636,13 +650,16 @@ function t(key, vars) {
 			};
 		}
 
-		canvas.addEventListener( 'mousedown',  function ( e ) { dragging = hitTest( ptFromEvent( e ) ); } );
+		canvas.addEventListener( 'mousedown',  function ( e ) { dragging = hitTest( ptFromEvent( e ) ); if ( dragging >= 0 ) { canvas.style.cursor = 'grabbing'; } } );
 		canvas.addEventListener( 'mousemove',  function ( e ) {
-			if ( dragging < 0 ) { return; }
+			if ( dragging < 0 ) {
+				canvas.style.cursor = hitTest( ptFromEvent( e ) ) >= 0 ? 'grab' : 'crosshair';
+				return;
+			}
 			verts[ dragging ] = clamp( ptFromEvent( e ) );
 			draw();
 		} );
-		canvas.addEventListener( 'mouseup',    function () { dragging = -1; } );
+		canvas.addEventListener( 'mouseup',    function () { dragging = -1; canvas.style.cursor = 'crosshair'; } );
 		canvas.addEventListener( 'mouseleave', function () { dragging = -1; } );
 		canvas.addEventListener( 'touchstart', function ( e ) {
 			e.preventDefault(); dragging = hitTest( ptFromEvent( e ) );
