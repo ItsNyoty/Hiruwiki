@@ -7,36 +7,45 @@
 var messages = /* I18N_START */ {
     "es": {
         "_name": "Ángulos del triángulo",
+        "hint": "Esta es una visualización interactiva. Arrastra los vértices para modificar el triángulo.",
         "reset": "Reiniciar"
     },
     "fr": {
         "_name": "Angles du triangle",
+        "hint": "Ceci est une visualisation interactive. Faites glisser les sommets pour modifier le triangle.",
         "reset": "Réinitialiser"
     },
     "ga": {
         "_name": "Uillinneacha Triantáin",
+        "hint": "Is léirshamhlú idirghníomhach é seo. Tarraing na buaicphointí chun an triantán a athrú.",
         "reset": "Athshocraigh"
     },
     "qqq": {
         "_name": "Name of the Triangle Angles module",
+        "hint": "Footer hint text telling the user to drag the vertices to reshape the triangle",
         "reset": "Button label to reset the triangle"
     },
     "nl": {
         "_name": "Hoeken van een driehoek",
+        "hint": "Dit is een interactieve visualisatie. Sleep de hoekpunten om de driehoek te wijzigen.",
         "reset": "Reset"
     },
     "en": {
         "_name": "Triangle Angles",
+        "hint": "This is an interactive visualization. Drag the vertices to reshape the triangle.",
         "reset": "Reset"
     },
     "ca": {
+        "hint": "Aquesta és una visualització interactiva. Arrossega els vèrtexs per modificar el triangle.",
         "reset": "Reinicia"
     },
     "ko": {
+        "hint": "이것은 대화형 시각화입니다. 꼭짓점을 드래그하여 삼각형을 바꾸세요.",
         "reset": "초기화"
     },
     "eu": {
         "_name": "Hirukiaren angeluak",
+        "hint": "Bistaratzaile interaktibo bat da. Arrastatu erpinak hirukia aldatzeko.",
         "reset": "Berrezarri"
     }
 } /* I18N_END */
@@ -332,6 +341,21 @@ resetBtn.addEventListener("click",function(){
 setPoints(initialPositions);
 updateTriangle();
 });
+
+// Footer — hint text defined in this module's own i18n, not loaded externally
+var footer = document.createElement('div');
+footer.className = 'hw-footer';
+var fImg = document.createElement('img');
+fImg.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hiruwiki.svg/32px-Hiruwiki.svg.png';
+fImg.alt = 'Hiruwiki'; fImg.width = 22; fImg.height = 22;
+var fText = document.createElement('span');
+fText.innerHTML = t('hint').replace(
+    /(visualización interactiva|visualisation interactive|interactieve visualisatie|léirshamhlú idirghníomhach|visualització interactiva|대화형 시각화|bistaratzaile interaktibo|interactive visualization)/i,
+    '<strong>$1</strong>'
+);
+footer.appendChild(fImg);
+footer.appendChild(fText);
+container.appendChild(footer);
 
 updateTriangle();
 
