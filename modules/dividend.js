@@ -180,8 +180,6 @@ function t(key, vars) {
     return str;
 }
 
-
-
 /* ── BUILD HTML ───────────────────────────────────────────────────────────── */
 function buildHTML( root ) {
     root.innerHTML =

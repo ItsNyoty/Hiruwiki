@@ -68,8 +68,6 @@ function t(key, vars) {
     return str;
 }
 
-
-
 const SCALE = 38;
 
 let dragging=null;

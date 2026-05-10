@@ -5,58 +5,89 @@
 
     /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
     var messages = /* I18N_START */ {
-        "ca": {
-            "reset": "Reinicia"
-        },
-        "en": {
-            "_name": "Triangle Angles",
-            "reset": "Reset",
-            "hint": "Drag vertices to change the triangle · Sum of angles is always 180°"
-        },
-        "es": {
-            "_name": "Ángulos del triángulo",
-            "reset": "Reiniciar"
-        },
-        "eu": {
-            "_name": "Hirukiaren angeluak",
-            "reset": "Berrezarri"
-        },
-        "fr": {
-            "_name": "Angles du triangle",
-            "reset": "Réinitialiser"
-        },
-        "ga": {
-            "_name": "Uillinneacha Triantáin",
-            "reset": "Athshocraigh"
-        },
-        "ko": {
-            "reset": "초기화"
-        },
-        "nl": {
-            "_name": "Hoeken van een driehoek",
-            "reset": "↺ Reset",
-            "hint": "Sleep hoekpunten om de driehoek te veranderen · Som van de hoeken is altijd 180°"
-        }
-    } /* I18N_END */
-    var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-    var banana = new Banana(lang.split('-')[0]);
-    banana.load(messages);
-
-    function t(key, vars) {
-        var args = Array.isArray(vars) ? vars : [];
-        var str = banana.i18n(key, ...args);
-        if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
-            Object.keys(vars).forEach(function (k) {
-                str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
-            });
-        }
-        return str;
+    "ca": {
+        "reset": "Reinicia"
+    },
+    "en": {
+        "_name": "Triangle Angles",
+        "reset": "Reset",
+        "hint": "Drag vertices to change the triangle · Sum of angles is always 180°",
+        "labelAngleA": "Angle A",
+        "labelAngleB": "Angle B",
+        "labelAngleC": "Angle C",
+        "labelSum": "Sum",
+        "formula": "A + B + C = 180°"
+    },
+    "es": {
+        "_name": "Ángulos del triángulo",
+        "reset": "Reiniciar",
+        "hint": "Arrastra los vértices para cambiar el triángulo · La suma de los ángulos es siempre 180°",
+        "labelAngleA": "Ángulo A",
+        "labelAngleB": "Ángulo B",
+        "labelAngleC": "Ángulo C",
+        "labelSum": "Suma",
+        "formula": "A + B + C = 180°"
+    },
+    "eu": {
+        "_name": "Hirukiaren angeluak",
+        "reset": "Berrezarri",
+        "hint": "Arrastatu erpinak hirukia aldatzeko · Angeluen batura beti 180° da",
+        "labelAngleA": "A angelua",
+        "labelAngleB": "B angelua",
+        "labelAngleC": "C angelua",
+        "labelSum": "Batura",
+        "formula": "A + B + C = 180°"
+    },
+    "fr": {
+        "_name": "Angles du triangle",
+        "reset": "Réinitialiser",
+        "hint": "Faites glisser les sommets pour changer le triangle · La somme des angles est toujours 180°",
+        "labelAngleA": "Angle A",
+        "labelAngleB": "Angle B",
+        "labelAngleC": "Angle C",
+        "labelSum": "Somme",
+        "formula": "A + B + C = 180°"
+    },
+    "ga": {
+        "_name": "Uillinneacha Triantáin",
+        "reset": "Athshocraigh",
+        "hint": "Tarraing na rinn chun an triantán a athrú · Is é suim na n-uillinneacha ná 180° i gcónaí",
+        "labelAngleA": "Uillinn A",
+        "labelAngleB": "Uillinn B",
+        "labelAngleC": "Uillinn C",
+        "labelSum": "Suim",
+        "formula": "A + B + C = 180°"
+    },
+    "ko": {
+        "reset": "초기화"
+    },
+    "nl": {
+        "_name": "Hoeken van een driehoek",
+        "reset": "↺ Reset",
+        "hint": "Sleep hoekpunten om de driehoek te veranderen · Som van de hoeken is altijd 180°",
+        "labelAngleA": "Hoek A",
+        "labelAngleB": "Hoek B",
+        "labelAngleC": "Hoek C",
+        "labelSum": "Som",
+        "formula": "A + B + C = 180°"
     }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
 
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
+    }
+    return str;
+}
 
-
-
-    /* ── Shared constants ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
+/* ── Shared constants ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
     var W = 680;
     var H = 360;
     var GRID = 24;

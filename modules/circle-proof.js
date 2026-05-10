@@ -186,8 +186,6 @@ function t(key, vars) {
     return str;
 }
 
-
-
 var PX_PER_CM = 30;
 
     function init( container ) {

@@ -106,9 +106,7 @@ function t(key, vars) {
     return str;
 }
 
-
-
-    var COLORS = [
+var COLORS = [
         { id: 'blue',   label: t('colorBlue'),   hex: hiruwiki.getThemeColor('color-progressive', '#3366cc') },
         { id: 'red',    label: t('colorRed'),    hex: hiruwiki.getThemeColor('color-destructive', '#bf3c2c') },
         { id: 'green',  label: t('colorGreen'),  hex: '#177860' },

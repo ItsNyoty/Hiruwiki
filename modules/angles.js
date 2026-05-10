@@ -109,8 +109,6 @@ function t(key, vars) {
     return str;
 }
 
-
-
 /* -------------------------
    APPLET INITIALIZATION
 ------------------------- */

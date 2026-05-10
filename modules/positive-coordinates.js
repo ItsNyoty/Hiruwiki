@@ -121,8 +121,6 @@ function t(key, vars) {
     return str;
 }
 
-
-
 document.querySelectorAll( '.hiruwiki[data-module="positive-coordinates"]' ).forEach( function ( host ) {
 
     host.innerHTML = [

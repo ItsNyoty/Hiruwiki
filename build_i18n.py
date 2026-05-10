@@ -175,8 +175,14 @@ function t(key, vars) {{
                 else:
                     last_replace_pos = eol + 1
         
+        # Consume trailing newlines/whitespace that were likely part of the previous injection
+        # but keep at least two newlines total (one from replacement, one from the file) 
+        # to separate from following code, or better, just consume all until next non-space.
+        while last_replace_pos < len(content) and content[last_replace_pos] in ' \t\r\n':
+            last_replace_pos += 1
+            
         # Replace from the start of I18N block to last_replace_pos
-        new_content = content[:i18n_match.start()] + replacement + content[last_replace_pos:]
+        new_content = content[:i18n_match.start()] + replacement + "\n" + content[last_replace_pos:]
         
         if new_content != content:
             with open(filepath, 'w', encoding='utf-8') as f:

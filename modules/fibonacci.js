@@ -165,8 +165,6 @@ function t(key, vars) {
     return str;
 }
 
-
-
 /* ── CONSTANTS ────────────────────────────────────────────────────────────── */
 var MAX_STEPS = 20;
 var PHI = ( 1 + Math.sqrt( 5 ) ) / 2; // 1.6180339887...

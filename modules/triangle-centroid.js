@@ -59,8 +59,6 @@ function t(key, vars) {
     return str;
 }
 
-
-
 function initCentroid( container ) {
         var canvas = document.createElement( 'canvas' );
         canvas.height = 460;

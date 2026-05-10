@@ -111,8 +111,6 @@ function t(key, vars) {
     return str;
 }
 
-
-
 function initTrigonometry(container) {
         if (container.dataset.trigInit) { return; }
         container.dataset.trigInit = '1';

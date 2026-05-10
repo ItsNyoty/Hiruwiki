@@ -196,8 +196,6 @@ function t(key, vars) {
     return str;
 }
 
-
-
 function initTriangleWidget(container) {
 
 var boardWidth  = 20;

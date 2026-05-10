@@ -121,7 +121,6 @@ function t(key, vars) {
     return str;
 }
 
-
 document.querySelectorAll( '.hiruwiki[data-module="integer-coordinates"]' ).forEach( function ( host ) {
 
     host.innerHTML = [

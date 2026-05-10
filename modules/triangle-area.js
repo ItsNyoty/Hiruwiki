@@ -132,7 +132,6 @@ function t(key, vars) {
     return str;
 }
 
-
 var W = 680, H = 430, CM = 37.8, DUR = 1600;
 
     function init(container) {

@@ -129,8 +129,6 @@ function t(key, vars) {
     return str;
 }
 
-
-
 function init( el ) {
         el.innerHTML = [
             '<div class="hwt-wrap">',
