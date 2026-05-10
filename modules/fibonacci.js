@@ -360,14 +360,14 @@ function update( root, step ) {
 function drawChart( root, step ) {
     var canvas = root.querySelector( '#hw-fib-chart' );
     var dpr    = window.devicePixelRatio || 1;
-    var W      = canvas.parentElement.clientWidth || 600;
+    var W      = Math.max( canvas.parentElement.clientWidth || 0, 300 );
     var H      = 180;
     canvas.width        = W * dpr;
     canvas.height       = H * dpr;
     canvas.style.width  = W + 'px';
     canvas.style.height = H + 'px';
     var ctx = canvas.getContext( '2d' );
-    ctx.scale( dpr, dpr );
+    ctx.setTransform( dpr, 0, 0, dpr, 0, 0 );
 
     var pad = { top: 16, right: 24, bottom: 32, left: 56 };
     var cw  = W - pad.left - pad.right;

@@ -75,7 +75,7 @@ var messages = /* I18N_START */ {
         "triangle": "Triantán"
     },
     "nl": {
-        "_name": "Hoogtepunt",
+        "_name": "Hoogtepunt van een driehoek",
         "altA": "Hoogte hₐ",
         "altB": "Hoogte h_b",
         "altC": "Hoogte h_c",

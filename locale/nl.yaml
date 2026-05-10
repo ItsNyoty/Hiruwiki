@@ -202,7 +202,7 @@ nl:
     totalPoints: Totaal aantal punten
     hint: 'Voeg punten toe om π te benaderen met kansberekening'
   orthocentre:
-    _name: Hoogtepunt
+    _name: Hoogtepunt van een driehoek
     altA: Hoogte hₐ
     altB: Hoogte h_b
     altC: Hoogte h_c
@@ -342,7 +342,7 @@ nl:
     vertical: Verticaal
     hint: 'Kies een transformatie om deze in actie te zien. Gebruik de blauwe stippen om de vorm van de driehoek te veranderen'
   triangle-angles:
-    _name: Hoeken************* van een driehoek
+    _name: Hoeken van een driehoek
     reset: ↺ Reset
     hint: 'Sleep hoekpunten om de driehoek te veranderen · Som van de hoeken is altijd 180°'
     labelAngleA: Hoek A
