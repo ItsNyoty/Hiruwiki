@@ -148,26 +148,6 @@ var messages = /* I18N_START */ {
         "sec_steps": "Stap door de Fibonacci-reeks",
         "step_label": "Stap {step} van {total}",
         "hint": "Stap door de reeks om de convergentie te zien"
-    },
-    "qqq": {
-        "_name": "Name of the Fibonacci Sequence module",
-        "card_phi_lbl": "Label for the golden ratio φ card",
-        "card_phi_sub": "Subtitle showing the formula and decimal value of the golden ratio",
-        "card_ratio_error": "Label for the error from φ, followed by a numeric value",
-        "card_ratio_lbl": "Label for the current ratio F(n+1) ÷ F(n) card",
-        "chart_step": "X-axis label for the convergence chart",
-        "diff": "Label prefix for the difference value in the sequence display. Followed by a number.",
-        "insight_close": "Insight text shown when the ratio is close to φ but not yet converged. Uses HTML. Parameters: {fa} = left addend, {fb} = right addend, {fr} = sum, {ratio} = current ratio, {error} = error from φ.",
-        "insight_converged": "Insight text shown when the ratio has converged to 6 decimal places. Uses HTML. Parameters: {fa} = left addend, {fb} = right addend, {fr} = sum, {ratio} = current ratio, {error} = error from φ.",
-        "insight_normal": "Insight text shown during normal steps. Uses HTML. Parameters: {fa} = left addend, {fb} = right addend, {fr} = sum, {ratio} = current ratio, {error} = error from φ.",
-        "insight_step1": "Insight text shown at the first step of the Fibonacci sequence. Uses HTML.",
-        "insight_step2": "Insight text shown at the second step of the Fibonacci sequence. Uses HTML.",
-        "sec_addition": "Section heading for the addition display",
-        "sec_chart": "Section heading for the convergence chart",
-        "sec_sequence": "Section heading for the sequence display",
-        "sec_steps": "Section heading for the step-through controls",
-        "step_label": "Label showing the current step. Parameters: {step} = current step number, {total} = total number of steps.",
-        "hint": "Instruction text for the Fibonacci step-through controls"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -184,6 +164,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 /* ── CONSTANTS ────────────────────────────────────────────────────────────── */
 var MAX_STEPS = 20;

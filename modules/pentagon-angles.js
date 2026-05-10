@@ -57,14 +57,6 @@ var messages = /* I18N_START */ {
         "reset": "↺ Reset",
         "total": "Totaal",
         "hint": "Verplaats de hoeken om de figuur te vervormen"
-    },
-    "qqq": {
-        "3triangles": "Decomposition label showing 3 triangles × 180°",
-        "_name": "Name of the Pentagon Angles module",
-        "interiorAngles": "Heading for the interior angles section",
-        "reset": "Button label to reset the visualisation",
-        "total": "Label for the total sum of interior angles",
-        "hint": "Instruction text for the pentagon angle decomposition applet"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -81,6 +73,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 var SVG_W  = 540, SVG_H = 480;
   var SVG_NS = 'http://www.w3.org/2000/svg';

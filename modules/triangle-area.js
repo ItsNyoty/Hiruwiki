@@ -7,9 +7,31 @@
     
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "ca": {
+        "btnReset": "Reinicia",
+        "labelArea": "Àrea",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "unitCm": "cm",
+        "unitCm2": "cm²"
+    },
+    "en": {
+        "_name": "Triangle Area",
+        "btnProve": "Prove it",
+        "btnReset": "Reset",
+        "labelArea": "Area",
+        "labelBase": "Base (b)",
+        "labelHeight": "Height (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Parallelogram area = b × h = <strong>{b} × {h} = {area} cm²</strong>",
+        "proofResultTri": "→ Triangle = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²",
+        "hint": "Drag the vertices to change the triangle's shape"
+    },
     "es": {
         "_name": "Área del triángulo",
-        "hint": "Esta es una visualización interactiva. Arrastra los vértices para modificar el triángulo.",
         "btnProve": "Pruébalo",
         "btnReset": "Reiniciar",
         "labelArea": "Área",
@@ -22,9 +44,22 @@ var messages = /* I18N_START */ {
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
+    "eu": {
+        "_name": "Hirukiaren azalera",
+        "btnProve": "Froga ezazu",
+        "btnReset": "Berrezarri",
+        "labelArea": "Azalera",
+        "labelBase": "Oinarria (b)",
+        "labelHeight": "Altuera (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Paralelogramoaren azalera = b × h = <strong>{b} × {h} = {area} cm²</strong>",
+        "proofResultTri": "→ Triangeluarena = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²"
+    },
     "fr": {
         "_name": "Aire du triangle",
-        "hint": "Ceci est une visualisation interactive. Faites glisser les sommets pour modifier le triangle.",
         "btnProve": "Prouver",
         "btnReset": "Réinitialiser",
         "labelArea": "Aire",
@@ -39,7 +74,6 @@ var messages = /* I18N_START */ {
     },
     "ga": {
         "_name": "Limistéar an Triantáin",
-        "hint": "Is léirshamhlú idirghníomhach é seo. Tarraing na buaicphointí chun an triantán a athrú.",
         "btnProve": "Cruthaigh é",
         "btnReset": "Athshocraigh",
         "labelArea": "Limistéar",
@@ -52,29 +86,25 @@ var messages = /* I18N_START */ {
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
-    "qqq": {
-        "_name": "Name of the Triangle Area module",
-        "btnProve": "Button label to start the area proof animation",
-        "btnReset": "Button label to reset the triangle",
-        "labelArea": "Label for the computed area value",
-        "labelBase": "Label for the base measurement, with variable name in parentheses",
-        "labelHeight": "Label for the height measurement, with variable name in parentheses",
-        "labelBaseShort": "Short symbol for base (usually 'b')",
-        "labelHeightShort": "Short symbol for height (usually 'h')",
-        "proofResultPara": "Proof result text for the parallelogram area. Uses HTML. Parameters: {b} = base, {h} = height, {area} = parallelogram area.",
-        "proofResultTri": "Proof result text for the triangle area (half the parallelogram). Uses HTML. Parameters: {area} = parallelogram area, {triArea} = triangle area.",
-        "unitCm": "Unit of length (centimeters)",
-        "unitCm2": "Unit of area (square centimeters)"
-    },
     "it": {
+        "unitCm": "cm",
+        "unitCm2": "cm²"
+    },
+    "ko": {
+        "_name": "삼각형 면적",
+        "btnReset": "초기화",
+        "labelArea": "면적",
+        "labelBase": "밑변 (b)",
+        "labelHeight": "높이 (h)",
+        "proofResultPara": "평행사변형 넓이 = b × h = <strong>{b} × {h} = {area} cm²</strong>",
+        "proofResultTri": "→ 삼각형 = ½ × {area} = <strong>{triArea} cm²</strong>",
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
     "nl": {
         "_name": "Oppervlakte van een driehoek",
-        "hint": "Dit is een interactieve visualisatie. Sleep de hoekpunten om de driehoek te wijzigen.",
         "btnProve": "Bewijs het",
-        "btnReset": "Reset",
+        "btnReset": "↺ Reset",
         "labelArea": "Oppervlakte",
         "labelBase": "Basis (b)",
         "labelHeight": "Hoogte (h)",
@@ -83,55 +113,8 @@ var messages = /* I18N_START */ {
         "proofResultPara": "Oppervlakte parallellogram = b × h = <strong>{b} × {h} = {area} cm²</strong>",
         "proofResultTri": "→ Driehoek = ½ × {area} = <strong>{triArea} cm²</strong>",
         "unitCm": "cm",
-        "unitCm2": "cm²"
-    },
-    "en": {
-        "_name": "Triangle Area",
-        "hint": "This is an interactive visualization. Drag the vertices to reshape the triangle.",
-        "btnProve": "Prove it",
-        "btnReset": "Reset",
-        "labelArea": "Area",
-        "labelBase": "Base (b)",
-        "labelHeight": "Height (h)",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "proofResultPara": "Parallelogram area = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ Triangle = ½ × {area} = <strong>{triArea} cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²"
-    },
-    "ca": {
-        "btnReset": "Reinicia",
-        "labelArea": "Àrea",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "unitCm": "cm",
-        "unitCm2": "cm²"
-    },
-    "ko": {
-        "_name": "삼각형 면적",
-        "hint": "이것은 대화형 시각화입니다. 꼭짓점을 드래그하여 삼각형을 바꾸세요.",
-        "btnReset": "초기화",
-        "labelArea": "면적",
-        "labelBase": "밑변 (b)",
-        "labelHeight": "높이 (h)",
-        "proofResultPara": "평행사변형 넓이 = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ 삼각형 = ½ × {area} = <strong>{triArea} cm²</strong>"
-    },
-    "eu": {
-        "_name": "Hirukiaren azalera",
-        "hint": "Bistaratzaile interaktibo bat da. Arrastatu erpinak hirukia aldatzeko.",
-        "btnProve": "Froga ezazu",
-        "btnReset": "Berrezarri",
-        "labelArea": "Azalera",
-        "labelBase": "Oinarria (b)",
-        "labelHeight": "Altuera (h)",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "proofResultPara": "Paralelogramoaren azalera = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ Triangeluarena = ½ × {area} = <strong>{triArea} cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²"
+        "unitCm2": "cm²",
+        "hint": "Sleep de hoekpunten om de vorm van de driehoek te veranderen"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -148,6 +131,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 
@@ -312,6 +296,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
                 ctx.globalAlpha = 1.0;
                 ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
             }
+            ctx.globalAlpha = 1.0;
         }
 
         function fillPoly(pts, fill, stroke, lw) {
@@ -402,22 +387,22 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             var mP1P3 = mid(P1, P3);
             var mP2P3 = mid(P2, P3);
 
-            // Left piece (P1, F, P3): rotate around mid(P1,P3)
+            // Left piece (P1, F, P3): rotate around mid(P1,P3), F swings away from P2
             var dirL = rotDir(F, mP1P3, P1, P3, P2);
             var angL = Math.PI * e * dirL;
             var lP1 = rotPt(P1, mP1P3, angL), lF = rotPt(F, mP1P3, angL), lP3 = rotPt(P3, mP1P3, angL);
             fillPoly([lP1, lF, lP3], 'rgba(216,90,48,0.25)', '#D85A30', 2);
 
-            // Right piece (F, P2, P3): rotate around mid(P2,P3)
+            // Right piece (F, P2, P3): rotate around mid(P2,P3), F swings away from P1
             var dirR = rotDir(F, mP2P3, P2, P3, P1);
             var angR = Math.PI * e * dirR;
             var rF = rotPt(F, mP2P3, angR), rP2 = rotPt(P2, mP2P3, angR), rP3 = rotPt(P3, mP2P3, angR);
-            fillPoly([rF, rP2, rP3], 'rgba(24,95,165,0.25)', '#185fa5', 2);
+            fillPoly([rF, rP2, rP3], 'rgba(24,95,165,0.25)', hiruwiki.getThemeColor('color-progressive', '#185fa5'), 2);
 
             if (e >= 0.99) {
                 ctx.save();
                 ctx.beginPath();
-                ctx.moveTo(m.P1.x, m.P1.y); ctx.lineTo(m.P2.x, m.P2.y);
+                ctx.moveTo(P1.x, P1.y); ctx.lineTo(P2.x, P2.y);
                 ctx.lineTo(rF.x, rF.y); ctx.lineTo(lF.x, lF.y);
                 ctx.closePath();
                 ctx.strokeStyle = p.base; ctx.lineWidth = 1.5;
@@ -536,13 +521,6 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
         fLogo.title = 'Hiruwiki';
         if (window.hiruwiki && window.hiruwiki.getLogoSvg) {
             fLogo.insertAdjacentHTML('beforeend', hiruwiki.getLogoSvg(22));
-        } else {
-            // Retry once if hiruwiki is not ready yet
-            setTimeout(function() {
-                if (window.hiruwiki && window.hiruwiki.getLogoSvg && !fLogo.querySelector('svg')) {
-                    fLogo.insertAdjacentHTML('beforeend', hiruwiki.getLogoSvg(22));
-                }
-            }, 500);
         }
         var fText = document.createElement('span');
         fText.className = 'hw-footer__text';

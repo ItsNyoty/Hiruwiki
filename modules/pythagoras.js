@@ -51,13 +51,6 @@ var messages = /* I18N_START */ {
         "angleDeg": "hoek =",
         "lockRight": "rechte hoek",
         "reset": "↺ Reset"
-    },
-    "qqq": {
-        "_name": "Name of the Pythagorean Theorem module",
-        "angleDeg": "Label prefix for the angle value. Followed by a number in degrees.",
-        "lockRight": "Checkbox label to lock the triangle to a right angle",
-        "reset": "Button label to reset the triangle",
-        "hint": "Instruction text for the Pythagoras theorem interaction"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -74,6 +67,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 const SCALE = 38;
 

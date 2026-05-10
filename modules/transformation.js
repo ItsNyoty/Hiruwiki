@@ -112,22 +112,6 @@ var messages = /* I18N_START */ {
         "transformations": "Transformaties",
         "translation": "Translatie",
         "vertical": "Verticaal"
-    },
-    "qqq": {
-        "_name": "Name of the Transformations module",
-        "angle": "Label for the rotation angle slider",
-        "enlargement": "Button label and heading for the enlargement transformation",
-        "hintEnlargement": "Instruction text for the enlargement mode",
-        "hintReflection": "Instruction text for the reflection mode",
-        "hintRotation": "Instruction text for the rotation mode",
-        "hintTranslation": "Instruction text for the translation mode",
-        "horizontal": "Label for the horizontal translation slider",
-        "reflection": "Button label and heading for the reflection transformation",
-        "rotation": "Button label and heading for the rotation transformation",
-        "transformations": "Main heading for the transformations panel",
-        "translation": "Button label and heading for the translation transformation",
-        "vertical": "Label for the vertical translation slider",
-        "hint": "Instruction text for the transformation module"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -144,6 +128,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 function init( el ) {
         el.innerHTML = [

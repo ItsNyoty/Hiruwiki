@@ -32,11 +32,6 @@ var messages = /* I18N_START */ {
         "_name": "Helling",
         "undefined": "Verticale lijn → helling ongedefinieerd",
         "hint": "Sleep de punten om de hellingsberekening te zien"
-    },
-    "qqq": {
-        "_name": "Name of the Slope module",
-        "undefined": "Message shown when the line is vertical and the slope is undefined",
-        "hint": "Instruction text for the slope calculation interaction"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -53,6 +48,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 function initSlope(container) {
 

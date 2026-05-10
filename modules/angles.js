@@ -92,17 +92,6 @@ var messages = /* I18N_START */ {
         "resultAngle": "Hoek $1: $2°",
         "supplement": "Supplementair",
         "hint": "Sleep de witte stip om de hoek te veranderen"
-    },
-    "qqq": {
-        "_name": "Name of the Angles module",
-        "bisector": "Button label for the bisector mode",
-        "bisectorResult": "Result text showing the bisector angle. Parameters: $1 = bisector angle in degrees.",
-        "complement": "Button label for the complementary angle mode",
-        "explement": "Button label for the explementary angle mode",
-        "notDefined": "Message shown when the selected angle operation is not defined for the current angle (e.g. complement of an angle ≥ 90°)",
-        "resultAngle": "Result text showing a computed angle. Parameters: $1 = angle type name (e.g. \"Complementary\"), $2 = angle in degrees.",
-        "supplement": "Button label for the supplementary angle mode",
-        "hint": "Instruction text explaining how to interact with the angle applet"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -119,6 +108,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 /* -------------------------
    APPLET INITIALIZATION

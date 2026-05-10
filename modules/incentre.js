@@ -174,28 +174,6 @@ var messages = /* I18N_START */ {
         "touchBC": "Raakpunt BC",
         "touchCA": "Raakpunt CA",
         "triangle": "Driehoek"
-    },
-    "qqq": {
-        "_name": "Name of the Incentre module",
-        "angleA": "Label for angle A of the triangle",
-        "angleB": "Label for angle B of the triangle",
-        "angleC": "Label for angle C of the triangle",
-        "area": "Label for the triangle area",
-        "centre": "Label for the incentre point I",
-        "circumference": "Label for the incircle circumference",
-        "formula": "Formula showing how the inradius is calculated (r = Area / s)",
-        "hint": "Explanation about how the module is interactive",
-        "incircle": "Section heading for the incircle properties",
-        "perimeter": "Label for the triangle perimeter",
-        "radius": "Label for the inradius, with variable name in parentheses",
-        "scaleUnit": "Unit abbreviation used for measurements (centimetres)",
-        "sideA": "Label for side a (BC) of the triangle",
-        "sideB": "Label for side b (CA) of the triangle",
-        "sideC": "Label for side c (AB) of the triangle",
-        "touchAB": "Label for the tangent point on side AB",
-        "touchBC": "Label for the tangent point on side BC",
-        "touchCA": "Label for the tangent point on side CA",
-        "triangle": "Section heading for the triangle properties"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -212,6 +190,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 	/* ----------------------------------------------------------
 	 * Constants

@@ -179,30 +179,6 @@ var messages = /* I18N_START */ {
         "unitCm": "cm",
         "unitCm2": "cm²",
         "hint": "Sleep hoekpunten om de vorm en classificatie te veranderen"
-    },
-    "qqq": {
-        "_name": "Name of the Triangles module",
-        "acute": "Classification name for an acute triangle (all angles < 90°)",
-        "angles": "Section heading for the angles display",
-        "area": "Label for the triangle area",
-        "byAngles": "Label prefix for the angle-based classification. Followed by the classification name.",
-        "bySides": "Label prefix for the side-based classification. Followed by the classification name.",
-        "classification": "Section heading for the triangle classification",
-        "equilateral": "Classification name for an equilateral triangle (all sides equal)",
-        "isosceles": "Classification name for an isosceles triangle (two sides equal)",
-        "measurements": "Section heading for the measurements display",
-        "obtuse": "Classification name for an obtuse triangle (one angle > 90°)",
-        "perimeter": "Label for the triangle perimeter",
-        "reset": "Button label to reset the triangle",
-        "right": "Classification name for a right triangle (one angle = 90°)",
-        "scalene": "Classification name for a scalene triangle (no sides equal)",
-        "sides": "Section heading for the sides display",
-        "sideA": "Label for side a (the one connecting vertices B and C)",
-        "sideB": "Label for side b (the one connecting vertices C and A)",
-        "sideC": "Label for side c (the one connecting vertices A and B)",
-        "unitCm": "Unit of length (centimeters)",
-        "unitCm2": "Unit of area (square centimeters)",
-        "hint": "Explanation about how the module is interactive"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -219,6 +195,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 function initTriangleWidget(container) {
 

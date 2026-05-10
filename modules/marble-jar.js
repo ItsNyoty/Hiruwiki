@@ -89,18 +89,6 @@ var messages = /* I18N_START */ {
         "probTitle": "Kans om een knikker te pakken en de kleur te raden…",
         "shake": "Schudden!",
         "total": "Totaal"
-    },
-    "qqq": {
-        "_name": "Name of the Probability Jar module",
-        "colorBlue": "Name of the blue marble colour",
-        "colorGreen": "Name of the green marble colour",
-        "colorRed": "Name of the red marble colour",
-        "colorYellow": "Name of the yellow marble colour",
-        "impossible": "Label shown when the probability is zero (impossible event)",
-        "probTitle": "Heading describing the probability scenario",
-        "shake": "Button label to shake the jar and randomise marbles",
-        "total": "Label for the total number of marbles",
-        "hint": "Instruction text for the probability jar interaction"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -117,6 +105,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
     var COLORS = [
         { id: 'blue',   label: t('colorBlue'),   hex: hiruwiki.getThemeColor('color-progressive', '#3366cc') },

@@ -169,27 +169,6 @@ var messages = /* I18N_START */ {
         "title": "Cirkel Calculator",
         "visualProof": "Visueel bewijs",
         "hint": "Sleep de straalschuifregelaar om de berekening te zien"
-    },
-    "qqq": {
-        "_name": "Name of the Circle Proof module",
-        "animStopped": "Status message shown when the user stops the animation",
-        "area": "Label for the area metric",
-        "areaAnimStatus": "Status message shown during the area proof animation, explaining that sectors reassemble into a rectangle",
-        "areaReviewStatus": "Status message shown after the area proof animation completes",
-        "circAnimStatus": "Status message shown during the circumference proof animation, explaining that semi-circles unroll into lines",
-        "circReviewStatus": "Status message shown after the circumference proof animation completes",
-        "circumference": "Label for the circumference metric",
-        "initStatus": "Initial status message prompting the user to choose a proof",
-        "proveIt": "Button label to start the proof animation. Includes ▶ play symbol.",
-        "radius": "Label for the radius slider",
-        "readyStatus": "Status message shown after selecting a proof tab, before starting the animation",
-        "review": "Button label shown after animation completes, to replay. Includes ▶ play symbol.",
-        "stop": "Button label to stop a running animation. Includes ■ stop symbol.",
-        "tabArea": "Tab label for the area proof",
-        "tabCirc": "Tab label for the circumference proof",
-        "title": "Title of the circle calculator sidebar",
-        "visualProof": "Section heading for the visual proof controls",
-        "hint": "Instruction text explaining that the radius slider is interactive"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -206,6 +185,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 var PX_PER_CM = 30;
 

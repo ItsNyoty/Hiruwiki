@@ -59,15 +59,6 @@ var messages = /* I18N_START */ {
         "reset": "↺ Reset",
         "total": "Totaal",
         "hint": "Verdeel de zeshoek in driehoeken of vierhoeken om de som van de hoeken te zien"
-    },
-    "qqq": {
-        "2quads": "Decomposition label showing 2 quadrilaterals × 360°",
-        "4triangles": "Decomposition label showing 4 triangles × 180°",
-        "_name": "Name of the Hexagon Angles module",
-        "interiorAngles": "Heading for the interior angles section",
-        "reset": "Button label to reset the visualisation",
-        "total": "Label for the total sum of interior angles",
-        "hint": "Instruction text for the hexagon angle decomposition applet"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -84,6 +75,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 var SVG_W  = 580, SVG_H = 520;
   var SVG_NS = 'http://www.w3.org/2000/svg';

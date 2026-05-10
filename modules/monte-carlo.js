@@ -89,19 +89,6 @@ var messages = /* I18N_START */ {
         "reset": "↺ Reset",
         "totalPoints": "Totaal aantal punten",
         "hint": "Voeg punten toe om π te benaderen met kansberekening"
-    },
-    "qqq": {
-        "_name": "Name of the Monte Carlo Pi module",
-        "addPoints": "Button label to add more random points to the simulation",
-        "approxPi": "Label for the current approximation of π",
-        "insideCircle": "Label for the count of points inside the circle",
-        "insideRed": "Legend label for points inside the circle (shown in red)",
-        "outsideBlue": "Legend label for points outside the circle (shown in blue)",
-        "outsideCircle": "Label for the count of points outside the circle",
-        "pointsPerStep": "Label for the number of points added per step",
-        "reset": "Button label to reset the simulation",
-        "totalPoints": "Label for the total number of points",
-        "hint": "Instruction text for the Monte Carlo simulation interaction"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -118,6 +105,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 var SIZE = 320;
 

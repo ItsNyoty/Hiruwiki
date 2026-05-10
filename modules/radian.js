@@ -36,11 +36,6 @@ var messages = /* I18N_START */ {
         "_name": "Radialen",
         "rad": "rad",
         "hint": "Sleep de hendel om de relatie tussen graden en radialen te zien"
-    },
-    "qqq": {
-        "_name": "Name of the Radians module",
-        "rad": "Abbreviation for radians",
-        "hint": "Instruction text for the radian-degree relationship applet"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -57,6 +52,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 // Find all radian modules
   document.querySelectorAll('.hiruwiki[data-module="radian"]').forEach(function(container) {

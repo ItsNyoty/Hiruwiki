@@ -37,23 +37,6 @@
         "formula_label": "Formule",
         "update_rules_heading": "Updateregels",
         "hint": "Bereken iteraties om kwadratische convergentie te zien"
-    },
-    "qqq": {
-        "_name": "Name of the Gauss-Legendre Algorithm module",
-        "iteration": "Label for the current iteration number",
-        "variable_a": "Label for the arithmetic mean variable 'a'",
-        "variable_b": "Label for the geometric mean variable 'b'",
-        "variable_t": "Label for the error term variable 't'",
-        "variable_p": "Label for the power term variable 'p'",
-        "step": "Button label to compute the next iteration",
-        "reset": "Button label to reset the algorithm to its initial state",
-        "pi_approx": "Label for the current approximation of π",
-        "correct_digits": "Label showing the number of correct digits found. Uses PLURAL. Parameters: $1 = the number of correct digits.",
-        "precision_note": "Note explaining the quadratic convergence of the algorithm",
-        "calculation_heading": "Heading for the step-by-step calculation breakdown",
-        "formula_label": "Label for the mathematical formula being used",
-        "update_rules_heading": "Heading for the section explaining how variables change each step",
-        "hint": "Instruction text for the Gauss-Legendre algorithm interaction"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -70,6 +53,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
     const MATH_PI_STR = "3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679";
 

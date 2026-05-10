@@ -57,14 +57,6 @@ var messages = /* I18N_START */ {
         "reset": "↺ Reset",
         "sum": "Som",
         "total": "Totaal"
-    },
-    "qqq": {
-        "_name": "Name of the Quadrangle Angles module",
-        "interiorAngles": "Heading for the interior angles section",
-        "reset": "Button label to reset the visualisation",
-        "sum": "Label for the sum of angles",
-        "total": "Label for the total sum of interior angles",
-        "hint": "Instruction text for the quadrangle angle interaction"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -81,6 +73,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 var SVG_W  = 540, SVG_H = 480;
   var SVG_NS = 'http://www.w3.org/2000/svg';

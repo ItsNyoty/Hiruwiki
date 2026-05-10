@@ -18,7 +18,7 @@ var messages = /* I18N_START */ {
         "feedbackWrong": "✗ Incorrect. The faint star was the correct answer.",
         "hintChallenge": "Move ★ to the proposed coordinates and click Check",
         "hintExplore": "Move ★ by clicking on it — it snaps to integers",
-        "movePrompt": "Move ★ to: ({targetX}, {targetY})",
+        "movePrompt": "Move ★ to:<br>({targetX}, {targetY})",
         "pointLabel": "Point:",
         "titleExplore": "Explore Coordinate System",
         "hint": "Move the star to explore coordinates"
@@ -33,7 +33,7 @@ var messages = /* I18N_START */ {
         "feedbackWrong": "✗ Incorrecto. La estrella tenue era la respuesta correcta.",
         "hintChallenge": "Mueve ★ a las coordenadas propuestas y pulsa Comprobar",
         "hintExplore": "Mueve ★ haciendo clic en él — se ajusta a enteros",
-        "movePrompt": "Mueve ★ a: ({targetX}, {targetY})",
+        "movePrompt": "Mueve ★ a:<br>({targetX}, {targetY})",
         "pointLabel": "Punto:",
         "titleExplore": "Explorar el sistema de coordenadas"
     },
@@ -47,7 +47,7 @@ var messages = /* I18N_START */ {
         "feedbackWrong": "✗ Ez da zuzena. Izar ahula zen erantzun zuzena.",
         "hintChallenge": "Mugi ezazu ★ proposatutako koordenatuetara eta klik egin Zuzendu botoian",
         "hintExplore": "Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen ditu",
-        "movePrompt": "Mugitu ★ hona: ({targetX}, {targetY})",
+        "movePrompt": "Mugitu ★ hona:<br>({targetX}, {targetY})",
         "pointLabel": "Puntua:",
         "titleExplore": "Esploratu koordenatuen sistema"
     },
@@ -61,7 +61,7 @@ var messages = /* I18N_START */ {
         "feedbackWrong": "✗ Incorrect. L'étoile pâle était la bonne réponse.",
         "hintChallenge": "Déplacez ★ vers les coordonnées proposées et cliquez sur Vérifier",
         "hintExplore": "Déplacez ★ en cliquant dessus — il s'accroche aux entiers",
-        "movePrompt": "Déplacez ★ vers : ({targetX}, {targetY})",
+        "movePrompt": "Déplacez ★ vers :<br>({targetX}, {targetY})",
         "pointLabel": "Point :",
         "titleExplore": "Explorer le système de coordonnées"
     },
@@ -75,7 +75,7 @@ var messages = /* I18N_START */ {
         "feedbackWrong": "✗ Mícheart. Ba é an réalta lag an freagra ceart.",
         "hintChallenge": "Bog ★ go dtí na comhordanáidí atá beartaithe agus cliceáil Seiceáil",
         "hintExplore": "Bog ★ trí chliceáil air — snapálann sé chuig slánuimhreacha",
-        "movePrompt": "Bog ★ go: ({targetX}, {targetY})",
+        "movePrompt": "Bog ★ go:<br>({targetX}, {targetY})",
         "pointLabel": "Pointe:",
         "titleExplore": "Iniúchadh a dhéanamh ar an gCóras Comhordanáidí"
     },
@@ -101,24 +101,9 @@ var messages = /* I18N_START */ {
         "feedbackWrong": "✗ Onjuist. De zwakke ster was het juiste antwoord.",
         "hintChallenge": "Verplaats ★ naar de voorgestelde coördinaten en klik op Controleren",
         "hintExplore": "Verplaats ★ door erop te klikken — springt naar hele getallen",
-        "movePrompt": "Verplaats ★ naar: ({targetX}, {targetY})",
+        "movePrompt": "Verplaats ★ naar:<br>({targetX}, {targetY})",
         "pointLabel": "Punt:",
         "titleExplore": "Verken het coördinatenstelsel"
-    },
-    "qqq": {
-        "_name": "Name of the Positive Coordinates module (integer grid variant)",
-        "btnChallenge": "Button label to switch to challenge mode",
-        "btnCheck": "Button label to check the player's answer",
-        "btnExplore": "Button label to switch to explore mode",
-        "btnNext": "Button label to proceed to the next challenge",
-        "feedbackCorrect": "Feedback shown when the player places the star correctly",
-        "feedbackWrong": "Feedback shown when the player places the star incorrectly",
-        "hintChallenge": "Instruction text shown in challenge mode",
-        "hintExplore": "Instruction text shown in explore mode",
-        "movePrompt": "Prompt telling the player where to move the star. Uses HTML. Parameters: {targetX} = target X coordinate, {targetY} = target Y coordinate.",
-        "pointLabel": "Label for the current point coordinates. Followed by coordinate values.",
-        "titleExplore": "Title shown in explore mode",
-        "hint": "Instruction text for the coordinate system interaction"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -128,9 +113,6 @@ banana.load(messages);
 function t(key, vars) {
     var args = Array.isArray(vars) ? vars : [];
     var str = banana.i18n(key, ...args);
-    if (str === '<' + key + '>') {
-        str = messages.en[key] || str;
-    }
     if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
         Object.keys(vars).forEach(function(k) {
             str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
@@ -138,6 +120,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 document.querySelectorAll( '.hiruwiki[data-module="positive-coordinates"]' ).forEach( function ( host ) {
 

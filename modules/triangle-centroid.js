@@ -42,11 +42,6 @@ var messages = /* I18N_START */ {
         "_name": "Zwaartepunt van een driehoek",
         "centroid": "Zwaartepunt",
         "hint": "Verplaats de hoekpunten om te zien hoe de positie van het zwaartepunt verandert."
-    },
-    "qqq": {
-        "_name": "Name of the Triangle Centroid module",
-        "centroid": "Label for the centroid point",
-        "hint": "Instruction text telling the user to drag vertices"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -63,6 +58,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 function initCentroid( container ) {
         var canvas = document.createElement( 'canvas' );

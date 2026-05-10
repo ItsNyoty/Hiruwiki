@@ -94,19 +94,6 @@ var messages = /* I18N_START */ {
         "tanDesc": "De oranje lijn is getekend op x&nbsp;=&nbsp;1, rakend aan de cirkel. De hoogte is tan&nbsp;&theta;, aangezien tan&nbsp;&theta;&nbsp;=&nbsp;overstaande&nbsp;&divide;&nbsp;aanliggende&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.",
         "tanFormula": "overstaande / aanliggende",
         "hint": "Gebruik de schuifregelaar om de hoek te veranderen"
-    },
-    "qqq": {
-        "_name": "Name of the Trigonometry module",
-        "angle": "Label for the angle θ slider. Uses &theta; HTML entity.",
-        "cosDesc": "Description of the cosine function shown in the proof panel. Uses HTML entities and formatting.",
-        "cosFormula": "Formula for cosine (adjacent / hypotenuse)",
-        "hideProof": "Button label to hide the trigonometric proof panel",
-        "prove": "Button label to show the trigonometric proof panel",
-        "sinDesc": "Description of the sine function shown in the proof panel. Uses HTML entities and formatting.",
-        "sinFormula": "Formula for sine (opposite / hypotenuse)",
-        "tanDesc": "Description of the tangent function shown in the proof panel. Uses HTML entities and formatting.",
-        "tanFormula": "Formula for tangent (opposite / adjacent)",
-        "hint": "Instruction text for the unit circle interaction"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -123,6 +110,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 function initTrigonometry(container) {
         if (container.dataset.trigInit) { return; }
