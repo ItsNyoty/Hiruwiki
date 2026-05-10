@@ -199,9 +199,16 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
 
         function isDark() {
             var root = document.documentElement;
-            return root.classList.contains('skin-theme-clientpref-night') ||
-                   root.classList.contains('client-dark-mode') ||
-                   document.body.classList.contains('mw-dark-mode');
+            if (root.classList.contains('skin-theme-clientpref-night') ||
+                root.classList.contains('client-dark-mode') ||
+                document.body.classList.contains('mw-dark-mode')) {
+                return true;
+            }
+            if (root.classList.contains('skin-theme-clientpref-day') ||
+                root.classList.contains('client-light-mode')) {
+                return false;
+            }
+            return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
         }
 
         function palette() {
@@ -209,8 +216,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             return {
                 dark:   dark,
                 bg:     hiruwiki.getThemeColor('hw-bg-base', dark ? '#1e1e1c' : '#ffffff'),
-                gridMm: dark ? 'rgba(255,255,255,.15)' : '#D0D0D0',
-                gridCm: dark ? 'rgba(255,255,255,.30)' : '#A0A0A0',
+                grid:   hiruwiki.getThemeColor('hw-border', dark ? '#444441' : '#D3D1C7'),
                 succ:   hiruwiki.getThemeColor('hw-color-success', '#1d9e75'),
                 warn:   hiruwiki.getThemeColor('hw-color-warning', '#BA7517'),
                 base:   hiruwiki.getThemeColor('hw-text-base',      dark ? '#E8E6DC' : '#1a1a18')
@@ -282,27 +288,28 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
 
         // --- Drawing ---
         function drawGrid(p) {
-            ctx.lineWidth = p.dark ? 0.5 : 1.0;
+            ctx.lineWidth = 1.0;
+            ctx.strokeStyle = p.grid;
             for (var x = 0; x < W; x += CM) {
+                ctx.globalAlpha = 0.4;
                 for (var mm = 1; mm < 10; mm++) {
                     var mpx = x + mm * CM / 10;
                     if (mpx < W) {
-                        ctx.strokeStyle = p.gridMm;
                         ctx.beginPath(); ctx.moveTo(mpx, 0); ctx.lineTo(mpx, H); ctx.stroke();
                     }
                 }
-                ctx.strokeStyle = p.gridCm;
+                ctx.globalAlpha = 1.0;
                 ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
             }
             for (var y = 0; y < H; y += CM) {
+                ctx.globalAlpha = 0.4;
                 for (var rmm = 1; rmm < 10; rmm++) {
                     var ymm = y + rmm * CM / 10;
                     if (ymm < H) {
-                        ctx.strokeStyle = p.gridMm;
                         ctx.beginPath(); ctx.moveTo(0, ymm); ctx.lineTo(W, ymm); ctx.stroke();
                     }
                 }
-                ctx.strokeStyle = p.gridCm;
+                ctx.globalAlpha = 1.0;
                 ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
             }
         }
@@ -385,7 +392,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             ctx.restore();
         }
 
-        function drawProof(t) {
+        function drawProof(t, p) {
             var m = metrics();
             var P1 = m.P1, P2 = m.P2, P3 = m.P3;
             var F = { x: m.foot.x, y: m.foot.y };
@@ -440,7 +447,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             drawVtx(V.A, 'A'); drawVtx(V.B, 'B'); drawVtx(V.C, 'C');
             if (phase === 'animating' || phase === 'done') {
                 var elapsed = phase === 'done' ? DUR : (ts - animStart);
-                drawProof(elapsed / DUR);
+                drawProof(elapsed / DUR, p);
                 if (elapsed < DUR && phase === 'animating') {
                     requestAnimationFrame(draw);
                 } else if (phase === 'animating') {

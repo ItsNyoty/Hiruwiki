@@ -289,8 +289,7 @@ function buildWidget( container ) {
 			ruleBg:   hiruwiki.getThemeColor( 'hw-bg-subtle',     dark ? '#2C2C2A' : '#F1EFE8' ),
 			ruleTick: hiruwiki.getThemeColor( 'hw-text-placeholder', '#888780' ),
 			ruleText: hiruwiki.getThemeColor( 'hw-text-muted',       '#5F5E5A' ),
-			gridMm:   dark ? 'rgba(255,255,255,.15)' : '#D0D0D0',
-			gridCm:   dark ? 'rgba(255,255,255,.30)' : '#A0A0A0',
+			grid:     hiruwiki.getThemeColor( 'hw-border',        dark ? '#444441' : '#D3D1C7' ),
 			dotBg:    hiruwiki.getThemeColor( 'hw-bg-base', dark ? '#1e1e1c' : '#ffffff' )
 		};
 	}
@@ -355,28 +354,29 @@ function buildWidget( container ) {
 
 	/* -- grid -- */
 	function drawGrid( p ) {
-		ctx.lineWidth = p.dark ? 0.5 : 1.0;
+		ctx.lineWidth = 1.0;
+		ctx.strokeStyle = p.grid;
 		for ( var cm = 0; cm * SCALE < W + SCALE; cm++ ) {
+			ctx.globalAlpha = 0.4;
 			for ( var mm = 1; mm < 10; mm++ ) {
-				ctx.strokeStyle = p.gridMm;
 				ctx.beginPath();
 				ctx.moveTo( cm * SCALE + mm * SCALE / 10, RULER_H );
 				ctx.lineTo( cm * SCALE + mm * SCALE / 10, H );
 				ctx.stroke();
 			}
-			ctx.strokeStyle = p.gridCm;
+			ctx.globalAlpha = 1.0;
 			ctx.beginPath();
 			ctx.moveTo( cm * SCALE, RULER_H ); ctx.lineTo( cm * SCALE, H ); ctx.stroke();
 		}
 		for ( var row = 0; RULER_H + row * SCALE < H; row++ ) {
+			ctx.globalAlpha = 0.4;
 			for ( var rmm = 1; rmm < 10; rmm++ ) {
 				var ymm = RULER_H + row * SCALE + rmm * SCALE / 10;
 				if ( ymm < H ) {
-					ctx.strokeStyle = p.gridMm;
 					ctx.beginPath(); ctx.moveTo( 0, ymm ); ctx.lineTo( W, ymm ); ctx.stroke();
 				}
 			}
-			ctx.strokeStyle = p.gridCm;
+			ctx.globalAlpha = 1.0;
 			ctx.beginPath();
 			ctx.moveTo( 0, RULER_H + row * SCALE ); ctx.lineTo( W, RULER_H + row * SCALE ); ctx.stroke();
 		}
