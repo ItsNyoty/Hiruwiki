@@ -29,7 +29,7 @@ WIKI_LANGS = {
 DEFAULT_SITE = "https://en.wikipedia.org/w/api.php"
 GADGET_BASE = "MediaWiki:Gadget-"
 MODULES_BASE = "MediaWiki:Hiruwiki/modules/"
-CATEGORY_BASE = "Category:Hiruwiki"
+CATEGORY_BASE = "Category:Wikipedia:Hiruwiki"
 TEMPLATES_BASE = "Template:Hiruwiki"
 
 CORE_FILE = "Gadget-hiruwiki-core.js"

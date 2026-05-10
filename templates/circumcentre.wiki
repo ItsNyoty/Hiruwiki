@@ -1,2 +1,2 @@
-<div class="hiruwiki" data-module="slope"></div>
+<div class="hiruwiki" data-module="circumcentre"></div>
 <includeonly>[[Category:Wikipedia:Hiruwiki]]</includeonly>

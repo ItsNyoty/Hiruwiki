@@ -1,2 +1,2 @@
 <div class="hiruwiki" data-module="fibonacci"></div>
-<includeonly>[[Category:Hiruwiki]]</includeonly>
+<includeonly>[[Category:Wikipedia:Hiruwiki]]</includeonly>
