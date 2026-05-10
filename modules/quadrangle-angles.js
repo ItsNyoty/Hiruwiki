@@ -4,33 +4,12 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {
-        "interiorAngles": "Angles interiors",
-        "reset": "Reinicia",
-        "sum": "Suma",
-        "total": "Total"
-    },
-    "en": {
-        "_name": "Quadrangle Angles",
-        "interiorAngles": "Interior angles",
-        "reset": "Reset",
-        "sum": "Sum",
-        "total": "Total",
-        "hint": "Drag vertices to see the sum of interior angles"
-    },
     "es": {
         "_name": "Ángulos del cuadrilátero",
         "interiorAngles": "Ángulos interiores",
         "reset": "Reiniciar",
         "sum": "Suma",
         "total": "Total"
-    },
-    "eu": {
-        "_name": "Koadrilateroaren angeluak",
-        "interiorAngles": "Barne angeluak",
-        "reset": "Berrezarri",
-        "sum": "Batuketa",
-        "total": "Guztira"
     },
     "fr": {
         "_name": "Angles du quadrilatère",
@@ -46,11 +25,6 @@ var messages = /* I18N_START */ {
         "sum": "Suim",
         "total": "Iomlán"
     },
-    "ko": {
-        "reset": "초기화",
-        "sum": "총합",
-        "total": "합계"
-    },
     "nl": {
         "_name": "Hoeken van een vierhoek",
         "interiorAngles": "Binnenhoeken",
@@ -58,6 +32,32 @@ var messages = /* I18N_START */ {
         "sum": "Som",
         "total": "Totaal",
         "hint": "Sleep de hoekpunten om de som van de binnenhoeken te zien"
+    },
+    "en": {
+        "_name": "Quadrangle Angles",
+        "interiorAngles": "Interior angles",
+        "reset": "Reset",
+        "sum": "Sum",
+        "total": "Total",
+        "hint": "Drag vertices to see the sum of interior angles"
+    },
+    "ca": {
+        "interiorAngles": "Angles interiors",
+        "reset": "Reinicia",
+        "sum": "Suma",
+        "total": "Total"
+    },
+    "ko": {
+        "reset": "초기화",
+        "sum": "총합",
+        "total": "합계"
+    },
+    "eu": {
+        "_name": "Koadrilateroaren angeluak",
+        "interiorAngles": "Barne angeluak",
+        "reset": "Berrezarri",
+        "sum": "Batuketa",
+        "total": "Guztira"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

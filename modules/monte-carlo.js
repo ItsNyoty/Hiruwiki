@@ -5,22 +5,6 @@
     
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {
-        "totalPoints": "Punts totals"
-    },
-    "en": {
-        "_name": "Monte Carlo Pi",
-        "addPoints": "+ Add Points",
-        "approxPi": "Approximation of π",
-        "insideCircle": "Inside Circle",
-        "insideRed": "Inside (red)",
-        "outsideBlue": "Outside (blue)",
-        "outsideCircle": "Outside Circle",
-        "pointsPerStep": "Points per step",
-        "reset": "↺ Reset",
-        "totalPoints": "Total points",
-        "hint": "Add points to approximate π using probability"
-    },
     "es": {
         "_name": "Pi de Monte Carlo",
         "addPoints": "+ Añadir puntos",
@@ -33,19 +17,6 @@ var messages = /* I18N_START */ {
         "reset": "↺ Reiniciar",
         "totalPoints": "Puntos totales",
         "hint": "Añade puntos para aproximar π usando probabilidad"
-    },
-    "eu": {
-        "_name": "Monte Carlo Pi",
-        "addPoints": "+ Puntuak gehitu",
-        "approxPi": "π-ren hurbilketa",
-        "insideCircle": "Zirkulu barruan",
-        "insideRed": "Barruan (gorria)",
-        "outsideBlue": "Kanpoan (urdina)",
-        "outsideCircle": "Zirkulu kanpoan",
-        "pointsPerStep": "Puntuak urratseko",
-        "reset": "↺ Berrezarri",
-        "totalPoints": "Puntu kopurua",
-        "hint": "Gehitu puntuak probabilitatea erabiliz π hurbiltzeko"
     },
     "fr": {
         "_name": "Monte Carlo Pi",
@@ -76,11 +47,6 @@ var messages = /* I18N_START */ {
     "it": {
         "approxPi": "Approssimazione di π"
     },
-    "ko": {
-        "approxPi": "π의 근사값",
-        "reset": "↺ 초기화",
-        "totalPoints": "총점"
-    },
     "nl": {
         "_name": "Monte Carlo Pi",
         "addPoints": "+ Punten toevoegen",
@@ -93,6 +59,40 @@ var messages = /* I18N_START */ {
         "reset": "↺ Reset",
         "totalPoints": "Totaal aantal punten",
         "hint": "Voeg punten toe om π te benaderen met kansberekening"
+    },
+    "en": {
+        "_name": "Monte Carlo Pi",
+        "addPoints": "+ Add Points",
+        "approxPi": "Approximation of π",
+        "insideCircle": "Inside Circle",
+        "insideRed": "Inside (red)",
+        "outsideBlue": "Outside (blue)",
+        "outsideCircle": "Outside Circle",
+        "pointsPerStep": "Points per step",
+        "reset": "↺ Reset",
+        "totalPoints": "Total points",
+        "hint": "Add points to approximate π using probability"
+    },
+    "ca": {
+        "totalPoints": "Punts totals"
+    },
+    "ko": {
+        "approxPi": "π의 근사값",
+        "reset": "↺ 초기화",
+        "totalPoints": "총점"
+    },
+    "eu": {
+        "_name": "Monte Carlo Pi",
+        "addPoints": "+ Puntuak gehitu",
+        "approxPi": "π-ren hurbilketa",
+        "insideCircle": "Zirkulu barruan",
+        "insideRed": "Barruan (gorria)",
+        "outsideBlue": "Kanpoan (urdina)",
+        "outsideCircle": "Zirkulu kanpoan",
+        "pointsPerStep": "Puntuak urratseko",
+        "reset": "↺ Berrezarri",
+        "totalPoints": "Puntu kopurua",
+        "hint": "Gehitu puntuak probabilitatea erabiliz π hurbiltzeko"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

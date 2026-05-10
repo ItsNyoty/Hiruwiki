@@ -5,19 +5,6 @@
 
     /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
     var messages = /* I18N_START */ {
-    "ca": {
-        "reset": "Reinicia"
-    },
-    "en": {
-        "_name": "Triangle Angles",
-        "reset": "Reset",
-        "hint": "Drag vertices to change the triangle · Sum of angles is always 180°",
-        "labelAngleA": "Angle A",
-        "labelAngleB": "Angle B",
-        "labelAngleC": "Angle C",
-        "labelSum": "Sum",
-        "formula": "A + B + C = 180°"
-    },
     "es": {
         "_name": "Ángulos del triángulo",
         "reset": "Reiniciar",
@@ -26,16 +13,6 @@
         "labelAngleB": "Ángulo B",
         "labelAngleC": "Ángulo C",
         "labelSum": "Suma",
-        "formula": "A + B + C = 180°"
-    },
-    "eu": {
-        "_name": "Hirukiaren angeluak",
-        "reset": "Berrezarri",
-        "hint": "Arrastatu erpinak hirukia aldatzeko · Angeluen batura beti 180° da",
-        "labelAngleA": "A angelua",
-        "labelAngleB": "B angelua",
-        "labelAngleC": "C angelua",
-        "labelSum": "Batura",
         "formula": "A + B + C = 180°"
     },
     "fr": {
@@ -58,9 +35,6 @@
         "labelSum": "Suim",
         "formula": "A + B + C = 180°"
     },
-    "ko": {
-        "reset": "초기화"
-    },
     "nl": {
         "_name": "Hoeken************* van een driehoek",
         "reset": "↺ Reset",
@@ -69,6 +43,32 @@
         "labelAngleB": "Hoek B",
         "labelAngleC": "Hoek C",
         "labelSum": "Som",
+        "formula": "A + B + C = 180°"
+    },
+    "en": {
+        "_name": "Triangle Angles",
+        "reset": "Reset",
+        "hint": "Drag vertices to change the triangle · Sum of angles is always 180°",
+        "labelAngleA": "Angle A",
+        "labelAngleB": "Angle B",
+        "labelAngleC": "Angle C",
+        "labelSum": "Sum",
+        "formula": "A + B + C = 180°"
+    },
+    "ca": {
+        "reset": "Reinicia"
+    },
+    "ko": {
+        "reset": "초기화"
+    },
+    "eu": {
+        "_name": "Hirukiaren angeluak",
+        "reset": "Berrezarri",
+        "hint": "Arrastatu erpinak hirukia aldatzeko · Angeluen batura beti 180° da",
+        "labelAngleA": "A angelua",
+        "labelAngleB": "B angelua",
+        "labelAngleC": "C angelua",
+        "labelSum": "Batura",
         "formula": "A + B + C = 180°"
     }
 } /* I18N_END */

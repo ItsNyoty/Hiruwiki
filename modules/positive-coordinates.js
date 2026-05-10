@@ -4,25 +4,6 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {
-        "btnNext": "Endavant →",
-        "feedbackCorrect": "✓ Correcte!"
-    },
-    "en": {
-        "_name": "Positive Coordinates",
-        "btnChallenge": "🎯 Challenge",
-        "btnCheck": "Check ✓",
-        "btnExplore": "🔭 Explore",
-        "btnNext": "Next →",
-        "feedbackCorrect": "✓ Correct!",
-        "feedbackWrong": "✗ Incorrect. The faint star was the correct answer.",
-        "hintChallenge": "Move ★ to the proposed coordinates and click Check",
-        "hintExplore": "Move ★ by clicking on it — it snaps to integers",
-        "movePrompt": "Move ★ to:<br>($1, $2)",
-        "pointLabel": "Point:",
-        "titleExplore": "Explore Coordinate System",
-        "hint": "Move the star to explore coordinates"
-    },
     "es": {
         "_name": "Coordenadas positivas",
         "btnChallenge": "🎯 Reto",
@@ -36,20 +17,6 @@ var messages = /* I18N_START */ {
         "movePrompt": "Mueve ★ a:<br>($1, $2)",
         "pointLabel": "Punto:",
         "titleExplore": "Explorar el sistema de coordenadas"
-    },
-    "eu": {
-        "_name": "Koordenatu positiboak",
-        "btnChallenge": "🎯 Erronka",
-        "btnCheck": "Zuzendu ✓",
-        "btnExplore": "🔭 Esploratu",
-        "btnNext": "Hurrengoa →",
-        "feedbackCorrect": "✓ Zuzen!",
-        "feedbackWrong": "✗ Ez da zuzena. Izar ahula zen erantzun zuzena.",
-        "hintChallenge": "Mugi ezazu ★ proposatutako koordenatuetara eta klik egin Zuzendu botoian",
-        "hintExplore": "Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen ditu",
-        "movePrompt": "Mugitu ★ hona:<br>($1, $2)",
-        "pointLabel": "Puntua:",
-        "titleExplore": "Esploratu koordenatuen sistema"
     },
     "fr": {
         "_name": "Coordonnées positives",
@@ -85,12 +52,6 @@ var messages = /* I18N_START */ {
         "feedbackCorrect": "✓ Corretto!",
         "pointLabel": "Punto:"
     },
-    "ko": {
-        "btnCheck": "확인 ✓",
-        "btnNext": "다음 →",
-        "feedbackCorrect": "✓ 정답입니다!",
-        "pointLabel": "점수:"
-    },
     "nl": {
         "_name": "Positieve coördinaten",
         "btnChallenge": "🎯 Uitdaging",
@@ -105,6 +66,45 @@ var messages = /* I18N_START */ {
         "pointLabel": "Punt:",
         "titleExplore": "Verken het coördinatensysteem",
         "hint": "Verplaats de ster om de coördinaten te verkennen"
+    },
+    "en": {
+        "_name": "Positive Coordinates",
+        "btnChallenge": "🎯 Challenge",
+        "btnCheck": "Check ✓",
+        "btnExplore": "🔭 Explore",
+        "btnNext": "Next →",
+        "feedbackCorrect": "✓ Correct!",
+        "feedbackWrong": "✗ Incorrect. The faint star was the correct answer.",
+        "hintChallenge": "Move ★ to the proposed coordinates and click Check",
+        "hintExplore": "Move ★ by clicking on it — it snaps to integers",
+        "movePrompt": "Move ★ to:<br>($1, $2)",
+        "pointLabel": "Point:",
+        "titleExplore": "Explore Coordinate System",
+        "hint": "Move the star to explore coordinates"
+    },
+    "ca": {
+        "btnNext": "Endavant →",
+        "feedbackCorrect": "✓ Correcte!"
+    },
+    "ko": {
+        "btnCheck": "확인 ✓",
+        "btnNext": "다음 →",
+        "feedbackCorrect": "✓ 정답입니다!",
+        "pointLabel": "점수:"
+    },
+    "eu": {
+        "_name": "Koordenatu positiboak",
+        "btnChallenge": "🎯 Erronka",
+        "btnCheck": "Zuzendu ✓",
+        "btnExplore": "🔭 Esploratu",
+        "btnNext": "Hurrengoa →",
+        "feedbackCorrect": "✓ Zuzen!",
+        "feedbackWrong": "✗ Ez da zuzena. Izar ahula zen erantzun zuzena.",
+        "hintChallenge": "Mugi ezazu ★ proposatutako koordenatuetara eta klik egin Zuzendu botoian",
+        "hintExplore": "Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen ditu",
+        "movePrompt": "Mugitu ★ hona:<br>($1, $2)",
+        "pointLabel": "Puntua:",
+        "titleExplore": "Esploratu koordenatuen sistema"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

@@ -7,29 +7,6 @@
     
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {
-        "btnReset": "Reinicia",
-        "labelArea": "Àrea",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "unitCm": "cm",
-        "unitCm2": "cm²"
-    },
-    "en": {
-        "_name": "Triangle Area",
-        "btnProve": "Prove it",
-        "btnReset": "Reset",
-        "labelArea": "Area",
-        "labelBase": "Base (b)",
-        "labelHeight": "Height (h)",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "proofResultPara": "Parallelogram area = b × h = <strong>$1 × $2 = $3 cm²</strong>",
-        "proofResultTri": "→ Triangle = ½ × $1 = <strong>$2 cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²",
-        "hint": "Drag the vertices to change the triangle's shape"
-    },
     "es": {
         "_name": "Área del triángulo",
         "btnProve": "Pruébalo",
@@ -41,20 +18,6 @@ var messages = /* I18N_START */ {
         "labelHeightShort": "h",
         "proofResultPara": "Área del paralelogramo = b × h = <strong>$1 × $2 = $3 cm²</strong>",
         "proofResultTri": "→ Triángulo = ½ × $1 = <strong>$2 cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²"
-    },
-    "eu": {
-        "_name": "Hirukiaren azalera",
-        "btnProve": "Froga ezazu",
-        "btnReset": "Berrezarri",
-        "labelArea": "Azalera",
-        "labelBase": "Oinarria (b)",
-        "labelHeight": "Altuera (h)",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "proofResultPara": "Paralelogramoaren azalera = b × h = <strong>$1 × $2 = $3 cm²</strong>",
-        "proofResultTri": "→ Triangeluarena = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
@@ -90,17 +53,6 @@ var messages = /* I18N_START */ {
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
-    "ko": {
-        "_name": "삼각형 면적",
-        "btnReset": "초기화",
-        "labelArea": "면적",
-        "labelBase": "밑변 (b)",
-        "labelHeight": "높이 (h)",
-        "proofResultPara": "평행사변형 넓이 = b × h = <strong>$1 × $2 = $3 cm²</strong>",
-        "proofResultTri": "→ 삼각형 = ½ × $1 = <strong>$2 cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²"
-    },
     "nl": {
         "_name": "Oppervlakte van een driehoek",
         "btnProve": "Bewijs het",
@@ -115,6 +67,54 @@ var messages = /* I18N_START */ {
         "unitCm": "cm",
         "unitCm2": "cm²",
         "hint": "Sleep de hoekpunten om de vorm van de driehoek te veranderen"
+    },
+    "en": {
+        "_name": "Triangle Area",
+        "btnProve": "Prove it",
+        "btnReset": "Reset",
+        "labelArea": "Area",
+        "labelBase": "Base (b)",
+        "labelHeight": "Height (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Parallelogram area = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ Triangle = ½ × $1 = <strong>$2 cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²",
+        "hint": "Drag the vertices to change the triangle's shape"
+    },
+    "ca": {
+        "btnReset": "Reinicia",
+        "labelArea": "Àrea",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "unitCm": "cm",
+        "unitCm2": "cm²"
+    },
+    "ko": {
+        "_name": "삼각형 면적",
+        "btnReset": "초기화",
+        "labelArea": "면적",
+        "labelBase": "밑변 (b)",
+        "labelHeight": "높이 (h)",
+        "proofResultPara": "평행사변형 넓이 = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ 삼각형 = ½ × $1 = <strong>$2 cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²"
+    },
+    "eu": {
+        "_name": "Hirukiaren azalera",
+        "btnProve": "Froga ezazu",
+        "btnReset": "Berrezarri",
+        "labelArea": "Azalera",
+        "labelBase": "Oinarria (b)",
+        "labelHeight": "Altuera (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Paralelogramoaren azalera = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ Triangeluarena = ½ × $1 = <strong>$2 cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

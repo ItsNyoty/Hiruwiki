@@ -3,30 +3,11 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {
-        "_name": "Teorema de Pitàgores",
-        "angleDeg": "angle =",
-        "lockRight": "angle recte",
-        "reset": "Reinicia"
-    },
-    "en": {
-        "_name": "Pythagorean Theorem",
-        "angleDeg": "angle =",
-        "lockRight": "right angle",
-        "reset": "Reset",
-        "hint": "Drag vertices to verify a² + b² = c²"
-    },
     "es": {
         "_name": "Teorema de Pitágoras",
         "angleDeg": "ángulo =",
         "lockRight": "ángulo recto",
         "reset": "Reiniciar"
-    },
-    "eu": {
-        "_name": "Pitagorasen teorema",
-        "angleDeg": "angelua =",
-        "lockRight": "angelu zuzena",
-        "reset": "Berrezarri"
     },
     "fr": {
         "_name": "Théorème de Pythagore",
@@ -40,18 +21,37 @@ var messages = /* I18N_START */ {
         "lockRight": "uillinn dheis",
         "reset": "Athshocraigh"
     },
-    "ko": {
-        "_name": "피타고라스 정리",
-        "angleDeg": "각도 =",
-        "lockRight": "직각",
-        "reset": "초기화"
-    },
     "nl": {
         "_name": "Stelling van Pythagoras",
         "angleDeg": "hoek =",
         "lockRight": "rechte hoek",
         "reset": "Reset",
         "hint": "Sleep de hoekpunten om de stelling a² + b² = c² te verifiëren"
+    },
+    "en": {
+        "_name": "Pythagorean Theorem",
+        "angleDeg": "angle =",
+        "lockRight": "right angle",
+        "reset": "Reset",
+        "hint": "Drag vertices to verify a² + b² = c²"
+    },
+    "ca": {
+        "_name": "Teorema de Pitàgores",
+        "angleDeg": "angle =",
+        "lockRight": "angle recte",
+        "reset": "Reinicia"
+    },
+    "ko": {
+        "_name": "피타고라스 정리",
+        "angleDeg": "각도 =",
+        "lockRight": "직각",
+        "reset": "초기화"
+    },
+    "eu": {
+        "_name": "Pitagorasen teorema",
+        "angleDeg": "angelua =",
+        "lockRight": "angelu zuzena",
+        "reset": "Berrezarri"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
