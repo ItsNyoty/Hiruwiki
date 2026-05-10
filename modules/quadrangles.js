@@ -275,7 +275,7 @@ function t(key, vars) {
   function initQuadWidget(container) {
 
     var boardWidth = 20;
-    var boardHeight = 14;
+    var boardHeight = 12;
     var names = ["A", "B", "C", "D"];
 
     // ── DOM structure ─────────────────────────────────────────────────────────────
@@ -394,11 +394,11 @@ function t(key, vars) {
     // ── Presets ───────────────────────────────────────────────────────────────────
 
     var presets = [
-      { labelKey: "presetSquare", fn: function () { return [{ x: 7, y: 4 }, { x: 13, y: 4 }, { x: 13, y: 10 }, { x: 7, y: 10 }]; } },
-      { labelKey: "presetRectangle", fn: function () { return [{ x: 4, y: 5 }, { x: 16, y: 5 }, { x: 16, y: 9 }, { x: 4, y: 9 }]; } },
-      { labelKey: "presetParallelogram", fn: function () { return [{ x: 4, y: 9 }, { x: 9, y: 4 }, { x: 16, y: 4 }, { x: 11, y: 9 }]; } },
-      { labelKey: "presetTrapezoid", fn: function () { return [{ x: 4, y: 9 }, { x: 7, y: 4 }, { x: 13, y: 4 }, { x: 16, y: 9 }]; } },
-      { labelKey: "presetKite", fn: function () { return [{ x: 10, y: 3 }, { x: 14, y: 7 }, { x: 10, y: 11 }, { x: 6, y: 7 }]; } },
+      { labelKey: "presetSquare", fn: function () { return [{ x: 7, y: 3 }, { x: 13, y: 3 }, { x: 13, y: 9 }, { x: 7, y: 9 }]; } },
+      { labelKey: "presetRectangle", fn: function () { return [{ x: 4, y: 4 }, { x: 16, y: 4 }, { x: 16, y: 8 }, { x: 4, y: 8 }]; } },
+      { labelKey: "presetParallelogram", fn: function () { return [{ x: 4, y: 8 }, { x: 9, y: 3 }, { x: 16, y: 3 }, { x: 11, y: 8 }]; } },
+      { labelKey: "presetTrapezoid", fn: function () { return [{ x: 4, y: 8 }, { x: 7, y: 3 }, { x: 13, y: 3 }, { x: 16, y: 8 }]; } },
+      { labelKey: "presetKite", fn: function () { return [{ x: 10, y: 2 }, { x: 14, y: 6 }, { x: 10, y: 10 }, { x: 6, y: 6 }]; } },
     ];
 
     var vertices = presets[0].fn();

@@ -280,6 +280,12 @@ eu:
   triangle-angles:
     _name: Hirukiaren angeluak
     reset: Berrezarri
+    hint: 'Arrastatu erpinak hirukia aldatzeko · Angeluen batura beti 180° da'
+    labelAngleA: A angelua
+    labelAngleB: B angelua
+    labelAngleC: C angelua
+    labelSum: Batura
+    formula: A + B + C = 180°
   triangle-area:
     _name: Hirukiaren azalera
     btnProve: Froga ezazu

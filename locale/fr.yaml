@@ -287,6 +287,12 @@ fr:
   triangle-angles:
     _name: Angles du triangle
     reset: Réinitialiser
+    hint: 'Faites glisser les sommets pour changer le triangle · La somme des angles est toujours 180°'
+    labelAngleA: Angle A
+    labelAngleB: Angle B
+    labelAngleC: Angle C
+    labelSum: Somme
+    formula: A + B + C = 180°
   triangle-area:
     _name: Aire du triangle
     btnProve: Prouver

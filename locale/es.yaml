@@ -287,6 +287,12 @@ es:
   triangle-angles:
     _name: Ángulos del triángulo
     reset: Reiniciar
+    hint: 'Arrastra los vértices para cambiar el triángulo · La suma de los ángulos es siempre 180°'
+    labelAngleA: Ángulo A
+    labelAngleB: Ángulo B
+    labelAngleC: Ángulo C
+    labelSum: Suma
+    formula: A + B + C = 180°
   triangle-area:
     _name: Área del triángulo
     btnProve: Pruébalo

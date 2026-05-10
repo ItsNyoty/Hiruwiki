@@ -299,6 +299,11 @@ nl:
     _name: Hoeken van een driehoek
     reset: ↺ Reset
     hint: 'Sleep hoekpunten om de driehoek te veranderen · Som van de hoeken is altijd 180°'
+    labelAngleA: Hoek A
+    labelAngleB: Hoek B
+    labelAngleC: Hoek C
+    labelSum: Som
+    formula: A + B + C = 180°
   triangle-area:
     _name: Oppervlakte van een driehoek
     btnProve: Bewijs het

@@ -303,6 +303,15 @@ en:
     unitCm: cm
     unitCm2: cm²
     hint: Drag the vertices to change the triangle's shape
+  triangle-angles:
+    _name: Triangle Angles
+    reset: Reset
+    hint: Drag vertices to change the triangle · Sum of angles is always 180°
+    labelAngleA: Angle A
+    labelAngleB: Angle B
+    labelAngleC: Angle C
+    labelSum: Sum
+    formula: A + B + C = 180°
   triangle-centroid:
     _name: Triangle Centroid
     centroid: Centroid

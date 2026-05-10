@@ -292,6 +292,11 @@ qqq:
     _name: Name of the Triangle Angles module
     reset: Button label to reset the triangle
     hint: Explanation about how the module is interactive
+    labelAngleA: Label for angle A
+    labelAngleB: Label for angle B
+    labelAngleC: Label for angle C
+    labelSum: Label for the sum of angles
+    formula: Text showing the formula A + B + C = 180°
   triangle-area:
     _name: Name of the Triangle Area module
     btnProve: Button label to start the area proof animation

@@ -289,6 +289,12 @@ ga:
   triangle-angles:
     _name: Uillinneacha Triantáin
     reset: Athshocraigh
+    hint: 'Tarraing na rinn chun an triantán a athrú · Is é suim na n-uillinneacha ná 180° i gcónaí'
+    labelAngleA: Uillinn A
+    labelAngleB: Uillinn B
+    labelAngleC: Uillinn C
+    labelSum: Suim
+    formula: A + B + C = 180°
   triangle-area:
     _name: Limistéar an Triantáin
     btnProve: Cruthaigh é
