@@ -348,11 +348,11 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             ctx.restore();
         }
 
-        function drawProof(t) {
+        function drawProof(progress) {
             var m = metrics();
             var P1 = m.P1, P2 = m.P2, P3 = m.P3;
             var F = { x: m.foot.x, y: m.foot.y };
-            var e = ease(Math.min(t, 1));
+            var e = ease(Math.min(progress, 1));
 
             // Pivots = midpoints of the two SHORT sides
             var mP1P3 = mid(P1, P3);
