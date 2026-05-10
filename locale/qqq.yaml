@@ -335,8 +335,21 @@ qqq:
     hint: Explanation about how the module is interactive
   triangle-centroid:
     _name: Name of the Triangle Centroid module
-    centroid: Label for the centroid point
-    hint: Instruction text telling the user to drag vertices
+	triangle: "ection heading for the triangle properties card
+	centroid: Section heading for the centroid properties card
+	hint: Instruction text shown in the footer. Includes scale information.
+	sideA: Label for side a (BC) of the triangle
+	sideB: Label for side b (CA) of the triangle
+	sideC: Label for side c (AB) of the triangle
+	angleA: Label for angle A of the triangle
+	angleB: Label for angle B of the triangle
+	angleC: Label for angle C of the triangle
+	perimeter: Label for the triangle perimeter
+	centre: Label for the centroid point G
+	medianA: Label for the length of median from A
+	medianB: Label for the length of median from B
+	medianC: Label for the length of median from C
+	scaleUnit: Unit abbreviation used for measurements (centimetres)
   triangles:
     _name: Name of the Triangles module
     acute: Classification name for an acute triangle (all angles < 90°)
