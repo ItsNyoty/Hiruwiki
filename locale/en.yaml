@@ -15,11 +15,11 @@ en:
   angles:
     _name: Angles
     bisector: Bisector
-    bisectorResult: 'Bisector: {0}°'
+    bisectorResult: 'Bisector: $1°'
     complement: Complementary
     explement: Explementary
     notDefined: Not defined for this angle
-    resultAngle: '{0} angle: {1}°'
+    resultAngle: '$1 angle: $2°'
     supplement: Supplementary
     hint: 'Drag the handle to change the angle'
   circle-proof:
@@ -48,16 +48,16 @@ en:
     eq_lbl_divisor: divisor
     eq_lbl_quotient: quotient
     eq_lbl_remainder: remainder
-    insight_exact: <strong>{N} ÷ {D} = {Q}</strong> exactly — no remainder. The bar
-      fills perfectly into <strong>{Q}</strong> equal chunk{s}. This means <strong>{D}</strong>
-      is a divisor of <strong>{N}</strong>.
-    insight_less: <strong>{N}</strong> is smaller than the divisor <strong>{D}</strong>,
+    insight_exact: <strong>$1 ÷ $2 = $3</strong> exactly — no remainder. The bar
+      fills perfectly into <strong>$3</strong> equal chunk$6. This means <strong>$2</strong>
+      is a divisor of <strong>$1</strong>.
+    insight_less: <strong>$1</strong> is smaller than the divisor <strong>$2</strong>,
       so it fits <strong>0</strong> whole chunks. The entire value is the remainder.
       The remainder is always less than the divisor.
-    insight_normal: '<strong>{N} ÷ {D} = {Q}</strong> remainder <strong>{R}</strong>.
-      Notice the red piece (<strong>{R}</strong>) is always shorter than one blue
-      chunk (<strong>{D}</strong>). The remainder is always strictly less than the
-      divisor. Check: <strong>{Q} × {D} + {R} = {QD} + {R} = {N}</strong> ✓'
+    insight_normal: '<strong>$1 ÷ $2 = $3</strong> remainder <strong>$4</strong>.
+      Notice the red piece (<strong>$4</strong>) is always shorter than one blue
+      chunk (<strong>$2</strong>). The remainder is always strictly less than the
+      divisor. Check: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓'
     label_bar_description: 'Bar view — each blue chunk = {{PLURAL:$1|$1 unit|$1 units}}'
     label_choose: Choose dividend and divisor
     label_dividend: Dividend (the number being divided)
@@ -66,7 +66,7 @@ en:
     label_repadd: Repeated addition
     repadd_exact: — divides exactly!
     repadd_leftover: left over
-    repadd_less: '{N} is less than {D}, so the quotient is 0 and the whole value is
+    repadd_less: '$1 is less than $2, so the quotient is 0 and the whole value is
       the remainder.'
     hint: 'Adjust dividend and divisor to see the division breakdown'
   factors:
@@ -74,19 +74,19 @@ en:
     gcd_formula_eq: ' = '
     gcd_none: (none — coprime)
     gcd_title: GCD — keep only shared factors
-    insight_coprime: '<strong>{A}</strong> and <strong>{B}</strong> are coprime —
+    insight_coprime: '<strong>$1</strong> and <strong>$2</strong> are coprime —
       they share no prime factors, so GCD = 1. The LCM is simply their product. Always
-      true: <strong>{A} × {B} = {AB}</strong> = GCD × LCM = <strong>1 × {L} = {L}</strong>.'
-    insight_shared_many: '<strong>{A}</strong> and <strong>{B}</strong> share the
-      primes <strong>{primes}</strong>. The GCD takes only the green shared blocks.
+      true: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>1 × $4 = $4</strong>.'
+    insight_shared_many: '<strong>$1</strong> and <strong>$2</strong> share the
+      primes <strong>$7</strong>. The GCD takes only the green shared blocks.
       The LCM takes all blocks — green shared, blue extras from A, red extras from
-      B — with no prime counted twice. Always true: <strong>{A} × {B} = {AB}</strong>
-      = GCD × LCM = <strong>{G} × {L} = {GL}</strong>.'
-    insight_shared_one: '<strong>{A}</strong> and <strong>{B}</strong> share the prime
-      <strong>{primes}</strong>. The GCD takes only the green shared blocks. The LCM
+      B — with no prime counted twice. Always true: <strong>$1 × $2 = $5</strong>
+      = GCD × LCM = <strong>$3 × $4 = $6</strong>.'
+    insight_shared_one: '<strong>$1</strong> and <strong>$2</strong> share the prime
+      <strong>$7</strong>. The GCD takes only the green shared blocks. The LCM
       takes all blocks — green shared, blue extras from A, red extras from B — with
-      no prime counted twice. Always true: <strong>{A} × {B} = {AB}</strong> = GCD
-      × LCM = <strong>{G} × {L} = {GL}</strong>.'
+      no prime counted twice. Always true: <strong>$1 × $2 = $5</strong> = GCD
+      × LCM = <strong>$3 × $4 = $6</strong>.'
     label_choose: Choose two numbers
     label_factors: Prime factors
     label_how: How GCD and LCM are built
@@ -104,13 +104,13 @@ en:
     card_ratio_lbl: Current ratio F(n+1) ÷ F(n)
     chart_step: step
     diff: 'diff: '
-    insight_close: <strong>{fa} + {fb} = {fr}</strong>. The ratio = <strong>{ratio}</strong>
-      — within <strong>{error}</strong> of φ. Almost fully converged.
-    insight_converged: <strong>{fa} + {fb} = {fr}</strong>. The ratio = <strong>{ratio}</strong>
-      — within <strong>{error}</strong> of φ. The sequence has converged to 6 decimal
+    insight_close: <strong>$1 + $2 = $3</strong>. The ratio = <strong>$4</strong>
+      — within <strong>$5</strong> of φ. Almost fully converged.
+    insight_converged: <strong>$1 + $2 = $3</strong>. The ratio = <strong>$4</strong>
+      — within <strong>$5</strong> of φ. The sequence has converged to 6 decimal
       places.
-    insight_normal: <strong>{fa} + {fb} = {fr}</strong>. The ratio = <strong>{ratio}</strong>,
-      still <strong>{error}</strong> away from φ = 1.61803…
+    insight_normal: <strong>$1 + $2 = $3</strong>. The ratio = <strong>$4</strong>,
+      still <strong>$5</strong> away from φ = 1.61803…
     insight_step1: We start with <strong>1 + 1 = 2</strong>. The ratio 2 ÷ 1 = <strong>2.000000</strong>
       — still far from φ ≈ 1.61803.
     insight_step2: <strong>1 + 2 = 3</strong>. The ratio 3 ÷ 2 = <strong>1.500000</strong>
@@ -119,7 +119,7 @@ en:
     sec_chart: Convergence toward φ
     sec_sequence: Sequence so far
     sec_steps: Step through the Fibonacci sequence
-    step_label: Step {step} of {total}
+    step_label: Step $1 of $2
     hint: 'Step through the sequence to see convergence'
   hexagon-angles:
     2quads: 2 quadrilaterals × 360°
@@ -218,45 +218,28 @@ en:
   quadrangles:
     _name: Quadrilaterals
     areaDiagHalf: 'Formula: A = (d₁ × d₂) / 2
-
-      d₁ (AC) = {0} cm
-
-      d₂ (BD) = {1} cm
-
-      = ({0} × {1}) / 2'
+      d₁ (AC) = $1 cm
+      d₂ (BD) = $2 cm
+      = ($1 × $2) / 2'
     areaGaussHeader: 'Gauss formula (shoelace):
-
-      A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
-
-      '
+      A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|'
     areaGaussSum: '
-
-      Σ = {0}
-
-      A = ½ × |{0}|'
-    areaGaussTerm: '  (x{0}·y{1} − x{1}·y{0}) = {2}'
+      Σ = $1
+      A = ½ × |$1|'
+    areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
     areaParallelogram: 'Formula: A = base × height
-
-      base (AB) = {0} cm
-
-      height = {1} cm
-
-      = {0} × {1}'
+      base (AB) = $1 cm
+      height = $2 cm
+      = $1 × $2'
     areaRectangle: 'Formula: A = width × height
-
-      = {0} × {1}'
+      = $1 × $2'
     areaSquare: 'Formula: A = side²
-
-      = {0}²'
+      = $1²'
     areaTrapezoid: 'Formula: A = (b₁ + b₂) / 2 × h
-
-      b₁ (AB) = {0} cm
-
-      b₂ (CD) = {1} cm
-
-      height = {2} cm
-
-      = ({0} + {1}) / 2 × {2}'
+      b₁ (AB) = $1 cm
+      b₂ (CD) = $2 cm
+      height = $3 cm
+      = ($1 + $2) / 2 × $3'
     headingArea: Area
     headingClassification: Classification
     headingSides: Sides and diagonals

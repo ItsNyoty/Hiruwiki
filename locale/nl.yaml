@@ -21,11 +21,11 @@ nl:
   angles:
     _name: Hoeken
     bisector: Bissectrice
-    bisectorResult: 'Bissectrice: {0}°'
+    bisectorResult: 'Bissectrice: $1°'
     complement: Complementair
     explement: Explementair
     notDefined: Niet gedefinieerd voor deze hoek
-    resultAngle: 'Hoek {0}: {1}°'
+    resultAngle: 'Hoek $1: $2°'
     supplement: Supplementair
     hint: 'Sleep de witte stip om de hoek te veranderen'
   circle-proof:
@@ -55,16 +55,16 @@ nl:
     eq_lbl_divisor: deler
     eq_lbl_quotient: quotiënt
     eq_lbl_remainder: rest
-    insight_exact: <strong>{N} ÷ {D} = {Q}</strong> precies — geen rest. De balk past
-      perfect in <strong>{Q}</strong> gelijke stukken{s}. Dit betekent dat <strong>{D}</strong>
-      een deler is van <strong>{N}</strong>.
-    insight_less: <strong>{N}</strong> is kleiner dan de deler <strong>{D}</strong>,
+    insight_exact: <strong>$1 ÷ $2 = $3</strong> precies — geen rest. De balk past
+      perfect in <strong>$3</strong> gelijke stukken$6. Dit betekent dat <strong>$2</strong>
+      een deler is van <strong>$1</strong>.
+    insight_less: <strong>$1</strong> is kleiner dan de deler <strong>$2</strong>,
       dus het past in <strong>0</strong> hele stukken. De hele waarde is de rest.
       De rest is altijd kleiner dan de deler.
-    insight_normal: '<strong>{N} ÷ {D} = {Q}</strong> rest <strong>{R}</strong>. Merk
-      op dat het rode stuk (<strong>{R}</strong>) altijd korter is dan een blauw stuk
-      (<strong>{D}</strong>). De rest is altijd strikt kleiner dan de deler. Controle:
-      <strong>{Q} × {D} + {R} = {QD} + {R} = {N}</strong> ✓'
+    insight_normal: '<strong>$1 ÷ $2 = $3</strong> rest <strong>$4</strong>. Merk
+      op dat het rode stuk (<strong>$4</strong>) altijd korter is dan een blauw stuk
+      (<strong>$2</strong>). De rest is altijd strikt kleiner dan de deler. Controle:
+      <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓'
     label_choose: Kies deeltal en deler
     label_dividend: Deeltal (het getal dat gedeeld wordt)
     label_divisor: Deler (de grootte van het stuk)
@@ -72,7 +72,7 @@ nl:
     label_repadd: Herhaalde optelling
     repadd_exact: — is precies deelbaar!
     repadd_leftover: blijft over
-    repadd_less: '{N} is kleiner dan {D}, dus het quotiënt is 0 en de gehele waarde
+    repadd_less: '$1 is kleiner dan $2, dus het quotiënt is 0 en de gehele waarde
       is de rest.'
     hint: 'Pas deeltal en deler aan om de deling te zien'
   factors:
@@ -80,20 +80,20 @@ nl:
     gcd_formula_eq: ' ='
     gcd_none: (geen — onderling ondeelbaar)
     gcd_title: GGD — behoud alleen gedeelde factoren
-    insight_coprime: '<strong>{A}</strong> en <strong>{B}</strong> zijn onderling
+    insight_coprime: '<strong>$1</strong> en <strong>$2</strong> zijn onderling
       ondeelbaar — ze delen geen priemfactoren, dus GGD = 1. Het KGV is simpelweg
-      hun product. Altijd waar: <strong>{A} × {B} = {AB}</strong> = GGD × KGV = <strong>1
-      × {L} = {L}</strong>.'
-    insight_shared_many: '<strong>{A}</strong> en <strong>{B}</strong> delen de priemfactoren
-      <strong>{primes}</strong>. De GGD neemt alleen de groene gedeelde blokken. Het
+      hun product. Altijd waar: <strong>$1 × $2 = $5</strong> = GGD × KGV = <strong>1
+      × $4 = $4</strong>.'
+    insight_shared_many: '<strong>$1</strong> en <strong>$2</strong> delen de priemfactoren
+      <strong>$7</strong>. De GGD neemt alleen de groene gedeelde blokken. Het
       KGV neemt alle blokken — groen gedeeld, blauw extra van A, rood extra van B
-      — zonder een priemfactor twee keer te tellen. Altijd waar: <strong>{A} × {B}
-      = {AB}</strong> = GGD × KGV = <strong>{G} × {L} = {GL}</strong>.'
-    insight_shared_one: '<strong>{A}</strong> en <strong>{B}</strong> delen de priemfactor
-      <strong>{primes}</strong>. De GGD neemt alleen de groene gedeelde blokken. Het
+      — zonder een priemfactor twee keer te tellen. Altijd waar: <strong>$1 × $2
+      = $5</strong> = GGD × KGV = <strong>$3 × $4 = $6</strong>.'
+    insight_shared_one: '<strong>$1</strong> en <strong>$2</strong> delen de priemfactor
+      <strong>$7</strong>. De GGD neemt alleen de groene gedeelde blokken. Het
       KGV neemt alle blokken — groen gedeeld, blauw extra van A, rood extra van B
-      — zonder een priemfactor twee keer te tellen. Altijd waar: <strong>{A} × {B}
-      = {AB}</strong> = GGD × KGV = <strong>{G} × {L} = {GL}</strong>.'
+      — zonder een priemfactor twee keer te tellen. Altijd waar: <strong>$1 × $2
+      = $5</strong> = GGD × KGV = <strong>$3 × $4 = $6</strong>.'
     label_choose: Kies twee getallen
     label_factors: Priemfactoren
     label_how: Hoe GGD en KGV worden opgebouwd
@@ -111,12 +111,12 @@ nl:
     card_ratio_lbl: Huidige verhouding F(n+1) ÷ F(n)
     chart_step: stap
     diff: 'verschil:'
-    insight_close: <strong>{fa} + {fb} = {fr}</strong>. De verhouding = <strong>{ratio}</strong>
-      — binnen <strong>{error}</strong> van φ. Bijna volledig geconvergeerd.
-    insight_converged: <strong>{fa} + {fb} = {fr}</strong>. De verhouding = <strong>{ratio}</strong>
-      — binnen <strong>{error}</strong> van φ. De reeks is geconvergeerd tot 6 decimalen.
-    insight_normal: <strong>{fa} + {fb} = {fr}</strong>. De verhouding = <strong>{ratio}</strong>,
-      nog <strong>{error}</strong> verwijderd van φ = 1.61803…
+    insight_close: <strong>$1 + $2 = $3</strong>. De verhouding = <strong>$4</strong>
+      — binnen <strong>$5</strong> van φ. Bijna volledig geconvergeerd.
+    insight_converged: <strong>$1 + $2 = $3</strong>. De verhouding = <strong>$4</strong>
+      — binnen <strong>$5</strong> van φ. De reeks is geconvergeerd tot 6 decimalen.
+    insight_normal: <strong>$1 + $2 = $3</strong>. De verhouding = <strong>$4</strong>,
+      nog <strong>$5</strong> verwijderd van φ = 1.61803…
     insight_step1: We beginnen met <strong>1 + 1 = 2</strong>. De verhouding 2 ÷ 1
       = <strong>2.000000</strong> — nog ver van φ ≈ 1.61803.
     insight_step2: <strong>1 + 2 = 3</strong>. De verhouding 3 ÷ 2 = <strong>1.500000</strong>
@@ -125,8 +125,7 @@ nl:
     sec_chart: Convergentie naar φ
     sec_sequence: Reeks tot nu toe
     sec_steps: Stap door de Fibonacci-reeks
-    step_label: Stap {step} van {total}
-    hint: 'Stap door de reeks om de convergentie te zien'
+    step_label: Stap $1 van $2
     hint: 'Stap door de reeks om de convergentie te zien'
   hexagon-angles:
     2quads: 2 vierhoeken × 360°
@@ -196,14 +195,14 @@ nl:
     insight_full_loss: Een verlies van <strong>100%</strong> brengt de waarde naar
       <strong>0</strong>. Herstel vanaf nul is <strong>onmogelijk</strong> — elk percentage
       van 0 is nog steeds 0.
-    insight_gain: Een winst van <strong>+{pct}%</strong> brengt 100 omhoog naar <strong>{result}</strong>.
+    insight_gain: Een winst van <strong>+$1%</strong> brengt 100 omhoog naar <strong>$2</strong>.
       De groene balk bovenaan en de rode balk onderaan zijn even breed — maar de percentages
-      verschillen. Om terug te keren naar 100 is slechts <strong>{recovery}%</strong>
-      nodig, niet −{pct}%.
-    insight_loss: Een verlies van <strong>{pct}%</strong> brengt 100 terug naar <strong>{result}</strong>.
+      verschillen. Om terug te keren naar 100 is slechts <strong>$3%</strong>
+      nodig, niet −$1%.
+    insight_loss: Een verlies van <strong>$1%</strong> brengt 100 terug naar <strong>$2</strong>.
       De rode balk bovenaan en de groene balk onderaan bedekken dezelfde fysieke afstand
       — maar de percentages verschillen omdat ze op verschillende bases worden toegepast.
-      Om te herstellen is <strong>+{recovery}%</strong> nodig, niet +{pct}%.
+      Om te herstellen is <strong>+$3%</strong> nodig, niet +$1%.
     insight_zero: Geen verandering toegepast. Sleep de schuifregelaar om te verkennen.
     label_after: na verandering
     label_apply: PAS EEN PROCENTUELE VERANDERING TOE
@@ -225,34 +224,33 @@ nl:
     _name: Vierhoeken
     areaDiagHalf: |-
       Formule: A = (d₁ × d₂) / 2
-      d₁ (AC) = {0} cm
-      d₂ (BD) = {1} cm
-      = ({0} × {1}) / 2
+      d₁ (AC) = $1 cm
+      d₂ (BD) = $2 cm
+      = ($1 × $2) / 2
     areaGaussHeader: |-
       Gauss formule (shoelace):
       A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
     areaGaussSum: |2-
-
-      Σ = {0}
-      A = ½ × |{0}|
-    areaGaussTerm: '  (x{0}·y{1} − x{1}·y{0}) = {2}'
+      Σ = $1
+      A = ½ × |$1|
+    areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
     areaParallelogram: |-
       Formule: A = basis × hoogte
-      basis (AB) = {0} cm
-      hoogte = {1} cm
-      = {0} × {1}
+      basis (AB) = $1 cm
+      hoogte = $2 cm
+      = $1 × $2
     areaRectangle: |-
       Formule: A = breedte × hoogte
-      = {0} × {1}
+      = $1 × $2
     areaSquare: |-
       Formule: A = zijde²
-      = {0}²
+      = $1²
     areaTrapezoid: |-
       Formule: A = (b₁ + b₂) / 2 × h
-      b₁ (AB) = {0} cm
-      b₂ (CD) = {1} cm
-      hoogte = {2} cm
-      = ({0} + {1}) / 2 × {2}
+      b₁ (AB) = $1 cm
+      b₂ (CD) = $2 cm
+      hoogte = $3 cm
+      = ($1 + $2) / 2 × $3
     headingArea: Oppervlakte
     headingClassification: Classificatie
     headingSides: Zijden en diagonalen

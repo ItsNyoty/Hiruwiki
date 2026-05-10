@@ -16,10 +16,10 @@ ko:
   angles:
     _name: 각도
     bisector: 이등분
-    bisectorResult: '이등분: {0}°'
+    bisectorResult: '이등분: $1°'
     complement: 여각
     explement: 공액각
-    resultAngle: '{0}: {1}°'
+    resultAngle: '$1: $2°'
     supplement: 보각
   circle-proof:
     _name: 원 증명
@@ -108,34 +108,33 @@ ko:
     _name: 사각형
     areaDiagHalf: |-
       공식: A = (d₁ × d₂) / 2
-      d₁ (AC) = {0} cm
-      d₂ (BD) = {1} cm
-      = ({0} × {1}) / 2
+      d₁ (AC) = $1 cm
+      d₂ (BD) = $2 cm
+      = ($1 × $2) / 2
     areaGaussHeader: |-
       가우스 공식 (신발끈):
       A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
     areaGaussSum: |2-
-
-      Σ = {0}
-      A = ½ × |{0}|
-    areaGaussTerm: '  (x{0}·y{1} − x{1}·y{0}) = {2}'
+      Σ = $1
+      A = ½ × |$1|
+    areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
     areaParallelogram: |-
       공식: A = 밑변 × 높이
-      밑변 (AB) = {0} cm
-      높이 = {1} cm
-      = {0} × {1}
+      밑변 (AB) = $1 cm
+      높이 = $2 cm
+      = $1 × $2
     areaRectangle: |-
       공식: A = 너비 × 높이
-      = {0} × {1}
+      = $1 × $2
     areaSquare: |-
       공식: A = 한 변²
-      = {0}²
+      = $1²
     areaTrapezoid: |-
       공식: A = (b₁ + b₂) / 2 × h
-      b₁ (AB) = {0} cm
-      b₂ (CD) = {1} cm
-      높이 = {2} cm
-      = ({0} + {1}) / 2 × {2}
+      b₁ (AB) = $1 cm
+      b₂ (CD) = $2 cm
+      높이 = $3 cm
+      = ($1 + $2) / 2 × $3
     headingArea: 면적
     headingClassification: 분류
     labelDiag1: d₁ (AC)

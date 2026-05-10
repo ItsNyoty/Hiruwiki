@@ -144,6 +144,7 @@ function t(key, vars) {
 }
 
 
+
 // ── Find mount point ──────────────────────────────────────────
   var root = document.querySelector( '.hiruwiki[data-module="angle-guess"]' );
   if ( !root ) return;

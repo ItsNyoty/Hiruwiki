@@ -22,14 +22,14 @@ qqq:
   angles:
     _name: Name of the Angles module
     bisector: Button label for the bisector mode
-    bisectorResult: 'Result text showing the bisector angle. Parameters: {0} = bisector
+    bisectorResult: 'Result text showing the bisector angle. Parameters: $1 = bisector
       angle in degrees.'
     complement: Button label for the complementary angle mode
     explement: Button label for the explementary angle mode
     notDefined: Message shown when the selected angle operation is not defined for
       the current angle (e.g. complement of an angle ≥ 90°)
-    resultAngle: 'Result text showing a computed angle. Parameters: {0} = angle type
-      name (e.g. "Complementary"), {1} = angle in degrees.'
+    resultAngle: 'Result text showing a computed angle. Parameters: $1 = angle type
+      name (e.g. "Complementary"), $2 = angle in degrees.'
     supplement: Button label for the supplementary angle mode
     hint: Instruction text explaining how to interact with the angle applet
   circle-proof:
@@ -64,13 +64,13 @@ qqq:
     eq_lbl_quotient: Label for the quotient in the division equation display
     eq_lbl_remainder: Label for the remainder in the division equation display
     insight_exact: 'Insight text shown when division is exact (no remainder). Uses
-      HTML. Parameters: {N} = dividend, {D} = divisor, {Q} = quotient, {s} = plural
+      HTML. Parameters: $1 = dividend, $2 = divisor, $3 = quotient, $6 = plural
       suffix for "chunk" (empty when Q=1, "s" otherwise).'
     insight_less: 'Insight text shown when the dividend is smaller than the divisor.
-      Uses HTML. Parameters: {N} = dividend, {D} = divisor.'
+      Uses HTML. Parameters: $1 = dividend, $2 = divisor.'
     insight_normal: 'Insight text shown for normal division with a remainder. Uses
-      HTML. Parameters: {N} = dividend, {D} = divisor, {Q} = quotient, {R} = remainder,
-      {QD} = quotient × divisor.'
+      HTML. Parameters: $1 = dividend, $2 = divisor, $3 = quotient, $4 = remainder,
+      $5 = quotient × divisor.'
     label_bar_description: 'Label for the bar visualisation section showing the chunk
       size. Uses PLURAL. Parameters: $1 = the divisor (chunk size).'
     label_choose: Heading for the input section where the user selects dividend and
@@ -82,7 +82,7 @@ qqq:
     repadd_exact: Text appended to the repeated addition when division is exact
     repadd_leftover: Text shown after the leftover value in the repeated addition
     repadd_less: 'Text shown in the repeated addition section when the dividend is
-      less than the divisor. Parameters: {N} = dividend, {D} = divisor.'
+      less than the divisor. Parameters: $1 = dividend, $2 = divisor.'
     hint: Instruction text explaining how to use the division sliders
   factors:
     _name: Name of the Prime Factors module
@@ -90,14 +90,14 @@ qqq:
     gcd_none: Text shown when two numbers share no prime factors (are coprime)
     gcd_title: Heading for the GCD (Greatest Common Divisor) section
     insight_coprime: 'Insight text shown when the two numbers are coprime. Uses HTML.
-      Parameters: {A} = first number, {B} = second number, {AB} = their product, {L}
+      Parameters: $1 = first number, $2 = second number, $5 = their product, $4
       = LCM.'
     insight_shared_many: 'Insight text shown when the two numbers share multiple prime
-      factors. Uses HTML. Parameters: {A} = first number, {B} = second number, {primes}
-      = shared primes, {AB} = product, {G} = GCD, {L} = LCM, {GL} = GCD × LCM.'
+      factors. Uses HTML. Parameters: $1 = first number, $2 = second number, $7
+      = shared primes, $5 = product, $3 = GCD, $4 = LCM, $6 = GCD × LCM.'
     insight_shared_one: 'Insight text shown when the two numbers share exactly one
-      prime factor. Uses HTML. Parameters: {A} = first number, {B} = second number,
-      {primes} = shared prime, {AB} = product, {G} = GCD, {L} = LCM, {GL} = GCD ×
+      prime factor. Uses HTML. Parameters: $1 = first number, $2 = second number,
+      $7 = shared prime, $5 = product, $3 = GCD, $4 = LCM, $6 = GCD ×
       LCM.'
     label_choose: Heading for the input section where the user selects two numbers
     label_factors: Heading for the prime factors display section
@@ -119,14 +119,14 @@ qqq:
     diff: Label prefix for the difference value in the sequence display. Followed
       by a number.
     insight_close: 'Insight text shown when the ratio is close to φ but not yet converged.
-      Uses HTML. Parameters: {fa} = left addend, {fb} = right addend, {fr} = sum,
-      {ratio} = current ratio, {error} = error from φ.'
+      Uses HTML. Parameters: $1 = left addend, $2 = right addend, $3 = sum,
+      $4 = current ratio, $5 = error from φ.'
     insight_converged: 'Insight text shown when the ratio has converged to 6 decimal
-      places. Uses HTML. Parameters: {fa} = left addend, {fb} = right addend, {fr}
-      = sum, {ratio} = current ratio, {error} = error from φ.'
+      places. Uses HTML. Parameters: $1 = left addend, $2 = right addend, $3
+      = sum, $4 = current ratio, $5 = error from φ.'
     insight_normal: 'Insight text shown during normal steps. Uses HTML. Parameters:
-      {fa} = left addend, {fb} = right addend, {fr} = sum, {ratio} = current ratio,
-      {error} = error from φ.'
+      $1 = left addend, $2 = right addend, $3 = sum, $4 = current ratio,
+      $5 = error from φ.'
     insight_step1: Insight text shown at the first step of the Fibonacci sequence.
       Uses HTML.
     insight_step2: Insight text shown at the second step of the Fibonacci sequence.
@@ -135,8 +135,8 @@ qqq:
     sec_chart: Section heading for the convergence chart
     sec_sequence: Section heading for the sequence display
     sec_steps: Section heading for the step-through controls
-    step_label: 'Label showing the current step. Parameters: {step} = current step
-      number, {total} = total number of steps.'
+    step_label: 'Label showing the current step. Parameters: $1 = current step
+      number, $2 = total number of steps.'
     hint: Instruction text for the Fibonacci step-through controls
   hexagon-angles:
     2quads: Decomposition label showing 2 quadrilaterals × 360°
@@ -205,11 +205,9 @@ qqq:
     hint: Instruction text explaining how to use the slider
     insight_full_loss: Insight text shown when the loss is exactly 100%. Uses HTML.
     insight_gain: 'Insight text shown for a percentage gain. Uses HTML. Parameters:
-      {pct} = percentage applied, {result} = value after gain, {recovery} = percentage
-      needed to return to 100.'
+      $1 = percentage applied, $2 = value after gain, $3 = percentage needed to return to 100.'
     insight_loss: 'Insight text shown for a percentage loss. Uses HTML. Parameters:
-      {pct} = percentage applied, {result} = value after loss, {recovery} = percentage
-      needed to return to 100.'
+      $1 = percentage applied, $2 = value after loss, $3 = percentage needed to return to 100.'
     insight_zero: Insight text shown when the slider is at zero (no change)
     label_after: Label on the bar visualisation for the value after the percentage
       change
@@ -232,19 +230,19 @@ qqq:
     hint: Instruction text for the quadrangle angle interaction
   quadrangles:
     _name: Name of the Quadrilaterals module
-    areaDiagHalf: 'Area formula for a kite using diagonals. Parameters: {0} = diagonal
-      d₁ length, {1} = diagonal d₂ length.'
+    areaDiagHalf: 'Area formula for a kite using diagonals. Parameters: $1 = diagonal
+      d₁ length, $2 = diagonal d₂ length.'
     areaGaussHeader: Header text for the Gauss (shoelace) formula section
-    areaGaussSum: 'Sum line of the Gauss formula. Parameters: {0} = the computed sum
+    areaGaussSum: 'Sum line of the Gauss formula. Parameters: $1 = the computed sum
       Σ.'
-    areaGaussTerm: 'Individual term of the Gauss formula. Parameters: {0} = first
-      vertex index, {1} = second vertex index, {2} = computed term value.'
-    areaParallelogram: 'Area formula for a parallelogram. Parameters: {0} = base length,
-      {1} = height.'
-    areaRectangle: 'Area formula for a rectangle. Parameters: {0} = width, {1} = height.'
-    areaSquare: 'Area formula for a square. Parameters: {0} = side length.'
-    areaTrapezoid: 'Area formula for a trapezoid. Parameters: {0} = base b₁ length,
-      {1} = base b₂ length, {2} = height.'
+    areaGaussTerm: 'Individual term of the Gauss formula. Parameters: $1 = first
+      vertex index, $2 = second vertex index, $3 = computed term value.'
+    areaParallelogram: 'Area formula for a parallelogram. Parameters: $1 = base length,
+      $2 = height.'
+    areaRectangle: 'Area formula for a rectangle. Parameters: $1 = width, $2 = height.'
+    areaSquare: 'Area formula for a square. Parameters: $1 = side length.'
+    areaTrapezoid: 'Area formula for a trapezoid. Parameters: $1 = base b₁ length,
+      $2 = base b₂ length, $3 = height.'
     headingArea: Section heading for the area calculation
     headingClassification: Section heading for the shape classification
     headingSides: Section heading for sides and diagonals measurements
@@ -304,9 +302,9 @@ qqq:
     labelBaseShort: Short symbol for base (usually 'b')
     labelHeightShort: Short symbol for height (usually 'h')
     proofResultPara: 'Proof result text for the parallelogram area. Uses HTML. Parameters:
-      {b} = base, {h} = height, {area} = parallelogram area.'
+      $1 = base, $2 = height, $3 = parallelogram area.'
     proofResultTri: 'Proof result text for the triangle area (half the parallelogram).
-      Uses HTML. Parameters: {area} = parallelogram area, {triArea} = triangle area.'
+      Uses HTML. Parameters: $1 = parallelogram area, $2 = triangle area.'
     unitCm: Unit of length (centimeters)
     unitCm2: Unit of area (square centimeters)
     hint: Explanation about how the module is interactive
@@ -440,4 +438,32 @@ qqq:
 		circPerimeter: Label for the circumcircle perimeter (2πR)
 		circArea: Label for the circumcircle area (πR²)
 		scaleUnit: Unit abbreviation used for length measurements (centimetres)
-		scaleUnit2: Unit abbreviation used for area measurements (square centimetres)"
+  integer-coordinates:
+    _name: Name of the Integer Coordinates module
+    btnChallenge: Label for the challenge mode button
+    btnCheck: Label for the check answer button
+    btnExplore: Label for the explorer mode button
+    btnNext: Label for the next challenge button
+    feedbackCorrect: Message shown when the user places the star correctly
+    feedbackWrong: Message shown when the user places the star incorrectly
+    hintChallenge: Instructions for the challenge mode
+    hintExplore: Instructions for the explorer mode
+    movePrompt: 'Prompt asking the user to move the star. Parameters: $1 = target X, $2 = target Y.'
+    pointLabel: Label for the current point coordinates
+    titleExplore: Heading for the explorer panel
+    hint: General instruction text for the module
+  positive-coordinates:
+    _name: Name of the Positive Coordinates module
+    btnChallenge: Label for the challenge mode button
+    btnCheck: Label for the check answer button
+    btnExplore: Label for the explorer mode button
+    btnNext: Label for the next challenge button
+    feedbackCorrect: Message shown when the user places the star correctly
+    feedbackWrong: Message shown when the user places the star incorrectly
+    hintChallenge: Instructions for the challenge mode
+    hintExplore: Instructions for the explorer mode
+    movePrompt: 'Prompt asking the user to move the star. Parameters: $1 = target X, $2 = target Y.'
+    pointLabel: Label for the current point coordinates
+    titleExplore: Heading for the explorer panel
+    hint: General instruction text for the module
+...

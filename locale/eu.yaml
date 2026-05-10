@@ -20,11 +20,11 @@ eu:
   angles:
     _name: Angeluak
     bisector: Erdikaria
-    bisectorResult: 'Erdikaria: {0}°'
+    bisectorResult: 'Erdikaria: $1°'
     complement: Osagarria
     explement: Konjubatua
     notDefined: Angelu honentzat definitu gabe
-    resultAngle: 'Angelu {0}: {1}°'
+    resultAngle: 'Angelu $1: $2°'
     supplement: Betegarria
   circle-proof:
     _name: Zirkuluaren froga
@@ -53,16 +53,16 @@ eu:
     eq_lbl_divisor: zatitzailea
     eq_lbl_quotient: zatidura
     eq_lbl_remainder: hondarra
-    insight_exact: <strong>{N} ÷ {D} = {Q}</strong> zenbaki osoa — hondarrik gabe.
-      Barra <strong>{Q}</strong> zati berdinetan betetzen da. Horrek esan nahi du
-      <strong>{D}</strong> <strong>{N}</strong>-ren zatitzailea dela.<!--{s}-->
-    insight_less: <strong>{N}</strong> zatitzailea baino txikiagoa da (<strong>{D}</strong>),
+    insight_exact: <strong>$1 ÷ $2 = $3</strong> zenbaki osoa — hondarrik gabe.
+      Barra <strong>$3</strong> zati berdinetan betetzen da. Horrek esan nahi du
+      <strong>$2</strong> <strong>$1</strong>-ren zatitzailea dela.<!--$6-->
+    insight_less: <strong>$1</strong> zatitzailea baino txikiagoa da (<strong>$2</strong>),
       beraz ez da zati oso bat sartzen. Balio osoa hondarra da. Hondarra beti zatitzailea
       baino txikiagoa da.
-    insight_normal: '<strong>{N} ÷ {D} = {Q}</strong> hondarra <strong>{R}</strong>.
-      Kontuan hartu pieza gorria (<strong>{R}</strong>) beti zati urdin bat (<strong>{D}</strong>)
+    insight_normal: '<strong>$1 ÷ $2 = $3</strong> hondarra <strong>$4</strong>.
+      Kontuan hartu pieza gorria (<strong>$4</strong>) beti zati urdin bat (<strong>$2</strong>)
       baino motzagoa dela. Hondarra beti zatitzailea baino txikiagoa da. Egiaztatu:
-      <strong>{Q} × {D} + {R} = {QD} + {R} = {N}</strong> ✓'
+      <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓'
     label_choose: Aukeratu zatikizuna eta zatitzailea
     label_dividend: Zatikizuna (zatitu beharreko zenbakia)
     label_divisor: Zatitzailea (zatiaren tamaina)
@@ -70,27 +70,27 @@ eu:
     label_repadd: Batuketa errepikatua
     repadd_exact: — zehaztasunez zatitzen da!
     repadd_leftover: hondarra
-    repadd_less: '{N} {D} baino txikiagoa da, beraz zatidura 0 da eta balio osoa hondarra
+    repadd_less: '$1 $2 baino txikiagoa da, beraz zatidura 0 da eta balio osoa hondarra
       da.'
   factors:
     _name: Faktore lehenak
     gcd_formula_eq: ' ='
     gcd_none: (bat ere ez — elkarrekiko lehenak)
     gcd_title: ZKH — partekatutako faktoreak bakarrik gordetzen dira
-    insight_coprime: '<strong>{A}</strong> eta <strong>{B}</strong> elkarrekiko lehenak
+    insight_coprime: '<strong>$1</strong> eta <strong>$2</strong> elkarrekiko lehenak
       dira — ez dute zenbaki lehenik partekatzen, beraz ZKH = 1. MKT haien biderkadura
-      da, zuzenean. Beti egia: <strong>{A} × {B} = {AB}</strong> = <strong>ZKH × MKT</strong>
-      = <strong>1 × {L} = {L}</strong>.'
-    insight_shared_many: '<strong>{A}</strong> eta <strong>{B}</strong>-k <strong>{primes}</strong>
+      da, zuzenean. Beti egia: <strong>$1 × $2 = $5</strong> = <strong>ZKH × MKT</strong>
+      = <strong>1 × $4 = $4</strong>.'
+    insight_shared_many: '<strong>$1</strong> eta <strong>$2</strong>-k <strong>$7</strong>
       zenbaki lehenak partekatzen dituzte. ZKHk bloke berde partekatuak bakarrik hartzen
       ditu. MKTk bloke guztiak hartzen ditu — berde partekatuak, A-ren soberakinak
-      urdin, B-renak gorri — zenbaki lehenik birritan zenbatu gabe. Beti egia: <strong>{A}
-      × {B} = {AB}</strong> = <strong>ZKH × MKT</strong> = <strong>{G} × {L} = {GL}</strong>.'
-    insight_shared_one: '<strong>{A}</strong> eta <strong>{B}</strong>-k <strong>{primes}</strong>
+      urdin, B-renak gorri — zenbaki lehenik birritan zenbatu gabe. Beti egia: <strong>$1
+      × $2 = $5</strong> = <strong>ZKH × MKT</strong> = <strong>$3 × $4 = $6</strong>.'
+    insight_shared_one: '<strong>$1</strong> eta <strong>$2</strong>-k <strong>$7</strong>
       zenbaki lehena partekatzen dute. ZKHk bloke berde partekatuak bakarrik hartzen
       ditu. MKTk bloke guztiak hartzen ditu — berde partekatuak, A-ren soberakin urdinak,
-      B-renak gorri — zenbaki lehenik birritan zenbatu gabe. Beti egia: <strong>{A}
-      × {B} = {AB}</strong> = <strong>ZKH × MKT</strong> = <strong>{G} × {L} = {GL}</strong>.'
+      B-renak gorri — zenbaki lehenik birritan zenbatu gabe. Beti egia: <strong>$1
+      × $2 = $5</strong> = <strong>ZKH × MKT</strong> = <strong>$3 × $4 = $6</strong>.'
     label_choose: Aukeratu bi zenbaki
     label_factors: Zenbaki lehenen faktorizazioa
     label_how: Nola eraikitzen dira ZKH eta MKT
@@ -107,12 +107,12 @@ eu:
     card_ratio_lbl: Uneko erlazioa F(n+1) ÷ F(n)
     chart_step: urratsa
     diff: 'aldea:'
-    insight_close: <strong>{fa} + {fb} = {fr}</strong>. Erlazioa = <strong>{ratio}</strong>
-      — φ-tik <strong>{error}</strong>-ra. Ia erabat hurbildu da.
-    insight_converged: <strong>{fa} + {fb} = {fr}</strong>. Erlazioa = <strong>{ratio}</strong>
-      — φ-tik <strong>{error}</strong>-ra. Segida 6 dezimaletara hurbildu da.
-    insight_normal: <strong>{fa} + {fb} = {fr}</strong>. Erlazioa = <strong>{ratio}</strong>,
-      oraindik <strong>{error}</strong> urrun φ = 1,61803…-tik.
+    insight_close: <strong>$1 + $2 = $3</strong>. Erlazioa = <strong>$4</strong>
+      — φ-tik <strong>$5</strong>-ra. Ia erabat hurbildu da.
+    insight_converged: <strong>$1 + $2 = $3</strong>. Erlazioa = <strong>$4</strong>
+      — φ-tik <strong>$5</strong>-ra. Segida 6 dezimaletara hurbildu da.
+    insight_normal: <strong>$1 + $2 = $3</strong>. Erlazioa = <strong>$4</strong>,
+      oraindik <strong>$5</strong> urrun φ = 1,61803…-tik.
     insight_step1: <strong>1 + 1 = 2</strong>-rekin hasten gara. 2 ÷ 1 = <strong>2,000000</strong>
       erlazioa — oraindik urrun φ ≈ 1,61803-tik.
     insight_step2: <strong>1 + 2 = 3</strong>. 3 ÷ 2 = <strong>1,500000</strong> erlazioa
@@ -121,7 +121,7 @@ eu:
     sec_chart: φ-rantz konbergentzia
     sec_sequence: Orain arteko segida
     sec_steps: Fibonacci segidaren urratsak
-    step_label: '{step}. urratsa {total}tik'
+    step_label: '$1. urratsa $2tik'
   hexagon-angles:
     2quads: 2 lauki × 360°
     4triangles: 4 triangelu × 180°
@@ -209,34 +209,33 @@ eu:
     _name: Koadrilateroak
     areaDiagHalf: |-
       Formula: A = (d₁ × d₂) / 2
-      d₁ (AC) = {0} cm
-      d₂ (BD) = {1} cm
-      = ({0} × {1}) / 2
+      d₁ (AC) = $1 cm
+      d₂ (BD) = $2 cm
+      = ($1 × $2) / 2
     areaGaussHeader: |-
       Gaussen formula:
       A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
     areaGaussSum: |2-
-
-      Σ = {0}
-      A = ½ × |{0}|
-    areaGaussTerm: '  (x{0}·y{1} − x{1}·y{0}) = {2}'
+      Σ = $1
+      A = ½ × |$1|
+    areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
     areaParallelogram: |-
       Formula: A = oinarria × altuera
-      oinarria (AB) = {0} cm
-      altuera = {1} cm
-      = {0} × {1}
+      oinarria (AB) = $1 cm
+      altuera = $2 cm
+      = $1 × $2
     areaRectangle: |-
       Formula: A = zabalera × altuera
-      = {0} × {1}
+      = $1 × $2
     areaSquare: |-
       Formula: A = aldea²
-      = {0}²
+      = $1²
     areaTrapezoid: |-
       Formula: A = (b₁ + b₂) / 2 × h
-      b₁ (AB) = {0} cm
-      b₂ (CD) = {1} cm
-      altuera = {2} cm
-      = ({0} + {1}) / 2 × {2}
+      b₁ (AB) = $1 cm
+      b₂ (CD) = $2 cm
+      altuera = $3 cm
+      = ($1 + $2) / 2 × $3
     headingArea: Azalera
     headingClassification: Sailkapena
     headingSides: Aldeak eta diagonalak

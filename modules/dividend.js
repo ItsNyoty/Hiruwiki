@@ -39,9 +39,9 @@ var messages = /* I18N_START */ {
         "eq_lbl_divisor": "divisor",
         "eq_lbl_quotient": "quotient",
         "eq_lbl_remainder": "remainder",
-        "insight_exact": "<strong>{N} ÷ {D} = {Q}</strong> exactly — no remainder. The bar fills perfectly into <strong>{Q}</strong> equal chunk{s}. This means <strong>{D}</strong> is a divisor of <strong>{N}</strong>.",
-        "insight_less": "<strong>{N}</strong> is smaller than the divisor <strong>{D}</strong>, so it fits <strong>0</strong> whole chunks. The entire value is the remainder. The remainder is always less than the divisor.",
-        "insight_normal": "<strong>{N} ÷ {D} = {Q}</strong> remainder <strong>{R}</strong>. Notice the red piece (<strong>{R}</strong>) is always shorter than one blue chunk (<strong>{D}</strong>). The remainder is always strictly less than the divisor. Check: <strong>{Q} × {D} + {R} = {QD} + {R} = {N}</strong> ✓",
+        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> exactly — no remainder. The bar fills perfectly into <strong>$3</strong> equal chunk$6. This means <strong>$2</strong> is a divisor of <strong>$1</strong>.",
+        "insight_less": "<strong>$1</strong> is smaller than the divisor <strong>$2</strong>, so it fits <strong>0</strong> whole chunks. The entire value is the remainder. The remainder is always less than the divisor.",
+        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> remainder <strong>$4</strong>. Notice the red piece (<strong>$4</strong>) is always shorter than one blue chunk (<strong>$2</strong>). The remainder is always strictly less than the divisor. Check: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
         "label_bar_description": "Bar view — each blue chunk = {{PLURAL:$1|$1 unit|$1 units}}",
         "label_choose": "Choose dividend and divisor",
         "label_dividend": "Dividend (the number being divided)",
@@ -50,7 +50,7 @@ var messages = /* I18N_START */ {
         "label_repadd": "Repeated addition",
         "repadd_exact": "— divides exactly!",
         "repadd_leftover": "left over",
-        "repadd_less": "{N} is less than {D}, so the quotient is 0 and the whole value is the remainder.",
+        "repadd_less": "$1 is less than $2, so the quotient is 0 and the whole value is the remainder.",
         "hint": "Adjust dividend and divisor to see the division breakdown"
     },
     "es": {
@@ -59,9 +59,9 @@ var messages = /* I18N_START */ {
         "eq_lbl_divisor": "divisor",
         "eq_lbl_quotient": "cociente",
         "eq_lbl_remainder": "resto",
-        "insight_exact": "<strong>{N} ÷ {D} = {Q}</strong> exacto — sin resto. La barra se llena perfectamente en <strong>{Q}</strong> fragmentos iguales. Esto significa que <strong>{D}</strong> es un divisor de <strong>{N}</strong>.<!--{{s}}-->",
-        "insight_less": "<strong>{N}</strong> es menor que el divisor <strong>{D}</strong>, por lo que cabe en <strong>0</strong> fragmentos enteros. Todo el valor es el resto. El resto es siempre menor que el divisor.",
-        "insight_normal": "<strong>{N} ÷ {D} = {Q}</strong> resto <strong>{R}</strong>. Nota que la pieza roja (<strong>{R}</strong>) siempre es más corta que un fragmento azul (<strong>{D}</strong>). El resto siempre es estrictamente menor que el divisor. Comprobación: <strong>{Q} × {D} + {R} = {QD} + {R} = {N}</strong> ✓",
+        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> exacto — sin resto. La barra se llena perfectamente en <strong>$3</strong> fragmentos iguales. Esto significa que <strong>$2</strong> es un divisor de <strong>$1</strong>.<!--$6-->",
+        "insight_less": "<strong>$1</strong> es menor que el divisor <strong>$2</strong>, por lo que cabe en <strong>0</strong> fragmentos enteros. Todo el valor es el resto. El resto es siempre menor que el divisor.",
+        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> resto <strong>$4</strong>. Nota que la pieza roja (<strong>$4</strong>) siempre es más corta que un fragmento azul (<strong>$2</strong>). El resto siempre es estrictamente menor que el divisor. Comprobación: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
         "label_choose": "Elige el dividendo y el divisor",
         "label_dividend": "Dividendo (el número a dividir)",
         "label_divisor": "Divisor (el tamaño del fragmento)",
@@ -69,7 +69,7 @@ var messages = /* I18N_START */ {
         "label_repadd": "Suma repetida",
         "repadd_exact": "— se divide exactamente!",
         "repadd_leftover": "sobra",
-        "repadd_less": "{N} es menor que {D}, por lo que el cociente es 0 y el valor completo es el resto."
+        "repadd_less": "$1 es menor que $2, por lo que el cociente es 0 y el valor completo es el resto."
     },
     "eu": {
         "_name": "Zatikizuna eta zatitzailea",
@@ -77,9 +77,9 @@ var messages = /* I18N_START */ {
         "eq_lbl_divisor": "zatitzailea",
         "eq_lbl_quotient": "zatidura",
         "eq_lbl_remainder": "hondarra",
-        "insight_exact": "<strong>{N} ÷ {D} = {Q}</strong> zenbaki osoa — hondarrik gabe. Barra <strong>{Q}</strong> zati berdinetan betetzen da. Horrek esan nahi du <strong>{D}</strong> <strong>{N}</strong>-ren zatitzailea dela.<!--{s}-->",
-        "insight_less": "<strong>{N}</strong> zatitzailea baino txikiagoa da (<strong>{D}</strong>), beraz ez da zati oso bat sartzen. Balio osoa hondarra da. Hondarra beti zatitzailea baino txikiagoa da.",
-        "insight_normal": "<strong>{N} ÷ {D} = {Q}</strong> hondarra <strong>{R}</strong>. Kontuan hartu pieza gorria (<strong>{R}</strong>) beti zati urdin bat (<strong>{D}</strong>) baino motzagoa dela. Hondarra beti zatitzailea baino txikiagoa da. Egiaztatu: <strong>{Q} × {D} + {R} = {QD} + {R} = {N}</strong> ✓",
+        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> zenbaki osoa — hondarrik gabe. Barra <strong>$3</strong> zati berdinetan betetzen da. Horrek esan nahi du <strong>$2</strong> <strong>$1</strong>-ren zatitzailea dela.<!--$6-->",
+        "insight_less": "<strong>$1</strong> zatitzailea baino txikiagoa da (<strong>$2</strong>), beraz ez da zati oso bat sartzen. Balio osoa hondarra da. Hondarra beti zatitzailea baino txikiagoa da.",
+        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> hondarra <strong>$4</strong>. Kontuan hartu pieza gorria (<strong>$4</strong>) beti zati urdin bat (<strong>$2</strong>) baino motzagoa dela. Hondarra beti zatitzailea baino txikiagoa da. Egiaztatu: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
         "label_choose": "Aukeratu zatikizuna eta zatitzailea",
         "label_dividend": "Zatikizuna (zatitu beharreko zenbakia)",
         "label_divisor": "Zatitzailea (zatiaren tamaina)",
@@ -87,7 +87,7 @@ var messages = /* I18N_START */ {
         "label_repadd": "Batuketa errepikatua",
         "repadd_exact": "— zehaztasunez zatitzen da!",
         "repadd_leftover": "hondarra",
-        "repadd_less": "{N} {D} baino txikiagoa da, beraz zatidura 0 da eta balio osoa hondarra da."
+        "repadd_less": "$1 $2 baino txikiagoa da, beraz zatidura 0 da eta balio osoa hondarra da."
     },
     "fr": {
         "_name": "Dividende et diviseur",
@@ -95,9 +95,9 @@ var messages = /* I18N_START */ {
         "eq_lbl_divisor": "diviseur",
         "eq_lbl_quotient": "quotient",
         "eq_lbl_remainder": "reste",
-        "insight_exact": "<strong>{N} ÷ {D} = {Q}</strong> exactement — pas de reste. La barre se remplit parfaitement en <strong>{Q}</strong> morceaux égaux. Cela signifie que <strong>{D}</strong> est un diviseur de <strong>{N}</strong>.",
-        "insight_less": "<strong>{N}</strong> est plus petit que le diviseur <strong>{D}</strong>, donc il contient <strong>0</strong> morceau entier. Toute la valeur est le reste. Le reste est toujours inférieur au diviseur.",
-        "insight_normal": "<strong>{N} ÷ {D} = {Q}</strong> reste <strong>{R}</strong>. Notez que la pièce rouge (<strong>{R}</strong>) est toujours plus courte qu'un morceau bleu (<strong>{D}</strong>). Le reste est toujours strictement inférieur au diviseur. Vérification : <strong>{Q} × {D} + {R} = {QD} + {R} = {N}</strong> ✓",
+        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> exactement — pas de reste. La barre se remplit parfaitement en <strong>$3</strong> morceaux égaux. Cela signifie que <strong>$2</strong> est un diviseur de <strong>$1</strong>.",
+        "insight_less": "<strong>$1</strong> est plus petit que le diviseur <strong>$2</strong>, donc il contient <strong>0</strong> morceau entier. Toute la valeur est le reste. Le reste est toujours inférieur au diviseur.",
+        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> reste <strong>$4</strong>. Notez que la pièce rouge (<strong>$4</strong>) est toujours plus courte qu'un morceau bleu (<strong>$2</strong>). Le reste est toujours strictement inférieur au diviseur. Vérification : <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
         "label_choose": "Choisissez le dividende et le diviseur",
         "label_dividend": "Dividende (le nombre à diviser)",
         "label_divisor": "Diviseur (la taille du morceau)",
@@ -105,7 +105,7 @@ var messages = /* I18N_START */ {
         "label_repadd": "Addition répétée",
         "repadd_exact": "— divise exactement !",
         "repadd_leftover": "reste",
-        "repadd_less": "{N} est inférieur à {D}, donc le quotient est 0 et toute la valeur est le reste."
+        "repadd_less": "$1 est inférieur à $2, donc le quotient est 0 et toute la valeur est le reste."
     },
     "ga": {
         "_name": "Díbhinn agus Roinnteoir",
@@ -113,9 +113,9 @@ var messages = /* I18N_START */ {
         "eq_lbl_divisor": "roinnteoir",
         "eq_lbl_quotient": "cóimheas",
         "eq_lbl_remainder": "fuílleach",
-        "insight_exact": "<strong>{N} ÷ {D} = {Q}</strong> go díreach — gan aon fhuíoll. Líonann an barra go foirfe isteach i <strong>{Q}</strong> píosa{s} cothroma. Ciallaíonn sé seo gur roinnteoir de <strong>{N}</strong> é <strong>{D}</strong>.",
-        "insight_less": "Tá <strong>{N}</strong> níos lú ná an roinnteoir <strong>{D}</strong>, mar sin oireann sé do <strong>0</strong> píosa iomlán. Is é an luach iomlán an t-iarmhar. Bíonn an t-iarmhar níos lú ná an roinnteoir i gcónaí.",
-        "insight_normal": "<strong>{N} ÷ {D} = {Q}</strong> fuílleach <strong>{R}</strong>. Tabhair faoi deara go mbíonn an píosa dearg (<strong>{R}</strong>) i gcónaí níos giorra ná smután gorm amháin (<strong>{D}</strong>). Bíonn an fuílleach i gcónaí níos lú ná an roinnteoir. Seiceáil: <strong>{Q} × {D} + {R} = {QD} + {R} = {N}</strong> ✓",
+        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> go díreach — gan aon fhuíoll. Líonann an barra go foirfe isteach i <strong>$3</strong> píosa$6 cothroma. Ciallaíonn sé seo gur roinnteoir de <strong>$1</strong> é <strong>$2</strong>.",
+        "insight_less": "Tá <strong>$1</strong> níos lú ná an roinnteoir <strong>$2</strong>, mar sin oireann sé do <strong>0</strong> píosa iomlán. Is é an luach iomlán an t-iarmhar. Bíonn an t-iarmhar níos lú ná an roinnteoir i gcónaí.",
+        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> fuílleach <strong>$4</strong>. Tabhair faoi deara go mbíonn an píosa dearg (<strong>$4</strong>) i gcónaí níos giorra ná smután gorm amháin (<strong>$2</strong>). Bíonn an fuílleach i gcónaí níos lú ná an roinnteoir. Seiceáil: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
         "label_choose": "Roghnaigh díbhinn agus roinnteoir",
         "label_dividend": "Díbhinn (an uimhir atá á roinnt)",
         "label_divisor": "Roinnteoir (méid an phíosa)",
@@ -123,7 +123,7 @@ var messages = /* I18N_START */ {
         "label_repadd": "Breisiú arís agus arís eile",
         "repadd_exact": "— roinneann go díreach!",
         "repadd_leftover": "fágtha",
-        "repadd_less": "Tá {N} níos lú ná {D}, mar sin is é 0 an cóimheas agus is é an luach iomlán an fuíoll."
+        "repadd_less": "Tá $1 níos lú ná $2, mar sin is é 0 an cóimheas agus is é an luach iomlán an fuíoll."
     },
     "it": {
         "_name": "Dividendo e divisore",
@@ -151,9 +151,9 @@ var messages = /* I18N_START */ {
         "eq_lbl_divisor": "deler",
         "eq_lbl_quotient": "quotiënt",
         "eq_lbl_remainder": "rest",
-        "insight_exact": "<strong>{N} ÷ {D} = {Q}</strong> precies — geen rest. De balk past perfect in <strong>{Q}</strong> gelijke stukken{s}. Dit betekent dat <strong>{D}</strong> een deler is van <strong>{N}</strong>.",
-        "insight_less": "<strong>{N}</strong> is kleiner dan de deler <strong>{D}</strong>, dus het past in <strong>0</strong> hele stukken. De hele waarde is de rest. De rest is altijd kleiner dan de deler.",
-        "insight_normal": "<strong>{N} ÷ {D} = {Q}</strong> rest <strong>{R}</strong>. Merk op dat het rode stuk (<strong>{R}</strong>) altijd korter is dan een blauw stuk (<strong>{D}</strong>). De rest is altijd strikt kleiner dan de deler. Controle: <strong>{Q} × {D} + {R} = {QD} + {R} = {N}</strong> ✓",
+        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> precies — geen rest. De balk past perfect in <strong>$3</strong> gelijke stukken$6. Dit betekent dat <strong>$2</strong> een deler is van <strong>$1</strong>.",
+        "insight_less": "<strong>$1</strong> is kleiner dan de deler <strong>$2</strong>, dus het past in <strong>0</strong> hele stukken. De hele waarde is de rest. De rest is altijd kleiner dan de deler.",
+        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> rest <strong>$4</strong>. Merk op dat het rode stuk (<strong>$4</strong>) altijd korter is dan een blauw stuk (<strong>$2</strong>). De rest is altijd strikt kleiner dan de deler. Controle: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
         "label_choose": "Kies deeltal en deler",
         "label_dividend": "Deeltal (het getal dat gedeeld wordt)",
         "label_divisor": "Deler (de grootte van het stuk)",
@@ -161,7 +161,7 @@ var messages = /* I18N_START */ {
         "label_repadd": "Herhaalde optelling",
         "repadd_exact": "— is precies deelbaar!",
         "repadd_leftover": "blijft over",
-        "repadd_less": "{N} is kleiner dan {D}, dus het quotiënt is 0 en de gehele waarde is de rest.",
+        "repadd_less": "$1 is kleiner dan $2, dus het quotiënt is 0 en de gehele waarde is de rest.",
         "hint": "Pas deeltal en deler aan om de deling te zien"
     }
 } /* I18N_END */
@@ -179,6 +179,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 /* ── BUILD HTML ───────────────────────────────────────────────────────────── */
@@ -347,7 +348,7 @@ function update( root ) {
     repAdd.innerHTML = '';
 
     if ( Q === 0 ) {
-        repAdd.innerHTML = t( 'repadd_less', { N: N, D: D } );
+        repAdd.innerHTML = t( 'repadd_less', [ N, D ] );
     } else {
         var parts = [];
         for ( var k = 0; k < Q; k++ ) {
@@ -363,14 +364,14 @@ function update( root ) {
     }
 
     /* ── Insight ──────────────────────────────────────────────────── */
-    var vars = { N: N, D: D, Q: Q, R: R, QD: QD, s: plural };
+    var args = [ N, D, Q, R, QD, plural ];
     var ins = root.querySelector( '#hw-div-insight' );
     if ( exact ) {
-        ins.innerHTML = t( 'insight_exact', vars );
+        ins.innerHTML = t( 'insight_exact', args );
     } else if ( Q === 0 ) {
-        ins.innerHTML = t( 'insight_less', vars );
+        ins.innerHTML = t( 'insight_less', args );
     } else {
-        ins.innerHTML = t( 'insight_normal', vars );
+        ins.innerHTML = t( 'insight_normal', args );
     }
 }
 

@@ -112,6 +112,7 @@ function t(key, vars) {
 }
 
 
+
 function initTrigonometry(container) {
         if (container.dataset.trigInit) { return; }
         container.dataset.trigInit = '1';

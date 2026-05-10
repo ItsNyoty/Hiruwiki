@@ -20,11 +20,11 @@ ga:
   angles:
     _name: Uillinneacha
     bisector: Déroinnteoir
-    bisectorResult: 'Déroinnteoir: {0}°'
+    bisectorResult: 'Déroinnteoir: $1°'
     complement: Comhlántach
     explement: Turgnamhach
     notDefined: Gan sainmhíniú don uillinn seo
-    resultAngle: 'uillinn {0}: {1}°'
+    resultAngle: 'uillinn $1: $2°'
     supplement: Forlíontach
   circle-proof:
     _name: Cruthúnas Ciorcail
@@ -53,17 +53,17 @@ ga:
     eq_lbl_divisor: roinnteoir
     eq_lbl_quotient: cóimheas
     eq_lbl_remainder: fuílleach
-    insight_exact: <strong>{N} ÷ {D} = {Q}</strong> go díreach — gan aon fhuíoll.
-      Líonann an barra go foirfe isteach i <strong>{Q}</strong> píosa{s} cothroma.
-      Ciallaíonn sé seo gur roinnteoir de <strong>{N}</strong> é <strong>{D}</strong>.
-    insight_less: Tá <strong>{N}</strong> níos lú ná an roinnteoir <strong>{D}</strong>,
+    insight_exact: <strong>$1 ÷ $2 = $3</strong> go díreach — gan aon fhuíoll.
+      Líonann an barra go foirfe isteach i <strong>$3</strong> píosa$6 cothroma.
+      Ciallaíonn sé seo gur roinnteoir de <strong>$1</strong> é <strong>$2</strong>.
+    insight_less: Tá <strong>$1</strong> níos lú ná an roinnteoir <strong>$2</strong>,
       mar sin oireann sé do <strong>0</strong> píosa iomlán. Is é an luach iomlán
       an t-iarmhar. Bíonn an t-iarmhar níos lú ná an roinnteoir i gcónaí.
-    insight_normal: '<strong>{N} ÷ {D} = {Q}</strong> fuílleach <strong>{R}</strong>.
-      Tabhair faoi deara go mbíonn an píosa dearg (<strong>{R}</strong>) i gcónaí
-      níos giorra ná smután gorm amháin (<strong>{D}</strong>). Bíonn an fuílleach
-      i gcónaí níos lú ná an roinnteoir. Seiceáil: <strong>{Q} × {D} + {R} = {QD}
-      + {R} = {N}</strong> ✓'
+    insight_normal: '<strong>$1 ÷ $2 = $3</strong> fuílleach <strong>$4</strong>.
+      Tabhair faoi deara go mbíonn an píosa dearg (<strong>$4</strong>) i gcónaí
+      níos giorra ná smután gorm amháin (<strong>$2</strong>). Bíonn an fuílleach
+      i gcónaí níos lú ná an roinnteoir. Seiceáil: <strong>$3 × $2 + $4 = $5
+      + $4 = $1</strong> ✓'
     label_choose: Roghnaigh díbhinn agus roinnteoir
     label_dividend: Díbhinn (an uimhir atá á roinnt)
     label_divisor: Roinnteoir (méid an phíosa)
@@ -71,28 +71,28 @@ ga:
     label_repadd: Breisiú arís agus arís eile
     repadd_exact: — roinneann go díreach!
     repadd_leftover: fágtha
-    repadd_less: Tá {N} níos lú ná {D}, mar sin is é 0 an cóimheas agus is é an luach
+    repadd_less: Tá $1 níos lú ná $2, mar sin is é 0 an cóimheas agus is é an luach
       iomlán an fuíoll.
   factors:
     _name: Príomhfhachtóirí
     gcd_formula_eq: ' ='
     gcd_none: (níl aon cheann — comhphríomh)
     gcd_title: GCD — coinnigh fachtóirí comhroinnte amháin
-    insight_coprime: 'Is comhphríomha iad <strong>{A} agus <strong>{B} — níl aon phríomhfhachtóirí
-      roinnte acu, mar sin tá GCD = 1. Níl san LCM ach a dtáirge. Fíor i gcónaí: <strong>{A}
-      × {B} = {AB}/strong> = GCD × LCM = <strong>1 × {L} = {L}</strong>.'
-    insight_shared_many: 'Roinneann <strong>{A}</strong> agus <strong>{B}</strong>
-      na príomhuimhreacha <strong>{primes}</strong>. Ní ghlacann an GCD ach na bloic
+    insight_coprime: 'Is comhphríomha iad <strong>$1</strong> agus <strong>$2</strong> — níl aon phríomhfhachtóirí
+      roinnte acu, mar sin tá GCD = 1. Níl san LCM ach a dtáirge. Fíor i gcónaí: <strong>$1
+      × $2 = $5</strong> = GCD × LCM = <strong>1 × $4 = $4</strong>.'
+    insight_shared_many: 'Roinneann <strong>$1</strong> agus <strong>$2</strong>
+      na príomhuimhreacha <strong>$7</strong>. Ní ghlacann an GCD ach na bloic
       chomhroinnte glasa. Glacann an LCM na blocanna uile — comhroinnte glasa, breiseáin
       ghorma ó A, breiseáin dhearga ó B — gan aon phríomh a chomhaireamh faoi dhó.
-      Fíor i gcónaí: <strong>{A} × {B} = {AB}</strong> = GCD × LCM = <strong>{G} ×
-      {L} = {GL}</strong>.'
-    insight_shared_one: 'Roinneann <strong>{A}/<strong> agus <strong>{B}/<strong>
-      na príomhuimhreacha <strong>{primes}</strong>. Ní ghlacann an GCD ach na bloic
+      Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>$3 ×
+      $4 = $6</strong>.'
+    insight_shared_one: 'Roinneann <strong>$1</strong> agus <strong>$2</strong>
+      na príomhuimhreacha <strong>$7</strong>. Ní ghlacann an GCD ach na bloic
       chomhroinnte glasa. Glacann an LCM na bloic uile — bloic chomhroinnte glasa,
       breiseáin ghorma ó A, breiseáin dhearga ó B — gan aon phríomhuimhreacha a chomhaireamh
-      faoi dhó. Fíor i gcónaí: <strong>{A} × {B} = {AB}/<strong> = GCD × LCM = <strong>{G}
-      × {L} = {GL}/<strong>.'
+      faoi dhó. Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>$3
+      × $4 = $6</strong>.'
     label_choose: Roghnaigh dhá uimhir
     label_factors: Príomhfhachtóirí
     label_how: Conas a thógtar GCD agus LCM
@@ -109,13 +109,13 @@ ga:
     card_ratio_lbl: Cóimheas reatha F(n+1) ÷ F(n)
     chart_step: céim
     diff: 'difríocht:'
-    insight_close: <strong>{fa} + {fb} = {fr}</strong>. An cóimheas = <strong>{ratio}</strong>
-      — laistigh de <strong>{error}</strong> de φ. Beagnach comhtháite go hiomlán.
-    insight_converged: <strong>{fa} + {fb} = {fr}</strong>. An cóimheas = <strong>{ratio}</strong>
-      — laistigh de <strong>{error}</strong> de φ. Tá an seicheamh comhtháite go 6
+    insight_close: <strong>$1 + $2 = $3</strong>. An cóimheas = <strong>$4</strong>
+      — laistigh de <strong>$5</strong> de φ. Beagnach comhtháite go hiomlán.
+    insight_converged: <strong>$1 + $2 = $3</strong>. An cóimheas = <strong>$4</strong>
+      — laistigh de <strong>$5</strong> de φ. Tá an seicheamh comhtháite go 6
       ionad deachúil.
-    insight_normal: <strong>{fa} + {fb} = {fr}</strong>. An cóimheas = <strong>{ratio}</strong>,
-      fós <strong>{error}</strong> ar shiúl ó φ = 1.61803…
+    insight_normal: <strong>$1 + $2 = $3</strong>. An cóimheas = <strong>$4</strong>,
+      fós <strong>$5</strong> ar shiúl ó φ = 1.61803…
     insight_step1: Tosaímid le *1 + 1 = 2*. Tá an cóimheas 2 ÷ 1 = *2.000000* — fós
       i bhfad ó φ ≈ 1.61803.
     insight_step2: <strong>1 + 2 = 3</strong>. Tá an cóimheas 3 ÷ 2 = <strong>1.500000</strong>
@@ -124,7 +124,7 @@ ga:
     sec_chart: Comhtháthú i dtreo φ
     sec_sequence: Seicheamh go dtí seo
     sec_steps: Céim tríd an seicheamh Fibonacci
-    step_label: Céim {step} de {total}
+    step_label: Céim $1 de $2
   hexagon-angles:
     2quads: 2 cheathairshleasán × 360°
     4triangles: 4 thriantán × 180°
@@ -190,14 +190,14 @@ ga:
     insight_full_loss: Tugann caillteanas <strong>100%</strong> an luach go <strong>0</strong>.
       Tá sé <strong>dodhéanta</strong> é a aisghabháil ó náid — is ionann aon chéatadán
       de 0 agus 0 fós.
-    insight_gain: Tugann gnóthachan de <strong>+{pct}%</strong> 100 suas go <strong>{result}</strong>.
+    insight_gain: Tugann gnóthachan de <strong>+$1%</strong> 100 suas go <strong>$2</strong>.
       Tá an leithead céanna ag an réimse glas thuas agus an réimse dearg thíos — ach
-      tá na céatadáin difriúil. Ní thógann sé ach <strong>{recovery}%</strong> chun
-      filleadh ar 100, ní −{pct}%.
-    insight_loss: Le cailliúint <strong>{pct}%</strong>, tugtar 100 síos go <strong>{result}</strong>.
+      tá na céatadáin difriúil. Ní thógann sé ach <strong>$3%</strong> chun
+      filleadh ar 100, ní −$1%.
+    insight_loss: Le cailliúint <strong>$1%</strong>, tugtar 100 síos go <strong>$2</strong>.
       Clúdaíonn an réise dhearg thuas agus an réise uaine thíos an fad fisiceach céanna
       — ach tá na céatadáin difriúil toisc go mbaineann siad le bunáiteanna difriúla.
-      Teastaíonn <strong>+{recovery}%</strong> ón téarnamh, ní +{pct}%.
+      Teastaíonn <strong>+$3%</strong> ón téarnamh, ní +$1%.
     insight_zero: Níor cuireadh aon athrú i bhfeidhm. Tarraing an sleamhnán chun iniúchadh
       a dhéanamh.
     label_after: tar éis athraithe
@@ -220,32 +220,31 @@ ga:
     _name: Ceathairshleasáin
     areaDiagHalf: |-
       Foirmle: A = (d₁ × d₂) / 2
-      d₁ (AC) = {0} cm
-      d₂ (BD) = {1} cm
-      = ({0} × {1}) / 2
+      d₁ (AC) = $1 cm
+      d₂ (BD) = $2 cm
+      = ($1 × $2) / 2
     areaGaussHeader: |-
       Foirmle Gauss (shoelace):
       A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
     areaGaussSum: |2-
-
-      Σ = {0}
-      A = ½ × |{0}|
-    areaGaussTerm: '  (x{0}·y{1} − x{1}·y{0}) = {2}'
+      Σ = $1
+      A = ½ × |$1|
+    areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
     areaParallelogram: |-
       Foirmle: A = bonn × airde
-      bonn (AB) = {0} cm
-      airde = {1} cm
-      = {0} × {1}
+      bonn (AB) = $1 cm
+      airde = $2 cm
+      = $1 × $2
     areaRectangle: |-
       Foirmle: A = leithead × airde
-      = {0} × {1}
-    areaSquare: 'Foirmle: A = taobh² = {0}²'
+      = $1 × $2
+    areaSquare: 'Foirmle: A = taobh² = $1²'
     areaTrapezoid: |-
       Foirmle: A = (b₁ + b₂) / 2 × h
-      b₁ (AB) = {0} cm
-      b₂ (CD) = {1} cm
-      airde = {2} cm
-      = ({0} + {1}) / 2 × {2}
+      b₁ (AB) = $1 cm
+      b₂ (CD) = $2 cm
+      airde = $3 cm
+      = ($1 + $2) / 2 × $3
     headingArea: Limistéar
     headingClassification: Aicmiú
     headingSides: Taobhanna agus trasnáin

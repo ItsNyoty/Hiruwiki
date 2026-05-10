@@ -34,9 +34,9 @@ var messages = /* I18N_START */ {
         "gcd_formula_eq": "=",
         "gcd_none": "(none — coprime)",
         "gcd_title": "GCD — keep only shared factors",
-        "insight_coprime": "<strong>{A}</strong> and <strong>{B}</strong> are coprime — they share no prime factors, so GCD = 1. The LCM is simply their product. Always true: <strong>{A} × {B} = {AB}</strong> = GCD × LCM = <strong>1 × {L} = {L}</strong>.",
-        "insight_shared_many": "<strong>{A}</strong> and <strong>{B}</strong> share the primes <strong>{primes}</strong>. The GCD takes only the green shared blocks. The LCM takes all blocks — green shared, blue extras from A, red extras from B — with no prime counted twice. Always true: <strong>{A} × {B} = {AB}</strong> = GCD × LCM = <strong>{G} × {L} = {GL}</strong>.",
-        "insight_shared_one": "<strong>{A}</strong> and <strong>{B}</strong> share the prime <strong>{primes}</strong>. The GCD takes only the green shared blocks. The LCM takes all blocks — green shared, blue extras from A, red extras from B — with no prime counted twice. Always true: <strong>{A} × {B} = {AB}</strong> = GCD × LCM = <strong>{G} × {L} = {GL}</strong>.",
+        "insight_coprime": "<strong>$1</strong> and <strong>$2</strong> are coprime — they share no prime factors, so GCD = 1. The LCM is simply their product. Always true: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>1 × $4 = $4</strong>.",
+        "insight_shared_many": "<strong>$1</strong> and <strong>$2</strong> share the primes <strong>$7</strong>. The GCD takes only the green shared blocks. The LCM takes all blocks — green shared, blue extras from A, red extras from B — with no prime counted twice. Always true: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>$3 × $4 = $6</strong>.",
+        "insight_shared_one": "<strong>$1</strong> and <strong>$2</strong> share the prime <strong>$7</strong>. The GCD takes only the green shared blocks. The LCM takes all blocks — green shared, blue extras from A, red extras from B — with no prime counted twice. Always true: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>$3 × $4 = $6</strong>.",
         "label_choose": "Choose two numbers",
         "label_factors": "Prime factors",
         "label_how": "How GCD and LCM are built",
@@ -52,9 +52,9 @@ var messages = /* I18N_START */ {
         "gcd_formula_eq": "=",
         "gcd_none": "(ninguno — coprimos)",
         "gcd_title": "MCD — conservar solo los factores compartidos",
-        "insight_coprime": "<strong>{A}</strong> y <strong>{B}</strong> son coprimos — no comparten factores primos, por lo que el MCD = 1. El MCM es simplemente su producto. Siempre es cierto: <strong>{A} × {B} = {AB}</strong> = MCD × MCM = <strong>1 × {L} = {L}</strong>.",
-        "insight_shared_many": "<strong>{A}</strong> y <strong>{B}</strong> comparten los primos <strong>{primes}</strong>. El MCD toma solo los bloques verdes compartidos. El MCM toma todos los bloques — verdes compartidos, azules adicionales de A, rojos adicionales de B — sin contar ningún primo dos veces. Siempre es cierto: <strong>{A} × {B} = {AB}</strong> = MCD × MCM = <strong>{G} × {L} = {GL}</strong>.",
-        "insight_shared_one": "<strong>{A}</strong> y <strong>{B}</strong> comparten el primo <strong>{primes}</strong>. El MCD toma solo los bloques verdes compartidos. El MCM toma todos los bloques — verdes compartidos, azules adicionales de A, rojos adicionales de B — sin contar ningún primo dos veces. Siempre es cierto: <strong>{A} × {B} = {AB}</strong> = MCD × MCM = <strong>{G} × {L} = {GL}</strong>.",
+        "insight_coprime": "<strong>$1</strong> y <strong>$2</strong> son coprimos — no comparten factores primos, por lo que el MCD = 1. El MCM es simplemente su producto. Siempre es cierto: <strong>$1 × $2 = $5</strong> = MCD × MCM = <strong>1 × $4 = $4</strong>.",
+        "insight_shared_many": "<strong>$1</strong> y <strong>$2</strong> comparten los primos <strong>$7</strong>. El MCD toma solo los bloques verdes compartidos. El MCM toma todos los bloques — verdes compartidos, azules adicionales de A, rojos adicionales de B — sin contar ningún primo dos veces. Siempre es cierto: <strong>$1 × $2 = $5</strong> = MCD × MCM = <strong>$3 × $4 = $6</strong>.",
+        "insight_shared_one": "<strong>$1</strong> y <strong>$2</strong> comparten el primo <strong>$7</strong>. El MCD toma solo los bloques verdes compartidos. El MCM toma todos los bloques — verdes compartidos, azules adicionales de A, rojos adicionales de B — sin contar ningún primo dos veces. Siempre es cierto: <strong>$1 × $2 = $5</strong> = MCD × MCM = <strong>$3 × $4 = $6</strong>.",
         "label_choose": "Elige dos números",
         "label_factors": "Factores primos",
         "label_how": "Cómo se construyen el MCD y el MCM",
@@ -69,9 +69,9 @@ var messages = /* I18N_START */ {
         "gcd_formula_eq": "=",
         "gcd_none": "(bat ere ez — elkarrekiko lehenak)",
         "gcd_title": "ZKH — partekatutako faktoreak bakarrik gordetzen dira",
-        "insight_coprime": "<strong>{A}</strong> eta <strong>{B}</strong> elkarrekiko lehenak dira — ez dute zenbaki lehenik partekatzen, beraz ZKH = 1. MKT haien biderkadura da, zuzenean. Beti egia: <strong>{A} × {B} = {AB}</strong> = <strong>ZKH × MKT</strong> = <strong>1 × {L} = {L}</strong>.",
-        "insight_shared_many": "<strong>{A}</strong> eta <strong>{B}</strong>-k <strong>{primes}</strong> zenbaki lehenak partekatzen dituzte. ZKHk bloke berde partekatuak bakarrik hartzen ditu. MKTk bloke guztiak hartzen ditu — berde partekatuak, A-ren soberakinak urdin, B-renak gorri — zenbaki lehenik birritan zenbatu gabe. Beti egia: <strong>{A} × {B} = {AB}</strong> = <strong>ZKH × MKT</strong> = <strong>{G} × {L} = {GL}</strong>.",
-        "insight_shared_one": "<strong>{A}</strong> eta <strong>{B}</strong>-k <strong>{primes}</strong> zenbaki lehena partekatzen dute. ZKHk bloke berde partekatuak bakarrik hartzen ditu. MKTk bloke guztiak hartzen ditu — berde partekatuak, A-ren soberakin urdinak, B-renak gorri — zenbaki lehenik birritan zenbatu gabe. Beti egia: <strong>{A} × {B} = {AB}</strong> = <strong>ZKH × MKT</strong> = <strong>{G} × {L} = {GL}</strong>.",
+        "insight_coprime": "<strong>$1</strong> eta <strong>$2</strong> elkarrekiko lehenak dira — ez dute zenbaki lehenik partekatzen, beraz ZKH = 1. MKT haien biderkadura da, zuzenean. Beti egia: <strong>$1 × $2 = $5</strong> = <strong>ZKH × MKT</strong> = <strong>1 × $4 = $4</strong>.",
+        "insight_shared_many": "<strong>$1</strong> eta <strong>$2</strong>-k <strong>$7</strong> zenbaki lehenak partekatzen dituzte. ZKHk bloke berde partekatuak bakarrik hartzen ditu. MKTk bloke guztiak hartzen ditu — berde partekatuak, A-ren soberakinak urdin, B-renak gorri — zenbaki lehenik birritan zenbatu gabe. Beti egia: <strong>$1 × $2 = $5</strong> = <strong>ZKH × MKT</strong> = <strong>$3 × $4 = $6</strong>.",
+        "insight_shared_one": "<strong>$1</strong> eta <strong>$2</strong>-k <strong>$7</strong> zenbaki lehena partekatzen dute. ZKHk bloke berde partekatuak bakarrik hartzen ditu. MKTk bloke guztiak hartzen ditu — berde partekatuak, A-ren soberakin urdinak, B-renak gorri — zenbaki lehenik birritan zenbatu gabe. Beti egia: <strong>$1 × $2 = $5</strong> = <strong>ZKH × MKT</strong> = <strong>$3 × $4 = $6</strong>.",
         "label_choose": "Aukeratu bi zenbaki",
         "label_factors": "Zenbaki lehenen faktorizazioa",
         "label_how": "Nola eraikitzen dira ZKH eta MKT",
@@ -86,9 +86,9 @@ var messages = /* I18N_START */ {
         "gcd_formula_eq": "=",
         "gcd_none": "(aucun — premiers entre eux)",
         "gcd_title": "PGCD — ne garder que les facteurs partagés",
-        "insight_coprime": "<strong>{A}</strong> et <strong>{B}</strong> sont premiers entre eux — ils ne partagent aucun facteur premier, donc PGCD = 1. Le PPCM est simplement leur produit. Toujours vrai : <strong>{A} × {B} = {AB}</strong> = PGCD × PPCM = <strong>1 × {L} = {L}</strong>.",
-        "insight_shared_many": "<strong>{A}</strong> et <strong>{B}</strong> partagent les nombres premiers <strong>{primes}</strong>. Le PGCD ne prend que les blocs verts partagés. Le PPCM prend tous les blocs — verts partagés, bleus de A, rouges de B — sans compter aucun nombre premier deux fois. Toujours vrai : <strong>{A} × {B} = {AB}</strong> = PGCD × PPCM = <strong>{G} × {L} = {GL}</strong>.",
-        "insight_shared_one": "<strong>{A}</strong> et <strong>{B}</strong> partagent le nombre premier <strong>{primes}</strong>. Le PGCD ne prend que les blocs verts partagés. Le PPCM prend tous les blocs — verts partagés, bleus de A, rouges de B — sans compter aucun nombre premier deux fois. Toujours vrai : <strong>{A} × {B} = {AB}</strong> = PGCD × PPCM = <strong>{G} × {L} = {GL}</strong>.",
+        "insight_coprime": "<strong>$1</strong> et <strong>$2</strong> sont premiers entre eux — ils ne partagent aucun facteur premier, donc PGCD = 1. Le PPCM est simplement leur produit. Toujours vrai : <strong>$1 × $2 = $5</strong> = PGCD × PPCM = <strong>1 × $4 = $4</strong>.",
+        "insight_shared_many": "<strong>$1</strong> et <strong>$2</strong> partagent les nombres premiers <strong>$7</strong>. Le PGCD ne prend que les blocs verts partagés. Le PPCM prend tous les blocs — verts partagés, bleus de A, rouges de B — sans compter aucun nombre premier deux fois. Toujours vrai : <strong>$1 × $2 = $5</strong> = PGCD × PPCM = <strong>$3 × $4 = $6</strong>.",
+        "insight_shared_one": "<strong>$1</strong> et <strong>$2</strong> partagent le nombre premier <strong>$7</strong>. Le PGCD ne prend que les blocs verts partagés. Le PPCM prend tous les blocs — verts partagés, bleus de A, rouges de B — sans compter aucun nombre premier deux fois. Toujours vrai : <strong>$1 × $2 = $5</strong> = PGCD × PPCM = <strong>$3 × $4 = $6</strong>.",
         "label_choose": "Choisissez deux nombres",
         "label_factors": "Facteurs premiers",
         "label_how": "Comment le PGCD et le PPCM sont construits",
@@ -103,9 +103,9 @@ var messages = /* I18N_START */ {
         "gcd_formula_eq": "=",
         "gcd_none": "(níl aon cheann — comhphríomh)",
         "gcd_title": "GCD — coinnigh fachtóirí comhroinnte amháin",
-        "insight_coprime": "Is comhphríomha iad <strong>{A} agus <strong>{B} — níl aon phríomhfhachtóirí roinnte acu, mar sin tá GCD = 1. Níl san LCM ach a dtáirge. Fíor i gcónaí: <strong>{A} × {B} = {AB}/strong> = GCD × LCM = <strong>1 × {L} = {L}</strong>.",
-        "insight_shared_many": "Roinneann <strong>{A}</strong> agus <strong>{B}</strong> na príomhuimhreacha <strong>{primes}</strong>. Ní ghlacann an GCD ach na bloic chomhroinnte glasa. Glacann an LCM na blocanna uile — comhroinnte glasa, breiseáin ghorma ó A, breiseáin dhearga ó B — gan aon phríomh a chomhaireamh faoi dhó. Fíor i gcónaí: <strong>{A} × {B} = {AB}</strong> = GCD × LCM = <strong>{G} × {L} = {GL}</strong>.",
-        "insight_shared_one": "Roinneann <strong>{A}/<strong> agus <strong>{B}/<strong> na príomhuimhreacha <strong>{primes}</strong>. Ní ghlacann an GCD ach na bloic chomhroinnte glasa. Glacann an LCM na bloic uile — bloic chomhroinnte glasa, breiseáin ghorma ó A, breiseáin dhearga ó B — gan aon phríomhuimhreacha a chomhaireamh faoi dhó. Fíor i gcónaí: <strong>{A} × {B} = {AB}/<strong> = GCD × LCM = <strong>{G} × {L} = {GL}/<strong>.",
+        "insight_coprime": "Is comhphríomha iad <strong>$1</strong> agus <strong>$2</strong> — níl aon phríomhfhachtóirí roinnte acu, mar sin tá GCD = 1. Níl san LCM ach a dtáirge. Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>1 × $4 = $4</strong>.",
+        "insight_shared_many": "Roinneann <strong>$1</strong> agus <strong>$2</strong> na príomhuimhreacha <strong>$7</strong>. Ní ghlacann an GCD ach na bloic chomhroinnte glasa. Glacann an LCM na blocanna uile — comhroinnte glasa, breiseáin ghorma ó A, breiseáin dhearga ó B — gan aon phríomh a chomhaireamh faoi dhó. Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>$3 × $4 = $6</strong>.",
+        "insight_shared_one": "Roinneann <strong>$1</strong> agus <strong>$2</strong> na príomhuimhreacha <strong>$7</strong>. Ní ghlacann an GCD ach na bloic chomhroinnte glasa. Glacann an LCM na bloic uile — bloic chomhroinnte glasa, breiseáin ghorma ó A, breiseáin dhearga ó B — gan aon phríomhuimhreacha a chomhaireamh faoi dhó. Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>$3 × $4 = $6</strong>.",
         "label_choose": "Roghnaigh dhá uimhir",
         "label_factors": "Príomhfhachtóirí",
         "label_how": "Conas a thógtar GCD agus LCM",
@@ -133,9 +133,9 @@ var messages = /* I18N_START */ {
         "gcd_formula_eq": "=",
         "gcd_none": "(geen — onderling ondeelbaar)",
         "gcd_title": "GGD — behoud alleen gedeelde factoren",
-        "insight_coprime": "<strong>{A}</strong> en <strong>{B}</strong> zijn onderling ondeelbaar — ze delen geen priemfactoren, dus GGD = 1. Het KGV is simpelweg hun product. Altijd waar: <strong>{A} × {B} = {AB}</strong> = GGD × KGV = <strong>1 × {L} = {L}</strong>.",
-        "insight_shared_many": "<strong>{A}</strong> en <strong>{B}</strong> delen de priemfactoren <strong>{primes}</strong>. De GGD neemt alleen de groene gedeelde blokken. Het KGV neemt alle blokken — groen gedeeld, blauw extra van A, rood extra van B — zonder een priemfactor twee keer te tellen. Altijd waar: <strong>{A} × {B} = {AB}</strong> = GGD × KGV = <strong>{G} × {L} = {GL}</strong>.",
-        "insight_shared_one": "<strong>{A}</strong> en <strong>{B}</strong> delen de priemfactor <strong>{primes}</strong>. De GGD neemt alleen de groene gedeelde blokken. Het KGV neemt alle blokken — groen gedeeld, blauw extra van A, rood extra van B — zonder een priemfactor twee keer te tellen. Altijd waar: <strong>{A} × {B} = {AB}</strong> = GGD × KGV = <strong>{G} × {L} = {GL}</strong>.",
+        "insight_coprime": "<strong>$1</strong> en <strong>$2</strong> zijn onderling ondeelbaar — ze delen geen priemfactoren, dus GGD = 1. Het KGV is simpelweg hun product. Altijd waar: <strong>$1 × $2 = $5</strong> = GGD × KGV = <strong>1 × $4 = $4</strong>.",
+        "insight_shared_many": "<strong>$1</strong> en <strong>$2</strong> delen de priemfactoren <strong>$7</strong>. De GGD neemt alleen de groene gedeelde blokken. Het KGV neemt alle blokken — groen gedeeld, blauw extra van A, rood extra van B — zonder een priemfactor twee keer te tellen. Altijd waar: <strong>$1 × $2 = $5</strong> = GGD × KGV = <strong>$3 × $4 = $6</strong>.",
+        "insight_shared_one": "<strong>$1</strong> en <strong>$2</strong> delen de priemfactor <strong>$7</strong>. De GGD neemt alleen de groene gedeelde blokken. Het KGV neemt alle blokken — groen gedeeld, blauw extra van A, rood extra van B — zonder een priemfactor twee keer te tellen. Altijd waar: <strong>$1 × $2 = $5</strong> = GGD × KGV = <strong>$3 × $4 = $6</strong>.",
         "label_choose": "Kies twee getallen",
         "label_factors": "Priemfactoren",
         "label_how": "Hoe GGD en KGV worden opgebouwd",
@@ -161,6 +161,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 /* ── MATHS ────────────────────────────────────────────────────────────────── */
@@ -400,7 +401,7 @@ function update( root ) {
     // ── Insight
     var insightEl = root.querySelector( '#hw-fct-insight' );
     var sharedPrimes = Object.keys( cl.sharedCnt ).map( Number ).sort( function ( a, b ) { return a - b; } );
-    var vars = { A: A, B: B, G: G, L: L, AB: A * B, GL: G * L, primes: sharedPrimes.join( ', ' ) };
+    var vars = [ A, B, G, L, A * B, G * L, sharedPrimes.join( ', ' ) ];
     if ( G === 1 ) {
         insightEl.innerHTML = t( 'insight_coprime', vars );
     } else if ( sharedPrimes.length === 1 ) {

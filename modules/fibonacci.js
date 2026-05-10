@@ -36,16 +36,16 @@ var messages = /* I18N_START */ {
         "card_ratio_lbl": "Current ratio F(n+1) ÷ F(n)",
         "chart_step": "step",
         "diff": "diff:",
-        "insight_close": "<strong>{fa} + {fb} = {fr}</strong>. The ratio = <strong>{ratio}</strong> — within <strong>{error}</strong> of φ. Almost fully converged.",
-        "insight_converged": "<strong>{fa} + {fb} = {fr}</strong>. The ratio = <strong>{ratio}</strong> — within <strong>{error}</strong> of φ. The sequence has converged to 6 decimal places.",
-        "insight_normal": "<strong>{fa} + {fb} = {fr}</strong>. The ratio = <strong>{ratio}</strong>, still <strong>{error}</strong> away from φ = 1.61803…",
+        "insight_close": "<strong>$1 + $2 = $3</strong>. The ratio = <strong>$4</strong> — within <strong>$5</strong> of φ. Almost fully converged.",
+        "insight_converged": "<strong>$1 + $2 = $3</strong>. The ratio = <strong>$4</strong> — within <strong>$5</strong> of φ. The sequence has converged to 6 decimal places.",
+        "insight_normal": "<strong>$1 + $2 = $3</strong>. The ratio = <strong>$4</strong>, still <strong>$5</strong> away from φ = 1.61803…",
         "insight_step1": "We start with <strong>1 + 1 = 2</strong>. The ratio 2 ÷ 1 = <strong>2.000000</strong> — still far from φ ≈ 1.61803.",
         "insight_step2": "<strong>1 + 2 = 3</strong>. The ratio 3 ÷ 2 = <strong>1.500000</strong> — already closer. Each step narrows the gap further.",
         "sec_addition": "Addition",
         "sec_chart": "Convergence toward φ",
         "sec_sequence": "Sequence so far",
         "sec_steps": "Step through the Fibonacci sequence",
-        "step_label": "Step {step} of {total}",
+        "step_label": "Step $1 of $2",
         "hint": "Step through the sequence to see convergence"
     },
     "es": {
@@ -56,16 +56,16 @@ var messages = /* I18N_START */ {
         "card_ratio_lbl": "Proporción actual F(n+1) ÷ F(n)",
         "chart_step": "paso",
         "diff": "dif:",
-        "insight_close": "<strong>{fa} + {fb} = {fr}</strong>. La proporción = <strong>{ratio}</strong> — a menos de <strong>{error}</strong> de φ. Casi completamente convergido.",
-        "insight_converged": "<strong>{fa} + {fb} = {fr}</strong>. La proporción = <strong>{ratio}</strong> — a menos de <strong>{error}</strong> de φ. La secuencia ha convergido a 6 decimales.",
-        "insight_normal": "<strong>{fa} + {fb} = {fr}</strong>. La proporción = <strong>{ratio}</strong>, todavía a <strong>{error}</strong> de φ = 1.61803…",
+        "insight_close": "<strong>$1 + $2 = $3</strong>. La proporción = <strong>$4</strong> — a menos de <strong>$5</strong> de φ. Casi completamente convergido.",
+        "insight_converged": "<strong>$1 + $2 = $3</strong>. La proporción = <strong>$4</strong> — a menos de <strong>$5</strong> de φ. La secuencia ha convergido a 6 decimales.",
+        "insight_normal": "<strong>$1 + $2 = $3</strong>. La proporción = <strong>$4</strong>, todavía a <strong>$5</strong> de φ = 1.61803…",
         "insight_step1": "Empezamos con <strong>1 + 1 = 2</strong>. La proporción 2 ÷ 1 = <strong>2.000000</strong> — todavía lejos de φ ≈ 1.61803.",
         "insight_step2": "<strong>1 + 2 = 3</strong>. La proporción 3 ÷ 2 = <strong>1.500000</strong> — ya más cerca. Cada paso reduce la brecha.",
         "sec_addition": "Suma",
         "sec_chart": "Convergencia hacia φ",
         "sec_sequence": "Secuencia hasta ahora",
         "sec_steps": "Pasos de la secuencia de Fibonacci",
-        "step_label": "Paso {step} de {total}"
+        "step_label": "Paso $1 de $2"
     },
     "eu": {
         "_name": "Fibonacci sekuentzia",
@@ -75,16 +75,16 @@ var messages = /* I18N_START */ {
         "card_ratio_lbl": "Uneko erlazioa F(n+1) ÷ F(n)",
         "chart_step": "urratsa",
         "diff": "aldea:",
-        "insight_close": "<strong>{fa} + {fb} = {fr}</strong>. Erlazioa = <strong>{ratio}</strong> — φ-tik <strong>{error}</strong>-ra. Ia erabat hurbildu da.",
-        "insight_converged": "<strong>{fa} + {fb} = {fr}</strong>. Erlazioa = <strong>{ratio}</strong> — φ-tik <strong>{error}</strong>-ra. Segida 6 dezimaletara hurbildu da.",
-        "insight_normal": "<strong>{fa} + {fb} = {fr}</strong>. Erlazioa = <strong>{ratio}</strong>, oraindik <strong>{error}</strong> urrun φ = 1,61803…-tik.",
+        "insight_close": "<strong>$1 + $2 = $3</strong>. Erlazioa = <strong>$4</strong> — φ-tik <strong>$5</strong>-ra. Ia erabat hurbildu da.",
+        "insight_converged": "<strong>$1 + $2 = $3</strong>. Erlazioa = <strong>$4</strong> — φ-tik <strong>$5</strong>-ra. Segida 6 dezimaletara hurbildu da.",
+        "insight_normal": "<strong>$1 + $2 = $3</strong>. Erlazioa = <strong>$4</strong>, oraindik <strong>$5</strong> urrun φ = 1,61803…-tik.",
         "insight_step1": "<strong>1 + 1 = 2</strong>-rekin hasten gara. 2 ÷ 1 = <strong>2,000000</strong> erlazioa — oraindik urrun φ ≈ 1,61803-tik.",
         "insight_step2": "<strong>1 + 2 = 3</strong>. 3 ÷ 2 = <strong>1,500000</strong> erlazioa — hurbilago dagoeneko. Urrats bakoitzak tartea murriztuko du.",
         "sec_addition": "Batuketa",
         "sec_chart": "φ-rantz konbergentzia",
         "sec_sequence": "Orain arteko segida",
         "sec_steps": "Fibonacci segidaren urratsak",
-        "step_label": "{step}. urratsa {total}tik"
+        "step_label": "$1. urratsa $2tik"
     },
     "fr": {
         "_name": "Suite de Fibonacci",
@@ -94,16 +94,16 @@ var messages = /* I18N_START */ {
         "card_ratio_lbl": "Rapport actuel F(n+1) ÷ F(n)",
         "chart_step": "étape",
         "diff": "diff :",
-        "insight_close": "<strong>{fa} + {fb} = {fr}</strong>. Le rapport = <strong>{ratio}</strong> — à <strong>{error}</strong> de φ près. Presque totalement convergé.",
-        "insight_converged": "<strong>{fa} + {fb} = {fr}</strong>. Le rapport = <strong>{ratio}</strong> — à <strong>{error}</strong> de φ près. La suite a convergé à 6 décimales.",
-        "insight_normal": "<strong>{fa} + {fb} = {fr}</strong>. Le rapport = <strong>{ratio}</strong>, encore à <strong>{error}</strong> de φ = 1.61803…",
+        "insight_close": "<strong>$1 + $2 = $3</strong>. Le rapport = <strong>$4</strong> — à <strong>$5</strong> de φ près. Presque totalement convergé.",
+        "insight_converged": "<strong>$1 + $2 = $3</strong>. Le rapport = <strong>$4</strong> — à <strong>$5</strong> de φ près. La suite a convergé à 6 décimales.",
+        "insight_normal": "<strong>$1 + $2 = $3</strong>. Le rapport = <strong>$4</strong>, encore à <strong>$5</strong> de φ = 1.61803…",
         "insight_step1": "On commence par <strong>1 + 1 = 2</strong>. Le rapport 2 ÷ 1 = <strong>2.000000</strong> — encore loin de φ ≈ 1.61803.",
         "insight_step2": "<strong>1 + 2 = 3</strong>. Le rapport 3 ÷ 2 = <strong>1.500000</strong> — déjà plus proche. Chaque étape réduit l'écart.",
         "sec_addition": "Addition",
         "sec_chart": "Convergence vers φ",
         "sec_sequence": "Suite jusqu'ici",
         "sec_steps": "Étapes de la suite de Fibonacci",
-        "step_label": "Étape {step} sur {total}"
+        "step_label": "Étape $1 sur $2"
     },
     "ga": {
         "_name": "Seicheamh Fibonacci",
@@ -113,16 +113,16 @@ var messages = /* I18N_START */ {
         "card_ratio_lbl": "Cóimheas reatha F(n+1) ÷ F(n)",
         "chart_step": "céim",
         "diff": "difríocht:",
-        "insight_close": "<strong>{fa} + {fb} = {fr}</strong>. An cóimheas = <strong>{ratio}</strong> — laistigh de <strong>{error}</strong> de φ. Beagnach comhtháite go hiomlán.",
-        "insight_converged": "<strong>{fa} + {fb} = {fr}</strong>. An cóimheas = <strong>{ratio}</strong> — laistigh de <strong>{error}</strong> de φ. Tá an seicheamh comhtháite go 6 ionad deachúil.",
-        "insight_normal": "<strong>{fa} + {fb} = {fr}</strong>. An cóimheas = <strong>{ratio}</strong>, fós <strong>{error}</strong> ar shiúl ó φ = 1.61803…",
+        "insight_close": "<strong>$1 + $2 = $3</strong>. An cóimheas = <strong>$4</strong> — laistigh de <strong>$5</strong> de φ. Beagnach comhtháite go hiomlán.",
+        "insight_converged": "<strong>$1 + $2 = $3</strong>. An cóimheas = <strong>$4</strong> — laistigh de <strong>$5</strong> de φ. Tá an seicheamh comhtháite go 6 ionad deachúil.",
+        "insight_normal": "<strong>$1 + $2 = $3</strong>. An cóimheas = <strong>$4</strong>, fós <strong>$5</strong> ar shiúl ó φ = 1.61803…",
         "insight_step1": "Tosaímid le *1 + 1 = 2*. Tá an cóimheas 2 ÷ 1 = *2.000000* — fós i bhfad ó φ ≈ 1.61803.",
         "insight_step2": "<strong>1 + 2 = 3</strong>. Tá an cóimheas 3 ÷ 2 = <strong>1.500000</strong> níos gaire cheana féin. Laghdaíonn gach céim an bhearna níos mó.",
         "sec_addition": "Breisiú",
         "sec_chart": "Comhtháthú i dtreo φ",
         "sec_sequence": "Seicheamh go dtí seo",
         "sec_steps": "Céim tríd an seicheamh Fibonacci",
-        "step_label": "Céim {step} de {total}"
+        "step_label": "Céim $1 de $2"
     },
     "ko": {
         "_name": "피보나치 수열",
@@ -137,16 +137,16 @@ var messages = /* I18N_START */ {
         "card_ratio_lbl": "Huidige verhouding F(n+1) ÷ F(n)",
         "chart_step": "stap",
         "diff": "verschil:",
-        "insight_close": "<strong>{fa} + {fb} = {fr}</strong>. De verhouding = <strong>{ratio}</strong> — binnen <strong>{error}</strong> van φ. Bijna volledig geconvergeerd.",
-        "insight_converged": "<strong>{fa} + {fb} = {fr}</strong>. De verhouding = <strong>{ratio}</strong> — binnen <strong>{error}</strong> van φ. De reeks is geconvergeerd tot 6 decimalen.",
-        "insight_normal": "<strong>{fa} + {fb} = {fr}</strong>. De verhouding = <strong>{ratio}</strong>, nog <strong>{error}</strong> verwijderd van φ = 1.61803…",
+        "insight_close": "<strong>$1 + $2 = $3</strong>. De verhouding = <strong>$4</strong> — binnen <strong>$5</strong> van φ. Bijna volledig geconvergeerd.",
+        "insight_converged": "<strong>$1 + $2 = $3</strong>. De verhouding = <strong>$4</strong> — binnen <strong>$5</strong> van φ. De reeks is geconvergeerd tot 6 decimalen.",
+        "insight_normal": "<strong>$1 + $2 = $3</strong>. De verhouding = <strong>$4</strong>, nog <strong>$5</strong> verwijderd van φ = 1.61803…",
         "insight_step1": "We beginnen met <strong>1 + 1 = 2</strong>. De verhouding 2 ÷ 1 = <strong>2.000000</strong> — nog ver van φ ≈ 1.61803.",
         "insight_step2": "<strong>1 + 2 = 3</strong>. De verhouding 3 ÷ 2 = <strong>1.500000</strong> — al dichterbij. Elke stap verkleint het verschil.",
         "sec_addition": "Optelling",
         "sec_chart": "Convergentie naar φ",
         "sec_sequence": "Reeks tot nu toe",
         "sec_steps": "Stap door de Fibonacci-reeks",
-        "step_label": "Stap {step} van {total}",
+        "step_label": "Stap $1 van $2",
         "hint": "Stap door de reeks om de convergentie te zien"
     }
 } /* I18N_END */
@@ -164,6 +164,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 /* ── CONSTANTS ────────────────────────────────────────────────────────────── */
@@ -278,7 +279,7 @@ function update( root, step ) {
     var fr = fibs[ step + 1 ];
 
     /* Controls */
-    root.querySelector( '#hw-fib-step-label'  ).textContent = t( 'step_label', { step: step, total: MAX_STEPS } );
+    root.querySelector( '#hw-fib-step-label'  ).textContent = t( 'step_label', [ step, MAX_STEPS ] );
     root.querySelector( '#hw-fib-btn-prev'    ).disabled    = step <= 1;
     root.querySelector( '#hw-fib-btn-next'    ).disabled    = step >= MAX_STEPS;
 
@@ -341,7 +342,7 @@ function update( root, step ) {
     /* Insight */
     var ins  = root.querySelector( '#hw-fib-insight' );
     var errFmt = error < 0.000001 ? error.toFixed( 10 ) : error < 0.0001 ? error.toFixed( 8 ) : error.toFixed( 6 );
-    var vars = { fa: fa, fb: fb, fr: fr, ratio: ratio.toFixed( 6 ), error: errFmt };
+    var vars = [ fa, fb, fr, ratio.toFixed( 6 ), errFmt ];
     if ( step === 1 ) {
         ins.innerHTML = t( 'insight_step1', vars );
     } else if ( step === 2 ) {

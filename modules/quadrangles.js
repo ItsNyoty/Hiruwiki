@@ -27,14 +27,14 @@
     },
     "en": {
         "_name": "Quadrilaterals",
-        "areaDiagHalf": "Formula: A = (d₁ × d₂) / 2\nd₁ (AC) = $1 cm\nd₂ (BD) = $2 cm\n= ($1 × $2) / 2",
-        "areaGaussHeader": "Gauss formula (shoelace):\nA = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|",
-        "areaGaussSum": "Σ = $1\nA = ½ × |$1|",
+        "areaDiagHalf": "Formula: A = (d₁ × d₂) / 2 d₁ (AC) = $1 cm d₂ (BD) = $2 cm = ($1 × $2) / 2",
+        "areaGaussHeader": "Gauss formula (shoelace): A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|",
+        "areaGaussSum": "Σ = $1 A = ½ × |$1|",
         "areaGaussTerm": "(x$1·y$2 − x$2·y$1) = $3",
-        "areaParallelogram": "Formula: A = base × height\nbase (AB) = $1 cm\nheight = $2 cm\n= $1 × $2",
-        "areaRectangle": "Formula: A = width × height\n= $1 × $2",
-        "areaSquare": "Formula: A = side²\n= $1²",
-        "areaTrapezoid": "Formula: A = (b₁ + b₂) / 2 × h\nb₁ (AB) = $1 cm\nb₂ (CD) = $2 cm\nheight = $3 cm\n= ($1 + $2) / 2 × $3",
+        "areaParallelogram": "Formula: A = base × height base (AB) = $1 cm height = $2 cm = $1 × $2",
+        "areaRectangle": "Formula: A = width × height = $1 × $2",
+        "areaSquare": "Formula: A = side² = $1²",
+        "areaTrapezoid": "Formula: A = (b₁ + b₂) / 2 × h b₁ (AB) = $1 cm b₂ (CD) = $2 cm height = $3 cm = ($1 + $2) / 2 × $3",
         "headingArea": "Area",
         "headingClassification": "Classification",
         "headingSides": "Sides and diagonals",
@@ -267,6 +267,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
   // ── Widget ───────────────────────────────────────────────────────────────────

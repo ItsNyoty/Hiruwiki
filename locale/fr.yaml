@@ -20,11 +20,11 @@ fr:
   angles:
     _name: Angles
     bisector: Bissectrice
-    bisectorResult: 'Bissectrice : {0}°'
+    bisectorResult: 'Bissectrice : $1°'
     complement: Complémentaire
     explement: Explémentaire
     notDefined: Non défini pour cet angle
-    resultAngle: 'Angle {0} : {1}°'
+    resultAngle: 'Angle $1 : $2°'
     supplement: Supplémentaire
   circle-proof:
     _name: Preuve du cercle
@@ -52,16 +52,16 @@ fr:
     eq_lbl_divisor: diviseur
     eq_lbl_quotient: quotient
     eq_lbl_remainder: reste
-    insight_exact: <strong>{N} ÷ {D} = {Q}</strong> exactement — pas de reste. La
-      barre se remplit parfaitement en <strong>{Q}</strong> morceaux égaux. Cela signifie
-      que <strong>{D}</strong> est un diviseur de <strong>{N}</strong>.
-    insight_less: <strong>{N}</strong> est plus petit que le diviseur <strong>{D}</strong>,
+    insight_exact: <strong>$1 ÷ $2 = $3</strong> exactement — pas de reste. La
+      barre se remplit parfaitement en <strong>$3</strong> morceaux égaux. Cela signifie
+      que <strong>$2</strong> est un diviseur de <strong>$1</strong>.
+    insight_less: <strong>$1</strong> est plus petit que le diviseur <strong>$2</strong>,
       donc il contient <strong>0</strong> morceau entier. Toute la valeur est le reste.
       Le reste est toujours inférieur au diviseur.
-    insight_normal: '<strong>{N} ÷ {D} = {Q}</strong> reste <strong>{R}</strong>.
-      Notez que la pièce rouge (<strong>{R}</strong>) est toujours plus courte qu''un
-      morceau bleu (<strong>{D}</strong>). Le reste est toujours strictement inférieur
-      au diviseur. Vérification : <strong>{Q} × {D} + {R} = {QD} + {R} = {N}</strong>
+    insight_normal: '<strong>$1 ÷ $2 = $3</strong> reste <strong>$4</strong>.
+      Notez que la pièce rouge (<strong>$4</strong>) est toujours plus courte qu''un
+      morceau bleu (<strong>$2</strong>). Le reste est toujours strictement inférieur
+      au diviseur. Vérification : <strong>$3 × $2 + $4 = $5 + $4 = $1</strong>
       ✓'
     label_choose: Choisissez le dividende et le diviseur
     label_dividend: Dividende (le nombre à diviser)
@@ -70,27 +70,27 @@ fr:
     label_repadd: Addition répétée
     repadd_exact: — divise exactement !
     repadd_leftover: reste
-    repadd_less: '{N} est inférieur à {D}, donc le quotient est 0 et toute la valeur
+    repadd_less: '$1 est inférieur à $2, donc le quotient est 0 et toute la valeur
       est le reste.'
   factors:
     _name: Facteurs premiers
     gcd_formula_eq: ' ='
     gcd_none: (aucun — premiers entre eux)
     gcd_title: PGCD — ne garder que les facteurs partagés
-    insight_coprime: '<strong>{A}</strong> et <strong>{B}</strong> sont premiers entre
+    insight_coprime: '<strong>$1</strong> et <strong>$2</strong> sont premiers entre
       eux — ils ne partagent aucun facteur premier, donc PGCD = 1. Le PPCM est simplement
-      leur produit. Toujours vrai : <strong>{A} × {B} = {AB}</strong> = PGCD × PPCM
-      = <strong>1 × {L} = {L}</strong>.'
-    insight_shared_many: '<strong>{A}</strong> et <strong>{B}</strong> partagent les
-      nombres premiers <strong>{primes}</strong>. Le PGCD ne prend que les blocs verts
+      leur produit. Toujours vrai : <strong>$1 × $2 = $5</strong> = PGCD × PPCM
+      = <strong>1 × $4 = $4</strong>.'
+    insight_shared_many: '<strong>$1</strong> et <strong>$2</strong> partagent les
+      nombres premiers <strong>$7</strong>. Le PGCD ne prend que les blocs verts
       partagés. Le PPCM prend tous les blocs — verts partagés, bleus de A, rouges
-      de B — sans compter aucun nombre premier deux fois. Toujours vrai : <strong>{A}
-      × {B} = {AB}</strong> = PGCD × PPCM = <strong>{G} × {L} = {GL}</strong>.'
-    insight_shared_one: '<strong>{A}</strong> et <strong>{B}</strong> partagent le
-      nombre premier <strong>{primes}</strong>. Le PGCD ne prend que les blocs verts
+      de B — sans compter aucun nombre premier deux fois. Toujours vrai : <strong>$1
+      × $2 = $5</strong> = PGCD × PPCM = <strong>$3 × $4 = $6</strong>.'
+    insight_shared_one: '<strong>$1</strong> et <strong>$2</strong> partagent le
+      nombre premier <strong>$7</strong>. Le PGCD ne prend que les blocs verts
       partagés. Le PPCM prend tous les blocs — verts partagés, bleus de A, rouges
-      de B — sans compter aucun nombre premier deux fois. Toujours vrai : <strong>{A}
-      × {B} = {AB}</strong> = PGCD × PPCM = <strong>{G} × {L} = {GL}</strong>.'
+      de B — sans compter aucun nombre premier deux fois. Toujours vrai : <strong>$1
+      × $2 = $5</strong> = PGCD × PPCM = <strong>$3 × $4 = $6</strong>.'
     label_choose: Choisissez deux nombres
     label_factors: Facteurs premiers
     label_how: Comment le PGCD et le PPCM sont construits
@@ -107,12 +107,12 @@ fr:
     card_ratio_lbl: Rapport actuel F(n+1) ÷ F(n)
     chart_step: étape
     diff: 'diff :'
-    insight_close: <strong>{fa} + {fb} = {fr}</strong>. Le rapport = <strong>{ratio}</strong>
-      — à <strong>{error}</strong> de φ près. Presque totalement convergé.
-    insight_converged: <strong>{fa} + {fb} = {fr}</strong>. Le rapport = <strong>{ratio}</strong>
-      — à <strong>{error}</strong> de φ près. La suite a convergé à 6 décimales.
-    insight_normal: <strong>{fa} + {fb} = {fr}</strong>. Le rapport = <strong>{ratio}</strong>,
-      encore à <strong>{error}</strong> de φ = 1.61803…
+    insight_close: <strong>$1 + $2 = $3</strong>. Le rapport = <strong>$4</strong>
+      — à <strong>$5</strong> de φ près. Presque totalement convergé.
+    insight_converged: <strong>$1 + $2 = $3</strong>. Le rapport = <strong>$4</strong>
+      — à <strong>$5</strong> de φ près. La suite a convergé à 6 décimales.
+    insight_normal: <strong>$1 + $2 = $3</strong>. Le rapport = <strong>$4</strong>,
+      encore à <strong>$5</strong> de φ = 1.61803…
     insight_step1: On commence par <strong>1 + 1 = 2</strong>. Le rapport 2 ÷ 1 =
       <strong>2.000000</strong> — encore loin de φ ≈ 1.61803.
     insight_step2: <strong>1 + 2 = 3</strong>. Le rapport 3 ÷ 2 = <strong>1.500000</strong>
@@ -121,7 +121,7 @@ fr:
     sec_chart: Convergence vers φ
     sec_sequence: Suite jusqu'ici
     sec_steps: Étapes de la suite de Fibonacci
-    step_label: Étape {step} sur {total}
+    step_label: Étape $1 sur $2
   hexagon-angles:
     2quads: 2 quadrilatères × 360°
     4triangles: 4 triangles × 180°
@@ -187,14 +187,14 @@ fr:
     insight_full_loss: Une perte de <strong>100%</strong> ramène la valeur à <strong>0</strong>.
       La récupération à partir de zéro est <strong>impossible</strong> — n'importe
       quel pourcentage de 0 est toujours 0.
-    insight_gain: Un gain de <strong>+{pct}%</strong> porte 100 à <strong>{result}</strong>.
+    insight_gain: Un gain de <strong>+$1%</strong> porte 100 à <strong>$2</strong>.
       La barre verte en haut et la barre rouge en bas ont la même largeur — mais les
-      pourcentages diffèrent. Revenir à 100 ne prend que <strong>{recovery}%</strong>,
-      pas −{pct}%.
-    insight_loss: Une perte de <strong>{pct}%</strong> ramène 100 à <strong>{result}</strong>.
+      pourcentages diffèrent. Revenir à 100 ne prend que <strong>$3%</strong>,
+      pas −$1%.
+    insight_loss: Une perte de <strong>$1%</strong> ramène 100 à <strong>$2</strong>.
       La barre rouge en haut et la barre verte en bas couvrent la même distance physique
       — mais les pourcentages diffèrent car ils s'appliquent à des bases différentes.
-      La récupération nécessite <strong>+{recovery}%</strong>, pas +{pct}%.
+      La récupération nécessite <strong>+$3%</strong>, pas +$1%.
     insight_zero: Aucun changement appliqué. Faites glisser le curseur pour explorer.
     label_after: après changement
     label_apply: APPLIQUER UN CHANGEMENT EN POURCENTAGE
@@ -216,34 +216,33 @@ fr:
     _name: Quadrilatères
     areaDiagHalf: |-
       Formule : A = (d₁ × d₂) / 2
-      d₁ (AC) = {0} cm
-      d₂ (BD) = {1} cm
-      = ({0} × {1}) / 2
+      d₁ (AC) = $1 cm
+      d₂ (BD) = $2 cm
+      = ($1 × $2) / 2
     areaGaussHeader: |-
       Formule de Gauss (shoelace) :
       A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
     areaGaussSum: |2-
-
-      Σ = {0}
-      A = ½ × |{0}|
-    areaGaussTerm: '  (x{0}·y{1} − x{1}·y{0}) = {2}'
+      Σ = $1
+      A = ½ × |$1|
+    areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
     areaParallelogram: |-
       Formule : A = base × hauteur
-      base (AB) = {0} cm
-      hauteur = {1} cm
-      = {0} × {1}
+      base (AB) = $1 cm
+      hauteur = $2 cm
+      = $1 × $2
     areaRectangle: |-
       Formule : A = largeur × hauteur
-      = {0} × {1}
+      = $1 × $2
     areaSquare: |-
       Formule : A = côté²
-      = {0}²
+      = $1²
     areaTrapezoid: |-
       Formule : A = (b₁ + b₂) / 2 × h
-      b₁ (AB) = {0} cm
-      b₂ (CD) = {1} cm
-      hauteur = {2} cm
-      = ({0} + {1}) / 2 × {2}
+      b₁ (AB) = $1 cm
+      b₂ (CD) = $2 cm
+      hauteur = $3 cm
+      = ($1 + $2) / 2 × $3
     headingArea: Aire
     headingClassification: Classification
     headingSides: Côtés et diagonales

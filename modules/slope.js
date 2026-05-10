@@ -50,6 +50,7 @@ function t(key, vars) {
 }
 
 
+
 function initSlope(container) {
 
 const size = 520;

@@ -37,8 +37,8 @@ var messages = /* I18N_START */ {
         "axis_zero": "0%",
         "hint": "Drag the slider left for a loss, right for a gain.",
         "insight_full_loss": "A loss of <strong>100%</strong> brings the value to <strong>0</strong>. Recovery from zero is <strong>impossible</strong> — any percentage of 0 is still 0.",
-        "insight_gain": "A gain of <strong>+{pct}%</strong> brings 100 up to <strong>{result}</strong>. The green span above and the red span below are the same width — but the percentages differ. Returning to 100 only takes <strong>{recovery}%</strong>, not −{pct}%.",
-        "insight_loss": "A loss of <strong>{pct}%</strong> brings 100 down to <strong>{result}</strong>. The red span above and the green span below cover the same physical distance — but the percentages differ because they apply to different bases. Recovery needs <strong>+{recovery}%</strong>, not +{pct}%.",
+        "insight_gain": "A gain of <strong>+$1%</strong> brings 100 up to <strong>$2</strong>. The green span above and the red span below are the same width — but the percentages differ. Returning to 100 only takes <strong>$3%</strong>, not −$1%.",
+        "insight_loss": "A loss of <strong>$1%</strong> brings 100 down to <strong>$2</strong>. The red span above and the green span below cover the same physical distance — but the percentages differ because they apply to different bases. Recovery needs <strong>+$3%</strong>, not +$1%.",
         "insight_zero": "No change applied. Drag the slider to explore.",
         "label_after": "after change",
         "label_apply": "APPLY A PERCENTAGE CHANGE",
@@ -53,8 +53,8 @@ var messages = /* I18N_START */ {
         "axis_zero": "0%",
         "hint": "Arrastra el control deslizante a la izquierda para una pérdida, a la derecha para una ganancia.",
         "insight_full_loss": "Una pérdida del <strong>100%</strong> lleva el valor a <strong>0</strong>. La recuperación desde cero es <strong>imposible</strong> — cualquier porcentaje de 0 sigue siendo 0.",
-        "insight_gain": "Una ganancia del <strong>+{pct}%</strong> aumenta 100 a <strong>{result}</strong>. La barra verde de arriba y la barra roja de abajo tienen el mismo ancho — pero los porcentajes difieren. Volver a 100 sólo requiere <strong>{recovery}%</strong>, no −{pct}%.",
-        "insight_loss": "Una pérdida del <strong>{pct}%</strong> reduce 100 a <strong>{result}</strong>. La barra roja de arriba y la barra verde de abajo cubren la misma distancia física — pero los porcentajes difieren porque se aplican a bases diferentes. Para recuperarse se necesita <strong>+{recovery}%</strong>, no +{pct}%.",
+        "insight_gain": "Una ganancia del <strong>+$1%</strong> aumenta 100 a <strong>$2</strong>. La barra verde de arriba y la barra roja de abajo tienen el mismo ancho — pero los porcentajes difieren. Volver a 100 sólo requiere <strong>$3%</strong>, no −$1%.",
+        "insight_loss": "Una pérdida del <strong>$1%</strong> reduce 100 a <strong>$2</strong>. La barra roja de arriba y la barra verde de abajo cubren la misma distancia física — pero los porcentajes difieren porque se aplican a bases diferentes. Para recuperarse se necesita <strong>+$3%</strong>, no +$1%.",
         "insight_zero": "No se ha aplicado ningún cambio. Arrastra el control para explorar.",
         "label_after": "después del cambio",
         "label_apply": "APLICAR UN CAMBIO PORCENTUAL",
@@ -69,8 +69,8 @@ var messages = /* I18N_START */ {
         "axis_zero": "% 0",
         "hint": "Arrastatu kontrol-barra ezkerrera galera ikusteko, eskuinera irabazia ikusteko.",
         "insight_full_loss": "<strong>% 100</strong>eko galera batek balioa <strong>0</strong>ra eramaten du. Zerotik berreskuratzea <strong>ezinezkoa</strong> da — edozein ehuneko 0 izanda ere 0 izango da.",
-        "insight_gain": "<strong>% +{pct}</strong>-ko irabaziak 100etik <strong>{result}</strong>-ra igotzen du. Goiko barra berdeak eta beheko barra gorriak zabalera bera dute — baina ehunekoek desberdintasuna dute. 100era itzultzeko <strong>% {recovery}</strong> besterik ez da behar, ez % −{pct}.",
-        "insight_loss": "<strong>% {pct}</strong>-ko galera batek 100 <strong>{result}</strong>-era jaisten du. Goiko barra gorriak eta beheko barra berdeak distantzia fisiko bera hartzen dute — baina ehunekoek desberdintasuna dute, base ezberdinei aplikatzen zaizkie eta. Berreskuratzeko <strong>% +{recovery}</strong> behar da, ez % +{pct}.",
+        "insight_gain": "<strong>% +$1</strong>-ko irabaziak 100etik <strong>$2</strong>-ra igotzen du. Goiko barra berdeak eta beheko barra gorriak zabalera bera dute — baina ehunekoek desberdintasuna dute. 100era itzultzeko <strong>% $3</strong> besterik ez da behar, ez % −$1.",
+        "insight_loss": "<strong>% $1</strong>-ko galera batek 100 <strong>$2</strong>-era jaisten du. Goiko barra gorriak eta beheko barra berdeak distantzia fisiko bera hartzen dute — baina ehunekoek desberdintasuna dute, base ezberdinei aplikatzen zaizkie eta. Berreskuratzeko <strong>% +$3</strong> behar da, ez % +$1.",
         "insight_zero": "Aldaketarik aplikatu gabe. Arrastatu kontrol-barra esploratzeko.",
         "label_after": "aldaketaren ostean",
         "label_apply": "EHUNEKO ALDAKETA BAT EZARRI",
@@ -85,8 +85,8 @@ var messages = /* I18N_START */ {
         "axis_zero": "0%",
         "hint": "Faites glisser le curseur vers la gauche pour une perte, vers la droite pour un gain.",
         "insight_full_loss": "Une perte de <strong>100%</strong> ramène la valeur à <strong>0</strong>. La récupération à partir de zéro est <strong>impossible</strong> — n'importe quel pourcentage de 0 est toujours 0.",
-        "insight_gain": "Un gain de <strong>+{pct}%</strong> porte 100 à <strong>{result}</strong>. La barre verte en haut et la barre rouge en bas ont la même largeur — mais les pourcentages diffèrent. Revenir à 100 ne prend que <strong>{recovery}%</strong>, pas −{pct}%.",
-        "insight_loss": "Une perte de <strong>{pct}%</strong> ramène 100 à <strong>{result}</strong>. La barre rouge en haut et la barre verte en bas couvrent la même distance physique — mais les pourcentages diffèrent car ils s'appliquent à des bases différentes. La récupération nécessite <strong>+{recovery}%</strong>, pas +{pct}%.",
+        "insight_gain": "Un gain de <strong>+$1%</strong> porte 100 à <strong>$2</strong>. La barre verte en haut et la barre rouge en bas ont la même largeur — mais les pourcentages diffèrent. Revenir à 100 ne prend que <strong>$3%</strong>, pas −$1%.",
+        "insight_loss": "Une perte de <strong>$1%</strong> ramène 100 à <strong>$2</strong>. La barre rouge en haut et la barre verte en bas couvrent la même distance physique — mais les pourcentages diffèrent car ils s'appliquent à des bases différentes. La récupération nécessite <strong>+$3%</strong>, pas +$1%.",
         "insight_zero": "Aucun changement appliqué. Faites glisser le curseur pour explorer.",
         "label_after": "après changement",
         "label_apply": "APPLIQUER UN CHANGEMENT EN POURCENTAGE",
@@ -101,8 +101,8 @@ var messages = /* I18N_START */ {
         "axis_zero": "0%",
         "hint": "Tarraing an sleamhnán ar chlé le haghaidh caillteanas, ar dheis le haghaidh gnóthachan.",
         "insight_full_loss": "Tugann caillteanas <strong>100%</strong> an luach go <strong>0</strong>. Tá sé <strong>dodhéanta</strong> é a aisghabháil ó náid — is ionann aon chéatadán de 0 agus 0 fós.",
-        "insight_gain": "Tugann gnóthachan de <strong>+{pct}%</strong> 100 suas go <strong>{result}</strong>. Tá an leithead céanna ag an réimse glas thuas agus an réimse dearg thíos — ach tá na céatadáin difriúil. Ní thógann sé ach <strong>{recovery}%</strong> chun filleadh ar 100, ní −{pct}%.",
-        "insight_loss": "Le cailliúint <strong>{pct}%</strong>, tugtar 100 síos go <strong>{result}</strong>. Clúdaíonn an réise dhearg thuas agus an réise uaine thíos an fad fisiceach céanna — ach tá na céatadáin difriúil toisc go mbaineann siad le bunáiteanna difriúla. Teastaíonn <strong>+{recovery}%</strong> ón téarnamh, ní +{pct}%.",
+        "insight_gain": "Tugann gnóthachan de <strong>+$1%</strong> 100 suas go <strong>$2</strong>. Tá an leithead céanna ag an réimse glas thuas agus an réimse dearg thíos — ach tá na céatadáin difriúil. Ní thógann sé ach <strong>$3%</strong> chun filleadh ar 100, ní −$1%.",
+        "insight_loss": "Le cailliúint <strong>$1%</strong>, tugtar 100 síos go <strong>$2</strong>. Clúdaíonn an réise dhearg thuas agus an réise uaine thíos an fad fisiceach céanna — ach tá na céatadáin difriúil toisc go mbaineann siad le bunáiteanna difriúla. Teastaíonn <strong>+$3%</strong> ón téarnamh, ní +$1%.",
         "insight_zero": "Níor cuireadh aon athrú i bhfeidhm. Tarraing an sleamhnán chun iniúchadh a dhéanamh.",
         "label_after": "tar éis athraithe",
         "label_apply": "CUIR ATHRÚ CÉATÁNACH I bhFEIDHM",
@@ -126,8 +126,8 @@ var messages = /* I18N_START */ {
         "axis_zero": "0%",
         "hint": "Sleep de schuifregelaar naar links voor verlies, naar rechts voor winst.",
         "insight_full_loss": "Een verlies van <strong>100%</strong> brengt de waarde naar <strong>0</strong>. Herstel vanaf nul is <strong>onmogelijk</strong> — elk percentage van 0 is nog steeds 0.",
-        "insight_gain": "Een winst van <strong>+{pct}%</strong> brengt 100 omhoog naar <strong>{result}</strong>. De groene balk bovenaan en de rode balk onderaan zijn even breed — maar de percentages verschillen. Om terug te keren naar 100 is slechts <strong>{recovery}%</strong> nodig, niet −{pct}%.",
-        "insight_loss": "Een verlies van <strong>{pct}%</strong> brengt 100 terug naar <strong>{result}</strong>. De rode balk bovenaan en de groene balk onderaan bedekken dezelfde fysieke afstand — maar de percentages verschillen omdat ze op verschillende bases worden toegepast. Om te herstellen is <strong>+{recovery}%</strong> nodig, niet +{pct}%.",
+        "insight_gain": "Een winst van <strong>+$1%</strong> brengt 100 omhoog naar <strong>$2</strong>. De groene balk bovenaan en de rode balk onderaan zijn even breed — maar de percentages verschillen. Om terug te keren naar 100 is slechts <strong>$3%</strong> nodig, niet −$1%.",
+        "insight_loss": "Een verlies van <strong>$1%</strong> brengt 100 terug naar <strong>$2</strong>. De rode balk bovenaan en de groene balk onderaan bedekken dezelfde fysieke afstand — maar de percentages verschillen omdat ze op verschillende bases worden toegepast. Om te herstellen is <strong>+$3%</strong> nodig, niet +$1%.",
         "insight_zero": "Geen verandering toegepast. Sleep de schuifregelaar om te verkennen.",
         "label_after": "na verandering",
         "label_apply": "PAS EEN PROCENTUELE VERANDERING TOE",
@@ -150,6 +150,7 @@ function t(key, vars) {
     }
     return str;
 }
+
 
 
 /* ── HELPERS ──────────────────────────────────────────────────────────────── */
@@ -395,9 +396,9 @@ function update( root ) {
     if ( fullLoss ) {
         insight.innerHTML = t( 'insight_full_loss' );
     } else if ( isLoss ) {
-        insight.innerHTML = t( 'insight_loss', { pct: Math.abs( pct ), result: fmt( result ), recovery: recoveryStr } );
+        insight.innerHTML = t( 'insight_loss', [ Math.abs( pct ), fmt( result ), recoveryStr ] );
     } else {
-        insight.innerHTML = t( 'insight_gain', { pct: pct, result: fmt( result ), recovery: recoveryStr } );
+        insight.innerHTML = t( 'insight_gain', [ pct, fmt( result ), recoveryStr ] );
     }
 }
 

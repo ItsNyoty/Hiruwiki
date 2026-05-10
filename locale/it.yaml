@@ -20,11 +20,11 @@ it:
   angles:
     _name: Angoli
     bisector: Bisettrice
-    bisectorResult: 'Bisettrice: {0}°'
+    bisectorResult: 'Bisettrice: $1°'
     complement: Complementare
     explement: Esplementare
     notDefined: Non definito per questo angolo
-    resultAngle: '{0} angolo: {1}°'
+    resultAngle: '$1 angolo: $2°'
     supplement: Supplementare
   circle-proof:
     animStopped: Animazione interrotta.

@@ -21,7 +21,7 @@ ca:
   angles:
     _name: Angles
     bisector: Bisectriu
-    bisectorResult: 'Bisectriu: {0}°'
+    bisectorResult: 'Bisectriu: $1°'
     complement: Complementari
     explement: Explementari
     notDefined: No definit per a aquest angle
@@ -91,16 +91,16 @@ ca:
     _name: Quadrilàters
     areaDiagHalf: |-
       Fórmula: A = (d₁ × d₂) / 2
-      d₁ (AC) = {0} cm
-      d₂ (BD) = {1} cm
-      = ({0} × {1}) / 2
+      d₁ (AC) = $1 cm
+      d₂ (BD) = $2 cm
+      = ($1 × $2) / 2
     areaGaussHeader: |-
       Fórmula de Gauss:
       A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
     areaGaussSum: |-
-      Σ = {0}
-      A = ½ × |{0}|
-    areaGaussTerm: '  (x{0}·y{1} − x{1}·y{0}) = {2}'
+      Σ = $1
+      A = ½ × |$1|
+    areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
     headingArea: Àrea
     labelDiag1: d₁ (AC)
     labelDiag2: d₂ (BD)
