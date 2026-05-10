@@ -209,8 +209,8 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             return {
                 dark:   dark,
                 bg:     hiruwiki.getThemeColor('hw-bg-base', dark ? '#1e1e1c' : '#ffffff'),
-                gridMm: dark ? 'rgba(255,255,255,.15)' : '#E0E0E0',
-                gridCm: dark ? 'rgba(255,255,255,.30)' : '#BDBDBD',
+                gridMm: dark ? 'rgba(255,255,255,.15)' : '#D0D0D0',
+                gridCm: dark ? 'rgba(255,255,255,.30)' : '#A0A0A0',
                 succ:   hiruwiki.getThemeColor('hw-color-success', '#1d9e75'),
                 warn:   hiruwiki.getThemeColor('hw-color-warning', '#BA7517'),
                 base:   hiruwiki.getThemeColor('hw-text-base',      dark ? '#E8E6DC' : '#1a1a18')
@@ -282,7 +282,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
 
         // --- Drawing ---
         function drawGrid(p) {
-            ctx.lineWidth = 0.5;
+            ctx.lineWidth = p.dark ? 0.5 : 1.0;
             for (var x = 0; x < W; x += CM) {
                 for (var mm = 1; mm < 10; mm++) {
                     var mpx = x + mm * CM / 10;
@@ -410,8 +410,8 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             if (e >= 0.99) {
                 ctx.save();
                 ctx.beginPath();
-                ctx.moveTo(lF.x, lF.y); ctx.lineTo(lP1.x, lP1.y);
-                ctx.lineTo(rP2.x, rP2.y); ctx.lineTo(rF.x, rF.y);
+                ctx.moveTo(m.P1.x, m.P1.y); ctx.lineTo(m.P2.x, m.P2.y);
+                ctx.lineTo(rF.x, rF.y); ctx.lineTo(lF.x, lF.y);
                 ctx.closePath();
                 ctx.strokeStyle = p.base; ctx.lineWidth = 1.5;
                 ctx.setLineDash([6, 3]); ctx.stroke(); ctx.setLineDash([]);
@@ -539,10 +539,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
         }
         var fText = document.createElement('span');
         fText.className = 'hw-footer__text';
-        fText.innerHTML = t('hint').replace(
-            /(visualización interactiva|visualisation interactive|interactieve visualisatie|léirshamhlú idirghníomhach|visualització interactiva|대화형 시각화|bistaratzaile interaktibo|interactive visualization)/i,
-            '<strong>$1</strong>'
-        );
+        fText.innerHTML = t('hint');
         footer.appendChild(fLogo);
         footer.appendChild(fText);
         container.appendChild(footer);

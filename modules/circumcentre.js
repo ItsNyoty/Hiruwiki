@@ -314,8 +314,8 @@ function buildWidget( container ) {
 			ruleBg:      hiruwiki.getThemeColor( 'hw-bg-subtle',     dark ? '#2C2C2A' : '#F1EFE8' ),
 			ruleTick:    hiruwiki.getThemeColor( 'hw-text-placeholder', '#888780' ),
 			ruleText:    hiruwiki.getThemeColor( 'hw-text-muted',       '#5F5E5A' ),
-			gridMm:      dark ? 'rgba(255,255,255,.15)' : '#E0E0E0',
-			gridCm:      dark ? 'rgba(255,255,255,.30)' : '#BDBDBD',
+			gridMm:      dark ? 'rgba(255,255,255,.15)' : '#D0D0D0',
+			gridCm:      dark ? 'rgba(255,255,255,.30)' : '#A0A0A0',
 			dotBg:       hiruwiki.getThemeColor( 'hw-bg-base', dark ? '#1e1e1c' : '#ffffff' ),
 			circFill:    dark ? 'rgba(93,202,165,.06)' : 'rgba(15,110,86,.05)',
 			circStroke:  dark ? 'rgba(93,202,165,.35)' : 'rgba(15,110,86,.30)'
@@ -362,7 +362,7 @@ function buildWidget( container ) {
 
 	/* -- grid -- */
 	function drawGrid( p ) {
-		ctx.lineWidth = 0.5;
+		ctx.lineWidth = p.dark ? 0.5 : 1.0;
 		for ( var cm = 0; cm * SCALE < W + SCALE; cm++ ) {
 			for ( var mm = 1; mm < 10; mm++ ) {
 				ctx.strokeStyle = p.gridMm;
