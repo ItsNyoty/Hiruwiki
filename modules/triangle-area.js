@@ -197,6 +197,13 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
         };
         var phase = 'idle', animStart = null, dragging = null;
 
+        function isDark() {
+            var root = document.documentElement;
+            return root.classList.contains('skin-theme-clientpref-night') ||
+                   root.classList.contains('client-dark-mode') ||
+                   document.body.classList.contains('mw-dark-mode');
+        }
+
         // --- Math helpers ---
         function dist(a, b) {
             return Math.sqrt(Math.pow(b.x - a.x, 2) + Math.pow(b.y - a.y, 2));
@@ -262,7 +269,8 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
 
         // --- Drawing ---
         function drawGrid() {
-            ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', '#ccc');
+            var dark = isDark();
+            ctx.strokeStyle = dark ? 'rgba(255,255,255,.07)' : 'rgba(0,0,0,.07)';
             ctx.lineWidth = 0.5;
             for (var x = 0; x < W; x += CM) {
                 ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
@@ -391,7 +399,9 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
 
         function draw(ts) {
             ctx.clearRect(0, 0, W, H);
-            ctx.fillStyle = hiruwiki.getThemeColor('background-color-neutral-subtle', '#f8f9fa'); ctx.fillRect(0, 0, W, H);
+            var dark = isDark();
+            ctx.fillStyle = hiruwiki.getThemeColor('hw-bg-base', dark ? '#1e1e1c' : '#ffffff');
+            ctx.fillRect(0, 0, W, H);
             drawGrid();
             var m = metrics();
             fillPoly([V.A, V.B, V.C], 'rgba(29,158,117,0.14)', hiruwiki.getThemeColor('color-success', '#1d9e75'), 2);
