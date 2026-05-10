@@ -23,6 +23,8 @@ svg.hiruwiki-svg {
     user-select: none;
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
-    max-width: 100%;
+    max-width: 260px;
     height: auto;
+    margin: 0 auto;
+    display: block;
 }
