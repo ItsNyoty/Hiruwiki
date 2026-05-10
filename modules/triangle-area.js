@@ -149,10 +149,6 @@ function t(key, vars) {
     return str;
 }
 
-
-
-
-
 var W = 680, H = 430, CM = 37.8, DUR = 1600;
 
     function init(container) {
@@ -179,6 +175,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             '</div>';
 
         var cvs = container.querySelector('canvas');
+        cvs.className = 'hw-canvas';
         var ctx = cvs.getContext('2d');
         cvs.width = W;
         cvs.height = H;
@@ -391,7 +388,6 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
 
         function draw(ts) {
             ctx.clearRect(0, 0, W, H);
-            ctx.fillStyle = hiruwiki.getThemeColor('background-color-neutral-subtle', '#f8f9fa'); ctx.fillRect(0, 0, W, H);
             drawGrid();
             var m = metrics();
             fillPoly([V.A, V.B, V.C], 'rgba(29,158,117,0.14)', hiruwiki.getThemeColor('color-success', '#1d9e75'), 2);
@@ -486,12 +482,22 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
         // Footer — hint text defined in this module's own i18n, not loaded externally
         var footer = document.createElement('div');
         footer.className = 'hw-footer';
-        var fImg = document.createElement('img');
-        fImg.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hiruwiki.svg/32px-Hiruwiki.svg.png';
-        fImg.alt = 'Hiruwiki'; fImg.width = 22; fImg.height = 22;
+        var fLogo = document.createElement('a');
+        fLogo.className = 'hw-footer-icon';
+        fLogo.href = (window.mw && mw.util.getUrl('Wikipedia:Hiruwiki')) || '#';
+        fLogo.title = 'Hiruwiki';
+        function appendLogo() {
+            if (window.hiruwiki && window.hiruwiki.getLogoSvg) {
+                fLogo.innerHTML = hiruwiki.getLogoSvg(22);
+            } else {
+                setTimeout(appendLogo, 50);
+            }
+        }
+        appendLogo();
         var fText = document.createElement('span');
+        fText.className = 'hw-footer__text';
         fText.innerHTML = t('hint');
-        footer.appendChild(fImg);
+        footer.appendChild(fLogo);
         footer.appendChild(fText);
         container.appendChild(footer);
     }
