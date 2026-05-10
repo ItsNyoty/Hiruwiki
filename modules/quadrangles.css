@@ -45,7 +45,7 @@
   background-color: var(--background-color-destructive--active, #612419);
 }
 
-.hiruwiki[data-module="quadrangles"] svg {
+.hiruwiki[data-module="quadrangles"] .quad-canvas-col > svg {
   width: 100%;
   flex: 1;
   display: block;

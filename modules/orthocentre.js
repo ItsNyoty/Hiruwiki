@@ -233,10 +233,19 @@ function buildWidget( container ) {
 		'</div>';
 
 	/* -- Footer -- */
-	var footer  = document.createElement( 'div' );
+	var footer = document.createElement( 'div' );
 	footer.className = 'hw-footer';
-	var fText   = document.createElement( 'span' );
+	var fLogo = document.createElement( 'a' );
+	fLogo.className = 'hw-footer-icon';
+	fLogo.href = ( window.mw && mw.util.getUrl( 'Wikipedia:Hiruwiki' ) ) || '#';
+	fLogo.title = 'Hiruwiki';
+	if ( window.hiruwiki && window.hiruwiki.getLogoSvg ) {
+		fLogo.insertAdjacentHTML( 'beforeend', hiruwiki.getLogoSvg( 22 ) );
+	}
+	var fText = document.createElement( 'span' );
+	fText.className = 'hw-footer__text';
 	fText.textContent = msg.hint;
+	footer.appendChild( fLogo );
 	footer.appendChild( fText );
 	container.appendChild( footer );
 
@@ -273,16 +282,16 @@ function buildWidget( container ) {
 		var dark = isDark();
 		return {
 			dark:     dark,
-			tri:      dark ? '#AFA9EC' : '#534AB7',
-			orth:     dark ? '#5DCAA5' : '#0F6E56',
-			foot:     dark ? '#FAC775' : '#BA7517',
-			text:     dark ? '#E8E6DC' : '#1a1a18',
+			tri:      hiruwiki.getThemeColor( 'hw-color-primary', dark ? '#AFA9EC' : '#534AB7' ),
+			orth:     hiruwiki.getThemeColor( 'hw-color-success', dark ? '#5DCAA5' : '#0F6E56' ),
+			foot:     hiruwiki.getThemeColor( 'hw-color-warning', dark ? '#FAC775' : '#BA7517' ),
+			text:     hiruwiki.getThemeColor( 'hw-text-base',      dark ? '#E8E6DC' : '#1a1a18' ),
 			ruleBg:   dark ? 'rgba(28,28,26,.90)' : 'rgba(241,239,232,.85)',
-			ruleTick: dark ? '#444441'             : '#B4B2A9',
-			ruleText: dark ? '#888780'             : '#888780',
+			ruleTick: hiruwiki.getThemeColor( 'hw-border',        dark ? '#444441' : '#B4B2A9' ),
+			ruleText: hiruwiki.getThemeColor( 'hw-text-placeholder', '#888780' ),
 			gridMm:   'rgba(128,128,128,.04)',
 			gridCm:   'rgba(128,128,128,.08)',
-			dotBg:    dark ? '#1e1e1c' : '#ffffff'
+			dotBg:    hiruwiki.getThemeColor( 'hw-bg-base', dark ? '#1e1e1c' : '#ffffff' )
 		};
 	}
 
