@@ -103,7 +103,8 @@ var messages = /* I18N_START */ {
         "hintExplore": "Verplaats ★ door erop te klikken — springt naar hele getallen",
         "movePrompt": "Verplaats ★ naar:<br>($1, $2)",
         "pointLabel": "Punt:",
-        "titleExplore": "Verken het coördinatenstelsel"
+        "titleExplore": "Verken het coördinatensysteem",
+        "hint": "Verplaats de ster om de coördinaten te verkennen"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

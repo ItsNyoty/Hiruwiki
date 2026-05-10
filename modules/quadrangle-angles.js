@@ -54,9 +54,10 @@ var messages = /* I18N_START */ {
     "nl": {
         "_name": "Hoeken van een vierhoek",
         "interiorAngles": "Binnenhoeken",
-        "reset": "↺ Reset",
+        "reset": "Reset",
         "sum": "Som",
-        "total": "Totaal"
+        "total": "Totaal",
+        "hint": "Sleep de hoekpunten om de som van de binnenhoeken te zien"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

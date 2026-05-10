@@ -111,7 +111,8 @@ var messages = /* I18N_START */ {
         "rotation": "Rotatie",
         "transformations": "Transformaties",
         "translation": "Translatie",
-        "vertical": "Verticaal"
+        "vertical": "Verticaal",
+        "hint": "Kies een transformatie om deze in actie te zien. Gebruik de blauwe stippen om de vorm van de driehoek te veranderen"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

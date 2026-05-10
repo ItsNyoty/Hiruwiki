@@ -102,9 +102,9 @@ function t(key, vars) {
     /* PROTRACTOR */
     for(let d=0; d<=360; d+=5){
       const a = d*Math.PI/180;
-      let len = 6, cls="tickSmall";
-      if(d%30===0){len=18; cls="tickMajor";}
-      else if(d%10===0){len=12; cls="tickMedium";}
+      let len = 4, cls="tickSmall";
+      if(d%30===0){len=10; cls="tickMajor";}
+      else if(d%10===0){len=7; cls="tickMedium";}
       const p1 = polar(a,R);
       const p2 = polar(a,R-len);
       const line = create("line");
@@ -113,7 +113,7 @@ function t(key, vars) {
       line.setAttribute("class",cls);
       svg.appendChild(line);
       if(d%30===0){
-        const tpos = polar(a,R-30);
+        const tpos = polar(a,R-20);
         const txt = create("text");
         txt.setAttribute("x",tpos.x); txt.setAttribute("y",tpos.y);
         txt.setAttribute("text-anchor","middle");
@@ -128,7 +128,7 @@ function t(key, vars) {
     radTicksAll.forEach(r=>{
         const a = r;
         const isLabel = [1,2,3,4,5,6,Math.PI,2*Math.PI].includes(r);
-        const outerLen = isLabel ? 25 : 15;
+        const outerLen = isLabel ? 12 : 8;
         const p1 = polar(a,R);
         const p2 = polar(a,R-outerLen);
         const tick = create("line");
@@ -141,7 +141,7 @@ function t(key, vars) {
         tick.setAttribute("stroke", colors[idx]);
         svg.appendChild(tick);
         if(isLabel){
-            const labelPos = polar(a,R+35);
+            const labelPos = polar(a,R+22);
             const lbl = create("text");
             lbl.setAttribute("x",labelPos.x); lbl.setAttribute("y",labelPos.y);
             lbl.setAttribute("text-anchor","middle"); lbl.setAttribute("class","tickLabel");
@@ -195,7 +195,7 @@ function t(key, vars) {
       handle.setAttribute("cx",p.x); handle.setAttribute("cy",p.y);
 
       /* LABEL OUTSIDE */
-      const labelR = R + 50;
+      const labelR = R + 35;
       let lp = polar(angle,labelR);
 
       label.innerHTML="";
@@ -203,7 +203,7 @@ function t(key, vars) {
       const piText = piFraction(angle);
 
       const t1 = create("tspan"); t1.setAttribute("x",lp.x); t1.setAttribute("dy",0); t1.textContent=radText;
-      const t2 = create("tspan"); t2.setAttribute("x",lp.x); t2.setAttribute("dy",18); t2.textContent=piText;
+      const t2 = create("tspan"); t2.setAttribute("x",lp.x); t2.setAttribute("dy",14); t2.textContent=piText;
       label.appendChild(t1); label.appendChild(t2);
 
       if(lp.x > width - 50){ label.setAttribute("text-anchor","end"); lp.x=Math.min(lp.x,width-10); }

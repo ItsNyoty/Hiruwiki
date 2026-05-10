@@ -88,7 +88,8 @@ var messages = /* I18N_START */ {
         "impossible": "Onmogelijk",
         "probTitle": "Kans om een knikker te pakken en de kleur te raden…",
         "shake": "Schudden!",
-        "total": "Totaal"
+        "total": "Totaal",
+        "hint": "Schud de pot om de waarschijnlijkheid in actie te zien"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

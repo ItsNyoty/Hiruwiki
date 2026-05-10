@@ -21,6 +21,23 @@
         "update_rules_heading": "Update Rules",
         "hint": "Compute iterations to see quadratic convergence"
     },
+    "eu": {
+        "_name": "Gauss-Legendre algoritmoa",
+        "iteration": "Iterazioa",
+        "variable_a": "Batez besteko aritmetikoa (a)",
+        "variable_b": "Batez besteko geometrikoa (b)",
+        "variable_t": "Errore-termoa (t)",
+        "variable_p": "Berretura-termoa (p)",
+        "step": "Hurrengo urratsa",
+        "reset": "↺ Berrezarri",
+        "pi_approx": "π-ren hurbilketa",
+        "correct_digits": "{{PLURAL:$1|$1 zifra zuzen|$1 zifra zuzen}}",
+        "precision_note": "Kwadratikoki konbergitzen da: zifrak bikoiztu egiten dira urrats bakoitzean.",
+        "calculation_heading": "Nola kalkulatzen den",
+        "formula_label": "Formula",
+        "update_rules_heading": "Eguneratze arauak",
+        "hint": "Kalkulatu iterazioak konbergentzia kwadratikoa ikusteko"
+    },
     "nl": {
         "_name": "Gauss-Legendre-algoritme",
         "iteration": "Iteratie",

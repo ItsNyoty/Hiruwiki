@@ -153,7 +153,8 @@ var messages = /* I18N_START */ {
         "eq_lbl_remainder": "rest",
         "insight_exact": "<strong>$1 ÷ $2 = $3</strong> precies — geen rest. De balk past perfect in <strong>$3</strong> gelijke stukken$6. Dit betekent dat <strong>$2</strong> een deler is van <strong>$1</strong>.",
         "insight_less": "<strong>$1</strong> is kleiner dan de deler <strong>$2</strong>, dus het past in <strong>0</strong> hele stukken. De hele waarde is de rest. De rest is altijd kleiner dan de deler.",
-        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> rest <strong>$4</strong>. Merk op dat het rode stuk (<strong>$4</strong>) altijd korter is dan een blauw stuk (<strong>$2</strong>). De rest is altijd strikt kleiner dan de deler. Controle: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
+        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> rest <strong>$4</strong>. Merk op dat het rode stukje (<strong>$4</strong>) altijd korter is dan één blauw blok (<strong>$2</strong>). De rest is altijd strikt kleiner dan de deler. Controle: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
+        "label_bar_description": "Balkweergave — elk blauw blokje = {{PLURAL:$1|$1 eenheid|$1 eenheden}}",
         "label_choose": "Kies deeltal en deler",
         "label_dividend": "Deeltal (het getal dat gedeeld wordt)",
         "label_divisor": "Deler (de grootte van het stuk)",
@@ -161,8 +162,8 @@ var messages = /* I18N_START */ {
         "label_repadd": "Herhaalde optelling",
         "repadd_exact": "— is precies deelbaar!",
         "repadd_leftover": "blijft over",
-        "repadd_less": "$1 is kleiner dan $2, dus het quotiënt is 0 en de gehele waarde is de rest.",
-        "hint": "Pas deeltal en deler aan om de deling te zien"
+        "repadd_less": "$1 is minder dan $2, dus het quotiënt is 0 en de hele waarde is de rest.",
+        "hint": "Pas het deeltal en de deler aan om de verdeling te zien"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

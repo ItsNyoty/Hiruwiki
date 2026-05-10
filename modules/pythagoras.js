@@ -50,7 +50,8 @@ var messages = /* I18N_START */ {
         "_name": "Stelling van Pythagoras",
         "angleDeg": "hoek =",
         "lockRight": "rechte hoek",
-        "reset": "↺ Reset"
+        "reset": "Reset",
+        "hint": "Sleep de hoekpunten om de stelling a² + b² = c² te verifiëren"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

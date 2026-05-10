@@ -62,7 +62,7 @@
         "reset": "초기화"
     },
     "nl": {
-        "_name": "Hoeken van een driehoek",
+        "_name": "Hoeken************* van een driehoek",
         "reset": "↺ Reset",
         "hint": "Sleep hoekpunten om de driehoek te veranderen · Som van de hoeken is altijd 180°",
         "labelAngleA": "Hoek A",

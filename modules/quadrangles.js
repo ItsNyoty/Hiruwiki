@@ -250,7 +250,8 @@
         "shapeSquare": "vierkant",
         "shapeTrapezoid": "trapezium",
         "unitCm": "cm",
-        "unitCm2": "cm²"
+        "unitCm2": "cm²",
+        "hint": "Sleep de hoekpunten om de vierhoek te classificeren"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
