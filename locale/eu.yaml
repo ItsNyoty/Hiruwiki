@@ -186,14 +186,8 @@ eu:
     insight_full_loss: <strong>% 100</strong>eko galera batek balioa <strong>0</strong>ra
       eramaten du. Zerotik berreskuratzea <strong>ezinezkoa</strong> da — edozein
       ehuneko 0 izanda ere 0 izango da.
-    insight_gain: <strong>% +{pct}</strong>-ko irabaziak 100etik <strong>{result}</strong>-ra
-      igotzen du. Goiko barra berdeak eta beheko barra gorriak zabalera bera dute
-      — baina ehunekoek desberdintasuna dute. 100era itzultzeko <strong>% {recovery}</strong>
-      besterik ez da behar, ez % −{pct}.
-    insight_loss: <strong>% {pct}</strong>-ko galera batek 100 <strong>{result}</strong>-era
-      jaisten du. Goiko barra gorriak eta beheko barra berdeak distantzia fisiko bera
-      hartzen dute — baina ehunekoek desberdintasuna dute, base ezberdinei aplikatzen
-      zaizkie eta. Berreskuratzeko <strong>% +{recovery}</strong> behar da, ez % +{pct}.
+    insight_gain: <strong>% +$1</strong>-ko irabaziak 100etik <strong>$2</strong>-ra igotzen du. Goiko barra berdeak eta beheko barra gorriak zabalera bera dute — baina ehunekoek desberdintasuna dute. 100era itzultzeko <strong>% $3</strong> besterik ez da behar, ez % −$1.
+    insight_loss: <strong>% $1</strong>-ko galera batek 100 <strong>$2</strong>-era jaisten du. Goiko barra gorriak eta beheko barra berdeak distantzia fisiko bera hartzen dute — baina ehunekoek desberdintasuna dute, base ezberdinei aplikatzen zaizkie eta. Berreskuratzeko <strong>% +$3</strong> behar da, ez % +$1.
     insight_zero: Aldaketarik aplikatu gabe. Arrastatu kontrol-barra esploratzeko.
     label_after: aldaketaren ostean
     label_apply: EHUNEKO ALDAKETA BAT EZARRI
@@ -296,9 +290,9 @@ eu:
     labelHeight: Altuera (h)
     labelBaseShort: b
     labelHeightShort: h
-    proofResultPara: Paralelogramoaren azalera = b × h = <strong>{b} × {h} = {area}
+    proofResultPara: Paralelogramoaren azalera = b × h = <strong>$1 × $2 = $3
       cm²</strong>
-    proofResultTri: ' → Triangeluarena = ½ × {area} = <strong>{triArea} cm²</strong>'
+    proofResultTri: ' → Triangeluarena = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
     unitCm2: cm²
   triangle-centroid:
@@ -354,7 +348,7 @@ eu:
       botoian
     hintExplore: Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen
       ditu
-    movePrompt: Mugitu ★ hona:<br>({targetX}, {targetY})
+    movePrompt: 'Mugitu ★ hona:<br>($1, $2)'
     pointLabel: 'Puntua:'
     titleExplore: Esploratu koordenatuen sistema
   positive-coordinates:
@@ -369,7 +363,7 @@ eu:
       botoian
     hintExplore: Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen
       ditu
-    movePrompt: Mugitu ★ hona:<br>({targetX}, {targetY})
+    movePrompt: 'Mugitu ★ hona:<br>($1, $2)'
     pointLabel: 'Puntua:'
     titleExplore: Esploratu koordenatuen sistema
 ...

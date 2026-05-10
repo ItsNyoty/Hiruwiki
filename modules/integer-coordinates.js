@@ -18,7 +18,7 @@ var messages = /* I18N_START */ {
         "feedbackWrong": "✗ Incorrect. The faint star was the correct answer.",
         "hintChallenge": "Move ★ to the proposed coordinates and click Check",
         "hintExplore": "Move ★ by clicking on it — it snaps to integers",
-        "movePrompt": "Move ★ to:<br>({targetX}, {targetY})",
+        "movePrompt": "Move ★ to:<br>($1, $2)",
         "pointLabel": "Point:",
         "titleExplore": "Explore Coordinate System",
         "hint": "Move the star to explore coordinates"
@@ -33,7 +33,7 @@ var messages = /* I18N_START */ {
         "feedbackWrong": "✗ Incorrecto. La estrella tenue era la respuesta correcta.",
         "hintChallenge": "Mueve ★ a las coordenadas propuestas y pulsa Comprobar",
         "hintExplore": "Mueve ★ haciendo clic en él — se ajusta a enteros",
-        "movePrompt": "Mueve ★ a:<br>({targetX}, {targetY})",
+        "movePrompt": "Mueve ★ a:<br>($1, $2)",
         "pointLabel": "Punto:",
         "titleExplore": "Explorar el sistema de coordenadas"
     },
@@ -47,7 +47,7 @@ var messages = /* I18N_START */ {
         "feedbackWrong": "✗ Ez da zuzena. Izar ahula zen erantzun zuzena.",
         "hintChallenge": "Mugi ezazu ★ proposatutako koordenatuetara eta klik egin Zuzendu botoian",
         "hintExplore": "Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen ditu",
-        "movePrompt": "Mugitu ★ hona:<br>({targetX}, {targetY})",
+        "movePrompt": "Mugitu ★ hona:<br>($1, $2)",
         "pointLabel": "Puntua:",
         "titleExplore": "Esploratu koordenatuen sistema"
     },
@@ -61,7 +61,7 @@ var messages = /* I18N_START */ {
         "feedbackWrong": "✗ Incorrect. L'étoile pâle était la bonne réponse.",
         "hintChallenge": "Déplacez ★ vers les coordonnées proposées et cliquez sur Vérifier",
         "hintExplore": "Déplacez ★ en cliquant dessus — il s'accroche aux entiers",
-        "movePrompt": "Déplacez ★ vers :<br>({targetX}, {targetY})",
+        "movePrompt": "Déplacez ★ vers :<br>($1, $2)",
         "pointLabel": "Point :",
         "titleExplore": "Explorer le système de coordonnées"
     },
@@ -75,7 +75,7 @@ var messages = /* I18N_START */ {
         "feedbackWrong": "✗ Mícheart. Ba é an réalta lag an freagra ceart.",
         "hintChallenge": "Bog ★ go dtí na comhordanáidí atá beartaithe agus cliceáil Seiceáil",
         "hintExplore": "Bog ★ trí chliceáil air — snapálann sé chuig slánuimhreacha",
-        "movePrompt": "Bog ★ go:<br>({targetX}, {targetY})",
+        "movePrompt": "Bog ★ go:<br>($1, $2)",
         "pointLabel": "Pointe:",
         "titleExplore": "Iniúchadh a dhéanamh ar an gCóras Comhordanáidí"
     },
@@ -101,7 +101,7 @@ var messages = /* I18N_START */ {
         "feedbackWrong": "✗ Onjuist. De zwakke ster was het juiste antwoord.",
         "hintChallenge": "Verplaats ★ naar de voorgestelde coördinaten en klik op Controleren",
         "hintExplore": "Verplaats ★ door erop te klikken — springt naar hele getallen",
-        "movePrompt": "Verplaats ★ naar:<br>({targetX}, {targetY})",
+        "movePrompt": "Verplaats ★ naar:<br>($1, $2)",
         "pointLabel": "Punt:",
         "titleExplore": "Verken het coördinatenstelsel"
     }
@@ -522,10 +522,10 @@ document.querySelectorAll( '.hiruwiki[data-module="integer-coordinates"]' ).forE
       feedbackEl.textContent = ''; feedbackEl.className = 'icx-feedback';
       checkBtn.disabled = false;
       nextBtn.style.visibility = 'hidden';
-      promptBar.innerHTML = t('movePrompt', { 
-        targetX: '<span class="icx-target-x">' + targetX + '</span>', 
-        targetY: '<span class="icx-target-y">' + targetY + '</span>' 
-      });
+      promptBar.innerHTML = t('movePrompt', [
+        '<span class="icx-target-x">' + targetX + '</span>', 
+        '<span class="icx-target-y">' + targetY + '</span>' 
+      ]);
       draw();
     }
 

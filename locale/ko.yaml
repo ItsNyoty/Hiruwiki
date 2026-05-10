@@ -178,8 +178,8 @@ ko:
     labelArea: 면적
     labelBase: 밑변 (b)
     labelHeight: 높이 (h)
-    proofResultPara: 평행사변형 넓이 = b × h = <strong>{b} × {h} = {area} cm²</strong>
-    proofResultTri: ' → 삼각형 = ½ × {area} = <strong>{triArea} cm²</strong>'
+    proofResultPara: 평행사변형 넓이 = b × h = <strong>$1 × $2 = $3 cm²</strong>
+    proofResultTri: ' → 삼각형 = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
     unitCm2: cm²
   triangle-centroid:

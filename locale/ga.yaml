@@ -299,8 +299,8 @@ ga:
     labelHeight: Airde (u)
     labelBaseShort: b
     labelHeightShort: h
-    proofResultPara: Achar comhthreomharáin = b × h = <strong>{b} × {h} = {area} cm²</strong>
-    proofResultTri: → Triantán = ½ × {area} = <strong>{triArea} cm²</strong>
+    proofResultPara: Achar comhthreomharáin = b × h = <strong>$1 × $2 = $3 cm²</strong>
+    proofResultTri: → Triantán = ½ × $1 = <strong>$2 cm²</strong>
     unitCm: cm
     unitCm2: cm²
   triangle-centroid:
@@ -353,7 +353,7 @@ ga:
     feedbackWrong: ✗ Mícheart. Ba é an réalta lag an freagra ceart.
     hintChallenge: Bog ★ go dtí na comhordanáidí atá beartaithe agus cliceáil Seiceáil
     hintExplore: Bog ★ trí chliceáil air — snapálann sé chuig slánuimhreacha
-    movePrompt: Bog ★ go:<br>({targetX}, {targetY})
+    movePrompt: 'Bog ★ go:<br>($1, $2)'
     pointLabel: 'Pointe:'
     titleExplore: Iniúchadh a dhéanamh ar an gCóras Comhordanáidí
   positive-coordinates:
@@ -366,7 +366,7 @@ ga:
     feedbackWrong: ✗ Mícheart. Ba é an réalta lag an freagra ceart.
     hintChallenge: Bog ★ go dtí na comhordanáidí atá beartaithe agus cliceáil Seiceáil
     hintExplore: Bog ★ trí chliceáil air — snap sé chuig slánuimhreacha
-    movePrompt: Bog ★ go:<br>({targetX}, {targetY})
+    movePrompt: 'Bog ★ go:<br>($1, $2)'
     pointLabel: 'Pointe:'
     titleExplore: Iniúchadh a dhéanamh ar an gCóras Comhordanáidí
 ...

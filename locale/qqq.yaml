@@ -365,7 +365,7 @@ qqq:
     hintChallenge: Instruction text shown in challenge mode
     hintExplore: Instruction text shown in explore mode
     movePrompt: 'Prompt telling the player where to move the star. Uses HTML. Parameters:
-      {targetX} = target X coordinate, {targetY} = target Y coordinate.'
+      $1 = target X coordinate, $2 = target Y coordinate.'
     pointLabel: Label for the current point coordinates. Followed by coordinate values.
     titleExplore: Title shown in explore mode
     hint: Instruction text for the coordinate system interaction
@@ -380,7 +380,7 @@ qqq:
     hintChallenge: Instruction text shown in challenge mode
     hintExplore: Instruction text shown in explore mode
     movePrompt: 'Prompt telling the player where to move the star. Uses HTML. Parameters:
-      {targetX} = target X coordinate, {targetY} = target Y coordinate.'
+      $1 = target X coordinate, $2 = target Y coordinate.'
     pointLabel: Label for the current point coordinates. Followed by coordinate values.
     titleExplore: Title shown in explore mode
     hint: Instruction text for the coordinate system interaction

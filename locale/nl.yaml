@@ -310,9 +310,9 @@ nl:
     labelHeight: Hoogte (h)
     labelBaseShort: b
     labelHeightShort: h
-    proofResultPara: Oppervlakte parallellogram = b × h = <strong>{b} × {h} = {area}
+    proofResultPara: Oppervlakte parallellogram = b × h = <strong>$1 × $2 = $3
       cm²</strong>
-    proofResultTri: ' → Driehoek = ½ × {area} = <strong>{triArea} cm²</strong>'
+    proofResultTri: ' → Driehoek = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
     unitCm2: cm²
     hint: Sleep de hoekpunten om de vorm van de driehoek te veranderen
@@ -368,7 +368,7 @@ nl:
     feedbackWrong: ✗ Onjuist. De zwakke ster was het juiste antwoord.
     hintChallenge: Verplaats ★ naar de voorgestelde coördinaten en klik op Controleren
     hintExplore: Verplaats ★ door erop te klikken — springt naar hele getallen
-    movePrompt: Verplaats ★ naar:<br>({targetX}, {targetY})
+    movePrompt: 'Verplaats ★ naar:<br>($1, $2)'
     pointLabel: 'Punt:'
     titleExplore: Verken het coördinatenstelsel
   gauss-legendre:
@@ -397,6 +397,6 @@ nl:
     feedbackWrong: ✗ Onjuist. De zwakke ster was het juiste antwoord.
     hintChallenge: Verplaats ★ naar de voorgestelde coördinaten en klik op Controleren
     hintExplore: Verplaats ★ door erop te klikken — springt naar hele getallen
-    movePrompt: Verplaats ★ naar:<br>({targetX}, {targetY})
+    movePrompt: 'Verplaats ★ naar:<br>($1, $2)'
     pointLabel: 'Punt:'
     titleExplore: Verken het coördinatenstelsel

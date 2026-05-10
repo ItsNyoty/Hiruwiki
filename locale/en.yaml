@@ -189,13 +189,13 @@ en:
     insight_full_loss: A loss of <strong>100%</strong> brings the value to <strong>0</strong>.
       Recovery from zero is <strong>impossible</strong> — any percentage of 0 is still
       0.
-    insight_gain: A gain of <strong>+{pct}%</strong> brings 100 up to <strong>{result}</strong>.
+    insight_gain: A gain of <strong>+$1%</strong> brings 100 up to <strong>$2</strong>.
       The green span above and the red span below are the same width — but the percentages
-      differ. Returning to 100 only takes <strong>{recovery}%</strong>, not −{pct}%.
-    insight_loss: A loss of <strong>{pct}%</strong> brings 100 down to <strong>{result}</strong>.
+      differ. Returning to 100 only takes <strong>$3%</strong>, not −$1%.
+    insight_loss: A loss of <strong>$1%</strong> brings 100 down to <strong>$2</strong>.
       The red span above and the green span below cover the same physical distance
       — but the percentages differ because they apply to different bases. Recovery
-      needs <strong>+{recovery}%</strong>, not +{pct}%.
+      needs <strong>+$3%</strong>, not +$1%.
     insight_zero: No change applied. Drag the slider to explore.
     label_after: after change
     label_apply: APPLY A PERCENTAGE CHANGE
@@ -315,8 +315,8 @@ en:
     labelHeight: Height (h)
     labelBaseShort: b
     labelHeightShort: h
-    proofResultPara: Parallelogram area = b × h = <strong>{b} × {h} = {area} cm²</strong>
-    proofResultTri: ' → Triangle = ½ × {area} = <strong>{triArea} cm²</strong>'
+    proofResultPara: Parallelogram area = b × h = <strong>$1 × $2 = $3 cm²</strong>
+    proofResultTri: ' → Triangle = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
     unitCm2: cm²
     hint: Drag the vertices to change the triangle's shape
@@ -372,7 +372,7 @@ en:
     feedbackWrong: ✗ Incorrect. The faint star was the correct answer.
     hintChallenge: Move ★ to the proposed coordinates and click Check
     hintExplore: Move ★ by clicking on it — it snaps to integers
-    movePrompt: Move ★ to:<br>({targetX}, {targetY})
+    movePrompt: 'Move ★ to:<br>($1, $2)'
     pointLabel: 'Point:'
     titleExplore: Explore Coordinate System
     hint: 'Move the star to explore coordinates'
@@ -386,7 +386,7 @@ en:
     feedbackWrong: ✗ Incorrect. The faint star was the correct answer.
     hintChallenge: Move ★ to the proposed coordinates and click Check
     hintExplore: Move ★ by clicking on it — it snaps to integers
-    movePrompt: Move ★ to:<br>({targetX}, {targetY})
+    movePrompt: 'Move ★ to:<br>($1, $2)'
     pointLabel: 'Point:'
     titleExplore: Explore Coordinate System
     hint: 'Move the star to explore coordinates'

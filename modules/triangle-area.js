@@ -17,8 +17,8 @@ var messages = /* I18N_START */ {
         "labelHeight": "Altura (h)",
         "labelBaseShort": "b",
         "labelHeightShort": "h",
-        "proofResultPara": "Área del paralelogramo = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ Triángulo = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "proofResultPara": "Área del paralelogramo = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ Triángulo = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
@@ -32,8 +32,8 @@ var messages = /* I18N_START */ {
         "labelHeight": "Hauteur (h)",
         "labelBaseShort": "b",
         "labelHeightShort": "h",
-        "proofResultPara": "Aire du parallélogramme = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ Triangle = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "proofResultPara": "Aire du parallélogramme = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ Triangle = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
@@ -47,8 +47,8 @@ var messages = /* I18N_START */ {
         "labelHeight": "Airde (u)",
         "labelBaseShort": "b",
         "labelHeightShort": "h",
-        "proofResultPara": "Achar comhthreomharáin = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ Triantán = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "proofResultPara": "Achar comhthreomharáin = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ Triantán = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
@@ -61,8 +61,8 @@ var messages = /* I18N_START */ {
         "labelHeight": "Label for the height measurement, with variable name in parentheses",
         "labelBaseShort": "Short symbol for base (usually 'b')",
         "labelHeightShort": "Short symbol for height (usually 'h')",
-        "proofResultPara": "Proof result text for the parallelogram area. Uses HTML. Parameters: {b} = base, {h} = height, {area} = parallelogram area.",
-        "proofResultTri": "Proof result text for the triangle area (half the parallelogram). Uses HTML. Parameters: {area} = parallelogram area, {triArea} = triangle area.",
+        "proofResultPara": "Proof result text for the parallelogram area. Uses HTML. Parameters: $1 = base, $2 = height, $3 = parallelogram area.",
+        "proofResultTri": "Proof result text for the triangle area (half the parallelogram). Uses HTML. Parameters: $1 = parallelogram area, $2 = triangle area.",
         "unitCm": "Unit of length (centimeters)",
         "unitCm2": "Unit of area (square centimeters)"
     },
@@ -80,8 +80,8 @@ var messages = /* I18N_START */ {
         "labelHeight": "Hoogte (h)",
         "labelBaseShort": "b",
         "labelHeightShort": "h",
-        "proofResultPara": "Oppervlakte parallellogram = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ Driehoek = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "proofResultPara": "Oppervlakte parallellogram = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ Driehoek = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
@@ -95,8 +95,8 @@ var messages = /* I18N_START */ {
         "labelHeight": "Height (h)",
         "labelBaseShort": "b",
         "labelHeightShort": "h",
-        "proofResultPara": "Parallelogram area = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ Triangle = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "proofResultPara": "Parallelogram area = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ Triangle = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
@@ -115,8 +115,8 @@ var messages = /* I18N_START */ {
         "labelArea": "면적",
         "labelBase": "밑변 (b)",
         "labelHeight": "높이 (h)",
-        "proofResultPara": "평행사변형 넓이 = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ 삼각형 = ½ × {area} = <strong>{triArea} cm²</strong>"
+        "proofResultPara": "평행사변형 넓이 = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ 삼각형 = ½ × $1 = <strong>$2 cm²</strong>"
     },
     "eu": {
         "_name": "Hirukiaren azalera",
@@ -128,8 +128,8 @@ var messages = /* I18N_START */ {
         "labelHeight": "Altuera (h)",
         "labelBaseShort": "b",
         "labelHeightShort": "h",
-        "proofResultPara": "Paralelogramoaren azalera = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ Triangeluarena = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "proofResultPara": "Paralelogramoaren azalera = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ Triangeluarena = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
         "unitCm2": "cm²"
     }
@@ -383,8 +383,8 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
 
                 var rectArea = ((m.b / CM) * (m.h / CM)).toFixed(2);
                 elResult.style.display = 'block';
-                elResult.innerHTML = t('proofResultPara', { b: m.bCm, h: m.hCm, area: rectArea }) +
-                    t('proofResultTri', { area: rectArea, triArea: m.areaCm });
+                elResult.innerHTML = t('proofResultPara', [m.bCm, m.hCm, rectArea]) +
+                    t('proofResultTri', [rectArea, m.areaCm]);
             }
         }
 

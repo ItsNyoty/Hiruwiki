@@ -297,9 +297,9 @@ fr:
     labelHeight: Hauteur (h)
     labelBaseShort: b
     labelHeightShort: h
-    proofResultPara: Aire du parallélogramme = b × h = <strong>{b} × {h} = {area}
+    proofResultPara: Aire du parallélogramme = b × h = <strong>$1 × $2 = $3
       cm²</strong>
-    proofResultTri: ' → Triangle = ½ × {area} = <strong>{triArea} cm²</strong>'
+    proofResultTri: ' → Triangle = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
     unitCm2: cm²
   triangle-centroid:
@@ -353,7 +353,7 @@ fr:
     feedbackWrong: ✗ Incorrect. L'étoile pâle était la bonne réponse.
     hintChallenge: Déplacez ★ vers les coordonnées proposées et cliquez sur Vérifier
     hintExplore: Déplacez ★ en cliquant dessus — il s'accroche aux entiers
-    movePrompt: Déplacez ★ vers :<br>({targetX}, {targetY})
+    movePrompt: 'Déplacez ★ vers :<br>($1, $2)'
     pointLabel: 'Point :'
     titleExplore: Explorer le système de coordonnées
   positive-coordinates:
@@ -366,7 +366,7 @@ fr:
     feedbackWrong: ✗ Incorrect. L'étoile pâle était la bonne réponse.
     hintChallenge: Déplacez ★ vers les coordonnées proposées et cliquez sur Vérifier
     hintExplore: Déplacez ★ en cliquant dessus — il s'accroche aux entiers
-    movePrompt: Déplacez ★ vers :<br>({targetX}, {targetY})
+    movePrompt: 'Déplacez ★ vers :<br>($1, $2)'
     pointLabel: 'Point :'
     titleExplore: Explorer le système de coordonnées
 ...

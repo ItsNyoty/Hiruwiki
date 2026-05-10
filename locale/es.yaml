@@ -297,8 +297,8 @@ es:
     labelHeight: Altura (h)
     labelBaseShort: b
     labelHeightShort: h
-    proofResultPara: Área del paralelogramo = b × h = <strong>{b} × {h} = {area} cm²</strong>
-    proofResultTri: ' → Triángulo = ½ × {area} = <strong>{triArea} cm²</strong>'
+    proofResultPara: Área del paralelogramo = b × h = <strong>$1 × $2 = $3 cm²</strong>
+    proofResultTri: ' → Triángulo = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
     unitCm2: cm²
   triangle-centroid:
@@ -351,7 +351,7 @@ es:
     feedbackWrong: ✗ Incorrecto. La estrella tenue era la respuesta correcta.
     hintChallenge: Mueve ★ a las coordenadas propuestas y pulsa Comprobar
     hintExplore: Mueve ★ haciendo clic en él — se ajusta a enteros
-    movePrompt: Mueve ★ a:<br>({targetX}, {targetY})
+    movePrompt: 'Mueve ★ a:<br>($1, $2)'
     pointLabel: 'Punto:'
     titleExplore: Explorar el sistema de coordenadas
   positive-coordinates:
@@ -364,7 +364,7 @@ es:
     feedbackWrong: ✗ Incorrecto. La estrella tenue era la respuesta correcta.
     hintChallenge: Mueve ★ a las coordenadas propuestas y pulsa Comprobar
     hintExplore: Mueve ★ haciendo clic en él — se ajusta a enteros
-    movePrompt: Mueve ★ a:<br>({targetX}, {targetY})
+    movePrompt: 'Mueve ★ a:<br>($1, $2)'
     pointLabel: 'Punto:'
     titleExplore: Explorar el sistema de coordenadas
 ...
