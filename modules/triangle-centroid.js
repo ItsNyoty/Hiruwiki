@@ -236,7 +236,18 @@ function buildWidget( container ) {
 	/* -- Footer -- */
 	var footer = document.createElement( 'div' );
 	footer.className = 'hw-footer';
-	footer.textContent = msg.hint;
+	var fLogo = document.createElement( 'a' );
+	fLogo.className = 'hw-footer-icon';
+	fLogo.href = ( window.mw && mw.util.getUrl( 'Wikipedia:Hiruwiki' ) ) || '#';
+	fLogo.title = 'Hiruwiki';
+	if ( window.hiruwiki && window.hiruwiki.getLogoSvg ) {
+		fLogo.insertAdjacentHTML( 'beforeend', hiruwiki.getLogoSvg( 22 ) );
+	}
+	var fText = document.createElement( 'span' );
+	fText.className = 'hw-footer__text';
+	fText.textContent = msg.hint;
+	footer.appendChild( fLogo );
+	footer.appendChild( fText );
 	container.appendChild( footer );
 
 	var canvas  = container.querySelector( '.hw-canvas' );
