@@ -270,12 +270,29 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
         // --- Drawing ---
         function drawGrid() {
             var dark = isDark();
-            ctx.strokeStyle = dark ? 'rgba(255,255,255,.07)' : 'rgba(0,0,0,.07)';
+            var gridMm = dark ? 'rgba(255,255,255,.10)' : 'rgba(0,0,0,.12)';
+            var gridCm = dark ? 'rgba(255,255,255,.20)' : 'rgba(0,0,0,.22)';
             ctx.lineWidth = 0.5;
             for (var x = 0; x < W; x += CM) {
+                for (var mm = 1; mm < 10; mm++) {
+                    var mpx = x + mm * CM / 10;
+                    if (mpx < W) {
+                        ctx.strokeStyle = gridMm;
+                        ctx.beginPath(); ctx.moveTo(mpx, 0); ctx.lineTo(mpx, H); ctx.stroke();
+                    }
+                }
+                ctx.strokeStyle = gridCm;
                 ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
             }
             for (var y = 0; y < H; y += CM) {
+                for (var rmm = 1; rmm < 10; rmm++) {
+                    var ymm = y + rmm * CM / 10;
+                    if (ymm < H) {
+                        ctx.strokeStyle = gridMm;
+                        ctx.beginPath(); ctx.moveTo(0, ymm); ctx.lineTo(W, ymm); ctx.stroke();
+                    }
+                }
+                ctx.strokeStyle = gridCm;
                 ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
             }
         }

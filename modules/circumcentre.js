@@ -314,8 +314,8 @@ function buildWidget( container ) {
 			ruleBg:      hiruwiki.getThemeColor( 'hw-bg-subtle',     dark ? '#2C2C2A' : '#F1EFE8' ),
 			ruleTick:    hiruwiki.getThemeColor( 'hw-text-placeholder', '#888780' ),
 			ruleText:    hiruwiki.getThemeColor( 'hw-text-muted',       '#5F5E5A' ),
-			gridMm:      dark ? 'rgba(255,255,255,.05)' : 'rgba(0,0,0,.06)',
-			gridCm:      dark ? 'rgba(255,255,255,.10)' : 'rgba(0,0,0,.12)',
+			gridMm:      dark ? 'rgba(255,255,255,.10)' : 'rgba(0,0,0,.15)',
+			gridCm:      dark ? 'rgba(255,255,255,.20)' : 'rgba(0,0,0,.25)',
 			dotBg:       hiruwiki.getThemeColor( 'hw-bg-base', dark ? '#1e1e1c' : '#ffffff' ),
 			circFill:    dark ? 'rgba(93,202,165,.06)' : 'rgba(15,110,86,.05)',
 			circStroke:  dark ? 'rgba(93,202,165,.35)' : 'rgba(15,110,86,.30)'
@@ -376,6 +376,13 @@ function buildWidget( container ) {
 			ctx.moveTo( cm * SCALE, RULER_H ); ctx.lineTo( cm * SCALE, H ); ctx.stroke();
 		}
 		for ( var row = 0; RULER_H + row * SCALE < H; row++ ) {
+			for ( var rmm = 1; rmm < 10; rmm++ ) {
+				var ymm = RULER_H + row * SCALE + rmm * SCALE / 10;
+				if ( ymm < H ) {
+					ctx.strokeStyle = p.gridMm;
+					ctx.beginPath(); ctx.moveTo( 0, ymm ); ctx.lineTo( W, ymm ); ctx.stroke();
+				}
+			}
 			ctx.strokeStyle = p.gridCm;
 			ctx.beginPath();
 			ctx.moveTo( 0, RULER_H + row * SCALE ); ctx.lineTo( W, RULER_H + row * SCALE ); ctx.stroke();
