@@ -56,11 +56,11 @@ function t(key, vars) {
 // Find all radian modules
   document.querySelectorAll('.hiruwiki[data-module="radian"]').forEach(function(container) {
 
-    const width = 700;
-    const height = 540;
+    const width = 360;
+    const height = 300;
     const cx = width/2;
     const cy = height/2;
-    const R = 200;
+    const R = 90;
 
     const colors = ["#e63946","#457b9d","#2a9d8f","#f4a261","#9d4edd","#06d6a0"];
 

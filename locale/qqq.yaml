@@ -190,6 +190,26 @@ qqq:
     reset: Button label to reset the simulation
     totalPoints: Label for the total number of points
     hint: Instruction text for the Monte Carlo simulation interaction
+  orthocentre:
+    _name: Name of the Orthocentre module
+    altA: Label for the altitude h_a of the triangle
+    altB: Label for the altitude h_b of the triangle
+    altC: Label for the altitude h_c of the triangle
+    centre: Label for the orthocentre point H
+    footA: Label for the foot of altitude h_a on side BC
+    footB: Label for the foot of altitude h_b on side CA
+    footC: Label for the foot of altitude h_c on side AB
+    hint: 'Instruction text for the interactive orthocentre module. Includes scale information.'
+    orthocentre: Label for the orthocentre value or heading
+    perimeter: Label for the triangle perimeter
+    scaleUnit: Unit abbreviation used for measurements (centimetres)
+    sideA: Label for side a (BC) of the triangle
+    sideB: Label for side b (CA) of the triangle
+    sideC: Label for side c (AB) of the triangle
+    angleA: Label for angle A of the triangle
+    angleB: Label for angle B of the triangle
+    angleC: Label for angle C of the triangle
+    triangle: Section heading for the triangle properties
   pentagon-angles:
     3triangles: Decomposition label showing 3 triangles × 180°
     _name: Name of the Pentagon Angles module
@@ -296,7 +316,7 @@ qqq:
     labelAngleB: Label for angle B
     labelAngleC: Label for angle C
     labelSum: Label for the sum of angles
-    formula: Text showing the formula A + B + C = 180°
+    formula: 'Text showing the formula A + B + C = 180°'
   triangle-area:
     _name: Name of the Triangle Area module
     btnProve: Button label to start the area proof animation

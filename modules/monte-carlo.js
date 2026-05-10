@@ -10,19 +10,19 @@ var messages = /* I18N_START */ {
     },
     "en": {
         "_name": "Monte Carlo Pi",
-        "addPoints": "+ Add points",
+        "addPoints": "+ Add Points",
         "approxPi": "Approximation of π",
-        "insideCircle": "Inside circle",
+        "insideCircle": "Inside Circle",
         "insideRed": "Inside (red)",
         "outsideBlue": "Outside (blue)",
-        "outsideCircle": "Outside circle",
+        "outsideCircle": "Outside Circle",
         "pointsPerStep": "Points per step",
         "reset": "↺ Reset",
         "totalPoints": "Total points",
         "hint": "Add points to approximate π using probability"
     },
     "es": {
-        "_name": "Monte Carlo Pi",
+        "_name": "Pi de Monte Carlo",
         "addPoints": "+ Añadir puntos",
         "approxPi": "Aproximación de π",
         "insideCircle": "Dentro del círculo",
@@ -31,31 +31,34 @@ var messages = /* I18N_START */ {
         "outsideCircle": "Fuera del círculo",
         "pointsPerStep": "Puntos por paso",
         "reset": "↺ Reiniciar",
-        "totalPoints": "Total de puntos"
+        "totalPoints": "Puntos totales",
+        "hint": "Añade puntos para aproximar π usando probabilidad"
     },
     "eu": {
         "_name": "Monte Carlo Pi",
         "addPoints": "+ Puntuak gehitu",
         "approxPi": "π-ren hurbilketa",
-        "insideCircle": "Zirkuluaren barruan",
+        "insideCircle": "Zirkulu barruan",
         "insideRed": "Barruan (gorria)",
         "outsideBlue": "Kanpoan (urdina)",
-        "outsideCircle": "Zirkuluaren kanpoan",
-        "pointsPerStep": "Urrats bakoitzeko",
+        "outsideCircle": "Zirkulu kanpoan",
+        "pointsPerStep": "Puntuak urratseko",
         "reset": "↺ Berrezarri",
-        "totalPoints": "Puntu kopurua"
+        "totalPoints": "Puntu kopurua",
+        "hint": "Gehitu puntuak probabilitatea erabiliz π hurbiltzeko"
     },
     "fr": {
         "_name": "Monte Carlo Pi",
         "addPoints": "+ Ajouter des points",
         "approxPi": "Approximation de π",
-        "insideCircle": "À l'intérieur du cercle",
-        "insideRed": "À l'intérieur (rouge)",
-        "outsideBlue": "À l'extérieur (bleu)",
-        "outsideCircle": "À l'extérieur du cercle",
+        "insideCircle": "Dans le cercle",
+        "insideRed": "Intérieur (rouge)",
+        "outsideBlue": "Extérieur (bleu)",
+        "outsideCircle": "Hors du cercle",
         "pointsPerStep": "Points par étape",
         "reset": "↺ Réinitialiser",
-        "totalPoints": "Total des points"
+        "totalPoints": "Total des points",
+        "hint": "Ajoutez des points pour approximer π en utilisant les probabilités"
     },
     "ga": {
         "_name": "Pi Monte Carlo",
@@ -67,7 +70,8 @@ var messages = /* I18N_START */ {
         "outsideCircle": "Ciorcal lasmuigh",
         "pointsPerStep": "Pointí in aghaidh an chéime",
         "reset": "↺ Athshocraigh",
-        "totalPoints": "Iomlán na bpointí"
+        "totalPoints": "Iomlán na bpointí",
+        "hint": "Cuir pointí leis chun π a mheasúnú ag baint úsáide as dóchúlacht"
     },
     "it": {
         "approxPi": "Approssimazione di π"

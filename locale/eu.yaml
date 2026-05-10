@@ -28,13 +28,13 @@ eu:
     supplement: Betegarria
   circle-proof:
     _name: Zirkuluaren froga
-    animStopped: Animazioa gelditu da.
+    animStopped: Animazioa geldituta.
     area: Azalera
-    areaAnimStatus: 'Zatiak elkartzen dira laukizuzen bat egiteko: zabalera = πr,
-      altuera = r.'
+    areaAnimStatus: 'Sektoreak errektangelu batean elkartzen dira: zabalera = πr, altuera
+      = r.'
     areaReviewStatus: ✓ Zabalera = πr, altuera = r → A = πr².
-    circAnimStatus: Zirkulu-erdi bakoitza (πr) lerro bat izatera pasatzen da, eta
-      bi 2πr dira.
+    circAnimStatus: 'Zirkuluerdi bakoitza (πr) lerro batean zabaltzen da, guztira 2πr
+      eginez.'
     circReviewStatus: ✓ Goiko πr + Beheko πr = C = 2πr.
     circumference: Zirkunferentzia
     initStatus: Aukeratu froga bat eta sakatu 'Froga ezazu'.
@@ -45,8 +45,30 @@ eu:
     stop: Gelditu ■
     tabArea: Azalera
     tabCirc: Zirkunferentzia
-    title: Zirkulu kalkuladorea
+    title: Zirkuluaren kalkulagailua
     visualProof: Froga bisuala
+    hint: 'Erabili erradioaren barra kalkulua ikusteko'
+  circumcentre:
+    _name: Zirkunzentroa
+    triangle: Triangelua
+    circumcentre: Zirkunzentroa
+    hint: 'Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px'
+    sideA: a aldea (BC)
+    sideB: b aldea (CA)
+    sideC: c aldea (AB)
+    angleA: A angelua
+    angleB: B angelua
+    angleC: C angelua
+    perimeter: Perimetroa
+    centre: O zentroa
+    radius: Zirkunerradioa R
+    midA: M_a erdipuntua (BC)
+    midB: M_b erdipuntua (CA)
+    midC: M_c erdipuntua (AB)
+    circPerimeter: Zirkuluaren perimetroa
+    circArea: Zirkuluaren azalera
+    scaleUnit: cm
+    scaleUnit2: cm²
   dividend:
     _name: Zatikizuna eta zatitzailea
     eq_lbl_dividend: zatikizuna
@@ -164,13 +186,34 @@ eu:
     _name: Monte Carlo Pi
     addPoints: + Puntuak gehitu
     approxPi: π-ren hurbilketa
-    insideCircle: Zirkuluaren barruan
+    insideCircle: Zirkulu barruan
     insideRed: Barruan (gorria)
     outsideBlue: Kanpoan (urdina)
-    outsideCircle: Zirkuluaren kanpoan
-    pointsPerStep: Urrats bakoitzeko
+    outsideCircle: Zirkulu kanpoan
+    pointsPerStep: Puntuak urratseko
     reset: ↺ Berrezarri
     totalPoints: Puntu kopurua
+    hint: 'Gehitu puntuak probabilitatea erabiliz π hurbiltzeko'
+  orthocentre:
+    _name: Ortozentro
+    altA: Altuera hₐ
+    altB: Altuera h_b
+    altC: Altuera h_c
+    centre: H ortozentroa
+    footA: Hₐ oina BC-n
+    footB: H_b oina CA-n
+    footC: H_c oina AB-n
+    hint: 'Edozein erpin mugitu ortozentroa nola mugitzen den ikusteko (Eskala: 1 cm = 40 px)'
+    orthocentre: Ortozentro
+    perimeter: Perimetroa
+    scaleUnit: cm
+    sideA: a aldea (BC)
+    sideB: b aldea (CA)
+    sideC: c aldea (AB)
+    angleA: A angelua
+    angleB: B angelua
+    angleC: C angelua
+    triangle: Triangelua
   pentagon-angles:
     3triangles: 3 triangelu × 180°
     _name: Pentagonoaren angeluak
@@ -371,4 +414,19 @@ eu:
     movePrompt: 'Mugitu ★ hona:<br>($1, $2)'
     pointLabel: 'Puntua:'
     titleExplore: Esploratu koordenatuen sistema
-...
+  gauss-legendre:
+    _name: Gauss-Legendre algoritmoa
+    iteration: Iterazioa
+    variable_a: Batez besteko aritmetikoa (a)
+    variable_b: Batez besteko geometrikoa (b)
+    variable_t: Errore-termoa (t)
+    variable_p: Berretura-termoa (p)
+    step: Hurrengo urratsa
+    reset: ↺ Berrezarri
+    pi_approx: π-ren hurbilketa
+    correct_digits: '{{PLURAL:$1|$1 zifra zuzen|$1 zifra zuzen}}'
+    precision_note: 'Kwadratikoki konbergitzen da: zifrak bikoiztu egiten dira urrats bakoitzean.'
+    calculation_heading: Nola kalkulatzen den
+    formula_label: Formula
+    update_rules_heading: Eguneratze arauak
+    hint: 'Kalkulatu iterazioak konbergentzia kwadratikoa ikusteko'

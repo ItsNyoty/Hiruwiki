@@ -42,6 +42,27 @@ en:
     title: Circle Calculator
     visualProof: Visual proof
     hint: 'Drag the radius slider to see the calculation'
+  circumcentre:
+    _name: circumcentre
+    triangle: Triangle
+    circumcentre: circumcentre
+    hint: 'Drag any vertex · Scale: 1 cm = 40 px'
+    sideA: Side a (BC)
+    sideB: Side b (CA)
+    sideC: Side c (AB)
+    angleA: Angle A
+    angleB: Angle B
+    angleC: Angle C
+    perimeter: Perimeter
+    centre: Centre O
+    radius: Circumradius R
+    midA: Midpoint M_a (BC)
+    midB: Midpoint M_b (CA)
+    midC: Midpoint M_c (AB)
+    circPerimeter: Circle perimeter
+    circArea: Circle area
+    scaleUnit: cm
+    scaleUnit2: cm²
   dividend:
     _name: Dividend and Divisor
     eq_lbl_dividend: dividend
@@ -163,16 +184,36 @@ en:
     hint: 'Shake the jar to see the probability in action'
   monte-carlo:
     _name: Monte Carlo Pi
-    addPoints: + Add points
+    addPoints: + Add Points
     approxPi: Approximation of π
-    insideCircle: Inside circle
+    insideCircle: Inside Circle
     insideRed: Inside (red)
     outsideBlue: Outside (blue)
-    outsideCircle: Outside circle
+    outsideCircle: Outside Circle
     pointsPerStep: Points per step
     reset: ↺ Reset
     totalPoints: Total points
     hint: 'Add points to approximate π using probability'
+  orthocentre:
+    _name: Orthocentre
+    altA: Altitude hₐ
+    altB: Altitude h_b
+    altC: Altitude h_c
+    centre: Centre H
+    footA: Foot Hₐ on BC
+    footB: Foot H_b on CA
+    footC: Foot H_c on AB
+    hint: 'Drag any vertex to see how the orthocentre changes (Scale: 1 cm = 40 px)'
+    orthocentre: Orthocentre
+    perimeter: Perimeter
+    scaleUnit: cm
+    sideA: Side a (BC)
+    sideB: Side b (CA)
+    sideC: Side c (AB)
+    angleA: Angle A
+    angleB: Angle B
+    angleC: Angle C
+    triangle: Triangle
   pentagon-angles:
     3triangles: 3 triangles × 180°
     _name: Pentagon Angles

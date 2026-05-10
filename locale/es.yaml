@@ -47,6 +47,27 @@ es:
     tabCirc: Circunferencia
     title: Calculadora de Círculos
     visualProof: Prueba visual
+  circumcentre:
+    _name: Circuncentro
+    triangle: Triángulo
+    circumcentre: Circuncentro
+    hint: 'Arrastra un vértice · Escala: 1 cm = 40 px'
+    sideA: Lado a (BC)
+    sideB: Lado b (CA)
+    sideC: Lado c (AB)
+    angleA: Ángulo A
+    angleB: Ángulo B
+    angleC: Ángulo C
+    perimeter: Perímetro
+    centre: Centro O
+    radius: Circunradio R
+    midA: Punto medio M_a (BC)
+    midB: Punto medio M_b (CA)
+    midC: Punto medio M_c (AB)
+    circPerimeter: Perímetro del círculo
+    circArea: Área del círculo
+    scaleUnit: cm
+    scaleUnit2: cm²
   dividend:
     _name: Dividendo y divisor
     eq_lbl_dividend: dividendo
@@ -161,7 +182,7 @@ es:
     shake: ¡Agitar!
     total: Total
   monte-carlo:
-    _name: Monte Carlo Pi
+    _name: Pi de Monte Carlo
     addPoints: + Añadir puntos
     approxPi: Aproximación de π
     insideCircle: Dentro del círculo
@@ -170,7 +191,28 @@ es:
     outsideCircle: Fuera del círculo
     pointsPerStep: Puntos por paso
     reset: ↺ Reiniciar
-    totalPoints: Total de puntos
+    totalPoints: Puntos totales
+    hint: 'Añade puntos para aproximar π usando probabilidad'
+  orthocentre:
+    _name: Ortocentro
+    altA: Altura hₐ
+    altB: Altura h_b
+    altC: Altura h_c
+    centre: Centro H
+    footA: Pie Hₐ en BC
+    footB: Pie H_b en CA
+    footC: Pie H_c en AB
+    hint: 'Arrastra un vértice para ver cómo se mueve el ortocentro (Escala: 1 cm = 40 px)'
+    orthocentre: Ortocentro
+    perimeter: Perímetro
+    scaleUnit: cm
+    sideA: Lado a (BC)
+    sideB: Lado b (CA)
+    sideC: Lado c (AB)
+    angleA: Ángulo A
+    angleB: Ángulo B
+    angleC: Ángulo C
+    triangle: Triángulo
   pentagon-angles:
     3triangles: 3 triángulos × 180°
     _name: Ángulos del pentágono

@@ -49,6 +49,27 @@ nl:
     title: Cirkel Calculator
     visualProof: Visueel bewijs
     hint: 'Sleep de straalschuifregelaar om de berekening te zien'
+  circumcentre:
+    _name: Middelpunt omgeschreven cirkel
+    triangle: Driehoek
+    circumcentre: Middelpunt omgeschreven cirkel
+    hint: 'Sleep een hoekpunt · Schaal: 1 cm = 40 px'
+    sideA: Zijde a (BC)
+    sideB: Zijde b (CA)
+    sideC: Zijde c (AB)
+    angleA: Hoek A
+    angleB: Hoek B
+    angleC: Hoek C
+    perimeter: Omtrek
+    centre: Middelpunt O
+    radius: Omgeschreven straal R
+    midA: Middelpunt M_a (BC)
+    midB: Middelpunt M_b (CA)
+    midC: Middelpunt M_c (AB)
+    circPerimeter: Omtrek cirkel
+    circArea: Oppervlakte cirkel
+    scaleUnit: cm
+    scaleUnit2: cm²
   dividend:
     _name: Deeltal en deler
     eq_lbl_dividend: deeltal
@@ -62,9 +83,10 @@ nl:
       dus het past in <strong>0</strong> hele stukken. De hele waarde is de rest.
       De rest is altijd kleiner dan de deler.
     insight_normal: '<strong>$1 ÷ $2 = $3</strong> rest <strong>$4</strong>. Merk
-      op dat het rode stuk (<strong>$4</strong>) altijd korter is dan een blauw stuk
-      (<strong>$2</strong>). De rest is altijd strikt kleiner dan de deler. Controle:
-      <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓'
+      op dat het rode stukje (<strong>$4</strong>) altijd korter is dan één blauw
+      blok (<strong>$2</strong>). De rest is altijd strikt kleiner dan de deler.
+      Controle: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓'
+    label_bar_description: 'Balkweergave — elk blauw blokje = {{PLURAL:$1|$1 eenheid|$1 eenheden}}'
     label_choose: Kies deeltal en deler
     label_dividend: Deeltal (het getal dat gedeeld wordt)
     label_divisor: Deler (de grootte van het stuk)
@@ -72,9 +94,9 @@ nl:
     label_repadd: Herhaalde optelling
     repadd_exact: — is precies deelbaar!
     repadd_leftover: blijft over
-    repadd_less: '$1 is kleiner dan $2, dus het quotiënt is 0 en de gehele waarde
-      is de rest.'
-    hint: 'Pas deeltal en deler aan om de deling te zien'
+    repadd_less: $1 is minder dan $2, dus het quotiënt is 0 en de hele waarde is de
+      rest.
+    hint: 'Pas het deeltal en de deler aan om de verdeling te zien'
   factors:
     _name: Priemfactoren
     gcd_formula_eq: ' ='
@@ -126,7 +148,7 @@ nl:
     sec_sequence: Reeks tot nu toe
     sec_steps: Stap door de Fibonacci-reeks
     step_label: Stap $1 van $2
-    hint: 'Stap door de reeks om de convergentie te zien'
+    hint: 'Klik op de knop om de Fibonacci-reeks te doorlopen en de convergentie naar de Gulden Snede te zien.'
   hexagon-angles:
     2quads: 2 vierhoeken × 360°
     4triangles: 4 driehoeken × 180°
@@ -166,6 +188,7 @@ nl:
     probTitle: Kans om een knikker te pakken en de kleur te raden…
     shake: Schudden!
     total: Totaal
+    hint: 'Schud de pot om de waarschijnlijkheid in actie te zien'
   monte-carlo:
     _name: Monte Carlo Pi
     addPoints: + Punten toevoegen
@@ -178,7 +201,26 @@ nl:
     reset: ↺ Reset
     totalPoints: Totaal aantal punten
     hint: 'Voeg punten toe om π te benaderen met kansberekening'
-    hint: 'Voeg punten toe om π te benaderen met kansberekening'
+  orthocentre:
+    _name: Hoogtepunt
+    altA: Hoogte hₐ
+    altB: Hoogte h_b
+    altC: Hoogte h_c
+    centre: Middelpunt H
+    footA: Voet Hₐ op BC
+    footB: Voet H_b op CA
+    footC: Voet H_c op AB
+    hint: 'Sleep een hoekpunt om te zien hoe het hoogtepunt verandert (Schaal: 1 cm = 40 px)'
+    orthocentre: Hoogtepunt
+    perimeter: Omtrek
+    scaleUnit: cm
+    sideA: Zijde a (BC)
+    sideB: Zijde b (CA)
+    sideC: Zijde c (AB)
+    angleA: Hoek A
+    angleB: Hoek B
+    angleC: Hoek C
+    triangle: Driehoek
   pentagon-angles:
     3triangles: 3 driehoeken × 180°
     _name: Hoeken van een vijfhoek
@@ -213,13 +255,15 @@ nl:
     _name: Stelling van Pythagoras
     angleDeg: hoek =
     lockRight: rechte hoek
-    reset: ↺ Reset
+    reset: Reset
+    hint: 'Sleep de hoekpunten om de stelling a² + b² = c² te verifiëren'
   quadrangle-angles:
     _name: Hoeken van een vierhoek
     interiorAngles: Binnenhoeken
-    reset: ↺ Reset
+    reset: Reset
     sum: Som
     total: Totaal
+    hint: 'Sleep de hoekpunten om de som van de binnenhoeken te zien'
   quadrangles:
     _name: Vierhoeken
     areaDiagHalf: |-
@@ -272,6 +316,7 @@ nl:
     shapeTrapezoid: trapezium
     unitCm: cm
     unitCm2: cm²
+    hint: 'Sleep de hoekpunten om de vierhoek te classificeren'
   radian:
     _name: Radialen
     rad: rad
@@ -295,8 +340,9 @@ nl:
     transformations: Transformaties
     translation: Translatie
     vertical: Verticaal
+    hint: 'Kies een transformatie om deze in actie te zien. Gebruik de blauwe stippen om de vorm van de driehoek te veranderen'
   triangle-angles:
-    _name: Hoeken van een driehoek
+    _name: Hoeken************* van een driehoek
     reset: ↺ Reset
     hint: 'Sleep hoekpunten om de driehoek te veranderen · Som van de hoeken is altijd 180°'
     labelAngleA: Hoek A
@@ -373,7 +419,8 @@ nl:
     hintExplore: Verplaats ★ door erop te klikken — springt naar hele getallen
     movePrompt: 'Verplaats ★ naar:<br>($1, $2)'
     pointLabel: 'Punt:'
-    titleExplore: Verken het coördinatenstelsel
+    titleExplore: Verken het coördinatensysteem
+    hint: 'Verplaats de ster om de coördinaten te verkennen'
   gauss-legendre:
     _name: Gauss-Legendre-algoritme
     iteration: Iteratie

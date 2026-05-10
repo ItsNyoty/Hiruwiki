@@ -61,11 +61,11 @@ var messages = /* I18N_START */ {
     },
     "eu": {
         "_name": "Zirkuluaren froga",
-        "animStopped": "Animazioa gelditu da.",
+        "animStopped": "Animazioa geldituta.",
         "area": "Azalera",
-        "areaAnimStatus": "Zatiak elkartzen dira laukizuzen bat egiteko: zabalera = πr, altuera = r.",
+        "areaAnimStatus": "Sektoreak errektangelu batean elkartzen dira: zabalera = πr, altuera = r.",
         "areaReviewStatus": "✓ Zabalera = πr, altuera = r → A = πr².",
-        "circAnimStatus": "Zirkulu-erdi bakoitza (πr) lerro bat izatera pasatzen da, eta bi 2πr dira.",
+        "circAnimStatus": "Zirkuluerdi bakoitza (πr) lerro batean zabaltzen da, guztira 2πr eginez.",
         "circReviewStatus": "✓ Goiko πr + Beheko πr = C = 2πr.",
         "circumference": "Zirkunferentzia",
         "initStatus": "Aukeratu froga bat eta sakatu 'Froga ezazu'.",
@@ -76,8 +76,9 @@ var messages = /* I18N_START */ {
         "stop": "Gelditu ■",
         "tabArea": "Azalera",
         "tabCirc": "Zirkunferentzia",
-        "title": "Zirkulu kalkuladorea",
-        "visualProof": "Froga bisuala"
+        "title": "Zirkuluaren kalkulagailua",
+        "visualProof": "Froga bisuala",
+        "hint": "Erabili erradioaren barra kalkulua ikusteko"
     },
     "fr": {
         "_name": "Preuve du cercle",
@@ -117,7 +118,8 @@ var messages = /* I18N_START */ {
         "tabArea": "Limistéar",
         "tabCirc": "Imlíne",
         "title": "Áireamhán Ciorcail",
-        "visualProof": "Cruthúnas amhairc"
+        "visualProof": "Cruthúnas amhairc",
+        "hint": "Tarraing an sleamhnán gha chun an ríomh a fheiceáil"
     },
     "it": {
         "animStopped": "Animazione interrotta.",

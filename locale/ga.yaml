@@ -47,6 +47,28 @@ ga:
     tabCirc: Imlíne
     title: Áireamhán Ciorcail
     visualProof: Cruthúnas amhairc
+    hint: 'Tarraing an sleamhnán gha chun an ríomh a fheiceáil'
+  circumcentre:
+    _name: Ciorcalár
+    triangle: Triantán
+    circumcentre: Ciorcalár
+    hint: 'Tarraing aon rinn · Scála: 1 cm = 40 px'
+    sideA: Taobh a (BC)
+    sideB: Taobh b (CA)
+    sideC: Taobh c (AB)
+    angleA: Uillinn A
+    angleB: Uillinn B
+    angleC: Uillinn C
+    perimeter: Imlíne
+    centre: Lár O
+    radius: Gha Imchiorcail R
+    midA: Lárphointe M_a (BC)
+    midB: Lárphointe M_b (CA)
+    midC: Lárphointe M_c (AB)
+    circPerimeter: Imlíne an chiorcail
+    circArea: Achar an chiorcail
+    scaleUnit: cm
+    scaleUnit2: cm²
   dividend:
     _name: Díbhinn agus Roinnteoir
     eq_lbl_dividend: díbhinn
@@ -174,6 +196,27 @@ ga:
     pointsPerStep: Pointí in aghaidh an chéime
     reset: ↺ Athshocraigh
     totalPoints: Iomlán na bpointí
+    hint: 'Cuir pointí leis chun π a mheasúnú ag baint úsáide as dóchúlacht'
+  orthocentre:
+    _name: Ortalár
+    altA: Airde hₐ
+    altB: Airde h_b
+    altC: Airde h_c
+    centre: Lár H
+    footA: Bun Hₐ ar BC
+    footB: Bun H_b ar CA
+    footC: Bun H_c ar AB
+    hint: 'Tarraing aon rinn chun a fheiceáil conas a athraíonn an t-ortalár (Scála: 1 cm = 40 px)'
+    orthocentre: Ortalár
+    perimeter: Imlíne
+    scaleUnit: cm
+    sideA: Taobh a (BC)
+    sideB: Taobh b (CA)
+    sideC: Taobh c (AB)
+    angleA: Uillinn A
+    angleB: Uillinn B
+    angleC: Uillinn C
+    triangle: Triantán
   pentagon-angles:
     3triangles: 3 thriantán × 180°
     _name: Uillinneacha an Pheinteagáin

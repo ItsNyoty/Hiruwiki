@@ -147,7 +147,7 @@ var messages = /* I18N_START */ {
         "sec_sequence": "Reeks tot nu toe",
         "sec_steps": "Stap door de Fibonacci-reeks",
         "step_label": "Stap $1 van $2",
-        "hint": "Stap door de reeks om de convergentie te zien"
+        "hint": "Klik op de knop om de Fibonacci-reeks te doorlopen en de convergentie naar de Gulden Snede te zien."
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

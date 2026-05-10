@@ -46,6 +46,27 @@ fr:
     tabCirc: Circonférence
     title: Calculateur de Cercle
     visualProof: Preuve visuelle
+  circumcentre:
+    _name: Circoncentre
+    triangle: Triangle
+    circumcentre: Circoncentre
+    hint: 'Faites glisser un sommet · Échelle : 1 cm = 40 px'
+    sideA: Côté a (BC)
+    sideB: Côté b (CA)
+    sideC: Côté c (AB)
+    angleA: Angle A
+    angleB: Angle B
+    angleC: Angle C
+    perimeter: Périmètre
+    centre: Centre O
+    radius: Circonrayon R
+    midA: Milieu M_a (BC)
+    midB: Milieu M_b (CA)
+    midC: Milieu M_c (AB)
+    circPerimeter: Périmètre du cercle
+    circArea: Aire du cercle
+    scaleUnit: cm
+    scaleUnit2: cm²
   dividend:
     _name: Dividende et diviseur
     eq_lbl_dividend: dividende
@@ -164,13 +185,34 @@ fr:
     _name: Monte Carlo Pi
     addPoints: + Ajouter des points
     approxPi: Approximation de π
-    insideCircle: À l'intérieur du cercle
-    insideRed: À l'intérieur (rouge)
-    outsideBlue: À l'extérieur (bleu)
-    outsideCircle: À l'extérieur du cercle
+    insideCircle: Dans le cercle
+    insideRed: Intérieur (rouge)
+    outsideBlue: Extérieur (bleu)
+    outsideCircle: Hors du cercle
     pointsPerStep: Points par étape
     reset: ↺ Réinitialiser
     totalPoints: Total des points
+    hint: 'Ajoutez des points pour approximer π en utilisant les probabilités'
+  orthocentre:
+    _name: Orthocentre
+    altA: Hauteur hₐ
+    altB: Hauteur h_b
+    altC: Hauteur h_c
+    centre: Centre H
+    footA: Pied Hₐ sur BC
+    footB: Pied H_b sur CA
+    footC: Pied H_c sur AB
+    hint: "Faites glisser n'importe quel sommet pour voir comment l'orthocentre change (Échelle : 1 cm = 40 px)"
+    orthocentre: Orthocentre
+    perimeter: Périmètre
+    scaleUnit: cm
+    sideA: Côté a (BC)
+    sideB: Côté b (CA)
+    sideC: Côté c (AB)
+    angleA: Angle A
+    angleB: Angle B
+    angleC: Angle C
+    triangle: Triangle
   pentagon-angles:
     3triangles: 3 triangles × 180°
     _name: Angles du pentagone
