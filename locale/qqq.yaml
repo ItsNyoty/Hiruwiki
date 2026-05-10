@@ -167,7 +167,6 @@ qqq:
     touchBC: Label for the tangent point on side BC
     touchCA: Label for the tangent point on side CA
     triangle: Section heading for the triangle properties
-    hint: Explanation about how the module is interactive
   marble-jar:
     _name: Name of the Probability Jar module
     colorBlue: Name of the blue marble colour
@@ -403,22 +402,21 @@ qqq:
     hint: Instruction text for the Gauss-Legendre algorithm interaction
   orthocentre:
     _name: Name of the Orthocentre module
-		altA: Label for the full altitude from vertex A
-		altB: Label for the full altitude from vertex B
-		altC: Label for the full altitude from vertex C
-		centre: Label for the orthocentre point H
-		footA: Label for the foot of the altitude from A onto BC
-		footB: Label for the foot of the altitude from B onto CA
-		footC: Label for the foot of the altitude from C onto AB
-		hint: Instruction text shown in the footer. Includes scale information.
-		orthocentre: Section heading for the orthocentre properties card
-		perimeter: Label for the triangle perimeter
-		scaleUnit: Unit abbreviation used for measurements (centimetres)
-		sideA: Label for side a (BC) of the triangle
-		sideB: Label for side b (CA) of the triangle
-		sideC: Label for side c (AB) of the triangle
-		angleA: Label for angle A of the triangle
-		angleB: Label for angle B of the triangle
-		angleC: Label for angle C of the triangle
-		triangle: Section heading for the triangle properties card"
-...
+    altA: Label for the full altitude from vertex A
+    altB: Label for the full altitude from vertex B
+    altC: Label for the full altitude from vertex C
+    centre: Label for the orthocentre point H
+    footA: Label for the foot of the altitude from A onto BC
+    footB: Label for the foot of the altitude from B onto CA
+    footC: Label for the foot of the altitude from C onto AB
+    hint: Instruction text shown in the footer. Includes scale information.
+    orthocentre: Section heading for the orthocentre properties card
+    perimeter: Label for the triangle perimeter
+    scaleUnit: Unit abbreviation used for measurements (centimetres)
+    sideA: Label for side a (BC) of the triangle
+    sideB: Label for side b (CA) of the triangle
+    sideC: Label for side c (AB) of the triangle
+    angleA: Label for angle A of the triangle
+    angleB: Label for angle B of the triangle
+    angleC: Label for angle C of the triangle
+    triangle: Section heading for the triangle properties card"
