@@ -6,12 +6,12 @@
 .tickMedium { stroke:var(--color-placeholder, #777); stroke-width:2; }
 .tickMajor { stroke:var(--color-base, #333); stroke-width:3; }
 
-.tickLabel { font-size:10px; fill:var(--color-base, #333); }
+.tickLabel { font-size:11px; fill:var(--color-base, #333); }
 .radianTick { stroke-width:2; }
 
 .handle { fill: var(--background-color-base, white); stroke: var(--color-base, black); stroke-width:2; cursor:pointer; }
 
-.label { font-size:13px; font-weight:bold; dominant-baseline:middle; fill: var(--color-base, black); }
+.label { font-size:14px; font-weight:bold; dominant-baseline:middle; fill: var(--color-base, black); }
 
 .baseIndicator { stroke-width:6; }
 .baseDot { stroke: var(--color-base, black); stroke-width:2; fill: var(--background-color-base, white); }
@@ -23,7 +23,7 @@ svg.hiruwiki-svg {
     user-select: none;
     -webkit-user-select: none;
     -webkit-tap-highlight-color: transparent;
-    max-width: 260px;
+    max-width: 390px;
     height: auto;
     margin: 0 auto;
     display: block;
