@@ -7,31 +7,9 @@
     
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {
-        "btnReset": "Reinicia",
-        "labelArea": "Àrea",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "unitCm": "cm",
-        "unitCm2": "cm²"
-    },
-    "en": {
-        "_name": "Triangle Area",
-        "btnProve": "Prove it",
-        "btnReset": "Reset",
-        "labelArea": "Area",
-        "labelBase": "Base (b)",
-        "labelHeight": "Height (h)",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "proofResultPara": "Parallelogram area = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ Triangle = ½ × {area} = <strong>{triArea} cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²",
-        "hint": "Drag the vertices to change the triangle's shape"
-    },
     "es": {
         "_name": "Área del triángulo",
+        "hint": "Esta es una visualización interactiva. Arrastra los vértices para modificar el triángulo.",
         "btnProve": "Pruébalo",
         "btnReset": "Reiniciar",
         "labelArea": "Área",
@@ -44,22 +22,9 @@ var messages = /* I18N_START */ {
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
-    "eu": {
-        "_name": "Hirukiaren azalera",
-        "btnProve": "Froga ezazu",
-        "btnReset": "Berrezarri",
-        "labelArea": "Azalera",
-        "labelBase": "Oinarria (b)",
-        "labelHeight": "Altuera (h)",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "proofResultPara": "Paralelogramoaren azalera = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ Triangeluarena = ½ × {area} = <strong>{triArea} cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²"
-    },
     "fr": {
         "_name": "Aire du triangle",
+        "hint": "Ceci est une visualisation interactive. Faites glisser les sommets pour modifier le triangle.",
         "btnProve": "Prouver",
         "btnReset": "Réinitialiser",
         "labelArea": "Aire",
@@ -74,6 +39,7 @@ var messages = /* I18N_START */ {
     },
     "ga": {
         "_name": "Limistéar an Triantáin",
+        "hint": "Is léirshamhlú idirghníomhach é seo. Tarraing na buaicphointí chun an triantán a athrú.",
         "btnProve": "Cruthaigh é",
         "btnReset": "Athshocraigh",
         "labelArea": "Limistéar",
@@ -86,25 +52,29 @@ var messages = /* I18N_START */ {
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
-    "it": {
-        "unitCm": "cm",
-        "unitCm2": "cm²"
+    "qqq": {
+        "_name": "Name of the Triangle Area module",
+        "btnProve": "Button label to start the area proof animation",
+        "btnReset": "Button label to reset the triangle",
+        "labelArea": "Label for the computed area value",
+        "labelBase": "Label for the base measurement, with variable name in parentheses",
+        "labelHeight": "Label for the height measurement, with variable name in parentheses",
+        "labelBaseShort": "Short symbol for base (usually 'b')",
+        "labelHeightShort": "Short symbol for height (usually 'h')",
+        "proofResultPara": "Proof result text for the parallelogram area. Uses HTML. Parameters: {b} = base, {h} = height, {area} = parallelogram area.",
+        "proofResultTri": "Proof result text for the triangle area (half the parallelogram). Uses HTML. Parameters: {area} = parallelogram area, {triArea} = triangle area.",
+        "unitCm": "Unit of length (centimeters)",
+        "unitCm2": "Unit of area (square centimeters)"
     },
-    "ko": {
-        "_name": "삼각형 면적",
-        "btnReset": "초기화",
-        "labelArea": "면적",
-        "labelBase": "밑변 (b)",
-        "labelHeight": "높이 (h)",
-        "proofResultPara": "평행사변형 넓이 = b × h = <strong>{b} × {h} = {area} cm²</strong>",
-        "proofResultTri": "→ 삼각형 = ½ × {area} = <strong>{triArea} cm²</strong>",
+    "it": {
         "unitCm": "cm",
         "unitCm2": "cm²"
     },
     "nl": {
         "_name": "Oppervlakte van een driehoek",
+        "hint": "Dit is een interactieve visualisatie. Sleep de hoekpunten om de driehoek te wijzigen.",
         "btnProve": "Bewijs het",
-        "btnReset": "↺ Reset",
+        "btnReset": "Reset",
         "labelArea": "Oppervlakte",
         "labelBase": "Basis (b)",
         "labelHeight": "Hoogte (h)",
@@ -113,8 +83,55 @@ var messages = /* I18N_START */ {
         "proofResultPara": "Oppervlakte parallellogram = b × h = <strong>{b} × {h} = {area} cm²</strong>",
         "proofResultTri": "→ Driehoek = ½ × {area} = <strong>{triArea} cm²</strong>",
         "unitCm": "cm",
-        "unitCm2": "cm²",
-        "hint": "Sleep de hoekpunten om de vorm van de driehoek te veranderen"
+        "unitCm2": "cm²"
+    },
+    "en": {
+        "_name": "Triangle Area",
+        "hint": "This is an interactive visualization. Drag the vertices to reshape the triangle.",
+        "btnProve": "Prove it",
+        "btnReset": "Reset",
+        "labelArea": "Area",
+        "labelBase": "Base (b)",
+        "labelHeight": "Height (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Parallelogram area = b × h = <strong>{b} × {h} = {area} cm²</strong>",
+        "proofResultTri": "→ Triangle = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²"
+    },
+    "ca": {
+        "btnReset": "Reinicia",
+        "labelArea": "Àrea",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "unitCm": "cm",
+        "unitCm2": "cm²"
+    },
+    "ko": {
+        "_name": "삼각형 면적",
+        "hint": "이것은 대화형 시각화입니다. 꼭짓점을 드래그하여 삼각형을 바꾸세요.",
+        "btnReset": "초기화",
+        "labelArea": "면적",
+        "labelBase": "밑변 (b)",
+        "labelHeight": "높이 (h)",
+        "proofResultPara": "평행사변형 넓이 = b × h = <strong>{b} × {h} = {area} cm²</strong>",
+        "proofResultTri": "→ 삼각형 = ½ × {area} = <strong>{triArea} cm²</strong>"
+    },
+    "eu": {
+        "_name": "Hirukiaren azalera",
+        "hint": "Bistaratzaile interaktibo bat da. Arrastatu erpinak hirukia aldatzeko.",
+        "btnProve": "Froga ezazu",
+        "btnReset": "Berrezarri",
+        "labelArea": "Azalera",
+        "labelBase": "Oinarria (b)",
+        "labelHeight": "Altuera (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Paralelogramoaren azalera = b × h = <strong>{b} × {h} = {area} cm²</strong>",
+        "proofResultTri": "→ Triangeluarena = ½ × {area} = <strong>{triArea} cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -131,7 +148,6 @@ function t(key, vars) {
     }
     return str;
 }
-
 
 
 
@@ -180,32 +196,6 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             C: { x: W / 2 + 0.3 * CM, y: 300 - 3 * CM }
         };
         var phase = 'idle', animStart = null, dragging = null;
-
-        function isDark() {
-            var root = document.documentElement;
-            if (root.classList.contains('skin-theme-clientpref-night') ||
-                root.classList.contains('client-dark-mode') ||
-                document.body.classList.contains('mw-dark-mode')) {
-                return true;
-            }
-            if (root.classList.contains('skin-theme-clientpref-day') ||
-                root.classList.contains('client-light-mode')) {
-                return false;
-            }
-            return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
-        }
-
-        function palette() {
-            var dark = isDark();
-            return {
-                dark:   dark,
-                bg:     hiruwiki.getThemeColor('hw-bg-base', dark ? '#1e1e1c' : '#ffffff'),
-                grid:   hiruwiki.getThemeColor('hw-border', dark ? '#444441' : '#D3D1C7'),
-                succ:   hiruwiki.getThemeColor('hw-color-success', '#1d9e75'),
-                warn:   hiruwiki.getThemeColor('hw-color-warning', '#BA7517'),
-                base:   hiruwiki.getThemeColor('hw-text-base',      dark ? '#E8E6DC' : '#1a1a18')
-            };
-        }
 
         // --- Math helpers ---
         function dist(a, b) {
@@ -271,32 +261,15 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
         }
 
         // --- Drawing ---
-        function drawGrid(p) {
+        function drawGrid() {
+            ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', '#ccc');
             ctx.lineWidth = 1.0;
-            ctx.strokeStyle = p.grid;
             for (var x = 0; x < W; x += CM) {
-                ctx.globalAlpha = 0.4;
-                for (var mm = 1; mm < 10; mm++) {
-                    var mpx = x + mm * CM / 10;
-                    if (mpx < W) {
-                        ctx.beginPath(); ctx.moveTo(mpx, 0); ctx.lineTo(mpx, H); ctx.stroke();
-                    }
-                }
-                ctx.globalAlpha = 1.0;
                 ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, H); ctx.stroke();
             }
             for (var y = 0; y < H; y += CM) {
-                ctx.globalAlpha = 0.4;
-                for (var rmm = 1; rmm < 10; rmm++) {
-                    var ymm = y + rmm * CM / 10;
-                    if (ymm < H) {
-                        ctx.beginPath(); ctx.moveTo(0, ymm); ctx.lineTo(W, ymm); ctx.stroke();
-                    }
-                }
-                ctx.globalAlpha = 1.0;
                 ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(W, y); ctx.stroke();
             }
-            ctx.globalAlpha = 1.0;
         }
 
         function fillPoly(pts, fill, stroke, lw) {
@@ -340,7 +313,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
 
             // Dashed height line
             ctx.save(); ctx.setLineDash([5, 5]);
-            ctx.strokeStyle = p.warn; ctx.lineWidth = 1.5;
+            ctx.strokeStyle = hiruwiki.getThemeColor('color-warning', '#BA7517'); ctx.lineWidth = 1.5;
             ctx.beginPath(); ctx.moveTo(P3.x, P3.y); ctx.lineTo(foot.x, foot.y); ctx.stroke();
             ctx.setLineDash([]); ctx.restore();
 
@@ -353,13 +326,13 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
                 ctx.lineTo(foot.x - ux * s + nx * s, foot.y - uy * s + ny * s);
                 ctx.lineTo(foot.x + nx * s, foot.y + ny * s);
                 ctx.closePath();
-                ctx.strokeStyle = p.warn; ctx.lineWidth = 1; ctx.stroke();
+                ctx.strokeStyle = hiruwiki.getThemeColor('color-warning', '#BA7517'); ctx.lineWidth = 1; ctx.stroke();
             }
 
             // h label (offset perpendicular to height)
             var mx = (P3.x + foot.x) / 2, my = (P3.y + foot.y) / 2;
             ctx.save(); ctx.font = '500 15px sans-serif';
-            ctx.fillStyle = p.warn; ctx.textAlign = 'center';
+            ctx.fillStyle = hiruwiki.getThemeColor('color-warning', '#BA7517'); ctx.textAlign = 'center';
             ctx.fillText(t('labelHeightShort') + ' = ' + m.hCm + ' ' + t('unitCm'), mx - fdy / flen * 16, my + fdx / flen * 16);
             ctx.restore();
 
@@ -370,14 +343,14 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             var toCx = P3.x - (P1.x + P2.x) / 2, toCy = P3.y - (P1.y + P2.y) / 2;
             var sign = (toCx * bnx + toCy * bny) > 0 ? -1 : 1;
             ctx.save(); ctx.font = '500 15px sans-serif';
-            ctx.fillStyle = p.base; ctx.textAlign = 'center';
+            ctx.fillStyle = hiruwiki.getThemeColor('color-base', '#333'); ctx.textAlign = 'center';
             ctx.fillText(t('labelBaseShort') + ' = ' + m.bCm + ' ' + t('unitCm'),
                 (P1.x + P2.x) / 2 + sign * bnx * 24,
                 (P1.y + P2.y) / 2 + sign * bny * 24);
             ctx.restore();
         }
 
-        function drawProof(t, p) {
+        function drawProof(t) {
             var m = metrics();
             var P1 = m.P1, P2 = m.P2, P3 = m.P3;
             var F = { x: m.foot.x, y: m.foot.y };
@@ -405,7 +378,7 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
                 ctx.moveTo(P1.x, P1.y); ctx.lineTo(P2.x, P2.y);
                 ctx.lineTo(rF.x, rF.y); ctx.lineTo(lF.x, lF.y);
                 ctx.closePath();
-                ctx.strokeStyle = p.base; ctx.lineWidth = 1.5;
+                ctx.strokeStyle = hiruwiki.getThemeColor('color-base', '#333'); ctx.lineWidth = 1.5;
                 ctx.setLineDash([6, 3]); ctx.stroke(); ctx.setLineDash([]);
                 ctx.restore();
 
@@ -418,21 +391,19 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
 
         function draw(ts) {
             ctx.clearRect(0, 0, W, H);
-            var p = palette();
-            ctx.fillStyle = p.bg;
-            ctx.fillRect(0, 0, W, H);
-            drawGrid(p);
+            ctx.fillStyle = hiruwiki.getThemeColor('background-color-neutral-subtle', '#f8f9fa'); ctx.fillRect(0, 0, W, H);
+            drawGrid();
             var m = metrics();
-            fillPoly([V.A, V.B, V.C], 'rgba(29,158,117,0.14)', p.succ, 2);
+            fillPoly([V.A, V.B, V.C], 'rgba(29,158,117,0.14)', hiruwiki.getThemeColor('color-success', '#1d9e75'), 2);
             // Highlight longest side (base)
-            ctx.save(); ctx.strokeStyle = p.succ; ctx.lineWidth = 3.5;
+            ctx.save(); ctx.strokeStyle = hiruwiki.getThemeColor('color-success', '#1d9e75'); ctx.lineWidth = 3.5;
             ctx.beginPath(); ctx.moveTo(m.P1.x, m.P1.y); ctx.lineTo(m.P2.x, m.P2.y); ctx.stroke();
             ctx.restore();
-            drawScene(m, p);
+            drawScene(m);
             drawVtx(V.A, 'A'); drawVtx(V.B, 'B'); drawVtx(V.C, 'C');
             if (phase === 'animating' || phase === 'done') {
                 var elapsed = phase === 'done' ? DUR : (ts - animStart);
-                drawProof(elapsed / DUR, p);
+                drawProof(elapsed / DUR);
                 if (elapsed < DUR && phase === 'animating') {
                     requestAnimationFrame(draw);
                 } else if (phase === 'animating') {
@@ -515,17 +486,12 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
         // Footer — hint text defined in this module's own i18n, not loaded externally
         var footer = document.createElement('div');
         footer.className = 'hw-footer';
-        var fLogo = document.createElement('a');
-        fLogo.className = 'hw-footer-icon';
-        fLogo.href = (window.mw && mw.util.getUrl('Wikipedia:Hiruwiki')) || '#';
-        fLogo.title = 'Hiruwiki';
-        if (window.hiruwiki && window.hiruwiki.getLogoSvg) {
-            fLogo.insertAdjacentHTML('beforeend', hiruwiki.getLogoSvg(22));
-        }
+        var fImg = document.createElement('img');
+        fImg.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Hiruwiki.svg/32px-Hiruwiki.svg.png';
+        fImg.alt = 'Hiruwiki'; fImg.width = 22; fImg.height = 22;
         var fText = document.createElement('span');
-        fText.className = 'hw-footer__text';
         fText.innerHTML = t('hint');
-        footer.appendChild(fLogo);
+        footer.appendChild(fImg);
         footer.appendChild(fText);
         container.appendChild(footer);
     }
