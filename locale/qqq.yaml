@@ -444,25 +444,25 @@ qqq:
     angleC: Label for angle C of the triangle
     triangle: Section heading for the triangle properties card
   circumcentre:
-		_name: Name of the circumcentre module
-		triangle: Section heading for the triangle properties card
-		circumcentre: Section heading for the circumcentre properties card
-		hint: Instruction text shown in the footer. Includes scale information.
-		sideA: Label for side a (BC) of the triangle
-		sideB: Label for side b (CA) of the triangle
-		sideC: Label for side c (AB) of the triangle
-		angleA: Label for angle A of the triangle
-		angleB: Label for angle B of the triangle
-		angleC: Label for angle C of the triangle
-		perimeter: Label for the triangle perimeter
-		centre: Label for the circumcentre point O
-		radius: Label for the circumradius R
-		midA: Label for the midpoint of side a (BC)
-		midB: Label for the midpoint of side b (CA)
-		midC: Label for the midpoint of side c (AB)
-		circPerimeter: Label for the circumcircle perimeter (2πR)
-		circArea: Label for the circumcircle area (πR²)
-		scaleUnit: Unit abbreviation used for length measurements (centimetres)
+	_name: Name of the circumcentre module
+	triangle: Section heading for the triangle properties card
+	circumcentre: Section heading for the circumcentre properties card
+	hint: Instruction text shown in the footer. Includes scale information.
+	sideA: Label for side a (BC) of the triangle
+	sideB: Label for side b (CA) of the triangle
+	sideC: Label for side c (AB) of the triangle
+	angleA: Label for angle A of the triangle
+	angleB: Label for angle B of the triangle
+	angleC: Label for angle C of the triangle
+	perimeter: Label for the triangle perimeter
+	centre: Label for the circumcentre point O
+	radius: Label for the circumradius R
+	midA: Label for the midpoint of side a (BC)
+	midB: Label for the midpoint of side b (CA)
+	midC: Label for the midpoint of side c (AB)
+	circPerimeter: Label for the circumcircle perimeter (2πR)
+	circArea: Label for the circumcircle area (πR²)
+	scaleUnit: Unit abbreviation used for length measurements (centimetres)
   integer-coordinates:
     _name: Name of the Integer Coordinates module
     btnChallenge: Label for the challenge mode button
@@ -491,4 +491,17 @@ qqq:
     pointLabel: Label for the current point coordinates
     titleExplore: Heading for the explorer panel
     hint: General instruction text for the module
+  euler-line:
+	_name: Name of the Euler Line module
+	triangle: Section heading for the triangle properties card
+	eulerLine: Section heading for the Euler line properties card
+	hint: Instruction text shown in the footer. Includes scale information.
+	sideA: Label for side a (BC) of the triangle
+	sideB: Label for side b (CA) of the triangle
+	sideC: Label for side c (AB) of the triangle
+	perimeter: Label for the triangle perimeter
+	circumcenter: Label for the circumcenter point O
+	centroid: Label for the centroid point G
+	orthocentre: Label for the orthocentre point H
+	scaleUnit: Unit abbreviation used for measurements (centimetres)
 ...
