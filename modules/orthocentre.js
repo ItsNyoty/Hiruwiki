@@ -289,8 +289,8 @@ function buildWidget( container ) {
 			ruleBg:   hiruwiki.getThemeColor( 'hw-bg-subtle',     dark ? '#2C2C2A' : '#F1EFE8' ),
 			ruleTick: hiruwiki.getThemeColor( 'hw-text-placeholder', '#888780' ),
 			ruleText: hiruwiki.getThemeColor( 'hw-text-muted',       '#5F5E5A' ),
-			gridMm:   dark ? 'rgba(255,255,255,.15)' : 'rgba(0,0,0,.20)',
-			gridCm:   dark ? 'rgba(255,255,255,.30)' : 'rgba(0,0,0,.40)',
+			gridMm:   dark ? 'rgba(255,255,255,.15)' : '#E0E0E0',
+			gridCm:   dark ? 'rgba(255,255,255,.30)' : '#BDBDBD',
 			dotBg:    hiruwiki.getThemeColor( 'hw-bg-base', dark ? '#1e1e1c' : '#ffffff' )
 		};
 	}

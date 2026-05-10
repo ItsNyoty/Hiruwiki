@@ -209,8 +209,8 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             return {
                 dark:   dark,
                 bg:     hiruwiki.getThemeColor('hw-bg-base', dark ? '#1e1e1c' : '#ffffff'),
-                gridMm: dark ? 'rgba(255,255,255,.15)' : 'rgba(0,0,0,.20)',
-                gridCm: dark ? 'rgba(255,255,255,.30)' : 'rgba(0,0,0,.40)',
+                gridMm: dark ? 'rgba(255,255,255,.15)' : '#E0E0E0',
+                gridCm: dark ? 'rgba(255,255,255,.30)' : '#BDBDBD',
                 succ:   hiruwiki.getThemeColor('hw-color-success', '#1d9e75'),
                 warn:   hiruwiki.getThemeColor('hw-color-warning', '#BA7517'),
                 base:   hiruwiki.getThemeColor('hw-text-base',      dark ? '#E8E6DC' : '#1a1a18')
@@ -395,25 +395,25 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
             var mP1P3 = mid(P1, P3);
             var mP2P3 = mid(P2, P3);
 
-            // Left piece (P1, F, P3): rotate around mid(P1,P3), F swings away from P2
+            // Left piece (P1, F, P3): rotate around mid(P1,P3)
             var dirL = rotDir(F, mP1P3, P1, P3, P2);
             var angL = Math.PI * e * dirL;
             var lP1 = rotPt(P1, mP1P3, angL), lF = rotPt(F, mP1P3, angL), lP3 = rotPt(P3, mP1P3, angL);
             fillPoly([lP1, lF, lP3], 'rgba(216,90,48,0.25)', '#D85A30', 2);
 
-            // Right piece (F, P2, P3): rotate around mid(P2,P3), F swings away from P1
+            // Right piece (F, P2, P3): rotate around mid(P2,P3)
             var dirR = rotDir(F, mP2P3, P2, P3, P1);
             var angR = Math.PI * e * dirR;
             var rF = rotPt(F, mP2P3, angR), rP2 = rotPt(P2, mP2P3, angR), rP3 = rotPt(P3, mP2P3, angR);
-            fillPoly([rF, rP2, rP3], 'rgba(24,95,165,0.25)', hiruwiki.getThemeColor('color-progressive', '#185fa5'), 2);
+            fillPoly([rF, rP2, rP3], 'rgba(24,95,165,0.25)', '#185fa5', 2);
 
             if (e >= 0.99) {
                 ctx.save();
                 ctx.beginPath();
-                ctx.moveTo(P1.x, P1.y); ctx.lineTo(P2.x, P2.y);
-                ctx.lineTo(rP3.x, rP3.y); ctx.lineTo(lP3.x, lP3.y);
+                ctx.moveTo(lF.x, lF.y); ctx.lineTo(lP1.x, lP1.y);
+                ctx.lineTo(rP2.x, rP2.y); ctx.lineTo(rF.x, rF.y);
                 ctx.closePath();
-                ctx.strokeStyle = hiruwiki.getThemeColor('color-base', '#333'); ctx.lineWidth = 1.5;
+                ctx.strokeStyle = p.base; ctx.lineWidth = 1.5;
                 ctx.setLineDash([6, 3]); ctx.stroke(); ctx.setLineDash([]);
                 ctx.restore();
 
@@ -529,6 +529,13 @@ var W = 680, H = 430, CM = 37.8, DUR = 1600;
         fLogo.title = 'Hiruwiki';
         if (window.hiruwiki && window.hiruwiki.getLogoSvg) {
             fLogo.insertAdjacentHTML('beforeend', hiruwiki.getLogoSvg(22));
+        } else {
+            // Retry once if hiruwiki is not ready yet
+            setTimeout(function() {
+                if (window.hiruwiki && window.hiruwiki.getLogoSvg && !fLogo.querySelector('svg')) {
+                    fLogo.insertAdjacentHTML('beforeend', hiruwiki.getLogoSvg(22));
+                }
+            }, 500);
         }
         var fText = document.createElement('span');
         fText.className = 'hw-footer__text';
