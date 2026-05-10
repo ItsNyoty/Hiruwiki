@@ -2,7 +2,9 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 ---
-qqq: angle-guess: _name: Name of the Angle Guess module
+qqq:
+  angle-guess:
+    _name: Name of the Angle Guess module
     difference: Label for the difference between the target angle and the player's
       guess. Followed by a value in degrees.
     finalScore: Heading shown when all rounds are complete, above the total score
@@ -10,14 +12,15 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     nextAngle: Button label to proceed to the next angle. Uses &rsaquo; as a right-pointing
       arrow.
     points: Label for the points earned. Followed by a numeric value.
-    pts: Abbreviation for points displayed after a numeric score
-    round: Label for the current round number. Followed by X / Y.
+    pts: Abbreviation for "points displayed after a numeric score
+    round: Label for the current round number. Followed by "X / Y".
     roundOver: Heading shown in the overlay when all rounds are finished
     target: Label for the target angle the player must guess. Followed by a value
       in degrees.
     tryAgain: Button label to start a new game after all rounds are complete
     yourGuess: Label for the angle the player guessed. Followed by a value in degrees.
-  angles: _name: Name of the Angles module
+  angles:
+    _name: Name of the Angles module
     bisector: Button label for the bisector mode
     bisectorResult: 'Result text showing the bisector angle. Parameters: {0} = bisector
       angle in degrees.'
@@ -26,10 +29,11 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     notDefined: Message shown when the selected angle operation is not defined for
       the current angle (e.g. complement of an angle ≥ 90°)
     resultAngle: 'Result text showing a computed angle. Parameters: {0} = angle type
-      name (e.g. Complementary), {1} = angle in degrees.'
+      name (e.g. "Complementary"), {1} = angle in degrees.'
     supplement: Button label for the supplementary angle mode
     hint: Instruction text explaining how to interact with the angle applet
-  circle-proof: _name: Name of the Circle Proof module
+  circle-proof:
+    _name: Name of the Circle Proof module
     animStopped: Status message shown when the user stops the animation
     area: Label for the area metric
     areaAnimStatus: Status message shown during the area proof animation, explaining
@@ -53,14 +57,15 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     title: Title of the circle calculator sidebar
     visualProof: Section heading for the visual proof controls
     hint: Instruction text explaining that the radius slider is interactive
-  dividend: _name: Name of the Dividend and Divisor module
+  dividend:
+    _name: Name of the Dividend and Divisor module
     eq_lbl_dividend: Label for the dividend in the division equation display
     eq_lbl_divisor: Label for the divisor in the division equation display
     eq_lbl_quotient: Label for the quotient in the division equation display
     eq_lbl_remainder: Label for the remainder in the division equation display
     insight_exact: 'Insight text shown when division is exact (no remainder). Uses
       HTML. Parameters: {N} = dividend, {D} = divisor, {Q} = quotient, {s} = plural
-      suffix for chunk (empty when Q=1, s otherwise).'
+      suffix for "chunk" (empty when Q=1, "s" otherwise).'
     insight_less: 'Insight text shown when the dividend is smaller than the divisor.
       Uses HTML. Parameters: {N} = dividend, {D} = divisor.'
     insight_normal: 'Insight text shown for normal division with a remainder. Uses
@@ -79,7 +84,8 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     repadd_less: 'Text shown in the repeated addition section when the dividend is
       less than the divisor. Parameters: {N} = dividend, {D} = divisor.'
     hint: Instruction text explaining how to use the division sliders
-  factors: _name: Name of the Prime Factors module
+  factors:
+    _name: Name of the Prime Factors module
     gcd_formula_eq: Equals sign used in the GCD formula display
     gcd_none: Text shown when two numbers share no prime factors (are coprime)
     gcd_title: Heading for the GCD (Greatest Common Divisor) section
@@ -103,7 +109,8 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     legend_shared: Legend label for factor blocks shared between A and B (used for
       GCD)
     hint: Instruction text explaining how to use the number sliders
-  fibonacci: _name: Name of the Fibonacci Sequence module
+  fibonacci:
+    _name: Name of the Fibonacci Sequence module
     card_phi_lbl: Label for the golden ratio φ card
     card_phi_sub: Subtitle showing the formula and decimal value of the golden ratio
     card_ratio_error: Label for the error from φ, followed by a numeric value
@@ -117,7 +124,8 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     insight_converged: 'Insight text shown when the ratio has converged to 6 decimal
       places. Uses HTML. Parameters: {fa} = left addend, {fb} = right addend, {fr}
       = sum, {ratio} = current ratio, {error} = error from φ.'
-    insight_normal: 'Insight text shown during normal steps. Uses HTML. Parameters: {fa} = left addend, {fb} = right addend, {fr} = sum, {ratio} = current ratio,
+    insight_normal: 'Insight text shown during normal steps. Uses HTML. Parameters:
+      {fa} = left addend, {fb} = right addend, {fr} = sum, {ratio} = current ratio,
       {error} = error from φ.'
     insight_step1: Insight text shown at the first step of the Fibonacci sequence.
       Uses HTML.
@@ -130,14 +138,16 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     step_label: 'Label showing the current step. Parameters: {step} = current step
       number, {total} = total number of steps.'
     hint: Instruction text for the Fibonacci step-through controls
-  hexagon-angles: 2quads: Decomposition label showing 2 quadrilaterals × 360°
+  hexagon-angles:
+    2quads: Decomposition label showing 2 quadrilaterals × 360°
     4triangles: Decomposition label showing 4 triangles × 180°
     _name: Name of the Hexagon Angles module
     interiorAngles: Heading for the interior angles section
     reset: Button label to reset the visualisation
     total: Label for the total sum of interior angles
     hint: Instruction text for the hexagon angle decomposition applet
-  incentre: _name: Name of the Incentre module
+  incentre:
+    _name: Name of the Incentre module
     angleA: Label for angle A of the triangle
     angleB: Label for angle B of the triangle
     angleC: Label for angle C of the triangle
@@ -157,7 +167,8 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     touchBC: Label for the tangent point on side BC
     touchCA: Label for the tangent point on side CA
     triangle: Section heading for the triangle properties
-  marble-jar: _name: Name of the Probability Jar module
+  marble-jar:
+    _name: Name of the Probability Jar module
     colorBlue: Name of the blue marble colour
     colorGreen: Name of the green marble colour
     colorRed: Name of the red marble colour
@@ -167,7 +178,8 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     shake: Button label to shake the jar and randomise marbles
     total: Label for the total number of marbles
     hint: Instruction text for the probability jar interaction
-  monte-carlo: _name: Name of the Monte Carlo Pi module
+  monte-carlo:
+    _name: Name of the Monte Carlo Pi module
     addPoints: Button label to add more random points to the simulation
     approxPi: Label for the current approximation of π
     insideCircle: Label for the count of points inside the circle
@@ -178,21 +190,25 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     reset: Button label to reset the simulation
     totalPoints: Label for the total number of points
     hint: Instruction text for the Monte Carlo simulation interaction
-  pentagon-angles: 3triangles: Decomposition label showing 3 triangles × 180°
+  pentagon-angles:
+    3triangles: Decomposition label showing 3 triangles × 180°
     _name: Name of the Pentagon Angles module
     interiorAngles: Heading for the interior angles section
     reset: Button label to reset the visualisation
     total: Label for the total sum of interior angles
     hint: Instruction text for the pentagon angle decomposition applet
-  percent: _name: Name of the Percentages module
+  percent:
+    _name: Name of the Percentages module
     axis_neg: Label at the left end of the slider axis (−100%)
     axis_pos: Label at the right end of the slider axis (+100%)
     axis_zero: Label at the centre of the slider axis (0%)
     hint: Instruction text explaining how to use the slider
     insight_full_loss: Insight text shown when the loss is exactly 100%. Uses HTML.
-    insight_gain: 'Insight text shown for a percentage gain. Uses HTML. Parameters: {pct} = percentage applied, {result} = value after gain, {recovery} = percentage
+    insight_gain: 'Insight text shown for a percentage gain. Uses HTML. Parameters:
+      {pct} = percentage applied, {result} = value after gain, {recovery} = percentage
       needed to return to 100.'
-    insight_loss: 'Insight text shown for a percentage loss. Uses HTML. Parameters: {pct} = percentage applied, {result} = value after loss, {recovery} = percentage
+    insight_loss: 'Insight text shown for a percentage loss. Uses HTML. Parameters:
+      {pct} = percentage applied, {result} = value after loss, {recovery} = percentage
       needed to return to 100.'
     insight_zero: Insight text shown when the slider is at zero (no change)
     label_after: Label on the bar visualisation for the value after the percentage
@@ -201,18 +217,21 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     label_recovered: Label on the bar visualisation for the recovery bar
     label_scale: Label explaining the scale of the bar visualisation
     label_start: Label on the bar visualisation for the starting value
-  pythagoras: _name: Name of the Pythagorean Theorem module
+  pythagoras:
+    _name: Name of the Pythagorean Theorem module
     angleDeg: Label prefix for the angle value. Followed by a number in degrees.
     lockRight: Checkbox label to lock the triangle to a right angle
     reset: Button label to reset the triangle
     hint: Instruction text for the Pythagoras theorem interaction
-  quadrangle-angles: _name: Name of the Quadrangle Angles module
+  quadrangle-angles:
+    _name: Name of the Quadrangle Angles module
     interiorAngles: Heading for the interior angles section
     reset: Button label to reset the visualisation
     sum: Label for the sum of angles
     total: Label for the total sum of interior angles
     hint: Instruction text for the quadrangle angle interaction
-  quadrangles: _name: Name of the Quadrilaterals module
+  quadrangles:
+    _name: Name of the Quadrilaterals module
     areaDiagHalf: 'Area formula for a kite using diagonals. Parameters: {0} = diagonal
       d₁ length, {1} = diagonal d₂ length.'
     areaGaussHeader: Header text for the Gauss (shoelace) formula section
@@ -248,13 +267,16 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     unitCm: Unit abbreviation for centimetres
     unitCm2: Unit abbreviation for square centimetres
     hint: Instruction text for the quadrilateral classification applet
-  radian: _name: Name of the Radians module
+  radian:
+    _name: Name of the Radians module
     rad: Abbreviation for radians
     hint: Instruction text for the radian-degree relationship applet
-  slope: _name: Name of the Slope module
+  slope:
+    _name: Name of the Slope module
     undefined: Message shown when the line is vertical and the slope is undefined
     hint: Instruction text for the slope calculation interaction
-  transformation: _name: Name of the Transformations module
+  transformation:
+    _name: Name of the Transformations module
     angle: Label for the rotation angle slider
     enlargement: Button label and heading for the enlargement transformation
     hintEnlargement: Instruction text for the enlargement mode
@@ -268,10 +290,12 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     translation: Button label and heading for the translation transformation
     vertical: Label for the vertical translation slider
     hint: Instruction text for the transformation module
-  triangle-angles: _name: Name of the Triangle Angles module
+  triangle-angles:
+    _name: Name of the Triangle Angles module
     reset: Button label to reset the triangle
     hint: Explanation about how the module is interactive
-  triangle-area: _name: Name of the Triangle Area module
+  triangle-area:
+    _name: Name of the Triangle Area module
     btnProve: Button label to start the area proof animation
     btnReset: Button label to reset the triangle
     labelArea: Label for the computed area value
@@ -279,16 +303,19 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     labelHeight: Label for the height measurement, with variable name in parentheses
     labelBaseShort: Short symbol for base (usually 'b')
     labelHeightShort: Short symbol for height (usually 'h')
-    proofResultPara: 'Proof result text for the parallelogram area. Uses HTML. Parameters: {b} = base, {h} = height, {area} = parallelogram area.'
+    proofResultPara: 'Proof result text for the parallelogram area. Uses HTML. Parameters:
+      {b} = base, {h} = height, {area} = parallelogram area.'
     proofResultTri: 'Proof result text for the triangle area (half the parallelogram).
       Uses HTML. Parameters: {area} = parallelogram area, {triArea} = triangle area.'
     unitCm: Unit of length (centimeters)
     unitCm2: Unit of area (square centimeters)
     hint: Explanation about how the module is interactive
-  triangle-centroid: _name: Name of the Triangle Centroid module
+  triangle-centroid:
+    _name: Name of the Triangle Centroid module
     centroid: Label for the centroid point
     hint: Instruction text telling the user to drag vertices
-  triangles: _name: Name of the Triangles module
+  triangles:
+    _name: Name of the Triangles module
     acute: Classification name for an acute triangle (all angles < 90°)
     angles: Section heading for the angles display
     area: Label for the triangle area
@@ -312,7 +339,8 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     unitCm: Unit of length (centimeters)
     unitCm2: Unit of area (square centimeters)
     hint: Explanation about how the module is interactive
-  trigonometry: _name: Name of the Trigonometry module
+  trigonometry:
+    _name: Name of the Trigonometry module
     angle: Label for the angle θ slider. Uses &theta; HTML entity.
     cosDesc: Description of the cosine function shown in the proof panel. Uses HTML
       entities and formatting.
@@ -326,7 +354,8 @@ qqq: angle-guess: _name: Name of the Angle Guess module
       entities and formatting.
     tanFormula: Formula for tangent (opposite / adjacent)
     hint: Instruction text for the unit circle interaction
-  integer-coordinates: _name: Name of the Positive Coordinates module (integer grid variant)
+  integer-coordinates:
+    _name: Name of the Positive Coordinates module (integer grid variant)
     btnChallenge: Button label to switch to challenge mode
     btnCheck: Button label to check the player's answer
     btnExplore: Button label to switch to explore mode
@@ -335,11 +364,13 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     feedbackWrong: Feedback shown when the player places the star incorrectly
     hintChallenge: Instruction text shown in challenge mode
     hintExplore: Instruction text shown in explore mode
-    movePrompt: 'Prompt telling the player where to move the star. Uses HTML. Parameters: {targetX} = target X coordinate, {targetY} = target Y coordinate.'
+    movePrompt: 'Prompt telling the player where to move the star. Uses HTML. Parameters:
+      {targetX} = target X coordinate, {targetY} = target Y coordinate.'
     pointLabel: Label for the current point coordinates. Followed by coordinate values.
     titleExplore: Title shown in explore mode
     hint: Instruction text for the coordinate system interaction
-  positive-coordinates: _name: Name of the Positive Coordinates module
+  positive-coordinates:
+    _name: Name of the Positive Coordinates module
     btnChallenge: Button label to switch to challenge mode
     btnCheck: Button label to check the player's answer
     btnExplore: Button label to switch to explore mode
@@ -348,11 +379,13 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     feedbackWrong: Feedback shown when the player places the star incorrectly
     hintChallenge: Instruction text shown in challenge mode
     hintExplore: Instruction text shown in explore mode
-    movePrompt: 'Prompt telling the player where to move the star. Uses HTML. Parameters: {targetX} = target X coordinate, {targetY} = target Y coordinate.'
+    movePrompt: 'Prompt telling the player where to move the star. Uses HTML. Parameters:
+      {targetX} = target X coordinate, {targetY} = target Y coordinate.'
     pointLabel: Label for the current point coordinates. Followed by coordinate values.
     titleExplore: Title shown in explore mode
     hint: Instruction text for the coordinate system interaction
-  gauss-legendre: _name: Name of the Gauss-Legendre Algorithm module
+  gauss-legendre:
+    _name: Name of the Gauss-Legendre Algorithm module
     iteration: Label for the current iteration number
     variable_a: Label for the arithmetic mean variable 'a'
     variable_b: Label for the geometric mean variable 'b'
@@ -367,7 +400,8 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     formula_label: Label for the mathematical formula being used
     update_rules_heading: Heading for the section explaining how variables change each step
     hint: Instruction text for the Gauss-Legendre algorithm interaction
-  orthocentre: _name: Name of the Orthocentre module
+  orthocentre:
+    _name: Name of the Orthocentre module
     altA: Label for the full altitude from vertex A
     altB: Label for the full altitude from vertex B
     altC: Label for the full altitude from vertex C
@@ -385,24 +419,4 @@ qqq: angle-guess: _name: Name of the Angle Guess module
     angleA: Label for angle A of the triangle
     angleB: Label for angle B of the triangle
     angleC: Label for angle C of the triangle
-    triangle: Section heading for the triangle properties card
-  circumcentre: _name: Name of the circumcentre module,
-		triangle: Section heading for the triangle properties card,
-		circumcentre: Section heading for the circumcentre properties card,
-		hint: Instruction text shown in the footer. Includes scale information.,
-		sideA: Label for side a (BC) of the triangle,
-		sideB: Label for side b (CA) of the triangle,
-		sideC: Label for side c (AB) of the triangle,
-		angleA: Label for angle A of the triangle,
-		angleB: Label for angle B of the triangle,
-		angleC: Label for angle C of the triangle,
-		perimeter: Label for the triangle perimeter,
-		centre: Label for the circumcentre point O,
-		radius: Label for the circumradius R,
-		midA: Label for the midpoint of side a (BC),
-		midB: Label for the midpoint of side b (CA),
-		midC: Label for the midpoint of side c (AB),
-		circPerimeter: Label for the circumcircle perimeter (2πR),
-		circArea: Label for the circumcircle area (πR²),
-		scaleUnit: Unit abbreviation used for length measurements (centimetres),
-		scaleUnit2: Unit abbreviation used for area measurements (square centimetres)
+    triangle: Section heading for the triangle properties card"
