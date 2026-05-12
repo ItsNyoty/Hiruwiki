@@ -368,7 +368,16 @@ nl:
   slope:
     _name: Helling
     undefined: Verticale lijn → helling ongedefinieerd
-    hint: 'Sleep de punten om de hellingsberekening te zien'
+    hint: Sleep de punten om de hellingsberekening te zien
+    point1: Punt P₁
+    point2: Punt P₂
+    coords1: Coördinaten van P₁
+    coords2: Coördinaten van P₂
+    rise: Stijging (Δy)
+    run: Aanloop (Δx)
+    slope: Helling (m)
+    slopeCard: Helling
+    pointsCard: Punten
   transformation:
     _name: Transformaties
     angle: Hoek
@@ -411,8 +420,9 @@ nl:
     hint: Sleep de hoekpunten om de vorm van de driehoek te veranderen
   triangle-centroid:
     _name: Zwaartepunt van een driehoek
+    triangle: Driehoek
     centroid: Zwaartepunt
-    hint: Verplaats de hoekpunten om te zien hoe de positie van het zwaartepunt verandert.
+    hint: 'Sleep een hoekpunt · Schaal: 1 cm = 40 px'
     sideA: Zijde a (BC)
     sideB: Zijde b (CA)
     sideC: Zijde c (AB)

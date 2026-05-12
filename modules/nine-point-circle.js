@@ -36,6 +36,38 @@ var messages = /* I18N_START */ {
         "legendE": "E_a/b/c — midpoints of AH, BH, CH",
         "scaleUnit": "cm"
     },
+    "es": {
+        "_name": "Círculo de los nueve puntos",
+        "triangle": "Triángulo",
+        "ninePoint": "Círculo de los nueve puntos",
+        "hint": "Arrastra un vértice · Escala: 1 cm = 40 px",
+        "sideA": "Lado a (BC)",
+        "sideB": "Lado b (CA)",
+        "sideC": "Lado c (AB)",
+        "perimeter": "Perímetro",
+        "centre": "Centro N₉",
+        "radius": "Radio",
+        "legendM": "M_a/b/c — puntos medios de los lados",
+        "legendH": "H_a/b/c — pies de las alturas",
+        "legendE": "E_a/b/c — puntos medios de AH, BH, CH",
+        "scaleUnit": "cm"
+    },
+    "eu": {
+        "_name": "Bederatzi puntuko zirkulua",
+        "triangle": "Triangelua",
+        "ninePoint": "Bederatzi puntuko zirkulua",
+        "hint": "Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px",
+        "sideA": "a aldea (BC)",
+        "sideB": "b aldea (CA)",
+        "sideC": "c aldea (AB)",
+        "perimeter": "Perimetroa",
+        "centre": "N₉ zentroa",
+        "radius": "Erradioa",
+        "legendM": "M_a/b/c — aldeen erdipuntuak",
+        "legendH": "H_a/b/c — alturen oinak",
+        "legendE": "E_a/b/c — AH, BH, CH erdipuntuak",
+        "scaleUnit": "cm"
+    },
     "fr": {
         "_name": "Cercle des neuf points",
         "triangle": "Triangle",

@@ -172,6 +172,19 @@ eu:
     touchBC: BC tangentea
     touchCA: CA tangentea
     triangle: Triangelua
+  euler-line:
+    _name: Eulerren zuzenea
+    triangle: Triangelua
+    eulerLine: Eulerren zuzenea
+    hint: 'Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px'
+    sideA: a aldea (BC)
+    sideB: b aldea (CA)
+    sideC: c aldea (AB)
+    perimeter: Perimetroa
+    circumcenter: Zirkunzentroa O
+    centroid: Zentroidea G
+    orthocentre: Ortozentro H
+    scaleUnit: cm
   marble-jar:
     _name: Probabilitate ontzia
     colorBlue: Urdina
@@ -194,6 +207,21 @@ eu:
     reset: ↺ Berrezarri
     totalPoints: Puntu kopurua
     hint: 'Gehitu puntuak probabilitatea erabiliz π hurbiltzeko'
+  nine-point-circle:
+    _name: Bederatzi puntuko zirkulua
+    triangle: Triangelua
+    ninePoint: Bederatzi puntuko zirkulua
+    hint: 'Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px'
+    sideA: a aldea (BC)
+    sideB: b aldea (CA)
+    sideC: c aldea (AB)
+    perimeter: Perimetroa
+    centre: N₉ zentroa
+    radius: Erradioa
+    legendM: M_a/b/c — aldeen erdipuntuak
+    legendH: H_a/b/c — alturen oinak
+    legendE: E_a/b/c — AH, BH, CH erdipuntuak
+    scaleUnit: cm
   orthocentre:
     _name: Ortozentro
     altA: Altuera hₐ
@@ -306,6 +334,16 @@ eu:
   slope:
     _name: Maldia
     undefined: Lerro bertikala → malda ezarri gabe
+    hint: Puntu zatiak arrastatu maldaren kalkulua ikusteko
+    point1: P₁ puntua
+    point2: P₂ puntua
+    coords1: P₁ koordenatuak
+    coords2: P₂ koordenatuak
+    rise: Igoera (Δy)
+    run: Ibilbidea (Δx)
+    slope: Malda (m)
+    slopeCard: Malda
+    pointsCard: Puntuak
   transformation:
     _name: Transformazioak
     angle: Angelua
@@ -345,8 +383,21 @@ eu:
     unitCm2: cm²
   triangle-centroid:
     _name: Hirukiaren barizentroa
+    triangle: Triangelua
     centroid: Zentroidea
-    hint: Mugitu erpinak barizentroaren kokapena nola aldatzen den ikusteko
+    hint: 'Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px'
+    sideA: a aldea (BC)
+    sideB: b aldea (CA)
+    sideC: c aldea (AB)
+    angleA: A angelua
+    angleB: B angelua
+    angleC: C angelua
+    perimeter: Perimetroa
+    centre: G zentroa
+    medianA: Mediana m_a
+    medianB: Mediana m_b
+    medianC: Mediana m_c
+    scaleUnit: cm
   triangles:
     _name: Hirukiak
     acute: zorrotza

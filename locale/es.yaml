@@ -171,6 +171,19 @@ es:
     touchBC: Pt. tangencia BC
     touchCA: Pt. tangencia CA
     triangle: Triángulo
+  euler-line:
+    _name: Recta de Euler
+    triangle: Triángulo
+    eulerLine: Recta de Euler
+    hint: 'Arrastra un vértice · Escala: 1 cm = 40 px'
+    sideA: Lado a (BC)
+    sideB: Lado b (CA)
+    sideC: Lado c (AB)
+    perimeter: Perímetro
+    circumcenter: Circuncentro O
+    centroid: Baricentro G
+    orthocentre: Ortocentro H
+    scaleUnit: cm
   marble-jar:
     _name: Frasco de probabilidades
     colorBlue: Azul
@@ -193,6 +206,21 @@ es:
     reset: ↺ Reiniciar
     totalPoints: Puntos totales
     hint: 'Añade puntos para aproximar π usando probabilidad'
+  nine-point-circle:
+    _name: "Círculo de los nueve puntos"
+    triangle: "Triángulo"
+    ninePoint: "Círculo de los nueve puntos"
+    hint: "Arrastra un vértice · Escala: 1 cm = 40 px"
+    sideA: "Lado a (BC)"
+    sideB: "Lado b (CA)"
+    sideC: "Lado c (AB)"
+    perimeter: "Perímetro"
+    centre: "Centro N₉"
+    radius: "Radio"
+    legendM: "M_a/b/c — puntos medios de los lados"
+    legendH: "H_a/b/c — pies de las alturas"
+    legendE: "E_a/b/c — puntos medios de AH, BH, CH"
+    scaleUnit: "cm"
   orthocentre:
     _name: Ortocentro
     altA: Altura hₐ
@@ -312,6 +340,16 @@ es:
   slope:
     _name: Pendiente
     undefined: Línea vertical → pendiente indefinida
+    hint: Arrastra los puntos para ver el cálculo de la pendiente
+    point1: Punto P₁
+    point2: Punto P₂
+    coords1: Coordenadas de P₁
+    coords2: Coordenadas de P₂
+    rise: Elevación (Δy)
+    run: Avance (Δx)
+    slope: Pendiente (m)
+    slopeCard: Pendiente
+    pointsCard: Puntos
   transformation:
     _name: Transformaciones
     angle: Ángulo
@@ -350,8 +388,21 @@ es:
     unitCm2: cm²
   triangle-centroid:
     _name: Baricentro del triángulo
+    triangle: Triángulo
     centroid: Baricentro
-    hint: Mueve los vértices para ver cómo cambia la posición del baricentro.
+    hint: 'Arrastra un vértice · Escala: 1 cm = 40 px'
+    sideA: Lado a (BC)
+    sideB: Lado b (CA)
+    sideC: Lado c (AB)
+    angleA: Ángulo A
+    angleB: Ángulo B
+    angleC: Ángulo C
+    perimeter: Perímetro
+    centre: Centro G
+    medianA: Mediana m_a
+    medianB: Mediana m_b
+    medianC: Mediana m_c
+    scaleUnit: cm
   triangles:
     _name: Triángulos
     acute: acutángulo

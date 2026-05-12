@@ -26,6 +26,34 @@ var messages = /* I18N_START */ {
         "orthocentre": "Orthocentre H",
         "scaleUnit": "cm"
     },
+    "es": {
+        "_name": "Recta de Euler",
+        "triangle": "Triángulo",
+        "eulerLine": "Recta de Euler",
+        "hint": "Arrastra un vértice · Escala: 1 cm = 40 px",
+        "sideA": "Lado a (BC)",
+        "sideB": "Lado b (CA)",
+        "sideC": "Lado c (AB)",
+        "perimeter": "Perímetro",
+        "circumcenter": "Circuncentro O",
+        "centroid": "Baricentro G",
+        "orthocentre": "Ortocentro H",
+        "scaleUnit": "cm"
+    },
+    "eu": {
+        "_name": "Eulerren zuzenea",
+        "triangle": "Triangelua",
+        "eulerLine": "Eulerren zuzenea",
+        "hint": "Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px",
+        "sideA": "a aldea (BC)",
+        "sideB": "b aldea (CA)",
+        "sideC": "c aldea (AB)",
+        "perimeter": "Perimetroa",
+        "circumcenter": "Zirkunzentroa O",
+        "centroid": "Zentroidea G",
+        "orthocentre": "Ortozentro H",
+        "scaleUnit": "cm"
+    },
     "fr": {
         "_name": "Droite d'Euler",
         "triangle": "Triangle",

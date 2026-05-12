@@ -357,6 +357,16 @@ fr:
   slope:
     _name: Pente
     undefined: Ligne verticale → pente indéfinie
+    hint: Faites glisser les points pour voir le calcul de la pente
+    point1: Point P₁
+    point2: Point P₂
+    coords1: Coordonnées de P₁
+    coords2: Coordonnées de P₂
+    rise: Montée (Δy)
+    run: Course (Δx)
+    slope: Pente (m)
+    slopeCard: Pente
+    pointsCard: Points
   transformation:
     _name: Transformations
     angle: Angle
@@ -396,9 +406,9 @@ fr:
     unitCm2: cm²
   triangle-centroid:
     _name: Centre de gravité du triangle
+    triangle: Triangle
     centroid: Centre de gravité
-    hint: Déplacez les sommets pour voir comment la position du centre de gravité
-      change.
+    hint: 'Faites glisser un sommet · Échelle : 1 cm = 40 px'
     sideA: Côté a (BC)
     sideB: Côté b (CA)
     sideC: Côté c (AB)

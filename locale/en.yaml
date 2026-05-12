@@ -354,7 +354,16 @@ en:
   slope:
     _name: Slope
     undefined: Vertical line → slope undefined
-    hint: 'Drag the points to see the slope calculation'
+    hint: Drag the points to see the slope calculation
+    point1: Point P₁
+    point2: Point P₂
+    coords1: P₁ coordinates
+    coords2: P₂ coordinates
+    rise: Rise (Δy)
+    run: Run (Δx)
+    slope: Slope (m)
+    slopeCard: Slope
+    pointsCard: Points
   transformation:
     _name: Transformations
     angle: Angle
@@ -399,8 +408,9 @@ en:
     formula: A + B + C = 180°
   triangle-centroid:
     _name: Triangle Centroid
+    triangle: Triangle
     centroid: Centroid
-    hint: Move vertices to see how the centroid position changes
+    hint: 'Drag any vertex · Scale: 1 cm = 40 px'
     sideA: Side a (BC)
     sideB: Side b (CA)
     sideC: Side c (AB)

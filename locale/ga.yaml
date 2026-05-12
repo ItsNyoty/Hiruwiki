@@ -315,6 +315,16 @@ ga:
   slope:
     _name: Fána
     undefined: Líne ingearach → fána neamhshainithe
+    hint: Tarraing na pointí chun ríomh an fhána a fheiceáil
+    point1: Pointe P₁
+    point2: Pointe P₂
+    coords1: Comhordanáidí P₁
+    coords2: Comhordanáidí P₂
+    rise: Ardú (Δy)
+    run: Rith (Δx)
+    slope: Fána (m)
+    slopeCard: Fána
+    pointsCard: Pointí
   transformation:
     _name: Claochluithe
     angle: Uillinn
@@ -353,8 +363,21 @@ ga:
     unitCm2: cm²
   triangle-centroid:
     _name: Lárphointe Triantáin
+    triangle: Triantán
     centroid: Lárphointe
-    hint: Bog na buaicphointí chun a fheiceáil conas a athraíonn suíomh an mheánphointe
+    hint: 'Bog na buaicphointí · Scála: 1 cm = 40 px'
+    sideA: Taobh a (BC)
+    sideB: Taobh b (CA)
+    sideC: Taobh c (AB)
+    angleA: Uillinn A
+    angleB: Uillinn B
+    angleC: Uillinn C
+    perimeter: Imlíne
+    centre: Lár G
+    medianA: Meánlíne m_a
+    medianB: Meánlíne m_b
+    medianC: Meánlíne m_c
+    scaleUnit: cm
   triangles:
     _name: Triantáin
     acute: géarmhíochaine

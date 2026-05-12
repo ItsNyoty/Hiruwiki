@@ -159,6 +159,16 @@ ko:
   slope:
     _name: 기울기
     undefined: 수직선 → 기울기 정의 안 됨
+    hint: 점을 드래그하여 기울기 계산을 확인하세요
+    point1: 점 P₁
+    point2: 점 P₂
+    coords1: P₁ 좌표
+    coords2: P₂ 좌표
+    rise: 상승 (Δy)
+    run: 이동 (Δx)
+    slope: 기울기 (m)
+    slopeCard: 기울기
+    pointsCard: 점
   transformation:
     _name: 변환
     angle: 각
@@ -183,7 +193,21 @@ ko:
     unitCm2: cm²
   triangle-centroid:
     _name: 삼각형 무게중심
+    triangle: 삼각형
     centroid: 무게중심
+    hint: '꼭짓점을 드래그하세요 · 축척: 1 cm = 40 px'
+    sideA: 변 a (BC)
+    sideB: 변 b (CA)
+    sideC: 변 c (AB)
+    angleA: 각도 A
+    angleB: 각도 B
+    angleC: 각도 C
+    perimeter: 둘레
+    centre: 무게중심 G
+    medianA: 중선 m_a
+    medianB: 중선 m_b
+    medianC: 중선 m_c
+    scaleUnit: cm
   triangles:
     _name: 삼각형
     acute: 예각 삼각형
