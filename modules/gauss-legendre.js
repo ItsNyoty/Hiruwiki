@@ -4,40 +4,6 @@
 
     /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
     var messages = /* I18N_START */ {
-    "fr": {
-        "_name": "Algorithme de Gauss-Legendre",
-        "iteration": "Itération",
-        "variable_a": "Moyenne arithmétique (a)",
-        "variable_b": "Moyenne géométrique (b)",
-        "variable_t": "Terme d'erreur (t)",
-        "variable_p": "Terme de puissance (p)",
-        "step": "Étape suivante",
-        "reset": "Réinitialiser",
-        "pi_approx": "Approximation de π",
-        "correct_digits": "{{PLURAL:$1|$1 chiffre correct|$1 chiffres corrects}}",
-        "precision_note": "Converge quadratiquement : le nombre de chiffres double à chaque étape.",
-        "calculation_heading": "Comment c'est calculé",
-        "formula_label": "Formule",
-        "update_rules_heading": "Règles de mise à jour",
-        "hint": "Calculez les itérations pour voir la convergence quadratique"
-    },
-    "nl": {
-        "_name": "Gauss-Legendre-algoritme",
-        "iteration": "Iteratie",
-        "variable_a": "Rekenkundig gemiddelde (a)",
-        "variable_b": "Meetkundig gemiddelde (b)",
-        "variable_t": "Foutterm (t)",
-        "variable_p": "Machtsterm (p)",
-        "step": "Volgende stap",
-        "reset": "↺ Reset",
-        "pi_approx": "Benadering van π",
-        "correct_digits": "{{PLURAL:$1|$1 correct cijfer|$1 correcte cijfers}}",
-        "precision_note": "Convergeert kwadratisch: het aantal cijfers verdubbelt bij elke stap.",
-        "calculation_heading": "Hoe het wordt berekend",
-        "formula_label": "Formule",
-        "update_rules_heading": "Updateregels",
-        "hint": "Bereken iteraties om kwadratische convergentie te zien"
-    },
     "en": {
         "_name": "Gauss-Legendre Algorithm",
         "iteration": "Iteration",
@@ -71,6 +37,40 @@
         "formula_label": "Formula",
         "update_rules_heading": "Eguneratze arauak",
         "hint": "Kalkulatu iterazioak konbergentzia kuadratikoa ikusteko"
+    },
+    "fr": {
+        "_name": "Algorithme de Gauss-Legendre",
+        "iteration": "Itération",
+        "variable_a": "Moyenne arithmétique (a)",
+        "variable_b": "Moyenne géométrique (b)",
+        "variable_t": "Terme d'erreur (t)",
+        "variable_p": "Terme de puissance (p)",
+        "step": "Étape suivante",
+        "reset": "Réinitialiser",
+        "pi_approx": "Approximation de π",
+        "correct_digits": "{{PLURAL:$1|$1 chiffre correct|$1 chiffres corrects}}",
+        "precision_note": "Converge quadratiquement : le nombre de chiffres double à chaque étape.",
+        "calculation_heading": "Comment c'est calculé",
+        "formula_label": "Formule",
+        "update_rules_heading": "Règles de mise à jour",
+        "hint": "Calculez les itérations pour voir la convergence quadratique"
+    },
+    "nl": {
+        "_name": "Gauss-Legendre-algoritme",
+        "iteration": "Iteratie",
+        "variable_a": "Rekenkundig gemiddelde (a)",
+        "variable_b": "Meetkundig gemiddelde (b)",
+        "variable_t": "Foutterm (t)",
+        "variable_p": "Machtsterm (p)",
+        "step": "Volgende stap",
+        "reset": "↺ Reset",
+        "pi_approx": "Benadering van π",
+        "correct_digits": "{{PLURAL:$1|$1 correct cijfer|$1 correcte cijfers}}",
+        "precision_note": "Convergeert kwadratisch: het aantal cijfers verdubbelt bij elke stap.",
+        "calculation_heading": "Hoe het wordt berekend",
+        "formula_label": "Formule",
+        "update_rules_heading": "Updateregels",
+        "hint": "Bereken iteraties om kwadratische convergentie te zien"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

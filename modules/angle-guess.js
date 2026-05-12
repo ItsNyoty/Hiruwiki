@@ -6,6 +6,34 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "ca": {
+        "_name": "Endevina l'angle",
+        "difference": "Diferència",
+        "finalScore": "Puntuació final",
+        "hint": "Mou el punt blau per definir l'angle",
+        "nextAngle": "Angle següent &rsaquo;",
+        "points": "Punts:",
+        "pts": "pts",
+        "round": "Ronda:",
+        "roundOver": "Final de la partida",
+        "target": "Objectiu:",
+        "tryAgain": "Torneu-ho a provar",
+        "yourGuess": "La vostra estimació"
+    },
+    "en": {
+        "_name": "Angle Guess",
+        "difference": "Difference:",
+        "finalScore": "Final score",
+        "hint": "Move the blue dot to set the angle",
+        "nextAngle": "Next angle &rsaquo;",
+        "points": "Points:",
+        "pts": "pts",
+        "round": "Round:",
+        "roundOver": "Game over",
+        "target": "Target:",
+        "tryAgain": "Try again",
+        "yourGuess": "Your guess:"
+    },
     "es": {
         "_name": "Adivinar ángulo",
         "difference": "Diferencia:",
@@ -19,6 +47,20 @@ var messages = /* I18N_START */ {
         "target": "Objetivo:",
         "tryAgain": "Intentar de nuevo",
         "yourGuess": "Tu elección:"
+    },
+    "eu": {
+        "_name": "Angelua asmatu",
+        "difference": "Aldea:",
+        "finalScore": "Azken emaitza",
+        "hint": "Puntu urdina mugitu angelua zehazteko",
+        "nextAngle": "Hurrengo angelua &rsaquo;",
+        "points": "Puntuak:",
+        "pts": "pt",
+        "round": "Txanda:",
+        "roundOver": "Jokoa amaitu da",
+        "target": "Helburua:",
+        "tryAgain": "Berriz saiatu",
+        "yourGuess": "Zure aukera:"
     },
     "fr": {
         "_name": "Deviner l’angle",
@@ -61,6 +103,16 @@ var messages = /* I18N_START */ {
         "tryAgain": "Riprova",
         "yourGuess": "La tua ipotesi:"
     },
+    "ko": {
+        "_name": "각도 추측",
+        "difference": "차이:",
+        "finalScore": "최종 점수",
+        "points": "점수:",
+        "pts": "점",
+        "round": "라운드:",
+        "roundOver": "게임 종료",
+        "target": "목표:"
+    },
     "nl": {
         "_name": "Hoek schatten",
         "difference": "Verschil:",
@@ -74,58 +126,6 @@ var messages = /* I18N_START */ {
         "target": "Doel:",
         "tryAgain": "Opnieuw proberen",
         "yourGuess": "Uw schatting:"
-    },
-    "en": {
-        "_name": "Angle Guess",
-        "difference": "Difference:",
-        "finalScore": "Final score",
-        "hint": "Move the blue dot to set the angle",
-        "nextAngle": "Next angle &rsaquo;",
-        "points": "Points:",
-        "pts": "pts",
-        "round": "Round:",
-        "roundOver": "Game over",
-        "target": "Target:",
-        "tryAgain": "Try again",
-        "yourGuess": "Your guess:"
-    },
-    "ca": {
-        "_name": "Endevina l'angle",
-        "difference": "Diferència",
-        "finalScore": "Puntuació final",
-        "hint": "Mou el punt blau per definir l'angle",
-        "nextAngle": "Angle següent &rsaquo;",
-        "points": "Punts:",
-        "pts": "pts",
-        "round": "Ronda:",
-        "roundOver": "Final de la partida",
-        "target": "Objectiu:",
-        "tryAgain": "Torneu-ho a provar",
-        "yourGuess": "La vostra estimació"
-    },
-    "ko": {
-        "_name": "각도 추측",
-        "difference": "차이:",
-        "finalScore": "최종 점수",
-        "points": "점수:",
-        "pts": "점",
-        "round": "라운드:",
-        "roundOver": "게임 종료",
-        "target": "목표:"
-    },
-    "eu": {
-        "_name": "Angelua asmatu",
-        "difference": "Aldea:",
-        "finalScore": "Azken emaitza",
-        "hint": "Puntu urdina mugitu angelua zehazteko",
-        "nextAngle": "Hurrengo angelua &rsaquo;",
-        "points": "Puntuak:",
-        "pts": "pt",
-        "round": "Txanda:",
-        "roundOver": "Jokoa amaitu da",
-        "target": "Helburua:",
-        "tryAgain": "Berriz saiatu",
-        "yourGuess": "Zure aukera:"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

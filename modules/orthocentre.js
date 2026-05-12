@@ -11,6 +11,27 @@
 	
 	/* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "en": {
+        "_name": "Orthocentre",
+        "altA": "Altitude hₐ",
+        "altB": "Altitude h_b",
+        "altC": "Altitude h_c",
+        "centre": "Centre H",
+        "footA": "Foot Hₐ on BC",
+        "footB": "Foot H_b on CA",
+        "footC": "Foot H_c on AB",
+        "hint": "Drag any vertex to see how the orthocentre changes (Scale: 1 cm = 40 px)",
+        "orthocentre": "Orthocentre",
+        "perimeter": "Perimeter",
+        "scaleUnit": "cm",
+        "sideA": "Side a (BC)",
+        "sideB": "Side b (CA)",
+        "sideC": "Side c (AB)",
+        "angleA": "Angle A",
+        "angleB": "Angle B",
+        "angleC": "Angle C",
+        "triangle": "Triangle"
+    },
     "es": {
         "_name": "Ortocentro",
         "altA": "Altura hₐ",
@@ -31,6 +52,27 @@ var messages = /* I18N_START */ {
         "angleB": "Ángulo B",
         "angleC": "Ángulo C",
         "triangle": "Triángulo"
+    },
+    "eu": {
+        "_name": "Ortozentro",
+        "altA": "Altuera hₐ",
+        "altB": "Altuera h_b",
+        "altC": "Altuera h_c",
+        "centre": "H ortozentroa",
+        "footA": "Hₐ oina BC-n",
+        "footB": "H_b oina CA-n",
+        "footC": "H_c oina AB-n",
+        "hint": "Edozein erpin mugitu ortozentroa nola mugitzen den ikusteko (Eskala: 1 cm = 40 px)",
+        "orthocentre": "Ortozentro",
+        "perimeter": "Perimetroa",
+        "scaleUnit": "cm",
+        "sideA": "a aldea (BC)",
+        "sideB": "b aldea (CA)",
+        "sideC": "c aldea (AB)",
+        "angleA": "A angelua",
+        "angleB": "B angelua",
+        "angleC": "C angelua",
+        "triangle": "Triangelua"
     },
     "fr": {
         "_name": "Orthocentre",
@@ -94,48 +136,6 @@ var messages = /* I18N_START */ {
         "angleB": "Hoek B",
         "angleC": "Hoek C",
         "triangle": "Driehoek"
-    },
-    "en": {
-        "_name": "Orthocentre",
-        "altA": "Altitude hₐ",
-        "altB": "Altitude h_b",
-        "altC": "Altitude h_c",
-        "centre": "Centre H",
-        "footA": "Foot Hₐ on BC",
-        "footB": "Foot H_b on CA",
-        "footC": "Foot H_c on AB",
-        "hint": "Drag any vertex to see how the orthocentre changes (Scale: 1 cm = 40 px)",
-        "orthocentre": "Orthocentre",
-        "perimeter": "Perimeter",
-        "scaleUnit": "cm",
-        "sideA": "Side a (BC)",
-        "sideB": "Side b (CA)",
-        "sideC": "Side c (AB)",
-        "angleA": "Angle A",
-        "angleB": "Angle B",
-        "angleC": "Angle C",
-        "triangle": "Triangle"
-    },
-    "eu": {
-        "_name": "Ortozentro",
-        "altA": "Altuera hₐ",
-        "altB": "Altuera h_b",
-        "altC": "Altuera h_c",
-        "centre": "H ortozentroa",
-        "footA": "Hₐ oina BC-n",
-        "footB": "H_b oina CA-n",
-        "footC": "H_c oina AB-n",
-        "hint": "Edozein erpin mugitu ortozentroa nola mugitzen den ikusteko (Eskala: 1 cm = 40 px)",
-        "orthocentre": "Ortozentro",
-        "perimeter": "Perimetroa",
-        "scaleUnit": "cm",
-        "sideA": "a aldea (BC)",
-        "sideB": "b aldea (CA)",
-        "sideC": "c aldea (AB)",
-        "angleA": "A angelua",
-        "angleB": "B angelua",
-        "angleC": "C angelua",
-        "triangle": "Triangelua"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

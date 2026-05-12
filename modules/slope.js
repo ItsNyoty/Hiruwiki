@@ -17,9 +17,18 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "en": {
+        "_name": "Slope",
+        "undefined": "Vertical line → slope undefined",
+        "hint": "Drag the points to see the slope calculation"
+    },
     "es": {
         "_name": "Pendiente",
         "undefined": "Línea vertical → pendiente indefinida"
+    },
+    "eu": {
+        "_name": "Maldia",
+        "undefined": "Lerro bertikala → malda ezarri gabe"
     },
     "fr": {
         "_name": "Pente",
@@ -29,23 +38,14 @@ var messages = /* I18N_START */ {
         "_name": "Fána",
         "undefined": "Líne ingearach → fána neamhshainithe"
     },
-    "nl": {
-        "_name": "Helling",
-        "undefined": "Verticale lijn → helling ongedefinieerd",
-        "hint": "Sleep de punten om de hellingsberekening te zien"
-    },
-    "en": {
-        "_name": "Slope",
-        "undefined": "Vertical line → slope undefined",
-        "hint": "Drag the points to see the slope calculation"
-    },
     "ko": {
         "_name": "기울기",
         "undefined": "수직선 → 기울기 정의 안 됨"
     },
-    "eu": {
-        "_name": "Maldia",
-        "undefined": "Lerro bertikala → malda ezarri gabe"
+    "nl": {
+        "_name": "Helling",
+        "undefined": "Verticale lijn → helling ongedefinieerd",
+        "hint": "Sleep de punten om de hellingsberekening te zien"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

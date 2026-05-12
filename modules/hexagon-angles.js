@@ -4,6 +4,18 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "ca": {
+        "total": "Total"
+    },
+    "en": {
+        "2quads": "2 quadrilaterals × 360°",
+        "4triangles": "4 triangles × 180°",
+        "_name": "Hexagon Angles",
+        "interiorAngles": "Interior angles",
+        "reset": "↺ Reset",
+        "total": "Total",
+        "hint": "Decompose the hexagon into triangles or quadrilaterals"
+    },
     "es": {
         "2quads": "2 cuadriláteros × 360°",
         "4triangles": "4 triángulos × 180°",
@@ -11,6 +23,14 @@ var messages = /* I18N_START */ {
         "interiorAngles": "Ángulos interiores",
         "reset": "↺ Reiniciar",
         "total": "Total"
+    },
+    "eu": {
+        "2quads": "2 lauki × 360°",
+        "4triangles": "4 triangelu × 180°",
+        "_name": "Hexagonoaren angeluak",
+        "interiorAngles": "Barne angeluak",
+        "reset": "↺ Berrezarri",
+        "total": "Guztira"
     },
     "fr": {
         "2quads": "2 quadrilatères × 360°",
@@ -28,6 +48,9 @@ var messages = /* I18N_START */ {
         "reset": "↺ Athshocraigh",
         "total": "Iomlán"
     },
+    "ko": {
+        "reset": "↺ 초기화"
+    },
     "nl": {
         "2quads": "2 vierhoeken × 360°",
         "4triangles": "4 driehoeken × 180°",
@@ -36,29 +59,6 @@ var messages = /* I18N_START */ {
         "reset": "↺ Reset",
         "total": "Totaal",
         "hint": "Verdeel de zeshoek in driehoeken of vierhoeken om de som van de hoeken te zien"
-    },
-    "en": {
-        "2quads": "2 quadrilaterals × 360°",
-        "4triangles": "4 triangles × 180°",
-        "_name": "Hexagon Angles",
-        "interiorAngles": "Interior angles",
-        "reset": "↺ Reset",
-        "total": "Total",
-        "hint": "Decompose the hexagon into triangles or quadrilaterals"
-    },
-    "ca": {
-        "total": "Total"
-    },
-    "ko": {
-        "reset": "↺ 초기화"
-    },
-    "eu": {
-        "2quads": "2 lauki × 360°",
-        "4triangles": "4 triangelu × 180°",
-        "_name": "Hexagonoaren angeluak",
-        "interiorAngles": "Barne angeluak",
-        "reset": "↺ Berrezarri",
-        "total": "Guztira"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

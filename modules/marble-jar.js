@@ -4,6 +4,21 @@
     
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "ca": {
+        "total": "Total"
+    },
+    "en": {
+        "_name": "Probability Jar",
+        "colorBlue": "Blue",
+        "colorGreen": "Green",
+        "colorRed": "Red",
+        "colorYellow": "Yellow",
+        "impossible": "Impossible",
+        "probTitle": "Probability of picking a marble and guessing its color…",
+        "shake": "Shake!",
+        "total": "Total",
+        "hint": "Shake the jar to see the probability in action"
+    },
     "es": {
         "_name": "Frasco de probabilidades",
         "colorBlue": "Azul",
@@ -14,6 +29,17 @@ var messages = /* I18N_START */ {
         "probTitle": "Probabilidad de sacar una canica y adivinar su color…",
         "shake": "¡Agitar!",
         "total": "Total"
+    },
+    "eu": {
+        "_name": "Probabilitate ontzia",
+        "colorBlue": "Urdina",
+        "colorGreen": "Berdea",
+        "colorRed": "Gorria",
+        "colorYellow": "Horia",
+        "impossible": "Ezinezkoa",
+        "probTitle": "Kanika bat atera eta kolorea asmatzeko probabilitatea…",
+        "shake": "Astindu!",
+        "total": "Guztira"
     },
     "fr": {
         "_name": "Pot de probabilités",
@@ -43,6 +69,16 @@ var messages = /* I18N_START */ {
         "colorRed": "Rosso",
         "colorYellow": "Giallo"
     },
+    "ko": {
+        "_name": "확률 항아리",
+        "colorBlue": "파란색",
+        "colorGreen": "녹색",
+        "colorRed": "빨간색",
+        "colorYellow": "노란색",
+        "impossible": "불가능",
+        "shake": "흔들기!",
+        "total": "합계"
+    },
     "nl": {
         "_name": "Kanspot",
         "colorBlue": "Blauw",
@@ -54,42 +90,6 @@ var messages = /* I18N_START */ {
         "shake": "Schudden!",
         "total": "Totaal",
         "hint": "Schud de pot om de waarschijnlijkheid in actie te zien"
-    },
-    "en": {
-        "_name": "Probability Jar",
-        "colorBlue": "Blue",
-        "colorGreen": "Green",
-        "colorRed": "Red",
-        "colorYellow": "Yellow",
-        "impossible": "Impossible",
-        "probTitle": "Probability of picking a marble and guessing its color…",
-        "shake": "Shake!",
-        "total": "Total",
-        "hint": "Shake the jar to see the probability in action"
-    },
-    "ca": {
-        "total": "Total"
-    },
-    "ko": {
-        "_name": "확률 항아리",
-        "colorBlue": "파란색",
-        "colorGreen": "녹색",
-        "colorRed": "빨간색",
-        "colorYellow": "노란색",
-        "impossible": "불가능",
-        "shake": "흔들기!",
-        "total": "합계"
-    },
-    "eu": {
-        "_name": "Probabilitate ontzia",
-        "colorBlue": "Urdina",
-        "colorGreen": "Berdea",
-        "colorRed": "Gorria",
-        "colorYellow": "Horia",
-        "impossible": "Ezinezkoa",
-        "probTitle": "Kanika bat atera eta kolorea asmatzeko probabilitatea…",
-        "shake": "Astindu!",
-        "total": "Guztira"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

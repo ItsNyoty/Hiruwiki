@@ -3,8 +3,21 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "ca": {
+        "_name": "Radians",
+        "rad": "rad"
+    },
+    "en": {
+        "_name": "Radians",
+        "rad": "rad",
+        "hint": "Drag the handle to see the relationship between degrees and radians"
+    },
     "es": {
         "_name": "Radianes",
+        "rad": "rad"
+    },
+    "eu": {
+        "_name": "Radianak",
         "rad": "rad"
     },
     "fr": {
@@ -15,27 +28,14 @@ var messages = /* I18N_START */ {
         "_name": "Raidiáin",
         "rad": "rad"
     },
-    "nl": {
-        "_name": "Radialen",
-        "rad": "rad",
-        "hint": "Sleep de hendel om de relatie tussen graden en radialen te zien"
-    },
-    "en": {
-        "_name": "Radians",
-        "rad": "rad",
-        "hint": "Drag the handle to see the relationship between degrees and radians"
-    },
-    "ca": {
-        "_name": "Radians",
-        "rad": "rad"
-    },
     "ko": {
         "_name": "라디안",
         "rad": "rad"
     },
-    "eu": {
-        "_name": "Radianak",
-        "rad": "rad"
+    "nl": {
+        "_name": "Radialen",
+        "rad": "rad",
+        "hint": "Sleep de hendel om de relatie tussen graden en radialen te zien"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
