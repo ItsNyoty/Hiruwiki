@@ -1,34 +1,148 @@
-.hiruwiki[data-module="slope"] {
-  text-align: center;
-  margin: 1em 0;
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
+/* =========================================================
+ * Hiruwiki module: slope — stylesheet
+ * ========================================================= */
+
+/* Outer wrapper */
+.hw-slope {
+	font-family: var(--hw-font, sans-serif);
+	font-size: 14px;
+	line-height: 1.5;
+	color: var(--hw-text-base);
+	margin: 1em 0;
 }
 
-.hiruwiki[data-module="slope"] canvas {
-  border: 1px solid var(--color-placeholder, #aaa);
-  background: var(--background-color-base, #fff);
-  touch-action: none;
-  max-width: 100%;
-  height: auto;
+/* Canvas */
+.hw-slope .hw-canvas {
+	display: block;
+	width: 100%;
+	height: 440px;
+	cursor: crosshair;
+	touch-action: none;
+	border: 0.5px solid var(--hw-border);
+	border-radius: var(--hw-radius-sm);
+	background: var(--hw-bg-canvas);
+	box-sizing: border-box;
 }
 
-.hiruwiki[data-module="slope"] .slope-formula {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
+/* Stats grid — two equal columns */
+.hw-slope .hw-params {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+	margin-top: 10px;
 }
 
-.hiruwiki[data-module="slope"] .fraction {
-  display: inline-block;
-  vertical-align: middle;
-  text-align: center;
+/* Individual card */
+.hw-slope .hw-card {
+	background: var(--hw-bg-subtle);
+	border-radius: var(--hw-radius-md);
+	padding: 10px 14px;
+	box-sizing: border-box;
 }
 
-.hiruwiki[data-module="slope"] .fraction .top {
-  border-bottom: 2px solid var(--color-base, #000);
-  display: block;
-  padding: 0 4px;
+.hw-slope .hw-card-title {
+	margin-bottom: 6px;
 }
 
-.hiruwiki[data-module="slope"] .fraction .bottom {
-  display: block;
+/* Badge labels for card headings */
+.hw-slope .hw-badge {
+	display: inline-block;
+	padding: 2px 9px;
+	border-radius: 99px;
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+}
+
+.hw-slope .hw-badge-t {
+	background: var(--hw-color-primary-subtle);
+	color: var(--hw-color-primary);
+}
+
+.hw-slope .hw-badge-c {
+	background: var(--hw-color-success-subtle);
+	color: var(--hw-color-success);
+}
+
+/* Stat rows */
+.hw-slope .hw-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	font-size: 13px;
+	color: var(--hw-text-base);
+	margin-bottom: 2px;
+}
+
+.hw-slope .hw-row span:first-child {
+	color: var(--hw-text-muted);
+}
+
+.hw-slope .hw-row span:last-child {
+	color: var(--hw-text-base);
+	font-weight: 600;
+	font-size: 12px;
+	min-width: 70px;
+	text-align: right;
+}
+
+/* Slope formula display — inline fraction */
+.hw-slope .hw-slope-formula {
+	background: var(--hw-bg-subtle);
+	border-radius: var(--hw-radius-md);
+	padding: 10px 14px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 14px;
+	color: var(--hw-text-base);
+	margin-top: 0;
+}
+
+.hw-slope .hw-slope-formula .hw-formula-label {
+	color: var(--hw-text-muted);
+	font-size: 13px;
+	white-space: nowrap;
+}
+
+.hw-slope .hw-slope-formula .hw-formula-value {
+	font-weight: 600;
+	font-size: 13px;
+	color: var(--hw-text-base);
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.hw-slope .hw-fraction {
+	display: inline-flex;
+	flex-direction: column;
+	align-items: center;
+	vertical-align: middle;
+	line-height: 1.2;
+	font-size: 13px;
+}
+
+.hw-slope .hw-fraction .hw-top {
+	border-bottom: 1.5px solid var(--hw-text-base, #1a1a18);
+	padding: 0 4px 1px;
+}
+
+.hw-slope .hw-fraction .hw-bottom {
+	padding: 1px 4px 0;
+}
+
+/* =========================================================
+ * Narrow screens — stack the two cards vertically
+ * ========================================================= */
+@media (max-width: 480px) {
+	.hw-slope .hw-params {
+		grid-template-columns: 1fr;
+	}
 }
