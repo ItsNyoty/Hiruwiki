@@ -243,7 +243,7 @@ function palette() {
 
 /* ── Default triangle positions ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 function defPts() {
-	var ox = 190, oy = 460;
+	var ox = 230, oy = 360;
 	return {
 		O: { x: ox,          y: oy          },
 		A: { x: ox,          y: oy - 3 * SC },
