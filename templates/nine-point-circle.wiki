@@ -1,0 +1,2 @@
+<div class="hiruwiki" data-module="nine-point-circle"></div>
+<includeonly>[[Category:Wikipedia:Hiruwiki]]</includeonly>

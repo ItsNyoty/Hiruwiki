@@ -1,0 +1,2 @@
+<div class="hiruwiki" data-module="euler-line"></div>
+<includeonly>[[Category:Wikipedia:Hiruwiki]]</includeonly>

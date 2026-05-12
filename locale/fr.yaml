@@ -171,6 +171,19 @@ fr:
     touchBC: Pt de contact BC
     touchCA: Pt de contact CA
     triangle: Triangle
+  euler-line:
+    _name: Droite d'Euler
+    triangle: Triangle
+    eulerLine: Droite d'Euler
+    hint: 'Faites glisser un sommet · Échelle : 1 cm = 40 px'
+    sideA: Côté a (BC)
+    sideB: Côté b (CA)
+    sideC: Côté c (AB)
+    perimeter: Périmètre
+    circumcenter: Circoncentre O
+    centroid: Centre de gravité G
+    orthocentre: Orthocentre H
+    scaleUnit: cm
   marble-jar:
     _name: Pot de probabilités
     colorBlue: Bleu
@@ -193,6 +206,21 @@ fr:
     reset: ↺ Réinitialiser
     totalPoints: Total des points
     hint: 'Ajoutez des points pour approximer π en utilisant les probabilités'
+  nine-point-circle:
+    _name: Cercle des neuf points
+    triangle: Triangle
+    ninePoint: Cercle des neuf points
+    hint: 'Faites glisser un sommet · Échelle : 1 cm = 40 px'
+    sideA: Côté a (BC)
+    sideB: Côté b (CA)
+    sideC: Côté c (AB)
+    perimeter: Périmètre
+    centre: Centre N₉
+    radius: Rayon
+    legendM: 'M_a/b/c — milieux des côtés'
+    legendH: 'H_a/b/c — pieds des hauteurs'
+    legendE: 'E_a/b/c — milieux de AH, BH, CH'
+    scaleUnit: cm
   orthocentre:
     _name: Orthocentre
     altA: Hauteur hₐ
@@ -248,6 +276,24 @@ fr:
     angleDeg: angle =
     lockRight: angle droit
     reset: Réinitialiser
+    controls: Contrôles
+    triangle: Triangle
+    lockRight: angle droit fixe
+    sideA: a
+    sideB: b
+    hypot: c (hyp.)
+    angOrigin: ∠ origine
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: a²+b²=c²
+    badgeCos: c²=a²+b²−2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    cosTheta: cosθ
+    cosThetaEx: cosinus de l'angle à l'origine
+    hint: Faites glisser les sommets pour vérifier le théorème
+    scaleUnit: cm
   quadrangle-angles:
     _name: Angles du quadrilatère
     interiorAngles: Angles intérieurs
@@ -354,6 +400,18 @@ fr:
     centroid: Centre de gravité
     hint: Déplacez les sommets pour voir comment la position du centre de gravité
       change.
+    sideA: Côté a (BC)
+    sideB: Côté b (CA)
+    sideC: Côté c (AB)
+    angleA: Angle A
+    angleB: Angle B
+    angleC: Angle C
+    perimeter: Périmètre
+    centre: Centre G
+    medianA: Médiane m_a
+    medianB: Médiane m_b
+    medianC: Médiane m_c
+    scaleUnit: cm
   triangles:
     _name: Triangles
     acute: acutangle
