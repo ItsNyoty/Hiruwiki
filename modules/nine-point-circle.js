@@ -20,22 +20,6 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Nine-Point Circle",
-        "triangle": "Triangle",
-        "ninePoint": "Nine-Point Circle",
-        "hint": "Drag any vertex · Scale: 1 cm = 40 px",
-        "sideA": "Side a (BC)",
-        "sideB": "Side b (CA)",
-        "sideC": "Side c (AB)",
-        "perimeter": "Perimeter",
-        "centre": "Centre N₉",
-        "radius": "Radius",
-        "legendM": "M_a/b/c — midpoints of the sides",
-        "legendH": "H_a/b/c — feet of the altitudes",
-        "legendE": "E_a/b/c — midpoints of AH, BH, CH",
-        "scaleUnit": "cm"
-    },
     "fr": {
         "_name": "Cercle des neuf points",
         "triangle": "Triangle",
@@ -66,6 +50,22 @@ var messages = /* I18N_START */ {
         "legendM": "M_a/b/c — middens van de zijden",
         "legendH": "H_a/b/c — voetpunten van de hoogtelijnen",
         "legendE": "E_a/b/c — middens van AH, BH, CH",
+        "scaleUnit": "cm"
+    },
+    "en": {
+        "_name": "Nine-Point Circle",
+        "triangle": "Triangle",
+        "ninePoint": "Nine-Point Circle",
+        "hint": "Drag any vertex · Scale: 1 cm = 40 px",
+        "sideA": "Side a (BC)",
+        "sideB": "Side b (CA)",
+        "sideC": "Side c (AB)",
+        "perimeter": "Perimeter",
+        "centre": "Centre N₉",
+        "radius": "Radius",
+        "legendM": "M_a/b/c — midpoints of the sides",
+        "legendH": "H_a/b/c — feet of the altitudes",
+        "legendE": "E_a/b/c — midpoints of AH, BH, CH",
         "scaleUnit": "cm"
     }
 } /* I18N_END */

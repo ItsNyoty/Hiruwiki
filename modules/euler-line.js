@@ -12,20 +12,6 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Euler Line",
-        "triangle": "Triangle",
-        "eulerLine": "Euler Line",
-        "hint": "Drag any vertex · Scale: 1 cm = 40 px",
-        "sideA": "Side a (BC)",
-        "sideB": "Side b (CA)",
-        "sideC": "Side c (AB)",
-        "perimeter": "Perimeter",
-        "circumcenter": "Circumcenter O",
-        "centroid": "Centroid G",
-        "orthocentre": "Orthocentre H",
-        "scaleUnit": "cm"
-    },
     "fr": {
         "_name": "Droite d'Euler",
         "triangle": "Triangle",
@@ -52,6 +38,20 @@ var messages = /* I18N_START */ {
         "circumcenter": "Middelpunt omgeschreven cirkel O",
         "centroid": "Zwaartepunt G",
         "orthocentre": "Hoogtepunt H",
+        "scaleUnit": "cm"
+    },
+    "en": {
+        "_name": "Euler Line",
+        "triangle": "Triangle",
+        "eulerLine": "Euler Line",
+        "hint": "Drag any vertex · Scale: 1 cm = 40 px",
+        "sideA": "Side a (BC)",
+        "sideB": "Side b (CA)",
+        "sideC": "Side c (AB)",
+        "perimeter": "Perimeter",
+        "circumcenter": "Circumcenter O",
+        "centroid": "Centroid G",
+        "orthocentre": "Orthocentre H",
         "scaleUnit": "cm"
     }
 } /* I18N_END */

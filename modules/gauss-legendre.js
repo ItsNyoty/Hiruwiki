@@ -4,40 +4,6 @@
 
     /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
     var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Gauss-Legendre Algorithm",
-        "iteration": "Iteration",
-        "variable_a": "Arithmetic Mean (a)",
-        "variable_b": "Geometric Mean (b)",
-        "variable_t": "Error Term (t)",
-        "variable_p": "Power Term (p)",
-        "step": "Next Step",
-        "reset": "Reset",
-        "pi_approx": "Approximation of π",
-        "correct_digits": "{{PLURAL:$1|$1 correct digit|$1 correct digits}}",
-        "precision_note": "Converges quadratically: digits double each step.",
-        "calculation_heading": "How it's calculated",
-        "formula_label": "Formula",
-        "update_rules_heading": "Update Rules",
-        "hint": "Compute iterations to see quadratic convergence"
-    },
-    "eu": {
-        "_name": "Gauss-Legendre algoritmoa",
-        "iteration": "Iterazioa",
-        "variable_a": "Batez besteko aritmetikoa (a)",
-        "variable_b": "Batez besteko geometrikoa (b)",
-        "variable_t": "Errore-terminoa (t)",
-        "variable_p": "Berredura-terminoa (p)",
-        "step": "Hurrengo urratsa",
-        "reset": "↺ Berrezarri",
-        "pi_approx": "π-ren hurbilketa",
-        "correct_digits": "{{PLURAL:$1|$1 zifra zuzen|$1 zifra zuzen}}",
-        "precision_note": "Kuadratikoki konbergentea: digituak bikoiztu egiten dira urrats bakoitzean.",
-        "calculation_heading": "Nola kalkulatzen den",
-        "formula_label": "Formula",
-        "update_rules_heading": "Eguneratze arauak",
-        "hint": "Kalkulatu iterazioak konbergentzia kuadratikoa ikusteko"
-    },
     "fr": {
         "_name": "Algorithme de Gauss-Legendre",
         "iteration": "Itération",
@@ -71,6 +37,40 @@
         "formula_label": "Formule",
         "update_rules_heading": "Updateregels",
         "hint": "Bereken iteraties om kwadratische convergentie te zien"
+    },
+    "en": {
+        "_name": "Gauss-Legendre Algorithm",
+        "iteration": "Iteration",
+        "variable_a": "Arithmetic Mean (a)",
+        "variable_b": "Geometric Mean (b)",
+        "variable_t": "Error Term (t)",
+        "variable_p": "Power Term (p)",
+        "step": "Next Step",
+        "reset": "Reset",
+        "pi_approx": "Approximation of π",
+        "correct_digits": "{{PLURAL:$1|$1 correct digit|$1 correct digits}}",
+        "precision_note": "Converges quadratically: digits double each step.",
+        "calculation_heading": "How it's calculated",
+        "formula_label": "Formula",
+        "update_rules_heading": "Update Rules",
+        "hint": "Compute iterations to see quadratic convergence"
+    },
+    "eu": {
+        "_name": "Gauss-Legendre algoritmoa",
+        "iteration": "Iterazioa",
+        "variable_a": "Batez besteko aritmetikoa (a)",
+        "variable_b": "Batez besteko geometrikoa (b)",
+        "variable_t": "Errore-terminoa (t)",
+        "variable_p": "Berredura-terminoa (p)",
+        "step": "Hurrengo urratsa",
+        "reset": "↺ Berrezarri",
+        "pi_approx": "π-ren hurbilketa",
+        "correct_digits": "{{PLURAL:$1|$1 zifra zuzen|$1 zifra zuzen}}",
+        "precision_note": "Kuadratikoki konbergentea: digituak bikoiztu egiten dira urrats bakoitzean.",
+        "calculation_heading": "Nola kalkulatzen den",
+        "formula_label": "Formula",
+        "update_rules_heading": "Eguneratze arauak",
+        "hint": "Kalkulatu iterazioak konbergentzia kuadratikoa ikusteko"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

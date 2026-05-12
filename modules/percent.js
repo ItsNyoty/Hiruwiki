@@ -21,31 +21,6 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {
-        "_name": "Percentatges",
-        "axis_neg": "−100%",
-        "axis_pos": "+100%",
-        "axis_zero": "0%",
-        "label_after": "després del canvi",
-        "label_recovered": "recuperat",
-        "label_start": "inicia"
-    },
-    "en": {
-        "_name": "Percentages",
-        "axis_neg": "−100%",
-        "axis_pos": "+100%",
-        "axis_zero": "0%",
-        "hint": "Drag the slider left for a loss, right for a gain.",
-        "insight_full_loss": "A loss of <strong>100%</strong> brings the value to <strong>0</strong>. Recovery from zero is <strong>impossible</strong> — any percentage of 0 is still 0.",
-        "insight_gain": "A gain of <strong>+$1%</strong> brings 100 up to <strong>$2</strong>. The green span above and the red span below are the same width — but the percentages differ. Returning to 100 only takes <strong>$3%</strong>, not −$1%.",
-        "insight_loss": "A loss of <strong>$1%</strong> brings 100 down to <strong>$2</strong>. The red span above and the green span below cover the same physical distance — but the percentages differ because they apply to different bases. Recovery needs <strong>+$3%</strong>, not +$1%.",
-        "insight_zero": "No change applied. Drag the slider to explore.",
-        "label_after": "after change",
-        "label_apply": "APPLY A PERCENTAGE CHANGE",
-        "label_recovered": "recovered",
-        "label_scale": "SCALE: FULL BAR WIDTH = 200",
-        "label_start": "start"
-    },
     "es": {
         "_name": "Porcentajes",
         "axis_neg": "−100%",
@@ -61,22 +36,6 @@ var messages = /* I18N_START */ {
         "label_recovered": "recuperado",
         "label_scale": "ESCALA: ANCHO TOTAL = 200",
         "label_start": "inicio"
-    },
-    "eu": {
-        "_name": "Ehunekoak",
-        "axis_neg": "−% 100",
-        "axis_pos": "+% 100",
-        "axis_zero": "% 0",
-        "hint": "Arrastatu kontrol-barra ezkerrera galera ikusteko, eskuinera irabazia ikusteko.",
-        "insight_full_loss": "<strong>% 100</strong>eko galera batek balioa <strong>0</strong>ra eramaten du. Zerotik berreskuratzea <strong>ezinezkoa</strong> da — edozein ehuneko 0 izanda ere 0 izango da.",
-        "insight_gain": "<strong>% +$1</strong>-ko irabaziak 100etik <strong>$2</strong>-ra igotzen du. Goiko barra berdeak eta beheko barra gorriak zabalera bera dute — baina ehunekoek desberdintasuna dute. 100era itzultzeko <strong>% $3</strong> besterik ez da behar, ez % −$1.",
-        "insight_loss": "<strong>% $1</strong>-ko galera batek 100 <strong>$2</strong>-era jaisten du. Goiko barra gorriak eta beheko barra berdeak distantzia fisiko bera hartzen dute — baina ehunekoek desberdintasuna dute, base ezberdinei aplikatzen zaizkie eta. Berreskuratzeko <strong>% +$3</strong> behar da, ez % +$1.",
-        "insight_zero": "Aldaketarik aplikatu gabe. Arrastatu kontrol-barra esploratzeko.",
-        "label_after": "aldaketaren ostean",
-        "label_apply": "EHUNEKO ALDAKETA BAT EZARRI",
-        "label_recovered": "berrezartzeko",
-        "label_scale": "ESKALA: BARRA OSOA = 200",
-        "label_start": "hasiera"
     },
     "fr": {
         "_name": "Pourcentages",
@@ -113,12 +72,6 @@ var messages = /* I18N_START */ {
     "it": {
         "_name": "Percentuali"
     },
-    "ko": {
-        "_name": "백분율",
-        "axis_neg": "−100%",
-        "axis_pos": "+100%",
-        "axis_zero": "0%"
-    },
     "nl": {
         "_name": "Percentages",
         "axis_neg": "−100%",
@@ -134,6 +87,53 @@ var messages = /* I18N_START */ {
         "label_recovered": "hersteld",
         "label_scale": "SCHAAL: VOLLEDIGE BREEDTE = 200",
         "label_start": "begin"
+    },
+    "en": {
+        "_name": "Percentages",
+        "axis_neg": "−100%",
+        "axis_pos": "+100%",
+        "axis_zero": "0%",
+        "hint": "Drag the slider left for a loss, right for a gain.",
+        "insight_full_loss": "A loss of <strong>100%</strong> brings the value to <strong>0</strong>. Recovery from zero is <strong>impossible</strong> — any percentage of 0 is still 0.",
+        "insight_gain": "A gain of <strong>+$1%</strong> brings 100 up to <strong>$2</strong>. The green span above and the red span below are the same width — but the percentages differ. Returning to 100 only takes <strong>$3%</strong>, not −$1%.",
+        "insight_loss": "A loss of <strong>$1%</strong> brings 100 down to <strong>$2</strong>. The red span above and the green span below cover the same physical distance — but the percentages differ because they apply to different bases. Recovery needs <strong>+$3%</strong>, not +$1%.",
+        "insight_zero": "No change applied. Drag the slider to explore.",
+        "label_after": "after change",
+        "label_apply": "APPLY A PERCENTAGE CHANGE",
+        "label_recovered": "recovered",
+        "label_scale": "SCALE: FULL BAR WIDTH = 200",
+        "label_start": "start"
+    },
+    "ca": {
+        "_name": "Percentatges",
+        "axis_neg": "−100%",
+        "axis_pos": "+100%",
+        "axis_zero": "0%",
+        "label_after": "després del canvi",
+        "label_recovered": "recuperat",
+        "label_start": "inicia"
+    },
+    "ko": {
+        "_name": "백분율",
+        "axis_neg": "−100%",
+        "axis_pos": "+100%",
+        "axis_zero": "0%"
+    },
+    "eu": {
+        "_name": "Ehunekoak",
+        "axis_neg": "−% 100",
+        "axis_pos": "+% 100",
+        "axis_zero": "% 0",
+        "hint": "Arrastatu kontrol-barra ezkerrera galera ikusteko, eskuinera irabazia ikusteko.",
+        "insight_full_loss": "<strong>% 100</strong>eko galera batek balioa <strong>0</strong>ra eramaten du. Zerotik berreskuratzea <strong>ezinezkoa</strong> da — edozein ehuneko 0 izanda ere 0 izango da.",
+        "insight_gain": "<strong>% +$1</strong>-ko irabaziak 100etik <strong>$2</strong>-ra igotzen du. Goiko barra berdeak eta beheko barra gorriak zabalera bera dute — baina ehunekoek desberdintasuna dute. 100era itzultzeko <strong>% $3</strong> besterik ez da behar, ez % −$1.",
+        "insight_loss": "<strong>% $1</strong>-ko galera batek 100 <strong>$2</strong>-era jaisten du. Goiko barra gorriak eta beheko barra berdeak distantzia fisiko bera hartzen dute — baina ehunekoek desberdintasuna dute, base ezberdinei aplikatzen zaizkie eta. Berreskuratzeko <strong>% +$3</strong> behar da, ez % +$1.",
+        "insight_zero": "Aldaketarik aplikatu gabe. Arrastatu kontrol-barra esploratzeko.",
+        "label_after": "aldaketaren ostean",
+        "label_apply": "EHUNEKO ALDAKETA BAT EZARRI",
+        "label_recovered": "berrezartzeko",
+        "label_scale": "ESKALA: BARRA OSOA = 200",
+        "label_start": "hasiera"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
