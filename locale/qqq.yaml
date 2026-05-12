@@ -308,6 +308,15 @@ qqq:
     _name: Name of the Slope module
     undefined: Message shown when the line is vertical and the slope is undefined
     hint: Instruction text for the slope calculation interaction
+    point1: name of the first point
+    point2": name of the second point
+    coords1": coordinates of first point
+    coords2": coordinates of second point
+    rise": message for the vertical distance
+    run": message for the horizontal distance
+    slope": name of the division of both
+    slopeCard": title of the slope section
+    pointsCard": title used in the points section
   transformation:
     _name: Name of the Transformations module
     angle: Label for the rotation angle slider
