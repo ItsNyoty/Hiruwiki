@@ -68,6 +68,28 @@ it:
     approxPi: Approssimazione di π
   percent:
     _name: Percentuali
+  pythagoras:
+    _name: Teorema di Pitagora
+    angleDeg: 'angolo = '
+    lockRight: angolo retto
+    reset: Reset
+    hint: Trascina i vertici per verificare a² + b² = c²
+    controls: Controlli
+    triangle: Triangolo
+    sideA: a
+    sideB: b
+    hypot: c (ip.)
+    angOrigin: ∠ origine
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: a²+b²=c²
+    badgeCos: c²=a²+b²−2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    cosTheta: cosθ
+    cosThetaEx: coseno dell'angolo all'origine
+    scaleUnit: cm
   quadrangles:
     headingSides: Lati e diagonali
     presetRectangle: Rettangolo

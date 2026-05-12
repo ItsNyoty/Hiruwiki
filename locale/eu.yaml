@@ -267,9 +267,26 @@ eu:
     label_start: hasiera
   pythagoras:
     _name: Pitagorasen teorema
-    angleDeg: angelua =
+    angleDeg: 'angelua = '
     lockRight: angelu zuzena
     reset: Berrezarri
+    hint: Arrastatu erpinak a² + b² = c² egiaztatzeko
+    controls: Kontrolak
+    triangle: Triangelua
+    sideA: a
+    sideB: b
+    hypot: c (hip.)
+    angOrigin: ∠ jatorria
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: a²+b²=c²
+    badgeCos: c²=a²+b²−2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    cosTheta: cosθ
+    cosThetaEx: jatorriko angeluaren kosinua
+    scaleUnit: cm
   quadrangle-angles:
     _name: Koadrilateroaren angeluak
     interiorAngles: Barne angeluak

@@ -273,9 +273,26 @@ es:
     label_start: inicio
   pythagoras:
     _name: Teorema de Pitágoras
-    angleDeg: ángulo =
+    angleDeg: 'ángulo = '
     lockRight: ángulo recto
     reset: Reiniciar
+    hint: Arrastra los vértices para verificar a² + b² = c²
+    controls: Controles
+    triangle: Triángulo
+    sideA: a
+    sideB: b
+    hypot: c (hip.)
+    angOrigin: ∠ origen
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: a²+b²=c²
+    badgeCos: c²=a²+b²−2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    cosTheta: cosθ
+    cosThetaEx: coseno del ángulo en el origen
+    scaleUnit: cm
   quadrangle-angles:
     _name: Ángulos del cuadrilátero
     interiorAngles: Ángulos interiores

@@ -97,9 +97,26 @@ ko:
     axis_zero: 0%
   pythagoras:
     _name: 피타고라스 정리
-    angleDeg: 각도 =
+    angleDeg: '각도 = '
     lockRight: 직각
     reset: 초기화
+    hint: 꼭짓점을 드래그하여 a² + b² = c²을 확인하세요
+    controls: 제어
+    triangle: 삼각형
+    sideA: a
+    sideB: b
+    hypot: c (빗변)
+    angOrigin: ∠ 원점
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: a²+b²=c²
+    badgeCos: c²=a²+b²−2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    cosTheta: cosθ
+    cosThetaEx: 원점에서의 각도의 코사인
+    scaleUnit: cm
   quadrangle-angles:
     reset: 초기화
     sum: 총합

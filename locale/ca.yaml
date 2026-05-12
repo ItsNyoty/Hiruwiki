@@ -79,9 +79,26 @@ ca:
     label_start: inicia
   pythagoras:
     _name: Teorema de Pitàgores
-    angleDeg: angle =
+    angleDeg: 'angle = '
     lockRight: angle recte
     reset: Reinicia
+    hint: Arrossegueu els vèrtexs per verificar a² + b² = c²
+    controls: Controls
+    triangle: Triangle
+    sideA: a
+    sideB: b
+    hypot: c (hip.)
+    angOrigin: ∠ origen
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: a²+b²=c²
+    badgeCos: c²=a²+b²−2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    cosTheta: cosθ
+    cosThetaEx: cosinus de l'angle a l'origen
+    scaleUnit: cm
   quadrangle-angles:
     interiorAngles: Angles interiors
     reset: Reinicia

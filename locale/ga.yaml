@@ -250,9 +250,26 @@ ga:
     label_start: tús
   pythagoras:
     _name: Teoirim Phíotagaráis
-    angleDeg: uillinn =
+    angleDeg: 'uillinn = '
     lockRight: uillinn dheis
     reset: Athshocraigh
+    hint: Tarraing na rinn chun a² + b² = c² a fhíorú
+    controls: Rialuithe
+    triangle: Triantán
+    sideA: a
+    sideB: b
+    hypot: c (hip.)
+    angOrigin: ∠ bunús
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: a²+b²=c²
+    badgeCos: c²=a²+b²−2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    cosTheta: cosθ
+    cosThetaEx: cóisín na huillinne ag an mbunús
+    scaleUnit: cm
   quadrangle-angles:
     _name: Uillinneacha Ceathairshleasacha
     interiorAngles: Uillinneacha inmheánacha

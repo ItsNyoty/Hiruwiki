@@ -237,25 +237,25 @@ qqq:
     label_start: Label on the bar visualisation for the starting value
   pythagoras:
     _name: Name of the Pythagorean Theorem module
-  controls: Title for the control panel
-  triangle: Title for the triangle panel
-  lockRight: checkbox to lock right angle
-  reset: text in the reset button
-  sideA: letter a
-  sideB: letter b
-  hypot: letter c and abbreviature for hypothenuse
-  angOrigin: symbol of angle and the word origin
-  angA: ∠ A
-  angB: ∠ B
-  badgeRight: formula for right angles
-  badgeCos: formula for non right angles
-  sqA: squared a
-  sqB: squared b
-  sqC: squared c
-  cosTheta: cosinus of theta
-  cosThetaEx: cosinus of the angle in origin
-  hint: clue for the interactive part
-  scaleUnit: abbreviature of centimetrs
+    controls: Title for the control panel
+    triangle: Title for the triangle panel
+    lockRight: checkbox to lock right angle
+    reset: text in the reset button
+    sideA: letter a
+    sideB: letter b
+    hypot: letter c and abbreviature for hypothenuse
+    angOrigin: symbol of angle and the word origin
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: formula for right angles
+    badgeCos: formula for non right angles
+    sqA: squared a
+    sqB: squared b
+    sqC: squared c
+    cosTheta: cosinus of theta
+    cosThetaEx: cosinus of the angle in origin
+    hint: clue for the interactive part
+    scaleUnit: abbreviature of centimetrs
   quadrangle-angles:
     _name: Name of the Quadrangle Angles module
     interiorAngles: Heading for the interior angles section

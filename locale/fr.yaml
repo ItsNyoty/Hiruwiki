@@ -273,7 +273,7 @@ fr:
     label_start: début
   pythagoras:
     _name: Théorème de Pythagore
-    angleDeg: angle =
+    angleDeg: 'angle = '
     reset: Réinitialiser
     controls: Contrôles
     triangle: Triangle
