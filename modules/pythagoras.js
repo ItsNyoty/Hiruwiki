@@ -12,163 +12,121 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-	"en": {
-		"_name":      "Pythagorean Theorem",
-		"controls":   "Controls",
-		"triangle":   "Triangle",
-		"lockRight":  "lock right angle",
-		"reset":      "Reset",
-		"sideA":      "a",
-		"sideB":      "b",
-		"hypot":      "c (hyp.)",
-		"angOrigin":  "∠ origin",
-		"angA":       "∠ A",
-		"angB":       "∠ B",
-		"badgeRight": "a²+b²=c²",
-		"badgeCos":   "c²=a²+b²−2ab·cosθ",
-		"sqA":        "a²",
-		"sqB":        "b²",
-		"sqC":        "c²",
-		"cosTheta":   "cosθ",
-		"cosThetaEx": "cosine of the angle at origin",
-		"hint":       "Drag vertices to verify the theorem",
-		"scaleUnit":  "cm"
-	},
-	"es": {
-		"_name":      "Teorema de Pitágoras",
-		"controls":   "Controles",
-		"triangle":   "Triángulo",
-		"lockRight":  "ángulo recto fijo",
-		"reset":      "Reiniciar",
-		"sideA":      "a",
-		"sideB":      "b",
-		"hypot":      "c (hip.)",
-		"angOrigin":  "∠ origen",
-		"angA":       "∠ A",
-		"angB":       "∠ B",
-		"badgeRight": "a²+b²=c²",
-		"badgeCos":   "c²=a²+b²−2ab·cosθ",
-		"sqA":        "a²",
-		"sqB":        "b²",
-		"sqC":        "c²",
-		"cosTheta":   "cosθ",
-		"cosThetaEx": "coseno del ángulo en el origen",
-		"hint":       "Arrastra los vértices para verificar el teorema",
-		"scaleUnit":  "cm"
-	},
-	"eu": {
-		"_name":      "Pitagorasen teorema",
-		"controls":   "Kontrolak",
-		"triangle":   "Triangelua",
-		"lockRight":  "angelu zuzena blokeatu",
-		"reset":      "Berrezarri",
-		"sideA":      "a",
-		"sideB":      "b",
-		"hypot":      "c (hip.)",
-		"angOrigin":  "∠ jatorria",
-		"angA":       "∠ A",
-		"angB":       "∠ B",
-		"badgeRight": "a²+b²=c²",
-		"badgeCos":   "c²=a²+b²−2ab·cosθ",
-		"sqA":        "a²",
-		"sqB":        "b²",
-		"sqC":        "c²",
-		"cosTheta":   "cosθ",
-		"cosThetaEx": "jatorriko angeluaren kosinua",
-		"hint":       "Mugitu erpinak teorema egiaztatzeko",
-		"scaleUnit":  "cm"
-	},
-	"fr": {
-		"_name":      "Théorème de Pythagore",
-		"controls":   "Contrôles",
-		"triangle":   "Triangle",
-		"lockRight":  "angle droit fixe",
-		"reset":      "Réinitialiser",
-		"sideA":      "a",
-		"sideB":      "b",
-		"hypot":      "c (hyp.)",
-		"angOrigin":  "∠ origine",
-		"angA":       "∠ A",
-		"angB":       "∠ B",
-		"badgeRight": "a²+b²=c²",
-		"badgeCos":   "c²=a²+b²−2ab·cosθ",
-		"sqA":        "a²",
-		"sqB":        "b²",
-		"sqC":        "c²",
-		"cosTheta":   "cosθ",
-		"cosThetaEx": "cosinus de l'angle à l'origine",
-		"hint":       "Faites glisser les sommets pour vérifier le théorème",
-		"scaleUnit":  "cm"
-	},
-	"nl": {
-		"_name":      "Stelling van Pythagoras",
-		"controls":   "Bediening",
-		"triangle":   "Driehoek",
-		"lockRight":  "rechte hoek vastzetten",
-		"reset":      "Reset",
-		"sideA":      "a",
-		"sideB":      "b",
-		"hypot":      "c (schuinezijde)",
-		"angOrigin":  "∠ oorsprong",
-		"angA":       "∠ A",
-		"angB":       "∠ B",
-		"badgeRight": "a²+b²=c²",
-		"badgeCos":   "c²=a²+b²−2ab·cosθ",
-		"sqA":        "a²",
-		"sqB":        "b²",
-		"sqC":        "c²",
-		"cosTheta":   "cosθ",
-		"cosThetaEx": "cosinus van de hoek bij de oorsprong",
-		"hint":       "Sleep de hoekpunten om de stelling te verifiëren",
-		"scaleUnit":  "cm"
-	},
-	"ga": {
-		"_name":      "Teoirim Phíotagaráis",
-		"controls":   "Rialuithe",
-		"triangle":   "Triantán",
-		"lockRight":  "uillinn dheis a ghlasáil",
-		"reset":      "Athshocraigh",
-		"sideA":      "a",
-		"sideB":      "b",
-		"hypot":      "c (hipitéanús)",
-		"angOrigin":  "∠ bunphointe",
-		"angA":       "∠ A",
-		"angB":       "∠ B",
-		"badgeRight": "a²+b²=c²",
-		"badgeCos":   "c²=a²+b²−2ab·cosθ",
-		"sqA":        "a²",
-		"sqB":        "b²",
-		"sqC":        "c²",
-		"cosTheta":   "cosθ",
-		"cosThetaEx": "cosán na huillinn ag an mbunphointe",
-		"hint":       "Tarraing rinn chun an teoirim a fhíorú",
-		"scaleUnit":  "cm"
-	},
-	"ko": {
-		"_name":      "피타고라스 정리",
-		"controls":   "제어",
-		"triangle":   "삼각형",
-		"lockRight":  "직각 고정",
-		"reset":      "초기화",
-		"sideA":      "a",
-		"sideB":      "b",
-		"hypot":      "c (빗변)",
-		"angOrigin":  "∠ 원점",
-		"angA":       "∠ A",
-		"angB":       "∠ B",
-		"badgeRight": "a²+b²=c²",
-		"badgeCos":   "c²=a²+b²−2ab·cosθ",
-		"sqA":        "a²",
-		"sqB":        "b²",
-		"sqC":        "c²",
-		"cosTheta":   "cosθ",
-		"cosThetaEx": "원점 각도의 코사인",
-		"hint":       "꼭짓점을 드래그하여 정리를 확인하세요",
-		"scaleUnit":  "cm"
-	}
+    "ca": {
+        "_name": "Teorema de Pitàgores",
+        "angleDeg": "angle =",
+        "lockRight": "angle recte",
+        "reset": "Reinicia"
+    },
+    "en": {
+        "_name": "Pythagorean Theorem",
+        "angleDeg": "angle =",
+        "lockRight": "right angle",
+        "reset": "Reset",
+        "hint": "Drag vertices to verify a² + b² = c²",
+        "controls": "Controls",
+        "triangle": "Triangle",
+        "sideA": "a",
+        "sideB": "b",
+        "hypot": "c (hyp.)",
+        "angOrigin": "∠ origin",
+        "angA": "∠ A",
+        "angB": "∠ B",
+        "badgeRight": "a²+b²=c²",
+        "badgeCos": "c²=a²+b²−2ab·cosθ",
+        "sqA": "a²",
+        "sqB": "b²",
+        "sqC": "c²",
+        "cosTheta": "cosθ",
+        "cosThetaEx": "cosine of the angle at origin",
+        "scaleUnit": "cm"
+    },
+    "es": {
+        "_name": "Teorema de Pitágoras",
+        "angleDeg": "ángulo =",
+        "lockRight": "ángulo recto",
+        "reset": "Reiniciar"
+    },
+    "eu": {
+        "_name": "Pitagorasen teorema",
+        "angleDeg": "angelua =",
+        "lockRight": "angelu zuzena",
+        "reset": "Berrezarri"
+    },
+    "fr": {
+        "_name": "Théorème de Pythagore",
+        "angleDeg": "angle =",
+        "reset": "Réinitialiser",
+        "controls": "Contrôles",
+        "triangle": "Triangle",
+        "lockRight": "angle droit fixe",
+        "sideA": "a",
+        "sideB": "b",
+        "hypot": "c (hyp.)",
+        "angOrigin": "∠ origine",
+        "angA": "∠ A",
+        "angB": "∠ B",
+        "badgeRight": "a²+b²=c²",
+        "badgeCos": "c²=a²+b²−2ab·cosθ",
+        "sqA": "a²",
+        "sqB": "b²",
+        "sqC": "c²",
+        "cosTheta": "cosθ",
+        "cosThetaEx": "cosinus de l'angle à l'origine",
+        "hint": "Faites glisser les sommets pour vérifier le théorème",
+        "scaleUnit": "cm"
+    },
+    "ga": {
+        "_name": "Teoirim Phíotagaráis",
+        "angleDeg": "uillinn =",
+        "lockRight": "uillinn dheis",
+        "reset": "Athshocraigh"
+    },
+    "ko": {
+        "_name": "피타고라스 정리",
+        "angleDeg": "각도 =",
+        "lockRight": "직각",
+        "reset": "초기화"
+    },
+    "nl": {
+        "_name": "Stelling van Pythagoras",
+        "angleDeg": "hoek =",
+        "lockRight": "rechte hoek",
+        "reset": "Reset",
+        "hint": "Sleep de hoekpunten om de stelling a² + b² = c² te verifiëren",
+        "controls": "Bediening",
+        "triangle": "Driehoek",
+        "sideA": "a",
+        "sideB": "b",
+        "hypot": "c (schuinezijde)",
+        "angOrigin": "∠ oorsprong",
+        "angA": "∠ A",
+        "angB": "∠ B",
+        "badgeRight": "a²+b²=c²",
+        "badgeCos": "c²=a²+b²−2ab·cosθ",
+        "sqA": "a²",
+        "sqB": "b²",
+        "sqC": "c²",
+        "cosTheta": "cosθ",
+        "cosThetaEx": "cosinus van de hoek bij de oorsprong",
+        "scaleUnit": "cm"
+    }
 } /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
 
-var lang = ( window.mw && mw.config.get( 'wgUserLanguage' ) ) || 'en';
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
+    }
+    return str;
+}
+
 lang = lang.split( '-' )[ 0 ];
 if ( !messages[ lang ] ) { lang = 'en'; }
 var msg = messages[ lang ];

@@ -12,91 +12,65 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-	"en": {
-		"_name":        "Euler Line",
-		"triangle":     "Triangle",
-		"eulerLine":    "Euler Line",
-		"hint":         "Drag any vertex · Scale: 1 cm = 40 px",
-		"sideA":        "Side a (BC)",
-		"sideB":        "Side b (CA)",
-		"sideC":        "Side c (AB)",
-		"perimeter":    "Perimeter",
-		"circumcenter": "Circumcenter O",
-		"centroid":     "Centroid G",
-		"orthocentre":  "Orthocentre H",
-		"scaleUnit":    "cm"
-	},
-	"es": {
-		"_name":        "Recta de Euler",
-		"triangle":     "Triángulo",
-		"eulerLine":    "Recta de Euler",
-		"hint":         "Arrastra un vértice · Escala: 1 cm = 40 px",
-		"sideA":        "Lado a (BC)",
-		"sideB":        "Lado b (CA)",
-		"sideC":        "Lado c (AB)",
-		"perimeter":    "Perímetro",
-		"circumcenter": "Circuncentro O",
-		"centroid":     "Baricentro G",
-		"orthocentre":  "Ortocentro H",
-		"scaleUnit":    "cm"
-	},
-	"eu": {
-		"_name":        "Eulerren zuzenea",
-		"triangle":     "Triangelua",
-		"eulerLine":    "Eulerren zuzenea",
-		"hint":         "Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px",
-		"sideA":        "a aldea (BC)",
-		"sideB":        "b aldea (CA)",
-		"sideC":        "c aldea (AB)",
-		"perimeter":    "Perimetroa",
-		"circumcenter": "Zirkunzentroa O",
-		"centroid":     "Zentroidea G",
-		"orthocentre":  "Ortozentro H",
-		"scaleUnit":    "cm"
-	},
-	"fr": {
-		"_name":        "Droite d'Euler",
-		"triangle":     "Triangle",
-		"eulerLine":    "Droite d'Euler",
-		"hint":         "Faites glisser un sommet · Échelle : 1 cm = 40 px",
-		"sideA":        "Côté a (BC)",
-		"sideB":        "Côté b (CA)",
-		"sideC":        "Côté c (AB)",
-		"perimeter":    "Périmètre",
-		"circumcenter": "Circoncentre O",
-		"centroid":     "Centre de gravité G",
-		"orthocentre":  "Orthocentre H",
-		"scaleUnit":    "cm"
-	},
-	"nl": {
-		"_name":        "Lijn van Euler",
-		"triangle":     "Driehoek",
-		"eulerLine":    "Lijn van Euler",
-		"hint":         "Sleep een hoekpunt · Schaal: 1 cm = 40 px",
-		"sideA":        "Zijde a (BC)",
-		"sideB":        "Zijde b (CA)",
-		"sideC":        "Zijde c (AB)",
-		"perimeter":    "Omtrek",
-		"circumcenter": "Middelpunt omgeschreven cirkel O",
-		"centroid":     "Zwaartepunt G",
-		"orthocentre":  "Hoogtepunt H",
-		"scaleUnit":    "cm"
-	},
-	"qqq": {
-		"_name":        "Name of the Euler Line module",
-		"triangle":     "Section heading for the triangle properties card",
-		"eulerLine":    "Section heading for the Euler line properties card",
-		"hint":         "Instruction text shown in the footer. Includes scale information.",
-		"sideA":        "Label for side a (BC) of the triangle",
-		"sideB":        "Label for side b (CA) of the triangle",
-		"sideC":        "Label for side c (AB) of the triangle",
-		"perimeter":    "Label for the triangle perimeter",
-		"circumcenter": "Label for the circumcenter point O",
-		"centroid":     "Label for the centroid point G",
-		"orthocentre":  "Label for the orthocentre point H",
-		"scaleUnit":    "Unit abbreviation used for measurements (centimetres)"
-	}
-} /* I18N_END */;
+    "en": {
+        "_name": "Euler Line",
+        "triangle": "Triangle",
+        "eulerLine": "Euler Line",
+        "hint": "Drag any vertex · Scale: 1 cm = 40 px",
+        "sideA": "Side a (BC)",
+        "sideB": "Side b (CA)",
+        "sideC": "Side c (AB)",
+        "perimeter": "Perimeter",
+        "circumcenter": "Circumcenter O",
+        "centroid": "Centroid G",
+        "orthocentre": "Orthocentre H",
+        "scaleUnit": "cm"
+    },
+    "fr": {
+        "_name": "Droite d'Euler",
+        "triangle": "Triangle",
+        "eulerLine": "Droite d'Euler",
+        "hint": "Faites glisser un sommet · Échelle : 1 cm = 40 px",
+        "sideA": "Côté a (BC)",
+        "sideB": "Côté b (CA)",
+        "sideC": "Côté c (AB)",
+        "perimeter": "Périmètre",
+        "circumcenter": "Circoncentre O",
+        "centroid": "Centre de gravité G",
+        "orthocentre": "Orthocentre H",
+        "scaleUnit": "cm"
+    },
+    "nl": {
+        "_name": "Lijn van Euler",
+        "triangle": "Driehoek",
+        "eulerLine": "Lijn van Euler",
+        "hint": "Sleep een hoekpunt · Schaal: 1 cm = 40 px",
+        "sideA": "Zijde a (BC)",
+        "sideB": "Zijde b (CA)",
+        "sideC": "Zijde c (AB)",
+        "perimeter": "Omtrek",
+        "circumcenter": "Middelpunt omgeschreven cirkel O",
+        "centroid": "Zwaartepunt G",
+        "orthocentre": "Hoogtepunt H",
+        "scaleUnit": "cm"
+    }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
+    }
+    return str;
+}
+
+;
 
 /* ── Constants ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var SCALE   = 40;   /* pixels per centimetre  */

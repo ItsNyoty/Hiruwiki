@@ -11,151 +11,93 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-	"en": {
-		"_name":      "Triangle Centroid",
-		"triangle":   "Triangle",
-		"centroid":   "Centroid",
-		"hint":       "Drag any vertex · Scale: 1 cm = 40 px",
-		"sideA":      "Side a (BC)",
-		"sideB":      "Side b (CA)",
-		"sideC":      "Side c (AB)",
-		"angleA":     "Angle A",
-		"angleB":     "Angle B",
-		"angleC":     "Angle C",
-		"perimeter":  "Perimeter",
-		"centre":     "Centre G",
-		"medianA":    "Median m_a",
-		"medianB":    "Median m_b",
-		"medianC":    "Median m_c",
-		"scaleUnit":  "cm"
-	},
-	"es": {
-		"_name":      "Baricentro del triángulo",
-		"triangle":   "Triángulo",
-		"centroid":   "Baricentro",
-		"hint":       "Arrastra un vértice · Escala: 1 cm = 40 px",
-		"sideA":      "Lado a (BC)",
-		"sideB":      "Lado b (CA)",
-		"sideC":      "Lado c (AB)",
-		"angleA":     "Ángulo A",
-		"angleB":     "Ángulo B",
-		"angleC":     "Ángulo C",
-		"perimeter":  "Perímetro",
-		"centre":     "Centro G",
-		"medianA":    "Mediana m_a",
-		"medianB":    "Mediana m_b",
-		"medianC":    "Mediana m_c",
-		"scaleUnit":  "cm"
-	},
-	"eu": {
-		"_name":      "Hirukiaren barizentroa",
-		"triangle":   "Triangelua",
-		"centroid":   "Zentroidea",
-		"hint":       "Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px",
-		"sideA":      "a aldea (BC)",
-		"sideB":      "b aldea (CA)",
-		"sideC":      "c aldea (AB)",
-		"angleA":     "A angelua",
-		"angleB":     "B angelua",
-		"angleC":     "C angelua",
-		"perimeter":  "Perimetroa",
-		"centre":     "G zentroa",
-		"medianA":    "Mediana m_a",
-		"medianB":    "Mediana m_b",
-		"medianC":    "Mediana m_c",
-		"scaleUnit":  "cm"
-	},
-	"fr": {
-		"_name":      "Centre de gravité du triangle",
-		"triangle":   "Triangle",
-		"centroid":   "Centre de gravité",
-		"hint":       "Faites glisser un sommet · Échelle : 1 cm = 40 px",
-		"sideA":      "Côté a (BC)",
-		"sideB":      "Côté b (CA)",
-		"sideC":      "Côté c (AB)",
-		"angleA":     "Angle A",
-		"angleB":     "Angle B",
-		"angleC":     "Angle C",
-		"perimeter":  "Périmètre",
-		"centre":     "Centre G",
-		"medianA":    "Médiane m_a",
-		"medianB":    "Médiane m_b",
-		"medianC":    "Médiane m_c",
-		"scaleUnit":  "cm"
-	},
-	"ga": {
-		"_name":      "Lárphointe Triantáin",
-		"triangle":   "Triantán",
-		"centroid":   "Lárphointe",
-		"hint":       "Bog na buaicphointí · Scála: 1 cm = 40 px",
-		"sideA":      "Taobh a (BC)",
-		"sideB":      "Taobh b (CA)",
-		"sideC":      "Taobh c (AB)",
-		"angleA":     "Uillinn A",
-		"angleB":     "Uillinn B",
-		"angleC":     "Uillinn C",
-		"perimeter":  "Imlíne",
-		"centre":     "Lár G",
-		"medianA":    "Meánlíne m_a",
-		"medianB":    "Meánlíne m_b",
-		"medianC":    "Meánlíne m_c",
-		"scaleUnit":  "cm"
-	},
-	"ko": {
-		"_name":      "삼각형 무게중심",
-		"triangle":   "삼각형",
-		"centroid":   "무게중심",
-		"hint":       "꼭짓점을 드래그하세요 · 축척: 1 cm = 40 px",
-		"sideA":      "변 a (BC)",
-		"sideB":      "변 b (CA)",
-		"sideC":      "변 c (AB)",
-		"angleA":     "각도 A",
-		"angleB":     "각도 B",
-		"angleC":     "각도 C",
-		"perimeter":  "둘레",
-		"centre":     "무게중심 G",
-		"medianA":    "중선 m_a",
-		"medianB":    "중선 m_b",
-		"medianC":    "중선 m_c",
-		"scaleUnit":  "cm"
-	},
-	"nl": {
-		"_name":      "Zwaartepunt van een driehoek",
-		"triangle":   "Driehoek",
-		"centroid":   "Zwaartepunt",
-		"hint":       "Sleep een hoekpunt · Schaal: 1 cm = 40 px",
-		"sideA":      "Zijde a (BC)",
-		"sideB":      "Zijde b (CA)",
-		"sideC":      "Zijde c (AB)",
-		"angleA":     "Hoek A",
-		"angleB":     "Hoek B",
-		"angleC":     "Hoek C",
-		"perimeter":  "Omtrek",
-		"centre":     "Middelpunt G",
-		"medianA":    "Zwaartelijn m_a",
-		"medianB":    "Zwaartelijn m_b",
-		"medianC":    "Zwaartelijn m_c",
-		"scaleUnit":  "cm"
-	},
-	"qqq": {
-		"_name":      "Name of the Triangle Centroid module",
-		"triangle":   "Section heading for the triangle properties card",
-		"centroid":   "Section heading for the centroid properties card",
-		"hint":       "Instruction text shown in the footer. Includes scale information.",
-		"sideA":      "Label for side a (BC) of the triangle",
-		"sideB":      "Label for side b (CA) of the triangle",
-		"sideC":      "Label for side c (AB) of the triangle",
-		"angleA":     "Label for angle A of the triangle",
-		"angleB":     "Label for angle B of the triangle",
-		"angleC":     "Label for angle C of the triangle",
-		"perimeter":  "Label for the triangle perimeter",
-		"centre":     "Label for the centroid point G",
-		"medianA":    "Label for the length of median from A",
-		"medianB":    "Label for the length of median from B",
-		"medianC":    "Label for the length of median from C",
-		"scaleUnit":  "Unit abbreviation used for measurements (centimetres)"
-	}
-} /* I18N_END */;
+    "en": {
+        "_name": "Triangle Centroid",
+        "centroid": "Centroid",
+        "hint": "Move vertices to see how the centroid position changes",
+        "sideA": "Side a (BC)",
+        "sideB": "Side b (CA)",
+        "sideC": "Side c (AB)",
+        "angleA": "Angle A",
+        "angleB": "Angle B",
+        "angleC": "Angle C",
+        "perimeter": "Perimeter",
+        "centre": "Centre G",
+        "medianA": "Median m_a",
+        "medianB": "Median m_b",
+        "medianC": "Median m_c",
+        "scaleUnit": "cm"
+    },
+    "es": {
+        "_name": "Baricentro del triángulo",
+        "centroid": "Baricentro",
+        "hint": "Mueve los vértices para ver cómo cambia la posición del baricentro."
+    },
+    "eu": {
+        "_name": "Hirukiaren barizentroa",
+        "centroid": "Zentroidea",
+        "hint": "Mugitu erpinak barizentroaren kokapena nola aldatzen den ikusteko"
+    },
+    "fr": {
+        "_name": "Centre de gravité du triangle",
+        "centroid": "Centre de gravité",
+        "hint": "Déplacez les sommets pour voir comment la position du centre de gravité change.",
+        "sideA": "Côté a (BC)",
+        "sideB": "Côté b (CA)",
+        "sideC": "Côté c (AB)",
+        "angleA": "Angle A",
+        "angleB": "Angle B",
+        "angleC": "Angle C",
+        "perimeter": "Périmètre",
+        "centre": "Centre G",
+        "medianA": "Médiane m_a",
+        "medianB": "Médiane m_b",
+        "medianC": "Médiane m_c",
+        "scaleUnit": "cm"
+    },
+    "ga": {
+        "_name": "Lárphointe Triantáin",
+        "centroid": "Lárphointe",
+        "hint": "Bog na buaicphointí chun a fheiceáil conas a athraíonn suíomh an mheánphointe"
+    },
+    "ko": {
+        "_name": "삼각형 무게중심",
+        "centroid": "무게중심"
+    },
+    "nl": {
+        "_name": "Zwaartepunt van een driehoek",
+        "centroid": "Zwaartepunt",
+        "hint": "Verplaats de hoekpunten om te zien hoe de positie van het zwaartepunt verandert.",
+        "sideA": "Zijde a (BC)",
+        "sideB": "Zijde b (CA)",
+        "sideC": "Zijde c (AB)",
+        "angleA": "Hoek A",
+        "angleB": "Hoek B",
+        "angleC": "Hoek C",
+        "perimeter": "Omtrek",
+        "centre": "Middelpunt G",
+        "medianA": "Zwaartelijn m_a",
+        "medianB": "Zwaartelijn m_b",
+        "medianC": "Zwaartelijn m_c",
+        "scaleUnit": "cm"
+    }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
+    }
+    return str;
+}
+
+;
 
 /* ── Constants ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var SCALE   = 40;   /* pixels per centimetre  */

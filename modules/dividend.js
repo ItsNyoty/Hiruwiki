@@ -25,6 +25,34 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "ca": {
+        "_name": "Dividend i Divisor",
+        "eq_lbl_dividend": "dividend",
+        "eq_lbl_divisor": "divisor",
+        "eq_lbl_quotient": "quocient",
+        "eq_lbl_remainder": "residu",
+        "label_choose": "Trieu el dividend i el divisor"
+    },
+    "en": {
+        "_name": "Dividend and Divisor",
+        "eq_lbl_dividend": "dividend",
+        "eq_lbl_divisor": "divisor",
+        "eq_lbl_quotient": "quotient",
+        "eq_lbl_remainder": "remainder",
+        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> exactly — no remainder. The bar fills perfectly into <strong>$3</strong> equal chunk$6. This means <strong>$2</strong> is a divisor of <strong>$1</strong>.",
+        "insight_less": "<strong>$1</strong> is smaller than the divisor <strong>$2</strong>, so it fits <strong>0</strong> whole chunks. The entire value is the remainder. The remainder is always less than the divisor.",
+        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> remainder <strong>$4</strong>. Notice the red piece (<strong>$4</strong>) is always shorter than one blue chunk (<strong>$2</strong>). The remainder is always strictly less than the divisor. Check: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
+        "label_bar_description": "Bar view — each blue chunk = {{PLURAL:$1|$1 unit|$1 units}}",
+        "label_choose": "Choose dividend and divisor",
+        "label_dividend": "Dividend (the number being divided)",
+        "label_divisor": "Divisor (the chunk size)",
+        "label_equation": "Division equation",
+        "label_repadd": "Repeated addition",
+        "repadd_exact": "— divides exactly!",
+        "repadd_leftover": "left over",
+        "repadd_less": "$1 is less than $2, so the quotient is 0 and the whole value is the remainder.",
+        "hint": "Adjust dividend and divisor to see the division breakdown"
+    },
     "es": {
         "_name": "Dividendo y divisor",
         "eq_lbl_dividend": "dividendo",
@@ -42,6 +70,24 @@ var messages = /* I18N_START */ {
         "repadd_exact": "— se divide exactamente!",
         "repadd_leftover": "sobra",
         "repadd_less": "$1 es menor que $2, por lo que el cociente es 0 y el valor completo es el resto."
+    },
+    "eu": {
+        "_name": "Zatikizuna eta zatitzailea",
+        "eq_lbl_dividend": "zatikizuna",
+        "eq_lbl_divisor": "zatitzailea",
+        "eq_lbl_quotient": "zatidura",
+        "eq_lbl_remainder": "hondarra",
+        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> zenbaki osoa — hondarrik gabe. Barra <strong>$3</strong> zati berdinetan betetzen da. Horrek esan nahi du <strong>$2</strong> <strong>$1</strong>-ren zatitzailea dela.<!--$6-->",
+        "insight_less": "<strong>$1</strong> zatitzailea baino txikiagoa da (<strong>$2</strong>), beraz ez da zati oso bat sartzen. Balio osoa hondarra da. Hondarra beti zatitzailea baino txikiagoa da.",
+        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> hondarra <strong>$4</strong>. Kontuan hartu pieza gorria (<strong>$4</strong>) beti zati urdin bat (<strong>$2</strong>) baino motzagoa dela. Hondarra beti zatitzailea baino txikiagoa da. Egiaztatu: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
+        "label_choose": "Aukeratu zatikizuna eta zatitzailea",
+        "label_dividend": "Zatikizuna (zatitu beharreko zenbakia)",
+        "label_divisor": "Zatitzailea (zatiaren tamaina)",
+        "label_equation": "Zatiketa ekuazioa",
+        "label_repadd": "Batuketa errepikatua",
+        "repadd_exact": "— zehaztasunez zatitzen da!",
+        "repadd_leftover": "hondarra",
+        "repadd_less": "$1 $2 baino txikiagoa da, beraz zatidura 0 da eta balio osoa hondarra da."
     },
     "fr": {
         "_name": "Dividende et diviseur",
@@ -87,6 +133,18 @@ var messages = /* I18N_START */ {
         "eq_lbl_remainder": "resto",
         "repadd_exact": "— divide esattamente!"
     },
+    "ko": {
+        "_name": "피제수과 제수",
+        "eq_lbl_dividend": "피제수",
+        "eq_lbl_divisor": "제수",
+        "eq_lbl_quotient": "몫",
+        "eq_lbl_remainder": "나머지",
+        "label_choose": "피제수와 제수를 선택",
+        "label_dividend": "피제수 (나누어지는 수)",
+        "label_divisor": "제수 (나누는 수)",
+        "label_repadd": "반복 덧셈",
+        "repadd_exact": "— 정확히 나누어집니다!"
+    },
     "nl": {
         "_name": "Deeltal en deler",
         "eq_lbl_dividend": "deeltal",
@@ -106,64 +164,6 @@ var messages = /* I18N_START */ {
         "repadd_leftover": "blijft over",
         "repadd_less": "$1 is minder dan $2, dus het quotiënt is 0 en de hele waarde is de rest.",
         "hint": "Pas het deeltal en de deler aan om de verdeling te zien"
-    },
-    "en": {
-        "_name": "Dividend and Divisor",
-        "eq_lbl_dividend": "dividend",
-        "eq_lbl_divisor": "divisor",
-        "eq_lbl_quotient": "quotient",
-        "eq_lbl_remainder": "remainder",
-        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> exactly — no remainder. The bar fills perfectly into <strong>$3</strong> equal chunk$6. This means <strong>$2</strong> is a divisor of <strong>$1</strong>.",
-        "insight_less": "<strong>$1</strong> is smaller than the divisor <strong>$2</strong>, so it fits <strong>0</strong> whole chunks. The entire value is the remainder. The remainder is always less than the divisor.",
-        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> remainder <strong>$4</strong>. Notice the red piece (<strong>$4</strong>) is always shorter than one blue chunk (<strong>$2</strong>). The remainder is always strictly less than the divisor. Check: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
-        "label_bar_description": "Bar view — each blue chunk = {{PLURAL:$1|$1 unit|$1 units}}",
-        "label_choose": "Choose dividend and divisor",
-        "label_dividend": "Dividend (the number being divided)",
-        "label_divisor": "Divisor (the chunk size)",
-        "label_equation": "Division equation",
-        "label_repadd": "Repeated addition",
-        "repadd_exact": "— divides exactly!",
-        "repadd_leftover": "left over",
-        "repadd_less": "$1 is less than $2, so the quotient is 0 and the whole value is the remainder.",
-        "hint": "Adjust dividend and divisor to see the division breakdown"
-    },
-    "ca": {
-        "_name": "Dividend i Divisor",
-        "eq_lbl_dividend": "dividend",
-        "eq_lbl_divisor": "divisor",
-        "eq_lbl_quotient": "quocient",
-        "eq_lbl_remainder": "residu",
-        "label_choose": "Trieu el dividend i el divisor"
-    },
-    "ko": {
-        "_name": "피제수과 제수",
-        "eq_lbl_dividend": "피제수",
-        "eq_lbl_divisor": "제수",
-        "eq_lbl_quotient": "몫",
-        "eq_lbl_remainder": "나머지",
-        "label_choose": "피제수와 제수를 선택",
-        "label_dividend": "피제수 (나누어지는 수)",
-        "label_divisor": "제수 (나누는 수)",
-        "label_repadd": "반복 덧셈",
-        "repadd_exact": "— 정확히 나누어집니다!"
-    },
-    "eu": {
-        "_name": "Zatikizuna eta zatitzailea",
-        "eq_lbl_dividend": "zatikizuna",
-        "eq_lbl_divisor": "zatitzailea",
-        "eq_lbl_quotient": "zatidura",
-        "eq_lbl_remainder": "hondarra",
-        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> zenbaki osoa — hondarrik gabe. Barra <strong>$3</strong> zati berdinetan betetzen da. Horrek esan nahi du <strong>$2</strong> <strong>$1</strong>-ren zatitzailea dela.<!--$6-->",
-        "insight_less": "<strong>$1</strong> zatitzailea baino txikiagoa da (<strong>$2</strong>), beraz ez da zati oso bat sartzen. Balio osoa hondarra da. Hondarra beti zatitzailea baino txikiagoa da.",
-        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> hondarra <strong>$4</strong>. Kontuan hartu pieza gorria (<strong>$4</strong>) beti zati urdin bat (<strong>$2</strong>) baino motzagoa dela. Hondarra beti zatitzailea baino txikiagoa da. Egiaztatu: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
-        "label_choose": "Aukeratu zatikizuna eta zatitzailea",
-        "label_dividend": "Zatikizuna (zatitu beharreko zenbakia)",
-        "label_divisor": "Zatitzailea (zatiaren tamaina)",
-        "label_equation": "Zatiketa ekuazioa",
-        "label_repadd": "Batuketa errepikatua",
-        "repadd_exact": "— zehaztasunez zatitzen da!",
-        "repadd_leftover": "hondarra",
-        "repadd_less": "$1 $2 baino txikiagoa da, beraz zatidura 0 da eta balio osoa hondarra da."
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

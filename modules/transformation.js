@@ -4,6 +4,29 @@
     
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "ca": {
+        "angle": "Angle",
+        "enlargement": "Ampliació",
+        "horizontal": "Horitzontal",
+        "rotation": "Rotació",
+        "vertical": "Vertical"
+    },
+    "en": {
+        "_name": "Transformations",
+        "angle": "Angle",
+        "enlargement": "Enlargement",
+        "hintEnlargement": "Move the orange point to set the center of enlargement.",
+        "hintReflection": "Move both orange points to create the mirror line.",
+        "hintRotation": "Move the orange point to set the center of rotation.",
+        "hintTranslation": "Use the sliders to translate the object.",
+        "horizontal": "Horizontal",
+        "reflection": "Reflection",
+        "rotation": "Rotation",
+        "transformations": "Transformations",
+        "translation": "Translation",
+        "vertical": "Vertical",
+        "hint": "Choose a transformation to see it in action. Use the blue dots to change the form of the triangle"
+    },
     "es": {
         "_name": "Transformaciones",
         "angle": "Ángulo",
@@ -18,6 +41,21 @@ var messages = /* I18N_START */ {
         "transformations": "Transformaciones",
         "translation": "Traslación",
         "vertical": "Vertical"
+    },
+    "eu": {
+        "_name": "Transformazioak",
+        "angle": "Angelua",
+        "enlargement": "Eskala",
+        "hintEnlargement": "Puntu laranja mugitu eskalaren jatorria ezartzeko.",
+        "hintReflection": "Bi puntu laranjak mugitu ispilu lerroa sortzeko.",
+        "hintRotation": "Puntu laranja mugitu errotazio zentroa ezartzeko.",
+        "hintTranslation": "Erabili barrak objektuaren translazioa egiteko.",
+        "horizontal": "Horizontala",
+        "reflection": "Islapena",
+        "rotation": "Biraketa",
+        "transformations": "Transformazioak",
+        "translation": "Translazioa",
+        "vertical": "Bertikala"
     },
     "fr": {
         "_name": "Transformations",
@@ -49,6 +87,17 @@ var messages = /* I18N_START */ {
         "translation": "Aistriúchán",
         "vertical": "Ingearach"
     },
+    "ko": {
+        "_name": "변환",
+        "angle": "각",
+        "enlargement": "확대",
+        "horizontal": "수평",
+        "reflection": "반전",
+        "rotation": "회전",
+        "transformations": "변환",
+        "translation": "평행 이동",
+        "vertical": "수직"
+    },
     "nl": {
         "_name": "Transformaties",
         "angle": "Hoek",
@@ -64,55 +113,6 @@ var messages = /* I18N_START */ {
         "translation": "Translatie",
         "vertical": "Verticaal",
         "hint": "Kies een transformatie om deze in actie te zien. Gebruik de blauwe stippen om de vorm van de driehoek te veranderen"
-    },
-    "en": {
-        "_name": "Transformations",
-        "angle": "Angle",
-        "enlargement": "Enlargement",
-        "hintEnlargement": "Move the orange point to set the center of enlargement.",
-        "hintReflection": "Move both orange points to create the mirror line.",
-        "hintRotation": "Move the orange point to set the center of rotation.",
-        "hintTranslation": "Use the sliders to translate the object.",
-        "horizontal": "Horizontal",
-        "reflection": "Reflection",
-        "rotation": "Rotation",
-        "transformations": "Transformations",
-        "translation": "Translation",
-        "vertical": "Vertical",
-        "hint": "Choose a transformation to see it in action. Use the blue dots to change the form of the triangle"
-    },
-    "ca": {
-        "angle": "Angle",
-        "enlargement": "Ampliació",
-        "horizontal": "Horitzontal",
-        "rotation": "Rotació",
-        "vertical": "Vertical"
-    },
-    "ko": {
-        "_name": "변환",
-        "angle": "각",
-        "enlargement": "확대",
-        "horizontal": "수평",
-        "reflection": "반전",
-        "rotation": "회전",
-        "transformations": "변환",
-        "translation": "평행 이동",
-        "vertical": "수직"
-    },
-    "eu": {
-        "_name": "Transformazioak",
-        "angle": "Angelua",
-        "enlargement": "Eskala",
-        "hintEnlargement": "Puntu laranja mugitu eskalaren jatorria ezartzeko.",
-        "hintReflection": "Bi puntu laranjak mugitu ispilu lerroa sortzeko.",
-        "hintRotation": "Puntu laranja mugitu errotazio zentroa ezartzeko.",
-        "hintTranslation": "Erabili barrak objektuaren translazioa egiteko.",
-        "horizontal": "Horizontala",
-        "reflection": "Islapena",
-        "rotation": "Biraketa",
-        "transformations": "Transformazioak",
-        "translation": "Translazioa",
-        "vertical": "Bertikala"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

@@ -20,103 +20,71 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-	"en": {
-		"_name":        "Nine-Point Circle",
-		"triangle":     "Triangle",
-		"ninePoint":    "Nine-Point Circle",
-		"hint":         "Drag any vertex · Scale: 1 cm = 40 px",
-		"sideA":        "Side a (BC)",
-		"sideB":        "Side b (CA)",
-		"sideC":        "Side c (AB)",
-		"perimeter":    "Perimeter",
-		"centre":       "Centre N\u2089",
-		"radius":       "Radius",
-		"legendM":      "M_a/b/c \u2014 midpoints of the sides",
-		"legendH":      "H_a/b/c \u2014 feet of the altitudes",
-		"legendE":      "E_a/b/c \u2014 midpoints of AH, BH, CH",
-		"scaleUnit":    "cm"
-	},
-	"es": {
-		"_name":        "C\u00edrculo de los nueve puntos",
-		"triangle":     "Tri\u00e1ngulo",
-		"ninePoint":    "C\u00edrculo de los nueve puntos",
-		"hint":         "Arrastra un v\u00e9rtice \u00b7 Escala: 1 cm = 40 px",
-		"sideA":        "Lado a (BC)",
-		"sideB":        "Lado b (CA)",
-		"sideC":        "Lado c (AB)",
-		"perimeter":    "Per\u00edmetro",
-		"centre":       "Centro N\u2089",
-		"radius":       "Radio",
-		"legendM":      "M_a/b/c \u2014 puntos medios de los lados",
-		"legendH":      "H_a/b/c \u2014 pies de las alturas",
-		"legendE":      "E_a/b/c \u2014 puntos medios de AH, BH, CH",
-		"scaleUnit":    "cm"
-	},
-	"eu": {
-		"_name":        "Bederatzi puntuko zirkulua",
-		"triangle":     "Triangelua",
-		"ninePoint":    "Bederatzi puntuko zirkulua",
-		"hint":         "Erpinak mugitu ditzakezu \u00b7 Eskala: 1 cm = 40 px",
-		"sideA":        "a aldea (BC)",
-		"sideB":        "b aldea (CA)",
-		"sideC":        "c aldea (AB)",
-		"perimeter":    "Perimetroa",
-		"centre":       "N\u2089 zentroa",
-		"radius":       "Erradioa",
-		"legendM":      "M_a/b/c \u2014 aldeen erdipuntuak",
-		"legendH":      "H_a/b/c \u2014 alturen oinak",
-		"legendE":      "E_a/b/c \u2014 AH, BH, CH erdipuntuak",
-		"scaleUnit":    "cm"
-	},
-	"fr": {
-		"_name":        "Cercle des neuf points",
-		"triangle":     "Triangle",
-		"ninePoint":    "Cercle des neuf points",
-		"hint":         "Faites glisser un sommet \u00b7 \u00c9chelle\u00a0: 1 cm = 40 px",
-		"sideA":        "C\u00f4t\u00e9 a (BC)",
-		"sideB":        "C\u00f4t\u00e9 b (CA)",
-		"sideC":        "C\u00f4t\u00e9 c (AB)",
-		"perimeter":    "P\u00e9rim\u00e8tre",
-		"centre":       "Centre N\u2089",
-		"radius":       "Rayon",
-		"legendM":      "M_a/b/c \u2014 milieux des c\u00f4t\u00e9s",
-		"legendH":      "H_a/b/c \u2014 pieds des hauteurs",
-		"legendE":      "E_a/b/c \u2014 milieux de AH, BH, CH",
-		"scaleUnit":    "cm"
-	},
-	"nl": {
-		"_name":        "Cirkel van de negen punten",
-		"triangle":     "Driehoek",
-		"ninePoint":    "Cirkel van de negen punten",
-		"hint":         "Sleep een hoekpunt \u00b7 Schaal: 1 cm = 40 px",
-		"sideA":        "Zijde a (BC)",
-		"sideB":        "Zijde b (CA)",
-		"sideC":        "Zijde c (AB)",
-		"perimeter":    "Omtrek",
-		"centre":       "Middelpunt N\u2089",
-		"radius":       "Straal",
-		"legendM":      "M_a/b/c \u2014 middens van de zijden",
-		"legendH":      "H_a/b/c \u2014 voetpunten van de hoogtelijnen",
-		"legendE":      "E_a/b/c \u2014 middens van AH, BH, CH",
-		"scaleUnit":    "cm"
-	},
-	"qqq": {
-		"_name":        "Name of the Nine-Point Circle module",
-		"triangle":     "Section heading for the triangle properties card",
-		"ninePoint":    "Section heading for the nine-point circle properties card",
-		"hint":         "Instruction text shown in the footer. Includes scale information.",
-		"sideA":        "Label for side a (BC) of the triangle",
-		"sideB":        "Label for side b (CA) of the triangle",
-		"sideC":        "Label for side c (AB) of the triangle",
-		"perimeter":    "Label for the triangle perimeter",
-		"centre":       "Label for the nine-point centre N9",
-		"radius":       "Label for the nine-point circle radius (= R/2)",
-		"legendM":      "Legend entry for M_a/b/c: midpoints of the sides",
-		"legendH":      "Legend entry for H_a/b/c: feet of the altitudes",
-		"legendE":      "Legend entry for E_a/b/c: midpoints of AH, BH, CH",
-		"scaleUnit":    "Unit abbreviation used for measurements (centimetres)"
-	}
-} /* I18N_END */;
+    "en": {
+        "_name": "Nine-Point Circle",
+        "triangle": "Triangle",
+        "ninePoint": "Nine-Point Circle",
+        "hint": "Drag any vertex · Scale: 1 cm = 40 px",
+        "sideA": "Side a (BC)",
+        "sideB": "Side b (CA)",
+        "sideC": "Side c (AB)",
+        "perimeter": "Perimeter",
+        "centre": "Centre N₉",
+        "radius": "Radius",
+        "legendM": "M_a/b/c — midpoints of the sides",
+        "legendH": "H_a/b/c — feet of the altitudes",
+        "legendE": "E_a/b/c — midpoints of AH, BH, CH",
+        "scaleUnit": "cm"
+    },
+    "fr": {
+        "_name": "Cercle des neuf points",
+        "triangle": "Triangle",
+        "ninePoint": "Cercle des neuf points",
+        "hint": "Faites glisser un sommet · Échelle : 1 cm = 40 px",
+        "sideA": "Côté a (BC)",
+        "sideB": "Côté b (CA)",
+        "sideC": "Côté c (AB)",
+        "perimeter": "Périmètre",
+        "centre": "Centre N₉",
+        "radius": "Rayon",
+        "legendM": "M_a/b/c — milieux des côtés",
+        "legendH": "H_a/b/c — pieds des hauteurs",
+        "legendE": "E_a/b/c — milieux de AH, BH, CH",
+        "scaleUnit": "cm"
+    },
+    "nl": {
+        "_name": "Cirkel van de negen punten",
+        "triangle": "Driehoek",
+        "ninePoint": "Cirkel van de negen punten",
+        "hint": "Sleep een hoekpunt · Schaal: 1 cm = 40 px",
+        "sideA": "Zijde a (BC)",
+        "sideB": "Zijde b (CA)",
+        "sideC": "Zijde c (AB)",
+        "perimeter": "Omtrek",
+        "centre": "Middelpunt N₉",
+        "radius": "Straal",
+        "legendM": "M_a/b/c — middens van de zijden",
+        "legendH": "H_a/b/c — voetpunten van de hoogtelijnen",
+        "legendE": "E_a/b/c — middens van AH, BH, CH",
+        "scaleUnit": "cm"
+    }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
+    }
+    return str;
+}
+
+;
 
 /* ── Constants ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var SCALE   = 40;   /* pixels per centimetre  */

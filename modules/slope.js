@@ -20,114 +20,45 @@ var messages = /* I18N_START */ {
     "en": {
         "_name": "Slope",
         "undefined": "Vertical line → slope undefined",
-        "hint": "Drag the points to see the slope calculation",
-        "point1": "Point P₁",
-        "point2": "Point P₂",
-        "coords1": "P₁ coordinates",
-        "coords2": "P₂ coordinates",
-        "rise": "Rise (Δy)",
-        "run": "Run (Δx)",
-        "slope": "Slope (m)",
-        "slopeCard": "Slope",
-        "pointsCard": "Points"
+        "hint": "Drag the points to see the slope calculation"
     },
     "es": {
         "_name": "Pendiente",
-        "undefined": "Línea vertical → pendiente indefinida",
-        "hint": "Arrastra los puntos para ver el cálculo de la pendiente",
-        "point1": "Punto P₁",
-        "point2": "Punto P₂",
-        "coords1": "Coordenadas de P₁",
-        "coords2": "Coordenadas de P₂",
-        "rise": "Elevación (Δy)",
-        "run": "Avance (Δx)",
-        "slope": "Pendiente (m)",
-        "slopeCard": "Pendiente",
-        "pointsCard": "Puntos"
+        "undefined": "Línea vertical → pendiente indefinida"
     },
     "eu": {
         "_name": "Maldia",
-        "undefined": "Lerro bertikala → malda ezarri gabe",
-        "hint": "Puntu zatiak arrastatu maldaren kalkulua ikusteko",
-        "point1": "P₁ puntua",
-        "point2": "P₂ puntua",
-        "coords1": "P₁ koordenatuak",
-        "coords2": "P₂ koordenatuak",
-        "rise": "Igoera (Δy)",
-        "run": "Ibilbidea (Δx)",
-        "slope": "Malda (m)",
-        "slopeCard": "Malda",
-        "pointsCard": "Puntuak"
+        "undefined": "Lerro bertikala → malda ezarri gabe"
     },
     "fr": {
         "_name": "Pente",
-        "undefined": "Ligne verticale → pente indéfinie",
-        "hint": "Faites glisser les points pour voir le calcul de la pente",
-        "point1": "Point P₁",
-        "point2": "Point P₂",
-        "coords1": "Coordonnées de P₁",
-        "coords2": "Coordonnées de P₂",
-        "rise": "Montée (Δy)",
-        "run": "Course (Δx)",
-        "slope": "Pente (m)",
-        "slopeCard": "Pente",
-        "pointsCard": "Points"
+        "undefined": "Ligne verticale → pente indéfinie"
     },
     "ga": {
         "_name": "Fána",
-        "undefined": "Líne ingearach → fána neamhshainithe",
-        "hint": "Tarraing na pointí chun ríomh an fhána a fheiceáil",
-        "point1": "Pointe P₁",
-        "point2": "Pointe P₂",
-        "coords1": "Comhordanáidí P₁",
-        "coords2": "Comhordanáidí P₂",
-        "rise": "Ardú (Δy)",
-        "run": "Rith (Δx)",
-        "slope": "Fána (m)",
-        "slopeCard": "Fána",
-        "pointsCard": "Pointí"
+        "undefined": "Líne ingearach → fána neamhshainithe"
     },
     "ko": {
         "_name": "기울기",
-        "undefined": "수직선 → 기울기 정의 안 됨",
-        "hint": "점을 드래그하여 기울기 계산을 확인하세요",
-        "point1": "점 P₁",
-        "point2": "점 P₂",
-        "coords1": "P₁ 좌표",
-        "coords2": "P₂ 좌표",
-        "rise": "상승 (Δy)",
-        "run": "이동 (Δx)",
-        "slope": "기울기 (m)",
-        "slopeCard": "기울기",
-        "pointsCard": "점"
+        "undefined": "수직선 → 기울기 정의 안 됨"
     },
     "nl": {
         "_name": "Helling",
         "undefined": "Verticale lijn → helling ongedefinieerd",
-        "hint": "Sleep de punten om de hellingsberekening te zien",
-        "point1": "Punt P₁",
-        "point2": "Punt P₂",
-        "coords1": "Coördinaten van P₁",
-        "coords2": "Coördinaten van P₂",
-        "rise": "Stijging (Δy)",
-        "run": "Aanloop (Δx)",
-        "slope": "Helling (m)",
-        "slopeCard": "Helling",
-        "pointsCard": "Punten"
+        "hint": "Sleep de punten om de hellingsberekening te zien"
     }
 } /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
 
-var lang = ( window.mw && mw.config.get( 'wgUserLanguage' ) ) || 'en';
-var banana = new Banana( lang.split( '-' )[ 0 ] );
-banana.load( messages );
-
-function t( key, vars ) {
-    var args = Array.isArray( vars ) ? vars : [];
-    var str = banana.i18n( key, ...args );
-    if ( vars && typeof vars === 'object' && !Array.isArray( vars ) ) {
-        Object.keys( vars ).forEach( function ( k ) {
-            str = str.replace( new RegExp( '\\{' + k + '\\}', 'g' ), vars[ k ] );
-        } );
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
     }
     return str;
 }

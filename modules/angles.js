@@ -3,6 +3,26 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "ca": {
+        "_name": "Angles",
+        "bisector": "Bisectriu",
+        "bisectorResult": "Bisectriu: $1°",
+        "complement": "Complementari",
+        "explement": "Explementari",
+        "notDefined": "No definit per a aquest angle",
+        "supplement": "Suplementari"
+    },
+    "en": {
+        "_name": "Angles",
+        "bisector": "Bisector",
+        "bisectorResult": "Bisector: $1°",
+        "complement": "Complementary",
+        "explement": "Explementary",
+        "notDefined": "Not defined for this angle",
+        "resultAngle": "$1 angle: $2°",
+        "supplement": "Supplementary",
+        "hint": "Drag the handle to change the angle"
+    },
     "es": {
         "_name": "Ángulos",
         "bisector": "Bisectriz",
@@ -12,6 +32,16 @@ var messages = /* I18N_START */ {
         "notDefined": "No definido para este ángulo",
         "resultAngle": "Ángulo $1: $2°",
         "supplement": "Suplementario"
+    },
+    "eu": {
+        "_name": "Angeluak",
+        "bisector": "Erdikaria",
+        "bisectorResult": "Erdikaria: $1°",
+        "complement": "Osagarria",
+        "explement": "Konjubatua",
+        "notDefined": "Angelu honentzat definitu gabe",
+        "resultAngle": "Angelu $1: $2°",
+        "supplement": "Betegarria"
     },
     "fr": {
         "_name": "Angles",
@@ -43,6 +73,15 @@ var messages = /* I18N_START */ {
         "resultAngle": "$1 angolo: $2°",
         "supplement": "Supplementare"
     },
+    "ko": {
+        "_name": "각도",
+        "bisector": "이등분",
+        "bisectorResult": "이등분: $1°",
+        "complement": "여각",
+        "explement": "공액각",
+        "resultAngle": "$1: $2°",
+        "supplement": "보각"
+    },
     "nl": {
         "_name": "Hoeken",
         "bisector": "Bissectrice",
@@ -53,45 +92,6 @@ var messages = /* I18N_START */ {
         "resultAngle": "Hoek $1: $2°",
         "supplement": "Supplementair",
         "hint": "Sleep de witte stip om de hoek te veranderen"
-    },
-    "en": {
-        "_name": "Angles",
-        "bisector": "Bisector",
-        "bisectorResult": "Bisector: $1°",
-        "complement": "Complementary",
-        "explement": "Explementary",
-        "notDefined": "Not defined for this angle",
-        "resultAngle": "$1 angle: $2°",
-        "supplement": "Supplementary",
-        "hint": "Drag the handle to change the angle"
-    },
-    "ca": {
-        "_name": "Angles",
-        "bisector": "Bisectriu",
-        "bisectorResult": "Bisectriu: $1°",
-        "complement": "Complementari",
-        "explement": "Explementari",
-        "notDefined": "No definit per a aquest angle",
-        "supplement": "Suplementari"
-    },
-    "ko": {
-        "_name": "각도",
-        "bisector": "이등분",
-        "bisectorResult": "이등분: $1°",
-        "complement": "여각",
-        "explement": "공액각",
-        "resultAngle": "$1: $2°",
-        "supplement": "보각"
-    },
-    "eu": {
-        "_name": "Angeluak",
-        "bisector": "Erdikaria",
-        "bisectorResult": "Erdikaria: $1°",
-        "complement": "Osagarria",
-        "explement": "Konjubatua",
-        "notDefined": "Angelu honentzat definitu gabe",
-        "resultAngle": "Angelu $1: $2°",
-        "supplement": "Betegarria"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
