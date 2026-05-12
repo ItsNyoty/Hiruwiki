@@ -178,6 +178,19 @@ nl:
     touchBC: Raakpunt BC
     touchCA: Raakpunt CA
     triangle: Driehoek
+  euler-line:
+    _name: Lijn van Euler
+    triangle: Driehoek
+    eulerLine: Lijn van Euler
+    hint: 'Sleep een hoekpunt · Schaal: 1 cm = 40 px'
+    sideA: Zijde a (BC)
+    sideB: Zijde b (CA)
+    sideC: Zijde c (AB)
+    perimeter: Omtrek
+    circumcenter: Middelpunt omgeschreven cirkel O
+    centroid: Zwaartepunt G
+    orthocentre: Hoogtepunt H
+    scaleUnit: cm
   marble-jar:
     _name: Kanspot
     colorBlue: Blauw
@@ -201,6 +214,21 @@ nl:
     reset: ↺ Reset
     totalPoints: Totaal aantal punten
     hint: 'Voeg punten toe om π te benaderen met kansberekening'
+  nine-point-circle:
+    _name: Cirkel van de negen punten
+    triangle: Driehoek
+    ninePoint: Cirkel van de negen punten
+    hint: 'Sleep een hoekpunt · Schaal: 1 cm = 40 px'
+    sideA: Zijde a (BC)
+    sideB: Zijde b (CA)
+    sideC: Zijde c (AB)
+    perimeter: Omtrek
+    centre: Middelpunt N₉
+    radius: Straal
+    legendM: 'M_a/b/c — middens van de zijden'
+    legendH: 'H_a/b/c — voetpunten van de hoogtelijnen'
+    legendE: 'E_a/b/c — middens van AH, BH, CH'
+    scaleUnit: cm
   orthocentre:
     _name: Hoogtepunt van een driehoek
     altA: Hoogte hₐ
@@ -257,6 +285,22 @@ nl:
     lockRight: rechte hoek
     reset: Reset
     hint: 'Sleep de hoekpunten om de stelling a² + b² = c² te verifiëren'
+    controls: Bediening
+    triangle: Driehoek
+    sideA: a
+    sideB: b
+    hypot: c (schuinezijde)
+    angOrigin: ∠ oorsprong
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: a²+b²=c²
+    badgeCos: c²=a²+b²−2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    cosTheta: cosθ
+    cosThetaEx: cosinus van de hoek bij de oorsprong
+    scaleUnit: cm
   quadrangle-angles:
     _name: Hoeken van een vierhoek
     interiorAngles: Binnenhoeken
@@ -369,6 +413,18 @@ nl:
     _name: Zwaartepunt van een driehoek
     centroid: Zwaartepunt
     hint: Verplaats de hoekpunten om te zien hoe de positie van het zwaartepunt verandert.
+    sideA: Zijde a (BC)
+    sideB: Zijde b (CA)
+    sideC: Zijde c (AB)
+    angleA: Hoek A
+    angleB: Hoek B
+    angleC: Hoek C
+    perimeter: Omtrek
+    centre: Middelpunt G
+    medianA: Zwaartelijn m_a
+    medianB: Zwaartelijn m_b
+    medianC: Zwaartelijn m_c
+    scaleUnit: cm
   triangles:
     _name: Driehoeken
     acute: scherphoekig
@@ -408,8 +464,8 @@ nl:
     tanFormula: overstaande / aanliggende
     hint: Gebruik de schuifregelaar om de hoek te veranderen
   integer-coordinates:
-    _name: Positieve coördinaten
-    btnChallenge: "\U0001F3AF Uitdaging"
+    _name: Gehele coördinaten
+    btnChallenge: "🎯 Uitdaging"
     btnCheck: Controleren ✓
     btnExplore: "\U0001F52D Verkennen"
     btnNext: Volgende →

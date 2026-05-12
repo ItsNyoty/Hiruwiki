@@ -171,6 +171,19 @@ en:
     touchBC: Touch pt. BC
     touchCA: Touch pt. CA
     triangle: Triangle
+  euler-line:
+    _name: Euler Line
+    triangle: Triangle
+    eulerLine: Euler Line
+    hint: 'Drag any vertex · Scale: 1 cm = 40 px'
+    sideA: Side a (BC)
+    sideB: Side b (CA)
+    sideC: Side c (AB)
+    perimeter: Perimeter
+    circumcenter: Circumcenter O
+    centroid: Centroid G
+    orthocentre: Orthocentre H
+    scaleUnit: cm
   marble-jar:
     _name: Probability Jar
     colorBlue: Blue
@@ -194,6 +207,21 @@ en:
     reset: ↺ Reset
     totalPoints: Total points
     hint: 'Add points to approximate π using probability'
+  nine-point-circle:
+    _name: Nine-Point Circle
+    triangle: Triangle
+    ninePoint: Nine-Point Circle
+    hint: 'Drag any vertex · Scale: 1 cm = 40 px'
+    sideA: Side a (BC)
+    sideB: Side b (CA)
+    sideC: Side c (AB)
+    perimeter: Perimeter
+    centre: Centre N₉
+    radius: Radius
+    legendM: 'M_a/b/c — midpoints of the sides'
+    legendH: 'H_a/b/c — feet of the altitudes'
+    legendE: 'E_a/b/c — midpoints of AH, BH, CH'
+    scaleUnit: cm
   orthocentre:
     _name: Orthocentre
     altA: Altitude hₐ
@@ -249,6 +277,22 @@ en:
     lockRight: right angle
     reset: Reset
     hint: 'Drag vertices to verify a² + b² = c²'
+    controls: Controls
+    triangle: Triangle
+    sideA: a
+    sideB: b
+    hypot: c (hyp.)
+    angOrigin: ∠ origin
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: a²+b²=c²
+    badgeCos: c²=a²+b²−2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    cosTheta: cosθ
+    cosThetaEx: cosine of the angle at origin
+    scaleUnit: cm
   quadrangle-angles:
     _name: Quadrangle Angles
     interiorAngles: Interior angles
@@ -357,6 +401,18 @@ en:
     _name: Triangle Centroid
     centroid: Centroid
     hint: Move vertices to see how the centroid position changes
+    sideA: Side a (BC)
+    sideB: Side b (CA)
+    sideC: Side c (AB)
+    angleA: Angle A
+    angleB: Angle B
+    angleC: Angle C
+    perimeter: Perimeter
+    centre: Centre G
+    medianA: Median m_a
+    medianB: Median m_b
+    medianC: Median m_c
+    scaleUnit: cm
   triangles:
     _name: Triangles
     acute: acute
@@ -396,7 +452,7 @@ en:
     tanFormula: opposite / adjacent
     hint: Use the slider to change the angle
   integer-coordinates:
-    _name: Positive Coordinates
+    _name: Integer Coordinates
     btnChallenge: 🎯 Challenge
     btnCheck: Check ✓
     btnExplore: 🔭 Explore

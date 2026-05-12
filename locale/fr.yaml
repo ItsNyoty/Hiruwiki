@@ -274,7 +274,6 @@ fr:
   pythagoras:
     _name: Théorème de Pythagore
     angleDeg: angle =
-    lockRight: angle droit
     reset: Réinitialiser
     controls: Contrôles
     triangle: Triangle
@@ -449,8 +448,8 @@ fr:
       hauteur est tan&nbsp;&theta;, car tan&nbsp;&theta;&nbsp;=&nbsp;opposé&nbsp;&divide;&nbsp;adjacent&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
     tanFormula: opposé / adjacent
   integer-coordinates:
-    _name: Coordonnées positives
-    btnChallenge: "\U0001F3AF Défi"
+    _name: Coordonnées entières
+    btnChallenge: "🎯 Défi"
     btnCheck: Vérifier ✓
     btnExplore: "\U0001F52D Explorer"
     btnNext: Suivant →
@@ -463,15 +462,31 @@ fr:
     titleExplore: Explorer le système de coordonnées
   positive-coordinates:
     _name: Coordonnées positives
-    btnChallenge: "\U0001F3AF Défi"
+    btnChallenge: "🎯 Défi"
     btnCheck: Vérifier ✓
-    btnExplore: "\U0001F52D Explorer"
+    btnExplore: "🔭 Explorer"
     btnNext: Suivant →
-    feedbackCorrect: ✓ Correct !
+    feedbackCorrect: "✓ Correct !"
     feedbackWrong: ✗ Incorrect. L'étoile pâle était la bonne réponse.
     hintChallenge: Déplacez ★ vers les coordonnées proposées et cliquez sur Vérifier
-    hintExplore: Déplacez ★ en cliquant dessus — il s'accroche aux entiers
+    hintExplore: "Déplacez ★ en cliquant dessus — il s'accroche aux entiers"
     movePrompt: 'Déplacez ★ vers :<br>($1, $2)'
     pointLabel: 'Point :'
     titleExplore: Explorer le système de coordonnées
+  gauss-legendre:
+    _name: Algorithme de Gauss-Legendre
+    iteration: Itération
+    variable_a: Moyenne arithmétique (a)
+    variable_b: Moyenne géométrique (b)
+    variable_t: Terme d'erreur (t)
+    variable_p: Terme de puissance (p)
+    step: Étape suivante
+    reset: Réinitialiser
+    pi_approx: Approximation de π
+    correct_digits: "{{PLURAL:$1|$1 chiffre correct|$1 chiffres corrects}}"
+    precision_note: "Converge quadratiquement : le nombre de chiffres double à chaque étape."
+    calculation_heading: Comment c'est calculé
+    formula_label: Formule
+    update_rules_heading: Règles de mise à jour
+    hint: 'Calculez les itérations pour voir la convergence quadratique'
 ...
