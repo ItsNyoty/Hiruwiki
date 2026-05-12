@@ -81,7 +81,7 @@
 }
 
 .hw-row span:last-child {
-	color: var(--color-subtle, #5F5E5A);
+	color: var(--color-base, #1A1A18);
 	font-size: 12px;
 	min-width: 70px;
 	text-align: right;

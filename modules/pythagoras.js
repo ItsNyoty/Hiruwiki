@@ -255,7 +255,7 @@ function isDark() {
 	if ( cl.contains( 'skin-theme-clientpref-night' ) ||
 	     cl.contains( 'client-dark-mode' ) ) { return true; }
 	if ( document.body.classList.contains( 'mw-dark-mode' ) ) { return true; }
-	return !!( window.matchMedia && window.matchMedia( '(prefers-color-scheme:dark)' ).matches );
+	return false;
 }
 
 function palette() {

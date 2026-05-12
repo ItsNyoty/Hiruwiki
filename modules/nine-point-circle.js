@@ -281,7 +281,7 @@ function buildWidget( container ) {
 		     document.body.classList.contains( 'mw-dark-mode' ) ) {
 			return true;
 		}
-		return !!( window.matchMedia && window.matchMedia( '(prefers-color-scheme: dark)' ).matches );
+		return false;
 	}
 
 	function palette() {
