@@ -27,9 +27,9 @@ var messages = /* I18N_START */ {
         "scaleUnit": "cm"
     },
     "nl": {
-        "_name": "Lijn van Euler",
+        "_name": "Rechte van Euler",
         "triangle": "Driehoek",
-        "eulerLine": "Lijn van Euler",
+        "eulerLine": "Rechte van Euler",
         "hint": "Sleep een hoekpunt · Schaal: 1 cm = 40 px",
         "sideA": "Zijde a (BC)",
         "sideB": "Zijde b (CA)",
