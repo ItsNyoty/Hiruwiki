@@ -1,0 +1,235 @@
+/* =========================================================
+ * Hiruwiki module: nine-point-circle — stylesheet
+ * ========================================================= */
+
+/* Outer wrapper */
+.hw-ninepoint {
+	font-family: sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: var(--color-base, #1A1A18);
+	margin: 1em 0;
+}
+
+/* Canvas */
+.hw-canvas {
+	display: block;
+	width: 100%;
+	height: 540px;
+	cursor: crosshair;
+	touch-action: none;
+	border: 0.5px solid var(--border-color-base, #D3D1C7);
+	border-radius: 4px;
+	background: var(--background-color-base, #ffffff);
+	box-sizing: border-box;
+}
+
+/* Stats grid — two equal columns */
+.hw-params {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8px;
+	margin-top: 10px;
+}
+
+/* Individual card */
+.hw-card {
+	background: var(--background-color-neutral-subtle, #F1EFE8);
+	border-radius: 6px;
+	padding: 10px 14px;
+	box-sizing: border-box;
+}
+
+.hw-card-title {
+	margin-bottom: 6px;
+}
+
+/* Badge labels for card headings */
+.hw-badge {
+	display: inline-block;
+	padding: 2px 9px;
+	border-radius: 99px;
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: 0.03em;
+}
+
+/* Triangle card — purple */
+.hw-badge-t {
+	background: rgba(83, 74, 183, 0.14);
+	color: #3C3489;
+}
+
+/* Nine-point circle card — violet */
+.hw-badge-np {
+	background: rgba(124, 58, 237, 0.12);
+	color: #5B21B6;
+}
+
+/* Stat rows */
+.hw-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	font-size: 13px;
+	color: var(--color-base, #1A1A18);
+	margin-bottom: 2px;
+}
+
+.hw-row span:first-child {
+	color: var(--color-base, #3d3d3a);
+}
+
+.hw-row span:last-child {
+	color: var(--color-subtle, #5F5E5A);
+	font-size: 12px;
+	min-width: 70px;
+	text-align: right;
+}
+
+/* Legend rows — colour swatch + description text */
+.hw-legend-row {
+	display: flex;
+	align-items: center;
+	gap: 7px;
+	font-size: 11.5px;
+	color: var(--color-subtle, #5F5E5A);
+	margin-top: 7px;
+	padding-top: 6px;
+	border-top: 0.5px solid var(--border-color-base, #D3D1C7);
+}
+
+.hw-legend-row:first-of-type {
+	margin-top: 8px;
+	padding-top: 7px;
+}
+
+.hw-legend-dot {
+	display: inline-block;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+	flex-shrink: 0;
+}
+
+.hw-legend-dot--mid   { background: #0F6E56; }   /* teal  — side midpoints  */
+.hw-legend-dot--foot  { background: #BA7517; }   /* amber — altitude feet   */
+.hw-legend-dot--euler { background: #B5294E; }   /* rose  — Euler midpoints */
+
+/* Footer — shared layout with all other Hiruwiki modules */
+.hw-ninepoint ~ .hw-footer {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	margin-top: 8px;
+	padding: 7px 12px;
+	border: 0.5px solid var(--border-color-base, #D3D1C7);
+	border-radius: 4px;
+	background: var(--background-color-neutral-subtle, #F1EFE8);
+	font-family: sans-serif;
+	font-size: 11.5px;
+	color: var(--color-subtle, #5F5E5A);
+	line-height: 1.4;
+}
+
+.hw-ninepoint ~ .hw-footer img {
+	width: 22px;
+	height: 22px;
+	opacity: 0.8;
+	flex-shrink: 0;
+}
+
+.hw-ninepoint ~ .hw-footer strong {
+	color: var(--color-progressive, #534AB7);
+	font-weight: 600;
+}
+
+/* =========================================================
+ * Dark mode (MediaWiki integration)
+ * ========================================================= */
+html.skin-theme-clientpref-night .hw-ninepoint,
+html.client-dark-mode .hw-ninepoint,
+.mw-dark-mode .hw-ninepoint {
+	color: #E8E6DC;
+}
+
+html.skin-theme-clientpref-night .hw-canvas,
+html.client-dark-mode .hw-canvas,
+.mw-dark-mode .hw-canvas {
+	background: #1e1e1c;
+	border-color: var(--border-color-base, #444441);
+}
+
+html.skin-theme-clientpref-night .hw-card,
+html.client-dark-mode .hw-card,
+.mw-dark-mode .hw-card {
+	background: #2C2C2A;
+}
+
+html.skin-theme-clientpref-night .hw-badge-t,
+html.client-dark-mode .hw-badge-t,
+.mw-dark-mode .hw-badge-t {
+	background: rgba(175, 169, 236, 0.18);
+	color: var(--color-progressive, #AFA9EC);
+}
+
+html.skin-theme-clientpref-night .hw-badge-np,
+html.client-dark-mode .hw-badge-np,
+.mw-dark-mode .hw-badge-np {
+	background: rgba(192, 132, 252, 0.18);
+	color: #C084FC;
+}
+
+html.skin-theme-clientpref-night .hw-row,
+html.client-dark-mode .hw-row,
+.mw-dark-mode .hw-row {
+	color: #E8E6DC;
+}
+
+html.skin-theme-clientpref-night .hw-row span:first-child,
+html.client-dark-mode .hw-row span:first-child,
+.mw-dark-mode .hw-row span:first-child {
+	color: var(--color-placeholder, #B4B2A9);
+}
+
+html.skin-theme-clientpref-night .hw-row span:last-child,
+html.client-dark-mode .hw-row span:last-child,
+.mw-dark-mode .hw-row span:last-child {
+	color: var(--color-placeholder, #888780);
+}
+
+html.skin-theme-clientpref-night .hw-legend-row,
+html.client-dark-mode .hw-legend-row,
+.mw-dark-mode .hw-legend-row {
+	color: var(--color-placeholder, #B4B2A9);
+	border-top-color: #444441;
+}
+
+html.skin-theme-clientpref-night .hw-legend-dot--mid,
+html.client-dark-mode .hw-legend-dot--mid,
+.mw-dark-mode .hw-legend-dot--mid   { background: #5DCAA5; }
+
+html.skin-theme-clientpref-night .hw-legend-dot--foot,
+html.client-dark-mode .hw-legend-dot--foot,
+.mw-dark-mode .hw-legend-dot--foot  { background: #FAC775; }
+
+html.skin-theme-clientpref-night .hw-legend-dot--euler,
+html.client-dark-mode .hw-legend-dot--euler,
+.mw-dark-mode .hw-legend-dot--euler { background: #F28BAD; }
+
+html.skin-theme-clientpref-night .hw-ninepoint ~ .hw-footer,
+html.client-dark-mode .hw-ninepoint ~ .hw-footer,
+.mw-dark-mode .hw-ninepoint ~ .hw-footer {
+	background: #2C2C2A;
+	border-color: #444441;
+	color: var(--color-subtle, #B4B2A9);
+}
+
+/* =========================================================
+ * Narrow screens — stack the two cards vertically
+ * ========================================================= */
+@media (max-width: 480px) {
+	.hw-params {
+		grid-template-columns: 1fr;
+	}
+}
