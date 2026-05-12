@@ -255,7 +255,7 @@ qqq:
 	cosTheta: cosinus of theta
 	cosThetaEx: cosinus of the angle in origin
 	hint: clue for the interactive part
-	scaleUnit": abbreviature of centimetrs
+	scaleUnit: abbreviature of centimetrs
   quadrangle-angles:
     _name: Name of the Quadrangle Angles module
     interiorAngles: Heading for the interior angles section
@@ -309,14 +309,14 @@ qqq:
     undefined: Message shown when the line is vertical and the slope is undefined
     hint: Instruction text for the slope calculation interaction
     point1: name of the first point
-    point2": name of the second point
-    coords1": coordinates of first point
-    coords2": coordinates of second point
-    rise": message for the vertical distance
-    run": message for the horizontal distance
-    slope": name of the division of both
-    slopeCard": title of the slope section
-    pointsCard": title used in the points section
+    point2: name of the second point
+    coords1: coordinates of first point
+    coords2: coordinates of second point
+    rise: message for the vertical distance
+    run: message for the horizontal distance
+    slope: name of the division of both
+    slopeCard: title of the slope section
+    pointsCard: title used in the points section
   transformation:
     _name: Name of the Transformations module
     angle: Label for the rotation angle slider
@@ -540,5 +540,20 @@ qqq:
 	circumcenter: Label for the circumcenter point O
 	centroid: Label for the centroid point G
 	orthocentre: Label for the orthocentre point H
+	scaleUnit: Unit abbreviation used for measurements (centimetres)
+  nine-point-circle:
+	_name: Name of the Nine-Point Circle module
+	triangle: Section heading for the triangle properties card
+	ninePoint: Section heading for the nine-point circle properties card
+	hint: Instruction text shown in the footer. Includes scale information.
+	sideA: Label for side a (BC) of the triangle
+	sideB: Label for side b (CA) of the triangle
+	sideC:  Label for side c (AB) of the triangle
+	perimeter: Label for the triangle perimeter
+	centre: Label for the nine-point centre N9
+	radius: Label for the nine-point circle radius (= R/2)
+	legendM: Legend entry for M_a/b/c: midpoints of the sides
+	legendH: Legend entry for H_a/b/c: feet of the altitudes
+	legendE: Legend entry for E_a/b/c: midpoints of AH, BH, CH
 	scaleUnit: Unit abbreviation used for measurements (centimetres)
 ...
