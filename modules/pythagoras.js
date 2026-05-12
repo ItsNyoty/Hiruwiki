@@ -177,7 +177,7 @@ var msg = messages[ lang ];
 var SC = 46;   /* pixels per centimetre   */
 var RH = 26;   /* ruler strip height (px) */
 var VW = 700;  /* SVG viewBox width       */
-var VH = 560;  /* SVG viewBox height      */
+var VH = 480;  /* SVG viewBox height      */
 
 /* ── Geometry helpers ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 function dist( a, b ) { return Math.hypot( a.x - b.x, a.y - b.y ); }
@@ -285,7 +285,7 @@ function palette() {
 
 /* ── Default triangle positions ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 function defPts() {
-	var ox = 190, oy = 460;
+	var ox = 190, oy = 390;
 	return {
 		O: { x: ox,          y: oy          },
 		A: { x: ox,          y: oy - 3 * SC },
