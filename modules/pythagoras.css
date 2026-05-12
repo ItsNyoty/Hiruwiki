@@ -1,130 +1,206 @@
-.pythagoras-gadget {
-  width: 100%;
-  margin: 0 auto;
-  font-family: sans-serif;
+/* =========================================================
+ * Hiruwiki module: pythagoras — stylesheet
+ * ========================================================= */
+
+/* ── Outer wrapper ── */
+.hw-pythagoras {
+	font-family: var(--hw-font, sans-serif);
+	font-size: 14px;
+	line-height: 1.5;
+	color: var(--hw-text-base);
+	margin: 1em 0;
 }
 
-.pytha-controls {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
+/* ── Two-column layout: SVG canvas left, sidebar right ── */
+.hw-pytha-layout {
+	display: grid;
+	grid-template-columns: 1fr 190px;
+	gap: 8px;
+	align-items: start;
 }
 
-.pytha-controls input[type="number"] {
-  width: 60px;
+/* ── SVG canvas ── */
+.hw-pytha-svg {
+	display: block;
+	width: 100%;
+	cursor: crosshair;
+	touch-action: none;
+	border: 0.5px solid var(--hw-border);
+	border-radius: var(--hw-radius-sm);
+	box-sizing: border-box;
+	/* background is painted inside the SVG itself via a <rect>
+	   so it always covers the full viewBox regardless of CSS */
 }
 
-.pytha-controls label {
-  display: flex;
-  align-items: center;
-  gap: 4px;
+/* ── Sidebar ── */
+.hw-pytha-sidebar {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
 }
 
-.equation {
-  margin-top: 10px;
-  font-weight: bold;
-  font-size: 1.1em;
-  text-align: center;
+/* ── Card (shared) ── */
+.hw-card {
+	background: var(--hw-bg-subtle);
+	border-radius: var(--hw-radius-md);
+	padding: 10px 14px;
+	box-sizing: border-box;
 }
 
-/* SVG styling */
-.pythagoras-gadget svg {
-  background: linear-gradient(0deg, var(--border-color-base, #f0f0f0) 1px, transparent 1px), 
-              linear-gradient(90deg, var(--border-color-base, #f0f0f0) 1px, transparent 1px);
-  background-size: 38px 38px;
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  height: auto;
+.hw-card-title {
+	margin-bottom: 6px;
 }
 
-@media (max-width: 500px) {
-  .pytha-controls {
-    justify-content: center;
-  }
+/* ── Badge base (shared) ── */
+.hw-badge {
+	display: inline-block;
+	padding: 2px 9px;
+	border-radius: 99px;
+	font-size: 11px;
+	font-weight: 500;
+	letter-spacing: 0.03em;
 }
 
-/* Squares */
-.sqA { fill: #FF9999; stroke: #FF6666; stroke-width: 2; }
-.sqB { fill: #99CCFF; stroke: #3399FF; stroke-width: 2; }
-.sqC { fill: #99FF99; stroke: #33CC33; stroke-width: 2; }
-
-/* Triangle sides matching squares */
-.sideA { stroke: #FF6666; stroke-width: 3; }
-.sideB { stroke: #3399FF; stroke-width: 3; }
-.sideC { stroke: #33CC33; stroke-width: 3; }
-
-/* Labels for segment lengths, darker than squares */
-.lenLabel {
-  font-size: 14px;
-  font-weight: bold;
-  fill: #cc3333; /* darker red for a */
+/* Badge: Triangle card (primary / blue-purple) */
+.hw-badge-t {
+	background: var(--hw-color-primary-subtle);
+	color: var(--hw-color-primary);
 }
 
-.lenLabel:nth-of-type(2) { fill: #0066cc; } /* darker blue for b */
-.lenLabel:nth-of-type(3) { fill: #009900; } /* darker green for c */
-
-/* Area labels, centered in squares, matching square color */
-.areaLabel {
-  font-size: 14px;
-  font-weight: bold;
-  text-anchor: middle;
-  dominant-baseline: middle;
+/* Badge: Formula card (success / green) */
+.hw-badge-c {
+	background: var(--hw-color-success-subtle);
+	color: var(--hw-color-success);
 }
 
-.areaLabel:nth-of-type(1) { fill: #660000; } /* a^2 */
-.areaLabel:nth-of-type(2) { fill: #003366; } /* b^2 */
-.areaLabel:nth-of-type(3) { fill: #006600; } /* c^2 */
-
-/* Angles labels */
-.angleLabel {
-  font-size: 12px;
-  fill: black;
-  font-style: italic;
+/* Badge: Controls card (warning / amber).
+   Must come AFTER .hw-badge so the cascade applies the base styles first. */
+.hw-badge-ctrl {
+	background: var(--hw-color-warning-subtle);
+	color: var(--hw-color-warning);
 }
 
-.mainAngle {font-weight: bold;}
-
-.inputA, .inputB, .inputAngle {
-  padding: 6px 9px;
-  width: 100%;
-  outline: none;
-  background: var(--background-color-base, #FFFFFF);
-	font-size: 18px;
-  border-width: 0;
-  border-radius: 0px;
-  transition: .3s ease;
+/* ── Stat rows (shared) ── */
+.hw-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	font-size: 13px;
+	color: var(--hw-text-base);
+	margin-bottom: 2px;
 }
 
-.inputA:focus, .inputB:focus. .inputAngle:focus {
-  background: #F2F2F2;
-  border-radius: 10px;
+.hw-row span:first-child {
+	color: var(--hw-text-muted);
 }
 
-.pytha-a, .pytha-b {
+.hw-row span:last-child {
+	color: var(--hw-text-base);
+	font-weight: 600;
+	font-size: 12px;
+	min-width: 52px;
+	text-align: right;
+}
+
+/* ── cosθ explanation row ── */
+.hw-pytha-cos-row span:first-child {
+	/* override last-child rule: the label here is wide */
+	min-width: 0;
+}
+
+.hw-pytha-cos-ex {
+	font-size: 10px;
+	font-weight: 400;
+	color: var(--hw-text-muted);
+	font-style: italic;
+}
+
+/* ── Control rows inside the Controls card ── */
+.hw-pytha-ci {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	margin-bottom: 4px;
+	font-size: 14px;
+	color: var(--hw-text-muted);
+}
+
+.hw-pytha-ci input[type="checkbox"] {
+	margin: 0;
+}
+
+.hw-pytha-inp {
+	width: 60px;
+	font-size: 14px;
+	padding: 2px 4px;
+	border: 0.5px solid var(--hw-border);
+	border-radius: var(--hw-radius-sm);
+	background: var(--hw-bg-canvas);
+	color: var(--hw-text-base);
+	box-sizing: border-box;
+}
+
+/* Coloured labels for a, b, angle */
+.hw-pytha-lbl-a {
+	font-weight: 700;
+	color: #c22;
+	min-width: 12px;
+}
+
+.hw-pytha-lbl-b {
+	font-weight: 700;
+	color: #07b;
+	min-width: 12px;
+}
+
+.hw-pytha-lbl-ang {
+	min-width: 12px;
+}
+
+/* ── Reset button ── */
+.hw-pytha-reset {
+	flex: 1;
+	padding: 4px;
+	font-size: 12px;
 	font-weight: bold;
-	font-size: 18px;
-}
-
-.inputA:focus { border: 1px solid #CC3333;}
-.inputB:focus { border: 1px solid #3399FF;}
-
-.inputA, .inputA::placeholder, .pytha-a {color: #CC3333;}
-.inputB, .inputB::placeholder, .pytha-b {color: #3399FF;}
-
-.resetBtn {
-	background-color: var(--background-color-destructive, #bf3c2c);
-	color: white;
-	border: 0px;padding: 6px;
-	border-radius: 2px;
 	cursor: pointer;
+	border-radius: 4px;
+	background: var(--background-color-destructive, #d33);
+	color: white;
+	border-color: var(--border-color-destructive, #d33);
+	transition: background 0.2s, color 0.2s, border-color 0.2s;
 }
 
-.resetBtn:hover {
-	background-color: var(--background-color-destructive--hover, #9f3526);
+.hw-pytha-reset:hover {
+	background: var(--border-color-destructive, #b22);
 }
-.resetBtn:active {
-	background-color: var(--background-color-destructive--active, #612419);
+
+/* ── Coloured value spans in the stat rows ── */
+.hw-pytha-val-a { color: #c22; }
+.hw-pytha-val-b { color: #07b; }
+.hw-pytha-val-c { color: #060; }
+
+/* ── Footer override ── */
+.hw-pythagoras ~ .hw-footer,
+.hw-pythagoras .hw-footer {
+	margin-top: 6px;
+}
+
+/* =========================================================
+ * Narrow screens — stack canvas above sidebar,
+ * cards flow as a wrapping row
+ * ========================================================= */
+@media (max-width: 540px) {
+	.hw-pytha-layout {
+		grid-template-columns: 1fr;
+	}
+
+	.hw-pytha-sidebar {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+
+	.hw-pytha-sidebar .hw-card {
+		flex: 1 1 140px;
+	}
 }
