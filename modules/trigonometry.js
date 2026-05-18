@@ -48,6 +48,7 @@ var messages = /* I18N_START */ {
         "sinFormula": "aurkakoa / hipotenusa",
         "tanDesc": "Lerro laranja x&nbsp;=&nbsp;1 denean marrazten da, zirkuluarekiko tangentea. Bere altuera tan&nbsp;&theta; da, tan&nbsp;=&nbsp;aurkakoa&nbsp;&divide;&nbsp;auzokidea&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta; baita.",
         "tanFormula": "aurkakoa / auzokidea"
+        "hint": "Mugitu lerroa angelua aldatzeko"
     },
     "fr": {
         "_name": "Trigonométrie",
