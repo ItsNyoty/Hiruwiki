@@ -1,6 +1,7 @@
 # Messages for Spanish (español)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Agusbou2015
 # Author: Theklan
 ---
 es:
@@ -26,6 +27,7 @@ es:
     notDefined: No definido para este ángulo
     resultAngle: 'Ángulo $1: $2°'
     supplement: Suplementario
+    hint: Arrastra para cambiar el ángulo.
   circle-proof:
     _name: Prueba del círculo
     animStopped: Animación detenida.
@@ -47,6 +49,7 @@ es:
     tabCirc: Circunferencia
     title: Calculadora de Círculos
     visualProof: Prueba visual
+    hint: Arrastra el control del radio para ver el cálculo.
   circumcentre:
     _name: Circuncentro
     triangle: Triángulo
@@ -74,16 +77,18 @@ es:
     eq_lbl_divisor: divisor
     eq_lbl_quotient: cociente
     eq_lbl_remainder: resto
-    insight_exact: <strong>$1 ÷ $2 = $3</strong> exacto — sin resto. La barra se
-      llena perfectamente en <strong>$3</strong> fragmentos iguales. Esto significa
-      que <strong>$2</strong> es un divisor de <strong>$1</strong>.<!--$6-->
+    insight_exact: <strong>$1 ÷ $2 = $3</strong> exacto — sin resto. La barra se llena
+      perfectamente en <strong>$3</strong> fragmentos iguales. Esto significa que
+      <strong>$2</strong> es un divisor de <strong>$1</strong>.<!--$6-->
     insight_less: <strong>$1</strong> es menor que el divisor <strong>$2</strong>,
       por lo que cabe en <strong>0</strong> fragmentos enteros. Todo el valor es el
       resto. El resto es siempre menor que el divisor.
-    insight_normal: '<strong>$1 ÷ $2 = $3</strong> resto <strong>$4</strong>.
-      Nota que la pieza roja (<strong>$4</strong>) siempre es más corta que un fragmento
-      azul (<strong>$2</strong>). El resto siempre es estrictamente menor que el
-      divisor. Comprobación: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓'
+    insight_normal: '<strong>$1 ÷ $2 = $3</strong> resto <strong>$4</strong>. Nota
+      que la pieza roja (<strong>$4</strong>) siempre es más corta que un fragmento
+      azul (<strong>$2</strong>). El resto siempre es estrictamente menor que el divisor.
+      Comprobación: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓'
+    label_bar_description: 'Vista de barras: cada segmento azul = {{PLURAL:$1|$1 unidad|$1
+      unidades}}'
     label_choose: Elige el dividendo y el divisor
     label_dividend: Dividendo (el número a dividir)
     label_divisor: Divisor (el tamaño del fragmento)
@@ -91,8 +96,9 @@ es:
     label_repadd: Suma repetida
     repadd_exact: — se divide exactamente!
     repadd_leftover: sobra
-    repadd_less: '$1 es menor que $2, por lo que el cociente es 0 y el valor completo
-      es el resto.'
+    repadd_less: $1 es menor que $2, por lo que el cociente es 0 y el valor completo
+      es el resto.
+    hint: Ajusta el dividendo y el divisor para ver el desglose de la división
   factors:
     _name: Factores primos
     gcd_formula_eq: ' ='
@@ -100,18 +106,18 @@ es:
     gcd_title: MCD — conservar solo los factores compartidos
     insight_coprime: '<strong>$1</strong> y <strong>$2</strong> son coprimos — no
       comparten factores primos, por lo que el MCD = 1. El MCM es simplemente su producto.
-      Siempre es cierto: <strong>$1 × $2 = $5</strong> = MCD × MCM = <strong>1
-      × $4 = $4</strong>.'
+      Siempre es cierto: <strong>$1 × $2 = $5</strong> = MCD × MCM = <strong>1 × $4
+      = $4</strong>.'
     insight_shared_many: '<strong>$1</strong> y <strong>$2</strong> comparten los
       primos <strong>$7</strong>. El MCD toma solo los bloques verdes compartidos.
       El MCM toma todos los bloques — verdes compartidos, azules adicionales de A,
       rojos adicionales de B — sin contar ningún primo dos veces. Siempre es cierto:
       <strong>$1 × $2 = $5</strong> = MCD × MCM = <strong>$3 × $4 = $6</strong>.'
-    insight_shared_one: '<strong>$1</strong> y <strong>$2</strong> comparten el
-      primo <strong>$7</strong>. El MCD toma solo los bloques verdes compartidos.
-      El MCM toma todos los bloques — verdes compartidos, azules adicionales de A,
-      rojos adicionales de B — sin contar ningún primo dos veces. Siempre es cierto:
-      <strong>$1 × $2 = $5</strong> = MCD × MCM = <strong>$3 × $4 = $6</strong>.'
+    insight_shared_one: '<strong>$1</strong> y <strong>$2</strong> comparten el primo
+      <strong>$7</strong>. El MCD toma solo los bloques verdes compartidos. El MCM
+      toma todos los bloques — verdes compartidos, azules adicionales de A, rojos
+      adicionales de B — sin contar ningún primo dos veces. Siempre es cierto: <strong>$1
+      × $2 = $5</strong> = MCD × MCM = <strong>$3 × $4 = $6</strong>.'
     label_choose: Elige dos números
     label_factors: Factores primos
     label_how: Cómo se construyen el MCD y el MCM
@@ -120,6 +126,7 @@ es:
     legend_onlyA: solo de A
     legend_onlyB: solo de B
     legend_shared: compartidos (usados para MCD)
+    hint: Elige números para ver sus factores primos
   fibonacci:
     _name: Sucesión de Fibonacci
     card_phi_lbl: Proporción áurea φ
@@ -143,6 +150,7 @@ es:
     sec_sequence: Secuencia hasta ahora
     sec_steps: Pasos de la secuencia de Fibonacci
     step_label: Paso $1 de $2
+    hint: Recorre la secuencia paso a paso para observar la convergencia
   hexagon-angles:
     2quads: 2 cuadriláteros × 360°
     4triangles: 4 triángulos × 180°
@@ -150,6 +158,7 @@ es:
     interiorAngles: Ángulos interiores
     reset: ↺ Reiniciar
     total: Total
+    hint: Descompone el hexágono en triángulos o cuadrangulares
   incentre:
     _name: Incentro
     angleA: Ángulo A
@@ -194,6 +203,7 @@ es:
     probTitle: Probabilidad de sacar una canica y adivinar su color…
     shake: ¡Agitar!
     total: Total
+    hint: Agita el frasco para ver la probabilidad en acción.
   monte-carlo:
     _name: Pi de Monte Carlo
     addPoints: + Añadir puntos
@@ -205,22 +215,22 @@ es:
     pointsPerStep: Puntos por paso
     reset: ↺ Reiniciar
     totalPoints: Puntos totales
-    hint: 'Añade puntos para aproximar π usando probabilidad'
+    hint: Añade puntos para aproximar π usando probabilidad
   nine-point-circle:
-    _name: "Círculo de los nueve puntos"
-    triangle: "Triángulo"
-    ninePoint: "Círculo de los nueve puntos"
-    hint: "Arrastra un vértice · Escala: 1 cm = 40 px"
-    sideA: "Lado a (BC)"
-    sideB: "Lado b (CA)"
-    sideC: "Lado c (AB)"
-    perimeter: "Perímetro"
-    centre: "Centro N₉"
-    radius: "Radio"
-    legendM: "M_a/b/c — puntos medios de los lados"
-    legendH: "H_a/b/c — pies de las alturas"
-    legendE: "E_a/b/c — puntos medios de AH, BH, CH"
-    scaleUnit: "cm"
+    _name: Círculo de los nueve puntos
+    triangle: Triángulo
+    ninePoint: Círculo de los nueve puntos
+    hint: 'Arrastra un vértice · Escala: 1 cm = 40 px'
+    sideA: Lado a (BC)
+    sideB: Lado b (CA)
+    sideC: Lado c (AB)
+    perimeter: Perímetro
+    centre: Centro N₉
+    radius: Radio
+    legendM: M_a/b/c — puntos medios de los lados
+    legendH: H_a/b/c — pies de las alturas
+    legendE: E_a/b/c — puntos medios de AH, BH, CH
+    scaleUnit: cm
   orthocentre:
     _name: Ortocentro
     altA: Altura hₐ
@@ -230,7 +240,8 @@ es:
     footA: Pie Hₐ en BC
     footB: Pie H_b en CA
     footC: Pie H_c en AB
-    hint: 'Arrastra un vértice para ver cómo se mueve el ortocentro (Escala: 1 cm = 40 px)'
+    hint: 'Arrastra un vértice para ver cómo se mueve el ortocentro (Escala: 1 cm
+      = 40 px)'
     orthocentre: Ortocentro
     perimeter: Perímetro
     scaleUnit: cm
@@ -247,6 +258,7 @@ es:
     interiorAngles: Ángulos interiores
     reset: ↺ Reiniciar
     total: Total
+    hint: Descompone el pentágono en triángulos
   percent:
     _name: Porcentajes
     axis_neg: −100%
@@ -259,11 +271,11 @@ es:
       de 0 sigue siendo 0.
     insight_gain: Una ganancia del <strong>+$1%</strong> aumenta 100 a <strong>$2</strong>.
       La barra verde de arriba y la barra roja de abajo tienen el mismo ancho — pero
-      los porcentajes difieren. Volver a 100 sólo requiere <strong>$3%</strong>,
-      no −$1%.
+      los porcentajes difieren. Volver a 100 sólo requiere <strong>$3%</strong>, no
+      −$1%.
     insight_loss: Una pérdida del <strong>$1%</strong> reduce 100 a <strong>$2</strong>.
       La barra roja de arriba y la barra verde de abajo cubren la misma distancia
-      física — pero los porcentajes difieren porque se aplican a bases diferentes.
+      física, pero los porcentajes difieren porque se aplican a bases diferentes.
       Para recuperarse se necesita <strong>+$3%</strong>, no +$1%.
     insight_zero: No se ha aplicado ningún cambio. Arrastra el control para explorar.
     label_after: después del cambio
@@ -273,7 +285,7 @@ es:
     label_start: inicio
   pythagoras:
     _name: Teorema de Pitágoras
-    angleDeg: 'ángulo = '
+    angleDeg: ángulo =
     lockRight: ángulo recto
     reset: Reiniciar
     hint: Arrastra los vértices para verificar a² + b² = c²
@@ -299,17 +311,15 @@ es:
     reset: Reiniciar
     sum: Suma
     total: Total
+    hint: Arrastra los vértices para ver la suma de los ángulos interiores
   quadrangles:
     _name: Cuadriláteros
-    areaDiagHalf: |-
-      Fórmula: A = (d₁ × d₂) / 2
-      d₁ (AC) = $1 cm
-      d₂ (BD) = $2 cm
-      = ($1 × $2) / 2
+    areaDiagHalf: 'Fórmula: A = (d₁ × d₂) / 2 d₁ (AC) = $1 cm d₂ (BD) = $2 cm = ($1
+      × $2) / 2'
     areaGaussHeader: |-
       Fórmula de Gauss (shoelace):
       A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
-    areaGaussSum: |2-
+    areaGaussSum: |-
       Σ = $1
       A = ½ × |$1|
     areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
@@ -351,9 +361,11 @@ es:
     shapeTrapezoid: trapecio
     unitCm: cm
     unitCm2: cm²
+    hint: Arrastra los vértices para clasificar el cuadrilátero
   radian:
     _name: Radianes
     rad: rad
+    hint: Arrastra el controlador para ver la relación entre grados y radianes
   slope:
     _name: Pendiente
     undefined: Línea vertical → pendiente indefinida
@@ -381,10 +393,13 @@ es:
     transformations: Transformaciones
     translation: Traslación
     vertical: Vertical
+    hint: Elige una transformación para verla en acción. Usa los puntos azules para
+      cambiar la forma del triángulo.
   triangle-angles:
     _name: Ángulos del triángulo
     reset: Reiniciar
-    hint: 'Arrastra los vértices para cambiar el triángulo · La suma de los ángulos es siempre 180°'
+    hint: Arrastra los vértices para cambiar el triángulo · La suma de los ángulos
+      es siempre 180°
     labelAngleA: Ángulo A
     labelAngleB: Ángulo B
     labelAngleC: Ángulo C
@@ -403,6 +418,7 @@ es:
     proofResultTri: ' → Triángulo = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
     unitCm2: cm²
+    hint: Arrastra los vértices para cambiar la forma del triángulo
   triangle-centroid:
     _name: Baricentro del triángulo
     triangle: Triángulo
@@ -442,6 +458,7 @@ es:
     sideC: lado c (AB)
     unitCm: cm
     unitCm2: cm²
+    hint: Arrastra los vértices para cambiar la forma y la clasificación
   trigonometry:
     _name: Trigonometría
     angle: Ángulo &theta;
@@ -456,6 +473,7 @@ es:
     tanDesc: La línea naranja se dibuja en x&nbsp;=&nbsp;1, tangente al círculo. Su
       altura es tan&nbsp;&theta;, ya que tan&nbsp;&theta;&nbsp;=&nbsp;opuesto&nbsp;&divide;&nbsp;adyacente&nbsp;=&nbsp;sen&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
     tanFormula: opuesto / adyacente
+    hint: Utilice el control deslizante para cambiar el ángulo
   integer-coordinates:
     _name: Coordenadas positivas
     btnChallenge: "\U0001F3AF Reto"
@@ -466,9 +484,10 @@ es:
     feedbackWrong: ✗ Incorrecto. La estrella tenue era la respuesta correcta.
     hintChallenge: Mueve ★ a las coordenadas propuestas y pulsa Comprobar
     hintExplore: Mueve ★ haciendo clic en él — se ajusta a enteros
-    movePrompt: 'Mueve ★ a:<br>($1, $2)'
+    movePrompt: Mueve ★ a:<br>($1, $2)
     pointLabel: 'Punto:'
     titleExplore: Explorar el sistema de coordenadas
+    hint: Mueve la estrella para explorar las coordenadas
   positive-coordinates:
     _name: Coordenadas positivas
     btnChallenge: "\U0001F3AF Reto"
@@ -479,7 +498,24 @@ es:
     feedbackWrong: ✗ Incorrecto. La estrella tenue era la respuesta correcta.
     hintChallenge: Mueve ★ a las coordenadas propuestas y pulsa Comprobar
     hintExplore: Mueve ★ haciendo clic en él — se ajusta a enteros
-    movePrompt: 'Mueve ★ a:<br>($1, $2)'
+    movePrompt: Mueve ★ a:<br>($1, $2)
     pointLabel: 'Punto:'
     titleExplore: Explorar el sistema de coordenadas
+    hint: Mueve la estrella para explorar las coordenadas
+  gauss-legendre:
+    _name: Algoritmo de Gauss-Legendre
+    iteration: Iteración
+    variable_a: Media aritmética (a)
+    variable_b: Media geométrica (b)
+    variable_t: Término de error (t)
+    variable_p: Término de potencia (p)
+    step: Próximo paso
+    reset: Restablecer
+    pi_approx: Aproximación de π
+    correct_digits: '{{PLURAL:$1|$1 dígito correcto|$1 dígitos correctos}}'
+    precision_note: 'Converge cuadráticamente: los dígitos se duplican en cada paso.'
+    calculation_heading: Cómo se calcula
+    formula_label: Fórmula
+    update_rules_heading: Reglas de actualización
+    hint: Calcula las iteraciones para observar la convergencia cuadrática
 ...

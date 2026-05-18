@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: Tensama0415
+# Author: 解浪
 ---
 ko:
   angle-guess:
@@ -13,6 +14,8 @@ ko:
     round: '라운드:'
     roundOver: 게임 종료
     target: '목표:'
+    tryAgain: 다시 시도
+    yourGuess: '당신의 예상:'
   angles:
     _name: 각도
     bisector: 이등분
@@ -33,6 +36,17 @@ ko:
     tabCirc: 원둘레
     title: 원 계산기
     visualProof: 시각적 증명
+  circumcentre:
+    triangle: 삼각형
+    sideA: 선분 a (BC)
+    sideB: 선분 b (CA)
+    sideC: 선분 c (AB)
+    angleA: 각 A
+    angleB: 각 B
+    angleC: 각 C
+    perimeter: 둘레
+    scaleUnit: cm
+    scaleUnit2: cm²
   dividend:
     _name: 피제수과 제수
     eq_lbl_dividend: 피제수
@@ -48,13 +62,18 @@ ko:
     _name: 소인수
     gcd_formula_eq: ' ='
     gcd_none: (없음 — 서로소)
+    label_choose: 두 개의 숫자를 선택하세요
     label_factors: 소인수
+    lcm_formula_eq: ' ='
   fibonacci:
     _name: 피보나치 수열
     card_phi_lbl: 황금비 φ
     card_phi_sub: (1 + √5) / 2 = 1.6180339887…
+    chart_step: 단계
+    diff: '차이:'
   hexagon-angles:
     reset: ↺ 초기화
+    total: 합계
   incentre:
     angleA: 각 A
     angleB: 각 B
@@ -74,6 +93,11 @@ ko:
     touchBC: BC 위 수선의 발
     touchCA: CA 위 수선의 발
     triangle: 삼각형
+  euler-line:
+    triangle: 삼각형
+    sideA: 선분 a (BC)
+    sideB: 선분 b (CA)
+    scaleUnit: cm
   marble-jar:
     _name: 확률 항아리
     colorBlue: 파란색
@@ -87,6 +111,21 @@ ko:
     approxPi: π의 근사값
     reset: ↺ 초기화
     totalPoints: 총점
+  nine-point-circle:
+    triangle: 삼각형
+    sideC: 선분 c (AB)
+    perimeter: 둘레
+    radius: 반경
+    scaleUnit: cm
+  orthocentre:
+    perimeter: 둘레
+    scaleUnit: cm
+    sideA: 선분 a (BC)
+    sideB: 선분 b (CA)
+    sideC: 선분 c (AB)
+    angleA: 각 A
+    angleB: 각 B
+    angleC: 각 C
   pentagon-angles:
     reset: ↺ 초기화
     total: 합계
@@ -97,7 +136,7 @@ ko:
     axis_zero: 0%
   pythagoras:
     _name: 피타고라스 정리
-    angleDeg: '각도 = '
+    angleDeg: 각도 =
     lockRight: 직각
     reset: 초기화
     hint: 꼭짓점을 드래그하여 a² + b² = c²을 확인하세요
@@ -128,24 +167,14 @@ ko:
       d₁ (AC) = $1 cm
       d₂ (BD) = $2 cm
       = ($1 × $2) / 2
-    areaGaussHeader: |-
-      가우스 공식 (신발끈):
-      A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
-    areaGaussSum: |2-
-      Σ = $1
-      A = ½ × |$1|
+    areaGaussHeader: '가우스 공식 (신발끈): A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|'
+    areaGaussSum: ' Σ = $1 A = ½ × |$1|'
     areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
-    areaParallelogram: |-
-      공식: A = 밑변 × 높이
-      밑변 (AB) = $1 cm
-      높이 = $2 cm
-      = $1 × $2
+    areaParallelogram: '공식: A = 밑변 × 높이 밑변 (AB) = $1 cm 높이 = $2 cm = $1 × $2'
     areaRectangle: |-
       공식: A = 너비 × 높이
       = $1 × $2
-    areaSquare: |-
-      공식: A = 한 변²
-      = $1²
+    areaSquare: '공식: A = 한 변² = $1²'
     areaTrapezoid: |-
       공식: A = (b₁ + b₂) / 2 × h
       b₁ (AB) = $1 cm
@@ -198,12 +227,18 @@ ko:
     vertical: 수직
   triangle-angles:
     reset: 초기화
+    labelAngleA: 각 A
+    labelAngleB: 각 B
+    labelAngleC: 각 C
+    labelSum: 총합
+    formula: A + B + C = 180°
   triangle-area:
     _name: 삼각형 면적
     btnReset: 초기화
     labelArea: 면적
     labelBase: 밑변 (b)
     labelHeight: 높이 (h)
+    labelHeightShort: 높이
     proofResultPara: 평행사변형 넓이 = b × h = <strong>$1 × $2 = $3 cm²</strong>
     proofResultTri: ' → 삼각형 = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
@@ -248,6 +283,7 @@ ko:
     _name: 삼각법
     angle: 각도 &theta;
     hideProof: 증명 숨기기
+    hint: 슬라이더를 사용하여 각도를 변경하세요
   integer-coordinates:
     btnCheck: 확인 ✓
     btnNext: 다음 →
@@ -258,4 +294,7 @@ ko:
     btnNext: 다음 →
     feedbackCorrect: ✓ 정답입니다!
     pointLabel: '점수:'
+  gauss-legendre:
+    step: 다음 단계
+    reset: 초기화
 ...

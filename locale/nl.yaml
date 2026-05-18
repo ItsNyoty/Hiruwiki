@@ -27,9 +27,9 @@ nl:
     notDefined: Niet gedefinieerd voor deze hoek
     resultAngle: 'Hoek $1: $2°'
     supplement: Supplementair
-    hint: 'Sleep de witte stip om de hoek te veranderen'
+    hint: Sleep de witte stip om de hoek te veranderen
   circle-proof:
-    _name: Cirkel bewijs
+    _name: Cirkelbewijs
     animStopped: Animatie gestopt.
     area: Oppervlakte
     areaAnimStatus: 'De sectoren vormen een rechthoek: breedte = πr, hoogte = r.'
@@ -43,12 +43,12 @@ nl:
     radius: Straal
     readyStatus: Klik op 'Bewijs het' om de animatie te zien.
     review: Beoordelen ▶
-    stop: Stop ■
+    stop: Stoppen ■
     tabArea: Oppervlakte
     tabCirc: Omtrek
-    title: Cirkel Calculator
+    title: Cirkelberekeningsmachine
     visualProof: Visueel bewijs
-    hint: 'Sleep de straalschuifregelaar om de berekening te zien'
+    hint: Sleep de straalschuifregelaar om de berekening te zien
   circumcentre:
     _name: Middelpunt omgeschreven cirkel
     triangle: Driehoek
@@ -84,9 +84,10 @@ nl:
       De rest is altijd kleiner dan de deler.
     insight_normal: '<strong>$1 ÷ $2 = $3</strong> rest <strong>$4</strong>. Merk
       op dat het rode stukje (<strong>$4</strong>) altijd korter is dan één blauw
-      blok (<strong>$2</strong>). De rest is altijd strikt kleiner dan de deler.
-      Controle: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓'
-    label_bar_description: 'Balkweergave — elk blauw blokje = {{PLURAL:$1|$1 eenheid|$1 eenheden}}'
+      blok (<strong>$2</strong>). De rest is altijd strikt kleiner dan de deler. Controle:
+      <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓'
+    label_bar_description: Balkweergave — elk blauw blokje = {{PLURAL:$1|$1 eenheid|$1
+      eenheden}}
     label_choose: Kies deeltal en deler
     label_dividend: Deeltal (het getal dat gedeeld wordt)
     label_divisor: Deler (de grootte van het stuk)
@@ -96,26 +97,25 @@ nl:
     repadd_leftover: blijft over
     repadd_less: $1 is minder dan $2, dus het quotiënt is 0 en de hele waarde is de
       rest.
-    hint: 'Pas het deeltal en de deler aan om de verdeling te zien'
+    hint: Pas het deeltal en de deler aan om de verdeling te zien
   factors:
     _name: Priemfactoren
     gcd_formula_eq: ' ='
     gcd_none: (geen — onderling ondeelbaar)
     gcd_title: GGD — behoud alleen gedeelde factoren
-    insight_coprime: '<strong>$1</strong> en <strong>$2</strong> zijn onderling
-      ondeelbaar — ze delen geen priemfactoren, dus GGD = 1. Het KGV is simpelweg
-      hun product. Altijd waar: <strong>$1 × $2 = $5</strong> = GGD × KGV = <strong>1
-      × $4 = $4</strong>.'
+    insight_coprime: '<strong>$1</strong> en <strong>$2</strong> zijn onderling ondeelbaar
+      — ze delen geen priemfactoren, dus GGD = 1. Het KGV is simpelweg hun product.
+      Altijd waar: <strong>$1 × $2 = $5</strong> = GGD × KGV = <strong>1 × $4 = $4</strong>.'
     insight_shared_many: '<strong>$1</strong> en <strong>$2</strong> delen de priemfactoren
-      <strong>$7</strong>. De GGD neemt alleen de groene gedeelde blokken. Het
-      KGV neemt alle blokken — groen gedeeld, blauw extra van A, rood extra van B
-      — zonder een priemfactor twee keer te tellen. Altijd waar: <strong>$1 × $2
-      = $5</strong> = GGD × KGV = <strong>$3 × $4 = $6</strong>.'
+      <strong>$7</strong>. De GGD neemt alleen de groene gedeelde blokken. Het KGV
+      neemt alle blokken — groen gedeeld, blauw extra van A, rood extra van B — zonder
+      een priemfactor twee keer te tellen. Altijd waar: <strong>$1 × $2 = $5</strong>
+      = GGD × KGV = <strong>$3 × $4 = $6</strong>.'
     insight_shared_one: '<strong>$1</strong> en <strong>$2</strong> delen de priemfactor
-      <strong>$7</strong>. De GGD neemt alleen de groene gedeelde blokken. Het
-      KGV neemt alle blokken — groen gedeeld, blauw extra van A, rood extra van B
-      — zonder een priemfactor twee keer te tellen. Altijd waar: <strong>$1 × $2
-      = $5</strong> = GGD × KGV = <strong>$3 × $4 = $6</strong>.'
+      <strong>$7</strong>. De GGD neemt alleen de groene gedeelde blokken. Het KGV
+      neemt alle blokken — groen gedeeld, blauw extra van A, rood extra van B — zonder
+      een priemfactor twee keer te tellen. Altijd waar: <strong>$1 × $2 = $5</strong>
+      = GGD × KGV = <strong>$3 × $4 = $6</strong>.'
     label_choose: Kies twee getallen
     label_factors: Priemfactoren
     label_how: Hoe GGD en KGV worden opgebouwd
@@ -126,7 +126,7 @@ nl:
     legend_shared: gedeeld (voor GGD)
     hint: Kies getallen om hun priemfactoren te zien
   fibonacci:
-    _name: Rij van Fibonacci
+    _name: Fibonacci-reeks
     card_phi_lbl: Gulden snede φ
     card_phi_sub: (1 + √5) / 2 = 1,6180339887…
     card_ratio_error: 'fout ten opzichte van φ:'
@@ -148,15 +148,17 @@ nl:
     sec_sequence: Reeks tot nu toe
     sec_steps: Stap door de Fibonacci-reeks
     step_label: Stap $1 van $2
-    hint: 'Klik op de knop om de Fibonacci-reeks te doorlopen en de convergentie naar de Gulden Snede te zien.'
+    hint: Klik op de knop om de Fibonacci-reeks te doorlopen en de convergentie naar
+      de Gulden Snede te zien.
   hexagon-angles:
     2quads: 2 vierhoeken × 360°
     4triangles: 4 driehoeken × 180°
     _name: Hoeken van een zeshoek
     interiorAngles: Binnenhoeken
-    reset: ↺ Reset
+    reset: ↺ Opnieuw instellen
     total: Totaal
-    hint: Verdeel de zeshoek in driehoeken of vierhoeken om de som van de hoeken te zien
+    hint: Verdeel de zeshoek in driehoeken of vierhoeken om de som van de hoeken te
+      zien
   incentre:
     _name: Aangeschreven middelpunt
     angleA: Hoek A
@@ -201,7 +203,7 @@ nl:
     probTitle: Kans om een knikker te pakken en de kleur te raden…
     shake: Schudden!
     total: Totaal
-    hint: 'Schud de pot om de waarschijnlijkheid in actie te zien'
+    hint: Schud de pot om de waarschijnlijkheid in actie te zien
   monte-carlo:
     _name: Monte Carlo Pi
     addPoints: + Punten toevoegen
@@ -211,9 +213,9 @@ nl:
     outsideBlue: Buiten (blauw)
     outsideCircle: Buiten de cirkel
     pointsPerStep: Punten per stap
-    reset: ↺ Reset
+    reset: ↺ Opnieuw instellen
     totalPoints: Totaal aantal punten
-    hint: 'Voeg punten toe om π te benaderen met kansberekening'
+    hint: Voeg punten toe om π te benaderen met kansberekening
   nine-point-circle:
     _name: Cirkel van de negen punten
     triangle: Driehoek
@@ -225,9 +227,9 @@ nl:
     perimeter: Omtrek
     centre: Middelpunt N₉
     radius: Straal
-    legendM: 'M_a/b/c — middens van de zijden'
-    legendH: 'H_a/b/c — voetpunten van de hoogtelijnen'
-    legendE: 'E_a/b/c — middens van AH, BH, CH'
+    legendM: M_a/b/c — middens van de zijden
+    legendH: H_a/b/c — voetpunten van de hoogtelijnen
+    legendE: E_a/b/c — middens van AH, BH, CH
     scaleUnit: cm
   orthocentre:
     _name: Hoogtepunt van een driehoek
@@ -238,7 +240,8 @@ nl:
     footA: Voet Hₐ op BC
     footB: Voet H_b op CA
     footC: Voet H_c op AB
-    hint: 'Sleep een hoekpunt om te zien hoe het hoogtepunt verandert (Schaal: 1 cm = 40 px)'
+    hint: 'Sleep een hoekpunt om te zien hoe het hoogtepunt verandert (Schaal: 1 cm
+      = 40 px)'
     orthocentre: Hoogtepunt
     perimeter: Omtrek
     scaleUnit: cm
@@ -253,7 +256,7 @@ nl:
     3triangles: 3 driehoeken × 180°
     _name: Hoeken van een vijfhoek
     interiorAngles: Binnenhoeken
-    reset: ↺ Reset
+    reset: ↺ Opnieuw instellen
     total: Totaal
     hint: Verplaats de hoeken om de figuur te vervormen
   percent:
@@ -267,8 +270,8 @@ nl:
       van 0 is nog steeds 0.
     insight_gain: Een winst van <strong>+$1%</strong> brengt 100 omhoog naar <strong>$2</strong>.
       De groene balk bovenaan en de rode balk onderaan zijn even breed — maar de percentages
-      verschillen. Om terug te keren naar 100 is slechts <strong>$3%</strong>
-      nodig, niet −$1%.
+      verschillen. Om terug te keren naar 100 is slechts <strong>$3%</strong> nodig,
+      niet −$1%.
     insight_loss: Een verlies van <strong>$1%</strong> brengt 100 terug naar <strong>$2</strong>.
       De rode balk bovenaan en de groene balk onderaan bedekken dezelfde fysieke afstand
       — maar de percentages verschillen omdat ze op verschillende bases worden toegepast.
@@ -281,10 +284,10 @@ nl:
     label_start: begin
   pythagoras:
     _name: Stelling van Pythagoras
-    angleDeg: 'hoek = '
+    angleDeg: hoek =
     lockRight: rechte hoek
     reset: Reset
-    hint: 'Sleep de hoekpunten om de stelling a² + b² = c² te verifiëren'
+    hint: Sleep de hoekpunten om de stelling a² + b² = c² te verifiëren
     controls: Bediening
     triangle: Driehoek
     sideA: a
@@ -307,38 +310,22 @@ nl:
     reset: Reset
     sum: Som
     total: Totaal
-    hint: 'Sleep de hoekpunten om de som van de binnenhoeken te zien'
+    hint: Sleep de hoekpunten om de som van de binnenhoeken te zien
   quadrangles:
     _name: Vierhoeken
-    areaDiagHalf: |-
-      Formule: A = (d₁ × d₂) / 2
-      d₁ (AC) = $1 cm
-      d₂ (BD) = $2 cm
-      = ($1 × $2) / 2
-    areaGaussHeader: |-
-      Gauss formule (shoelace):
-      A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
-    areaGaussSum: |2-
+    areaDiagHalf: 'Formule: A = (d₁ × d₂) / 2 d₁ (AC) = $1 cm d₂ (BD) = $2 cm = ($1
+      × $2) / 2'
+    areaGaussHeader: 'Gauss formule (schoenvetermethode): A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|'
+    areaGaussSum: |-
       Σ = $1
       A = ½ × |$1|
-    areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
-    areaParallelogram: |-
-      Formule: A = basis × hoogte
-      basis (AB) = $1 cm
-      hoogte = $2 cm
-      = $1 × $2
-    areaRectangle: |-
-      Formule: A = breedte × hoogte
-      = $1 × $2
-    areaSquare: |-
-      Formule: A = zijde²
-      = $1²
-    areaTrapezoid: |-
-      Formule: A = (b₁ + b₂) / 2 × h
-      b₁ (AB) = $1 cm
-      b₂ (CD) = $2 cm
-      hoogte = $3 cm
-      = ($1 + $2) / 2 × $3
+    areaGaussTerm: (x$1·y$2 − x$2·y$1) = $3
+    areaParallelogram: 'Formule: A = basis × hoogte basis (AB) = $1 cm hoogte = $2
+      cm = $1 × $2'
+    areaRectangle: 'Formule: A = breedte × hoogte = $1 × $2'
+    areaSquare: 'Formule: A = zijde² = $1²'
+    areaTrapezoid: 'Formule: A = (b₁ + b₂) / 2 × h b₁ (AB) = $1 cm b₂ (CD) = $2 cm
+      hoogte = $3 cm = ($1 + $2) / 2 × $3'
     headingArea: Oppervlakte
     headingClassification: Classificatie
     headingSides: Zijden en diagonalen
@@ -360,11 +347,11 @@ nl:
     shapeTrapezoid: trapezium
     unitCm: cm
     unitCm2: cm²
-    hint: 'Sleep de hoekpunten om de vierhoek te classificeren'
+    hint: Sleep de hoekpunten om de vierhoek te classificeren
   radian:
     _name: Radialen
     rad: rad
-    hint: 'Sleep de hendel om de relatie tussen graden en radialen te zien'
+    hint: Sleep de hendel om de relatie tussen graden en radialen te zien
   slope:
     _name: Helling
     undefined: Verticale lijn → helling ongedefinieerd
@@ -393,11 +380,13 @@ nl:
     transformations: Transformaties
     translation: Translatie
     vertical: Verticaal
-    hint: 'Kies een transformatie om deze in actie te zien. Gebruik de blauwe stippen om de vorm van de driehoek te veranderen'
+    hint: Kies een transformatie om deze in actie te zien. Gebruik de blauwe stippen
+      om de vorm van de driehoek te veranderen
   triangle-angles:
     _name: Hoeken van een driehoek
-    reset: ↺ Reset
-    hint: 'Sleep hoekpunten om de driehoek te veranderen · Som van de hoeken is altijd 180°'
+    reset: Opnieuw instellen
+    hint: Sleep hoekpunten om de driehoek te veranderen · Som van de hoeken is altijd
+      180°
     labelAngleA: Hoek A
     labelAngleB: Hoek B
     labelAngleC: Hoek C
@@ -406,14 +395,13 @@ nl:
   triangle-area:
     _name: Oppervlakte van een driehoek
     btnProve: Bewijs het
-    btnReset: ↺ Reset
+    btnReset: Opnieuw instellen
     labelArea: Oppervlakte
     labelBase: Basis (b)
     labelHeight: Hoogte (h)
     labelBaseShort: b
     labelHeightShort: h
-    proofResultPara: Oppervlakte parallellogram = b × h = <strong>$1 × $2 = $3
-      cm²</strong>
+    proofResultPara: Oppervlakte parallellogram = b × h = <strong>$1 × $2 = $3 cm²</strong>
     proofResultTri: ' → Driehoek = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
     unitCm2: cm²
@@ -448,7 +436,7 @@ nl:
     measurements: Afmetingen
     obtuse: stomphoekig
     perimeter: Omtrek
-    reset: ↺ Reset
+    reset: Opnieuw instellen ↺
     right: rechthoekig
     scalene: ongelijkzijdig
     sides: Zijden
@@ -457,14 +445,14 @@ nl:
     sideC: zijde c (AB)
     unitCm: cm
     unitCm2: cm²
-    hint: 'Sleep hoekpunten om de vorm en classificatie te veranderen'
+    hint: Sleep hoekpunten om de vorm en classificatie te veranderen
   trigonometry:
     _name: Goniometrie
     angle: Hoek &theta;
     cosDesc: De blauwe lijn is de <strong>aanliggende</strong> zijde &mdash; de horizontale
       afstand van de oorsprong tot de basis van de loodlijn. cos&nbsp;&theta;&nbsp;=&nbsp;aanliggende&nbsp;&divide;&nbsp;schuine&nbsp;zijde&nbsp;(=&nbsp;1).
     cosFormula: aanliggende / schuine
-    hideProof: Verberg bewijs
+    hideProof: Bewijs verbergen
     prove: Bewijs
     sinDesc: De groene lijn is de <strong>overstaande</strong> zijde &mdash; de verticale
       afstand van het punt op de cirkel tot de x-as. sin&nbsp;&theta;&nbsp;=&nbsp;overstaande&nbsp;&divide;&nbsp;schuine&nbsp;zijde&nbsp;(=&nbsp;1).
@@ -474,8 +462,8 @@ nl:
     tanFormula: overstaande / aanliggende
     hint: Gebruik de schuifregelaar om de hoek te veranderen
   integer-coordinates:
-    _name: Gehele coördinaten
-    btnChallenge: "🎯 Uitdaging"
+    _name: Integercoördinaten
+    btnChallenge: "\U0001F3AF Uitdaging"
     btnCheck: Controleren ✓
     btnExplore: "\U0001F52D Verkennen"
     btnNext: Volgende →
@@ -483,26 +471,10 @@ nl:
     feedbackWrong: ✗ Onjuist. De zwakke ster was het juiste antwoord.
     hintChallenge: Verplaats ★ naar de voorgestelde coördinaten en klik op Controleren
     hintExplore: Verplaats ★ door erop te klikken — springt naar hele getallen
-    movePrompt: 'Verplaats ★ naar:<br>($1, $2)'
+    movePrompt: Verplaats ★ naar:<br>($1, $2)
     pointLabel: 'Punt:'
     titleExplore: Verken het coördinatensysteem
-    hint: 'Verplaats de ster om de coördinaten te verkennen'
-  gauss-legendre:
-    _name: Gauss-Legendre-algoritme
-    iteration: Iteratie
-    variable_a: Rekenkundig gemiddelde (a)
-    variable_b: Meetkundig gemiddelde (b)
-    variable_t: Foutterm (t)
-    variable_p: Machtsterm (p)
-    step: Volgende stap
-    reset: ↺ Reset
-    pi_approx: Benadering van π
-    correct_digits: "{{PLURAL:$1|$1 correct cijfer|$1 correcte cijfers}}"
-    precision_note: 'Convergeert kwadratisch: het aantal cijfers verdubbelt bij elke stap.'
-    calculation_heading: Hoe het wordt berekend
-    formula_label: Formule
-    update_rules_heading: Updateregels
-    hint: 'Bereken iteraties om kwadratische convergentie te zien'
+    hint: Verplaats de ster om de coördinaten te verkennen
   positive-coordinates:
     _name: Positieve coördinaten
     btnChallenge: "\U0001F3AF Uitdaging"
@@ -513,6 +485,25 @@ nl:
     feedbackWrong: ✗ Onjuist. De zwakke ster was het juiste antwoord.
     hintChallenge: Verplaats ★ naar de voorgestelde coördinaten en klik op Controleren
     hintExplore: Verplaats ★ door erop te klikken — springt naar hele getallen
-    movePrompt: 'Verplaats ★ naar:<br>($1, $2)'
+    movePrompt: Verplaats ★ naar:<br>($1, $2)
     pointLabel: 'Punt:'
     titleExplore: Verken het coördinatenstelsel
+    hint: Verplaats de ster om coördinaten te verkennen
+  gauss-legendre:
+    _name: Gauss-Legendre-algoritme
+    iteration: Iteratie
+    variable_a: Rekenkundig gemiddelde (a)
+    variable_b: Meetkundig gemiddelde (b)
+    variable_t: Foutterm (t)
+    variable_p: Machtsterm (p)
+    step: Volgende stap
+    reset: ↺ Opnieuw instellen
+    pi_approx: Benadering van π
+    correct_digits: '{{PLURAL:$1|$1 correct cijfer|$1 correcte cijfers}}'
+    precision_note: 'Convergeert kwadratisch: het aantal cijfers verdubbelt bij elke
+      stap.'
+    calculation_heading: Hoe het wordt berekend
+    formula_label: Formule
+    update_rules_heading: Updateregels
+    hint: Bereken iteraties om kwadratische convergentie te zien
+...

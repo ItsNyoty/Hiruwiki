@@ -1,0 +1,146 @@
+# Messages for Luxembourgish (Lëtzebuergesch)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Volvox
+---
+lb:
+  angle-guess:
+    points: 'Punkten:'
+    round: 'Ronn:'
+    target: 'Zil:'
+    tryAgain: Nach eng Kéier probéieren
+  angles:
+    resultAngle: '$1 Wénkel: $2°'
+  circle-proof:
+    area: Fläch
+    circumference: Ëmfang
+    proveIt: Beweisen ▶
+    radius: Radius
+    readyStatus: Klickt op „Beweisen“, fir d'Animatioun ze gesinn.
+    tabArea: Fläch
+    visualProof: Visuelle Beweis
+  circumcentre:
+    triangle: Dräieck
+    sideA: Säit a (BC)
+    sideB: Säit b (CA)
+    sideC: Säit c (AB)
+    angleA: Wénkel A
+    angleB: Wénkel B
+    angleC: Wénkel C
+    midC: Mëttelpunkt M_c (AB)
+    scaleUnit: cm
+    scaleUnit2: cm²
+  dividend:
+    eq_lbl_dividend: Dividend
+    eq_lbl_quotient: Quotient
+  factors:
+    gcd_formula_eq: ' ='
+    label_choose: Wielt zwou Zuelen
+  fibonacci:
+    card_phi_lbl: Gëllene Schnëtt φ
+    chart_step: Schrëtt
+    sec_addition: Additioun
+    step_label: Schrëtt $1 vu(n) $2
+  incentre:
+    area: Fläch
+    perimeter: Ëmfang
+    radius: Radius (r)
+    scaleUnit: cm
+    triangle: Dräieck
+  euler-line:
+    triangle: Dräieck
+    sideA: Säit a (BC)
+    sideB: Säit b (CA)
+    sideC: Säit c (AB)
+    scaleUnit: cm
+  marble-jar:
+    colorBlue: Blo
+    colorGreen: Gréng
+    colorRed: Rout
+    colorYellow: Giel
+    impossible: Onméiglech
+  nine-point-circle:
+    triangle: Dräieck
+    sideA: Säit a (BC)
+    sideB: Säit b (CA)
+    sideC: Säit c (AB)
+    radius: Radius
+    scaleUnit: cm
+  orthocentre:
+    altA: Héicht hₐ
+    altB: Héicht h_b
+    altC: Héicht h_c
+    scaleUnit: cm
+    sideA: Säit a (BC)
+    sideB: Säit b (CA)
+    sideC: Säit c (AB)
+    angleA: Wénkel A
+    angleB: Wénkel B
+    angleC: Wénkel C
+    triangle: Dräieck
+  percent:
+    axis_zero: 0 %
+  pythagoras:
+    triangle: Dräieck
+    sideA: a
+    sideB: b
+    badgeRight: a² + b² = c²
+    badgeCos: c² = a² + b² − 2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    scaleUnit: cm
+  quadrangles:
+    areaRectangle: 'Formel: A = Breet × Héicht = $1 × $2'
+    areaSquare: 'Formel: A = Säit² = $1²'
+    headingArea: Fläch
+    headingClassification: Klassifikatioun
+    presetRectangle: Rechteck
+    presetSquare: Quadrat
+    shapeRectangle: Rechteck
+    unitCm: cm
+    unitCm2: cm²
+  slope:
+    point1: Punkt P₁
+    point2: Punkt P₂
+    coords1: Koordinate vu P₁
+    coords2: Koordinate vu P₂
+    pointsCard: Punkten
+  transformation:
+    angle: Wénkel
+    horizontal: Horizontal
+    transformations: Transformatiounen
+    translation: Translatioun
+  triangle-angles:
+    labelAngleA: Wénkel A
+    labelAngleB: Wénkel B
+    labelAngleC: Wénkel C
+    formula: A + B + C = 180°
+  triangle-area:
+    labelArea: Fläch
+    labelHeightShort: h
+    unitCm: cm
+    unitCm2: cm²
+  triangle-centroid:
+    triangle: Dräieck
+    sideA: Säit a (BC)
+    sideB: Säit b (CA)
+    sideC: Säit c (AB)
+    angleA: Wénkel A
+    angleB: Wénkel B
+    angleC: Wénkel C
+    scaleUnit: cm
+  triangles:
+    angles: Wénkelen
+    area: Fläch
+    perimeter: Ëmfang
+    sides: Säiten
+    unitCm: cm
+    unitCm2: cm²
+  trigonometry:
+    _name: Trigonometrie
+    hideProof: Beweis verstoppen
+    prove: Beweisen
+  integer-coordinates:
+    pointLabel: 'Punkt:'
+...

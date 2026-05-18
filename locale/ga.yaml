@@ -26,6 +26,7 @@ ga:
     notDefined: Gan sainmhíniú don uillinn seo
     resultAngle: 'uillinn $1: $2°'
     supplement: Forlíontach
+    hint: Tarraing an láimhseáil chun an uillinn a athrú
   circle-proof:
     _name: Cruthúnas Ciorcail
     animStopped: Stopadh an beochan.
@@ -47,7 +48,7 @@ ga:
     tabCirc: Imlíne
     title: Áireamhán Ciorcail
     visualProof: Cruthúnas amhairc
-    hint: 'Tarraing an sleamhnán gha chun an ríomh a fheiceáil'
+    hint: Tarraing an sleamhnán gha chun an ríomh a fheiceáil
   circumcentre:
     _name: Ciorcalár
     triangle: Triantán
@@ -75,17 +76,19 @@ ga:
     eq_lbl_divisor: roinnteoir
     eq_lbl_quotient: cóimheas
     eq_lbl_remainder: fuílleach
-    insight_exact: <strong>$1 ÷ $2 = $3</strong> go díreach — gan aon fhuíoll.
-      Líonann an barra go foirfe isteach i <strong>$3</strong> píosa$6 cothroma.
-      Ciallaíonn sé seo gur roinnteoir de <strong>$1</strong> é <strong>$2</strong>.
+    insight_exact: <strong>$1 ÷ $2 = $3</strong> go díreach — gan aon fhuíoll. Líonann
+      an barra go foirfe isteach i <strong>$3</strong> píosa$6 cothroma. Ciallaíonn
+      sé seo gur roinnteoir de <strong>$1</strong> é <strong>$2</strong>.
     insight_less: Tá <strong>$1</strong> níos lú ná an roinnteoir <strong>$2</strong>,
       mar sin oireann sé do <strong>0</strong> píosa iomlán. Is é an luach iomlán
       an t-iarmhar. Bíonn an t-iarmhar níos lú ná an roinnteoir i gcónaí.
     insight_normal: '<strong>$1 ÷ $2 = $3</strong> fuílleach <strong>$4</strong>.
-      Tabhair faoi deara go mbíonn an píosa dearg (<strong>$4</strong>) i gcónaí
-      níos giorra ná smután gorm amháin (<strong>$2</strong>). Bíonn an fuílleach
-      i gcónaí níos lú ná an roinnteoir. Seiceáil: <strong>$3 × $2 + $4 = $5
-      + $4 = $1</strong> ✓'
+      Tabhair faoi deara go mbíonn an píosa dearg (<strong>$4</strong>) i gcónaí níos
+      giorra ná smután gorm amháin (<strong>$2</strong>). Bíonn an fuílleach i gcónaí
+      níos lú ná an roinnteoir. Seiceáil: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong>
+      ✓'
+    label_bar_description: Radharc barra — gach píosa gorm = {{PLURAL:$1|$1 aonad|$1
+      aonaid}}
     label_choose: Roghnaigh díbhinn agus roinnteoir
     label_dividend: Díbhinn (an uimhir atá á roinnt)
     label_divisor: Roinnteoir (méid an phíosa)
@@ -95,26 +98,27 @@ ga:
     repadd_leftover: fágtha
     repadd_less: Tá $1 níos lú ná $2, mar sin is é 0 an cóimheas agus is é an luach
       iomlán an fuíoll.
+    hint: Coigeartaigh an díbhinn agus an roinnteoir chun miondealú na roinnte a fheiceáil
   factors:
     _name: Príomhfhachtóirí
     gcd_formula_eq: ' ='
     gcd_none: (níl aon cheann — comhphríomh)
     gcd_title: GCD — coinnigh fachtóirí comhroinnte amháin
-    insight_coprime: 'Is comhphríomha iad <strong>$1</strong> agus <strong>$2</strong> — níl aon phríomhfhachtóirí
-      roinnte acu, mar sin tá GCD = 1. Níl san LCM ach a dtáirge. Fíor i gcónaí: <strong>$1
-      × $2 = $5</strong> = GCD × LCM = <strong>1 × $4 = $4</strong>.'
-    insight_shared_many: 'Roinneann <strong>$1</strong> agus <strong>$2</strong>
-      na príomhuimhreacha <strong>$7</strong>. Ní ghlacann an GCD ach na bloic
-      chomhroinnte glasa. Glacann an LCM na blocanna uile — comhroinnte glasa, breiseáin
-      ghorma ó A, breiseáin dhearga ó B — gan aon phríomh a chomhaireamh faoi dhó.
-      Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>$3 ×
-      $4 = $6</strong>.'
-    insight_shared_one: 'Roinneann <strong>$1</strong> agus <strong>$2</strong>
-      na príomhuimhreacha <strong>$7</strong>. Ní ghlacann an GCD ach na bloic
-      chomhroinnte glasa. Glacann an LCM na bloic uile — bloic chomhroinnte glasa,
-      breiseáin ghorma ó A, breiseáin dhearga ó B — gan aon phríomhuimhreacha a chomhaireamh
-      faoi dhó. Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>$3
-      × $4 = $6</strong>.'
+    insight_coprime: 'Is comhphríomha iad <strong>$1</strong> agus <strong>$2</strong>
+      — níl aon phríomhfhachtóirí roinnte acu, mar sin tá GCD = 1. Níl san LCM ach
+      a dtáirge. Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>1
+      × $4 = $4</strong>.'
+    insight_shared_many: 'Roinneann <strong>$1</strong> agus <strong>$2</strong> na
+      príomhuimhreacha <strong>$7</strong>. Ní ghlacann an GCD ach na bloic chomhroinnte
+      glasa. Glacann an LCM na blocanna uile — comhroinnte glasa, breiseáin ghorma
+      ó A, breiseáin dhearga ó B — gan aon phríomh a chomhaireamh faoi dhó. Fíor i
+      gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>$3 × $4 = $6</strong>.'
+    insight_shared_one: 'Roinneann <strong>$1</strong> agus <strong>$2</strong> na
+      príomhuimhreacha <strong>$7</strong>. Ní ghlacann an GCD ach na bloic chomhroinnte
+      glasa. Glacann an LCM na bloic uile — bloic chomhroinnte glasa, breiseáin ghorma
+      ó A, breiseáin dhearga ó B — gan aon phríomhuimhreacha a chomhaireamh faoi dhó.
+      Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>$3 × $4 =
+      $6</strong>.'
     label_choose: Roghnaigh dhá uimhir
     label_factors: Príomhfhachtóirí
     label_how: Conas a thógtar GCD agus LCM
@@ -123,6 +127,7 @@ ga:
     legend_onlyA: uathúil do A
     legend_onlyB: uathúil do B
     legend_shared: roinnte (a úsáidtear le haghaidh GCD)
+    hint: Roghnaigh uimhreacha chun a bpríomhfhachtóirí a fheiceáil
   fibonacci:
     _name: Seicheamh Fibonacci
     card_phi_lbl: Cóimheas órga φ
@@ -134,8 +139,8 @@ ga:
     insight_close: <strong>$1 + $2 = $3</strong>. An cóimheas = <strong>$4</strong>
       — laistigh de <strong>$5</strong> de φ. Beagnach comhtháite go hiomlán.
     insight_converged: <strong>$1 + $2 = $3</strong>. An cóimheas = <strong>$4</strong>
-      — laistigh de <strong>$5</strong> de φ. Tá an seicheamh comhtháite go 6
-      ionad deachúil.
+      — laistigh de <strong>$5</strong> de φ. Tá an seicheamh comhtháite go 6 ionad
+      deachúil.
     insight_normal: <strong>$1 + $2 = $3</strong>. An cóimheas = <strong>$4</strong>,
       fós <strong>$5</strong> ar shiúl ó φ = 1.61803…
     insight_step1: Tosaímid le *1 + 1 = 2*. Tá an cóimheas 2 ÷ 1 = *2.000000* — fós
@@ -147,6 +152,7 @@ ga:
     sec_sequence: Seicheamh go dtí seo
     sec_steps: Céim tríd an seicheamh Fibonacci
     step_label: Céim $1 de $2
+    hint: Céim tríd an seicheamh chun comhtháthú a fheiceáil
   hexagon-angles:
     2quads: 2 cheathairshleasán × 360°
     4triangles: 4 thriantán × 180°
@@ -154,6 +160,7 @@ ga:
     interiorAngles: Uillinneacha inmheánacha
     reset: ↺ Athshocraigh
     total: Iomlán
+    hint: Déan an heicseagán a dhíscaoileadh ina thriantáin nó ina cheathairshleasáin
   incentre:
     _name: Lárionad
     angleA: Uillinn A
@@ -185,6 +192,7 @@ ga:
     probTitle: An dóchúlacht go roghnófar marmair agus go mbuailfear a dhath…
     shake: Croith!
     total: Iomlán
+    hint: Croith an próca chun an dóchúlacht i mbun gnímh a fheiceáil
   monte-carlo:
     _name: Pi Monte Carlo
     addPoints: + Cuir pointí leis
@@ -196,7 +204,7 @@ ga:
     pointsPerStep: Pointí in aghaidh an chéime
     reset: ↺ Athshocraigh
     totalPoints: Iomlán na bpointí
-    hint: 'Cuir pointí leis chun π a mheasúnú ag baint úsáide as dóchúlacht'
+    hint: Cuir pointí leis chun π a mheasúnú ag baint úsáide as dóchúlacht
   orthocentre:
     _name: Ortalár
     altA: Airde hₐ
@@ -206,7 +214,8 @@ ga:
     footA: Bun Hₐ ar BC
     footB: Bun H_b ar CA
     footC: Bun H_c ar AB
-    hint: 'Tarraing aon rinn chun a fheiceáil conas a athraíonn an t-ortalár (Scála: 1 cm = 40 px)'
+    hint: 'Tarraing aon rinn chun a fheiceáil conas a athraíonn an t-ortalár (Scála:
+      1 cm = 40 px)'
     orthocentre: Ortalár
     perimeter: Imlíne
     scaleUnit: cm
@@ -223,6 +232,7 @@ ga:
     interiorAngles: Uillinneacha inmheánacha
     reset: ↺ Athshocraigh
     total: Iomlán
+    hint: Déan an peinteagán a dhíscaoileadh ina thriantáin
   percent:
     _name: Céatadáin
     axis_neg: −100%
@@ -235,8 +245,8 @@ ga:
       de 0 agus 0 fós.
     insight_gain: Tugann gnóthachan de <strong>+$1%</strong> 100 suas go <strong>$2</strong>.
       Tá an leithead céanna ag an réimse glas thuas agus an réimse dearg thíos — ach
-      tá na céatadáin difriúil. Ní thógann sé ach <strong>$3%</strong> chun
-      filleadh ar 100, ní −$1%.
+      tá na céatadáin difriúil. Ní thógann sé ach <strong>$3%</strong> chun filleadh
+      ar 100, ní −$1%.
     insight_loss: Le cailliúint <strong>$1%</strong>, tugtar 100 síos go <strong>$2</strong>.
       Clúdaíonn an réise dhearg thuas agus an réise uaine thíos an fad fisiceach céanna
       — ach tá na céatadáin difriúil toisc go mbaineann siad le bunáiteanna difriúla.
@@ -250,7 +260,7 @@ ga:
     label_start: tús
   pythagoras:
     _name: Teoirim Phíotagaráis
-    angleDeg: 'uillinn = '
+    angleDeg: uillinn =
     lockRight: uillinn dheis
     reset: Athshocraigh
     hint: Tarraing na rinn chun a² + b² = c² a fhíorú
@@ -276,6 +286,7 @@ ga:
     reset: Athshocraigh
     sum: Suim
     total: Iomlán
+    hint: Tarraing buaicphointí chun suim na n-uillinneacha inmheánacha a fheiceáil
   quadrangles:
     _name: Ceathairshleasáin
     areaDiagHalf: |-
@@ -286,7 +297,7 @@ ga:
     areaGaussHeader: |-
       Foirmle Gauss (shoelace):
       A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
-    areaGaussSum: |2-
+    areaGaussSum: |-
       Σ = $1
       A = ½ × |$1|
     areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
@@ -326,9 +337,11 @@ ga:
     shapeTrapezoid: traipéisóideach
     unitCm: cm
     unitCm2: cm²
+    hint: Tarraing buaicphointí chun an ceathairshleasán a aicmiú
   radian:
     _name: Raidiáin
     rad: rad
+    hint: Tarraing an láimhseáil chun an gaol idir céimeanna agus raidiáin a fheiceáil
   slope:
     _name: Fána
     undefined: Líne ingearach → fána neamhshainithe
@@ -356,10 +369,13 @@ ga:
     transformations: Claochluithe
     translation: Aistriúchán
     vertical: Ingearach
+    hint: Roghnaigh claochlú chun é a fheiceáil i mbun gnímh. Úsáid na poncanna gorma
+      chun cruth an triantáin a athrú.
   triangle-angles:
     _name: Uillinneacha Triantáin
     reset: Athshocraigh
-    hint: 'Tarraing na rinn chun an triantán a athrú · Is é suim na n-uillinneacha ná 180° i gcónaí'
+    hint: Tarraing na rinn chun an triantán a athrú · Is é suim na n-uillinneacha
+      ná 180° i gcónaí
     labelAngleA: Uillinn A
     labelAngleB: Uillinn B
     labelAngleC: Uillinn C
@@ -378,6 +394,7 @@ ga:
     proofResultTri: → Triantán = ½ × $1 = <strong>$2 cm²</strong>
     unitCm: cm
     unitCm2: cm²
+    hint: Tarraing na buaicphointí chun cruth an triantáin a athrú
   triangle-centroid:
     _name: Lárphointe Triantáin
     triangle: Triantán
@@ -417,6 +434,7 @@ ga:
     sideC: taobh c (AB)
     unitCm: cm
     unitCm2: cm²
+    hint: Tarraing buaicphointí chun cruth agus aicmiú a athrú
   trigonometry:
     _name: Triantánacht
     angle: Uillinn &theta;
@@ -431,6 +449,7 @@ ga:
     tanDesc: Tarraingítear an líne oráiste ag  x&nbsp;=&nbsp;1, tadhlaí don chiorcal.
       Is é a airde tan&nbsp;&theta;, ós rud é tan&nbsp;&theta;&nbsp;=&nbsp;opposite&nbsp;&divide;&nbsp;adjacent&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
     tanFormula: os coinne / cóngarach
+    hint: Úsáid an sleamhnán chun an uillinn a athrú
   integer-coordinates:
     _name: Comhordanáidí Dearfacha
     btnChallenge: "\U0001F3AF Dúshlán"
@@ -441,9 +460,10 @@ ga:
     feedbackWrong: ✗ Mícheart. Ba é an réalta lag an freagra ceart.
     hintChallenge: Bog ★ go dtí na comhordanáidí atá beartaithe agus cliceáil Seiceáil
     hintExplore: Bog ★ trí chliceáil air — snapálann sé chuig slánuimhreacha
-    movePrompt: 'Bog ★ go:<br>($1, $2)'
+    movePrompt: Bog ★ go:<br>($1, $2)
     pointLabel: 'Pointe:'
     titleExplore: Iniúchadh a dhéanamh ar an gCóras Comhordanáidí
+    hint: Bog an réalta chun comhordanáidí a iniúchadh
   positive-coordinates:
     _name: Comhordanáidí Dearfacha
     btnChallenge: "\U0001F3AF Dúshlán"
@@ -454,7 +474,24 @@ ga:
     feedbackWrong: ✗ Mícheart. Ba é an réalta lag an freagra ceart.
     hintChallenge: Bog ★ go dtí na comhordanáidí atá beartaithe agus cliceáil Seiceáil
     hintExplore: Bog ★ trí chliceáil air — snap sé chuig slánuimhreacha
-    movePrompt: 'Bog ★ go:<br>($1, $2)'
+    movePrompt: Bog ★ go:<br>($1, $2)
     pointLabel: 'Pointe:'
     titleExplore: Iniúchadh a dhéanamh ar an gCóras Comhordanáidí
+    hint: Bog an réalta chun comhordanáidí a iniúchadh
+  gauss-legendre:
+    _name: Algartam Gauss-Legendre
+    iteration: Athraitheach
+    variable_a: Meán Uimhríochta (a)
+    variable_b: Meán Geoiméadrach (b)
+    variable_t: Téarma Earráide (t)
+    variable_p: Téarma Cumhachta (p)
+    step: An Chéad Chéim Eile
+    reset: Athshocraigh
+    pi_approx: Measúnú ar π
+    correct_digits: '{{PLURAL:$1|$1 dhigit cheart|$1 dhigit cheart}}'
+    precision_note: 'Comhtháthaíonn go cearnachach: dúblaíonn na digití i ngach céim.'
+    calculation_heading: Conas a ríomhtar é
+    formula_label: Foirmle
+    update_rules_heading: Rialacha Nuashonraithe
+    hint: Ríomh athrá chun cóineasú cearnach a fheiceáil
 ...

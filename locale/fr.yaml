@@ -73,17 +73,16 @@ fr:
     eq_lbl_divisor: diviseur
     eq_lbl_quotient: quotient
     eq_lbl_remainder: reste
-    insight_exact: <strong>$1 ÷ $2 = $3</strong> exactement — pas de reste. La
-      barre se remplit parfaitement en <strong>$3</strong> morceaux égaux. Cela signifie
+    insight_exact: <strong>$1 ÷ $2 = $3</strong> exactement — pas de reste. La barre
+      se remplit parfaitement en <strong>$3</strong> morceaux égaux. Cela signifie
       que <strong>$2</strong> est un diviseur de <strong>$1</strong>.
     insight_less: <strong>$1</strong> est plus petit que le diviseur <strong>$2</strong>,
       donc il contient <strong>0</strong> morceau entier. Toute la valeur est le reste.
       Le reste est toujours inférieur au diviseur.
-    insight_normal: '<strong>$1 ÷ $2 = $3</strong> reste <strong>$4</strong>.
-      Notez que la pièce rouge (<strong>$4</strong>) est toujours plus courte qu''un
-      morceau bleu (<strong>$2</strong>). Le reste est toujours strictement inférieur
-      au diviseur. Vérification : <strong>$3 × $2 + $4 = $5 + $4 = $1</strong>
-      ✓'
+    insight_normal: '<strong>$1 ÷ $2 = $3</strong> reste <strong>$4</strong>. Notez
+      que la pièce rouge (<strong>$4</strong>) est toujours plus courte qu''un morceau
+      bleu (<strong>$2</strong>). Le reste est toujours strictement inférieur au diviseur.
+      Vérification : <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓'
     label_choose: Choisissez le dividende et le diviseur
     label_dividend: Dividende (le nombre à diviser)
     label_divisor: Diviseur (la taille du morceau)
@@ -91,8 +90,8 @@ fr:
     label_repadd: Addition répétée
     repadd_exact: — divise exactement !
     repadd_leftover: reste
-    repadd_less: '$1 est inférieur à $2, donc le quotient est 0 et toute la valeur
-      est le reste.'
+    repadd_less: $1 est inférieur à $2, donc le quotient est 0 et toute la valeur
+      est le reste.
   factors:
     _name: Facteurs premiers
     gcd_formula_eq: ' ='
@@ -100,18 +99,18 @@ fr:
     gcd_title: PGCD — ne garder que les facteurs partagés
     insight_coprime: '<strong>$1</strong> et <strong>$2</strong> sont premiers entre
       eux — ils ne partagent aucun facteur premier, donc PGCD = 1. Le PPCM est simplement
-      leur produit. Toujours vrai : <strong>$1 × $2 = $5</strong> = PGCD × PPCM
-      = <strong>1 × $4 = $4</strong>.'
+      leur produit. Toujours vrai : <strong>$1 × $2 = $5</strong> = PGCD × PPCM =
+      <strong>1 × $4 = $4</strong>.'
     insight_shared_many: '<strong>$1</strong> et <strong>$2</strong> partagent les
-      nombres premiers <strong>$7</strong>. Le PGCD ne prend que les blocs verts
-      partagés. Le PPCM prend tous les blocs — verts partagés, bleus de A, rouges
-      de B — sans compter aucun nombre premier deux fois. Toujours vrai : <strong>$1
-      × $2 = $5</strong> = PGCD × PPCM = <strong>$3 × $4 = $6</strong>.'
-    insight_shared_one: '<strong>$1</strong> et <strong>$2</strong> partagent le
-      nombre premier <strong>$7</strong>. Le PGCD ne prend que les blocs verts
-      partagés. Le PPCM prend tous les blocs — verts partagés, bleus de A, rouges
-      de B — sans compter aucun nombre premier deux fois. Toujours vrai : <strong>$1
-      × $2 = $5</strong> = PGCD × PPCM = <strong>$3 × $4 = $6</strong>.'
+      nombres premiers <strong>$7</strong>. Le PGCD ne prend que les blocs verts partagés.
+      Le PPCM prend tous les blocs — verts partagés, bleus de A, rouges de B — sans
+      compter aucun nombre premier deux fois. Toujours vrai : <strong>$1 × $2 = $5</strong>
+      = PGCD × PPCM = <strong>$3 × $4 = $6</strong>.'
+    insight_shared_one: '<strong>$1</strong> et <strong>$2</strong> partagent le nombre
+      premier <strong>$7</strong>. Le PGCD ne prend que les blocs verts partagés.
+      Le PPCM prend tous les blocs — verts partagés, bleus de A, rouges de B — sans
+      compter aucun nombre premier deux fois. Toujours vrai : <strong>$1 × $2 = $5</strong>
+      = PGCD × PPCM = <strong>$3 × $4 = $6</strong>.'
     label_choose: Choisissez deux nombres
     label_factors: Facteurs premiers
     label_how: Comment le PGCD et le PPCM sont construits
@@ -205,7 +204,7 @@ fr:
     pointsPerStep: Points par étape
     reset: ↺ Réinitialiser
     totalPoints: Total des points
-    hint: 'Ajoutez des points pour approximer π en utilisant les probabilités'
+    hint: Ajoutez des points pour approximer π en utilisant les probabilités
   nine-point-circle:
     _name: Cercle des neuf points
     triangle: Triangle
@@ -217,9 +216,9 @@ fr:
     perimeter: Périmètre
     centre: Centre N₉
     radius: Rayon
-    legendM: 'M_a/b/c — milieux des côtés'
-    legendH: 'H_a/b/c — pieds des hauteurs'
-    legendE: 'E_a/b/c — milieux de AH, BH, CH'
+    legendM: M_a/b/c — milieux des côtés
+    legendH: H_a/b/c — pieds des hauteurs
+    legendE: E_a/b/c — milieux de AH, BH, CH
     scaleUnit: cm
   orthocentre:
     _name: Orthocentre
@@ -230,7 +229,8 @@ fr:
     footA: Pied Hₐ sur BC
     footB: Pied H_b sur CA
     footC: Pied H_c sur AB
-    hint: "Faites glisser n'importe quel sommet pour voir comment l'orthocentre change (Échelle : 1 cm = 40 px)"
+    hint: 'Faites glisser n''importe quel sommet pour voir comment l''orthocentre
+      change (Échelle : 1 cm = 40 px)'
     orthocentre: Orthocentre
     perimeter: Périmètre
     scaleUnit: cm
@@ -259,8 +259,8 @@ fr:
       quel pourcentage de 0 est toujours 0.
     insight_gain: Un gain de <strong>+$1%</strong> porte 100 à <strong>$2</strong>.
       La barre verte en haut et la barre rouge en bas ont la même largeur — mais les
-      pourcentages diffèrent. Revenir à 100 ne prend que <strong>$3%</strong>,
-      pas −$1%.
+      pourcentages diffèrent. Revenir à 100 ne prend que <strong>$3%</strong>, pas
+      −$1%.
     insight_loss: Une perte de <strong>$1%</strong> ramène 100 à <strong>$2</strong>.
       La barre rouge en haut et la barre verte en bas couvrent la même distance physique
       — mais les pourcentages diffèrent car ils s'appliquent à des bases différentes.
@@ -273,11 +273,12 @@ fr:
     label_start: début
   pythagoras:
     _name: Théorème de Pythagore
-    angleDeg: 'angle = '
+    angleDeg: angle =
+    lockRight: angle droit fixe
     reset: Réinitialiser
+    hint: Faites glisser les sommets pour vérifier le théorème
     controls: Contrôles
     triangle: Triangle
-    lockRight: angle droit fixe
     sideA: a
     sideB: b
     hypot: c (hyp.)
@@ -291,7 +292,6 @@ fr:
     sqC: c²
     cosTheta: cosθ
     cosThetaEx: cosinus de l'angle à l'origine
-    hint: Faites glisser les sommets pour vérifier le théorème
     scaleUnit: cm
   quadrangle-angles:
     _name: Angles du quadrilatère
@@ -309,7 +309,7 @@ fr:
     areaGaussHeader: |-
       Formule de Gauss (shoelace) :
       A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
-    areaGaussSum: |2-
+    areaGaussSum: |-
       Σ = $1
       A = ½ × |$1|
     areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
@@ -384,7 +384,8 @@ fr:
   triangle-angles:
     _name: Angles du triangle
     reset: Réinitialiser
-    hint: 'Faites glisser les sommets pour changer le triangle · La somme des angles est toujours 180°'
+    hint: Faites glisser les sommets pour changer le triangle · La somme des angles
+      est toujours 180°
     labelAngleA: Angle A
     labelAngleB: Angle B
     labelAngleC: Angle C
@@ -399,8 +400,7 @@ fr:
     labelHeight: Hauteur (h)
     labelBaseShort: b
     labelHeightShort: h
-    proofResultPara: Aire du parallélogramme = b × h = <strong>$1 × $2 = $3
-      cm²</strong>
+    proofResultPara: Aire du parallélogramme = b × h = <strong>$1 × $2 = $3 cm²</strong>
     proofResultTri: ' → Triangle = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
     unitCm2: cm²
@@ -459,7 +459,7 @@ fr:
     tanFormula: opposé / adjacent
   integer-coordinates:
     _name: Coordonnées entières
-    btnChallenge: "🎯 Défi"
+    btnChallenge: "\U0001F3AF Défi"
     btnCheck: Vérifier ✓
     btnExplore: "\U0001F52D Explorer"
     btnNext: Suivant →
@@ -467,20 +467,20 @@ fr:
     feedbackWrong: ✗ Incorrect. L'étoile pâle était la bonne réponse.
     hintChallenge: Déplacez ★ vers les coordonnées proposées et cliquez sur Vérifier
     hintExplore: Déplacez ★ en cliquant dessus — il s'accroche aux entiers
-    movePrompt: 'Déplacez ★ vers :<br>($1, $2)'
+    movePrompt: Déplacez ★ vers :<br>($1, $2)
     pointLabel: 'Point :'
     titleExplore: Explorer le système de coordonnées
   positive-coordinates:
     _name: Coordonnées positives
-    btnChallenge: "🎯 Défi"
+    btnChallenge: "\U0001F3AF Défi"
     btnCheck: Vérifier ✓
-    btnExplore: "🔭 Explorer"
+    btnExplore: "\U0001F52D Explorer"
     btnNext: Suivant →
-    feedbackCorrect: "✓ Correct !"
+    feedbackCorrect: ✓ Correct !
     feedbackWrong: ✗ Incorrect. L'étoile pâle était la bonne réponse.
     hintChallenge: Déplacez ★ vers les coordonnées proposées et cliquez sur Vérifier
-    hintExplore: "Déplacez ★ en cliquant dessus — il s'accroche aux entiers"
-    movePrompt: 'Déplacez ★ vers :<br>($1, $2)'
+    hintExplore: Déplacez ★ en cliquant dessus — il s'accroche aux entiers
+    movePrompt: Déplacez ★ vers :<br>($1, $2)
     pointLabel: 'Point :'
     titleExplore: Explorer le système de coordonnées
   gauss-legendre:
@@ -493,10 +493,11 @@ fr:
     step: Étape suivante
     reset: Réinitialiser
     pi_approx: Approximation de π
-    correct_digits: "{{PLURAL:$1|$1 chiffre correct|$1 chiffres corrects}}"
-    precision_note: "Converge quadratiquement : le nombre de chiffres double à chaque étape."
+    correct_digits: '{{PLURAL:$1|$1 chiffre correct|$1 chiffres corrects}}'
+    precision_note: 'Converge quadratiquement : le nombre de chiffres double à chaque
+      étape.'
     calculation_heading: Comment c'est calculé
     formula_label: Formule
     update_rules_heading: Règles de mise à jour
-    hint: 'Calculez les itérations pour voir la convergence quadratique'
+    hint: Calculez les itérations pour voir la convergence quadratique
 ...

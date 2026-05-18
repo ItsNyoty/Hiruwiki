@@ -70,7 +70,7 @@ it:
     _name: Percentuali
   pythagoras:
     _name: Teorema di Pitagora
-    angleDeg: 'angolo = '
+    angleDeg: angolo =
     lockRight: angolo retto
     reset: Reset
     hint: Trascina i vertici per verificare a² + b² = c²

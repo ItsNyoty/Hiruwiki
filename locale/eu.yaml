@@ -26,15 +26,16 @@ eu:
     notDefined: Angelu honentzat definitu gabe
     resultAngle: 'Angelu $1: $2°'
     supplement: Betegarria
+    hint: Mugitu heldulekua angelua aldatzeko
   circle-proof:
     _name: Zirkuluaren froga
     animStopped: Animazioa geldituta.
     area: Azalera
-    areaAnimStatus: 'Sektoreak errektangelu batean elkartzen dira: zabalera = πr, altuera
-      = r.'
+    areaAnimStatus: 'Sektoreak errektangelu batean elkartzen dira: zabalera = πr,
+      altuera = r.'
     areaReviewStatus: ✓ Zabalera = πr, altuera = r → A = πr².
-    circAnimStatus: 'Zirkuluerdi bakoitza (πr) lerro batean zabaltzen da, guztira 2πr
-      eginez.'
+    circAnimStatus: Zirkuluerdi bakoitza (πr) lerro batean zabaltzen da, guztira 2πr
+      eginez.
     circReviewStatus: ✓ Goiko πr + Beheko πr = C = 2πr.
     circumference: Zirkunferentzia
     initStatus: Aukeratu froga bat eta sakatu 'Froga ezazu'.
@@ -47,7 +48,7 @@ eu:
     tabCirc: Zirkunferentzia
     title: Zirkuluaren kalkulagailua
     visualProof: Froga bisuala
-    hint: 'Erabili erradioaren barra kalkulua ikusteko'
+    hint: Erabili erradioaren barra kalkulua ikusteko
   circumcentre:
     _name: Zirkunzentroa
     triangle: Triangelua
@@ -75,16 +76,18 @@ eu:
     eq_lbl_divisor: zatitzailea
     eq_lbl_quotient: zatidura
     eq_lbl_remainder: hondarra
-    insight_exact: <strong>$1 ÷ $2 = $3</strong> zenbaki osoa — hondarrik gabe.
-      Barra <strong>$3</strong> zati berdinetan betetzen da. Horrek esan nahi du
-      <strong>$2</strong> <strong>$1</strong>-ren zatitzailea dela.<!--$6-->
+    insight_exact: <strong>$1 ÷ $2 = $3</strong> zenbaki osoa — hondarrik gabe. Barra
+      <strong>$3</strong> zati berdinetan betetzen da. Horrek esan nahi du <strong>$2</strong>
+      <strong>$1</strong>-ren zatitzailea dela.<!--$6-->
     insight_less: <strong>$1</strong> zatitzailea baino txikiagoa da (<strong>$2</strong>),
       beraz ez da zati oso bat sartzen. Balio osoa hondarra da. Hondarra beti zatitzailea
       baino txikiagoa da.
-    insight_normal: '<strong>$1 ÷ $2 = $3</strong> hondarra <strong>$4</strong>.
-      Kontuan hartu pieza gorria (<strong>$4</strong>) beti zati urdin bat (<strong>$2</strong>)
+    insight_normal: '<strong>$1 ÷ $2 = $3</strong> hondarra <strong>$4</strong>. Kontuan
+      hartu pieza gorria (<strong>$4</strong>) beti zati urdin bat (<strong>$2</strong>)
       baino motzagoa dela. Hondarra beti zatitzailea baino txikiagoa da. Egiaztatu:
       <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓'
+    label_bar_description: Barra-ikuspegia — zati urdin bakoitza = {{PLURAL:$1| unitate
+      $1|$1 unitate}}
     label_choose: Aukeratu zatikizuna eta zatitzailea
     label_dividend: Zatikizuna (zatitu beharreko zenbakia)
     label_divisor: Zatitzailea (zatiaren tamaina)
@@ -92,8 +95,9 @@ eu:
     label_repadd: Batuketa errepikatua
     repadd_exact: — zehaztasunez zatitzen da!
     repadd_leftover: hondarra
-    repadd_less: '$1 $2 baino txikiagoa da, beraz zatidura 0 da eta balio osoa hondarra
-      da.'
+    repadd_less: $1 $2 baino txikiagoa da, beraz zatidura 0 da eta balio osoa hondarra
+      da.
+    hint: Doitu zatikizuna eta zatitzailea zatiketaren banaketa ikusteko
   factors:
     _name: Faktore lehenak
     gcd_formula_eq: ' ='
@@ -121,6 +125,7 @@ eu:
     legend_onlyA: Ari bakarrik dagokiona
     legend_onlyB: Bri bakarrik dagokiona
     legend_shared: partekatua (ZKHrako erabilia)
+    hint: Aukeratu zenbakiak haien faktore lehenak ikusteko
   fibonacci:
     _name: Fibonacci sekuentzia
     card_phi_lbl: Urrezko arrazoia φ
@@ -129,8 +134,8 @@ eu:
     card_ratio_lbl: Uneko erlazioa F(n+1) ÷ F(n)
     chart_step: urratsa
     diff: 'aldea:'
-    insight_close: <strong>$1 + $2 = $3</strong>. Erlazioa = <strong>$4</strong>
-      — φ-tik <strong>$5</strong>-ra. Ia erabat hurbildu da.
+    insight_close: <strong>$1 + $2 = $3</strong>. Erlazioa = <strong>$4</strong> —
+      φ-tik <strong>$5</strong>-ra. Ia erabat hurbildu da.
     insight_converged: <strong>$1 + $2 = $3</strong>. Erlazioa = <strong>$4</strong>
       — φ-tik <strong>$5</strong>-ra. Segida 6 dezimaletara hurbildu da.
     insight_normal: <strong>$1 + $2 = $3</strong>. Erlazioa = <strong>$4</strong>,
@@ -143,7 +148,8 @@ eu:
     sec_chart: φ-rantz konbergentzia
     sec_sequence: Orain arteko segida
     sec_steps: Fibonacci segidaren urratsak
-    step_label: '$1. urratsa $2tik'
+    step_label: $1. urratsa $2tik
+    hint: Jarraitu sekuentzian zehar konbergentzia ikusteko
   hexagon-angles:
     2quads: 2 lauki × 360°
     4triangles: 4 triangelu × 180°
@@ -151,6 +157,7 @@ eu:
     interiorAngles: Barne angeluak
     reset: ↺ Berrezarri
     total: Guztira
+    hint: Hexagonoa triangelu edo laukizuzenetan deskonposatu
   incentre:
     _name: Inzentroa
     angleA: A angelua
@@ -195,6 +202,7 @@ eu:
     probTitle: Kanika bat atera eta kolorea asmatzeko probabilitatea…
     shake: Astindu!
     total: Guztira
+    hint: Astindu ontzia probabilitatea martxan ikusteko
   monte-carlo:
     _name: Monte Carlo Pi
     addPoints: + Puntuak gehitu
@@ -206,7 +214,7 @@ eu:
     pointsPerStep: Puntuak urratseko
     reset: ↺ Berrezarri
     totalPoints: Puntu kopurua
-    hint: 'Gehitu puntuak probabilitatea erabiliz π hurbiltzeko'
+    hint: Gehitu puntuak probabilitatea erabiliz π hurbiltzeko
   nine-point-circle:
     _name: Bederatzi puntuko zirkulua
     triangle: Triangelua
@@ -231,7 +239,8 @@ eu:
     footA: Hₐ oina BC-n
     footB: H_b oina CA-n
     footC: H_c oina AB-n
-    hint: 'Edozein erpin mugitu ortozentroa nola mugitzen den ikusteko (Eskala: 1 cm = 40 px)'
+    hint: 'Edozein erpin mugitu ortozentroa nola mugitzen den ikusteko (Eskala: 1
+      cm = 40 px)'
     orthocentre: Ortozentro
     perimeter: Perimetroa
     scaleUnit: cm
@@ -248,6 +257,7 @@ eu:
     interiorAngles: Barne angeluak
     reset: ↺ Berrezarri
     total: Guztira
+    hint: Pentagonoa triangeluetan deskonposatu
   percent:
     _name: Ehunekoak
     axis_neg: −% 100
@@ -257,8 +267,14 @@ eu:
     insight_full_loss: <strong>% 100</strong>eko galera batek balioa <strong>0</strong>ra
       eramaten du. Zerotik berreskuratzea <strong>ezinezkoa</strong> da — edozein
       ehuneko 0 izanda ere 0 izango da.
-    insight_gain: <strong>% +$1</strong>-ko irabaziak 100etik <strong>$2</strong>-ra igotzen du. Goiko barra berdeak eta beheko barra gorriak zabalera bera dute — baina ehunekoek desberdintasuna dute. 100era itzultzeko <strong>% $3</strong> besterik ez da behar, ez % −$1.
-    insight_loss: <strong>% $1</strong>-ko galera batek 100 <strong>$2</strong>-era jaisten du. Goiko barra gorriak eta beheko barra berdeak distantzia fisiko bera hartzen dute — baina ehunekoek desberdintasuna dute, base ezberdinei aplikatzen zaizkie eta. Berreskuratzeko <strong>% +$3</strong> behar da, ez % +$1.
+    insight_gain: <strong>% +$1</strong>-ko irabaziak 100etik <strong>$2</strong>-ra
+      igotzen du. Goiko barra berdeak eta beheko barra gorriak zabalera bera dute
+      — baina ehunekoek desberdintasuna dute. 100era itzultzeko <strong>% $3</strong>
+      besterik ez da behar, ez % −$1.
+    insight_loss: <strong>% $1</strong>-ko galera batek 100 <strong>$2</strong>-era
+      jaisten du. Goiko barra gorriak eta beheko barra berdeak distantzia fisiko bera
+      hartzen dute — baina ehunekoek desberdintasuna dute, base ezberdinei aplikatzen
+      zaizkie eta. Berreskuratzeko <strong>% +$3</strong> behar da, ez % +$1.
     insight_zero: Aldaketarik aplikatu gabe. Arrastatu kontrol-barra esploratzeko.
     label_after: aldaketaren ostean
     label_apply: EHUNEKO ALDAKETA BAT EZARRI
@@ -267,7 +283,7 @@ eu:
     label_start: hasiera
   pythagoras:
     _name: Pitagorasen teorema
-    angleDeg: 'angelua = '
+    angleDeg: angelua =
     lockRight: angelu zuzena
     reset: Berrezarri
     hint: Arrastatu erpinak a² + b² = c² egiaztatzeko
@@ -293,6 +309,7 @@ eu:
     reset: Berrezarri
     sum: Batuketa
     total: Guztira
+    hint: Arrastatu erpinak barne-angeluen batura ikusteko
   quadrangles:
     _name: Koadrilateroak
     areaDiagHalf: |-
@@ -303,7 +320,7 @@ eu:
     areaGaussHeader: |-
       Gaussen formula:
       A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
-    areaGaussSum: |2-
+    areaGaussSum: |-
       Σ = $1
       A = ½ × |$1|
     areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
@@ -345,9 +362,11 @@ eu:
     shapeTrapezoid: trapezioa
     unitCm: cm
     unitCm2: cm²
+    hint: Arrastatu erpinak laukizuzena sailkatzeko
   radian:
     _name: Radianak
     rad: rad
+    hint: Arrastatu heldulekua graduen eta radianen arteko erlazioa ikusteko
   slope:
     _name: Maldia
     undefined: Lerro bertikala → malda ezarri gabe
@@ -375,10 +394,12 @@ eu:
     transformations: Transformazioak
     translation: Translazioa
     vertical: Bertikala
+    hint: Aukeratu transformazio bat martxan ikusteko. Erabili puntu urdinak triangeluaren
+      forma aldatzeko.
   triangle-angles:
     _name: Hirukiaren angeluak
     reset: Berrezarri
-    hint: 'Arrastatu erpinak hirukia aldatzeko · Angeluen batura beti 180° da'
+    hint: Arrastatu erpinak hirukia aldatzeko · Angeluen batura beti 180° da
     labelAngleA: A angelua
     labelAngleB: B angelua
     labelAngleC: C angelua
@@ -393,11 +414,11 @@ eu:
     labelHeight: Altuera (h)
     labelBaseShort: b
     labelHeightShort: h
-    proofResultPara: Paralelogramoaren azalera = b × h = <strong>$1 × $2 = $3
-      cm²</strong>
+    proofResultPara: Paralelogramoaren azalera = b × h = <strong>$1 × $2 = $3 cm²</strong>
     proofResultTri: ' → Triangeluarena = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
     unitCm2: cm²
+    hint: Arrastatu erpinak triangeluaren forma aldatzeko
   triangle-centroid:
     _name: Hirukiaren barizentroa
     triangle: Triangelua
@@ -437,6 +458,7 @@ eu:
     sideC: c aldea (AB)
     unitCm: cm
     unitCm2: cm²
+    hint: Arrastatu erpinak forma eta sailkapena aldatzeko
   trigonometry:
     _name: Trigonometria
     angle: Angelua &theta;
@@ -452,7 +474,7 @@ eu:
       Bere altuera tan&nbsp;&theta; da, tan&nbsp;=&nbsp;aurkakoa&nbsp;&divide;&nbsp;auzokidea&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;
       baita.
     tanFormula: aurkakoa / auzokidea
-    hint: Mugitu lerroa angelua aldatzeko
+    hint: Erabili graduatzailea angelua aldatzeko
   integer-coordinates:
     _name: Koordenatu positiboak
     btnChallenge: "\U0001F3AF Erronka"
@@ -465,9 +487,10 @@ eu:
       botoian
     hintExplore: Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen
       ditu
-    movePrompt: 'Mugitu ★ hona:<br>($1, $2)'
+    movePrompt: Mugitu ★ hona:<br>($1, $2)
     pointLabel: 'Puntua:'
     titleExplore: Esploratu koordenatuen sistema
+    hint: Mugitu izarra koordenatuak aztertzeko
   positive-coordinates:
     _name: Koordenatu positiboak
     btnChallenge: "\U0001F3AF Erronka"
@@ -480,9 +503,10 @@ eu:
       botoian
     hintExplore: Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen
       ditu
-    movePrompt: 'Mugitu ★ hona:<br>($1, $2)'
+    movePrompt: Mugitu ★ hona:<br>($1, $2)
     pointLabel: 'Puntua:'
     titleExplore: Esploratu koordenatuen sistema
+    hint: Mugitu izarra koordenatuak aztertzeko
   gauss-legendre:
     _name: Gauss-Legendre algoritmoa
     iteration: Iterazioa
@@ -494,8 +518,10 @@ eu:
     reset: ↺ Berrezarri
     pi_approx: π-ren hurbilketa
     correct_digits: '{{PLURAL:$1|$1 zifra zuzen|$1 zifra zuzen}}'
-    precision_note: 'Kuadratikoki konbergentea: digituak bikoiztu egiten dira urrats bakoitzean.'
+    precision_note: 'Kuadratikoki konbergentea: digituak bikoiztu egiten dira urrats
+      bakoitzean.'
     calculation_heading: Nola kalkulatzen den
     formula_label: Formula
     update_rules_heading: Eguneratze arauak
-    hint: 'Kalkulatu iterazioak konbergentzia kuadratikoa ikusteko'
+    hint: Kalkulatu iterazioak konbergentzia kuadratikoa ikusteko
+...
