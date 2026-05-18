@@ -452,6 +452,7 @@ eu:
       Bere altuera tan&nbsp;&theta; da, tan&nbsp;=&nbsp;aurkakoa&nbsp;&divide;&nbsp;auzokidea&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;
       baita.
     tanFormula: aurkakoa / auzokidea
+    hint: Mugitu lerroa angelua aldatzeko
   integer-coordinates:
     _name: Koordenatu positiboak
     btnChallenge: "\U0001F3AF Erronka"
