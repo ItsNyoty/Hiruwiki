@@ -316,24 +316,16 @@ es:
     _name: Cuadriláteros
     areaDiagHalf: 'Fórmula: A = (d₁ × d₂) / 2 d₁ (AC) = $1 cm d₂ (BD) = $2 cm = ($1
       × $2) / 2'
-    areaGaussHeader: |-
-      Fórmula de Gauss (shoelace):
-      A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
-    areaGaussSum: |-
-      Σ = $1
-      A = ½ × |$1|
+    areaGaussHeader: 'Fórmula de Gauss: A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|'
+    areaGaussSum: Σ = $1 A = ½ × |$1|
     areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
     areaParallelogram: |-
       Fórmula: A = base × altura
       base (AB) = $1 cm
       altura = $2 cm
       = $1 × $2
-    areaRectangle: |-
-      Fórmula: A = base × altura
-      = $1 × $2
-    areaSquare: |-
-      Fórmula: A = lado²
-      = $1²
+    areaRectangle: 'Fórmula: A = base × altura = $1 × $2'
+    areaSquare: 'Fórmula: A = lado² = $1²'
     areaTrapezoid: |-
       Fórmula: A = (b₁ + b₂) / 2 × h
       b₁ (AB) = $1 cm

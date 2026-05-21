@@ -286,7 +286,7 @@ nl:
     _name: Stelling van Pythagoras
     angleDeg: hoek =
     lockRight: rechte hoek
-    reset: Reset
+    reset: Opnieuw instellen
     hint: Sleep de hoekpunten om de stelling a² + b² = c² te verifiëren
     controls: Bediening
     triangle: Driehoek
@@ -307,7 +307,7 @@ nl:
   quadrangle-angles:
     _name: Hoeken van een vierhoek
     interiorAngles: Binnenhoeken
-    reset: Reset
+    reset: Opnieuw instellen
     sum: Som
     total: Totaal
     hint: Sleep de hoekpunten om de som van de binnenhoeken te zien

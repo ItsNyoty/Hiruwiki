@@ -1,0 +1,505 @@
+# Messages for Macedonian (македонски)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Bjankuloski06
+---
+mk:
+  angle-guess:
+    _name: Погодување на агол
+    difference: 'Разлика:'
+    finalScore: Конечен исход
+    hint: Поместете ја сината точка за да го зададете аголот
+    nextAngle: Следен агол &rsaquo;
+    points: 'Бодови:'
+    pts: бодови
+    round: 'Круг:'
+    roundOver: Играта заврши
+    target: 'Цел:'
+    tryAgain: Обиди се пак
+    yourGuess: 'Вашиот одговор:'
+  angles:
+    _name: Агли
+    bisector: Симетрала
+    bisectorResult: 'Симетрала: $1°'
+    complement: Комплементен
+    explement: Експлементен
+    notDefined: Не е дефинирано за овој агол
+    resultAngle: '$1 агол: $2°'
+    supplement: Суплементен
+    hint: Повлечете ја рачката за да го измените аголот
+  circle-proof:
+    _name: Доказ за кружница
+    animStopped: Анимацијата запре.
+    area: Плоштина
+    areaAnimStatus: 'Исечоците се составуваат во правоаголник: ширина = πr, висина
+      = r.'
+    areaReviewStatus: ✓ Ширина = πr, висина = r → A = πr².
+    circAnimStatus: Секоја полукружница се (πr) се одвиткува во права, што прави вкупно
+      2πr.
+    circReviewStatus: ✓ Горе πr + Долу πr = C = 2πr.
+    circumference: Обиколка
+    initStatus: Изберете доказ и стиснете на „Докажи“.
+    proveIt: Докажи ▶
+    radius: Полупречник
+    readyStatus: Стиснете на „Докажи“ за да ја погледате анимацијата.
+    review: Прегледај ▶
+    stop: Запри ■
+    tabArea: Плоштина
+    tabCirc: Обиколка
+    title: Пресметувач на кругови
+    visualProof: Нагледен доказ
+    hint: Повлечете го лизгачот за полупречник за да ја видите пресметката
+  circumcentre:
+    _name: центар на опишана кружница
+    triangle: Триаголник
+    circumcentre: центар на опишана кружница
+    hint: 'Повлечете некое теме · Размер: 1 см = 40 п'
+    sideA: Страна a (BC)
+    sideB: Страна b (CA)
+    sideC: Страна c (AB)
+    angleA: Агол A
+    angleB: Агол B
+    angleC: Агол C
+    perimeter: Обем
+    centre: Центар O
+    radius: Полупречник R на опишана кружница
+    midA: Средна точка M_a (BC)
+    midB: Средна точка M_b (CA)
+    midC: Средна точка M_c (AB)
+    circPerimeter: Обем на кружница
+    circArea: Плоштина на круг
+    scaleUnit: см
+    scaleUnit2: см²
+  dividend:
+    _name: Деленик и делител
+    eq_lbl_dividend: деленик
+    eq_lbl_divisor: делител
+    eq_lbl_quotient: количник
+    eq_lbl_remainder: остаток
+    insight_exact: <strong>$1 ÷ $2 = точно $3</strong> — без остаток. Столбот совршено
+      се вклопува во <strong>$3</strong> еднакво парче$6. Ова значи дека <strong>$2</strong>
+      е делител на <strong>$1</strong>.
+    insight_less: <strong>$1</strong> е помал од делителот <strong>$2</strong>, така
+      што вклопува <strong>0</strong> цели парчиња. Целата вредност е остатокот. Остатокот
+      е секогаш помал од делителот.
+    insight_normal: '<strong>$1 ÷ $2 = $3</strong> остаток <strong>$4</strong>. Забележете
+      дека црвеното парче (<strong>$4</strong>) секогаш е пократко од едно сино парче
+      (<strong>$2</strong>). Остатокот е секогаш строго помал од делителот. Проверка:
+      <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓'
+    label_bar_description: Столбен преглед — секое сино парче = {{PLURAL:$1|$1 единица|$1
+      единици}}
+    label_choose: Изберете деленик и делител
+    label_dividend: Деленик (бројот што се дели)
+    label_divisor: Делител (големината на парчето)
+    label_equation: Равенка на делење
+    label_repadd: Повторено собирање
+    repadd_exact: — точно се дели!
+    repadd_leftover: останато
+    repadd_less: $1 е помало од $2, така што количникот изнесува 0, а целата вредност
+      е остатокот.
+    hint: Прилагодете ги деленикот и делителот за да добиете разложен преглед на делењето
+  factors:
+    _name: Прости делители
+    gcd_formula_eq: ' ='
+    gcd_none: (нема — заемно прости)
+    gcd_title: НЗД — задржи само заеднички фактори
+    insight_coprime: '<strong>$1</strong> и <strong>$2</strong> се заемно прости —
+      не делат прости делители, така што НЗС = 1. НЗМ е просто нивниот производ. Секогаш
+      точно: <strong>$1 × $2 = $5</strong> = НЗД × НЗС = <strong>1 × $4 = $4</strong>.'
+    insight_shared_many: '<strong>$1</strong> и <strong>$2</strong> делат прости броеви
+      <strong>$7</strong>. НЗД ги зема само зелените заеднички блокови. НЗС ги зема
+      сите блокови — зелените заеднички, сините преостанати од A, црвените преостанати
+      од B — при што ниеден прост делител не се брои двапати. Секогаш точно: <strong>$1
+      × $2 = $5</strong> = НЗД × НЗС = <strong>$3 × $4 = $6</strong>.'
+    insight_shared_one: '<strong>$1</strong> и <strong>$2</strong> го делат истиот
+      прост делител <strong>$7</strong>. НЗД ги зема само зелените заеднички блокови.
+      НЗС ги зема сите блокови — зелените заеднички, сините преостанати од A, црвените
+      преостанати од B — при што ниеден прост делител не се брои двапати. Секогаш
+      точно: <strong>$1 × $2 = $5</strong> = НЗД × НЗС = <strong>$3 × $4 = $6</strong>.'
+    label_choose: Изберете два броја
+    label_factors: Прости делители
+    label_how: Како се изградени НЗД и НЗС
+    lcm_formula_eq: ' ='
+    lcm_title: НЗС — унија на сите фактори
+    legend_onlyA: само во A
+    legend_onlyB: само во B
+    legend_shared: заеднички (се користи за НЗД)
+    hint: Изберете броеви за да ги видите нивните прости делители
+  fibonacci:
+    _name: Фибоначиева низа
+    card_phi_lbl: Златен пресек φ
+    card_phi_sub: (1 + √5) / 2 = 1,6180339887…
+    card_ratio_error: 'грешка од φ:'
+    card_ratio_lbl: Тековен сооднос F(n+1) ÷ F(n)
+    chart_step: чекор
+    diff: 'разлика:'
+    insight_close: <strong>$1 + $2 = $3</strong>. Соодносот = <strong>$4</strong>
+      — во рамките на <strong>$5</strong> од φ. Речиси наполно сретнати.
+    insight_converged: <strong>$1 + $2 = $3</strong>. Соодносот = <strong>$4</strong>
+      — во рамките на <strong>$5</strong> од φ. Низата се сретнала на 6 децимални
+      места.
+    insight_normal: <strong>$1 + $2 = $3</strong>. Соодносот = <strong>$4</strong>,
+      сепак треба уште <strong>$5</strong> за да биде φ = 1,61803…
+    insight_step1: Почнуваме со <strong>1 + 1 = 2</strong>. Соодносот 2 ÷ 1 = <strong>2,000000</strong>
+      — сè уште далеку од φ ≈ 1,61803.
+    insight_step2: <strong>1 + 2 = 3</strong>. Соодносот 3 ÷ 2 = <strong>1,500000</strong>
+      — веќе е поблиску. Секој чекор понатаму го намалува јазот.
+    sec_addition: Собирање
+    sec_chart: Среќавање кон φ
+    sec_sequence: Низата досега
+    sec_steps: Чекорете низ Фибоначиевата низа
+    step_label: Чекор $1 од $2
+    hint: Чекорете низ низата за да го видите среќавањето
+  hexagon-angles:
+    2quads: 2 четириаголника × 360°
+    4triangles: 4 триаголници × 180°
+    _name: Агли на шестаголник
+    interiorAngles: Внатрешни агли
+    reset: ↺ Одново
+    total: Вкупно
+    hint: Разложете го шестаголникот на триаголници или четириаголници
+  incentre:
+    _name: Центар на впишана кружница
+    angleA: Агол A
+    angleB: Агол B
+    angleC: Агол C
+    area: Плоштина
+    centre: Центар I
+    circumference: Обиколка
+    formula: r = Плоштина / s
+    hint: 'Повлечете некое теме · Размер: 1 п = 40 п'
+    incircle: Впишана кружница
+    perimeter: Обем
+    radius: Полупречник (r)
+    scaleUnit: см
+    sideA: Страна a (BC)
+    sideB: Страна b (CA)
+    sideC: Страна c (AB)
+    touchAB: Допирна точка AB
+    touchBC: Допирна точка BC
+    touchCA: Допирна точка CA
+    triangle: Триаголник
+  euler-line:
+    _name: Ојлерова права
+    triangle: Триаголник
+    eulerLine: Ојлерова права
+    hint: 'Повлечете некое теме · Размер: 1 см = 40 п'
+    sideA: Страна a (BC)
+    sideB: Страна b (CA)
+    sideC: Страна c (AB)
+    perimeter: Обем
+    circumcenter: Центар на опишана кружница O
+    centroid: Тежиште G
+    orthocentre: Ортоцентар H
+    scaleUnit: см
+  marble-jar:
+    _name: Тегла на веројатност
+    colorBlue: Сина
+    colorGreen: Зелена
+    colorRed: Црвена
+    colorYellow: Жолта
+    impossible: Невозможно
+    probTitle: Веројатноста за избор на џамлија и погодување на нејзината боја…
+    shake: Протреси!
+    total: Вкупно
+    hint: Протресете ја теглата за да ја видите веројатноста на дело
+  monte-carlo:
+    _name: Монте Карло Пи
+    addPoints: + Додај точки
+    approxPi: Приближување на π
+    insideCircle: Во кружница
+    insideRed: Внатре (црвено)
+    outsideBlue: Надвор (сино)
+    outsideCircle: Вон кружницата
+    pointsPerStep: Точки по чекор
+    reset: ↺ Одново
+    totalPoints: Вкупно бодови
+    hint: Додајте точки за да се приближите на π користејќи веројатност
+  nine-point-circle:
+    _name: Кружница со девет точки
+    triangle: Триаголник
+    ninePoint: Кружница со девет точки
+    hint: 'Повлечете некое теме · Размер: 1 см = 40 п'
+    sideA: Страна a (BC)
+    sideB: Страна b (CA)
+    sideC: Страна c (AB)
+    perimeter: Обем
+    centre: Центар N₉
+    radius: Полупречник
+    legendM: M_a/b/c — средишни точки на страните
+    legendH: H_a/b/c — подножја на висините
+    legendE: E_a/b/c — средишни точки на AH, BH, CH
+    scaleUnit: см
+  orthocentre:
+    _name: Ортоцентар
+    altA: Висина hₐ
+    altB: Висина h_b
+    altC: Висина h_c
+    centre: Центар H
+    footA: Подножје Hₐ на BC
+    footB: Подножје H_b на CA
+    footC: Подножје H_c на AB
+    hint: 'Повлечете некое теме за да видите како се менува ортоцентарот (Размер:
+      1 см = 40 п)'
+    orthocentre: Ортоцентар
+    perimeter: Обем
+    scaleUnit: см
+    sideA: Страна a (BC)
+    sideB: Страна b (CA)
+    sideC: Страна c (AB)
+    angleA: Агол A
+    angleB: Агол B
+    angleC: Агол C
+    triangle: Триаголник
+  pentagon-angles:
+    3triangles: 3 триаголници × 180°
+    _name: Агли на петаголник
+    interiorAngles: Внатрешни агли
+    reset: ↺ Одново
+    total: Вкупно
+    hint: Разложи го петаголникот на триаголници
+  percent:
+    _name: Постотоци
+    axis_neg: −100 %
+    axis_pos: +100 %
+    axis_zero: 0 %
+    hint: Повлечете го лизгачот лево за пад, десно за пораст.
+    insight_full_loss: Пад од <strong>100 %</strong> ја доведува вредноста на <strong>0</strong>.
+      Повратокот од нула е <strong>невозможен</strong> — секој постоток од 0 е сепак
+      0.
+    insight_gain: Пораст од <strong>+$1 %</strong> ја доведува вредноста 100 на <strong>$2</strong>.
+      Зелениот лак горе и црвениот лак долу имаат иста ширина — но постотоците се
+      различни. За повраток на 100 ни треба само <strong>$3 %</strong>, а не −$1 %.
+    insight_loss: Пад од <strong>$1 %</strong> ја намалува вредноста 100 на <strong>$2</strong>.
+      Црвениот лак горе и зелениот лак долу го опфаќаат истото физичко растојание
+      — но постотоците се разликуваат бидејќи се однесуваат на различни основи. За
+      повраток ни треба <strong>+$3 %</strong>, а не +$1 %.
+    insight_zero: Нема напраевено промена. Повлечете го лизгачот за да истражите.
+    label_after: по промената
+    label_apply: ПРИМЕНИ ПОСТОТНА ПРОМЕНА
+    label_recovered: повратено
+    label_scale: 'РАЗМЕР: ПОЛНА ШИРИНА НА СТОЛБОТ = 200'
+    label_start: почеток
+  pythagoras:
+    _name: Питагорова теорема
+    angleDeg: агол =
+    lockRight: прав агол
+    reset: Одново
+    hint: Повелечете темиња за да проверите a² + b² = c²
+    controls: Контроли
+    triangle: Триаголник
+    sideA: a
+    sideB: b
+    hypot: c (хип.)
+    angOrigin: ∠ почеток
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: a²+b²=c²
+    badgeCos: c²=a²+b²−2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    cosTheta: cosθ
+    cosThetaEx: косинус на агол во почетокот
+    scaleUnit: см
+  quadrangle-angles:
+    _name: Агли на четириаголник
+    interiorAngles: Внатрешни агли
+    reset: Одново
+    sum: Збир
+    total: Вкупно
+    hint: Повлечете ги темињата за да го видите збирот на внатрешните агли
+  quadrangles:
+    _name: Четириаголници
+    areaDiagHalf: 'Формула: A = (d₁ × d₂) / 2 d₁ (AC) = $1 см d₂ (BD) = $2 см = ($1
+      × $2) / 2'
+    areaGaussHeader: 'Гаусова формула (накрсно): A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|'
+    areaGaussSum: ' Σ = $1 A = ½ × |$1|'
+    areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
+    areaParallelogram: 'Формула: A = основа × висина основа (AB) = $1 см висина =
+      $2 см = $1 × $2'
+    areaRectangle: 'Формула: A = ширина × висина = $1 × $2'
+    areaSquare: 'Формула: A = страна² = $1²'
+    areaTrapezoid: 'Формула: A = (b₁ + b₂) / 2 × h b₁ (AB) = $1 см b₂ (CD) = $2 см
+      висина = $3 см = ($1 + $2) / 2 × $3'
+    headingArea: Плоштина
+    headingClassification: Класификација
+    headingSides: Страни и дијагонали
+    labelDiag1: d₁ (AC)
+    labelDiag2: d₂ (BD)
+    labelPerimeter: Обем
+    presetKite: Делтоид
+    presetParallelogram: Паралелограм
+    presetRectangle: Правоаголник
+    presetSquare: Квадрат
+    presetTrapezoid: Трапезоид
+    shapeCrossed: самопресечен четириаголник
+    shapeGeneral: општ четириаголник
+    shapeKite: делтоид
+    shapeParallelogram: паралелограм
+    shapeRectangle: правоаголник
+    shapeRhombus: ромб
+    shapeSquare: квадрат
+    shapeTrapezoid: трапезоид
+    unitCm: см
+    unitCm2: см²
+    hint: Повлечете темиња за да го класификувате четириаголникот
+  radian:
+    _name: Радијани
+    rad: rad
+    hint: Повлечете ја рачката за да го видите односот помеѓу степените и радијаните
+  slope:
+    _name: Наклон
+    undefined: Вертикала → недефиниран наклон
+    hint: Повлечете ги точките за да ја видите пресметката на наклонот
+    point1: Точка P₁
+    point2: Точка P₂
+    coords1: Координати на P₁
+    coords2: Координати на P₂
+    rise: Пораст (Δy)
+    run: Поместување (Δx)
+    slope: Наклон (m)
+    slopeCard: Наклон
+    pointsCard: Точки
+  transformation:
+    _name: Трансформации
+    angle: Агол
+    enlargement: Хомотетија
+    hintEnlargement: Поместете ја портокаловата точка за да го зададете центарот на
+      хомотетија.
+    hintReflection: Поместете ги двете портокалови точки за да го создадете права
+      на отслик.
+    hintRotation: Поместете ја портокаловата точка за да го зададете центарот на вртење.
+    hintTranslation: Послужете се со лизгачите за да направите транслација на фигурата.
+    horizontal: Хоризонтала
+    reflection: Отслик
+    rotation: Вртење
+    transformations: Трансформации
+    translation: Транслација
+    vertical: Вертикална
+    hint: Изберете трансформација за да ја видите на дело. Послужете се со сините
+      точки за да го измените обликот на триаголникот
+  triangle-angles:
+    _name: Агли на триаголник
+    reset: Одново
+    hint: Повлечете темиња за да го измените триаголникот · Збирот од аглите секогаш
+      изнесува 180°
+    labelAngleA: Агол A
+    labelAngleB: Агол B
+    labelAngleC: Агол C
+    labelSum: Збир
+    formula: A + B + C = 180°
+  triangle-area:
+    _name: Плоштина на триаголник
+    btnProve: Докажи
+    btnReset: Одново
+    labelArea: Плоштина
+    labelBase: Основа (b)
+    labelHeight: Висина (h)
+    labelBaseShort: b
+    labelHeightShort: h
+    proofResultPara: Плоштина на паралелограм = b × h = <strong>$1 × $2 = $3 см²</strong>
+    proofResultTri: ' → Триаголник = ½ × $1 = <strong>$2 см²</strong>'
+    unitCm: см
+    unitCm2: см²
+    hint: Повлечете ги темињата за да го смените обликот на триаголникот
+  triangle-centroid:
+    _name: Тежиште на триаголник
+    triangle: Триаголник
+    centroid: Тежиште
+    hint: 'Повлечете некое теме · Размер: 1 см = 40 п'
+    sideA: Страна a (BC)
+    sideB: Страна b (CA)
+    sideC: Страна c (AB)
+    angleA: Агол A
+    angleB: Агол B
+    angleC: Агол C
+    perimeter: Обем
+    centre: Центар G
+    medianA: Медијана m_a
+    medianB: Медијана m_b
+    medianC: Медијана m_c
+    scaleUnit: см
+  triangles:
+    _name: Триаголници
+    acute: остар
+    angles: Агли
+    area: Плоштина
+    byAngles: 'По агли:'
+    bySides: 'По страни:'
+    classification: Класификација
+    equilateral: рамностран
+    isosceles: рамнокрак
+    measurements: Димензии
+    obtuse: тап
+    perimeter: Обем
+    reset: Одново ↺
+    right: правоаголен
+    scalene: разностран
+    sides: Страни
+    sideA: страна a (BC)
+    sideB: страна b (CA)
+    sideC: страна c (AB)
+    unitCm: см
+    unitCm2: см²
+    hint: Повлечете ги темињата за да ја смените фигурата и класификацијата
+  trigonometry:
+    _name: Тригонометрија
+    angle: Агол &theta;
+    cosDesc: Сината линија е <strong>соседната</strong> страна &mdash; хоризонталното
+      растојание од почетокот до основата на нормалата. cos&nbsp;&theta;&nbsp;=&nbsp;adjacent&nbsp;&divide;&nbsp;hypotenuse&nbsp;(=&nbsp;1).
+    cosFormula: соседна / хипотенуза
+    hideProof: Скриј доказ
+    prove: Докажи
+    sinDesc: Зелената линија е <strong>спротивната</strong> страна &mdash; вертикалното
+      растојание од точката на кружницата до x-оската. sin&nbsp;&theta;&nbsp;=&nbsp;opposite&nbsp;&divide;&nbsp;hypotenuse&nbsp;(=&nbsp;1).
+    sinFormula: спротивна / хипотенуза
+    tanDesc: Портокаловата линија е повлечена во x&nbsp;=&nbsp;1, допирна на кружницата.
+      Нејзината висина е tan&nbsp;&theta;, бидејќи tan&nbsp;&theta;&nbsp;=&nbsp;opposite&nbsp;&divide;&nbsp;adjacent&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
+    tanFormula: спротивна / соседна
+    hint: Повлечете го лизгачот за да го смените аголот
+  integer-coordinates:
+    _name: Целобројни координати
+    btnChallenge: "\U0001F3AF Предизвик"
+    btnCheck: Провери ✓
+    btnExplore: "\U0001F52D Истражи"
+    btnNext: Следно →
+    feedbackCorrect: ✓ Точно!
+    feedbackWrong: ✗ Неточно. Слабата ѕвезда е точниот одговор.
+    hintChallenge: Поместете го ★ на предложените координати и стиснете на Провери
+    hintExplore: Поместете го ★ стискајќи на него — се сведува на цели броеви
+    movePrompt: Поместете го ★ на:<br>($1, $2)
+    pointLabel: 'Точка:'
+    titleExplore: Истражете го координатниот систем
+    hint: Поместете ја ѕвездата за да истражите координати
+  positive-coordinates:
+    _name: Позитивни координати
+    btnChallenge: "\U0001F3AF Предизвик"
+    btnCheck: Провери ✓
+    btnExplore: "\U0001F52D Истражи"
+    btnNext: Следно →
+    feedbackCorrect: ✓ Точно!
+    feedbackWrong: ✗ Неточно. Слабада ѕвезда е точниот одговор.
+    hintChallenge: Поместете го ★ на предложените координати и стиснете на Провери
+    hintExplore: Поместете го ★ стискајќи на него — се сведува на цели броеви
+    movePrompt: Поместете го ★ на:<br>($1, $2)
+    pointLabel: 'Точка:'
+    titleExplore: Истражете го координатниот систем
+    hint: Поместете ја ѕвездата за да истражите координати
+  gauss-legendre:
+    _name: Гаус-Лежандров алгоритам
+    iteration: Итерација
+    variable_a: Аритметичка средина (a)
+    variable_b: Геометриска средина (b)
+    variable_t: Член на грешка (t)
+    variable_p: Степенов член (p)
+    step: Следен чекор
+    reset: Одново
+    pi_approx: Приближување на π
+    correct_digits: '{{PLURAL:$1|$1 точна цифра|$1 точни цифри}}'
+    precision_note: 'Конвергира квадратно: цифрите се удвојуваат на секој чекор.'
+    calculation_heading: Како се пресметува
+    formula_label: Формула
+    update_rules_heading: Правила на поднова
+    hint: Пресметајте итерации за да видите квадратна конвергенција
+...

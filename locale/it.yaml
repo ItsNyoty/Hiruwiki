@@ -24,7 +24,7 @@ it:
     complement: Complementare
     explement: Esplementare
     notDefined: Non definito per questo angolo
-    resultAngle: '$1 angolo: $2°'
+    resultAngle: 'Angolo $1: $2°'
     supplement: Supplementare
   circle-proof:
     animStopped: Animazione interrotta.
@@ -72,7 +72,7 @@ it:
     _name: Teorema di Pitagora
     angleDeg: angolo =
     lockRight: angolo retto
-    reset: Reset
+    reset: Reimposta
     hint: Trascina i vertici per verificare a² + b² = c²
     controls: Controlli
     triangle: Triangolo
@@ -111,7 +111,7 @@ it:
     _name: Trigonometria
     prove: Dimostra
   integer-coordinates:
-    _name: Coordinate positive
+    _name: Coordinate intere
     btnNext: Successivo →
     feedbackCorrect: ✓ Corretto!
     pointLabel: 'Punto:'

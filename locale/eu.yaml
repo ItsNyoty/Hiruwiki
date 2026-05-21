@@ -267,14 +267,14 @@ eu:
     insight_full_loss: <strong>% 100</strong>eko galera batek balioa <strong>0</strong>ra
       eramaten du. Zerotik berreskuratzea <strong>ezinezkoa</strong> da — edozein
       ehuneko 0 izanda ere 0 izango da.
-    insight_gain: <strong>% +$1</strong>-ko irabaziak 100etik <strong>$2</strong>-ra
+    insight_gain: <strong>+% $1</strong>-ko irabaziak 100etik <strong>$2</strong>-ra
       igotzen du. Goiko barra berdeak eta beheko barra gorriak zabalera bera dute
       — baina ehunekoek desberdintasuna dute. 100era itzultzeko <strong>% $3</strong>
-      besterik ez da behar, ez % −$1.
+      besterik ez da behar, ez -% $1.
     insight_loss: <strong>% $1</strong>-ko galera batek 100 <strong>$2</strong>-era
       jaisten du. Goiko barra gorriak eta beheko barra berdeak distantzia fisiko bera
       hartzen dute — baina ehunekoek desberdintasuna dute, base ezberdinei aplikatzen
-      zaizkie eta. Berreskuratzeko <strong>% +$3</strong> behar da, ez % +$1.
+      zaizkie eta. Berreskuratzeko <strong>+% $3</strong> behar da, ez +% $1.
     insight_zero: Aldaketarik aplikatu gabe. Arrastatu kontrol-barra esploratzeko.
     label_after: aldaketaren ostean
     label_apply: EHUNEKO ALDAKETA BAT EZARRI
@@ -320,9 +320,7 @@ eu:
     areaGaussHeader: |-
       Gaussen formula:
       A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|
-    areaGaussSum: |-
-      Σ = $1
-      A = ½ × |$1|
+    areaGaussSum: Σ = $1 A = ½ × |$1|
     areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
     areaParallelogram: |-
       Formula: A = oinarria × altuera
@@ -423,7 +421,7 @@ eu:
     _name: Hirukiaren barizentroa
     triangle: Triangelua
     centroid: Zentroidea
-    hint: 'Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px'
+    hint: 'Erpinak mugi ditzakezu · Eskala: 1 cm = 40 px'
     sideA: a aldea (BC)
     sideB: b aldea (CA)
     sideC: c aldea (AB)
