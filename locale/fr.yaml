@@ -2,6 +2,7 @@
 # Exported from translatewiki.net
 # Export driver: phpyaml
 # Author: ItsNyoty
+# Author: Lionel Scheepmans
 # Author: Theklan
 ---
 fr:
@@ -27,6 +28,7 @@ fr:
     notDefined: Non défini pour cet angle
     resultAngle: 'Angle $1 : $2°'
     supplement: Supplémentaire
+    hint: Tirez la poignée pour changer l'angle
   circle-proof:
     _name: Preuve du cercle
     animStopped: Animation arrêtée.
@@ -47,6 +49,7 @@ fr:
     tabCirc: Circonférence
     title: Calculateur de Cercle
     visualProof: Preuve visuelle
+    hint: Tirez le curseur du rayon pour voir le calcul
   circumcentre:
     _name: Circoncentre
     triangle: Triangle
@@ -84,6 +87,8 @@ fr:
       que la pièce rouge (<strong>$4</strong>) est toujours plus courte qu''un morceau
       bleu (<strong>$2</strong>). Le reste est toujours strictement inférieur au diviseur.
       Vérification : <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓'
+    label_bar_description: Bare de visualisation pour chaque bouton bleue = {{PLURAL:$1|$1
+      unit|$1 units}}
     label_choose: Choisissez le dividende et le diviseur
     label_dividend: Dividende (le nombre à diviser)
     label_divisor: Diviseur (la taille du morceau)
@@ -93,6 +98,7 @@ fr:
     repadd_leftover: reste
     repadd_less: $1 est inférieur à $2, donc le quotient est 0 et toute la valeur
       est le reste.
+    hint: Ajustez le dividende et le diviseur pour afficher le détail de la division.
   factors:
     _name: Facteurs premiers
     gcd_formula_eq: ' ='
@@ -120,6 +126,7 @@ fr:
     legend_onlyA: unique à A
     legend_onlyB: unique à B
     legend_shared: partagé (utilisé pour le PGCD)
+    hint: Choisissez des nombres pour voir leurs facteurs primaires
   fibonacci:
     _name: Suite de Fibonacci
     card_phi_lbl: Nombre d'or φ
@@ -143,6 +150,7 @@ fr:
     sec_sequence: Suite jusqu'ici
     sec_steps: Étapes de la suite de Fibonacci
     step_label: Étape $1 sur $2
+    hint: Effectuer la séquence pour voir la convergence
   hexagon-angles:
     2quads: 2 quadrilatères × 360°
     4triangles: 4 triangles × 180°
@@ -150,6 +158,7 @@ fr:
     interiorAngles: Angles intérieurs
     reset: ↺ Réinitialiser
     total: Total
+    hint: Décomposer l'hexagone en triangles ou quadrilatères
   incentre:
     _name: Incentre
     angleA: Angle A
@@ -194,6 +203,7 @@ fr:
     probTitle: Probabilité de tirer une bille et de deviner sa couleur…
     shake: Secouer !
     total: Total
+    hint: Secouez le récipient pour voir la probabilité en action
   monte-carlo:
     _name: Monte Carlo Pi
     addPoints: + Ajouter des points
@@ -248,6 +258,7 @@ fr:
     interiorAngles: Angles intérieurs
     reset: ↺ Réinitialiser
     total: Total
+    hint: Décomposer le pentagone en triangles
   percent:
     _name: Pourcentages
     axis_neg: −100%
@@ -300,6 +311,7 @@ fr:
     reset: Réinitialiser
     sum: Somme
     total: Total
+    hint: Faites glisser les sommets pour voir la somme des angles intérieurs.
   quadrangles:
     _name: Quadrilatères
     areaDiagHalf: |-
@@ -352,9 +364,12 @@ fr:
     shapeTrapezoid: trapèze
     unitCm: cm
     unitCm2: cm²
+    hint: Faites glisser les sommets pour classer le quadrilatère
   radian:
     _name: Radians
     rad: rad
+    hint: Faites glisser la poignée pour visualiser la relation entre les degrés et
+      les radians
   slope:
     _name: Pente
     undefined: Ligne verticale → pente indéfinie
@@ -382,6 +397,8 @@ fr:
     transformations: Transformations
     translation: Translation
     vertical: Vertical
+    hint: Choisissez une transformation pour la voir en action. Utilisez les points
+      bleus pour changer la forme du triangle
   triangle-angles:
     _name: Angles du triangle
     reset: Réinitialiser
@@ -405,6 +422,7 @@ fr:
     proofResultTri: ' → Triangle = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
     unitCm2: cm²
+    hint: Tirez les sommets pour changer la forme du triangle
   triangle-centroid:
     _name: Centre de gravité du triangle
     triangle: Triangle
@@ -444,6 +462,7 @@ fr:
     sideC: côté c (AB)
     unitCm: cm
     unitCm2: cm²
+    hint: Tirez les sommets pour changer de forme et de classification
   trigonometry:
     _name: Trigonométrie
     angle: Angle &theta;
@@ -458,6 +477,7 @@ fr:
     tanDesc: La ligne orange est tracée à x&nbsp;=&nbsp;1, tangente au cercle. Sa
       hauteur est tan&nbsp;&theta;, car tan&nbsp;&theta;&nbsp;=&nbsp;opposé&nbsp;&divide;&nbsp;adjacent&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
     tanFormula: opposé / adjacent
+    hint: Utilisez le curseur pour changer l'angle
   integer-coordinates:
     _name: Coordonnées entières
     btnChallenge: "\U0001F3AF Défi"
@@ -471,6 +491,7 @@ fr:
     movePrompt: Déplacez ★ vers :<br>($1, $2)
     pointLabel: 'Point :'
     titleExplore: Explorer le système de coordonnées
+    hint: Déplacez l'étoile pour explorer les coordonnées
   positive-coordinates:
     _name: Coordonnées positives
     btnChallenge: "\U0001F3AF Défi"
@@ -484,6 +505,7 @@ fr:
     movePrompt: Déplacez ★ vers :<br>($1, $2)
     pointLabel: 'Point :'
     titleExplore: Explorer le système de coordonnées
+    hint: Déplacez l'étoile pour explorer les coordonnées
   gauss-legendre:
     _name: Algorithme de Gauss-Legendre
     iteration: Itération
