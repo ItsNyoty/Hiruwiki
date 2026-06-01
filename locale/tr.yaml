@@ -1,0 +1,318 @@
+# Messages for Turkish (Türkçe)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Hedda
+---
+tr:
+  angle-guess:
+    _name: Açı Tahmini
+    difference: 'Fark:'
+    finalScore: Sonuç
+    hint: Açıyı ayarlamak için mavi noktayı hareket ettirin
+    nextAngle: Sonraki açı &rsaquo;
+    points: 'Puan:'
+    pts: puan
+    round: 'Tur:'
+    roundOver: Oyun bitti
+    target: 'Hedef:'
+    tryAgain: Tekrar dene
+    yourGuess: 'Tahminin:'
+  angles:
+    _name: Açılar
+    bisector: Açıortay
+    bisectorResult: 'Açıortay: $1°'
+    complement: Tümler
+    explement: Eşlenik
+    notDefined: Bu açı için tanımlanmamış
+    resultAngle: '$1 açı: $2°'
+    supplement: Bütünler
+    hint: Açıyı değiştirmek için tutup sürükleyin
+  circle-proof:
+    _name: Daire Kanıtı
+    animStopped: Animasyon durduruldu.
+    area: Alan
+    areaAnimStatus: 'Kenarlar bir dikdörtgen oluşturacak şekilde bir araya gelir:
+      genişlik = πr, yükseklik = r.'
+    areaReviewStatus: ✓ Genişlik = πr, yükseklik = r → A = πr².
+    circAnimStatus: Her yarım daire (πr) bir düz çizgiye dönüşür ve toplamda 2πr uzunluğunda
+      olur.
+    circReviewStatus: ✓ Üst πr + Alt πr = C = 2πr.
+    circumference: Çevre
+    initStatus: Bir ispat seçin ve 'İspatla' düğmesine tıklayın.
+    proveIt: İspatla ▶
+    radius: Yarıçap
+    readyStatus: Animasyonu izlemek için 'İspatla' düğmesine tıklayın.
+    review: İncele ▶
+    stop: Dur ■
+    tabArea: Alan
+    tabCirc: Çevre
+    title: Daire Hesaplayıcı
+    visualProof: Görsel ispat
+    hint: Hesaplamayı görmek için yarıçap kaydırma çubuğunu sürükleyin
+  circumcentre:
+    _name: çevre merkezi
+    triangle: Üçgen
+    circumcentre: çevre merkezi
+    hint: 'Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 px'
+    sideA: a kenarı (BC)
+    sideB: b kenarı (CA)
+    sideC: c kenarı (AB)
+    angleA: A açısı
+    angleB: B açısı
+    angleC: C açısı
+    perimeter: Çevre
+    centre: Merkez O
+    radius: Çevre yarıçapı R
+    midA: Merkez Nokta M_a (BC)
+    midB: Merkez Nokta M_b (CA)
+    midC: Merkez nokta M_c (AB)
+    circPerimeter: Dairenin çevresi
+    circArea: Dairenin alanı
+    scaleUnit: cm
+    scaleUnit2: cm²
+  dividend:
+    _name: Bölünen ve Bölen
+    eq_lbl_dividend: bölünen
+    eq_lbl_divisor: bölen
+    eq_lbl_quotient: bölüm
+    eq_lbl_remainder: kalan
+    insight_exact: <strong>$1 ÷ $2 = $3</strong> kalansız. Çubuk, <strong>$3</strong>
+      eşit parçaya mükemmel bir şekilde bölünüyor. Bu, <strong>$2</strong> sayısının
+      <strong>$1</strong> sayısına bölündüğünü gösteriyor..
+    label_bar_description: Çubuk grafiği - her mavi parça = {{PLURAL:$1|$1 birim}}
+    label_choose: Bölüneni ve böleni seçin.
+    label_dividend: Bölünen (bölünen sayı)
+    label_divisor: Bölen (parça boyutu)
+    label_equation: Bölme denklemi
+    label_repadd: Tekrarlı toplama
+    repadd_exact: — tam olarak bölünüyor!
+    repadd_leftover: kalanlı
+    repadd_less: $1, $2 değerinden küçük olduğu için bölüm 0'dır ve tam sayı kısmı
+      kalan değerdir.
+    hint: Bölmenin ayrıntılarını görmek için bölünen ve böleni ayarlayın
+  factors:
+    _name: Asal Çarpanlar
+    gcd_formula_eq: ' ='
+    gcd_none: (yok — aralarında asal)
+    gcd_title: EBOB -  sadece ortak çarpanları hesapla
+    label_choose: İki sayı seçin
+    label_factors: Asal çarpanlar
+    label_how: EBOB ve EKOK nasıl hesaplanır?
+    lcm_formula_eq: ' ='
+    lcm_title: EKOK - tüm çarpanların birleşimi
+    legend_onlyA: A'ya özgü
+    legend_onlyB: B'ye özgü
+    legend_shared: paylaşılan (EBOB için kullanılır)
+    hint: Asal çarpanlarını görmek için sayıları seçin
+  fibonacci:
+    _name: Fibonacci Dizisi
+    card_phi_lbl: Altın oran φ
+    card_phi_sub: (1 + √5) / 2 = 1.6180339887…
+    card_ratio_error: 'φ''den kaynaklanan hata:'
+    card_ratio_lbl: Cari oran F(n+1) ÷ F(n)
+    chart_step: adım
+    diff: 'fark:'
+    sec_addition: Ek
+    sec_chart: φ'ye yakınsama
+    sec_sequence: Şu ana kadar olan süreç
+    sec_steps: Fibonacci dizisini adım adım inceleyin
+    step_label: $1/$2 adım
+    hint: Yakınsamayı görmek için adım adım ilerleyin
+  hexagon-angles:
+    2quads: 2 dörtgen × 360°
+    4triangles: 4 üçgen × 180°
+    _name: Altıgen Açıları
+    interiorAngles: İç açılar
+    reset: ↺ Sıfırla
+    total: Toplam
+    hint: Altgeni, üçgenlere veya dörtgenlere ayırın
+  incentre:
+    _name: İç teğet çemberi merkezi
+    angleA: A açısı
+    angleB: B açısı
+    angleC: C açısı
+    area: Alan
+    centre: I merkezi
+    circumference: Çevre
+    formula: r = Alan / s
+    hint: 'Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 px'
+    incircle: İç teğet çemberi
+    perimeter: Çevre
+    radius: Yarıçap (r)
+    scaleUnit: cm
+    sideA: a kenarı (BC)
+    sideB: b kenarı (CA)
+    sideC: c kenarı (AB)
+    touchAB: AB noktasına dokun
+    touchBC: BC noktasına dokun
+    touchCA: CA noktasına dokun
+    triangle: Üçgen
+  euler-line:
+    _name: Euler Doğrusu
+    triangle: Üçgen
+    eulerLine: Euler Doğrusu
+    hint: 'Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 piksel'
+    sideA: a kenarı (BC)
+    sideB: b kenarı (CA)
+    sideC: c kenarı (AB)
+    perimeter: Çevre
+    circumcenter: Çevre merkez O
+    centroid: Merkez G
+    orthocentre: Yükseklik merkezi H
+    scaleUnit: cm
+  marble-jar:
+    _name: Olasılık Kavanozu
+    colorBlue: Mavi
+    colorGreen: Yeşil
+    colorRed: Kırmızı
+    colorYellow: Sarı
+    impossible: İmkansız
+    probTitle: Bir bilye seçip rengini tahmin etme olasılığı…
+    shake: Salla!
+    total: Toplam
+    hint: Kavanozu sallayın ve olasılığın nasıl işlediğini görün
+  monte-carlo:
+    _name: Monte Carlo Pi
+    addPoints: + Nokta Ekle
+    approxPi: π'nin yaklaşık değeri
+    insideCircle: İç Çember
+    insideRed: İç (kırmızı)
+    outsideBlue: Dış (mavi)
+    outsideCircle: Dış Çember
+    pointsPerStep: Adım başına nokta
+    reset: ↺ Sıfırla
+    totalPoints: Toplam nokta
+    hint: Olasılık kullanarak π'ye yakın bir sayı bulmak için nokta ekleyin
+  nine-point-circle:
+    _name: Dokuz Noktalı Çember
+    triangle: Üçgen
+    ninePoint: Dokuz Noktalı Çember
+    hint: 'Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 px'
+    sideA: a kenarı (BC)
+    sideB: b kenarı (CA)
+    sideC: c kenarı (AB)
+    perimeter: Çevre
+    centre: Merkez N₉
+    radius: Yarıçap
+    legendM: M_a/b/c - kenarların orta noktaları
+    legendH: H_a/b/c - yüksekliklerin fit cinsinden uzunlukları
+    legendE: E_a/b/c — AH, BH ve CH'nin orta noktaları
+    scaleUnit: cm
+  orthocentre:
+    _name: Yükseklik merkezi
+    altA: Yükseklik hₐ
+    altB: Yükseklik h_b
+    altC: Yükseklik h_c
+    centre: Merkez H
+    footA: BC üzerindeki Hₐ ayağı
+    footB: CA üzerindeki H_b ayağı
+    footC: AB üzerinde H_c ayağı
+    hint: 'Herhangi bir köşeyi sürükleyerek yükseklik merkezinin nasıl değiştiğini
+      görün (Ölçek: 1 cm = 40 px)'
+    orthocentre: Yükseklik merkezi
+    perimeter: Çevre
+    scaleUnit: cm
+    sideA: a kenarı (BC)
+    sideB: b kenarı (CA)
+    sideC: c kenarı (AB)
+    angleA: A açısı
+    angleB: B açısı
+    angleC: C açısı
+    triangle: Üçgen
+  pentagon-angles:
+    3triangles: 3 üçgen × 180°
+    _name: Beşgen Açıları
+    interiorAngles: İç açılar
+    reset: ↺ Sıfırla
+    total: Toplam
+    hint: Beşgeni üçgenlere ayırın
+  percent:
+    _name: Yüzdeler
+    axis_neg: −%100
+    axis_pos: +%100
+    axis_zero: '%0'
+    hint: Kaydırıcıyı sola kaydırarak değerini azaltın, sağa kaydırarak artırın.
+    insight_zero: Değişiklik uygulanmadı. Keşfetmek için kaydırıcıyı sürükleyin.
+    label_after: değişiklikten sonra
+    label_apply: YÜZDE DEĞİŞİKLİĞİNİ UYGULA
+    label_recovered: düzelmiş
+    label_scale: 'ÖLÇEK: TAM ÇUBUK GENİŞLİĞİ = 200'
+    label_start: başlangıç
+  pythagoras:
+    _name: Pisagor Teoremi
+    angleDeg: açı =
+    lockRight: dik açı
+    reset: Sıfırla
+    hint: a² + b² = c² formülünü doğrulamak için köşeleri sürükleyin
+    controls: Kontroller
+    triangle: Üçgen
+    sideA: a
+    sideB: b
+    hypot: c (hip.)
+    angOrigin: ∠ orijin
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: a²+b²=c²
+    badgeCos: c²=a²+b²−2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    cosTheta: cosθ
+    cosThetaEx: orijindeki açının kosinüsü
+    scaleUnit: cm
+  quadrangle-angles:
+    _name: Dörtgen Açıları
+    interiorAngles: İç açılar
+    reset: Sıfırla
+    sum: Toplam
+    total: Toplam
+    hint: Köşeleri sürükleyerek iç açıların toplamını görün.
+  quadrangles:
+    _name: Dörtgenler
+    areaDiagHalf: 'Formül: A = (d₁ × d₂) / 2 d₁ (AC) = $1 cm d₂ (BD) = $2 cm = ($1
+      × $2) / 2'
+    areaGaussHeader: 'Gauss formülü (ayakkabı bağı): A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|'
+    areaGaussSum: ' Σ = $1 A = ½ × |$1|'
+    areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
+    areaParallelogram: 'Formül: A = taban × taban yüksekliği (AB) = $1 cm yükseklik
+      = $2 cm = $1 × $2'
+    areaRectangle: 'Formül: A = genişlik × yükseklik = $1 × $2'
+    areaSquare: 'Formül: A = kenar² = $1²'
+    areaTrapezoid: 'Formül: A = (b₁ + b₂) / 2 × h b₁ (AB) = $1 cm b₂ (CD) = $2 cm
+      yükseklik = $3 cm = ($1 + $2) / 2 × $3'
+    headingArea: Alan
+    headingClassification: Sınıflandırma
+    headingSides: Kenarlar ve köşegenler
+    labelDiag1: d₁ (AC)
+    labelDiag2: d₂ (BD)
+    labelPerimeter: Çevre
+    presetKite: Uçurtma
+    presetParallelogram: Paralelkenar
+    presetRectangle: Dikdörtgen
+    presetSquare: Kare
+    presetTrapezoid: Yamuk
+    shapeCrossed: çapraz dörtgen
+    shapeGeneral: genel dörtgen
+    shapeKite: uçurtma
+    shapeParallelogram: paralelkenar
+    shapeRectangle: dikdörtgen
+    shapeRhombus: eşkenar dörtgen
+    shapeSquare: kare
+    shapeTrapezoid: yamuk
+    unitCm: cm
+    unitCm2: cm²
+    hint: Dörtgeni sınıflandırmak için köşeleri sürükleyin.
+  radian:
+    _name: Radyanlar
+    rad: rad
+    hint: Derece ve radyan arasındaki ilişkiyi görmek için imleci sürükleyin
+  slope:
+    _name: Eğim
+    undefined: Dikey çizgi → eğim belirsiz
+    hint: Eğim hesaplamasını görmek için noktaları sürükleyin.
+    point1: P₁ Noktası
+    point2: P₂ Noktası
+    coords1: P₁ koordinatları
+    coords2: P₂ koordinatları
+    rise: Yükseklik artışı (Δy)
+...
