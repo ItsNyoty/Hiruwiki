@@ -27,7 +27,7 @@ nl:
     notDefined: Niet gedefinieerd voor deze hoek
     resultAngle: 'Hoek $1: $2°'
     supplement: Supplementair
-    hint: Sleep de witte stip om de hoek te veranderen
+    hint: Sleep de witte stip om de hoek te wijzigen
   circle-proof:
     _name: Cirkelbewijs
     animStopped: Animatie gestopt.
@@ -276,9 +276,9 @@ nl:
       De rode balk bovenaan en de groene balk onderaan bedekken dezelfde fysieke afstand
       — maar de percentages verschillen omdat ze op verschillende bases worden toegepast.
       Om te herstellen is <strong>+$3%</strong> nodig, niet +$1%.
-    insight_zero: Geen verandering toegepast. Sleep de schuifregelaar om te verkennen.
-    label_after: na verandering
-    label_apply: PAS EEN PROCENTUELE VERANDERING TOE
+    insight_zero: Geen wijziging toegepast. Sleep de schuifregelaar om te verkennen.
+    label_after: na wijziging
+    label_apply: PAS EEN PROCENTUELE AANPASSING TOE
     label_recovered: hersteld
     label_scale: 'SCHAAL: VOLLEDIGE BREEDTE = 200'
     label_start: begin
@@ -381,11 +381,11 @@ nl:
     translation: Translatie
     vertical: Verticaal
     hint: Kies een transformatie om deze in actie te zien. Gebruik de blauwe stippen
-      om de vorm van de driehoek te veranderen
+      om de vorm van de driehoek te wijzigen
   triangle-angles:
     _name: Hoeken van een driehoek
     reset: Opnieuw instellen
-    hint: Sleep hoekpunten om de driehoek te veranderen · Som van de hoeken is altijd
+    hint: Sleep hoekpunten om de driehoek te wijzigen · Som van de hoeken is altijd
       180°
     labelAngleA: Hoek A
     labelAngleB: Hoek B
@@ -405,7 +405,7 @@ nl:
     proofResultTri: ' → Driehoek = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
     unitCm2: cm²
-    hint: Sleep de hoekpunten om de vorm van de driehoek te veranderen
+    hint: Sleep de hoekpunten om de vorm van de driehoek te wijzigen
   triangle-centroid:
     _name: Zwaartepunt van een driehoek
     triangle: Driehoek
@@ -445,7 +445,7 @@ nl:
     sideC: zijde c (AB)
     unitCm: cm
     unitCm2: cm²
-    hint: Sleep hoekpunten om de vorm en classificatie te veranderen
+    hint: Sleep hoekpunten om de vorm en classificatie te wijzigen
   trigonometry:
     _name: Goniometrie
     angle: Hoek &theta;
@@ -460,7 +460,7 @@ nl:
     tanDesc: De oranje lijn is getekend op x&nbsp;=&nbsp;1, rakend aan de cirkel.
       De hoogte is tan&nbsp;&theta;, aangezien tan&nbsp;&theta;&nbsp;=&nbsp;overstaande&nbsp;&divide;&nbsp;aanliggende&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
     tanFormula: overstaande / aanliggende
-    hint: Gebruik de schuifregelaar om de hoek te veranderen
+    hint: Gebruik de schuifregelaar om de hoek te wijzigen
   integer-coordinates:
     _name: Integercoördinaten
     btnChallenge: "\U0001F3AF Uitdaging"
