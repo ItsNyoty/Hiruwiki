@@ -24,6 +24,7 @@ var messages = /* I18N_START */ {
         "reset": "Reiniciar",
         "sum": "Suma",
         "total": "Total"
+        "hint": "Mueve los vértices para ver la suma interior de los ángulos"
     },
     "eu": {
         "_name": "Koadrilateroaren angeluak",
@@ -31,6 +32,7 @@ var messages = /* I18N_START */ {
         "reset": "Berrezarri",
         "sum": "Batuketa",
         "total": "Guztira"
+        "hint": "Mugitu erpinak angeluen barne batura ikusteko"
     },
     "fr": {
         "_name": "Angles du quadrilatère",
