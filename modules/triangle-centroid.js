@@ -1,3 +1,9 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
 /* =========================================================
  * Hiruwiki module: triangle-centroid
  * Visualisation of the centroid of a triangle
@@ -13,152 +19,37 @@
 var messages = /* I18N_START */ {
     "en": {
         "_name": "Triangle Centroid",
-        "triangle": "Triangle",
-        "centroid": "Centroid",
-        "hint": "Drag any vertex · Scale: 1 cm = 40 px",
-        "sideA": "Side a (BC)",
-        "sideB": "Side b (CA)",
-        "sideC": "Side c (AB)",
-        "angleA": "Angle A",
-        "angleB": "Angle B",
-        "angleC": "Angle C",
-        "perimeter": "Perimeter",
-        "centre": "Centre G",
-        "medianA": "Median m_a",
-        "medianB": "Median m_b",
-        "medianC": "Median m_c",
-        "scaleUnit": "cm"
+        "hint": "Drag any vertex to explore the centroid"
     },
     "es": {
         "_name": "Baricentro del triángulo",
-        "triangle": "Triángulo",
-        "centroid": "Baricentro",
-        "hint": "Arrastra un vértice · Escala: 1 cm = 40 px",
-        "sideA": "Lado a (BC)",
-        "sideB": "Lado b (CA)",
-        "sideC": "Lado c (AB)",
-        "angleA": "Ángulo A",
-        "angleB": "Ángulo B",
-        "angleC": "Ángulo C",
-        "perimeter": "Perímetro",
-        "centre": "Centro G",
-        "medianA": "Mediana m_a",
-        "medianB": "Mediana m_b",
-        "medianC": "Mediana m_c",
-        "scaleUnit": "cm"
+        "hint": "Arrastra un vértice para explorar el baricentro"
     },
     "eu": {
         "_name": "Hirukiaren barizentroa",
-        "triangle": "Triangelua",
-        "centroid": "Zentroidea",
-        "hint": "Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px",
-        "sideA": "a aldea (BC)",
-        "sideB": "b aldea (CA)",
-        "sideC": "c aldea (AB)",
-        "angleA": "A angelua",
-        "angleB": "B angelua",
-        "angleC": "C angelua",
-        "perimeter": "Perimetroa",
-        "centre": "G zentroa",
-        "medianA": "Mediana m_a",
-        "medianB": "Mediana m_b",
-        "medianC": "Mediana m_c",
-        "scaleUnit": "cm"
+        "hint": "Erpinak mugitu ditzakezu barizentroa ikusteko"
     },
     "fr": {
         "_name": "Centre de gravité du triangle",
-        "triangle": "Triangle",
-        "centroid": "Centre de gravité",
-        "hint": "Faites glisser un sommet · Échelle : 1 cm = 40 px",
-        "sideA": "Côté a (BC)",
-        "sideB": "Côté b (CA)",
-        "sideC": "Côté c (AB)",
-        "angleA": "Angle A",
-        "angleB": "Angle B",
-        "angleC": "Angle C",
-        "perimeter": "Périmètre",
-        "centre": "Centre G",
-        "medianA": "Médiane m_a",
-        "medianB": "Médiane m_b",
-        "medianC": "Médiane m_c",
-        "scaleUnit": "cm"
+        "hint": "Faites glisser un sommet pour explorer le centre de gravité"
     },
     "ga": {
         "_name": "Lárphointe Triantáin",
-        "triangle": "Triantán",
-        "centroid": "Lárphointe",
-        "hint": "Bog na buaicphointí · Scála: 1 cm = 40 px",
-        "sideA": "Taobh a (BC)",
-        "sideB": "Taobh b (CA)",
-        "sideC": "Taobh c (AB)",
-        "angleA": "Uillinn A",
-        "angleB": "Uillinn B",
-        "angleC": "Uillinn C",
-        "perimeter": "Imlíne",
-        "centre": "Lár G",
-        "medianA": "Meánlíne m_a",
-        "medianB": "Meánlíne m_b",
-        "medianC": "Meánlíne m_c",
-        "scaleUnit": "cm"
+        "hint": "Bog na buaicphointí chun an lárphointe a iniúchadh"
     },
     "ko": {
         "_name": "삼각형 무게중심",
-        "triangle": "삼각형",
-        "centroid": "무게중심",
-        "hint": "꼭짓점을 드래그하세요 · 축척: 1 cm = 40 px",
-        "sideA": "변 a (BC)",
-        "sideB": "변 b (CA)",
-        "sideC": "변 c (AB)",
-        "angleA": "각도 A",
-        "angleB": "각도 B",
-        "angleC": "각도 C",
-        "perimeter": "둘레",
-        "centre": "무게중심 G",
-        "medianA": "중선 m_a",
-        "medianB": "중선 m_b",
-        "medianC": "중선 m_c",
-        "scaleUnit": "cm"
+        "hint": "꼭짓점을 드래그하여 무게중심을 탐색하세요"
     },
     "nl": {
         "_name": "Zwaartepunt van een driehoek",
-        "triangle": "Driehoek",
-        "centroid": "Zwaartepunt",
-        "hint": "Sleep een hoekpunt · Schaal: 1 cm = 40 px",
-        "sideA": "Zijde a (BC)",
-        "sideB": "Zijde b (CA)",
-        "sideC": "Zijde c (AB)",
-        "angleA": "Hoek A",
-        "angleB": "Hoek B",
-        "angleC": "Hoek C",
-        "perimeter": "Omtrek",
-        "centre": "Middelpunt G",
-        "medianA": "Zwaartelijn m_a",
-        "medianB": "Zwaartelijn m_b",
-        "medianC": "Zwaartelijn m_c",
-        "scaleUnit": "cm"
+        "hint": "Sleep een hoekpunt om het zwaartepunt te verkennen"
     }
 } /* I18N_END */
-var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-var banana = new Banana(lang.split('-')[0]);
-banana.load(messages);
-
-function t(key, vars) {
-    var args = Array.isArray(vars) ? vars : [];
-    var str = banana.i18n(key, ...args);
-    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
-        Object.keys(vars).forEach(function(k) {
-            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
-        });
-    }
-    return str;
-}
-
-;
 
 /* ── Constants ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
-var SCALE   = 40;   /* pixels per centimetre  */
-var RULER_H = 36;   /* ruler strip height (px) */
-var DPR     = window.devicePixelRatio || 1;
+var SCALE = 40;   /* pixels per centimetre  */
+var DPR   = window.devicePixelRatio || 1;
 
 /* ── Geometry helpers ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 function dist( a, b ) {
@@ -169,10 +60,6 @@ function midpoint( A, B ) {
 	return { x: ( A.x + B.x ) / 2, y: ( A.y + B.y ) / 2 };
 }
 
-/*
- * Centroid: arithmetic mean of the three vertices.
- *   G = ( A + B + C ) / 3
- */
 function centroid( A, B, C ) {
 	return { x: ( A.x + B.x + C.x ) / 3, y: ( A.y + B.y + C.y ) / 3 };
 }
@@ -192,43 +79,16 @@ function labelOffset( V, others, mag ) {
 	return { x: V.x + dx / l * mag, y: V.y + dy / l * mag };
 }
 
-function toCm( px ) { return px / SCALE; }
-function fmt( n )   { return n.toFixed( 2 ); }
-
 /* ── Build widget ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 function buildWidget( container ) {
 	var lang = ( window.mw && mw.config.get( 'wgUserLanguage' ) ) || 'en';
 	lang = lang.split( '-' )[ 0 ];
 	if ( !messages[ lang ] ) { lang = 'en'; }
-	var msg = messages[ lang ];
 
 	/* -- HTML skeleton -- */
 	container.innerHTML =
 		'<div class="hw-centroid">' +
 			'<canvas class="hw-canvas"></canvas>' +
-			'<div class="hw-params">' +
-				'<div class="hw-card">' +
-					'<div class="hw-card-title">' +
-						'<span class="hw-badge hw-badge-t">' + msg.triangle + '</span>' +
-					'</div>' +
-					'<div class="hw-row"><span>' + msg.sideA    + '</span><span id="hw-sa"></span></div>' +
-					'<div class="hw-row"><span>' + msg.sideB    + '</span><span id="hw-sb"></span></div>' +
-					'<div class="hw-row"><span>' + msg.sideC    + '</span><span id="hw-sc"></span></div>' +
-					'<div class="hw-row"><span>' + msg.angleA   + '</span><span id="hw-aa"></span></div>' +
-					'<div class="hw-row"><span>' + msg.angleB   + '</span><span id="hw-ab"></span></div>' +
-					'<div class="hw-row"><span>' + msg.angleC   + '</span><span id="hw-ac"></span></div>' +
-					'<div class="hw-row"><span>' + msg.perimeter + '</span><span id="hw-per"></span></div>' +
-				'</div>' +
-				'<div class="hw-card">' +
-					'<div class="hw-card-title">' +
-						'<span class="hw-badge hw-badge-cen">' + msg.centroid + '</span>' +
-					'</div>' +
-					'<div class="hw-row"><span>' + msg.centre  + '</span><span id="hw-gc"></span></div>' +
-					'<div class="hw-row"><span>' + msg.medianA + '</span><span id="hw-m_a"></span></div>' +
-					'<div class="hw-row"><span>' + msg.medianB + '</span><span id="hw-mb"></span></div>' +
-					'<div class="hw-row"><span>' + msg.medianC + '</span><span id="hw-mc"></span></div>' +
-				'</div>' +
-			'</div>' +
 		'</div>';
 
 	/* -- Footer -- */
@@ -243,7 +103,7 @@ function buildWidget( container ) {
 	}
 	var fText = document.createElement( 'span' );
 	fText.className = 'hw-footer__text';
-	fText.textContent = msg.hint;
+	fText.textContent = messages[ lang ].hint;
 	footer.appendChild( fLogo );
 	footer.appendChild( fText );
 	container.appendChild( footer );
@@ -252,12 +112,10 @@ function buildWidget( container ) {
 	var ctx     = canvas.getContext( '2d' );
 	var W, H, verts, dragging = -1;
 
-	function $( id ) { return container.querySelector( '#' + id ); }
-
 	/* -- vertex initialisation -- */
 	function initVerts() {
 		var ox = W / 2 - 5.5 * SCALE;
-		var oy = RULER_H + 10;
+		var oy = 20;
 		verts = [
 			{ x: ox + 5.5 * SCALE, y: oy + 1.2 * SCALE },
 			{ x: ox + 1.2 * SCALE, y: oy + 8.0 * SCALE },
@@ -279,78 +137,33 @@ function buildWidget( container ) {
 	function palette() {
 		var dark = isDark();
 		return {
-			dark:     dark,
-			tri:      dark ? '#AFA9EC' : '#534AB7',
-			cen:      dark ? '#EF9F27' : '#BA7517',
-			median:   dark ? '#5DCAA5' : '#0F6E56',
-			text:     dark ? '#E8E6DC' : '#1a1a18',
-			ruleBg:   dark ? 'rgba(28,28,26,.90)' : 'rgba(241,239,232,.85)',
-			ruleTick: dark ? '#444441'             : '#B4B2A9',
-			ruleText: dark ? '#888780'             : '#888780',
-			gridMm:   'rgba(128,128,128,.04)',
-			gridCm:   'rgba(128,128,128,.08)',
-			dotBg:    dark ? '#1e1e1c' : '#ffffff'
+			dark:   dark,
+			tri:    dark ? '#AFA9EC' : '#534AB7',
+			cen:    dark ? '#EF9F27' : '#BA7517',
+			median: dark ? '#5DCAA5' : '#0F6E56',
+			grid:   dark ? '#444441' : '#D3D1C7',
+			dotBg:  dark ? '#1e1e1c' : '#ffffff'
 		};
 	}
 
-	/* -- ruler -- */
-	function drawRuler( p ) {
-		ctx.fillStyle = p.ruleBg;
-		ctx.fillRect( 0, 0, W, RULER_H );
-		ctx.strokeStyle = p.ruleTick;
-		ctx.lineWidth   = 0.5;
-		ctx.beginPath(); ctx.moveTo( 0, RULER_H ); ctx.lineTo( W, RULER_H ); ctx.stroke();
-
-		var maxCm = Math.ceil( W / SCALE ) + 1;
-		ctx.font         = '10px sans-serif';
-		ctx.textBaseline = 'bottom';
-
-		for ( var cm = 0; cm <= maxCm; cm++ ) {
-			var px = cm * SCALE;
-			if ( px > W + SCALE ) { break; }
-			ctx.strokeStyle = p.ruleTick; ctx.lineWidth = 0.8;
-			ctx.beginPath(); ctx.moveTo( px, RULER_H - 10 ); ctx.lineTo( px, RULER_H ); ctx.stroke();
-			if ( cm > 0 ) {
-				ctx.fillStyle = p.ruleText; ctx.textAlign = 'center';
-				ctx.fillText( cm, px, RULER_H - 12 );
-			}
-			for ( var mm = 1; mm < 10; mm++ ) {
-				var mpx = px + mm * SCALE / 10;
-				if ( mpx > W ) { break; }
-				ctx.strokeStyle = p.ruleTick; ctx.lineWidth = 0.5;
-				ctx.beginPath();
-				ctx.moveTo( mpx, RULER_H - ( mm === 5 ? 7 : 4 ) );
-				ctx.lineTo( mpx, RULER_H );
-				ctx.stroke();
-			}
-		}
-		ctx.fillStyle    = p.ruleText;
-		ctx.textAlign    = 'left';
-		ctx.textBaseline = 'middle';
-		ctx.font         = '500 10px sans-serif';
-		ctx.fillText( msg.scaleUnit, 4, RULER_H / 2 );
-	}
-
-	/* -- grid -- */
+	/* -- grid (major cm lines only, very faint) -- */
 	function drawGrid( p ) {
-		ctx.lineWidth = 0.5;
+		ctx.lineWidth   = 0.5;
+		ctx.strokeStyle = p.grid;
+		ctx.globalAlpha = 0.18;
 		for ( var cm = 0; cm * SCALE < W + SCALE; cm++ ) {
-			for ( var mm = 1; mm < 10; mm++ ) {
-				ctx.strokeStyle = p.gridMm;
-				ctx.beginPath();
-				ctx.moveTo( cm * SCALE + mm * SCALE / 10, RULER_H );
-				ctx.lineTo( cm * SCALE + mm * SCALE / 10, H );
-				ctx.stroke();
-			}
-			ctx.strokeStyle = p.gridCm;
 			ctx.beginPath();
-			ctx.moveTo( cm * SCALE, RULER_H ); ctx.lineTo( cm * SCALE, H ); ctx.stroke();
+			ctx.moveTo( cm * SCALE, 0 );
+			ctx.lineTo( cm * SCALE, H );
+			ctx.stroke();
 		}
-		for ( var row = 0; RULER_H + row * SCALE < H; row++ ) {
-			ctx.strokeStyle = p.gridCm;
+		for ( var row = 0; row * SCALE < H + SCALE; row++ ) {
 			ctx.beginPath();
-			ctx.moveTo( 0, RULER_H + row * SCALE ); ctx.lineTo( W, RULER_H + row * SCALE ); ctx.stroke();
+			ctx.moveTo( 0, row * SCALE );
+			ctx.lineTo( W, row * SCALE );
+			ctx.stroke();
 		}
+		ctx.globalAlpha = 1.0;
 	}
 
 	/* -- main draw -- */
@@ -359,21 +172,13 @@ function buildWidget( container ) {
 		ctx.clearRect( 0, 0, W, H );
 		var p = palette();
 		drawGrid( p );
-		drawRuler( p );
 
 		var A = verts[ 0 ], B = verts[ 1 ], C = verts[ 2 ];
-		var a = dist( B, C ), b = dist( C, A ), c = dist( A, B );
 
-		var G   = centroid( A, B, C );
-		var Ma  = midpoint( B, C );
-		var Mb  = midpoint( C, A );
-		var Mc  = midpoint( A, B );
-
-		var angA = angleDeg( A, B, C );
-		var angB = angleDeg( B, A, C );
-		var angC = angleDeg( C, A, B );
-
-		var cx3 = ( A.x + B.x + C.x ) / 3, cy3 = ( A.y + B.y + C.y ) / 3;
+		var G  = centroid( A, B, C );
+		var Ma = midpoint( B, C );
+		var Mb = midpoint( C, A );
+		var Mc = midpoint( A, B );
 
 		/* 1. dashed medians — full vertex-to-midpoint lines */
 		ctx.save();
@@ -421,7 +226,7 @@ function buildWidget( container ) {
 		ctx.textBaseline = 'middle';
 
 		/* vertex names */
-		ctx.font = '700 17px sans-serif';
+		ctx.font = "italic 700 18px 'Latin Modern Math', 'STIX Two Math', 'Computer Modern', 'Times New Roman', serif";
 		[ A, B, C ].forEach( function ( V, i ) {
 			var lbl = labelOffset( V, verts.filter( function ( _, j ) { return j !== i; } ), 26 );
 			ctx.fillStyle = p.tri; ctx.textAlign = 'center';
@@ -429,36 +234,12 @@ function buildWidget( container ) {
 		} );
 
 		/* G label */
-		ctx.fillStyle = p.cen; ctx.font = '700 17px sans-serif'; ctx.textAlign = 'center';
+		ctx.fillStyle = p.cen;
+		ctx.font = "italic 700 18px 'Latin Modern Math', 'STIX Two Math', 'Computer Modern', 'Times New Roman', serif";
+		ctx.textAlign = 'center';
 		ctx.fillText( 'G', G.x + 16, G.y - 16 );
 
-		/* side length labels */
-		ctx.font = '500 14px sans-serif';
-		[
-			{ p: { x: ( B.x + C.x ) / 2, y: ( B.y + C.y ) / 2 }, lbl: 'a = ' + fmt( toCm( a ) ) + ' ' + msg.scaleUnit },
-			{ p: { x: ( C.x + A.x ) / 2, y: ( C.y + A.y ) / 2 }, lbl: 'b = ' + fmt( toCm( b ) ) + ' ' + msg.scaleUnit },
-			{ p: { x: ( A.x + B.x ) / 2, y: ( A.y + B.y ) / 2 }, lbl: 'c = ' + fmt( toCm( c ) ) + ' ' + msg.scaleUnit }
-		].forEach( function ( item ) {
-			var dx2 = item.p.x - cx3, dy2 = item.p.y - cy3;
-			var l2  = Math.hypot( dx2, dy2 ) || 1;
-			ctx.fillStyle = p.text; ctx.textAlign = 'center';
-			ctx.fillText( item.lbl, item.p.x + dx2 / l2 * 20, item.p.y + dy2 / l2 * 20 );
-		} );
-
 		ctx.restore();
-
-		/* -- stats panel -- */
-		$( 'hw-sa'  ).textContent = fmt( toCm( a ) )          + ' ' + msg.scaleUnit;
-		$( 'hw-sb'  ).textContent = fmt( toCm( b ) )          + ' ' + msg.scaleUnit;
-		$( 'hw-sc'  ).textContent = fmt( toCm( c ) )          + ' ' + msg.scaleUnit;
-		$( 'hw-aa'  ).textContent = fmt( angA )                + '°';
-		$( 'hw-ab'  ).textContent = fmt( angB )                + '°';
-		$( 'hw-ac'  ).textContent = fmt( angC )                + '°';
-		$( 'hw-per' ).textContent = fmt( toCm( a + b + c ) )  + ' ' + msg.scaleUnit;
-		$( 'hw-gc'  ).textContent = '(' + fmt( toCm( G.x ) )  + ', ' + fmt( toCm( G.y - RULER_H ) ) + ') ' + msg.scaleUnit;
-		$( 'hw-ma'  ).textContent = fmt( toCm( dist( A, Ma ) ) ) + ' ' + msg.scaleUnit;
-		$( 'hw-mb'  ).textContent = fmt( toCm( dist( B, Mb ) ) ) + ' ' + msg.scaleUnit;
-		$( 'hw-mc'  ).textContent = fmt( toCm( dist( C, Mc ) ) ) + ' ' + msg.scaleUnit;
 	}
 
 	/* -- resize -- */
@@ -489,7 +270,7 @@ function buildWidget( container ) {
 	function clamp( pt ) {
 		return {
 			x: Math.max( 10, Math.min( W - 10, pt.x ) ),
-			y: Math.max( RULER_H + 4, Math.min( H - 10, pt.y ) )
+			y: Math.max( 4, Math.min( H - 10, pt.y ) )
 		};
 	}
 
