@@ -13,151 +13,33 @@
 var messages = /* I18N_START */ {
     "en": {
         "_name": "Orthocentre",
-        "altA": "Altitude hₐ",
-        "altB": "Altitude h_b",
-        "altC": "Altitude h_c",
-        "centre": "Centre H",
-        "footA": "Foot Hₐ on BC",
-        "footB": "Foot H_b on CA",
-        "footC": "Foot H_c on AB",
-        "hint": "Drag any vertex to see how the orthocentre changes (Scale: 1 cm = 40 px)",
-        "orthocentre": "Orthocentre",
-        "perimeter": "Perimeter",
-        "scaleUnit": "cm",
-        "sideA": "Side a (BC)",
-        "sideB": "Side b (CA)",
-        "sideC": "Side c (AB)",
-        "angleA": "Angle A",
-        "angleB": "Angle B",
-        "angleC": "Angle C",
-        "triangle": "Triangle"
+        "hint": "Drag any vertex to see how the orthocentre changes"
     },
     "es": {
         "_name": "Ortocentro",
-        "altA": "Altura hₐ",
-        "altB": "Altura h_b",
-        "altC": "Altura h_c",
-        "centre": "Centro H",
-        "footA": "Pie Hₐ en BC",
-        "footB": "Pie H_b en CA",
-        "footC": "Pie H_c en AB",
-        "hint": "Arrastra un vértice para ver cómo se mueve el ortocentro (Escala: 1 cm = 40 px)",
-        "orthocentre": "Ortocentro",
-        "perimeter": "Perímetro",
-        "scaleUnit": "cm",
-        "sideA": "Lado a (BC)",
-        "sideB": "Lado b (CA)",
-        "sideC": "Lado c (AB)",
-        "angleA": "Ángulo A",
-        "angleB": "Ángulo B",
-        "angleC": "Ángulo C",
-        "triangle": "Triángulo"
+        "hint": "Arrastra un vértice para ver cómo se mueve el ortocentro"
     },
     "eu": {
         "_name": "Ortozentro",
-        "altA": "Altuera hₐ",
-        "altB": "Altuera h_b",
-        "altC": "Altuera h_c",
-        "centre": "H ortozentroa",
-        "footA": "Hₐ oina BC-n",
-        "footB": "H_b oina CA-n",
-        "footC": "H_c oina AB-n",
-        "hint": "Edozein erpin mugitu ortozentroa nola mugitzen den ikusteko (Eskala: 1 cm = 40 px)",
-        "orthocentre": "Ortozentro",
-        "perimeter": "Perimetroa",
-        "scaleUnit": "cm",
-        "sideA": "a aldea (BC)",
-        "sideB": "b aldea (CA)",
-        "sideC": "c aldea (AB)",
-        "angleA": "A angelua",
-        "angleB": "B angelua",
-        "angleC": "C angelua",
-        "triangle": "Triangelua"
+        "hint": "Edozein erpin mugitu ortozentroa nola mugitzen den ikusteko"
     },
     "fr": {
         "_name": "Orthocentre",
-        "altA": "Hauteur hₐ",
-        "altB": "Hauteur h_b",
-        "altC": "Hauteur h_c",
-        "centre": "Centre H",
-        "footA": "Pied Hₐ sur BC",
-        "footB": "Pied H_b sur CA",
-        "footC": "Pied H_c sur AB",
-        "hint": "Faites glisser n'importe quel sommet pour voir comment l'orthocentre change (Échelle : 1 cm = 40 px)",
-        "orthocentre": "Orthocentre",
-        "perimeter": "Périmètre",
-        "scaleUnit": "cm",
-        "sideA": "Côté a (BC)",
-        "sideB": "Côté b (CA)",
-        "sideC": "Côté c (AB)",
-        "angleA": "Angle A",
-        "angleB": "Angle B",
-        "angleC": "Angle C",
-        "triangle": "Triangle"
+        "hint": "Faites glisser n'importe quel sommet pour voir comment l'orthocentre change"
     },
     "ga": {
         "_name": "Ortalár",
-        "altA": "Airde hₐ",
-        "altB": "Airde h_b",
-        "altC": "Airde h_c",
-        "centre": "Lár H",
-        "footA": "Bun Hₐ ar BC",
-        "footB": "Bun H_b ar CA",
-        "footC": "Bun H_c ar AB",
-        "hint": "Tarraing aon rinn chun a fheiceáil conas a athraíonn an t-ortalár (Scála: 1 cm = 40 px)",
-        "orthocentre": "Ortalár",
-        "perimeter": "Imlíne",
-        "scaleUnit": "cm",
-        "sideA": "Taobh a (BC)",
-        "sideB": "Taobh b (CA)",
-        "sideC": "Taobh c (AB)",
-        "angleA": "Uillinn A",
-        "angleB": "Uillinn B",
-        "angleC": "Uillinn C",
-        "triangle": "Triantán"
+        "hint": "Tarraing aon rinn chun a fheiceáil conas a athraíonn an t-ortalár"
     },
     "nl": {
         "_name": "Hoogtepunt van een driehoek",
-        "altA": "Hoogte hₐ",
-        "altB": "Hoogte h_b",
-        "altC": "Hoogte h_c",
-        "centre": "Middelpunt H",
-        "footA": "Voet Hₐ op BC",
-        "footB": "Voet H_b op CA",
-        "footC": "Voet H_c op AB",
-        "hint": "Sleep een hoekpunt om te zien hoe het hoogtepunt verandert (Schaal: 1 cm = 40 px)",
-        "orthocentre": "Hoogtepunt",
-        "perimeter": "Omtrek",
-        "scaleUnit": "cm",
-        "sideA": "Zijde a (BC)",
-        "sideB": "Zijde b (CA)",
-        "sideC": "Zijde c (AB)",
-        "angleA": "Hoek A",
-        "angleB": "Hoek B",
-        "angleC": "Hoek C",
-        "triangle": "Driehoek"
+        "hint": "Sleep een hoekpunt om te zien hoe het hoogtepunt verandert"
     }
 } /* I18N_END */
-var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-var banana = new Banana(lang.split('-')[0]);
-banana.load(messages);
-
-function t(key, vars) {
-    var args = Array.isArray(vars) ? vars : [];
-    var str = banana.i18n(key, ...args);
-    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
-        Object.keys(vars).forEach(function(k) {
-            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
-        });
-    }
-    return str;
-}
-
-;
 
 /* ── Constants ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var SCALE   = 40;   /* pixels per centimetre  */
-var RULER_H = 36;   /* ruler strip height (px) */
+var RULER_H = 0;    /* ruler removed */
 var DPR     = window.devicePixelRatio || 1;
 
 /* ── Geometry helpers ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
@@ -169,6 +51,13 @@ function footPerp( P, V1, V2 ) {
 	var dx = V2.x - V1.x, dy = V2.y - V1.y;
 	var t  = ( ( P.x - V1.x ) * dx + ( P.y - V1.y ) * dy ) / ( dx * dx + dy * dy );
 	return { x: V1.x + t * dx, y: V1.y + t * dy };
+}
+
+/* Returns the projection parameter t (foot = V1 + t*(V2-V1));
+ * t < 0 means foot beyond V1, t > 1 means foot beyond V2. */
+function footT( P, V1, V2 ) {
+	var dx = V2.x - V1.x, dy = V2.y - V1.y;
+	return ( ( P.x - V1.x ) * dx + ( P.y - V1.y ) * dy ) / ( dx * dx + dy * dy );
 }
 
 /*
@@ -216,38 +105,11 @@ function buildWidget( container ) {
 	var lang = ( window.mw && mw.config.get( 'wgUserLanguage' ) ) || 'en';
 	lang = lang.split( '-' )[ 0 ];
 	if ( !messages[ lang ] ) { lang = 'en'; }
-	var msg = messages[ lang ];
 
 	/* -- HTML skeleton -- */
 	container.innerHTML =
 		'<div class="hw-orthocentre">' +
 			'<canvas class="hw-canvas"></canvas>' +
-			'<div class="hw-params">' +
-				'<div class="hw-card">' +
-					'<div class="hw-card-title">' +
-						'<span class="hw-badge hw-badge-t">' + msg.triangle + '</span>' +
-					'</div>' +
-					'<div class="hw-row"><span>' + msg.sideA     + '</span><span id="hw-sa"></span></div>' +
-					'<div class="hw-row"><span>' + msg.sideB     + '</span><span id="hw-sb"></span></div>' +
-					'<div class="hw-row"><span>' + msg.sideC     + '</span><span id="hw-sc"></span></div>' +
-					'<div class="hw-row"><span>' + msg.angleA    + '</span><span id="hw-aa"></span></div>' +
-					'<div class="hw-row"><span>' + msg.angleB    + '</span><span id="hw-ab"></span></div>' +
-					'<div class="hw-row"><span>' + msg.angleC    + '</span><span id="hw-ac"></span></div>' +
-					'<div class="hw-row"><span>' + msg.perimeter + '</span><span id="hw-per"></span></div>' +
-				'</div>' +
-				'<div class="hw-card">' +
-					'<div class="hw-card-title">' +
-						'<span class="hw-badge hw-badge-c">' + msg.orthocentre + '</span>' +
-					'</div>' +
-					'<div class="hw-row"><span>' + msg.centre + '</span><span id="hw-hc"></span></div>' +
-					'<div class="hw-row"><span>' + msg.footA  + '</span><span id="hw-ha"></span></div>' +
-					'<div class="hw-row"><span>' + msg.footB  + '</span><span id="hw-hb"></span></div>' +
-					'<div class="hw-row"><span>' + msg.footC  + '</span><span id="hw-hcc"></span></div>' +
-					'<div class="hw-row"><span>' + msg.altA   + '</span><span id="hw-alt-a"></span></div>' +
-					'<div class="hw-row"><span>' + msg.altB   + '</span><span id="hw-alt-b"></span></div>' +
-					'<div class="hw-row"><span>' + msg.altC   + '</span><span id="hw-alt-c"></span></div>' +
-				'</div>' +
-			'</div>' +
 		'</div>';
 
 	/* -- Footer -- */
@@ -262,7 +124,7 @@ function buildWidget( container ) {
 	}
 	var fText = document.createElement( 'span' );
 	fText.className = 'hw-footer__text';
-	fText.textContent = msg.hint;
+	fText.textContent = messages[ lang ].hint;
 	footer.appendChild( fLogo );
 	footer.appendChild( fText );
 	container.appendChild( footer );
@@ -271,12 +133,10 @@ function buildWidget( container ) {
 	var ctx     = canvas.getContext( '2d' );
 	var W, H, verts, dragging = -1;
 
-	function $( id ) { return container.querySelector( '#' + id ); }
-
 	/* -- vertex initialisation -- */
 	function initVerts() {
 		var ox = W / 2 - 5.5 * SCALE;
-		var oy = RULER_H + 10;
+		var oy = 20;
 		verts = [
 			{ x: ox + 5.5 * SCALE, y: oy + 1.2 * SCALE },
 			{ x: ox + 1.2 * SCALE, y: oy + 8.0 * SCALE },
@@ -322,7 +182,7 @@ function buildWidget( container ) {
 		var rl  = Math.hypot( rdx, rdy );
 		if ( rl < 1e-6 ) { return; }
 		var ru  = { x: rdx / rl, y: rdy / rl };
-		var SZ  = 8;
+		var SZ  = 12;
 		ctx.strokeStyle = color;
 		ctx.lineWidth   = 1;
 		ctx.beginPath();
@@ -332,72 +192,26 @@ function buildWidget( container ) {
 		ctx.stroke();
 	}
 
-	/* -- ruler -- */
-	function drawRuler( p ) {
-		ctx.fillStyle = p.ruleBg;
-		ctx.fillRect( 0, 0, W, RULER_H );
-		ctx.strokeStyle = p.ruleTick;
-		ctx.lineWidth   = 0.5;
-		ctx.beginPath(); ctx.moveTo( 0, RULER_H ); ctx.lineTo( W, RULER_H ); ctx.stroke();
-
-		var maxCm = Math.ceil( W / SCALE ) + 1;
-		ctx.font         = '10px sans-serif';
-		ctx.textBaseline = 'bottom';
-
-		for ( var cm = 0; cm <= maxCm; cm++ ) {
-			var px = cm * SCALE;
-			if ( px > W + SCALE ) { break; }
-			ctx.strokeStyle = p.ruleTick; ctx.lineWidth = 0.8;
-			ctx.beginPath(); ctx.moveTo( px, RULER_H - 10 ); ctx.lineTo( px, RULER_H ); ctx.stroke();
-			if ( cm > 0 ) {
-				ctx.fillStyle = p.ruleText; ctx.textAlign = 'center';
-				ctx.fillText( cm, px, RULER_H - 12 );
-			}
-			for ( var mm = 1; mm < 10; mm++ ) {
-				var mpx = px + mm * SCALE / 10;
-				if ( mpx > W ) { break; }
-				ctx.strokeStyle = p.ruleTick; ctx.lineWidth = 0.5;
-				ctx.beginPath();
-				ctx.moveTo( mpx, RULER_H - ( mm === 5 ? 7 : 4 ) );
-				ctx.lineTo( mpx, RULER_H );
-				ctx.stroke();
-			}
-		}
-		ctx.fillStyle    = p.ruleText;
-		ctx.textAlign    = 'left';
-		ctx.textBaseline = 'middle';
-		ctx.font         = '500 10px sans-serif';
-		ctx.fillText( msg.scaleUnit, 4, RULER_H / 2 );
-	}
-
-	/* -- grid -- */
+	/* -- grid (major cm lines only, very faint) -- */
 	function drawGrid( p ) {
-		ctx.lineWidth = 1.0;
+		ctx.lineWidth   = 0.5;
 		ctx.strokeStyle = p.grid;
+		ctx.globalAlpha = 0.18;
+		/* vertical lines */
 		for ( var cm = 0; cm * SCALE < W + SCALE; cm++ ) {
-			ctx.globalAlpha = 0.4;
-			for ( var mm = 1; mm < 10; mm++ ) {
-				ctx.beginPath();
-				ctx.moveTo( cm * SCALE + mm * SCALE / 10, RULER_H );
-				ctx.lineTo( cm * SCALE + mm * SCALE / 10, H );
-				ctx.stroke();
-			}
-			ctx.globalAlpha = 1.0;
 			ctx.beginPath();
-			ctx.moveTo( cm * SCALE, RULER_H ); ctx.lineTo( cm * SCALE, H ); ctx.stroke();
+			ctx.moveTo( cm * SCALE, 0 );
+			ctx.lineTo( cm * SCALE, H );
+			ctx.stroke();
 		}
-		for ( var row = 0; RULER_H + row * SCALE < H; row++ ) {
-			ctx.globalAlpha = 0.4;
-			for ( var rmm = 1; rmm < 10; rmm++ ) {
-				var ymm = RULER_H + row * SCALE + rmm * SCALE / 10;
-				if ( ymm < H ) {
-					ctx.beginPath(); ctx.moveTo( 0, ymm ); ctx.lineTo( W, ymm ); ctx.stroke();
-				}
-			}
-			ctx.globalAlpha = 1.0;
+		/* horizontal lines */
+		for ( var row = 0; row * SCALE < H + SCALE; row++ ) {
 			ctx.beginPath();
-			ctx.moveTo( 0, RULER_H + row * SCALE ); ctx.lineTo( W, RULER_H + row * SCALE ); ctx.stroke();
+			ctx.moveTo( 0, row * SCALE );
+			ctx.lineTo( W, row * SCALE );
+			ctx.stroke();
 		}
+		ctx.globalAlpha = 1.0;
 	}
 
 	/* -- main draw -- */
@@ -406,7 +220,7 @@ function buildWidget( container ) {
 		ctx.clearRect( 0, 0, W, H );
 		var p = palette();
 		drawGrid( p );
-		drawRuler( p );
+		/* ruler removed */
 
 		var A = verts[ 0 ], B = verts[ 1 ], C = verts[ 2 ];
 		var a = dist( B, C ), b = dist( C, A ), c = dist( A, B );
@@ -434,14 +248,60 @@ function buildWidget( container ) {
 		} );
 		ctx.restore();
 
-		/* 2. dashed extensions: foot → H (only when obtuse, showing H outside) */
+		/* 2. dashed extensions for obtuse triangle */
 		if ( isObtuse ) {
 			ctx.save();
 			ctx.strokeStyle = footDash; ctx.lineWidth = 1.4; ctx.setLineDash( [ 5, 5 ] );
-			[ Ha, Hb, Hc ].forEach( function ( F ) {
-				ctx.beginPath(); ctx.moveTo( F.x, F.y ); ctx.lineTo( Hpt.x, Hpt.y ); ctx.stroke();
+
+			/* 2a. Extend triangle SIDES with dashes where a foot falls outside the segment.
+			 *     footT gives projection parameter t; outside [0,1] means foot is off the edge.
+			 *     Side a = BC (foot Ha from A), side b = CA (foot Hb from B), side c = AB (foot Hc from C). */
+			[
+				{ foot: Ha, V1: B, V2: C },   /* altitude from A, foot on line BC */
+				{ foot: Hb, V1: C, V2: A },   /* altitude from B, foot on line CA */
+				{ foot: Hc, V1: A, V2: B }    /* altitude from C, foot on line AB */
+			].forEach( function ( s ) {
+				var t = footT( s.foot, s.V1, s.V2 );
+				if ( t < -0.001 ) {
+					/* foot is beyond V1 — draw dashed from V1 to foot */
+					ctx.beginPath();
+					ctx.moveTo( s.V1.x, s.V1.y );
+					ctx.lineTo( s.foot.x, s.foot.y );
+					ctx.stroke();
+				} else if ( t > 1.001 ) {
+					/* foot is beyond V2 — draw dashed from V2 to foot */
+					ctx.beginPath();
+					ctx.moveTo( s.V2.x, s.V2.y );
+					ctx.lineTo( s.foot.x, s.foot.y );
+					ctx.stroke();
+				}
 			} );
-			ctx.setLineDash( [] ); ctx.restore();
+
+			/* 2b. Extend altitude lines with dashes from foot through to H.
+			 *     The solid segment already covers vertex→foot; the dashed part is foot→H. */
+			[
+				[ A, Ha ],
+				[ B, Hb ],
+				[ C, Hc ]
+			].forEach( function ( pr ) {
+				var V = pr[ 0 ], F = pr[ 1 ];
+				var dx = F.x - V.x, dy = F.y - V.y;
+				var len = Math.hypot( dx, dy );
+				if ( len < 1e-6 ) { return; }
+				var ux = dx / len, uy = dy / len;
+				/* scalar projection of (H - F) onto the altitude direction */
+				var toH = ( Hpt.x - F.x ) * ux + ( Hpt.y - F.y ) * uy;
+				if ( Math.abs( toH ) < 1 ) { return; } /* foot is essentially at H */
+				/* extend from foot toward H (+ 8 px overshoot) */
+				var ext = toH + 8 * Math.sign( toH );
+				ctx.beginPath();
+				ctx.moveTo( F.x, F.y );
+				ctx.lineTo( F.x + ux * ext, F.y + uy * ext );
+				ctx.stroke();
+			} );
+
+			ctx.setLineDash( [] );
+			ctx.restore();
 		}
 
 		/* 3. triangle fill + stroke */
@@ -489,7 +349,7 @@ function buildWidget( container ) {
 		ctx.textBaseline = 'middle';
 
 		/* vertex names */
-		ctx.font = '700 17px sans-serif';
+		ctx.font = "italic 700 18px 'Latin Modern Math', 'STIX Two Math', 'Computer Modern', 'Times New Roman', serif";
 		[ A, B, C ].forEach( function ( V, i ) {
 			var lbl = labelOffset( V, verts.filter( function ( _, j ) { return j !== i; } ), 26 );
 			ctx.fillStyle = p.tri; ctx.textAlign = 'center';
@@ -497,39 +357,15 @@ function buildWidget( container ) {
 		} );
 
 		/* H label — offset +16, −16 from dot */
-		ctx.fillStyle = p.orth; ctx.font = '700 17px sans-serif'; ctx.textAlign = 'center';
+		ctx.fillStyle = p.orth;
+		ctx.font = "italic 700 18px 'Latin Modern Math', 'STIX Two Math', 'Computer Modern', 'Times New Roman', serif";
+		ctx.textAlign = 'center';
 		ctx.fillText( 'H', Hpt.x + 16, Hpt.y - 16 );
 
-		/* side length labels */
-		ctx.font = '500 14px sans-serif';
-		[
-			{ p: { x: ( B.x + C.x ) / 2, y: ( B.y + C.y ) / 2 }, lbl: 'a = ' + fmt( toCm( a ) ) + ' ' + msg.scaleUnit },
-			{ p: { x: ( C.x + A.x ) / 2, y: ( C.y + A.y ) / 2 }, lbl: 'b = ' + fmt( toCm( b ) ) + ' ' + msg.scaleUnit },
-			{ p: { x: ( A.x + B.x ) / 2, y: ( A.y + B.y ) / 2 }, lbl: 'c = ' + fmt( toCm( c ) ) + ' ' + msg.scaleUnit }
-		].forEach( function ( item ) {
-			var dx2 = item.p.x - cx3, dy2 = item.p.y - cy3;
-			var l2  = Math.hypot( dx2, dy2 ) || 1;
-			ctx.fillStyle = p.text; ctx.textAlign = 'center';
-			ctx.fillText( item.lbl, item.p.x + dx2 / l2 * 20, item.p.y + dy2 / l2 * 20 );
-		} );
+		/* side length labels removed */
 
 		ctx.restore();
 
-		/* -- stats panel -- */
-		$( 'hw-sa'    ).textContent = fmt( toCm( a ) )           + ' ' + msg.scaleUnit;
-		$( 'hw-sb'    ).textContent = fmt( toCm( b ) )           + ' ' + msg.scaleUnit;
-		$( 'hw-sc'    ).textContent = fmt( toCm( c ) )           + ' ' + msg.scaleUnit;
-		$( 'hw-aa'    ).textContent = fmt( angA )                 + '°';
-		$( 'hw-ab'    ).textContent = fmt( angB )                 + '°';
-		$( 'hw-ac'    ).textContent = fmt( angC )                 + '°';
-		$( 'hw-per'   ).textContent = fmt( toCm( a + b + c ) )   + ' ' + msg.scaleUnit;
-		$( 'hw-hc'    ).textContent = '(' + fmt( toCm( Hpt.x ) ) + ', ' + fmt( toCm( Hpt.y - RULER_H ) ) + ') ' + msg.scaleUnit;
-		$( 'hw-ha'    ).textContent = '(' + fmt( toCm( Ha.x ) )  + ', ' + fmt( toCm( Ha.y  - RULER_H ) ) + ') ' + msg.scaleUnit;
-		$( 'hw-hb'    ).textContent = '(' + fmt( toCm( Hb.x ) )  + ', ' + fmt( toCm( Hb.y  - RULER_H ) ) + ') ' + msg.scaleUnit;
-		$( 'hw-hcc'   ).textContent = '(' + fmt( toCm( Hc.x ) )  + ', ' + fmt( toCm( Hc.y  - RULER_H ) ) + ') ' + msg.scaleUnit;
-		$( 'hw-alt-a' ).textContent = fmt( toCm( dist( A, Ha ) ) ) + ' ' + msg.scaleUnit;
-		$( 'hw-alt-b' ).textContent = fmt( toCm( dist( B, Hb ) ) ) + ' ' + msg.scaleUnit;
-		$( 'hw-alt-c' ).textContent = fmt( toCm( dist( C, Hc ) ) ) + ' ' + msg.scaleUnit;
 	}
 
 	/* -- resize -- */
@@ -560,7 +396,7 @@ function buildWidget( container ) {
 	function clamp( pt ) {
 		return {
 			x: Math.max( 10, Math.min( W - 10, pt.x ) ),
-			y: Math.max( RULER_H + 4, Math.min( H - 10, pt.y ) )
+			y: Math.max( 4, Math.min( H - 10, pt.y ) )
 		};
 	}
 
