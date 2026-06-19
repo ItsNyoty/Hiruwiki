@@ -1,3 +1,9 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
 /* =========================================================
  * Hiruwiki module: incentre
  * Visualisation of the incircle inscribed in a triangle
@@ -12,168 +18,32 @@
 	
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {
-        "angleA": "Angle A",
-        "angleB": "Angle B",
-        "angleC": "Angle C",
-        "area": "Àrea",
-        "circumference": "Circumferència",
-        "scaleUnit": "cm"
-    },
+    "ca": {},
     "en": {
         "_name": "Incentre",
-        "angleA": "Angle A",
-        "angleB": "Angle B",
-        "angleC": "Angle C",
-        "area": "Area",
-        "centre": "Centre I",
-        "circumference": "Circumference",
-        "formula": "r = Area / s",
-        "hint": "Drag any vertex · Scale: 1 cm = 40 px",
-        "incircle": "Incircle",
-        "perimeter": "Perimeter",
-        "radius": "Radius (r)",
-        "scaleUnit": "cm",
-        "sideA": "Side a (BC)",
-        "sideB": "Side b (CA)",
-        "sideC": "Side c (AB)",
-        "touchAB": "Touch pt. AB",
-        "touchBC": "Touch pt. BC",
-        "touchCA": "Touch pt. CA",
-        "triangle": "Triangle"
+        "hint": "Drag any vertex to explore the incircle"
     },
     "es": {
         "_name": "Incentro",
-        "angleA": "Ángulo A",
-        "angleB": "Ángulo B",
-        "angleC": "Ángulo C",
-        "area": "Área",
-        "centre": "Centro I",
-        "circumference": "Circunferencia",
-        "formula": "r = Área / s",
-        "hint": "Arrastra un vértice · Escala: 1 cm = 40 px",
-        "incircle": "Incírculo",
-        "perimeter": "Perímetro",
-        "radius": "Radio (r)",
-        "scaleUnit": "cm",
-        "sideA": "Lado a (BC)",
-        "sideB": "Lado b (CA)",
-        "sideC": "Lado c (AB)",
-        "touchAB": "Pt. tangencia AB",
-        "touchBC": "Pt. tangencia BC",
-        "touchCA": "Pt. tangencia CA",
-        "triangle": "Triángulo"
+        "hint": "Arrastra un vértice para explorar el incírculo"
     },
     "eu": {
         "_name": "Inzentroa",
-        "angleA": "A angelua",
-        "angleB": "B angelua",
-        "angleC": "C angelua",
-        "area": "Azalera",
-        "centre": "I intzentroa",
-        "circumference": "Zirkunferentzia",
-        "formula": "r = Azalera / s",
-        "hint": "Erpinak mugitu ditzakezu - Eskala: 1 cm= 40 px",
-        "incircle": "Zirkulu inskribatua",
-        "perimeter": "Perimetroa",
-        "radius": "Erradioa (r)",
-        "scaleUnit": "cm",
-        "sideA": "a aldea (BC)",
-        "sideB": "b aldea (CA)",
-        "sideC": "c aldea (AB)",
-        "touchAB": "AB tangentea",
-        "touchBC": "BC tangentea",
-        "touchCA": "CA tangentea",
-        "triangle": "Triangelua"
+        "hint": "Erpinak mugitu ditzakezu zirkulu inskribuatua ikusteko"
     },
     "fr": {
         "_name": "Incentre",
-        "angleA": "Angle A",
-        "angleB": "Angle B",
-        "angleC": "Angle C",
-        "area": "Aire",
-        "centre": "Centre I",
-        "circumference": "Circonférence",
-        "formula": "r = Aire / s",
-        "hint": "Faites glisser un sommet · Échelle : 1 cm = 40 px",
-        "incircle": "Cercle inscrit",
-        "perimeter": "Périmètre",
-        "radius": "Rayon (r)",
-        "scaleUnit": "cm",
-        "sideA": "Côté a (BC)",
-        "sideB": "Côté b (CA)",
-        "sideC": "Côté c (AB)",
-        "touchAB": "Pt de contact AB",
-        "touchBC": "Pt de contact BC",
-        "touchCA": "Pt de contact CA",
-        "triangle": "Triangle"
+        "hint": "Faites glisser un sommet pour explorer le cercle inscrit"
     },
     "ga": {
         "_name": "Lárionad",
-        "angleA": "Uillinn A",
-        "angleB": "Uillinn B",
-        "angleC": "Uillinn C",
-        "area": "Limistéar",
-        "centre": "Ionad I",
-        "circumference": "Imlíne",
-        "formula": "r = Achar / s",
-        "hint": "Tarraing aon bhuaicphointe · Scála: 1 cm = 40 px",
-        "incircle": "I gciorcal",
-        "perimeter": "Imlíne",
-        "radius": "Ga (r)",
-        "scaleUnit": "cm",
-        "sideA": "Taobh a (BC)",
-        "sideB": "Taobh b (CA)",
-        "sideC": "Taobh c (AB)",
-        "touchAB": "Teagmháil pt. AB",
-        "touchBC": "Teagmháil pt. BC",
-        "touchCA": "Teagmháil pt. CA",
-        "triangle": "Triantán"
+        "hint": "Tarraing aon bhuaicphointe chun an ciorcal isteach a iniúchadh"
     },
-    "it": {
-        "angleA": "Angolo A"
-    },
-    "ko": {
-        "angleA": "각 A",
-        "angleB": "각 B",
-        "angleC": "각 C",
-        "area": "면적",
-        "centre": "내심 I",
-        "circumference": "원둘레",
-        "formula": "r = 면적 / s",
-        "incircle": "내접원",
-        "perimeter": "둘레",
-        "radius": "반지름 (r)",
-        "scaleUnit": "cm",
-        "sideA": "선분 a (BC)",
-        "sideB": "선분 b (CA)",
-        "sideC": "선분 c (AB)",
-        "touchAB": "AB 위 수선의 발",
-        "touchBC": "BC 위 수선의 발",
-        "touchCA": "CA 위 수선의 발",
-        "triangle": "삼각형"
-    },
+    "it": {},
+    "ko": {},
     "nl": {
         "_name": "Aangeschreven middelpunt",
-        "angleA": "Hoek A",
-        "angleB": "Hoek B",
-        "angleC": "Hoek C",
-        "area": "Oppervlakte",
-        "centre": "Middelpunt I",
-        "circumference": "Omtrek",
-        "formula": "r = Oppervlakte / s",
-        "hint": "Sleep een hoekpunt · Schaal: 1 cm = 40 px",
-        "incircle": "Ingebedde cirkel",
-        "perimeter": "Omtrek",
-        "radius": "Straal (r)",
-        "scaleUnit": "cm",
-        "sideA": "Zijde a (BC)",
-        "sideB": "Zijde b (CA)",
-        "sideC": "Zijde c (AB)",
-        "touchAB": "Raakpunt AB",
-        "touchBC": "Raakpunt BC",
-        "touchCA": "Raakpunt CA",
-        "triangle": "Driehoek"
+        "hint": "Sleep een hoekpunt om de ingeschreven cirkel te verkennen"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
@@ -195,7 +65,7 @@ function t(key, vars) {
 	 * Constants
 	 * ---------------------------------------------------------- */
 	var SCALE   = 40;   /* pixels per centimetre               */
-	var RULER_H = 36;   /* ruler strip height (px)             */
+	var RULER_H = 0;    /* ruler removed                       */
 	var DPR     = window.devicePixelRatio || 1;
 
 	/* ----------------------------------------------------------
@@ -259,40 +129,11 @@ function t(key, vars) {
 		var lang = ( window.mw && mw.config.get( 'wgUserLanguage' ) ) || 'en';
 		lang = lang.split( '-' )[ 0 ];
 		if ( !messages[ lang ] ) { lang = 'en'; }
-		var msg = messages[ lang ];
 
 		/* -- HTML skeleton -- */
 		container.innerHTML =
 			'<div class="hw-incentre">' +
 				'<canvas class="hw-canvas"></canvas>' +
-				'<div class="hw-params">' +
-					'<div class="hw-card">' +
-						'<div class="hw-card-title">' +
-							'<span class="hw-badge hw-badge-t">' + msg.triangle + '</span>' +
-						'</div>' +
-						'<div class="hw-row"><span>' + msg.sideA      + '</span><span id="hw-sa"></span></div>' +
-						'<div class="hw-row"><span>' + msg.sideB      + '</span><span id="hw-sb"></span></div>' +
-						'<div class="hw-row"><span>' + msg.sideC      + '</span><span id="hw-sc"></span></div>' +
-						'<div class="hw-row"><span>' + msg.angleA     + '</span><span id="hw-aa"></span></div>' +
-						'<div class="hw-row"><span>' + msg.angleB     + '</span><span id="hw-ab"></span></div>' +
-						'<div class="hw-row"><span>' + msg.angleC     + '</span><span id="hw-ac"></span></div>' +
-						'<div class="hw-row"><span>' + msg.perimeter  + '</span><span id="hw-per"></span></div>' +
-						'<div class="hw-row"><span>' + msg.area       + '</span><span id="hw-area"></span></div>' +
-					'</div>' +
-					'<div class="hw-card">' +
-						'<div class="hw-card-title">' +
-							'<span class="hw-badge hw-badge-c">' + msg.incircle + '</span>' +
-						'</div>' +
-						'<div class="hw-row"><span>' + msg.centre        + '</span><span id="hw-ic"></span></div>' +
-						'<div class="hw-row"><span>' + msg.radius        + '</span><span id="hw-ir"></span></div>' +
-						'<div class="hw-row"><span>' + msg.circumference + '</span><span id="hw-icc"></span></div>' +
-						'<div class="hw-row"><span>' + msg.area          + '</span><span id="hw-ia"></span></div>' +
-						'<div class="hw-row"><span>' + msg.touchBC       + '</span><span id="hw-t1"></span></div>' +
-						'<div class="hw-row"><span>' + msg.touchCA       + '</span><span id="hw-t2"></span></div>' +
-						'<div class="hw-row"><span>' + msg.touchAB       + '</span><span id="hw-t3"></span></div>' +
-						'<div class="hw-row"><span>' + msg.formula       + '</span><span id="hw-rf"></span></div>' +
-					'</div>' +
-				'</div>' +
 			'</div>';
 
 		// Footer — hint text from this module's own i18n, not loaded externally
@@ -313,13 +154,10 @@ function t(key, vars) {
 		var ctx    = canvas.getContext( '2d' );
 		var W, H, verts, dragging = -1;
 
-		/* helpers to read stat cells */
-		function $( id ) { return container.querySelector( '#' + id ); }
-
 		/* -- vertex initialisation -- */
 		function initVerts() {
 			var ox = W / 2 - 5.5 * SCALE;
-			var oy = RULER_H + 10;
+			var oy = 20;
 			verts = [
 				{ x: ox + 5.5 * SCALE, y: oy + 1.2 * SCALE },
 				{ x: ox + 1.2 * SCALE, y: oy + 8.0 * SCALE },
@@ -337,11 +175,7 @@ function t(key, vars) {
 				touch:       hiruwiki.getThemeColor('color-destructive', '#993556'),
 				contact:     hiruwiki.getThemeColor('color-error', '#E24B4A'),
 				text:        hiruwiki.getThemeColor('color-base', '#1a1a18'),
-				ruleBg:      hiruwiki.getThemeColor('background-color-neutral-subtle', 'rgba(241,239,232,.85)'),
-				ruleTick:    hiruwiki.getThemeColor('border-color-base', '#B4B2A9'),
-				ruleText:    hiruwiki.getThemeColor('color-placeholder', '#888780'),
-				gridMm:      'rgba(128,128,128,.04)',
-				gridCm:      'rgba(128,128,128,.08)',
+				grid:        hiruwiki.getThemeColor('border-color-base', '#B4B2A9'),
 				dotBg:       hiruwiki.getThemeColor('background-color-base', '#ffffff')
 			};
 		}
@@ -354,7 +188,7 @@ function t(key, vars) {
 			var rdx = I.x - T.x,    rdy = I.y - T.y;
 			var rl  = Math.hypot( rdx, rdy );
 			var ru  = { x: rdx / rl, y: rdy / rl };
-			var SZ  = 8;
+			var SZ  = 12;
 			ctx.strokeStyle = color;
 			ctx.lineWidth   = 1;
 			ctx.beginPath();
@@ -364,64 +198,26 @@ function t(key, vars) {
 			ctx.stroke();
 		}
 
-		/* -- ruler -- */
-		function drawRuler( p ) {
-			ctx.fillStyle = p.ruleBg;
-			ctx.fillRect( 0, 0, W, RULER_H );
-			ctx.strokeStyle = p.ruleTick;
-			ctx.lineWidth   = 0.5;
-			ctx.beginPath(); ctx.moveTo( 0, RULER_H ); ctx.lineTo( W, RULER_H ); ctx.stroke();
-
-			var maxCm = Math.ceil( W / SCALE ) + 1;
-			ctx.font          = '10px sans-serif';
-			ctx.textBaseline  = 'bottom';
-
-			for ( var cm = 0; cm <= maxCm; cm++ ) {
-				var px = cm * SCALE;
-				if ( px > W + SCALE ) { break; }
-				ctx.strokeStyle = p.ruleTick; ctx.lineWidth = 0.8;
-				ctx.beginPath(); ctx.moveTo( px, RULER_H - 10 ); ctx.lineTo( px, RULER_H ); ctx.stroke();
-				if ( cm > 0 ) {
-					ctx.fillStyle = p.ruleText; ctx.textAlign = 'center';
-					ctx.fillText( cm, px, RULER_H - 12 );
-				}
-				for ( var mm = 1; mm < 10; mm++ ) {
-					var mpx  = px + mm * SCALE / 10;
-					if ( mpx > W ) { break; }
-					ctx.strokeStyle = p.ruleTick; ctx.lineWidth = 0.5;
-					ctx.beginPath();
-					ctx.moveTo( mpx, RULER_H - ( mm === 5 ? 7 : 4 ) );
-					ctx.lineTo( mpx, RULER_H );
-					ctx.stroke();
-				}
-			}
-			ctx.fillStyle    = p.ruleText;
-			ctx.textAlign    = 'left';
-			ctx.textBaseline = 'middle';
-			ctx.font         = '500 10px sans-serif';
-			ctx.fillText( t('scaleUnit'), 4, RULER_H / 2 );
-		}
-
-		/* -- grid -- */
+		/* -- grid (major cm lines only, very faint) -- */
 		function drawGrid( p ) {
-			ctx.lineWidth = 0.5;
+			ctx.lineWidth   = 0.5;
+			ctx.strokeStyle = p.grid;
+			ctx.globalAlpha = 0.18;
+			/* vertical lines */
 			for ( var cm = 0; cm * SCALE < W + SCALE; cm++ ) {
-				for ( var mm = 1; mm < 10; mm++ ) {
-					ctx.strokeStyle = p.gridMm;
-					ctx.beginPath();
-					ctx.moveTo( cm * SCALE + mm * SCALE / 10, RULER_H );
-					ctx.lineTo( cm * SCALE + mm * SCALE / 10, H );
-					ctx.stroke();
-				}
-				ctx.strokeStyle = p.gridCm;
 				ctx.beginPath();
-				ctx.moveTo( cm * SCALE, RULER_H ); ctx.lineTo( cm * SCALE, H ); ctx.stroke();
+				ctx.moveTo( cm * SCALE, 0 );
+				ctx.lineTo( cm * SCALE, H );
+				ctx.stroke();
 			}
-			for ( var row = 0; RULER_H + row * SCALE < H; row++ ) {
-				ctx.strokeStyle = p.gridCm;
+			/* horizontal lines */
+			for ( var row = 0; row * SCALE < H + SCALE; row++ ) {
 				ctx.beginPath();
-				ctx.moveTo( 0, RULER_H + row * SCALE ); ctx.lineTo( W, RULER_H + row * SCALE ); ctx.stroke();
+				ctx.moveTo( 0, row * SCALE );
+				ctx.lineTo( W, row * SCALE );
+				ctx.stroke();
 			}
+			ctx.globalAlpha = 1.0;
 		}
 
 		/* -- main draw -- */
@@ -430,7 +226,6 @@ function t(key, vars) {
 			ctx.clearRect( 0, 0, W, H );
 			var p = palette();
 			drawGrid( p );
-			drawRuler( p );
 
 			var A = verts[ 0 ], B = verts[ 1 ], C = verts[ 2 ];
 			var ic = incircle( A, B, C );
@@ -533,7 +328,7 @@ function t(key, vars) {
 			ctx.textBaseline = 'middle';
 
 			/* vertex names */
-			ctx.font = '700 17px sans-serif';
+			ctx.font = "italic 700 18px 'Latin Modern Math', 'STIX Two Math', 'Computer Modern', 'Times New Roman', serif";
 			[ A, B, C ].forEach( function ( V, i ) {
 				var lbl = labelOffset( V, verts.filter( function ( _, j ) { return j !== i; } ), 26 );
 				ctx.fillStyle = p.tri; ctx.textAlign = 'center';
@@ -541,53 +336,24 @@ function t(key, vars) {
 			} );
 
 			/* incentre label */
-			ctx.fillStyle = p.circ; ctx.font = '700 17px sans-serif'; ctx.textAlign = 'center';
+			ctx.fillStyle = p.circ;
+			ctx.font = "italic 700 18px 'Latin Modern Math', 'STIX Two Math', 'Computer Modern', 'Times New Roman', serif";
+			ctx.textAlign = 'center';
 			ctx.fillText( 'I', ix + 16, iy - 16 );
 
-			/* side length labels */
-			var cx3 = ( A.x + B.x + C.x ) / 3, cy3 = ( A.y + B.y + C.y ) / 3;
-			ctx.font = '500 14px sans-serif';
-			[
-				{ p: { x: ( B.x + C.x ) / 2, y: ( B.y + C.y ) / 2 }, lbl: 'a = ' + fmt( toCm( a ) ) + ' ' + t('scaleUnit') },
-				{ p: { x: ( C.x + A.x ) / 2, y: ( C.y + A.y ) / 2 }, lbl: 'b = ' + fmt( toCm( b ) ) + ' ' + t('scaleUnit') },
-				{ p: { x: ( A.x + B.x ) / 2, y: ( A.y + B.y ) / 2 }, lbl: 'c = ' + fmt( toCm( c ) ) + ' ' + t('scaleUnit') }
-			].forEach( function ( item ) {
-				var dx2 = item.p.x - cx3, dy2 = item.p.y - cy3;
-				var l2  = Math.hypot( dx2, dy2 ) || 1;
-				ctx.fillStyle = p.text; ctx.textAlign = 'center';
-				ctx.fillText( item.lbl, item.p.x + dx2 / l2 * 20, item.p.y + dy2 / l2 * 20 );
-			} );
-
-			/* radius label (offset perpendicular to the radius line) */
-			ctx.fillStyle = p.rad; ctx.font = '500 14px sans-serif';
+			/* radius label (offset perpendicular to the radius line) — side measurements removed */
+			ctx.fillStyle = p.rad;
+			ctx.font = "italic 500 14px 'Latin Modern Math', 'STIX Two Math', 'Computer Modern', 'Times New Roman', serif";
 			var mid = { x: ( ix + T_c.x ) / 2, y: ( iy + T_c.y ) / 2 };
 			var rdx = T_c.x - ix, rdy = T_c.y - iy, rl = Math.hypot( rdx, rdy );
 			ctx.textAlign = 'center';
 			ctx.fillText(
-				'r = ' + fmt( toCm( r ) ) + ' ' + t('scaleUnit'),
+				'r',
 				mid.x - rdy / rl * 16,
 				mid.y + rdx / rl * 16
 			);
 
 			ctx.restore();
-
-			/* -- stats panel -- */
-			$( 'hw-sa'  ).textContent = fmt( toCm( a ) )                        + ' ' + t('scaleUnit');
-			$( 'hw-sb'  ).textContent = fmt( toCm( b ) )                        + ' ' + t('scaleUnit');
-			$( 'hw-sc'  ).textContent = fmt( toCm( c ) )                        + ' ' + t('scaleUnit');
-			$( 'hw-aa'  ).textContent = fmt( angleDeg( A, B, C ) )              + '°';
-			$( 'hw-ab'  ).textContent = fmt( angleDeg( B, A, C ) )              + '°';
-			$( 'hw-ac'  ).textContent = fmt( angleDeg( C, A, B ) )              + '°';
-			$( 'hw-per' ).textContent = fmt( toCm( a + b + c ) )                + ' ' + t('scaleUnit');
-			$( 'hw-area').textContent = fmt( toArea( area ) )                   + ' ' + t('scaleUnit') + '²';
-			$( 'hw-ir'  ).textContent = fmt( toCm( r ) )                        + ' ' + t('scaleUnit');
-			$( 'hw-icc' ).textContent = fmt( toCm( 2 * Math.PI * r ) )          + ' ' + t('scaleUnit');
-			$( 'hw-ia'  ).textContent = fmt( toArea( Math.PI * r * r ) )        + ' ' + t('scaleUnit') + '²';
-			$( 'hw-ic'  ).textContent = '(' + fmt( toCm( ix ) ) + ', ' + fmt( toCm( iy - RULER_H ) ) + ')';
-			$( 'hw-t1'  ).textContent = '(' + fmt( toCm( T_a.x ) ) + ', ' + fmt( toCm( T_a.y - RULER_H ) ) + ')';
-			$( 'hw-t2'  ).textContent = '(' + fmt( toCm( T_b.x ) ) + ', ' + fmt( toCm( T_b.y - RULER_H ) ) + ')';
-			$( 'hw-t3'  ).textContent = '(' + fmt( toCm( T_c.x ) ) + ', ' + fmt( toCm( T_c.y - RULER_H ) ) + ')';
-			$( 'hw-rf'  ).textContent = fmt( toArea( area ) ) + ' / ' + fmt( toCm( s ) ) + ' = ' + fmt( toCm( r ) );
 		}
 
 		/* -- resize -- */
@@ -618,7 +384,7 @@ function t(key, vars) {
 		function clamp( pt ) {
 			return {
 				x: Math.max( 10, Math.min( W - 10, pt.x ) ),
-				y: Math.max( RULER_H + 4, Math.min( H - 10, pt.y ) )
+				y: Math.max( 4, Math.min( H - 10, pt.y ) )
 			};
 		}
 
@@ -648,7 +414,6 @@ function t(key, vars) {
 		var observer = new MutationObserver( draw );
 		observer.observe( document.documentElement, { attributes: true, attributeFilter: ['class'] } );
 		observer.observe( document.body,            { attributes: true, attributeFilter: ['class'] } );
-
 
 		/* kick off */
 		var ro = new ResizeObserver( resize );
