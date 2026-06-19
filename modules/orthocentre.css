@@ -1,3 +1,9 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
 /* =========================================================
  * Hiruwiki module: orthocentre — stylesheet
  * ========================================================= */
@@ -24,78 +30,7 @@
 	box-sizing: border-box;
 }
 
-/* Stats grid — two equal columns */
-.hw-params {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 8px;
-	margin-top: 10px;
-}
-
-/* Individual card */
-.hw-card {
-	background: var(--hw-bg-subtle);
-	border-radius: var(--hw-radius-md);
-	padding: 10px 14px;
-	box-sizing: border-box;
-}
-
-.hw-card-title {
-	margin-bottom: 6px;
-}
-
-/* Badge labels for card headings */
-.hw-badge {
-	display: inline-block;
-	padding: 2px 9px;
-	border-radius: 99px;
-	font-size: 11px;
-	font-weight: 500;
-	letter-spacing: 0.03em;
-}
-
-.hw-badge-t {
-	background: var(--hw-color-primary-subtle);
-	color: var(--hw-color-primary);
-}
-
-.hw-badge-c {
-	background: var(--hw-color-success-subtle);
-	color: var(--hw-color-success);
-}
-
-/* Stat rows */
-.hw-row {
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
-	font-size: 13px;
-	color: var(--hw-text-base);
-	margin-bottom: 2px;
-}
-
-.hw-row span:first-child {
-	color: var(--hw-text-muted);
-}
-
-.hw-row span:last-child {
-	color: var(--hw-text-base);
-	font-weight: 600;
-	font-size: 12px;
-	min-width: 70px;
-	text-align: right;
-}
-
 /* Footer override (mostly inherited from shared) */
 .hw-orthocentre ~ .hw-footer {
 	margin-top: 8px;
-}
-
-/* =========================================================
- * Narrow screens — stack the two cards vertically
- * ========================================================= */
-@media (max-width: 480px) {
-	.hw-params {
-		grid-template-columns: 1fr;
-	}
 }
