@@ -43,26 +43,8 @@ en:
     visualProof: Visual proof
     hint: 'Drag the radius slider to see the calculation'
   circumcentre:
-    _name: circumcentre
-    triangle: Triangle
-    circumcentre: circumcentre
-    hint: 'Drag any vertex · Scale: 1 cm = 40 px'
-    sideA: Side a (BC)
-    sideB: Side b (CA)
-    sideC: Side c (AB)
-    angleA: Angle A
-    angleB: Angle B
-    angleC: Angle C
-    perimeter: Perimeter
-    centre: Centre O
-    radius: Circumradius R
-    midA: Midpoint M_a (BC)
-    midB: Midpoint M_b (CA)
-    midC: Midpoint M_c (AB)
-    circPerimeter: Circle perimeter
-    circArea: Circle area
-    scaleUnit: cm
-    scaleUnit2: cm²
+    _name: Circumcentre
+    hint: Drag any vertex to explore the circumcentre
   dividend:
     _name: Dividend and Divisor
     eq_lbl_dividend: dividend
@@ -152,25 +134,7 @@ en:
     hint: 'Decompose the hexagon into triangles or quadrilaterals'
   incentre:
     _name: Incentre
-    angleA: Angle A
-    angleB: Angle B
-    angleC: Angle C
-    area: Area
-    centre: Centre I
-    circumference: Circumference
-    formula: r = Area / s
-    hint: 'Drag any vertex · Scale: 1 cm = 40 px'
-    incircle: Incircle
-    perimeter: Perimeter
-    radius: Radius (r)
-    scaleUnit: cm
-    sideA: Side a (BC)
-    sideB: Side b (CA)
-    sideC: Side c (AB)
-    touchAB: Touch pt. AB
-    touchBC: Touch pt. BC
-    touchCA: Touch pt. CA
-    triangle: Triangle
+    hint: Drag any vertex to explore the incircle
   euler-line:
     _name: Euler Line
     triangle: Triangle
@@ -209,39 +173,13 @@ en:
     hint: 'Add points to approximate π using probability'
   nine-point-circle:
     _name: Nine-Point Circle
-    triangle: Triangle
-    ninePoint: Nine-Point Circle
-    hint: 'Drag any vertex · Scale: 1 cm = 40 px'
-    sideA: Side a (BC)
-    sideB: Side b (CA)
-    sideC: Side c (AB)
-    perimeter: Perimeter
-    centre: Centre N₉
-    radius: Radius
+    hint: Drag any vertex to explore the nine-point circle
     legendM: 'M_a/b/c — midpoints of the sides'
     legendH: 'H_a/b/c — feet of the altitudes'
     legendE: 'E_a/b/c — midpoints of AH, BH, CH'
-    scaleUnit: cm
   orthocentre:
     _name: Orthocentre
-    altA: Altitude hₐ
-    altB: Altitude h_b
-    altC: Altitude h_c
-    centre: Centre H
-    footA: Foot Hₐ on BC
-    footB: Foot H_b on CA
-    footC: Foot H_c on AB
-    hint: 'Drag any vertex to see how the orthocentre changes (Scale: 1 cm = 40 px)'
-    orthocentre: Orthocentre
-    perimeter: Perimeter
-    scaleUnit: cm
-    sideA: Side a (BC)
-    sideB: Side b (CA)
-    sideC: Side c (AB)
-    angleA: Angle A
-    angleB: Angle B
-    angleC: Angle C
-    triangle: Triangle
+    hint: Drag any vertex to see how the orthocentre changes
   pentagon-angles:
     3triangles: 3 triangles × 180°
     _name: Pentagon Angles
@@ -383,6 +321,11 @@ en:
     _name: Triangle Angles
     reset: Reset
     hint: 'Drag vertices to change the triangle · Sum of angles is always 180°'
+    labelAngleA: Angle A
+    labelAngleB: Angle B
+    labelAngleC: Angle C
+    labelSum: Sum
+    formula: A + B + C = 180°
   triangle-area:
     _name: Triangle Area
     btnProve: Prove it
@@ -397,32 +340,9 @@ en:
     unitCm: cm
     unitCm2: cm²
     hint: Drag the vertices to change the triangle's shape
-  triangle-angles:
-    _name: Triangle Angles
-    reset: Reset
-    hint: Drag vertices to change the triangle · Sum of angles is always 180°
-    labelAngleA: Angle A
-    labelAngleB: Angle B
-    labelAngleC: Angle C
-    labelSum: Sum
-    formula: A + B + C = 180°
   triangle-centroid:
     _name: Triangle Centroid
-    triangle: Triangle
-    centroid: Centroid
-    hint: 'Drag any vertex · Scale: 1 cm = 40 px'
-    sideA: Side a (BC)
-    sideB: Side b (CA)
-    sideC: Side c (AB)
-    angleA: Angle A
-    angleB: Angle B
-    angleC: Angle C
-    perimeter: Perimeter
-    centre: Centre G
-    medianA: Median m_a
-    medianB: Median m_b
-    medianC: Median m_c
-    scaleUnit: cm
+    hint: Drag any vertex to explore the centroid
   triangles:
     _name: Triangles
     acute: acute
