@@ -51,25 +51,7 @@ eu:
     hint: Erabili erradioaren barra kalkulua ikusteko
   circumcentre:
     _name: Zirkunzentroa
-    triangle: Triangelua
-    circumcentre: Zirkunzentroa
-    hint: 'Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px'
-    sideA: a aldea (BC)
-    sideB: b aldea (CA)
-    sideC: c aldea (AB)
-    angleA: A angelua
-    angleB: B angelua
-    angleC: C angelua
-    perimeter: Perimetroa
-    centre: O zentroa
-    radius: Zirkunerradioa R
-    midA: M_a erdipuntua (BC)
-    midB: M_b erdipuntua (CA)
-    midC: M_c erdipuntua (AB)
-    circPerimeter: Zirkuluaren perimetroa
-    circArea: Zirkuluaren azalera
-    scaleUnit: cm
-    scaleUnit2: cm²
+    hint: Erpinak mugitu ditzakezu zirkunzentroa ikusteko
   dividend:
     _name: Zatikizuna eta zatitzailea
     eq_lbl_dividend: zatikizuna
@@ -160,25 +142,7 @@ eu:
     hint: Hexagonoa triangelu edo laukizuzenetan deskonposatu
   incentre:
     _name: Inzentroa
-    angleA: A angelua
-    angleB: B angelua
-    angleC: C angelua
-    area: Azalera
-    centre: I intzentroa
-    circumference: Zirkunferentzia
-    formula: r = Azalera / s
-    hint: 'Erpinak mugitu ditzakezu - Eskala: 1 cm= 40 px'
-    incircle: Zirkulu inskribatua
-    perimeter: Perimetroa
-    radius: Erradioa (r)
-    scaleUnit: cm
-    sideA: a aldea (BC)
-    sideB: b aldea (CA)
-    sideC: c aldea (AB)
-    touchAB: AB tangentea
-    touchBC: BC tangentea
-    touchCA: CA tangentea
-    triangle: Triangelua
+    hint: Erpinak mugitu ditzakezu zirkulu inskribuatua ikusteko
   euler-line:
     _name: Eulerren zuzenea
     triangle: Triangelua
@@ -217,40 +181,13 @@ eu:
     hint: Gehitu puntuak probabilitatea erabiliz π hurbiltzeko
   nine-point-circle:
     _name: Bederatzi puntuko zirkulua
-    triangle: Triangelua
-    ninePoint: Bederatzi puntuko zirkulua
-    hint: 'Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px'
-    sideA: a aldea (BC)
-    sideB: b aldea (CA)
-    sideC: c aldea (AB)
-    perimeter: Perimetroa
-    centre: N₉ zentroa
-    radius: Erradioa
+    hint: Erpinak mugitu ditzakezu bederatzi puntuko zirkulua ikusteko
     legendM: M_a/b/c — aldeen erdipuntuak
     legendH: H_a/b/c — alturen oinak
     legendE: E_a/b/c — AH, BH, CH erdipuntuak
-    scaleUnit: cm
   orthocentre:
     _name: Ortozentro
-    altA: Altuera hₐ
-    altB: Altuera h_b
-    altC: Altuera h_c
-    centre: H ortozentroa
-    footA: Hₐ oina BC-n
-    footB: H_b oina CA-n
-    footC: H_c oina AB-n
-    hint: 'Edozein erpin mugitu ortozentroa nola mugitzen den ikusteko (Eskala: 1
-      cm = 40 px)'
-    orthocentre: Ortozentro
-    perimeter: Perimetroa
-    scaleUnit: cm
-    sideA: a aldea (BC)
-    sideB: b aldea (CA)
-    sideC: c aldea (AB)
-    angleA: A angelua
-    angleB: B angelua
-    angleC: C angelua
-    triangle: Triangelua
+    hint: Edozein erpin mugitu ortozentroa nola mugitzen den ikusteko
   pentagon-angles:
     3triangles: 3 triangelu × 180°
     _name: Pentagonoaren angeluak
@@ -419,21 +356,7 @@ eu:
     hint: Arrastatu erpinak triangeluaren forma aldatzeko
   triangle-centroid:
     _name: Hirukiaren barizentroa
-    triangle: Triangelua
-    centroid: Zentroidea
-    hint: 'Erpinak mugi ditzakezu · Eskala: 1 cm = 40 px'
-    sideA: a aldea (BC)
-    sideB: b aldea (CA)
-    sideC: c aldea (AB)
-    angleA: A angelua
-    angleB: B angelua
-    angleC: C angelua
-    perimeter: Perimetroa
-    centre: G zentroa
-    medianA: Mediana m_a
-    medianB: Mediana m_b
-    medianC: Mediana m_c
-    scaleUnit: cm
+    hint: Erpinak mugitu ditzakezu barizentroa ikusteko
   triangles:
     _name: Hirukiak
     acute: zorrotza
