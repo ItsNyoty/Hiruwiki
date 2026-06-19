@@ -1,3 +1,9 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
 /* =========================================================
  * Hiruwiki module: circumcentre
  * Visualisation of the circumcentre of a triangle
@@ -12,158 +18,34 @@
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
     "en": {
-        "_name": "circumcentre",
-        "triangle": "Triangle",
-        "circumcentre": "circumcentre",
-        "hint": "Drag any vertex · Scale: 1 cm = 40 px",
-        "sideA": "Side a (BC)",
-        "sideB": "Side b (CA)",
-        "sideC": "Side c (AB)",
-        "angleA": "Angle A",
-        "angleB": "Angle B",
-        "angleC": "Angle C",
-        "perimeter": "Perimeter",
-        "centre": "Centre O",
-        "radius": "Circumradius R",
-        "midA": "Midpoint M_a (BC)",
-        "midB": "Midpoint M_b (CA)",
-        "midC": "Midpoint M_c (AB)",
-        "circPerimeter": "Circle perimeter",
-        "circArea": "Circle area",
-        "scaleUnit": "cm",
-        "scaleUnit2": "cm²"
+        "_name": "Circumcentre",
+        "hint": "Drag any vertex to explore the circumcentre"
     },
     "es": {
         "_name": "Circuncentro",
-        "triangle": "Triángulo",
-        "circumcentre": "Circuncentro",
-        "hint": "Arrastra un vértice · Escala: 1 cm = 40 px",
-        "sideA": "Lado a (BC)",
-        "sideB": "Lado b (CA)",
-        "sideC": "Lado c (AB)",
-        "angleA": "Ángulo A",
-        "angleB": "Ángulo B",
-        "angleC": "Ángulo C",
-        "perimeter": "Perímetro",
-        "centre": "Centro O",
-        "radius": "Circunradio R",
-        "midA": "Punto medio M_a (BC)",
-        "midB": "Punto medio M_b (CA)",
-        "midC": "Punto medio M_c (AB)",
-        "circPerimeter": "Perímetro del círculo",
-        "circArea": "Área del círculo",
-        "scaleUnit": "cm",
-        "scaleUnit2": "cm²"
+        "hint": "Arrastra un vértice para explorar el circuncentro"
     },
     "eu": {
         "_name": "Zirkunzentroa",
-        "triangle": "Triangelua",
-        "circumcentre": "Zirkunzentroa",
-        "hint": "Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px",
-        "sideA": "a aldea (BC)",
-        "sideB": "b aldea (CA)",
-        "sideC": "c aldea (AB)",
-        "angleA": "A angelua",
-        "angleB": "B angelua",
-        "angleC": "C angelua",
-        "perimeter": "Perimetroa",
-        "centre": "O zentroa",
-        "radius": "Zirkunerradioa R",
-        "midA": "M_a erdipuntua (BC)",
-        "midB": "M_b erdipuntua (CA)",
-        "midC": "M_c erdipuntua (AB)",
-        "circPerimeter": "Zirkuluaren perimetroa",
-        "circArea": "Zirkuluaren azalera",
-        "scaleUnit": "cm",
-        "scaleUnit2": "cm²"
+        "hint": "Erpinak mugitu ditzakezu zirkunzentroa ikusteko"
     },
     "fr": {
         "_name": "Circoncentre",
-        "triangle": "Triangle",
-        "circumcentre": "Circoncentre",
-        "hint": "Faites glisser un sommet · Échelle : 1 cm = 40 px",
-        "sideA": "Côté a (BC)",
-        "sideB": "Côté b (CA)",
-        "sideC": "Côté c (AB)",
-        "angleA": "Angle A",
-        "angleB": "Angle B",
-        "angleC": "Angle C",
-        "perimeter": "Périmètre",
-        "centre": "Centre O",
-        "radius": "Circonrayon R",
-        "midA": "Milieu M_a (BC)",
-        "midB": "Milieu M_b (CA)",
-        "midC": "Milieu M_c (AB)",
-        "circPerimeter": "Périmètre du cercle",
-        "circArea": "Aire du cercle",
-        "scaleUnit": "cm",
-        "scaleUnit2": "cm²"
+        "hint": "Faites glisser un sommet pour explorer le circoncentre"
     },
     "ga": {
         "_name": "Ciorcalár",
-        "triangle": "Triantán",
-        "circumcentre": "Ciorcalár",
-        "hint": "Tarraing aon rinn · Scála: 1 cm = 40 px",
-        "sideA": "Taobh a (BC)",
-        "sideB": "Taobh b (CA)",
-        "sideC": "Taobh c (AB)",
-        "angleA": "Uillinn A",
-        "angleB": "Uillinn B",
-        "angleC": "Uillinn C",
-        "perimeter": "Imlíne",
-        "centre": "Lár O",
-        "radius": "Gha Imchiorcail R",
-        "midA": "Lárphointe M_a (BC)",
-        "midB": "Lárphointe M_b (CA)",
-        "midC": "Lárphointe M_c (AB)",
-        "circPerimeter": "Imlíne an chiorcail",
-        "circArea": "Achar an chiorcail",
-        "scaleUnit": "cm",
-        "scaleUnit2": "cm²"
+        "hint": "Tarraing aon rinn chun an ciorcalár a iniúchadh"
     },
     "nl": {
         "_name": "Middelpunt omgeschreven cirkel",
-        "triangle": "Driehoek",
-        "circumcentre": "Middelpunt omgeschreven cirkel",
-        "hint": "Sleep een hoekpunt · Schaal: 1 cm = 40 px",
-        "sideA": "Zijde a (BC)",
-        "sideB": "Zijde b (CA)",
-        "sideC": "Zijde c (AB)",
-        "angleA": "Hoek A",
-        "angleB": "Hoek B",
-        "angleC": "Hoek C",
-        "perimeter": "Omtrek",
-        "centre": "Middelpunt O",
-        "radius": "Omgeschreven straal R",
-        "midA": "Middelpunt M_a (BC)",
-        "midB": "Middelpunt M_b (CA)",
-        "midC": "Middelpunt M_c (AB)",
-        "circPerimeter": "Omtrek cirkel",
-        "circArea": "Oppervlakte cirkel",
-        "scaleUnit": "cm",
-        "scaleUnit2": "cm²"
+        "hint": "Sleep een hoekpunt om het middelpunt van de omgeschreven cirkel te verkennen"
     }
 } /* I18N_END */
-var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
-var banana = new Banana(lang.split('-')[0]);
-banana.load(messages);
-
-function t(key, vars) {
-    var args = Array.isArray(vars) ? vars : [];
-    var str = banana.i18n(key, ...args);
-    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
-        Object.keys(vars).forEach(function(k) {
-            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
-        });
-    }
-    return str;
-}
-
-;
 
 /* ── Constants ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var SCALE   = 40;   /* pixels per centimetre  */
-var RULER_H = 36;   /* ruler strip height (px) */
+var RULER_H = 0;    /* ruler removed */
 var DPR     = window.devicePixelRatio || 1;
 
 /* ── Geometry helpers ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
@@ -175,14 +57,6 @@ function midpoint( A, B ) {
 	return { x: ( A.x + B.x ) / 2, y: ( A.y + B.y ) / 2 };
 }
 
-/*
- * circumcentre: intersection of the three perpendicular bisectors.
- *
- * Using the standard determinant formula:
- *   D  = 2 [ Ax(By−Cy) + Bx(Cy−Ay) + Cx(Ay−By) ]
- *   Ox = [ (Ax²+Ay²)(By−Cy) + (Bx²+By²)(Cy−Ay) + (Cx²+Cy²)(Ay−By) ] / D
- *   Oy = [ (Ax²+Ay²)(Cx−Bx) + (Bx²+By²)(Ax−Cx) + (Cx²+Cy²)(Bx−Ax) ] / D
- */
 function circumcentre( A, B, C ) {
 	var ax = A.x, ay = A.y, bx = B.x, by = B.y, cx = C.x, cy = C.y;
 	var D = 2 * ( ax * ( by - cy ) + bx * ( cy - ay ) + cx * ( ay - by ) );
@@ -213,18 +87,14 @@ function labelOffset( V, others, mag ) {
 	return { x: V.x + dx / l * mag, y: V.y + dy / l * mag };
 }
 
-/*
- * Extend a perpendicular bisector line through midpoint M in direction perp
- * until it hits the canvas boundary. Returns the two endpoint coordinates.
- */
 function extendBisector( M, perp, W, H ) {
 	var dx = perp.x, dy = perp.y;
 	var ts = [];
 	if ( Math.abs( dx ) > 1e-9 ) { ts.push( -M.x / dx ); ts.push( ( W - M.x ) / dx ); }
-	if ( Math.abs( dy ) > 1e-9 ) { ts.push( ( RULER_H - M.y ) / dy ); ts.push( ( H - M.y ) / dy ); }
+	if ( Math.abs( dy ) > 1e-9 ) { ts.push( -M.y / dy ); ts.push( ( H - M.y ) / dy ); }
 	ts = ts.filter( function ( t ) {
 		var px = M.x + t * dx, py = M.y + t * dy;
-		return px >= -5 && px <= W + 5 && py >= RULER_H - 5 && py <= H + 5;
+		return px >= -5 && px <= W + 5 && py >= -5 && py <= H + 5;
 	} );
 	if ( ts.length < 2 ) { return null; }
 	ts.sort( function ( a, b ) { return a - b; } );
@@ -240,38 +110,11 @@ function buildWidget( container ) {
 	var lang = ( window.mw && mw.config.get( 'wgUserLanguage' ) ) || 'en';
 	lang = lang.split( '-' )[ 0 ];
 	if ( !messages[ lang ] ) { lang = 'en'; }
-	var msg = messages[ lang ];
 
 	/* -- HTML skeleton -- */
 	container.innerHTML =
 		'<div class="hw-circumcentre">' +
 			'<canvas class="hw-canvas"></canvas>' +
-			'<div class="hw-params">' +
-				'<div class="hw-card">' +
-					'<div class="hw-card-title">' +
-						'<span class="hw-badge hw-badge-t">' + msg.triangle + '</span>' +
-					'</div>' +
-					'<div class="hw-row"><span>' + msg.sideA     + '</span><span id="hw-sa"></span></div>' +
-					'<div class="hw-row"><span>' + msg.sideB     + '</span><span id="hw-sb"></span></div>' +
-					'<div class="hw-row"><span>' + msg.sideC     + '</span><span id="hw-sc"></span></div>' +
-					'<div class="hw-row"><span>' + msg.angleA    + '</span><span id="hw-aa"></span></div>' +
-					'<div class="hw-row"><span>' + msg.angleB    + '</span><span id="hw-ab"></span></div>' +
-					'<div class="hw-row"><span>' + msg.angleC    + '</span><span id="hw-ac"></span></div>' +
-					'<div class="hw-row"><span>' + msg.perimeter + '</span><span id="hw-per"></span></div>' +
-				'</div>' +
-				'<div class="hw-card">' +
-					'<div class="hw-card-title">' +
-						'<span class="hw-badge hw-badge-c">' + msg.circumcentre + '</span>' +
-					'</div>' +
-					'<div class="hw-row"><span>' + msg.centre        + '</span><span id="hw-cc"></span></div>' +
-					'<div class="hw-row"><span>' + msg.radius        + '</span><span id="hw-cr"></span></div>' +
-					'<div class="hw-row"><span>' + msg.midA          + '</span><span id="hw-mida"></span></div>' +
-					'<div class="hw-row"><span>' + msg.midB          + '</span><span id="hw-midb"></span></div>' +
-					'<div class="hw-row"><span>' + msg.midC          + '</span><span id="hw-midc"></span></div>' +
-					'<div class="hw-row"><span>' + msg.circPerimeter + '</span><span id="hw-cperim"></span></div>' +
-					'<div class="hw-row"><span>' + msg.circArea      + '</span><span id="hw-carea"></span></div>' +
-				'</div>' +
-			'</div>' +
 		'</div>';
 
 	/* -- Footer -- */
@@ -286,7 +129,7 @@ function buildWidget( container ) {
 	}
 	var fText = document.createElement( 'span' );
 	fText.className = 'hw-footer__text';
-	fText.textContent = msg.hint;
+	fText.textContent = messages[ lang ].hint;
 	footer.appendChild( fLogo );
 	footer.appendChild( fText );
 	container.appendChild( footer );
@@ -295,12 +138,10 @@ function buildWidget( container ) {
 	var ctx     = canvas.getContext( '2d' );
 	var W, H, verts, dragging = -1;
 
-	function $( id ) { return container.querySelector( '#' + id ); }
-
 	/* -- vertex initialisation -- */
 	function initVerts() {
 		var ox = W / 2 - 5.5 * SCALE;
-		var oy = RULER_H + 10;
+		var oy = 20;
 		verts = [
 			{ x: ox + 5.5 * SCALE, y: oy + 1.2 * SCALE },
 			{ x: ox + 1.2 * SCALE, y: oy + 8.0 * SCALE },
@@ -326,10 +167,6 @@ function buildWidget( container ) {
 			tri:         hiruwiki.getThemeColor( 'hw-color-primary', dark ? '#AFA9EC' : '#534AB7' ),
 			circ:        hiruwiki.getThemeColor( 'hw-color-success', dark ? '#5DCAA5' : '#0F6E56' ),
 			bis:         hiruwiki.getThemeColor( 'hw-color-warning', dark ? '#FAC775' : '#BA7517' ),
-			text:        hiruwiki.getThemeColor( 'hw-text-base',      dark ? '#E8E6DC' : '#1a1a18' ),
-			ruleBg:      hiruwiki.getThemeColor( 'hw-bg-subtle',     dark ? '#2C2C2A' : '#F1EFE8' ),
-			ruleTick:    hiruwiki.getThemeColor( 'hw-text-placeholder', '#888780' ),
-			ruleText:    hiruwiki.getThemeColor( 'hw-text-muted',       '#5F5E5A' ),
 			grid:        hiruwiki.getThemeColor( 'hw-border',        dark ? '#444441' : '#D3D1C7' ),
 			dotBg:       hiruwiki.getThemeColor( 'hw-bg-base', dark ? '#1e1e1c' : '#ffffff' ),
 			circFill:    dark ? 'rgba(93,202,165,.06)' : 'rgba(15,110,86,.05)',
@@ -337,78 +174,30 @@ function buildWidget( container ) {
 		};
 	}
 
-	/* -- ruler -- */
-	function drawRuler( p ) {
-		ctx.fillStyle = p.ruleBg;
-		ctx.fillRect( 0, 0, W, RULER_H );
-		ctx.strokeStyle = p.ruleTick;
-		ctx.lineWidth   = 0.5;
-		ctx.beginPath(); ctx.moveTo( 0, RULER_H ); ctx.lineTo( W, RULER_H ); ctx.stroke();
-
-		var maxCm = Math.ceil( W / SCALE ) + 1;
-		ctx.font         = '10px sans-serif';
-		ctx.textBaseline = 'bottom';
-
-		for ( var cm = 0; cm <= maxCm; cm++ ) {
-			var px = cm * SCALE;
-			if ( px > W + SCALE ) { break; }
-			ctx.strokeStyle = p.ruleTick; ctx.lineWidth = 0.8;
-			ctx.beginPath(); ctx.moveTo( px, RULER_H - 10 ); ctx.lineTo( px, RULER_H ); ctx.stroke();
-			if ( cm > 0 ) {
-				ctx.fillStyle = p.ruleText; ctx.textAlign = 'center';
-				ctx.fillText( cm, px, RULER_H - 12 );
-			}
-			for ( var mm = 1; mm < 10; mm++ ) {
-				var mpx = px + mm * SCALE / 10;
-				if ( mpx > W ) { break; }
-				ctx.strokeStyle = p.ruleTick; ctx.lineWidth = 0.5;
-				ctx.beginPath();
-				ctx.moveTo( mpx, RULER_H - ( mm === 5 ? 7 : 4 ) );
-				ctx.lineTo( mpx, RULER_H );
-				ctx.stroke();
-			}
-		}
-		ctx.fillStyle    = p.ruleText;
-		ctx.textAlign    = 'left';
-		ctx.textBaseline = 'middle';
-		ctx.font         = '500 10px sans-serif';
-		ctx.fillText( msg.scaleUnit, 4, RULER_H / 2 );
-	}
-
-	/* -- grid -- */
+	/* -- grid (major cm lines only, very faint) -- */
 	function drawGrid( p ) {
-		ctx.lineWidth = 1.0;
+		ctx.lineWidth   = 0.5;
 		ctx.strokeStyle = p.grid;
+		ctx.globalAlpha = 0.18;
 		for ( var cm = 0; cm * SCALE < W + SCALE; cm++ ) {
-			ctx.globalAlpha = 0.4;
-			for ( var mm = 1; mm < 10; mm++ ) {
-				ctx.beginPath();
-				ctx.moveTo( cm * SCALE + mm * SCALE / 10, RULER_H );
-				ctx.lineTo( cm * SCALE + mm * SCALE / 10, H );
-				ctx.stroke();
-			}
-			ctx.globalAlpha = 1.0;
 			ctx.beginPath();
-			ctx.moveTo( cm * SCALE, RULER_H ); ctx.lineTo( cm * SCALE, H ); ctx.stroke();
+			ctx.moveTo( cm * SCALE, 0 );
+			ctx.lineTo( cm * SCALE, H );
+			ctx.stroke();
 		}
-		for ( var row = 0; RULER_H + row * SCALE < H; row++ ) {
-			ctx.globalAlpha = 0.4;
-			for ( var rmm = 1; rmm < 10; rmm++ ) {
-				var ymm = RULER_H + row * SCALE + rmm * SCALE / 10;
-				if ( ymm < H ) {
-					ctx.beginPath(); ctx.moveTo( 0, ymm ); ctx.lineTo( W, ymm ); ctx.stroke();
-				}
-			}
-			ctx.globalAlpha = 1.0;
+		for ( var row = 0; row * SCALE < H + SCALE; row++ ) {
 			ctx.beginPath();
-			ctx.moveTo( 0, RULER_H + row * SCALE ); ctx.lineTo( W, RULER_H + row * SCALE ); ctx.stroke();
+			ctx.moveTo( 0, row * SCALE );
+			ctx.lineTo( W, row * SCALE );
+			ctx.stroke();
 		}
+		ctx.globalAlpha = 1.0;
 	}
 
 	/* -- right-angle mark at bisector midpoint -- */
 	function drawRightAngleMark( M, perp, sideDir ) {
 		var su = sideDir, ru = perp;
-		var SZ = 6;
+		var SZ = 12;
 		ctx.lineWidth = 1;
 		ctx.beginPath();
 		ctx.moveTo( M.x + su.x * SZ,               M.y + su.y * SZ );
@@ -428,21 +217,13 @@ function buildWidget( container ) {
 		ctx.clearRect( 0, 0, W, H );
 		var p = palette();
 		drawGrid( p );
-		drawRuler( p );
 
 		var A = verts[ 0 ], B = verts[ 1 ], C = verts[ 2 ];
-		var a = dist( B, C ), b = dist( C, A ), c = dist( A, B );
 
 		var O  = circumcentre( A, B, C );
 		var R  = dist( O, A );
 
 		var Ma = midpoint( B, C ), Mb = midpoint( C, A ), Mc = midpoint( A, B );
-
-		var angA = angleDeg( A, B, C );
-		var angB = angleDeg( B, A, C );
-		var angC = angleDeg( C, A, B );
-
-		var cx3 = ( A.x + B.x + C.x ) / 3, cy3 = ( A.y + B.y + C.y ) / 3;
 
 		/* Perpendicular bisector directions (unit vectors) */
 		function bisDir( P1, P2 ) {
@@ -520,7 +301,7 @@ function buildWidget( container ) {
 		ctx.textBaseline = 'middle';
 
 		/* vertex names */
-		ctx.font = '700 17px sans-serif';
+		ctx.font = "italic 700 18px 'Latin Modern Math', 'STIX Two Math', 'Computer Modern', 'Times New Roman', serif";
 		[ A, B, C ].forEach( function ( V, i ) {
 			var lbl = labelOffset( V, verts.filter( function ( _, j ) { return j !== i; } ), 26 );
 			ctx.fillStyle = p.tri; ctx.textAlign = 'center';
@@ -528,43 +309,12 @@ function buildWidget( container ) {
 		} );
 
 		/* O label */
-		ctx.fillStyle = p.circ; ctx.font = '700 17px sans-serif'; ctx.textAlign = 'center';
+		ctx.fillStyle = p.circ;
+		ctx.font = "italic 700 18px 'Latin Modern Math', 'STIX Two Math', 'Computer Modern', 'Times New Roman', serif";
+		ctx.textAlign = 'center';
 		ctx.fillText( 'O', O.x + 16, O.y - 16 );
 
-		/* side length labels */
-		ctx.font = '500 14px sans-serif';
-		[
-			{ p: { x: ( B.x + C.x ) / 2, y: ( B.y + C.y ) / 2 }, lbl: 'a = ' + fmt( toCm( a ) ) + ' ' + msg.scaleUnit },
-			{ p: { x: ( C.x + A.x ) / 2, y: ( C.y + A.y ) / 2 }, lbl: 'b = ' + fmt( toCm( b ) ) + ' ' + msg.scaleUnit },
-			{ p: { x: ( A.x + B.x ) / 2, y: ( A.y + B.y ) / 2 }, lbl: 'c = ' + fmt( toCm( c ) ) + ' ' + msg.scaleUnit }
-		].forEach( function ( item ) {
-			var dx2 = item.p.x - cx3, dy2 = item.p.y - cy3;
-			var l2  = Math.hypot( dx2, dy2 ) || 1;
-			ctx.fillStyle = p.text; ctx.textAlign = 'center';
-			ctx.fillText( item.lbl, item.p.x + dx2 / l2 * 20, item.p.y + dy2 / l2 * 20 );
-		} );
-
 		ctx.restore();
-
-		/* -- stats panel -- */
-		var Rcm          = toCm( R );
-		var circPerim    = 2 * Math.PI * Rcm;
-		var circArea     = Math.PI * Rcm * Rcm;
-
-		$( 'hw-sa'     ).textContent = fmt( toCm( a ) )           + ' ' + msg.scaleUnit;
-		$( 'hw-sb'     ).textContent = fmt( toCm( b ) )           + ' ' + msg.scaleUnit;
-		$( 'hw-sc'     ).textContent = fmt( toCm( c ) )           + ' ' + msg.scaleUnit;
-		$( 'hw-aa'     ).textContent = fmt( angA )                 + '°';
-		$( 'hw-ab'     ).textContent = fmt( angB )                 + '°';
-		$( 'hw-ac'     ).textContent = fmt( angC )                 + '°';
-		$( 'hw-per'    ).textContent = fmt( toCm( a + b + c ) )   + ' ' + msg.scaleUnit;
-		$( 'hw-cc'     ).textContent = '(' + fmt( toCm( O.x ) )  + ', ' + fmt( toCm( O.y - RULER_H ) ) + ') ' + msg.scaleUnit;
-		$( 'hw-cr'     ).textContent = fmt( Rcm )                 + ' ' + msg.scaleUnit;
-		$( 'hw-mida'   ).textContent = '(' + fmt( toCm( Ma.x ) ) + ', ' + fmt( toCm( Ma.y - RULER_H ) ) + ') ' + msg.scaleUnit;
-		$( 'hw-midb'   ).textContent = '(' + fmt( toCm( Mb.x ) ) + ', ' + fmt( toCm( Mb.y - RULER_H ) ) + ') ' + msg.scaleUnit;
-		$( 'hw-midc'   ).textContent = '(' + fmt( toCm( Mc.x ) ) + ', ' + fmt( toCm( Mc.y - RULER_H ) ) + ') ' + msg.scaleUnit;
-		$( 'hw-cperim' ).textContent = fmt( circPerim )           + ' ' + msg.scaleUnit;
-		$( 'hw-carea'  ).textContent = fmt( circArea )            + ' ' + msg.scaleUnit2;
 	}
 
 	/* -- resize -- */
@@ -595,7 +345,7 @@ function buildWidget( container ) {
 	function clamp( pt ) {
 		return {
 			x: Math.max( 10, Math.min( W - 10, pt.x ) ),
-			y: Math.max( RULER_H + 4, Math.min( H - 10, pt.y ) )
+			y: Math.max( 4, Math.min( H - 10, pt.y ) )
 		};
 	}
 
