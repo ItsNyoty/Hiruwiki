@@ -52,25 +52,7 @@ es:
     hint: Arrastra el control del radio para ver el cálculo.
   circumcentre:
     _name: Circuncentro
-    triangle: Triángulo
-    circumcentre: Circuncentro
-    hint: 'Arrastra un vértice · Escala: 1 cm = 40 px'
-    sideA: Lado a (BC)
-    sideB: Lado b (CA)
-    sideC: Lado c (AB)
-    angleA: Ángulo A
-    angleB: Ángulo B
-    angleC: Ángulo C
-    perimeter: Perímetro
-    centre: Centro O
-    radius: Circunradio R
-    midA: Punto medio M_a (BC)
-    midB: Punto medio M_b (CA)
-    midC: Punto medio M_c (AB)
-    circPerimeter: Perímetro del círculo
-    circArea: Área del círculo
-    scaleUnit: cm
-    scaleUnit2: cm²
+    hint: Arrastra un vértice para explorar el circuncentro
   dividend:
     _name: Dividendo y divisor
     eq_lbl_dividend: dividendo
@@ -161,25 +143,7 @@ es:
     hint: Descompone el hexágono en triángulos o cuadrangulares
   incentre:
     _name: Incentro
-    angleA: Ángulo A
-    angleB: Ángulo B
-    angleC: Ángulo C
-    area: Área
-    centre: Centro I
-    circumference: Circunferencia
-    formula: r = Área / s
-    hint: 'Arrastra un vértice · Escala: 1 cm = 40 px'
-    incircle: Incírculo
-    perimeter: Perímetro
-    radius: Radio (r)
-    scaleUnit: cm
-    sideA: Lado a (BC)
-    sideB: Lado b (CA)
-    sideC: Lado c (AB)
-    touchAB: Pt. tangencia AB
-    touchBC: Pt. tangencia BC
-    touchCA: Pt. tangencia CA
-    triangle: Triángulo
+    hint: Arrastra un vértice para explorar el incírculo
   euler-line:
     _name: Recta de Euler
     triangle: Triángulo
@@ -218,40 +182,13 @@ es:
     hint: Añade puntos para aproximar π usando probabilidad
   nine-point-circle:
     _name: Círculo de los nueve puntos
-    triangle: Triángulo
-    ninePoint: Círculo de los nueve puntos
-    hint: 'Arrastra un vértice · Escala: 1 cm = 40 px'
-    sideA: Lado a (BC)
-    sideB: Lado b (CA)
-    sideC: Lado c (AB)
-    perimeter: Perímetro
-    centre: Centro N₉
-    radius: Radio
+    hint: Arrastra un vértice para explorar el círculo de los nueve puntos
     legendM: M_a/b/c — puntos medios de los lados
     legendH: H_a/b/c — pies de las alturas
     legendE: E_a/b/c — puntos medios de AH, BH, CH
-    scaleUnit: cm
   orthocentre:
     _name: Ortocentro
-    altA: Altura hₐ
-    altB: Altura h_b
-    altC: Altura h_c
-    centre: Centro H
-    footA: Pie Hₐ en BC
-    footB: Pie H_b en CA
-    footC: Pie H_c en AB
-    hint: 'Arrastra un vértice para ver cómo se mueve el ortocentro (Escala: 1 cm
-      = 40 px)'
-    orthocentre: Ortocentro
-    perimeter: Perímetro
-    scaleUnit: cm
-    sideA: Lado a (BC)
-    sideB: Lado b (CA)
-    sideC: Lado c (AB)
-    angleA: Ángulo A
-    angleB: Ángulo B
-    angleC: Ángulo C
-    triangle: Triángulo
+    hint: Arrastra un vértice para ver cómo se mueve el ortocentro
   pentagon-angles:
     3triangles: 3 triángulos × 180°
     _name: Ángulos del pentágono
@@ -376,7 +313,7 @@ es:
     angle: Ángulo
     enlargement: Homotecia
     hintEnlargement: Mueve el punto naranja para establecer el centro de la homotecia.
-    hintReflection: Mueve ambos puntos naranjas para crear la línea de simetría.
+    hintReflection: Mueve ambos puntos naranjes para crear la línea de simetría.
     hintRotation: Mueve el punto naranja para establecer el centro de rotación.
     hintTranslation: Usa los controles deslizantes para trasladar el objeto.
     horizontal: Horizontal
@@ -413,21 +350,7 @@ es:
     hint: Arrastra los vértices para cambiar la forma del triángulo
   triangle-centroid:
     _name: Baricentro del triángulo
-    triangle: Triángulo
-    centroid: Baricentro
-    hint: 'Arrastra un vértice · Escala: 1 cm = 40 px'
-    sideA: Lado a (BC)
-    sideB: Lado b (CA)
-    sideC: Lado c (AB)
-    angleA: Ángulo A
-    angleB: Ángulo B
-    angleC: Ángulo C
-    perimeter: Perímetro
-    centre: Centro G
-    medianA: Mediana m_a
-    medianB: Mediana m_b
-    medianC: Mediana m_c
-    scaleUnit: cm
+    hint: Arrastra un vértice para explorar el baricentro
   triangles:
     _name: Triángulos
     acute: acutángulo
