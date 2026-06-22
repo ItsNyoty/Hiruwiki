@@ -31,7 +31,8 @@ var messages = /* I18N_START */ {
         "explement": "Explementario",
         "notDefined": "No definido para este ángulo",
         "resultAngle": "Ángulo $1: $2°",
-        "supplement": "Suplementario"
+        "supplement": "Suplementario",
+        "hint": "Arrastra para cambiar el ángulo."
     },
     "eu": {
         "_name": "Angeluak",
@@ -41,7 +42,8 @@ var messages = /* I18N_START */ {
         "explement": "Konjubatua",
         "notDefined": "Angelu honentzat definitu gabe",
         "resultAngle": "Angelu $1: $2°",
-        "supplement": "Betegarria"
+        "supplement": "Betegarria",
+        "hint": "Mugitu heldulekua angelua aldatzeko"
     },
     "fr": {
         "_name": "Angles",
@@ -51,7 +53,8 @@ var messages = /* I18N_START */ {
         "explement": "Explémentaire",
         "notDefined": "Non défini pour cet angle",
         "resultAngle": "Angle $1 : $2°",
-        "supplement": "Supplémentaire"
+        "supplement": "Supplémentaire",
+        "hint": "Tirez la poignée pour changer l'angle"
     },
     "ga": {
         "_name": "Uillinneacha",
@@ -60,8 +63,9 @@ var messages = /* I18N_START */ {
         "complement": "Comhlántach",
         "explement": "Turgnamhach",
         "notDefined": "Gan sainmhíniú don uillinn seo",
-        "resultAngle": "uillinn $1: $2°",
-        "supplement": "Forlíontach"
+        "resultAngle": "Uillinn $1: $2°",
+        "supplement": "Forlíontach",
+        "hint": "Tarraing an láimhseáil chun an uillinn a athrú"
     },
     "it": {
         "_name": "Angoli",
@@ -70,7 +74,7 @@ var messages = /* I18N_START */ {
         "complement": "Complementare",
         "explement": "Esplementare",
         "notDefined": "Non definito per questo angolo",
-        "resultAngle": "$1 angolo: $2°",
+        "resultAngle": "Angolo $1: $2°",
         "supplement": "Supplementare"
     },
     "ko": {
@@ -79,8 +83,24 @@ var messages = /* I18N_START */ {
         "bisectorResult": "이등분: $1°",
         "complement": "여각",
         "explement": "공액각",
+        "notDefined": "이 각도에 대해서는 정의되지 않았습니다",
         "resultAngle": "$1: $2°",
-        "supplement": "보각"
+        "supplement": "보각",
+        "hint": "손잡이를 드래그하여 각도를 변경하세요"
+    },
+    "lb": {
+        "resultAngle": "$1 Wénkel: $2°"
+    },
+    "mk": {
+        "_name": "Агли",
+        "bisector": "Симетрала",
+        "bisectorResult": "Симетрала: $1°",
+        "complement": "Комплементен",
+        "explement": "Експлементен",
+        "notDefined": "Не е дефинирано за овој агол",
+        "resultAngle": "$1 агол: $2°",
+        "supplement": "Суплементен",
+        "hint": "Повлечете ја рачката за да го измените аголот"
     },
     "nl": {
         "_name": "Hoeken",
@@ -91,7 +111,29 @@ var messages = /* I18N_START */ {
         "notDefined": "Niet gedefinieerd voor deze hoek",
         "resultAngle": "Hoek $1: $2°",
         "supplement": "Supplementair",
-        "hint": "Sleep de witte stip om de hoek te veranderen"
+        "hint": "Sleep de witte stip om de hoek te wijzigen"
+    },
+    "qqq": {
+        "_name": "Name of the Angles module",
+        "bisector": "Button label for the bisector mode",
+        "bisectorResult": "Result text showing the bisector angle. Parameters: $1 = bisector angle in degrees.",
+        "complement": "Button label for the complementary angle mode",
+        "explement": "Button label for the explementary angle mode",
+        "notDefined": "Message shown when the selected angle operation is not defined for the current angle (e.g. complement of an angle ≥ 90°)",
+        "resultAngle": "Result text showing a computed angle. Parameters: $1 = angle type name (e.g. \"Complementary\"), $2 = angle in degrees.",
+        "supplement": "Button label for the supplementary angle mode",
+        "hint": "Instruction text explaining how to interact with the angle applet"
+    },
+    "tr": {
+        "_name": "Açılar",
+        "bisector": "Açıortay",
+        "bisectorResult": "Açıortay: $1°",
+        "complement": "Tümler",
+        "explement": "Eşlenik",
+        "notDefined": "Bu açı için tanımlanmamış",
+        "resultAngle": "$1 açı: $2°",
+        "supplement": "Bütünler",
+        "hint": "Açıyı değiştirmek için tutup sürükleyin"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

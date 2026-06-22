@@ -18,7 +18,6 @@
 	
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {},
     "en": {
         "_name": "Incentre",
         "hint": "Drag any vertex to explore the incircle"
@@ -33,17 +32,31 @@ var messages = /* I18N_START */ {
     },
     "fr": {
         "_name": "Incentre",
-        "hint": "Faites glisser un sommet pour explorer le cercle inscrit"
+        "hint": "Faites glisser un sommet · Échelle : 1 cm = 40 px"
     },
     "ga": {
         "_name": "Lárionad",
-        "hint": "Tarraing aon bhuaicphointe chun an ciorcal isteach a iniúchadh"
+        "hint": "Tarraing aon bhuaicphointe · Scála: 1 cm = 40 px"
     },
-    "it": {},
-    "ko": {},
+    "ko": {
+        "_name": "내심",
+        "hint": "꼭짓점을 드래그해서 내접원을 탐구하세요"
+    },
+    "mk": {
+        "_name": "Центар на впишана кружница",
+        "hint": "Повлечете некое теме · Размер: 1 п = 40 п"
+    },
     "nl": {
         "_name": "Aangeschreven middelpunt",
         "hint": "Sleep een hoekpunt om de ingeschreven cirkel te verkennen"
+    },
+    "qqq": {
+        "_name": "Name of the Incentre module",
+        "hint": "Instruction text for the interactive triangle."
+    },
+    "tr": {
+        "_name": "İç teğet çemberi merkezi",
+        "hint": "Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 px"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

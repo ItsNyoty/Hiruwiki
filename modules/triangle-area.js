@@ -42,7 +42,8 @@ var messages = /* I18N_START */ {
         "proofResultPara": "Área del paralelogramo = b × h = <strong>$1 × $2 = $3 cm²</strong>",
         "proofResultTri": "→ Triángulo = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
-        "unitCm2": "cm²"
+        "unitCm2": "cm²",
+        "hint": "Arrastra los vértices para cambiar la forma del triángulo"
     },
     "eu": {
         "_name": "Hirukiaren azalera",
@@ -56,7 +57,8 @@ var messages = /* I18N_START */ {
         "proofResultPara": "Paralelogramoaren azalera = b × h = <strong>$1 × $2 = $3 cm²</strong>",
         "proofResultTri": "→ Triangeluarena = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
-        "unitCm2": "cm²"
+        "unitCm2": "cm²",
+        "hint": "Arrastatu erpinak triangeluaren forma aldatzeko"
     },
     "fr": {
         "_name": "Aire du triangle",
@@ -70,7 +72,8 @@ var messages = /* I18N_START */ {
         "proofResultPara": "Aire du parallélogramme = b × h = <strong>$1 × $2 = $3 cm²</strong>",
         "proofResultTri": "→ Triangle = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
-        "unitCm2": "cm²"
+        "unitCm2": "cm²",
+        "hint": "Tirez les sommets pour changer la forme du triangle"
     },
     "ga": {
         "_name": "Limistéar an Triantáin",
@@ -84,7 +87,8 @@ var messages = /* I18N_START */ {
         "proofResultPara": "Achar comhthreomharáin = b × h = <strong>$1 × $2 = $3 cm²</strong>",
         "proofResultTri": "→ Triantán = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
-        "unitCm2": "cm²"
+        "unitCm2": "cm²",
+        "hint": "Tarraing na buaicphointí chun cruth an triantáin a athrú"
     },
     "it": {
         "unitCm": "cm",
@@ -92,19 +96,44 @@ var messages = /* I18N_START */ {
     },
     "ko": {
         "_name": "삼각형 면적",
+        "btnProve": "증명하기",
         "btnReset": "초기화",
         "labelArea": "면적",
         "labelBase": "밑변 (b)",
         "labelHeight": "높이 (h)",
+        "labelBaseShort": "밑변",
+        "labelHeightShort": "높이",
         "proofResultPara": "평행사변형 넓이 = b × h = <strong>$1 × $2 = $3 cm²</strong>",
         "proofResultTri": "→ 삼각형 = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
+        "unitCm2": "cm²",
+        "hint": "꼭짓점을 드래그하여 삼각형의 모양을 변경하기"
+    },
+    "lb": {
+        "labelArea": "Fläch",
+        "labelHeightShort": "h",
+        "unitCm": "cm",
         "unitCm2": "cm²"
+    },
+    "mk": {
+        "_name": "Плоштина на триаголник",
+        "btnProve": "Докажи",
+        "btnReset": "Одново",
+        "labelArea": "Плоштина",
+        "labelBase": "Основа (b)",
+        "labelHeight": "Висина (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Плоштина на паралелограм = b × h = <strong>$1 × $2 = $3 см²</strong>",
+        "proofResultTri": "→ Триаголник = ½ × $1 = <strong>$2 см²</strong>",
+        "unitCm": "см",
+        "unitCm2": "см²",
+        "hint": "Повлечете ги темињата за да го смените обликот на триаголникот"
     },
     "nl": {
         "_name": "Oppervlakte van een driehoek",
         "btnProve": "Bewijs het",
-        "btnReset": "↺ Reset",
+        "btnReset": "Opnieuw instellen",
         "labelArea": "Oppervlakte",
         "labelBase": "Basis (b)",
         "labelHeight": "Hoogte (h)",
@@ -114,7 +143,22 @@ var messages = /* I18N_START */ {
         "proofResultTri": "→ Driehoek = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
         "unitCm2": "cm²",
-        "hint": "Sleep de hoekpunten om de vorm van de driehoek te veranderen"
+        "hint": "Sleep de hoekpunten om de vorm van de driehoek te wijzigen"
+    },
+    "qqq": {
+        "_name": "Name of the Triangle Area module",
+        "btnProve": "Button label to start the area proof animation",
+        "btnReset": "Button label to reset the triangle",
+        "labelArea": "Label for the computed area value",
+        "labelBase": "Label for the base measurement, with variable name in parentheses",
+        "labelHeight": "Label for the height measurement, with variable name in parentheses",
+        "labelBaseShort": "Short symbol for base (usually 'b')",
+        "labelHeightShort": "Short symbol for height (usually 'h')",
+        "proofResultPara": "Proof result text for the parallelogram area. Uses HTML. Parameters: $1 = base, $2 = height, $3 = parallelogram area.",
+        "proofResultTri": "Proof result text for the triangle area (half the parallelogram). Uses HTML. Parameters: $1 = parallelogram area, $2 = triangle area.",
+        "unitCm": "Unit of length (centimeters)",
+        "unitCm2": "Unit of area (square centimeters)",
+        "hint": "Explanation about how the module is interactive"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

@@ -31,17 +31,47 @@ var messages = /* I18N_START */ {
     },
     "fr": {
         "_name": "Circoncentre",
-        "hint": "Faites glisser un sommet pour explorer le circoncentre"
+        "hint": "Faites glisser un sommet · Échelle : 1 cm = 40 px"
     },
     "ga": {
         "_name": "Ciorcalár",
-        "hint": "Tarraing aon rinn chun an ciorcalár a iniúchadh"
+        "hint": "Tarraing aon rinn · Scála: 1 cm = 40 px"
+    },
+    "ko": {
+        "_name": "외심",
+        "hint": "꼭짓점을 드래그해서 외심을 탐구하세요"
+    },
+    "mk": {
+        "_name": "центар на опишана кружница",
+        "hint": "Повлечете некое теме · Размер: 1 см = 40 п"
     },
     "nl": {
         "_name": "Middelpunt omgeschreven cirkel",
         "hint": "Sleep een hoekpunt om het middelpunt van de omgeschreven cirkel te verkennen"
+    },
+    "qqq": {
+        "_name": "Name of the circumcentre module",
+        "hint": "Instruction text shown in the footer."
+    },
+    "tr": {
+        "_name": "çevre merkezi",
+        "hint": "Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 px"
     }
 } /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
+    }
+    return str;
+}
 
 /* ── Constants ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var SCALE   = 40;   /* pixels per centimetre  */

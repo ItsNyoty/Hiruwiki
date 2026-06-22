@@ -107,11 +107,35 @@ var messages = /* I18N_START */ {
         "_name": "각도 추측",
         "difference": "차이:",
         "finalScore": "최종 점수",
+        "hint": "파란색 점을 움직여 각도를 설정하세요",
+        "nextAngle": "다음 각 &rsaquo;",
         "points": "점수:",
         "pts": "점",
         "round": "라운드:",
         "roundOver": "게임 종료",
-        "target": "목표:"
+        "target": "목표:",
+        "tryAgain": "다시 시도",
+        "yourGuess": "당신의 예상:"
+    },
+    "lb": {
+        "points": "Punkten:",
+        "round": "Ronn:",
+        "target": "Zil:",
+        "tryAgain": "Nach eng Kéier probéieren"
+    },
+    "mk": {
+        "_name": "Погодување на агол",
+        "difference": "Разлика:",
+        "finalScore": "Конечен исход",
+        "hint": "Поместете ја сината точка за да го зададете аголот",
+        "nextAngle": "Следен агол &rsaquo;",
+        "points": "Бодови:",
+        "pts": "бодови",
+        "round": "Круг:",
+        "roundOver": "Играта заврши",
+        "target": "Цел:",
+        "tryAgain": "Обиди се пак",
+        "yourGuess": "Вашиот одговор:"
     },
     "nl": {
         "_name": "Hoek schatten",
@@ -126,6 +150,34 @@ var messages = /* I18N_START */ {
         "target": "Doel:",
         "tryAgain": "Opnieuw proberen",
         "yourGuess": "Uw schatting:"
+    },
+    "qqq": {
+        "_name": "Name of the Angle Guess module",
+        "difference": "Label for the difference between the target angle and the player's guess. Followed by a value in degrees.",
+        "finalScore": "Heading shown when all rounds are complete, above the total score",
+        "hint": "Instruction telling the user how to set their angle guess",
+        "nextAngle": "Button label to proceed to the next angle. Uses &rsaquo; as a right-pointing arrow.",
+        "points": "Label for the points earned. Followed by a numeric value.",
+        "pts": "Abbreviation for \"points displayed after a numeric score",
+        "round": "Label for the current round number. Followed by \"X / Y\".",
+        "roundOver": "Heading shown in the overlay when all rounds are finished",
+        "target": "Label for the target angle the player must guess. Followed by a value in degrees.",
+        "tryAgain": "Button label to start a new game after all rounds are complete",
+        "yourGuess": "Label for the angle the player guessed. Followed by a value in degrees."
+    },
+    "tr": {
+        "_name": "Açı Tahmini",
+        "difference": "Fark:",
+        "finalScore": "Sonuç",
+        "hint": "Açıyı ayarlamak için mavi noktayı hareket ettirin",
+        "nextAngle": "Sonraki açı &rsaquo;",
+        "points": "Puan:",
+        "pts": "puan",
+        "round": "Tur:",
+        "roundOver": "Oyun bitti",
+        "target": "Hedef:",
+        "tryAgain": "Tekrar dene",
+        "yourGuess": "Tahminin:"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

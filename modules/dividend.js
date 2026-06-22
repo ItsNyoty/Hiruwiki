@@ -62,6 +62,7 @@ var messages = /* I18N_START */ {
         "insight_exact": "<strong>$1 ÷ $2 = $3</strong> exacto — sin resto. La barra se llena perfectamente en <strong>$3</strong> fragmentos iguales. Esto significa que <strong>$2</strong> es un divisor de <strong>$1</strong>.<!--$6-->",
         "insight_less": "<strong>$1</strong> es menor que el divisor <strong>$2</strong>, por lo que cabe en <strong>0</strong> fragmentos enteros. Todo el valor es el resto. El resto es siempre menor que el divisor.",
         "insight_normal": "<strong>$1 ÷ $2 = $3</strong> resto <strong>$4</strong>. Nota que la pieza roja (<strong>$4</strong>) siempre es más corta que un fragmento azul (<strong>$2</strong>). El resto siempre es estrictamente menor que el divisor. Comprobación: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
+        "label_bar_description": "Vista de barras: cada segmento azul = {{PLURAL:$1|$1 unidad|$1 unidades}}",
         "label_choose": "Elige el dividendo y el divisor",
         "label_dividend": "Dividendo (el número a dividir)",
         "label_divisor": "Divisor (el tamaño del fragmento)",
@@ -69,7 +70,8 @@ var messages = /* I18N_START */ {
         "label_repadd": "Suma repetida",
         "repadd_exact": "— se divide exactamente!",
         "repadd_leftover": "sobra",
-        "repadd_less": "$1 es menor que $2, por lo que el cociente es 0 y el valor completo es el resto."
+        "repadd_less": "$1 es menor que $2, por lo que el cociente es 0 y el valor completo es el resto.",
+        "hint": "Ajusta el dividendo y el divisor para ver el desglose de la división"
     },
     "eu": {
         "_name": "Zatikizuna eta zatitzailea",
@@ -80,6 +82,7 @@ var messages = /* I18N_START */ {
         "insight_exact": "<strong>$1 ÷ $2 = $3</strong> zenbaki osoa — hondarrik gabe. Barra <strong>$3</strong> zati berdinetan betetzen da. Horrek esan nahi du <strong>$2</strong> <strong>$1</strong>-ren zatitzailea dela.<!--$6-->",
         "insight_less": "<strong>$1</strong> zatitzailea baino txikiagoa da (<strong>$2</strong>), beraz ez da zati oso bat sartzen. Balio osoa hondarra da. Hondarra beti zatitzailea baino txikiagoa da.",
         "insight_normal": "<strong>$1 ÷ $2 = $3</strong> hondarra <strong>$4</strong>. Kontuan hartu pieza gorria (<strong>$4</strong>) beti zati urdin bat (<strong>$2</strong>) baino motzagoa dela. Hondarra beti zatitzailea baino txikiagoa da. Egiaztatu: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
+        "label_bar_description": "Barra-ikuspegia — zati urdin bakoitza = {{PLURAL:$1| unitate $1|$1 unitate}}",
         "label_choose": "Aukeratu zatikizuna eta zatitzailea",
         "label_dividend": "Zatikizuna (zatitu beharreko zenbakia)",
         "label_divisor": "Zatitzailea (zatiaren tamaina)",
@@ -87,7 +90,8 @@ var messages = /* I18N_START */ {
         "label_repadd": "Batuketa errepikatua",
         "repadd_exact": "— zehaztasunez zatitzen da!",
         "repadd_leftover": "hondarra",
-        "repadd_less": "$1 $2 baino txikiagoa da, beraz zatidura 0 da eta balio osoa hondarra da."
+        "repadd_less": "$1 $2 baino txikiagoa da, beraz zatidura 0 da eta balio osoa hondarra da.",
+        "hint": "Doitu zatikizuna eta zatitzailea zatiketaren banaketa ikusteko"
     },
     "fr": {
         "_name": "Dividende et diviseur",
@@ -98,6 +102,7 @@ var messages = /* I18N_START */ {
         "insight_exact": "<strong>$1 ÷ $2 = $3</strong> exactement — pas de reste. La barre se remplit parfaitement en <strong>$3</strong> morceaux égaux. Cela signifie que <strong>$2</strong> est un diviseur de <strong>$1</strong>.",
         "insight_less": "<strong>$1</strong> est plus petit que le diviseur <strong>$2</strong>, donc il contient <strong>0</strong> morceau entier. Toute la valeur est le reste. Le reste est toujours inférieur au diviseur.",
         "insight_normal": "<strong>$1 ÷ $2 = $3</strong> reste <strong>$4</strong>. Notez que la pièce rouge (<strong>$4</strong>) est toujours plus courte qu'un morceau bleu (<strong>$2</strong>). Le reste est toujours strictement inférieur au diviseur. Vérification : <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
+        "label_bar_description": "Bare de visualisation pour chaque bouton bleue = {{PLURAL:$1|$1 unit|$1 units}}",
         "label_choose": "Choisissez le dividende et le diviseur",
         "label_dividend": "Dividende (le nombre à diviser)",
         "label_divisor": "Diviseur (la taille du morceau)",
@@ -105,7 +110,8 @@ var messages = /* I18N_START */ {
         "label_repadd": "Addition répétée",
         "repadd_exact": "— divise exactement !",
         "repadd_leftover": "reste",
-        "repadd_less": "$1 est inférieur à $2, donc le quotient est 0 et toute la valeur est le reste."
+        "repadd_less": "$1 est inférieur à $2, donc le quotient est 0 et toute la valeur est le reste.",
+        "hint": "Ajustez le dividende et le diviseur pour afficher le détail de la division."
     },
     "ga": {
         "_name": "Díbhinn agus Roinnteoir",
@@ -113,9 +119,10 @@ var messages = /* I18N_START */ {
         "eq_lbl_divisor": "roinnteoir",
         "eq_lbl_quotient": "cóimheas",
         "eq_lbl_remainder": "fuílleach",
-        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> go díreach — gan aon fhuíoll. Líonann an barra go foirfe isteach i <strong>$3</strong> píosa$6 cothroma. Ciallaíonn sé seo gur roinnteoir de <strong>$1</strong> é <strong>$2</strong>.",
+        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> go díreach — gan aon fhuíoll. Líonann an barra go foirfe isteach i <strong>$3</strong> den chuid chomhionann $6. Ciallaíonn sé seo gur roinnteoir de <strong>$1</strong> é <strong>$2</strong>.",
         "insight_less": "Tá <strong>$1</strong> níos lú ná an roinnteoir <strong>$2</strong>, mar sin oireann sé do <strong>0</strong> píosa iomlán. Is é an luach iomlán an t-iarmhar. Bíonn an t-iarmhar níos lú ná an roinnteoir i gcónaí.",
         "insight_normal": "<strong>$1 ÷ $2 = $3</strong> fuílleach <strong>$4</strong>. Tabhair faoi deara go mbíonn an píosa dearg (<strong>$4</strong>) i gcónaí níos giorra ná smután gorm amháin (<strong>$2</strong>). Bíonn an fuílleach i gcónaí níos lú ná an roinnteoir. Seiceáil: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
+        "label_bar_description": "Radharc barra — gach píosa gorm = {{PLURAL:$1|$1 aonad|$1 aonaid}}",
         "label_choose": "Roghnaigh díbhinn agus roinnteoir",
         "label_dividend": "Díbhinn (an uimhir atá á roinnt)",
         "label_divisor": "Roinnteoir (méid an phíosa)",
@@ -123,7 +130,8 @@ var messages = /* I18N_START */ {
         "label_repadd": "Breisiú arís agus arís eile",
         "repadd_exact": "— roinneann go díreach!",
         "repadd_leftover": "fágtha",
-        "repadd_less": "Tá $1 níos lú ná $2, mar sin is é 0 an cóimheas agus is é an luach iomlán an fuíoll."
+        "repadd_less": "Tá $1 níos lú ná $2, mar sin is é 0 an cóimheas agus is é an luach iomlán an fuíoll.",
+        "hint": "Coigeartaigh an díbhinn agus an roinnteoir chun miondealú na roinnte a fheiceáil"
     },
     "it": {
         "_name": "Dividendo e divisore",
@@ -139,11 +147,43 @@ var messages = /* I18N_START */ {
         "eq_lbl_divisor": "제수",
         "eq_lbl_quotient": "몫",
         "eq_lbl_remainder": "나머지",
+        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> - 정확히 나누어 떨어집니다. 막대는 <strong>$3</strong>씩 정확히 채워집니다. 따라서 <strong>$2</strong>은(는) <strong>$1</strong>의 약수입니다.",
+        "insight_less": "<strong>$1</strong>은(는) 제수인 <strong>$2</strong> 보다 작으므로, $1은(는) <strong>0</strong>개의 덩어리로 나눌 수 있습니다. 따라서 전체 값이 나머지가 됩니다. 나머지는 항상 제수보다 작습니다.",
+        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> 나머지 <strong>$4</strong>입니다. 빨간색 조각(<strong>$4</strong>)은 항상 파란색 조각(<strong>$2</strong>)보다 작습니다. 나머지는 항상 제수보다 작습니다. 확인: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
+        "label_bar_description": "막대형 보기 — 각 파란색 덩어리 = {{PLURAL:$1|$1 단위}}",
         "label_choose": "피제수와 제수를 선택",
         "label_dividend": "피제수 (나누어지는 수)",
         "label_divisor": "제수 (나누는 수)",
+        "label_equation": "나누기 방정식",
         "label_repadd": "반복 덧셈",
-        "repadd_exact": "— 정확히 나누어집니다!"
+        "repadd_exact": "— 정확히 나누어집니다!",
+        "repadd_leftover": "나머지",
+        "repadd_less": "$1은(는) $2보다 작으므로 몫은 0이고 나머지는 전체 값이 됩니다.",
+        "hint": "제수와 피제수를 조정하여 나눗셈 결과를 확인하세요"
+    },
+    "lb": {
+        "eq_lbl_dividend": "Dividend",
+        "eq_lbl_quotient": "Quotient"
+    },
+    "mk": {
+        "_name": "Деленик и делител",
+        "eq_lbl_dividend": "деленик",
+        "eq_lbl_divisor": "делител",
+        "eq_lbl_quotient": "количник",
+        "eq_lbl_remainder": "остаток",
+        "insight_exact": "<strong>$1 ÷ $2 = точно $3</strong> — без остаток. Столбот совршено се вклопува во <strong>$3</strong> еднакво парче$6. Ова значи дека <strong>$2</strong> е делител на <strong>$1</strong>.",
+        "insight_less": "<strong>$1</strong> е помал од делителот <strong>$2</strong>, така што вклопува <strong>0</strong> цели парчиња. Целата вредност е остатокот. Остатокот е секогаш помал од делителот.",
+        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> остаток <strong>$4</strong>. Забележете дека црвеното парче (<strong>$4</strong>) секогаш е пократко од едно сино парче (<strong>$2</strong>). Остатокот е секогаш строго помал од делителот. Проверка: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
+        "label_bar_description": "Столбен преглед — секое сино парче = {{PLURAL:$1|$1 единица|$1 единици}}",
+        "label_choose": "Изберете деленик и делител",
+        "label_dividend": "Деленик (бројот што се дели)",
+        "label_divisor": "Делител (големината на парчето)",
+        "label_equation": "Равенка на делење",
+        "label_repadd": "Повторено собирање",
+        "repadd_exact": "— точно се дели!",
+        "repadd_leftover": "останато",
+        "repadd_less": "$1 е помало од $2, така што количникот изнесува 0, а целата вредност е остатокот.",
+        "hint": "Прилагодете ги деленикот и делителот за да добиете разложен преглед на делењето"
     },
     "nl": {
         "_name": "Deeltal en deler",
@@ -164,6 +204,44 @@ var messages = /* I18N_START */ {
         "repadd_leftover": "blijft over",
         "repadd_less": "$1 is minder dan $2, dus het quotiënt is 0 en de hele waarde is de rest.",
         "hint": "Pas het deeltal en de deler aan om de verdeling te zien"
+    },
+    "qqq": {
+        "_name": "Name of the Dividend and Divisor module",
+        "eq_lbl_dividend": "Label for the dividend in the division equation display",
+        "eq_lbl_divisor": "Label for the divisor in the division equation display",
+        "eq_lbl_quotient": "Label for the quotient in the division equation display",
+        "eq_lbl_remainder": "Label for the remainder in the division equation display",
+        "insight_exact": "Insight text shown when division is exact (no remainder). Uses HTML. Parameters: $1 = dividend, $2 = divisor, $3 = quotient, $6 = plural suffix for \"chunk\" (empty when Q=1, \"s\" otherwise).",
+        "insight_less": "Insight text shown when the dividend is smaller than the divisor. Uses HTML. Parameters: $1 = dividend, $2 = divisor.",
+        "insight_normal": "Insight text shown for normal division with a remainder. Uses HTML. Parameters: $1 = dividend, $2 = divisor, $3 = quotient, $4 = remainder, $5 = quotient × divisor.",
+        "label_bar_description": "Label for the bar visualisation section showing the chunk size. Uses PLURAL. Parameters: $1 = the divisor (chunk size).",
+        "label_choose": "Heading for the input section where the user selects dividend and divisor",
+        "label_dividend": "Label for the dividend input slider, with a parenthetical explanation",
+        "label_divisor": "Label for the divisor input slider, with a parenthetical explanation",
+        "label_equation": "Heading for the division equation section",
+        "label_repadd": "Heading for the repeated addition section",
+        "repadd_exact": "Text appended to the repeated addition when division is exact",
+        "repadd_leftover": "Text shown after the leftover value in the repeated addition",
+        "repadd_less": "Text shown in the repeated addition section when the dividend is less than the divisor. Parameters: $1 = dividend, $2 = divisor.",
+        "hint": "Instruction text explaining how to use the division sliders"
+    },
+    "tr": {
+        "_name": "Bölünen ve Bölen",
+        "eq_lbl_dividend": "bölünen",
+        "eq_lbl_divisor": "bölen",
+        "eq_lbl_quotient": "bölüm",
+        "eq_lbl_remainder": "kalan",
+        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> kalansız. Çubuk, <strong>$3</strong> eşit parçaya mükemmel bir şekilde bölünüyor. Bu, <strong>$2</strong> sayısının <strong>$1</strong> sayısına bölündüğünü gösteriyor..",
+        "label_bar_description": "Çubuk grafiği - her mavi parça = {{PLURAL:$1|$1 birim}}",
+        "label_choose": "Bölüneni ve böleni seçin.",
+        "label_dividend": "Bölünen (bölünen sayı)",
+        "label_divisor": "Bölen (parça boyutu)",
+        "label_equation": "Bölme denklemi",
+        "label_repadd": "Tekrarlı toplama",
+        "repadd_exact": "— tam olarak bölünüyor!",
+        "repadd_leftover": "kalanlı",
+        "repadd_less": "$1, $2 değerinden küçük olduğu için bölüm 0'dır ve tam sayı kısmı kalan değerdir.",
+        "hint": "Bölmenin ayrıntılarını görmek için bölünen ve böleni ayarlayın"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

@@ -23,43 +23,72 @@ var messages = /* I18N_START */ {
         "interiorAngles": "Ángulos interiores",
         "reset": "Reiniciar",
         "sum": "Suma",
-        "total": "Total"
-        "hint": "Mueve los vértices para ver la suma interior de los ángulos"
+        "total": "Total",
+        "hint": "Arrastra los vértices para ver la suma de los ángulos interiores"
     },
     "eu": {
         "_name": "Koadrilateroaren angeluak",
         "interiorAngles": "Barne angeluak",
         "reset": "Berrezarri",
         "sum": "Batuketa",
-        "total": "Guztira"
-        "hint": "Mugitu erpinak angeluen barne batura ikusteko"
+        "total": "Guztira",
+        "hint": "Arrastatu erpinak barne-angeluen batura ikusteko"
     },
     "fr": {
         "_name": "Angles du quadrilatère",
         "interiorAngles": "Angles intérieurs",
         "reset": "Réinitialiser",
         "sum": "Somme",
-        "total": "Total"
+        "total": "Total",
+        "hint": "Faites glisser les sommets pour voir la somme des angles intérieurs."
     },
     "ga": {
         "_name": "Uillinneacha Ceathairshleasacha",
         "interiorAngles": "Uillinneacha inmheánacha",
         "reset": "Athshocraigh",
         "sum": "Suim",
-        "total": "Iomlán"
+        "total": "Iomlán",
+        "hint": "Tarraing buaicphointí chun suim na n-uillinneacha inmheánacha a fheiceáil"
     },
     "ko": {
+        "_name": "사각형의 각도",
+        "interiorAngles": "내부 각들",
         "reset": "초기화",
         "sum": "총합",
-        "total": "합계"
+        "total": "합계",
+        "hint": "꼭짓점을 드래그하여 내각의 합을 확인하세요."
+    },
+    "mk": {
+        "_name": "Агли на четириаголник",
+        "interiorAngles": "Внатрешни агли",
+        "reset": "Одново",
+        "sum": "Збир",
+        "total": "Вкупно",
+        "hint": "Повлечете ги темињата за да го видите збирот на внатрешните агли"
     },
     "nl": {
         "_name": "Hoeken van een vierhoek",
         "interiorAngles": "Binnenhoeken",
-        "reset": "Reset",
+        "reset": "Opnieuw instellen",
         "sum": "Som",
         "total": "Totaal",
         "hint": "Sleep de hoekpunten om de som van de binnenhoeken te zien"
+    },
+    "qqq": {
+        "_name": "Name of the Quadrangle Angles module",
+        "interiorAngles": "Heading for the interior angles section",
+        "reset": "Button label to reset the visualisation",
+        "sum": "Label for the sum of angles",
+        "total": "Label for the total sum of interior angles",
+        "hint": "Instruction text for the quadrangle angle interaction"
+    },
+    "tr": {
+        "_name": "Dörtgen Açıları",
+        "interiorAngles": "İç açılar",
+        "reset": "Sıfırla",
+        "sum": "Toplam",
+        "total": "Toplam",
+        "hint": "Köşeleri sürükleyerek iç açıların toplamını görün."
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

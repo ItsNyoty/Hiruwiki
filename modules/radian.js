@@ -14,28 +14,48 @@ var messages = /* I18N_START */ {
     },
     "es": {
         "_name": "Radianes",
-        "rad": "rad"
+        "rad": "rad",
+        "hint": "Arrastra el controlador para ver la relación entre grados y radianes"
     },
     "eu": {
         "_name": "Radianak",
-        "rad": "rad"
+        "rad": "rad",
+        "hint": "Arrastatu heldulekua graduen eta radianen arteko erlazioa ikusteko"
     },
     "fr": {
         "_name": "Radians",
-        "rad": "rad"
+        "rad": "rad",
+        "hint": "Faites glisser la poignée pour visualiser la relation entre les degrés et les radians"
     },
     "ga": {
         "_name": "Raidiáin",
-        "rad": "rad"
+        "rad": "rad",
+        "hint": "Tarraing an láimhseáil chun an gaol idir céimeanna agus raidiáin a fheiceáil"
     },
     "ko": {
         "_name": "라디안",
-        "rad": "rad"
+        "rad": "rad",
+        "hint": "핸들을 드래그하여 도(°)와 라디안(radian) 사이의 관계를 확인하세요."
+    },
+    "mk": {
+        "_name": "Радијани",
+        "rad": "rad",
+        "hint": "Повлечете ја рачката за да го видите односот помеѓу степените и радијаните"
     },
     "nl": {
         "_name": "Radialen",
         "rad": "rad",
         "hint": "Sleep de hendel om de relatie tussen graden en radialen te zien"
+    },
+    "qqq": {
+        "_name": "Name of the Radians module",
+        "rad": "Abbreviation for radians",
+        "hint": "Instruction text for the radian-degree relationship applet"
+    },
+    "tr": {
+        "_name": "Radyanlar",
+        "rad": "rad",
+        "hint": "Derece ve radyan arasındaki ilişkiyi görmek için imleci sürükleyin"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

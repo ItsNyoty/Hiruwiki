@@ -54,7 +54,8 @@ var messages = /* I18N_START */ {
         "sideB": "lado b (CA)",
         "sideC": "lado c (AB)",
         "unitCm": "cm",
-        "unitCm2": "cm²"
+        "unitCm2": "cm²",
+        "hint": "Arrastra los vértices para cambiar la forma y la clasificación"
     },
     "eu": {
         "_name": "Hirukiak",
@@ -77,7 +78,8 @@ var messages = /* I18N_START */ {
         "sideB": "b aldea (CA)",
         "sideC": "c aldea (AB)",
         "unitCm": "cm",
-        "unitCm2": "cm²"
+        "unitCm2": "cm²",
+        "hint": "Arrastatu erpinak forma eta sailkapena aldatzeko"
     },
     "fr": {
         "_name": "Triangles",
@@ -100,7 +102,8 @@ var messages = /* I18N_START */ {
         "sideB": "côté b (CA)",
         "sideC": "côté c (AB)",
         "unitCm": "cm",
-        "unitCm2": "cm²"
+        "unitCm2": "cm²",
+        "hint": "Tirez les sommets pour changer de forme et de classification"
     },
     "ga": {
         "_name": "Triantáin",
@@ -123,7 +126,8 @@ var messages = /* I18N_START */ {
         "sideB": "taobh b (CA)",
         "sideC": "taobh c (AB)",
         "unitCm": "cm",
-        "unitCm2": "cm²"
+        "unitCm2": "cm²",
+        "hint": "Tarraing buaicphointí chun cruth agus aicmiú a athrú"
     },
     "it": {
         "angles": "Angoli",
@@ -141,6 +145,8 @@ var messages = /* I18N_START */ {
         "acute": "예각 삼각형",
         "angles": "각",
         "area": "면적",
+        "byAngles": "각별로:",
+        "bySides": "변별로:",
         "classification": "분류",
         "equilateral": "정삼각형",
         "isosceles": "이등변삼각형",
@@ -150,11 +156,45 @@ var messages = /* I18N_START */ {
         "reset": "초기화 ↺",
         "right": "직각 삼각형",
         "scalene": "부등변삼각형",
-        "sideA": "선분 a (BC)",
-        "sideB": "선분 b (CA)",
-        "sideC": "선분 c (AB)",
+        "sides": "변",
+        "sideA": "변 a (BC)",
+        "sideB": "변 b (CA)",
+        "sideC": "변 c (AB)",
+        "unitCm": "cm",
+        "unitCm2": "cm²",
+        "hint": "꼭짓점을 드래그하여 모양과 분류를 변경하세요"
+    },
+    "lb": {
+        "angles": "Wénkelen",
+        "area": "Fläch",
+        "perimeter": "Ëmfang",
+        "sides": "Säiten",
         "unitCm": "cm",
         "unitCm2": "cm²"
+    },
+    "mk": {
+        "_name": "Триаголници",
+        "acute": "остар",
+        "angles": "Агли",
+        "area": "Плоштина",
+        "byAngles": "По агли:",
+        "bySides": "По страни:",
+        "classification": "Класификација",
+        "equilateral": "рамностран",
+        "isosceles": "рамнокрак",
+        "measurements": "Димензии",
+        "obtuse": "тап",
+        "perimeter": "Обем",
+        "reset": "Одново ↺",
+        "right": "правоаголен",
+        "scalene": "разностран",
+        "sides": "Страни",
+        "sideA": "страна a (BC)",
+        "sideB": "страна b (CA)",
+        "sideC": "страна c (AB)",
+        "unitCm": "см",
+        "unitCm2": "см²",
+        "hint": "Повлечете ги темињата за да ја смените фигурата и класификацијата"
     },
     "nl": {
         "_name": "Driehoeken",
@@ -169,7 +209,7 @@ var messages = /* I18N_START */ {
         "measurements": "Afmetingen",
         "obtuse": "stomphoekig",
         "perimeter": "Omtrek",
-        "reset": "↺ Reset",
+        "reset": "Opnieuw instellen ↺",
         "right": "rechthoekig",
         "scalene": "ongelijkzijdig",
         "sides": "Zijden",
@@ -178,7 +218,31 @@ var messages = /* I18N_START */ {
         "sideC": "zijde c (AB)",
         "unitCm": "cm",
         "unitCm2": "cm²",
-        "hint": "Sleep hoekpunten om de vorm en classificatie te veranderen"
+        "hint": "Sleep hoekpunten om de vorm en classificatie te wijzigen"
+    },
+    "qqq": {
+        "_name": "Name of the Triangles module",
+        "acute": "Classification name for an acute triangle (all angles < 90°)",
+        "angles": "Section heading for the angles display",
+        "area": "Label for the triangle area",
+        "byAngles": "Label prefix for the angle-based classification. Followed by the classification name.",
+        "bySides": "Label prefix for the side-based classification. Followed by the classification name.",
+        "classification": "Section heading for the triangle classification",
+        "equilateral": "Classification name for an equilateral triangle (all sides equal)",
+        "isosceles": "Classification name for an isosceles triangle (two sides equal)",
+        "measurements": "Section heading for the measurements display",
+        "obtuse": "Classification name for an obtuse triangle (one angle > 90°)",
+        "perimeter": "Label for the triangle perimeter",
+        "reset": "Button label to reset the triangle",
+        "right": "Classification name for a right triangle (one angle = 90°)",
+        "scalene": "Classification name for a scalene triangle (no sides equal)",
+        "sides": "Section heading for the sides display",
+        "sideA": "Label for side a (the one connecting vertices B and C)",
+        "sideB": "Label for side b (the one connecting vertices C and A)",
+        "sideC": "Label for side c (the one connecting vertices A and B)",
+        "unitCm": "Unit of length (centimeters)",
+        "unitCm2": "Unit of area (square centimeters)",
+        "hint": "Explanation about how the module is interactive"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

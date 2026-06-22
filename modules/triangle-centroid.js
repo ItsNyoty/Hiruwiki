@@ -31,21 +31,43 @@ var messages = /* I18N_START */ {
     },
     "fr": {
         "_name": "Centre de gravité du triangle",
-        "hint": "Faites glisser un sommet pour explorer le centre de gravité"
+        "hint": "Faites glisser un sommet · Échelle : 1 cm = 40 px"
     },
     "ga": {
         "_name": "Lárphointe Triantáin",
-        "hint": "Bog na buaicphointí chun an lárphointe a iniúchadh"
+        "hint": "Bog na buaicphointí · Scála: 1 cm = 40 px"
     },
     "ko": {
         "_name": "삼각형 무게중심",
-        "hint": "꼭짓점을 드래그하여 무게중심을 탐색하세요"
+        "hint": "꼭짓점을 드래그해서 무게중심을 탐구하세요"
+    },
+    "mk": {
+        "_name": "Тежиште на триаголник",
+        "hint": "Повлечете некое теме · Размер: 1 см = 40 п"
     },
     "nl": {
         "_name": "Zwaartepunt van een driehoek",
         "hint": "Sleep een hoekpunt om het zwaartepunt te verkennen"
+    },
+    "qqq": {
+        "_name": "Name of the Triangle Centroid module",
+        "hint": "Instruction text shown in the footer."
     }
 } /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
+    }
+    return str;
+}
 
 /* ── Constants ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var SCALE = 40;   /* pixels per centimetre  */

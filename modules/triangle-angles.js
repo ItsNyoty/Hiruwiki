@@ -59,17 +59,50 @@
         "formula": "A + B + C = 180°"
     },
     "ko": {
-        "reset": "초기화"
+        "_name": "삼각형의 각도",
+        "reset": "초기화",
+        "hint": "꼭짓점을 드래그하여 삼각형의 모양을 변경하세요. 각의 합은 항상 180°입니다.",
+        "labelAngleA": "각 A",
+        "labelAngleB": "각 B",
+        "labelAngleC": "각 C",
+        "labelSum": "총합",
+        "formula": "A + B + C = 180°"
+    },
+    "lb": {
+        "labelAngleA": "Wénkel A",
+        "labelAngleB": "Wénkel B",
+        "labelAngleC": "Wénkel C",
+        "formula": "A + B + C = 180°"
+    },
+    "mk": {
+        "_name": "Агли на триаголник",
+        "reset": "Одново",
+        "hint": "Повлечете темиња за да го измените триаголникот · Збирот од аглите секогаш изнесува 180°",
+        "labelAngleA": "Агол A",
+        "labelAngleB": "Агол B",
+        "labelAngleC": "Агол C",
+        "labelSum": "Збир",
+        "formula": "A + B + C = 180°"
     },
     "nl": {
         "_name": "Hoeken van een driehoek",
-        "reset": "↺ Reset",
-        "hint": "Sleep hoekpunten om de driehoek te veranderen · Som van de hoeken is altijd 180°",
+        "reset": "Opnieuw instellen",
+        "hint": "Sleep hoekpunten om de driehoek te wijzigen · Som van de hoeken is altijd 180°",
         "labelAngleA": "Hoek A",
         "labelAngleB": "Hoek B",
         "labelAngleC": "Hoek C",
         "labelSum": "Som",
         "formula": "A + B + C = 180°"
+    },
+    "qqq": {
+        "_name": "Name of the Triangle Angles module",
+        "reset": "Button label to reset the triangle",
+        "hint": "Explanation about how the module is interactive",
+        "labelAngleA": "Label for angle A",
+        "labelAngleB": "Label for angle B",
+        "labelAngleC": "Label for angle C",
+        "labelSum": "Label for the sum of angles",
+        "formula": "Text showing the formula A + B + C = 180°"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

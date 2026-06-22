@@ -65,7 +65,8 @@ var messages = /* I18N_START */ {
         "sec_chart": "Convergencia hacia φ",
         "sec_sequence": "Secuencia hasta ahora",
         "sec_steps": "Pasos de la secuencia de Fibonacci",
-        "step_label": "Paso $1 de $2"
+        "step_label": "Paso $1 de $2",
+        "hint": "Recorre la secuencia paso a paso para observar la convergencia"
     },
     "eu": {
         "_name": "Fibonacci sekuentzia",
@@ -84,7 +85,8 @@ var messages = /* I18N_START */ {
         "sec_chart": "φ-rantz konbergentzia",
         "sec_sequence": "Orain arteko segida",
         "sec_steps": "Fibonacci segidaren urratsak",
-        "step_label": "$1. urratsa $2tik"
+        "step_label": "$1. urratsa $2tik",
+        "hint": "Jarraitu sekuentzian zehar konbergentzia ikusteko"
     },
     "fr": {
         "_name": "Suite de Fibonacci",
@@ -103,7 +105,8 @@ var messages = /* I18N_START */ {
         "sec_chart": "Convergence vers φ",
         "sec_sequence": "Suite jusqu'ici",
         "sec_steps": "Étapes de la suite de Fibonacci",
-        "step_label": "Étape $1 sur $2"
+        "step_label": "Étape $1 sur $2",
+        "hint": "Effectuer la séquence pour voir la convergence"
     },
     "ga": {
         "_name": "Seicheamh Fibonacci",
@@ -113,7 +116,7 @@ var messages = /* I18N_START */ {
         "card_ratio_lbl": "Cóimheas reatha F(n+1) ÷ F(n)",
         "chart_step": "céim",
         "diff": "difríocht:",
-        "insight_close": "<strong>$1 + $2 = $3</strong>. An cóimheas = <strong>$4</strong> — laistigh de <strong>$5</strong> de φ. Beagnach comhtháite go hiomlán.",
+        "insight_close": "$1 + $2 = $3. An cóimheas = $4 — laistigh de $5 de φ. Beagnach comhtháite go hiomlán.",
         "insight_converged": "<strong>$1 + $2 = $3</strong>. An cóimheas = <strong>$4</strong> — laistigh de <strong>$5</strong> de φ. Tá an seicheamh comhtháite go 6 ionad deachúil.",
         "insight_normal": "<strong>$1 + $2 = $3</strong>. An cóimheas = <strong>$4</strong>, fós <strong>$5</strong> ar shiúl ó φ = 1.61803…",
         "insight_step1": "Tosaímid le *1 + 1 = 2*. Tá an cóimheas 2 ÷ 1 = *2.000000* — fós i bhfad ó φ ≈ 1.61803.",
@@ -122,15 +125,57 @@ var messages = /* I18N_START */ {
         "sec_chart": "Comhtháthú i dtreo φ",
         "sec_sequence": "Seicheamh go dtí seo",
         "sec_steps": "Céim tríd an seicheamh Fibonacci",
-        "step_label": "Céim $1 de $2"
+        "step_label": "Céim $1 de $2",
+        "hint": "Céim tríd an seicheamh chun comhtháthú a fheiceáil"
     },
     "ko": {
         "_name": "피보나치 수열",
         "card_phi_lbl": "황금비 φ",
-        "card_phi_sub": "(1 + √5) / 2 = 1.6180339887…"
+        "card_phi_sub": "(1 + √5) / 2 = 1.6180339887…",
+        "card_ratio_error": "φ와의 오차:",
+        "card_ratio_lbl": "현재 비율 F(n+1) ÷ F(n)",
+        "chart_step": "단계",
+        "diff": "차이:",
+        "insight_close": "<strong>$1 + $2 = $3</strong>. 비율은 <strong>$4</strong>(으)로, φ값에서 <strong>$5</strong> 이내입니다. 거의 완전히 수렴했습니다.",
+        "insight_converged": "<strong>$1 + $2 = $3</strong>. 비율은 <strong>$4</strong>(으)로, φ값에서 <strong>$5</strong> 이내입니다. 소수점 6자리까지 수렴했습니다.",
+        "insight_normal": "<strong>$1 + $2 = $3</strong>. 비율은 <strong>$4</strong>(으)로, φ = 1.61803...값에서 아직 <strong>$5</strong> 만큼 떨어져 있습니다.",
+        "insight_step1": "<strong>1 + 1 = 2</strong> 부터 시작합니다. 비율은 2 ÷ 1 = <strong>2.000000</strong> 인데, 이는 여전히 φ ≈ 1.61803과는 거리가 멉니다.",
+        "insight_step2": "<strong>1 + 2 = 3</strong>. 비율은 3 ÷ 2 = <strong>1.500000</strong> 입니다. 더 가까워졌습니다. 단계가 진행될수록 격차는 더욱 줄어듭니다.",
+        "sec_addition": "추가",
+        "sec_chart": "φ를 향해 수렴",
+        "sec_sequence": "지금까디릐 수열",
+        "sec_steps": "피보나치 수열을 단계별로 따라가 보세요",
+        "step_label": "$2단계 중 $1단계",
+        "hint": "수렴 과정을 단계별로 살펴보세요"
+    },
+    "lb": {
+        "card_phi_lbl": "Gëllene Schnëtt φ",
+        "chart_step": "Schrëtt",
+        "sec_addition": "Additioun",
+        "step_label": "Schrëtt $1 vu(n) $2"
+    },
+    "mk": {
+        "_name": "Фибоначиева низа",
+        "card_phi_lbl": "Златен пресек φ",
+        "card_phi_sub": "(1 + √5) / 2 = 1,6180339887…",
+        "card_ratio_error": "грешка од φ:",
+        "card_ratio_lbl": "Тековен сооднос F(n+1) ÷ F(n)",
+        "chart_step": "чекор",
+        "diff": "разлика:",
+        "insight_close": "<strong>$1 + $2 = $3</strong>. Соодносот = <strong>$4</strong> — во рамките на <strong>$5</strong> од φ. Речиси наполно сретнати.",
+        "insight_converged": "<strong>$1 + $2 = $3</strong>. Соодносот = <strong>$4</strong> — во рамките на <strong>$5</strong> од φ. Низата се сретнала на 6 децимални места.",
+        "insight_normal": "<strong>$1 + $2 = $3</strong>. Соодносот = <strong>$4</strong>, сепак треба уште <strong>$5</strong> за да биде φ = 1,61803…",
+        "insight_step1": "Почнуваме со <strong>1 + 1 = 2</strong>. Соодносот 2 ÷ 1 = <strong>2,000000</strong> — сè уште далеку од φ ≈ 1,61803.",
+        "insight_step2": "<strong>1 + 2 = 3</strong>. Соодносот 3 ÷ 2 = <strong>1,500000</strong> — веќе е поблиску. Секој чекор понатаму го намалува јазот.",
+        "sec_addition": "Собирање",
+        "sec_chart": "Среќавање кон φ",
+        "sec_sequence": "Низата досега",
+        "sec_steps": "Чекорете низ Фибоначиевата низа",
+        "step_label": "Чекор $1 од $2",
+        "hint": "Чекорете низ низата за да го видите среќавањето"
     },
     "nl": {
-        "_name": "Rij van Fibonacci",
+        "_name": "Fibonacci-reeks",
         "card_phi_lbl": "Gulden snede φ",
         "card_phi_sub": "(1 + √5) / 2 = 1,6180339887…",
         "card_ratio_error": "fout ten opzichte van φ:",
@@ -148,6 +193,41 @@ var messages = /* I18N_START */ {
         "sec_steps": "Stap door de Fibonacci-reeks",
         "step_label": "Stap $1 van $2",
         "hint": "Klik op de knop om de Fibonacci-reeks te doorlopen en de convergentie naar de Gulden Snede te zien."
+    },
+    "qqq": {
+        "_name": "Name of the Fibonacci Sequence module",
+        "card_phi_lbl": "Label for the golden ratio φ card",
+        "card_phi_sub": "Subtitle showing the formula and decimal value of the golden ratio",
+        "card_ratio_error": "Label for the error from φ, followed by a numeric value",
+        "card_ratio_lbl": "Label for the current ratio F(n+1) ÷ F(n) card",
+        "chart_step": "X-axis label for the convergence chart",
+        "diff": "Label prefix for the difference value in the sequence display. Followed by a number.",
+        "insight_close": "Insight text shown when the ratio is close to φ but not yet converged. Uses HTML. Parameters: $1 = left addend, $2 = right addend, $3 = sum, $4 = current ratio, $5 = error from φ.",
+        "insight_converged": "Insight text shown when the ratio has converged to 6 decimal places. Uses HTML. Parameters: $1 = left addend, $2 = right addend, $3 = sum, $4 = current ratio, $5 = error from φ.",
+        "insight_normal": "Insight text shown during normal steps. Uses HTML. Parameters: $1 = left addend, $2 = right addend, $3 = sum, $4 = current ratio, $5 = error from φ.",
+        "insight_step1": "Insight text shown at the first step of the Fibonacci sequence. Uses HTML.",
+        "insight_step2": "Insight text shown at the second step of the Fibonacci sequence. Uses HTML.",
+        "sec_addition": "Section heading for the addition display",
+        "sec_chart": "Section heading for the convergence chart",
+        "sec_sequence": "Section heading for the sequence display",
+        "sec_steps": "Section heading for the step-through controls",
+        "step_label": "Label showing the current step. Parameters: $1 = current step number, $2 = total number of steps.",
+        "hint": "Instruction text for the Fibonacci step-through controls"
+    },
+    "tr": {
+        "_name": "Fibonacci Dizisi",
+        "card_phi_lbl": "Altın oran φ",
+        "card_phi_sub": "(1 + √5) / 2 = 1.6180339887…",
+        "card_ratio_error": "φ'den kaynaklanan hata:",
+        "card_ratio_lbl": "Cari oran F(n+1) ÷ F(n)",
+        "chart_step": "adım",
+        "diff": "fark:",
+        "sec_addition": "Ek",
+        "sec_chart": "φ'ye yakınsama",
+        "sec_sequence": "Şu ana kadar olan süreç",
+        "sec_steps": "Fibonacci dizisini adım adım inceleyin",
+        "step_label": "$1/$2 adım",
+        "hint": "Yakınsamayı görmek için adım adım ilerleyin"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

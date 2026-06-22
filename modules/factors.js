@@ -62,7 +62,8 @@ var messages = /* I18N_START */ {
         "lcm_title": "MCM — unión de todos los factores",
         "legend_onlyA": "solo de A",
         "legend_onlyB": "solo de B",
-        "legend_shared": "compartidos (usados para MCD)"
+        "legend_shared": "compartidos (usados para MCD)",
+        "hint": "Elige números para ver sus factores primos"
     },
     "eu": {
         "_name": "Faktore lehenak",
@@ -79,7 +80,8 @@ var messages = /* I18N_START */ {
         "lcm_title": "MKT — faktore guztien biderketa",
         "legend_onlyA": "Ari bakarrik dagokiona",
         "legend_onlyB": "Bri bakarrik dagokiona",
-        "legend_shared": "partekatua (ZKHrako erabilia)"
+        "legend_shared": "partekatua (ZKHrako erabilia)",
+        "hint": "Aukeratu zenbakiak haien faktore lehenak ikusteko"
     },
     "fr": {
         "_name": "Facteurs premiers",
@@ -96,15 +98,16 @@ var messages = /* I18N_START */ {
         "lcm_title": "PPCM — union de tous les facteurs",
         "legend_onlyA": "unique à A",
         "legend_onlyB": "unique à B",
-        "legend_shared": "partagé (utilisé pour le PGCD)"
+        "legend_shared": "partagé (utilisé pour le PGCD)",
+        "hint": "Choisissez des nombres pour voir leurs facteurs primaires"
     },
     "ga": {
         "_name": "Príomhfhachtóirí",
         "gcd_formula_eq": "=",
         "gcd_none": "(níl aon cheann — comhphríomh)",
         "gcd_title": "GCD — coinnigh fachtóirí comhroinnte amháin",
-        "insight_coprime": "Is comhphríomha iad <strong>$1</strong> agus <strong>$2</strong> — níl aon phríomhfhachtóirí roinnte acu, mar sin tá GCD = 1. Níl san LCM ach a dtáirge. Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>1 × $4 = $4</strong>.",
-        "insight_shared_many": "Roinneann <strong>$1</strong> agus <strong>$2</strong> na príomhuimhreacha <strong>$7</strong>. Ní ghlacann an GCD ach na bloic chomhroinnte glasa. Glacann an LCM na blocanna uile — comhroinnte glasa, breiseáin ghorma ó A, breiseáin dhearga ó B — gan aon phríomh a chomhaireamh faoi dhó. Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>$3 × $4 = $6</strong>.",
+        "insight_coprime": "Is comhphríomha iad <strong>$1</strong> agus <strong>$2</strong> — níl aon phríomhfhachtóirí comhroinnte acu, mar sin tá GCD = 1. Níl san LCM ach a dtáirge. Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>1 × $4 = $4</strong>.",
+        "insight_shared_many": "Roinneann <strong>$1</strong> agus <strong>$2</strong> na príomhuimhreacha <strong>$7</strong>. Ní ghlacann an GCD ach na bloic chomhroinnte glasa. Glacann an LCM na bloic uile — comhroinnte glasa, breiseáin ghorma ó A, breiseáin dhearga ó B — gan aon phríomhuimhreacha a chomhaireamh faoi dhó. Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>$3 × $4 = $6</strong>.",
         "insight_shared_one": "Roinneann <strong>$1</strong> agus <strong>$2</strong> na príomhuimhreacha <strong>$7</strong>. Ní ghlacann an GCD ach na bloic chomhroinnte glasa. Glacann an LCM na bloic uile — bloic chomhroinnte glasa, breiseáin ghorma ó A, breiseáin dhearga ó B — gan aon phríomhuimhreacha a chomhaireamh faoi dhó. Fíor i gcónaí: <strong>$1 × $2 = $5</strong> = GCD × LCM = <strong>$3 × $4 = $6</strong>.",
         "label_choose": "Roghnaigh dhá uimhir",
         "label_factors": "Príomhfhachtóirí",
@@ -113,7 +116,8 @@ var messages = /* I18N_START */ {
         "lcm_title": "LCM — aontas na bhfachtóirí uile",
         "legend_onlyA": "uathúil do A",
         "legend_onlyB": "uathúil do B",
-        "legend_shared": "roinnte (a úsáidtear le haghaidh GCD)"
+        "legend_shared": "roinnte (a úsáidtear le haghaidh GCD)",
+        "hint": "Roghnaigh uimhreacha chun a bpríomhfhachtóirí a fheiceáil"
     },
     "it": {
         "gcd_formula_eq": "=",
@@ -126,7 +130,41 @@ var messages = /* I18N_START */ {
         "_name": "소인수",
         "gcd_formula_eq": "=",
         "gcd_none": "(없음 — 서로소)",
-        "label_factors": "소인수"
+        "gcd_title": "최대공약수 — 공통 인수만 유지",
+        "insight_coprime": "<strong>$1</strong>와(과) <strong>$2</strong>은(는) 서로소입니다. 즉, 공통 소인수가 없으므로 최대공약수는 1입니다. 최소공배수는 두 달러의 곱입니다. 따라서 항상: <strong>$1 × $2 = $5</strong> = 최대공약수 × 최소공배수 = <strong>1 × $4 = $4</strong>이(가) 성립합니다.",
+        "insight_shared_many": "<strong>$1</strong>와(과) <strong>$2</strong>은(는) 공통 소인수로 <strong>$7</strong>을(를) 갖습니다. 최대공약수는 공통으로 있는 초록색 블록만 사용합니다. 최소공배수는 모든 블록(공통 초록색 블록, A에서 추가된 파란색 블록, B에서 추가된 빨간색 블록)을 사용하며, 소수는 중복해서 계산되지 않습니다. 따라서 항상: <strong>$1 × $2 = $5</strong> = 최대공약수 × 최소공배수 = <strong>$3 × $4 = $6</strong>이(가) 성립합니다.",
+        "insight_shared_one": "<strong>$1</strong>와(과) <strong>$2</strong>은(는) 공통 소인수로 <strong>$7</strong>을(를) 갖습니다. 최대공약수는 공통으로 있는 초록색 블록만 사용합니다. 최소공배수는 모든 블록(공통 초록색 블록, A에서 추가된 파란색 블록, B에서 추가된 빨간색 블록)을 사용하며, 소수는 중복해서 계산되지 않습니다. 따라서 항상: <strong>$1 × $2 = $5</strong> = 최대공약수 × 최소공배수 = <strong>$3 × $4 = $6</strong>이(가) 성립합니다.",
+        "label_choose": "두 개의 숫자를 선택하세요",
+        "label_factors": "소인수",
+        "label_how": "최대공약수와 최소공약수의 원리를 알아보세요",
+        "lcm_formula_eq": "=",
+        "lcm_title": "최소공배수 — 모든 인수의 합집합",
+        "legend_onlyA": "A에만 있음",
+        "legend_onlyB": "B에만 있음",
+        "legend_shared": "공통 (최대공약수에 사용됨)",
+        "hint": "소인수분해를 보려면 숫자를 선택하세요"
+    },
+    "lb": {
+        "gcd_formula_eq": "=",
+        "label_choose": "Wielt zwou Zuelen"
+    },
+    "mk": {
+        "_name": "Прости делители",
+        "gcd_formula_eq": "=",
+        "gcd_none": "(нема — заемно прости)",
+        "gcd_title": "НЗД — задржи само заеднички фактори",
+        "insight_coprime": "<strong>$1</strong> и <strong>$2</strong> се заемно прости — не делат прости делители, така што НЗС = 1. НЗМ е просто нивниот производ. Секогаш точно: <strong>$1 × $2 = $5</strong> = НЗД × НЗС = <strong>1 × $4 = $4</strong>.",
+        "insight_shared_many": "<strong>$1</strong> и <strong>$2</strong> делат прости броеви <strong>$7</strong>. НЗД ги зема само зелените заеднички блокови. НЗС ги зема сите блокови — зелените заеднички, сините преостанати од A, црвените преостанати од B — при што ниеден прост делител не се брои двапати. Секогаш точно: <strong>$1 × $2 = $5</strong> = НЗД × НЗС = <strong>$3 × $4 = $6</strong>.",
+        "insight_shared_one": "<strong>$1</strong> и <strong>$2</strong> го делат истиот прост делител <strong>$7</strong>. НЗД ги зема само зелените заеднички блокови. НЗС ги зема сите блокови — зелените заеднички, сините преостанати од A, црвените преостанати од B — при што ниеден прост делител не се брои двапати. Секогаш точно: <strong>$1 × $2 = $5</strong> = НЗД × НЗС = <strong>$3 × $4 = $6</strong>.",
+        "label_choose": "Изберете два броја",
+        "label_factors": "Прости делители",
+        "label_how": "Како се изградени НЗД и НЗС",
+        "lcm_formula_eq": "=",
+        "lcm_title": "НЗС — унија на сите фактори",
+        "legend_onlyA": "само во A",
+        "legend_onlyB": "само во B",
+        "legend_shared": "заеднички (се користи за НЗД)",
+        "hint": "Изберете броеви за да ги видите нивните прости делители"
     },
     "nl": {
         "_name": "Priemfactoren",
@@ -145,6 +183,39 @@ var messages = /* I18N_START */ {
         "legend_onlyB": "alleen van B",
         "legend_shared": "gedeeld (voor GGD)",
         "hint": "Kies getallen om hun priemfactoren te zien"
+    },
+    "qqq": {
+        "_name": "Name of the Prime Factors module",
+        "gcd_formula_eq": "Equals sign used in the GCD formula display",
+        "gcd_none": "Text shown when two numbers share no prime factors (are coprime)",
+        "gcd_title": "Heading for the GCD (Greatest Common Divisor) section",
+        "insight_coprime": "Insight text shown when the two numbers are coprime. Uses HTML. Parameters: $1 = first number, $2 = second number, $5 = their product, $4 = LCM.",
+        "insight_shared_many": "Insight text shown when the two numbers share multiple prime factors. Uses HTML. Parameters: $1 = first number, $2 = second number, $7 = shared primes, $5 = product, $3 = GCD, $4 = LCM, $6 = GCD × LCM.",
+        "insight_shared_one": "Insight text shown when the two numbers share exactly one prime factor. Uses HTML. Parameters: $1 = first number, $2 = second number, $7 = shared prime, $5 = product, $3 = GCD, $4 = LCM, $6 = GCD × LCM.",
+        "label_choose": "Heading for the input section where the user selects two numbers",
+        "label_factors": "Heading for the prime factors display section",
+        "label_how": "Heading for the section explaining how GCD and LCM are built",
+        "lcm_formula_eq": "Equals sign used in the LCM formula display",
+        "lcm_title": "Heading for the LCM (Least Common Multiple) section",
+        "legend_onlyA": "Legend label for factor blocks unique to number A",
+        "legend_onlyB": "Legend label for factor blocks unique to number B",
+        "legend_shared": "Legend label for factor blocks shared between A and B (used for GCD)",
+        "hint": "Instruction text explaining how to use the number sliders"
+    },
+    "tr": {
+        "_name": "Asal Çarpanlar",
+        "gcd_formula_eq": "=",
+        "gcd_none": "(yok — aralarında asal)",
+        "gcd_title": "EBOB -  sadece ortak çarpanları hesapla",
+        "label_choose": "İki sayı seçin",
+        "label_factors": "Asal çarpanlar",
+        "label_how": "EBOB ve EKOK nasıl hesaplanır?",
+        "lcm_formula_eq": "=",
+        "lcm_title": "EKOK - tüm çarpanların birleşimi",
+        "legend_onlyA": "A'ya özgü",
+        "legend_onlyB": "B'ye özgü",
+        "legend_shared": "paylaşılan (EBOB için kullanılır)",
+        "hint": "Asal çarpanlarını görmek için sayıları seçin"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

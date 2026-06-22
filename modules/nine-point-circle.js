@@ -49,10 +49,31 @@ var messages = /* I18N_START */ {
     },
     "fr": {
         "_name": "Cercle des neuf points",
-        "hint": "Faites glisser un sommet pour explorer le cercle des neuf points",
+        "hint": "Faites glisser un sommet · Échelle : 1 cm = 40 px",
         "legendM": "M_a/b/c — milieux des côtés",
         "legendH": "H_a/b/c — pieds des hauteurs",
         "legendE": "E_a/b/c — milieux de AH, BH, CH"
+    },
+    "ga": {
+        "_name": "Ciorcal Naoi bPointe",
+        "hint": "Tarraing aon bhuaicphointe · Scála: 1 cm = 40 px",
+        "legendM": "M_a/b/c — lárphointí na dtaobhanna",
+        "legendH": "H_a/b/c — troigh na n-airde",
+        "legendE": "E_a/b/c — lárphointí AH, BH, CH"
+    },
+    "ko": {
+        "_name": "구점원",
+        "hint": "꼭짓점을 드래그해서 구점원을 탐구하세요",
+        "legendM": "M_a/b/c — 변들의 중점들",
+        "legendH": "M_a/b/c — 수선의 발들",
+        "legendE": "E_a/b/c — 각 AH, BH, CH의 중점들"
+    },
+    "mk": {
+        "_name": "Кружница со девет точки",
+        "hint": "Повлечете некое теме · Размер: 1 см = 40 п",
+        "legendM": "M_a/b/c — средишни точки на страните",
+        "legendH": "H_a/b/c — подножја на висините",
+        "legendE": "E_a/b/c — средишни точки на AH, BH, CH"
     },
     "nl": {
         "_name": "Cirkel van de negen punten",
@@ -60,8 +81,36 @@ var messages = /* I18N_START */ {
         "legendM": "M_a/b/c — middens van de zijden",
         "legendH": "H_a/b/c — voetpunten van de hoogtelijnen",
         "legendE": "E_a/b/c — middens van AH, BH, CH"
+    },
+    "qqq": {
+        "_name": "Name of the Nine-Point Circle module",
+        "hint": "Instruction text shown in the footer.",
+        "legendM": "Legend entry for M_a/b/c — midpoints of the sides",
+        "legendH": "Legend entry for H_a/b/c — feet of the altitudes",
+        "legendE": "Legend entry for E_a/b/c — midpoints of AH, BH, CH"
+    },
+    "tr": {
+        "_name": "Dokuz Noktalı Çember",
+        "hint": "Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 px",
+        "legendM": "M_a/b/c - kenarların orta noktaları",
+        "legendH": "H_a/b/c - yüksekliklerin fit cinsinden uzunlukları",
+        "legendE": "E_a/b/c — AH, BH ve CH'nin orta noktaları"
     }
 } /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
+
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
+    }
+    return str;
+}
 
 /* ── Constants ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var SCALE = 40;   /* pixels per centimetre  */

@@ -101,6 +101,27 @@ var messages = /* I18N_START */ {
         "slopeCard": "기울기",
         "pointsCard": "점"
     },
+    "lb": {
+        "point1": "Punkt P₁",
+        "point2": "Punkt P₂",
+        "coords1": "Koordinate vu P₁",
+        "coords2": "Koordinate vu P₂",
+        "pointsCard": "Punkten"
+    },
+    "mk": {
+        "_name": "Наклон",
+        "undefined": "Вертикала → недефиниран наклон",
+        "hint": "Повлечете ги точките за да ја видите пресметката на наклонот",
+        "point1": "Точка P₁",
+        "point2": "Точка P₂",
+        "coords1": "Координати на P₁",
+        "coords2": "Координати на P₂",
+        "rise": "Пораст (Δy)",
+        "run": "Поместување (Δx)",
+        "slope": "Наклон (m)",
+        "slopeCard": "Наклон",
+        "pointsCard": "Точки"
+    },
     "nl": {
         "_name": "Helling",
         "undefined": "Verticale lijn → helling ongedefinieerd",
@@ -114,6 +135,30 @@ var messages = /* I18N_START */ {
         "slope": "Helling (m)",
         "slopeCard": "Helling",
         "pointsCard": "Punten"
+    },
+    "qqq": {
+        "_name": "Name of the Slope module",
+        "undefined": "Message shown when the line is vertical and the slope is undefined",
+        "hint": "Instruction text for the slope calculation interaction",
+        "point1": "name of the first point",
+        "point2": "name of the second point",
+        "coords1": "coordinates of first point",
+        "coords2": "coordinates of second point",
+        "rise": "message for the vertical distance",
+        "run": "message for the horizontal distance",
+        "slope": "name of the division of both",
+        "slopeCard": "title of the slope section",
+        "pointsCard": "title used in the points section"
+    },
+    "tr": {
+        "_name": "Eğim",
+        "undefined": "Dikey çizgi → eğim belirsiz",
+        "hint": "Eğim hesaplamasını görmek için noktaları sürükleyin.",
+        "point1": "P₁ Noktası",
+        "point2": "P₂ Noktası",
+        "coords1": "P₁ koordinatları",
+        "coords2": "P₂ koordinatları",
+        "rise": "Yükseklik artışı (Δy)"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

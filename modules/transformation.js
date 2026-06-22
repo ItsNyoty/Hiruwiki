@@ -32,7 +32,7 @@ var messages = /* I18N_START */ {
         "angle": "Ángulo",
         "enlargement": "Homotecia",
         "hintEnlargement": "Mueve el punto naranja para establecer el centro de la homotecia.",
-        "hintReflection": "Mueve ambos puntos naranjas para crear la línea de simetría.",
+        "hintReflection": "Mueve ambos puntos naranjes para crear la línea de simetría.",
         "hintRotation": "Mueve el punto naranja para establecer el centro de rotación.",
         "hintTranslation": "Usa los controles deslizantes para trasladar el objeto.",
         "horizontal": "Horizontal",
@@ -40,7 +40,8 @@ var messages = /* I18N_START */ {
         "rotation": "Rotación",
         "transformations": "Transformaciones",
         "translation": "Traslación",
-        "vertical": "Vertical"
+        "vertical": "Vertical",
+        "hint": "Elige una transformación para verla en acción. Usa los puntos azules para cambiar la forma del triángulo."
     },
     "eu": {
         "_name": "Transformazioak",
@@ -55,7 +56,8 @@ var messages = /* I18N_START */ {
         "rotation": "Biraketa",
         "transformations": "Transformazioak",
         "translation": "Translazioa",
-        "vertical": "Bertikala"
+        "vertical": "Bertikala",
+        "hint": "Aukeratu transformazio bat martxan ikusteko. Erabili puntu urdinak triangeluaren forma aldatzeko."
     },
     "fr": {
         "_name": "Transformations",
@@ -70,7 +72,8 @@ var messages = /* I18N_START */ {
         "rotation": "Rotation",
         "transformations": "Transformations",
         "translation": "Translation",
-        "vertical": "Vertical"
+        "vertical": "Vertical",
+        "hint": "Choisissez une transformation pour la voir en action. Utilisez les points bleus pour changer la forme du triangle"
     },
     "ga": {
         "_name": "Claochluithe",
@@ -85,18 +88,46 @@ var messages = /* I18N_START */ {
         "rotation": "Rothlú",
         "transformations": "Claochluithe",
         "translation": "Aistriúchán",
-        "vertical": "Ingearach"
+        "vertical": "Ingearach",
+        "hint": "Roghnaigh claochlú chun é a fheiceáil i mbun gnímh. Úsáid na poncanna gorma chun cruth an triantáin a athrú."
     },
     "ko": {
         "_name": "변환",
         "angle": "각",
         "enlargement": "확대",
+        "hintEnlargement": "주황색 점을 움직여 확대 중심을 설정하세요.",
+        "hintReflection": "두 개의 주황색 점을 움직여 대칭선을 만드세요.",
+        "hintRotation": "주황색 점을 움직여 회전 중심을 설정하세요.",
+        "hintTranslation": "슬라이더를 사용하여 개체를 평행이동 시키세요.",
         "horizontal": "수평",
         "reflection": "반전",
         "rotation": "회전",
         "transformations": "변환",
         "translation": "평행 이동",
-        "vertical": "수직"
+        "vertical": "수직",
+        "hint": "원하는 변환을 선택하여 실제로 어떻게 적용되는지 확인해 보세요. 파란색 점을 사용하여 삼각형의 형태를 바꿔 보세요."
+    },
+    "lb": {
+        "angle": "Wénkel",
+        "horizontal": "Horizontal",
+        "transformations": "Transformatiounen",
+        "translation": "Translatioun"
+    },
+    "mk": {
+        "_name": "Трансформации",
+        "angle": "Агол",
+        "enlargement": "Хомотетија",
+        "hintEnlargement": "Поместете ја портокаловата точка за да го зададете центарот на хомотетија.",
+        "hintReflection": "Поместете ги двете портокалови точки за да го создадете права на отслик.",
+        "hintRotation": "Поместете ја портокаловата точка за да го зададете центарот на вртење.",
+        "hintTranslation": "Послужете се со лизгачите за да направите транслација на фигурата.",
+        "horizontal": "Хоризонтала",
+        "reflection": "Отслик",
+        "rotation": "Вртење",
+        "transformations": "Трансформации",
+        "translation": "Транслација",
+        "vertical": "Вертикална",
+        "hint": "Изберете трансформација за да ја видите на дело. Послужете се со сините точки за да го измените обликот на триаголникот"
     },
     "nl": {
         "_name": "Transformaties",
@@ -112,7 +143,23 @@ var messages = /* I18N_START */ {
         "transformations": "Transformaties",
         "translation": "Translatie",
         "vertical": "Verticaal",
-        "hint": "Kies een transformatie om deze in actie te zien. Gebruik de blauwe stippen om de vorm van de driehoek te veranderen"
+        "hint": "Kies een transformatie om deze in actie te zien. Gebruik de blauwe stippen om de vorm van de driehoek te wijzigen"
+    },
+    "qqq": {
+        "_name": "Name of the Transformations module",
+        "angle": "Label for the rotation angle slider",
+        "enlargement": "Button label and heading for the enlargement transformation",
+        "hintEnlargement": "Instruction text for the enlargement mode",
+        "hintReflection": "Instruction text for the reflection mode",
+        "hintRotation": "Instruction text for the rotation mode",
+        "hintTranslation": "Instruction text for the translation mode",
+        "horizontal": "Label for the horizontal translation slider",
+        "reflection": "Button label and heading for the reflection transformation",
+        "rotation": "Button label and heading for the rotation transformation",
+        "transformations": "Main heading for the transformations panel",
+        "translation": "Button label and heading for the translation transformation",
+        "vertical": "Label for the vertical translation slider",
+        "hint": "Instruction text for the transformation module"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

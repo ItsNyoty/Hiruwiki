@@ -68,6 +68,55 @@ var messages = /* I18N_START */ {
         "orthocentre": "Orthocentre H",
         "scaleUnit": "cm"
     },
+    "ga": {
+        "_name": "Líne Euler",
+        "triangle": "Triantán",
+        "eulerLine": "Líne Euler",
+        "hint": "Tarraing aon bhuaicphointe · Scála: 1 cm = 40 px",
+        "sideA": "Taobh a (BC)",
+        "sideB": "Taobh b (CA)",
+        "sideC": "Taobh c (AB)",
+        "perimeter": "Imlíne",
+        "circumcenter": "Lárphointe imlíne O",
+        "centroid": "Lárphointe G",
+        "orthocentre": "Lárphointe ortaipéideach H",
+        "scaleUnit": "cm"
+    },
+    "ko": {
+        "_name": "오일러 선",
+        "triangle": "삼각형",
+        "eulerLine": "오일러 선",
+        "hint": "꼭짓점을 드래그하세요 · 축척: 1 cm = 40 px",
+        "sideA": "변 a (BC)",
+        "sideB": "변 b (CA)",
+        "sideC": "변 c (AB)",
+        "perimeter": "둘레",
+        "circumcenter": "외심 O",
+        "centroid": "무게중심 G",
+        "orthocentre": "수심 H",
+        "scaleUnit": "cm"
+    },
+    "lb": {
+        "triangle": "Dräieck",
+        "sideA": "Säit a (BC)",
+        "sideB": "Säit b (CA)",
+        "sideC": "Säit c (AB)",
+        "scaleUnit": "cm"
+    },
+    "mk": {
+        "_name": "Ојлерова права",
+        "triangle": "Триаголник",
+        "eulerLine": "Ојлерова права",
+        "hint": "Повлечете некое теме · Размер: 1 см = 40 п",
+        "sideA": "Страна a (BC)",
+        "sideB": "Страна b (CA)",
+        "sideC": "Страна c (AB)",
+        "perimeter": "Обем",
+        "circumcenter": "Центар на опишана кружница O",
+        "centroid": "Тежиште G",
+        "orthocentre": "Ортоцентар H",
+        "scaleUnit": "см"
+    },
     "nl": {
         "_name": "Rechte van Euler",
         "triangle": "Driehoek",
@@ -80,6 +129,34 @@ var messages = /* I18N_START */ {
         "circumcenter": "Middelpunt omgeschreven cirkel O",
         "centroid": "Zwaartepunt G",
         "orthocentre": "Hoogtepunt H",
+        "scaleUnit": "cm"
+    },
+    "qqq": {
+        "_name": "Name of the Euler Line module",
+        "triangle": "Section heading for the triangle properties card",
+        "eulerLine": "Section heading for the Euler line properties card",
+        "hint": "Instruction text shown in the footer. Includes scale information.",
+        "sideA": "Label for side a (BC) of the triangle",
+        "sideB": "Label for side b (CA) of the triangle",
+        "sideC": "Label for side c (AB) of the triangle",
+        "perimeter": "Label for the triangle perimeter",
+        "circumcenter": "Label for the circumcenter point O",
+        "centroid": "Label for the centroid point G",
+        "orthocentre": "Label for the orthocentre point H",
+        "scaleUnit": "Unit abbreviation used for measurements (centimetres)"
+    },
+    "tr": {
+        "_name": "Euler Doğrusu",
+        "triangle": "Üçgen",
+        "eulerLine": "Euler Doğrusu",
+        "hint": "Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 piksel",
+        "sideA": "a kenarı (BC)",
+        "sideB": "b kenarı (CA)",
+        "sideC": "c kenarı (AB)",
+        "perimeter": "Çevre",
+        "circumcenter": "Çevre merkez O",
+        "centroid": "Merkez G",
+        "orthocentre": "Yükseklik merkezi H",
         "scaleUnit": "cm"
     }
 } /* I18N_END */
