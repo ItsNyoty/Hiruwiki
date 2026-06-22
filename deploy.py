@@ -13,6 +13,10 @@ try:
     import yaml
 except ImportError:
     yaml = None
+import ssl
+
+# Globally disable SSL verification for urllib
+ssl._create_default_https_context = ssl._create_unverified_context
 
 # --- Configuration ---
 WIKI_LANGS = {
