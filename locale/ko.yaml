@@ -50,25 +50,7 @@ ko:
     hint: 반지름 슬라이더를 드래그하여 계산 결과를 확인하세요.
   circumcentre:
     _name: 외심
-    triangle: 삼각형
-    circumcentre: 외심
-    hint: '꼭짓점을 드래그하세요 · 축척: 1 cm = 40 px'
-    sideA: 변 a (BC)
-    sideB: 변 b (CA)
-    sideC: 변 c (AB)
-    angleA: 각 A
-    angleB: 각 B
-    angleC: 각 C
-    perimeter: 둘레
-    centre: 외심 O
-    radius: 외심 R
-    midA: 중점 M_a (BC)
-    midB: 중점 M_b (CA)
-    midC: 중점 M_c (AB)
-    circPerimeter: 원의 둘레
-    circArea: 원의 면적
-    scaleUnit: cm
-    scaleUnit2: cm²
+    hint: 꼭짓점을 드래그해서 외심을 탐구하세요
   dividend:
     _name: 피제수과 제수
     eq_lbl_dividend: 피제수
@@ -151,25 +133,7 @@ ko:
     hint: 육각형을 삼각형이나 사각형으로 분해하세요.
   incentre:
     _name: 내심
-    angleA: 각 A
-    angleB: 각 B
-    angleC: 각 C
-    area: 면적
-    centre: 내심 I
-    circumference: 원둘레
-    formula: r = 면적 / s
-    hint: '꼭짓점을 드래그하세요 · 축척: 1 cm = 40 px'
-    incircle: 내접원
-    perimeter: 둘레
-    radius: 반지름 (r)
-    scaleUnit: cm
-    sideA: 변 a (BC)
-    sideB: 변 b (CA)
-    sideC: 변 c (AB)
-    touchAB: AB 위 수선의 발
-    touchBC: BC 위 수선의 발
-    touchCA: CA 위 수선의 발
-    triangle: 삼각형
+    hint: 꼭짓점을 드래그해서 내접원을 탐구하세요
   euler-line:
     _name: 오일러 선
     triangle: 삼각형
@@ -208,39 +172,13 @@ ko:
     hint: 확률을 이용하여 π를 근사하기 위해 점을 추가합니다
   nine-point-circle:
     _name: 구점원
-    triangle: 삼각형
-    ninePoint: 구점원
-    hint: '꼭짓점을 드래그하세요 · 축척: 1 cm = 40 px'
-    sideA: 변 a (BC)
-    sideB: 변 b (CA)
-    sideC: 변 c (AB)
-    perimeter: 둘레
-    centre: 구점원 중심 N₉
-    radius: 반경
+    hint: 꼭짓점을 드래그해서 구점원을 탐구하세요
     legendM: M_a/b/c — 변들의 중점들
     legendH: M_a/b/c — 수선의 발들
     legendE: E_a/b/c — 각 AH, BH, CH의 중점들
-    scaleUnit: cm
   orthocentre:
     _name: 수심
-    altA: 높이 hₐ
-    altB: 높이 h_b
-    altC: 높이 h_c
-    centre: 수심 H
-    footA: BC의 수선의 발 Hₐ
-    footB: CA의 수선의 발 H_b
-    footC: AB의 수선의 발 H_c
-    hint: '꼭지점을 드래그하여 수심이 어떻게 변하는지 확인하세요 (축척: 1 cm = 40 px)'
-    orthocentre: 수심
-    perimeter: 둘레
-    scaleUnit: cm
-    sideA: 변 a (BC)
-    sideB: 변 b (CA)
-    sideC: 변 c (AB)
-    angleA: 각 A
-    angleB: 각 B
-    angleC: 각 C
-    triangle: 삼각형
+    hint: 꼭짓점을 드래그해서 수심이 어떻게 바뀌는지를 확인하세요
   pentagon-angles:
     3triangles: 3개의 삼각형 × 180°
     _name: 오각형의 각들
@@ -397,21 +335,7 @@ ko:
     hint: 꼭짓점을 드래그하여 삼각형의 모양을 변경하기
   triangle-centroid:
     _name: 삼각형 무게중심
-    triangle: 삼각형
-    centroid: 무게중심
-    hint: '꼭짓점을 드래그하세요 · 축척: 1 cm = 40 px'
-    sideA: 변 a (BC)
-    sideB: 변 b (CA)
-    sideC: 변 c (AB)
-    angleA: 각도 A
-    angleB: 각도 B
-    angleC: 각도 C
-    perimeter: 둘레
-    centre: 무게중심 G
-    medianA: 중선 m_a
-    medianB: 중선 m_b
-    medianC: 중선 m_c
-    scaleUnit: cm
+    hint: 꼭짓점을 드래그해서 무게중심을 탐구하세요
   triangles:
     _name: 삼각형
     acute: 예각 삼각형

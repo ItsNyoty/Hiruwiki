@@ -52,25 +52,7 @@ fr:
     hint: Tirez le curseur du rayon pour voir le calcul
   circumcentre:
     _name: Circoncentre
-    triangle: Triangle
-    circumcentre: Circoncentre
     hint: 'Faites glisser un sommet · Échelle : 1 cm = 40 px'
-    sideA: Côté a (BC)
-    sideB: Côté b (CA)
-    sideC: Côté c (AB)
-    angleA: Angle A
-    angleB: Angle B
-    angleC: Angle C
-    perimeter: Périmètre
-    centre: Centre O
-    radius: Circonrayon R
-    midA: Milieu M_a (BC)
-    midB: Milieu M_b (CA)
-    midC: Milieu M_c (AB)
-    circPerimeter: Périmètre du cercle
-    circArea: Aire du cercle
-    scaleUnit: cm
-    scaleUnit2: cm²
   dividend:
     _name: Dividende et diviseur
     eq_lbl_dividend: dividende
@@ -161,25 +143,7 @@ fr:
     hint: Décomposer l'hexagone en triangles ou quadrilatères
   incentre:
     _name: Incentre
-    angleA: Angle A
-    angleB: Angle B
-    angleC: Angle C
-    area: Aire
-    centre: Centre I
-    circumference: Circonférence
-    formula: r = Aire / s
     hint: 'Faites glisser un sommet · Échelle : 1 cm = 40 px'
-    incircle: Cercle inscrit
-    perimeter: Périmètre
-    radius: Rayon (r)
-    scaleUnit: cm
-    sideA: Côté a (BC)
-    sideB: Côté b (CA)
-    sideC: Côté c (AB)
-    touchAB: Pt de contact AB
-    touchBC: Pt de contact BC
-    touchCA: Pt de contact CA
-    triangle: Triangle
   euler-line:
     _name: Droite d'Euler
     triangle: Triangle
@@ -218,40 +182,14 @@ fr:
     hint: Ajoutez des points pour approximer π en utilisant les probabilités
   nine-point-circle:
     _name: Cercle des neuf points
-    triangle: Triangle
-    ninePoint: Cercle des neuf points
     hint: 'Faites glisser un sommet · Échelle : 1 cm = 40 px'
-    sideA: Côté a (BC)
-    sideB: Côté b (CA)
-    sideC: Côté c (AB)
-    perimeter: Périmètre
-    centre: Centre N₉
-    radius: Rayon
     legendM: M_a/b/c — milieux des côtés
     legendH: H_a/b/c — pieds des hauteurs
     legendE: E_a/b/c — milieux de AH, BH, CH
-    scaleUnit: cm
   orthocentre:
     _name: Orthocentre
-    altA: Hauteur hₐ
-    altB: Hauteur h_b
-    altC: Hauteur h_c
-    centre: Centre H
-    footA: Pied Hₐ sur BC
-    footB: Pied H_b sur CA
-    footC: Pied H_c sur AB
     hint: 'Faites glisser n''importe quel sommet pour voir comment l''orthocentre
       change (Échelle : 1 cm = 40 px)'
-    orthocentre: Orthocentre
-    perimeter: Périmètre
-    scaleUnit: cm
-    sideA: Côté a (BC)
-    sideB: Côté b (CA)
-    sideC: Côté c (AB)
-    angleA: Angle A
-    angleB: Angle B
-    angleC: Angle C
-    triangle: Triangle
   pentagon-angles:
     3triangles: 3 triangles × 180°
     _name: Angles du pentagone
@@ -425,21 +363,7 @@ fr:
     hint: Tirez les sommets pour changer la forme du triangle
   triangle-centroid:
     _name: Centre de gravité du triangle
-    triangle: Triangle
-    centroid: Centre de gravité
     hint: 'Faites glisser un sommet · Échelle : 1 cm = 40 px'
-    sideA: Côté a (BC)
-    sideB: Côté b (CA)
-    sideC: Côté c (AB)
-    angleA: Angle A
-    angleB: Angle B
-    angleC: Angle C
-    perimeter: Périmètre
-    centre: Centre G
-    medianA: Médiane m_a
-    medianB: Médiane m_b
-    medianC: Médiane m_c
-    scaleUnit: cm
   triangles:
     _name: Triangles
     acute: acutangle

@@ -51,25 +51,7 @@ ga:
     hint: Tarraing an sleamhnán gha chun an ríomh a fheiceáil
   circumcentre:
     _name: Ciorcalár
-    triangle: Triantán
-    circumcentre: Ciorcalár
     hint: 'Tarraing aon rinn · Scála: 1 cm = 40 px'
-    sideA: Taobh a (BC)
-    sideB: Taobh b (CA)
-    sideC: Taobh c (AB)
-    angleA: Uillinn A
-    angleB: Uillinn B
-    angleC: Uillinn C
-    perimeter: Imlíne
-    centre: Lár O
-    radius: Gha Imchiorcail R
-    midA: Lárphointe M_a (BC)
-    midB: Lárphointe M_b (CA)
-    midC: Lárphointe M_c (AB)
-    circPerimeter: Imlíne an chiorcail
-    circArea: Achar an chiorcail
-    scaleUnit: cm
-    scaleUnit2: cm²
   dividend:
     _name: Díbhinn agus Roinnteoir
     eq_lbl_dividend: díbhinn
@@ -164,25 +146,7 @@ ga:
     hint: Déan an heicseagán a dhíscaoileadh ina thriantáin nó ina cheathairshleasáin
   incentre:
     _name: Lárionad
-    angleA: Uillinn A
-    angleB: Uillinn B
-    angleC: Uillinn C
-    area: Limistéar
-    centre: Ionad I
-    circumference: Imlíne
-    formula: r = Achar / s
     hint: 'Tarraing aon bhuaicphointe · Scála: 1 cm = 40 px'
-    incircle: I gciorcal
-    perimeter: Imlíne
-    radius: Ga (r)
-    scaleUnit: cm
-    sideA: Taobh a (BC)
-    sideB: Taobh b (CA)
-    sideC: Taobh c (AB)
-    touchAB: Teagmháil pt. AB
-    touchBC: Teagmháil pt. BC
-    touchCA: Teagmháil pt. CA
-    triangle: Triantán
   euler-line:
     _name: Líne Euler
     triangle: Triantán
@@ -221,40 +185,14 @@ ga:
     hint: Cuir pointí leis chun π a mheasúnú ag baint úsáide as dóchúlacht
   nine-point-circle:
     _name: Ciorcal Naoi bPointe
-    triangle: Triantán
-    ninePoint: Ciorcal Naoi bPointe
     hint: 'Tarraing aon bhuaicphointe · Scála: 1 cm = 40 px'
-    sideA: Taobh a (BC)
-    sideB: Taobh b (CA)
-    sideC: Taobh c (AB)
-    perimeter: Imlíne
-    centre: Lár N₉
-    radius: Ga
     legendM: M_a/b/c — lárphointí na dtaobhanna
     legendH: H_a/b/c — troigh na n-airde
     legendE: E_a/b/c — lárphointí AH, BH, CH
-    scaleUnit: cm
   orthocentre:
     _name: Ortalár
-    altA: Airde hₐ
-    altB: Airde h_b
-    altC: Airde h_c
-    centre: Lár H
-    footA: Bun Hₐ ar BC
-    footB: Bun H_b ar CA
-    footC: Bun H_c ar AB
     hint: 'Tarraing aon rinn chun a fheiceáil conas a athraíonn an t-ortalár (Scála:
       1 cm = 40 px)'
-    orthocentre: Ortalár
-    perimeter: Imlíne
-    scaleUnit: cm
-    sideA: Taobh a (BC)
-    sideB: Taobh b (CA)
-    sideC: Taobh c (AB)
-    angleA: Uillinn A
-    angleB: Uillinn B
-    angleC: Uillinn C
-    triangle: Triantán
   pentagon-angles:
     3triangles: 3 thriantán × 180°
     _name: Uillinneacha an Pheinteagáin
@@ -414,21 +352,7 @@ ga:
     hint: Tarraing na buaicphointí chun cruth an triantáin a athrú
   triangle-centroid:
     _name: Lárphointe Triantáin
-    triangle: Triantán
-    centroid: Lárphointe
     hint: 'Bog na buaicphointí · Scála: 1 cm = 40 px'
-    sideA: Taobh a (BC)
-    sideB: Taobh b (CA)
-    sideC: Taobh c (AB)
-    angleA: Uillinn A
-    angleB: Uillinn B
-    angleC: Uillinn C
-    perimeter: Imlíne
-    centre: Lár G
-    medianA: Meánlíne m_a
-    medianB: Meánlíne m_b
-    medianC: Meánlíne m_c
-    scaleUnit: cm
   triangles:
     _name: Triantáin
     acute: géarmhíochaine

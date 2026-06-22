@@ -51,25 +51,7 @@ tr:
     hint: Hesaplamayı görmek için yarıçap kaydırma çubuğunu sürükleyin
   circumcentre:
     _name: çevre merkezi
-    triangle: Üçgen
-    circumcentre: çevre merkezi
     hint: 'Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 px'
-    sideA: a kenarı (BC)
-    sideB: b kenarı (CA)
-    sideC: c kenarı (AB)
-    angleA: A açısı
-    angleB: B açısı
-    angleC: C açısı
-    perimeter: Çevre
-    centre: Merkez O
-    radius: Çevre yarıçapı R
-    midA: Merkez Nokta M_a (BC)
-    midB: Merkez Nokta M_b (CA)
-    midC: Merkez nokta M_c (AB)
-    circPerimeter: Dairenin çevresi
-    circArea: Dairenin alanı
-    scaleUnit: cm
-    scaleUnit2: cm²
   dividend:
     _name: Bölünen ve Bölen
     eq_lbl_dividend: bölünen
@@ -128,25 +110,7 @@ tr:
     hint: Altgeni, üçgenlere veya dörtgenlere ayırın
   incentre:
     _name: İç teğet çemberi merkezi
-    angleA: A açısı
-    angleB: B açısı
-    angleC: C açısı
-    area: Alan
-    centre: I merkezi
-    circumference: Çevre
-    formula: r = Alan / s
     hint: 'Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 px'
-    incircle: İç teğet çemberi
-    perimeter: Çevre
-    radius: Yarıçap (r)
-    scaleUnit: cm
-    sideA: a kenarı (BC)
-    sideB: b kenarı (CA)
-    sideC: c kenarı (AB)
-    touchAB: AB noktasına dokun
-    touchBC: BC noktasına dokun
-    touchCA: CA noktasına dokun
-    triangle: Üçgen
   euler-line:
     _name: Euler Doğrusu
     triangle: Üçgen
@@ -185,40 +149,14 @@ tr:
     hint: Olasılık kullanarak π'ye yakın bir sayı bulmak için nokta ekleyin
   nine-point-circle:
     _name: Dokuz Noktalı Çember
-    triangle: Üçgen
-    ninePoint: Dokuz Noktalı Çember
     hint: 'Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 px'
-    sideA: a kenarı (BC)
-    sideB: b kenarı (CA)
-    sideC: c kenarı (AB)
-    perimeter: Çevre
-    centre: Merkez N₉
-    radius: Yarıçap
     legendM: M_a/b/c - kenarların orta noktaları
     legendH: H_a/b/c - yüksekliklerin fit cinsinden uzunlukları
     legendE: E_a/b/c — AH, BH ve CH'nin orta noktaları
-    scaleUnit: cm
   orthocentre:
     _name: Yükseklik merkezi
-    altA: Yükseklik hₐ
-    altB: Yükseklik h_b
-    altC: Yükseklik h_c
-    centre: Merkez H
-    footA: BC üzerindeki Hₐ ayağı
-    footB: CA üzerindeki H_b ayağı
-    footC: AB üzerinde H_c ayağı
     hint: 'Herhangi bir köşeyi sürükleyerek yükseklik merkezinin nasıl değiştiğini
       görün (Ölçek: 1 cm = 40 px)'
-    orthocentre: Yükseklik merkezi
-    perimeter: Çevre
-    scaleUnit: cm
-    sideA: a kenarı (BC)
-    sideB: b kenarı (CA)
-    sideC: c kenarı (AB)
-    angleA: A açısı
-    angleB: B açısı
-    angleC: C açısı
-    triangle: Üçgen
   pentagon-angles:
     3triangles: 3 üçgen × 180°
     _name: Beşgen Açıları

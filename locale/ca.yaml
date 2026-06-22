@@ -53,13 +53,6 @@ ca:
     diff: 'dif:'
   hexagon-angles:
     total: Total
-  incentre:
-    angleA: Angle A
-    angleB: Angle B
-    angleC: Angle C
-    area: Àrea
-    circumference: Circumferència
-    scaleUnit: cm
   marble-jar:
     total: Total
   monte-carlo:

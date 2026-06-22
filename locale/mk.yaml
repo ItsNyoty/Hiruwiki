@@ -51,25 +51,7 @@ mk:
     hint: Повлечете го лизгачот за полупречник за да ја видите пресметката
   circumcentre:
     _name: центар на опишана кружница
-    triangle: Триаголник
-    circumcentre: центар на опишана кружница
     hint: 'Повлечете некое теме · Размер: 1 см = 40 п'
-    sideA: Страна a (BC)
-    sideB: Страна b (CA)
-    sideC: Страна c (AB)
-    angleA: Агол A
-    angleB: Агол B
-    angleC: Агол C
-    perimeter: Обем
-    centre: Центар O
-    radius: Полупречник R на опишана кружница
-    midA: Средна точка M_a (BC)
-    midB: Средна точка M_b (CA)
-    midC: Средна точка M_c (AB)
-    circPerimeter: Обем на кружница
-    circArea: Плоштина на круг
-    scaleUnit: см
-    scaleUnit2: см²
   dividend:
     _name: Деленик и делител
     eq_lbl_dividend: деленик
@@ -160,25 +142,7 @@ mk:
     hint: Разложете го шестаголникот на триаголници или четириаголници
   incentre:
     _name: Центар на впишана кружница
-    angleA: Агол A
-    angleB: Агол B
-    angleC: Агол C
-    area: Плоштина
-    centre: Центар I
-    circumference: Обиколка
-    formula: r = Плоштина / s
     hint: 'Повлечете некое теме · Размер: 1 п = 40 п'
-    incircle: Впишана кружница
-    perimeter: Обем
-    radius: Полупречник (r)
-    scaleUnit: см
-    sideA: Страна a (BC)
-    sideB: Страна b (CA)
-    sideC: Страна c (AB)
-    touchAB: Допирна точка AB
-    touchBC: Допирна точка BC
-    touchCA: Допирна точка CA
-    triangle: Триаголник
   euler-line:
     _name: Ојлерова права
     triangle: Триаголник
@@ -217,40 +181,14 @@ mk:
     hint: Додајте точки за да се приближите на π користејќи веројатност
   nine-point-circle:
     _name: Кружница со девет точки
-    triangle: Триаголник
-    ninePoint: Кружница со девет точки
     hint: 'Повлечете некое теме · Размер: 1 см = 40 п'
-    sideA: Страна a (BC)
-    sideB: Страна b (CA)
-    sideC: Страна c (AB)
-    perimeter: Обем
-    centre: Центар N₉
-    radius: Полупречник
     legendM: M_a/b/c — средишни точки на страните
     legendH: H_a/b/c — подножја на висините
     legendE: E_a/b/c — средишни точки на AH, BH, CH
-    scaleUnit: см
   orthocentre:
     _name: Ортоцентар
-    altA: Висина hₐ
-    altB: Висина h_b
-    altC: Висина h_c
-    centre: Центар H
-    footA: Подножје Hₐ на BC
-    footB: Подножје H_b на CA
-    footC: Подножје H_c на AB
     hint: 'Повлечете некое теме за да видите како се менува ортоцентарот (Размер:
       1 см = 40 п)'
-    orthocentre: Ортоцентар
-    perimeter: Обем
-    scaleUnit: см
-    sideA: Страна a (BC)
-    sideB: Страна b (CA)
-    sideC: Страна c (AB)
-    angleA: Агол A
-    angleB: Агол B
-    angleC: Агол C
-    triangle: Триаголник
   pentagon-angles:
     3triangles: 3 триаголници × 180°
     _name: Агли на петаголник
@@ -405,21 +343,7 @@ mk:
     hint: Повлечете ги темињата за да го смените обликот на триаголникот
   triangle-centroid:
     _name: Тежиште на триаголник
-    triangle: Триаголник
-    centroid: Тежиште
     hint: 'Повлечете некое теме · Размер: 1 см = 40 п'
-    sideA: Страна a (BC)
-    sideB: Страна b (CA)
-    sideC: Страна c (AB)
-    angleA: Агол A
-    angleB: Агол B
-    angleC: Агол C
-    perimeter: Обем
-    centre: Центар G
-    medianA: Медијана m_a
-    medianB: Медијана m_b
-    medianC: Медијана m_c
-    scaleUnit: см
   triangles:
     _name: Триаголници
     acute: остар
