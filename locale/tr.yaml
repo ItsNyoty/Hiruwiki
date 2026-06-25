@@ -50,7 +50,7 @@ tr:
     visualProof: Görsel ispat
     hint: Hesaplamayı görmek için yarıçap kaydırma çubuğunu sürükleyin
   circumcentre:
-    _name: çevre merkezi
+    _name: Çevre merkezi
     hint: 'Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 px'
   dividend:
     _name: Bölünen ve Bölen

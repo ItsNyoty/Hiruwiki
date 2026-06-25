@@ -44,6 +44,9 @@ it:
     tabArea: Area
     tabCirc: Circonferenza
     visualProof: Prova visiva
+  circumcentre:
+    _name: Circumcentro
+    hint: Trascina un vertice qualsiasi per esplorare il circocentro
   dividend:
     _name: Dividendo e divisore
     eq_lbl_dividend: dividendo
@@ -57,6 +60,8 @@ it:
     label_choose: Scegli due numeri
     lcm_formula_eq: ' ='
     lcm_title: mcm — unione di tutti i fattori
+  incentre:
+    hint: Trascina un vertice qualsiasi per esplorare il cerchio
   marble-jar:
     colorBlue: Blu
     colorGreen: Verde

@@ -1,6 +1,7 @@
 # Messages for French (français)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: Crowwhailord
 # Author: ItsNyoty
 # Author: Lionel Scheepmans
 # Author: Theklan
@@ -52,7 +53,7 @@ fr:
     hint: Tirez le curseur du rayon pour voir le calcul
   circumcentre:
     _name: Circoncentre
-    hint: 'Faites glisser un sommet · Échelle : 1 cm = 40 px'
+    hint: Tirez n'importe quel sommet pour explorer le circoncentre
   dividend:
     _name: Dividende et diviseur
     eq_lbl_dividend: dividende
@@ -143,7 +144,7 @@ fr:
     hint: Décomposer l'hexagone en triangles ou quadrilatères
   incentre:
     _name: Incentre
-    hint: 'Faites glisser un sommet · Échelle : 1 cm = 40 px'
+    hint: Tirez n'importe quel sommet pour explorer l'circoncircle
   euler-line:
     _name: Droite d'Euler
     triangle: Triangle
@@ -182,14 +183,13 @@ fr:
     hint: Ajoutez des points pour approximer π en utilisant les probabilités
   nine-point-circle:
     _name: Cercle des neuf points
-    hint: 'Faites glisser un sommet · Échelle : 1 cm = 40 px'
+    hint: Faites glisser n'importe quel sommet pour explorer le cercle à neuf points
     legendM: M_a/b/c — milieux des côtés
     legendH: H_a/b/c — pieds des hauteurs
     legendE: E_a/b/c — milieux de AH, BH, CH
   orthocentre:
     _name: Orthocentre
-    hint: 'Faites glisser n''importe quel sommet pour voir comment l''orthocentre
-      change (Échelle : 1 cm = 40 px)'
+    hint: Tirez n'importe quel sommet pour voir comment l' orthocentre change
   pentagon-angles:
     3triangles: 3 triangles × 180°
     _name: Angles du pentagone
@@ -363,7 +363,7 @@ fr:
     hint: Tirez les sommets pour changer la forme du triangle
   triangle-centroid:
     _name: Centre de gravité du triangle
-    hint: 'Faites glisser un sommet · Échelle : 1 cm = 40 px'
+    hint: Faites glisser n'importe quel sommet pour explorer le centroïde
   triangles:
     _name: Triangles
     acute: acutangle
