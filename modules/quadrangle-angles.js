@@ -1,3 +1,9 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
 ( function () {
   'use strict';
 
@@ -112,7 +118,6 @@ var SVG_W  = 540, SVG_H = 480;
   var COLORS = { A: 'red', B: 'green', C: 'blue', D: 'orange' };
 
   function initQuadrangleAngles( root ) {
-    // Replace the hiruwiki placeholder div with the widget wrapper
     var wrapper = document.createElement( 'div' );
     wrapper.className = 'quadrangle-angles';
     root.parentNode.replaceChild( wrapper, root );
@@ -123,6 +128,14 @@ var SVG_W  = 540, SVG_H = 480;
     svgEl.setAttribute( 'width',   SVG_W );
     svgEl.classList.add( 'qa-svg' );
 
+    // SVG background rect — background-color-base: #ffffff light / #101418 dark.
+    // Makes polygon stroke visible in dark mode and avoids white flash from CSS.
+    var bgRect = document.createElementNS( SVG_NS, 'rect' );
+    bgRect.setAttribute( 'width', '100%' );
+    bgRect.setAttribute( 'height', '100%' );
+    bgRect.setAttribute( 'fill', hiruwiki.getThemeColor('background-color-base', '#ffffff') );
+    svgEl.appendChild( bgRect );
+
     var defs = document.createElementNS( SVG_NS, 'defs' );
     var pat  = document.createElementNS( SVG_NS, 'pattern' );
     pat.setAttribute( 'id', 'qa-grid' );
@@ -132,7 +145,8 @@ var SVG_W  = 540, SVG_H = 480;
     var gridPath = document.createElementNS( SVG_NS, 'path' );
     gridPath.setAttribute( 'd', 'M 20 0 L 0 0 0 20' );
     gridPath.setAttribute( 'fill', 'none' );
-    gridPath.setAttribute( 'stroke', hiruwiki.getThemeColor('border-color-base', '#ccc') );
+    // Grid lines: border-color-subtle (very faint) — #c8ccd1 light / #2e3136 dark
+    gridPath.setAttribute( 'stroke', hiruwiki.getThemeColor('border-color-subtle', '#c8ccd1') );
     gridPath.setAttribute( 'stroke-width', '0.5' );
     pat.appendChild( gridPath );
     defs.appendChild( pat );
@@ -144,9 +158,10 @@ var SVG_W  = 540, SVG_H = 480;
     gridRect.setAttribute( 'fill', 'url(#qa-grid)' );
     svgEl.appendChild( gridRect );
 
+    // Quadrangle outline — color-base: #202122 light / ~#f8f9fa dark
     var quadEl = document.createElementNS( SVG_NS, 'polygon' );
     quadEl.setAttribute( 'fill', 'none' );
-    quadEl.setAttribute( 'stroke', hiruwiki.getThemeColor('color-base', 'black') );
+    quadEl.setAttribute( 'stroke', hiruwiki.getThemeColor('color-base', '#202122') );
     quadEl.setAttribute( 'stroke-width', '2' );
     svgEl.appendChild( quadEl );
 
@@ -170,7 +185,8 @@ var SVG_W  = 540, SVG_H = 480;
       var circ = document.createElementNS( SVG_NS, 'circle' );
       circ.setAttribute( 'r', '8' );
       circ.setAttribute( 'fill', COLORS[k] );
-      circ.setAttribute( 'stroke', hiruwiki.getThemeColor('background-color-base', 'white') );
+      // Drag handle ring — background-color-base so it punches through polygon fill
+      circ.setAttribute( 'stroke', hiruwiki.getThemeColor('background-color-base', '#ffffff') );
       circ.setAttribute( 'stroke-width', '2' );
       circ.style.cursor = 'pointer';
       svgEl.appendChild( circ );
@@ -219,7 +235,6 @@ var SVG_W  = 540, SVG_H = 480;
       row.appendChild( val );
       panel.appendChild( row );
     } );
-
 
     var sumSection = document.createElement( 'div' );
     sumSection.className = 'qa-sum-section';
@@ -348,18 +363,21 @@ var SVG_W  = 540, SVG_H = 480;
         pieSVG.appendChild( path );
         start = end;
       } );
+      // Pie centre hole — background-color-base: #ffffff light / #101418 dark
       var c = document.createElementNS( SVG_NS, 'circle' );
-      c.setAttribute( 'r', '14' ); c.setAttribute( 'fill', hiruwiki.getThemeColor('background-color-base', 'white') );
+      c.setAttribute( 'r', '14' );
+      c.setAttribute( 'fill', hiruwiki.getThemeColor('background-color-base', '#ffffff') );
       pieSVG.appendChild( c );
-      var t = document.createElementNS( SVG_NS, 'text' );
-      t.setAttribute( 'text-anchor', 'middle' );
-      t.setAttribute( 'dominant-baseline', 'central' );
-      t.setAttribute( 'font-family', 'Arial, sans-serif' );
-      t.setAttribute( 'font-size', '8' );
-      t.setAttribute( 'font-weight', 'bold' );
-      t.setAttribute( 'fill', hiruwiki.getThemeColor('color-subtle', '#666') );
-      t.textContent = '360\u00b0';
-      pieSVG.appendChild( t );
+      // "360°" label — color-subtle: #54595d light / ~#a2a9b1 dark
+      var tEl = document.createElementNS( SVG_NS, 'text' );
+      tEl.setAttribute( 'text-anchor', 'middle' );
+      tEl.setAttribute( 'dominant-baseline', 'central' );
+      tEl.setAttribute( 'font-family', 'Arial, sans-serif' );
+      tEl.setAttribute( 'font-size', '8' );
+      tEl.setAttribute( 'font-weight', 'bold' );
+      tEl.setAttribute( 'fill', hiruwiki.getThemeColor('color-subtle', '#54595d') );
+      tEl.textContent = '360\u00b0';
+      pieSVG.appendChild( tEl );
     }
 
     function updateQuad() {
@@ -413,8 +431,7 @@ var SVG_W  = 540, SVG_H = 480;
       updatePie( angles );
     }
 
-    // ── Drag ──────────────────────────────────────────────────────────────
-    // Mouse
+    // ── Drag (mouse + touch) ──────────────────────────────────────────────
     function tryMove(nx,ny) {
       var cand = { A:{x:pos.A.x,y:pos.A.y}, B:{x:pos.B.x,y:pos.B.y},
                    C:{x:pos.C.x,y:pos.C.y}, D:{x:pos.D.x,y:pos.D.y} };
@@ -436,7 +453,7 @@ var SVG_W  = 540, SVG_H = 480;
     } );
     svgEl.addEventListener( 'mouseup',    function () { dragKey=null; } );
     svgEl.addEventListener( 'mouseleave', function () { dragKey=null; } );
-    // Touch — listener on SVG for reliable mobile hit detection
+    // Touch
     svgEl.addEventListener('touchstart', function(e) {
       e.preventDefault();
       var pt = svgPoint(e.touches[0].clientX, e.touches[0].clientY);
@@ -474,7 +491,6 @@ var SVG_W  = 540, SVG_H = 480;
     wrapper.appendChild(footer);
   }
 
-  // ── Init: find all hiruwiki placeholders for this module ──────────────────
   document.querySelectorAll( '.hiruwiki[data-module="quadrangle-angles"]' ).forEach( function ( el ) {
     initQuadrangleAngles( el );
   } );
