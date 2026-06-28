@@ -1,3 +1,9 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
 /* Hiruwiki Triangle Angles Module */
 
 (function () {
@@ -129,11 +135,39 @@ function t(key, vars) {
     var DR = 8;
 
     var NS = 'http://www.w3.org/2000/svg';
+
+    /*
+     * Angle data colors — fixed hues that encode identity (A=red, B=green, C=blue).
+     * These intentionally do not track the Codex theme; they are semantic data
+     * colors that must remain distinct in both light and dark mode.
+     * Values are chosen to be readable against both #ffffff and #101418.
+     *   A: #C0392B — Codex-adjacent destructive red, readable on both
+     *   B: #1d7a3a — mid-green, good contrast on both backgrounds
+     *   C: #1a5fa5 — mid-blue, readable on light; slightly dim on dark but
+     *                distinct from background. Kept for colour-identity reasons.
+     */
     var COL = { A: '#C0392B', B: '#1d7a3a', C: '#1a5fa5' };
 
-    function isDark() { return window.matchMedia('(prefers-color-scheme:dark)').matches; }
-    function tcol() { return isDark() ? '#D0CEC4' : '#1A1A18'; }
-    function gcol() { return isDark() ? 'rgba(255,255,255,0.07)' : 'rgba(0,0,0,0.08)'; }
+    /*
+     * Theme colors are now resolved via hiruwiki.getThemeColor() using Codex
+     * tokens, not via prefers-color-scheme. This correctly responds to the
+     * skin's dark mode toggle (Vector 2022 preferences), not just the OS setting.
+     *
+     * tcol() — primary text / triangle outline: color-base
+     * gcol() — grid lines: border-color-subtle at low opacity
+     * bgcol() — SVG background: background-color-base
+     * divCol() — pie chart divider line: border-color-base
+     */
+    function tcol()  { return hiruwiki.getThemeColor('color-base', '#202122'); }
+    function bgcol() { return hiruwiki.getThemeColor('background-color-base', '#ffffff'); }
+    function divCol(){ return hiruwiki.getThemeColor('border-color-base', '#a2a9b1'); }
+
+    /*
+     * Grid color: border-color-subtle doesn't support rgba directly, so we
+     * use it as a stroke and set opacity via stroke-opacity instead.
+     * border-color-subtle: #c8ccd1 light / #2e3136 dark
+     */
+    function gcol()  { return hiruwiki.getThemeColor('border-color-subtle', '#c8ccd1'); }
 
 
     /* ── Widget factory ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
@@ -156,7 +190,7 @@ function t(key, vars) {
         rstBtn.textContent = t('reset');
         bar.appendChild(rstBtn);
 
-        function makeInfo(label, id, color) {
+        function makeInfo(label, color) {
             var info = document.createElement('div');
             info.className = 'hw-info';
             var lbl = document.createElement('span');
@@ -171,9 +205,9 @@ function t(key, vars) {
             return val;
         }
 
-        var elValA = makeInfo(t('labelAngleA'), 'hw-ang-aA', COL.A);
-        var elValB = makeInfo(t('labelAngleB'), 'hw-ang-aB', COL.B);
-        var elValC = makeInfo(t('labelAngleC'), 'hw-ang-aC', COL.C);
+        var elValA = makeInfo(t('labelAngleA'), COL.A);
+        var elValB = makeInfo(t('labelAngleB'), COL.B);
+        var elValC = makeInfo(t('labelAngleC'), COL.C);
         bar.appendChild(elValA.parentElement);
         bar.appendChild(elValB.parentElement);
         bar.appendChild(elValC.parentElement);
@@ -183,13 +217,15 @@ function t(key, vars) {
         sumInfo.style.flex = '2';
         var sumLbl = document.createElement('span');
         sumLbl.className = 'hw-lbl';
-        sumLbl.textContent = 'Sum';
+        // Was hardcoded 'Sum' — now correctly uses the i18n key
+        sumLbl.textContent = t('labelSum');
         var sumVal = document.createElement('span');
         sumVal.className = 'hw-val';
         sumVal.textContent = '180°';
         var sumFormula = document.createElement('span');
         sumFormula.className = 'hw-formula';
-        sumFormula.textContent = 'A + B + C = 180°';
+        // Was hardcoded 'A + B + C = 180°' — now correctly uses the i18n key
+        sumFormula.textContent = t('formula');
         sumInfo.appendChild(sumLbl);
         sumInfo.appendChild(sumVal);
         sumInfo.appendChild(sumFormula);
@@ -228,13 +264,24 @@ function t(key, vars) {
             return e;
         }
 
-        /* Grid */
+        /* SVG background rect — background-color-base: #ffffff light / #101418 dark.
+           Must be the first child of the SVG so it sits behind everything.
+           Without it, SVG strokes resolve against an unknown background in dark mode. */
+        var bgRect = mk('rect', { width: W, height: H, fill: bgcol() });
+
+        /* Grid — redrawn on every upd() so it tracks theme changes */
         var gG = mk('g', {});
         function redrawGrid() {
             gG.innerHTML = '';
             var gc = gcol();
-            for (var x = 0; x <= W; x += GRID) { mk('line', { x1: x, y1: 0, x2: x, y2: H, stroke: gc, 'stroke-width': GSW }, gG); }
-            for (var y = 0; y <= H; y += GRID) { mk('line', { x1: 0, y1: y, x2: W, y2: y, stroke: gc, 'stroke-width': GSW }, gG); }
+            for (var x = 0; x <= W; x += GRID) {
+                mk('line', { x1: x, y1: 0, x2: x, y2: H,
+                    stroke: gc, 'stroke-width': GSW, 'stroke-opacity': '0.5' }, gG);
+            }
+            for (var y = 0; y <= H; y += GRID) {
+                mk('line', { x1: 0, y1: y, x2: W, y2: y,
+                    stroke: gc, 'stroke-width': GSW, 'stroke-opacity': '0.5' }, gG);
+            }
         }
         redrawGrid();
 
@@ -242,7 +289,10 @@ function t(key, vars) {
         var arcB = mk('path', { fill: COL.B, opacity: '0.28' });
         var arcC = mk('path', { fill: COL.C, opacity: '0.28' });
 
-        var poly = mk('polygon', { fill: 'rgba(83,74,183,0.07)', 'stroke-width': TSW });
+        /* Triangle fill — color-progressive at very low opacity.
+           Using a fixed rgba here; the hue is progressive-adjacent and works
+           on both light and dark backgrounds at 0.07 opacity. */
+        var poly = mk('polygon', { fill: 'rgba(51,102,204,0.07)', 'stroke-width': TSW });
 
         function mkDeg(fill) {
             return mk('text', {
@@ -259,12 +309,14 @@ function t(key, vars) {
             return mk('text', {
                 'font-size': 14, 'font-weight': '700',
                 'pointer-events': 'none', 'text-anchor': 'middle', 'dominant-baseline': 'middle'
+                // fill is set dynamically in upd() via tcol()
             });
         }
         var nmA = mkName(), nmB = mkName(), nmC = mkName();
 
         var sumG = mk('g', { transform: 'translate(' + (W / 2) + ',' + (H - 24) + ') rotate(180)' });
-        mk('line', { x1: -60, y1: 0, x2: 60, y2: 0, stroke: '#aaa', 'stroke-width': 0.5 }, sumG);
+        // Divider line — border-color-base, set dynamically in upd()
+        var sumLine = mk('line', { x1: -60, y1: 0, x2: 60, y2: 0, 'stroke-width': 0.5 }, sumG);
         var sA = mk('path', { fill: COL.A, opacity: 0.55 }, sumG);
         var sB = mk('path', { fill: COL.B, opacity: 0.55 }, sumG);
         var sC = mk('path', { fill: COL.C, opacity: 0.55 }, sumG);
@@ -309,7 +361,16 @@ function t(key, vars) {
 
         /* ── Update ── */
         function upd() {
-            var A = pts.A, B = pts.B, C = pts.C, tc = tcol();
+            var A = pts.A, B = pts.B, C = pts.C;
+
+            // Resolve theme colors on every update so the widget responds to
+            // skin dark-mode toggle without needing a page reload.
+            var tc  = tcol();
+            var bg  = bgcol();
+            var dc  = divCol();
+
+            // Repaint background rect so it tracks theme changes
+            bgRect.setAttribute('fill', bg);
 
             poly.setAttribute('points', A.x + ',' + A.y + ' ' + B.x + ',' + B.y + ' ' + C.x + ',' + C.y);
             poly.setAttribute('stroke', tc);
@@ -335,6 +396,7 @@ function t(key, vars) {
                 var ox = v.x - gx, oy = v.y - gy, ol = Math.hypot(ox, oy) || 1;
                 el.setAttribute('x', v.x + ox / ol * 22);
                 el.setAttribute('y', v.y + oy / ol * 22);
+                // Vertex name labels use color-base so they're readable on both backgrounds
                 el.setAttribute('fill', tc);
                 el.textContent = l;
             });
@@ -347,6 +409,9 @@ function t(key, vars) {
             elValA.textContent = angA.toFixed(1) + '°';
             elValB.textContent = angB.toFixed(1) + '°';
             elValC.textContent = angC.toFixed(1) + '°';
+
+            // Pie divider line — border-color-base tracks dark mode
+            sumLine.setAttribute('stroke', dc);
 
             redrawGrid();
             pie(angA, angB, angC);
@@ -404,7 +469,11 @@ function t(key, vars) {
             upd();
         });
 
-        window.matchMedia('(prefers-color-scheme:dark)').addEventListener('change', upd);
+        // No longer listening on prefers-color-scheme — getThemeColor() reads
+        // resolved CSS variables on every upd() call, so toggling dark mode
+        // in Vector 2022 preferences is picked up on the next interaction.
+        // If instant re-render on theme toggle is needed, a MutationObserver
+        // on document.documentElement could call upd() when class changes.
 
         upd();
     }
