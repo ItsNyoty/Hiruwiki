@@ -1,3 +1,9 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
 ( function () {
   'use strict';
 
@@ -37,7 +43,7 @@ var messages = /* I18N_START */ {
     "fr": {
         "2quads": "2 quadrilatères × 360°",
         "4triangles": "4 triangles × 180°",
-        "_name": "Angles de l’hexagone",
+        "_name": "Angles de l'hexagone",
         "interiorAngles": "Angles intérieurs",
         "reset": "↺ Réinitialiser",
         "total": "Total",
@@ -129,19 +135,32 @@ var SVG_W  = 580, SVG_H = 520;
     svgEl.setAttribute('width', SVG_W);
     svgEl.classList.add('qa-svg');
 
+    // SVG background rect — fill with background-color-base so it tracks dark mode.
+    // This is the "why the hexagon border doesn't change" fix: the SVG had no
+    // explicit background element, so the CSS background on .qa-svg was doing
+    // the work — but SVG attributes set in JS (like the polygon stroke) were
+    // already being resolved via getThemeColor at init time. Adding a background
+    // rect here makes the SVG self-contained and independent of CSS background.
+    var bgRect = document.createElementNS(SVG_NS,'rect');
+    bgRect.setAttribute('width','100%'); bgRect.setAttribute('height','100%');
+    bgRect.setAttribute('fill', hiruwiki.getThemeColor('background-color-base', '#ffffff'));
+    svgEl.appendChild(bgRect);
+
     var defs = document.createElementNS(SVG_NS,'defs');
     var pat  = document.createElementNS(SVG_NS,'pattern');
     pat.setAttribute('id','ha-grid'); pat.setAttribute('width','20');
     pat.setAttribute('height','20'); pat.setAttribute('patternUnits','userSpaceOnUse');
     var gp = document.createElementNS(SVG_NS,'path');
     gp.setAttribute('d','M 20 0 L 0 0 0 20'); gp.setAttribute('fill','none');
-    gp.setAttribute('stroke',hiruwiki.getThemeColor('border-color-base', '#ccc')); gp.setAttribute('stroke-width','0.5');
+    // Grid lines: border-color-subtle (very faint) — #c8ccd1 light / #2e3136 dark
+    gp.setAttribute('stroke', hiruwiki.getThemeColor('border-color-subtle', '#c8ccd1'));
+    gp.setAttribute('stroke-width','0.5');
     pat.appendChild(gp); defs.appendChild(pat); svgEl.appendChild(defs);
     var gr = document.createElementNS(SVG_NS,'rect');
     gr.setAttribute('width','100%'); gr.setAttribute('height','100%');
     gr.setAttribute('fill','url(#ha-grid)'); svgEl.appendChild(gr);
 
-    // 4 triangle fills + quad split fill tints (2)
+    // 4 triangle fills — data colors at low opacity, no token needed
     var triFills = [];
     var triColors = ['rgba(255,200,200,0.25)','rgba(200,255,200,0.25)',
                      'rgba(200,200,255,0.25)','rgba(255,230,150,0.25)'];
@@ -151,23 +170,26 @@ var SVG_W  = 580, SVG_H = 520;
       svgEl.appendChild(tf); triFills.push(tf);
     }
 
-    // Polygon outline
+    // Polygon outline — color-base: #202122 light / ~#f8f9fa dark
     var polyEl = document.createElementNS(SVG_NS,'polygon');
-    polyEl.setAttribute('fill','none'); polyEl.setAttribute('stroke', hiruwiki.getThemeColor('color-base', 'black'));
+    polyEl.setAttribute('fill','none');
+    polyEl.setAttribute('stroke', hiruwiki.getThemeColor('color-base', '#202122'));
     polyEl.setAttribute('stroke-width','2'); svgEl.appendChild(polyEl);
 
-    // Fan diagonals (3 for hexagon fan)
+    // Fan diagonals — color-placeholder: #72777d light / #72777d dark
     var fanDiags = [];
     for (var di=0;di<3;di++){
       var dl = document.createElementNS(SVG_NS,'line');
-      dl.setAttribute('stroke', hiruwiki.getThemeColor('color-placeholder', '#aaa')); dl.setAttribute('stroke-width','1');
+      dl.setAttribute('stroke', hiruwiki.getThemeColor('color-placeholder', '#72777d'));
+      dl.setAttribute('stroke-width','1');
       dl.setAttribute('stroke-dasharray','5,4'); svgEl.appendChild(dl);
       fanDiags.push(dl);
     }
 
-    // Quad split diagonal (1, different style)
+    // Quad split diagonal — slightly stronger than fan diagonals, use color-subtle
     var quadDiag = document.createElementNS(SVG_NS,'line');
-    quadDiag.setAttribute('stroke', hiruwiki.getThemeColor('color-placeholder', '#888')); quadDiag.setAttribute('stroke-width','1.5');
+    quadDiag.setAttribute('stroke', hiruwiki.getThemeColor('color-subtle', '#54595d'));
+    quadDiag.setAttribute('stroke-width','1.5');
     quadDiag.setAttribute('stroke-dasharray','8,4'); svgEl.appendChild(quadDiag);
 
     // Arcs, labels, circles
@@ -182,7 +204,9 @@ var SVG_W  = 580, SVG_H = 520;
       lbl.setAttribute('pointer-events','none'); svgEl.appendChild(lbl); lbls[k]=lbl;
       var circ=document.createElementNS(SVG_NS,'circle');
       circ.setAttribute('r','8'); circ.setAttribute('fill',COLORS[k]);
-      circ.setAttribute('stroke', hiruwiki.getThemeColor('background-color-base', 'white')); circ.setAttribute('stroke-width','2');
+      // Drag handle ring — background-color-base so it punches out of the polygon
+      circ.setAttribute('stroke', hiruwiki.getThemeColor('background-color-base', '#ffffff'));
+      circ.setAttribute('stroke-width','2');
       circ.style.cursor='pointer'; svgEl.appendChild(circ); circs[k]=circ;
     });
 
@@ -226,7 +250,9 @@ var SVG_W  = 580, SVG_H = 520;
       var bg=document.createElementNS(SVG_NS,'rect');
       bg.setAttribute('x','0'); bg.setAttribute('y','0');
       bg.setAttribute('width','160'); bg.setAttribute('height','14');
-      bg.setAttribute('fill',hiruwiki.getThemeColor('border-color-base', '#eee')); bg.setAttribute('rx','3');
+      // Bar track background — background-color-neutral (#eaecf0 / #2a2d34)
+      bg.setAttribute('fill', hiruwiki.getThemeColor('background-color-neutral', '#eaecf0'));
+      bg.setAttribute('rx','3');
       bsvg.appendChild(bg); triBarBgs.push(bg);
       var segs=[];
       for(var si=0;si<3;si++){
@@ -239,12 +265,16 @@ var SVG_W  = 580, SVG_H = 520;
       var border=document.createElementNS(SVG_NS,'rect');
       border.setAttribute('x','0'); border.setAttribute('y','0');
       border.setAttribute('width','160'); border.setAttribute('height','14');
-      border.setAttribute('fill','none'); border.setAttribute('stroke',hiruwiki.getThemeColor('border-color-base', '#ccc'));
+      border.setAttribute('fill','none');
+      // Bar outline — border-color-base (#a2a9b1 / #3d424d)
+      border.setAttribute('stroke', hiruwiki.getThemeColor('border-color-base', '#a2a9b1'));
       border.setAttribute('stroke-width','1'); border.setAttribute('rx','3');
       bsvg.appendChild(border);
       var lbl180=document.createElementNS(SVG_NS,'text');
       lbl180.setAttribute('x','164'); lbl180.setAttribute('y','11');
-      lbl180.setAttribute('font-size','10'); lbl180.setAttribute('fill','#999');
+      lbl180.setAttribute('font-size','10');
+      // "180°" label — color-placeholder (#72777d, same in both modes)
+      lbl180.setAttribute('fill', hiruwiki.getThemeColor('color-placeholder', '#72777d'));
       lbl180.setAttribute('font-family','Arial,sans-serif');
       lbl180.textContent='180\u00b0'; bsvg.appendChild(lbl180); triBarLbls.push(lbl180);
       rowWrap.appendChild(bsvg); triSection.appendChild(rowWrap);
@@ -406,11 +436,9 @@ var SVG_W  = 580, SVG_H = 520;
     }
 
     // Draw a pie chart for a quadrilateral into a given SVG element
-    // quadKeys: array of 4 vertex key names in order
     function updateQuadPie(svgPie, quadKeys, p, polyArea) {
       while(svgPie.firstChild) svgPie.removeChild(svgPie.firstChild);
       var r=34;
-      // Compute interior angles of the quad
       var qArea = (triSignedArea(p[quadKeys[0]],p[quadKeys[1]],p[quadKeys[2]])+
                    triSignedArea(p[quadKeys[0]],p[quadKeys[2]],p[quadKeys[3]]));
       var qAngles=[];
@@ -432,13 +460,18 @@ var SVG_W  = 580, SVG_H = 520;
         svgPie.appendChild(path);
         start=end;
       }
+      // Pie centre "hole" — background-color-base so it matches the panel background
       var c=document.createElementNS(SVG_NS,'circle');
-      c.setAttribute('r','12'); c.setAttribute('fill', hiruwiki.getThemeColor('background-color-base', 'white')); svgPie.appendChild(c);
-      var t=document.createElementNS(SVG_NS,'text');
-      t.setAttribute('text-anchor','middle'); t.setAttribute('dominant-baseline','central');
-      t.setAttribute('font-family','Arial,sans-serif'); t.setAttribute('font-size','7');
-      t.setAttribute('font-weight','bold'); t.setAttribute('fill',hiruwiki.getThemeColor('color-subtle', '#666'));
-      t.textContent='360\u00b0'; svgPie.appendChild(t);
+      c.setAttribute('r','12');
+      c.setAttribute('fill', hiruwiki.getThemeColor('background-color-base', '#ffffff'));
+      svgPie.appendChild(c);
+      // "360°" label — color-subtle (#54595d / ~#a2a9b1)
+      var tEl=document.createElementNS(SVG_NS,'text');
+      tEl.setAttribute('text-anchor','middle'); tEl.setAttribute('dominant-baseline','central');
+      tEl.setAttribute('font-family','Arial,sans-serif'); tEl.setAttribute('font-size','7');
+      tEl.setAttribute('font-weight','bold');
+      tEl.setAttribute('fill', hiruwiki.getThemeColor('color-subtle', '#54595d'));
+      tEl.textContent='360\u00b0'; svgPie.appendChild(tEl);
     }
 
     function pts2str(arr){return arr.map(function(pt){return pt.x+','+pt.y;}).join(' ');}
@@ -482,8 +515,6 @@ var SVG_W  = 580, SVG_H = 520;
 
       // ── Fan triangulation ──────────────────────────────────────────────
       var fk=findFanKeys(p,area);
-      // fk[0]=origin, 4 triangles: (0,1,2),(0,2,3),(0,3,4),(0,4,5)
-      // 3 fan diagonals: origin→fk[2], origin→fk[3], origin→fk[4]
       fanDiags[0].setAttribute('x1',p[fk[0]].x); fanDiags[0].setAttribute('y1',p[fk[0]].y);
       fanDiags[0].setAttribute('x2',p[fk[2]].x); fanDiags[0].setAttribute('y2',p[fk[2]].y);
       fanDiags[1].setAttribute('x1',p[fk[0]].x); fanDiags[1].setAttribute('y1',p[fk[0]].y);
@@ -491,7 +522,6 @@ var SVG_W  = 580, SVG_H = 520;
       fanDiags[2].setAttribute('x1',p[fk[0]].x); fanDiags[2].setAttribute('y1',p[fk[0]].y);
       fanDiags[2].setAttribute('x2',p[fk[4]].x); fanDiags[2].setAttribute('y2',p[fk[4]].y);
 
-      // Triangle fills
       triFills[0].setAttribute('points',pts2str([p[fk[0]],p[fk[1]],p[fk[2]]]));
       triFills[1].setAttribute('points',pts2str([p[fk[0]],p[fk[2]],p[fk[3]]]));
       triFills[2].setAttribute('points',pts2str([p[fk[0]],p[fk[3]],p[fk[4]]]));
@@ -516,7 +546,6 @@ var SVG_W  = 580, SVG_H = 520;
 
       // ── Quad split ────────────────────────────────────────────────────
       var qs=findQuadSplit(p,area);
-      // Quad diagonal: from qs.q1[0] to qs.q1[2] (the shared diagonal vertex)
       quadDiag.setAttribute('x1',p[qs.q1[0]].x); quadDiag.setAttribute('y1',p[qs.q1[0]].y);
       quadDiag.setAttribute('x2',p[qs.q1[2]].x); quadDiag.setAttribute('y2',p[qs.q1[2]].y);
 
@@ -558,11 +587,11 @@ var SVG_W  = 580, SVG_H = 520;
     });
     svgEl.addEventListener('mouseup',   function(){dragKey=null;});
     svgEl.addEventListener('mouseleave',function(){dragKey=null;});
-    // Touch — listener on SVG for reliable mobile hit detection
+    // Touch
     svgEl.addEventListener('touchstart', function(e) {
       e.preventDefault();
       var pt = svgPoint(e.touches[0].clientX, e.touches[0].clientY);
-      var best = null, bestDist = 40; // 40px hit radius in SVG coords
+      var best = null, bestDist = 40;
       KEYS.forEach(function(k) {
         var d = Math.hypot(pos[k].x - pt.x, pos[k].y - pt.y);
         if (d < bestDist) { bestDist = d; best = k; }
