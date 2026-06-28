@@ -1,3 +1,9 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
 /* monte-carlo.js — Hiruwiki module */
 
 ( function () {
@@ -264,11 +270,12 @@ var SIZE = 320;
 
         function drawBase() {
             ctx.clearRect( 0, 0, SIZE, SIZE );
+            // Codex background-color-base: #fff (light) / #101418 (dark)
             ctx.fillStyle = hiruwiki.getThemeColor('background-color-base', '#ffffff');
             ctx.fillRect( 0, 0, SIZE, SIZE );
 
-            // Grid
-            ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', 'rgba(128,128,128,0.18)');
+            // Grid lines — Codex border-color-subtle / border-color-base at low opacity
+            ctx.strokeStyle = hiruwiki.getThemeColor('border-color-subtle', 'rgba(128,128,128,0.18)');
             ctx.lineWidth = 0.5;
             var step = SIZE / 10;
             for ( var i = 0; i <= SIZE; i += step ) {
@@ -276,15 +283,15 @@ var SIZE = 320;
                 ctx.beginPath(); ctx.moveTo( 0, i ); ctx.lineTo( SIZE, i ); ctx.stroke();
             }
 
-            // Border
-            ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', 'rgba(128,128,128,0.4)');
+            // Border — Codex border-color-base: #a2a9b1 (light) / #3d424d (dark)
+            ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', '#a2a9b1');
             ctx.lineWidth = 0.5;
             ctx.strokeRect( 0, 0, SIZE, SIZE );
 
-            // Quarter-circle arc
+            // Quarter-circle arc — Codex color-base: #202122 (light) / #f8f9fa (dark)
             ctx.beginPath();
             ctx.arc( 0, SIZE, SIZE - 1, -Math.PI / 2, 0 );
-            ctx.strokeStyle = hiruwiki.getThemeColor('color-base', '#333');
+            ctx.strokeStyle = hiruwiki.getThemeColor('color-base', '#202122');
             ctx.lineWidth = 3.0;
             ctx.stroke();
         }
@@ -297,10 +304,12 @@ var SIZE = 320;
                 var cx = Math.round( px * ( SIZE - 1 ) );
                 var cy = SIZE - 1 - Math.round( py * ( SIZE - 1 ) );
                 if ( dist <= 1 ) {
-                    ctx.fillStyle = hiruwiki.getThemeColor('color-destructive', 'rgba(208,85,56,0.7)');
+                    // Codex color-destructive: #d73333 (light) / #ff6e6e (dark) — at 70% opacity
+                    ctx.fillStyle = hiruwiki.getThemeColor('color-destructive', '#d73333') + 'b3'; // b3 ≈ 70% opacity
                     inside++;
                 } else {
-                    ctx.fillStyle = hiruwiki.getThemeColor('color-progressive', 'rgba(24,95,165,0.7)');
+                    // Codex color-progressive: #36c (light) / #6e85cf (dark) — at 70% opacity
+                    ctx.fillStyle = hiruwiki.getThemeColor('color-progressive', '#3366cc') + 'b3';
                     outside++;
                 }
                 ctx.beginPath();
