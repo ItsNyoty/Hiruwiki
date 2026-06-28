@@ -1,3 +1,9 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
 (function () {
 
 
@@ -216,7 +222,9 @@ function initAngleApplet(container){
 
     function drawGrid(){
 
-        ctx.strokeStyle=hiruwiki.getThemeColor('border-color-base', '#eee');
+        // Fine grid lines — use border-color-subtle (very faint, Codex #c8ccd1 light / #2e3136 dark)
+        ctx.strokeStyle = hiruwiki.getThemeColor('border-color-subtle', '#c8ccd1');
+        ctx.lineWidth = 0.5;
 
         for(let x=0;x<canvas.width;x+=25){
             ctx.beginPath();
@@ -232,7 +240,10 @@ function initAngleApplet(container){
             ctx.stroke();
         }
 
-        ctx.strokeStyle=hiruwiki.getThemeColor('border-color-base', '#f0f0f0');
+        // Concentric reference circles — slightly more visible than grid lines,
+        // use border-color-base (Codex #a2a9b1 light / #3d424d dark)
+        ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', '#a2a9b1');
+        ctx.lineWidth = 0.75;
 
         for(let r=50;r<=R;r+=50){
             ctx.beginPath();
@@ -270,7 +281,8 @@ function initAngleApplet(container){
 
     function drawLabel(x,y,text,color){
 
-        ctx.fillStyle = hiruwiki.getThemeColor('background-color-base', 'white');
+        // Label background: background-color-base so it contrasts with sector fills
+        ctx.fillStyle = hiruwiki.getThemeColor('background-color-base', '#ffffff');
 
         ctx.beginPath();
         ctx.arc(x,y,16,0,Math.PI*2);
@@ -309,26 +321,35 @@ function initAngleApplet(container){
 
     function draw(){
 
-        ctx.fillStyle = hiruwiki.getThemeColor('background-color-base', 'white');
+        // Canvas background — background-color-base: #fff light / #101418 dark
+        ctx.fillStyle = hiruwiki.getThemeColor('background-color-base', '#ffffff');
         ctx.fillRect(0, 0, canvas.width, canvas.height);
-
 
         drawGrid();
 
-        drawRay(0, hiruwiki.getThemeColor('color-base', 'black'), 3);
-        drawRay(angle, hiruwiki.getThemeColor('color-base', 'black'), 3);
+        // Main rays — color-base: #202122 light / ~#f8f9fa dark
+        var baseColor = hiruwiki.getThemeColor('color-base', '#202122');
+        drawRay(0, baseColor, 3);
+        drawRay(angle, baseColor, 3);
 
-        drawSector(0,angle,"rgba(0,150,255,0.25)");
+        // Primary sector (the angle being shown) — color-progressive at low opacity
+        // color-progressive: #36c light / #6e85cf dark
+        // We paint this manually with rgba so opacity works on the canvas.
+        // getThemeColor returns a hex string; we use it as the sector fill via
+        // a helper that converts it to rgba.
+        var progressiveHex = hiruwiki.getThemeColor('color-progressive', '#3366cc');
+        drawSector(0, angle, hexToRgba(progressiveHex, 0.20));
 
+        // Drag handle — color-progressive (solid, for good contrast on both themes)
+        ctx.fillStyle = progressiveHex;
         const handle=point(angle,R);
-
-        ctx.fillStyle="blue";
         ctx.beginPath();
         ctx.arc(handle.x,handle.y,6,0,Math.PI*2);
         ctx.fill();
 
+        // Angle label for the current angle — use color-progressive to match the handle
         const blueLabel=point(angle,R-35);
-        drawLabel(blueLabel.x,blueLabel.y,angle+"°","blue");
+        drawLabel(blueLabel.x,blueLabel.y,angle+"°", progressiveHex);
 
         if(!mode) return;
 
@@ -341,13 +362,16 @@ function initAngleApplet(container){
 
         }
 
+        // Secondary ray and label — color-destructive: #d73333 light / #ff6e6e dark
+        var destructiveColor = hiruwiki.getThemeColor('color-destructive', '#d73333');
+
         if(mode==="bisector"){
 
-            drawRay(res.target,"red",2);
+            drawRay(res.target, destructiveColor, 2);
 
             const end=point(res.target,R+25);
 
-            drawLabel(end.x,end.y,res.target.toFixed(1)+"°","red");
+            drawLabel(end.x,end.y,res.target.toFixed(1)+"°", destructiveColor);
 
             info.textContent=t("bisectorResult",[res.target.toFixed(1)]);
 
@@ -355,9 +379,10 @@ function initAngleApplet(container){
 
         }
 
-        drawRay(res.target,"red",2);
+        drawRay(res.target, destructiveColor, 2);
 
-        drawSector(angle,res.target,"rgba(255,0,0,0.25)");
+        // Secondary sector — color-destructive at low opacity
+        drawSector(angle, res.target, hexToRgba(destructiveColor, 0.20));
 
         const value=Math.abs(res.target-angle);
 
@@ -365,7 +390,7 @@ function initAngleApplet(container){
 
         const label=point(mid,55);
 
-        drawLabel(label.x,label.y,value+"°","red");
+        drawLabel(label.x,label.y,value+"°", destructiveColor);
 
         info.textContent=t("resultAngle",[t(mode),value]);
 
@@ -440,6 +465,28 @@ function initAngleApplet(container){
     footer.appendChild(fText);
     container.appendChild(footer);
 
+}
+
+/* -------------------------
+   HELPERS
+------------------------- */
+
+/**
+ * Convert a hex color string (#rgb or #rrggbb) returned by getThemeColor
+ * into an rgba() string with the given opacity (0–1).
+ * Falls back to the original string if parsing fails.
+ */
+function hexToRgba(hex, alpha) {
+    if (!hex || hex.charAt(0) !== '#') { return hex; }
+    var h = hex.slice(1);
+    if (h.length === 3) {
+        h = h[0]+h[0] + h[1]+h[1] + h[2]+h[2];
+    }
+    var r = parseInt(h.slice(0,2), 16);
+    var g = parseInt(h.slice(2,4), 16);
+    var b = parseInt(h.slice(4,6), 16);
+    if (isNaN(r) || isNaN(g) || isNaN(b)) { return hex; }
+    return 'rgba('+r+','+g+','+b+','+alpha+')';
 }
 
 /* -------------------------
