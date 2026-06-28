@@ -122,7 +122,7 @@ function t(key, vars) {
 var SVG_W  = 580, SVG_H = 520;
   var SVG_NS = 'http://www.w3.org/2000/svg';
   var KEYS   = ['A','B','C','D','E','F'];
-  var COLORS = { A:'red', B:'green', C:'blue', D:'orange', E:'purple', F:'#00897b' };
+  var COLORS = { A:'red', B:'green', C:'blue', D:'orange', E:'#9966cc', F:'#00897b' };
 
   function initHexagonAngles( root ) {
     var wrapper = document.createElement('div');
@@ -307,7 +307,7 @@ var SVG_W  = 580, SVG_H = 520;
     var eq=document.createElement('div'); eq.className='qa-equation';
     eq.innerHTML='<span style="color:red">A</span>+<span style="color:green">B</span>+' +
                  '<span style="color:blue">C</span>+<span style="color:orange">D</span>+' +
-                 '<span style="color:purple">E</span>+<span style="color:#00897b">F</span>=720\u00b0';
+                 '<span style="color:#9966cc">E</span>+<span style="color:#00897b">F</span>=720\u00b0';
     panel.appendChild(eq);
 
     var totalRow=document.createElement('div'); totalRow.className='qa-total-row';
