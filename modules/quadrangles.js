@@ -1,3 +1,9 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
 (function () {
 
 
@@ -126,14 +132,14 @@
     },
     "fr": {
         "_name": "Quadrilatères",
-        "areaDiagHalf": "Formule : A = (d₁ × d₂) / 2\nd₁ (AC) = $1 cm\nd₂ (BD) = $2 cm\n= ($1 × $2) / 2",
-        "areaGaussHeader": "Formule de Gauss (shoelace) :\nA = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|",
+        "areaDiagHalf": "Formule : A = (d₁ × d₂) / 2\nd₁ (AC) = $1 cm\nd₂ (BD) = $2 cm\n= ($1 × $2) / 2",
+        "areaGaussHeader": "Formule de Gauss (shoelace) :\nA = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|",
         "areaGaussSum": "Σ = $1\nA = ½ × |$1|",
         "areaGaussTerm": "(x$1·y$2 − x$2·y$1) = $3",
-        "areaParallelogram": "Formule : A = base × hauteur\nbase (AB) = $1 cm\nhauteur = $2 cm\n= $1 × $2",
-        "areaRectangle": "Formule : A = largeur × hauteur\n= $1 × $2",
-        "areaSquare": "Formule : A = côté²\n= $1²",
-        "areaTrapezoid": "Formule : A = (b₁ + b₂) / 2 × h\nb₁ (AB) = $1 cm\nb₂ (CD) = $2 cm\nhauteur = $3 cm\n= ($1 + $2) / 2 × $3",
+        "areaParallelogram": "Formule : A = base × hauteur\nbase (AB) = $1 cm\nhauteur = $2 cm\n= $1 × $2",
+        "areaRectangle": "Formule : A = largeur × hauteur\n= $1 × $2",
+        "areaSquare": "Formule : A = côté²\n= $1²",
+        "areaTrapezoid": "Formule : A = (b₁ + b₂) / 2 × h\nb₁ (AB) = $1 cm\nb₂ (CD) = $2 cm\nhauteur = $3 cm\n= ($1 + $2) / 2 × $3",
         "headingArea": "Aire",
         "headingClassification": "Classification",
         "headingSides": "Côtés et diagonales",
@@ -541,6 +547,15 @@ function t(key, vars) {
       return e;
     }
 
+    // SVG background rect — painted before grid so it sits behind everything.
+    // background-color-base: #ffffff light / #101418 dark.
+    // Without this, SVG strokes and text set at init time render against an
+    // unknown background, causing invisible lines in dark mode.
+    var bgRect = ns("rect", {
+      width: "100%", height: "100%",
+      fill: hiruwiki.getThemeColor('background-color-base', '#ffffff')
+    });
+
     var gridG = ns("g", { class: "quad-grid" });
     var diagG = ns("g", { class: "quad-diagonal" });
     var diagL1 = ns("line", {}, diagG);
@@ -553,7 +568,13 @@ function t(key, vars) {
       verts.push(ns("circle", { r: 6, class: "quad-vertex" }));
       verts[i].dataset.i = i;
       sides.push(ns("text", { class: "quad-side-label" }));
-      pts.push(ns("text", { class: "quad-point-label" }));
+      // Vertex letter labels (A/B/C/D): explicit fill so they remain visible
+      // in dark mode. CSS fill on SVG text is not always inherited reliably
+      // across all skins. color-base: #202122 light / ~#f8f9fa dark.
+      pts.push(ns("text", {
+        class: "quad-point-label",
+        fill: hiruwiki.getThemeColor('color-base', '#202122')
+      }));
       arcs.push(ns("path", { class: "quad-angle-arc" }));
       angTxts.push(ns("text", { class: "quad-angle-label" }));
       rights.push(ns("path", { class: "quad-right-marker" }));
@@ -623,8 +644,8 @@ function t(key, vars) {
       var den = c2(d, e);
       if (Math.abs(den) < 1e-9) return false;
       var f = { x: p3.x - p1.x, y: p3.y - p1.y };
-      var t = c2(f, e) / den, u = c2(f, d) / den;
-      return t > 0.001 && t < 0.999 && u > 0.001 && u < 0.999;
+      var tVal = c2(f, e) / den, u = c2(f, d) / den;
+      return tVal > 0.001 && tVal < 0.999 && u > 0.001 && u < 0.999;
     }
 
     function getSides() {
@@ -709,7 +730,7 @@ function t(key, vars) {
         return { steps: t("areaDiagHalf", [d1.toFixed(2), d2.toFixed(2)]), area: d1 * d2 / 2 };
       }
 
-      // General case – Gauss (shoelace) with full term expansion
+      // General — Gauss (shoelace)
       var termLines = [], sum = 0;
       for (var j = 0; j < 4; j++) {
         var va = vertices[j], vb = vertices[(j + 1) % 4];
