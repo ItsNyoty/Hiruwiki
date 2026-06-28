@@ -1,3 +1,10 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
+
 .hiruwiki-angles {
     display: flex;
     flex-wrap: wrap;
@@ -7,8 +14,11 @@
 }
 
 .hiruwiki-angles canvas {
-    border: 1px solid var(--border-color-base, #bbb);
-    background: white;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    /* Background is painted by JS via getThemeColor; keep transparent here
+       so the canvas fill is the single source of truth and there is no
+       flash of white in dark mode before JS runs. */
+    background: transparent;
     max-width: 100%;
     height: auto !important;
 }
@@ -24,22 +34,32 @@
 .hiruwiki-angles-panel button {
     padding: 8px 12px;
     cursor: pointer;
-    border: 1px solid var(--color-placeholder, #aaa);
-    background: var(--background-color-neutral-subtle, #f6f6f6);
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    border-radius: 2px;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
+    color: var(--color-base, #202122);
     font-size: 14px;
 }
 
 .hiruwiki-angles-panel button:hover {
-    background: var(--background-color-neutral-subtle, #eaeaea);
+    /* interactive is one step darker than neutral-subtle — correct hover token */
+    background: var(--background-color-interactive, #eaecf0);
+    border-color: var(--color-subtle, #54595d);
+}
+
+.hiruwiki-angles-panel button:active {
+    background: var(--background-color-interactive, #eaecf0);
+    border-color: var(--color-base, #202122);
 }
 
 .hiruwiki-angles-info {
     font-size: 13px;
+    color: var(--color-base, #202122);
     margin-top: 6px;
 }
 
 .hiruwiki-angles-info .invalid {
-    color: var(--color-destructive, #c00);
+    color: var(--color-destructive, #d73333);
 }
 
 .hiruwiki-angles .hw-footer {
