@@ -1,3 +1,24 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
+
+/*
+ * Codex token legend (light → dark):
+ *   --color-base                        #202122  → ~#f8f9fa
+ *   --color-subtle                      #54595d  → ~#a2a9b1
+ *   --color-placeholder                 #72777d  → ~#72777d
+ *   --background-color-base             #ffffff  → #101418
+ *   --background-color-neutral          #eaecf0  → #2a2d34
+ *   --border-color-base                 #a2a9b1  → #3d424d
+ *   --background-color-destructive           #d73333  → #b32424
+ *   --background-color-destructive--hover    #fc493b  → #d73333
+ *   --background-color-destructive--active   #9f3526  → #7f2b1e
+ *   --color-inverted-fixed              #ffffff  (stays white in both modes)
+ */
+
 .quadrangle-angles {
   display: flex;
   flex-wrap: wrap;
@@ -6,24 +27,25 @@
   box-sizing: border-box;
   width: 100%;
   max-width: 940px;
-  flex-wrap: wrap;
 }
 
 .quadrangle-angles .qa-svg {
   flex: 1 1 auto;
   height: auto;
   display: block;
-  border: 1px solid var(--border-color-base, #ccc);
-  background: var(--background-color-base, #f9f9f9);
+  border: 1px solid var(--border-color-base, #a2a9b1);
+  /* Background painted by JS via getThemeColor; transparent avoids flash */
+  background: transparent;
   cursor: crosshair;
 }
 
 .quadrangle-angles .qa-panel {
   width: 210px;
   flex-shrink: 0;
-  border: 1px solid var(--border-color-base, #ccc);
+  border: 1px solid var(--border-color-base, #a2a9b1);
   border-left: none;
-  background: var(--background-color-base, #fff);
+  background: var(--background-color-base, #ffffff);
+  color: var(--color-base, #202122);
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -44,6 +66,7 @@
   .quadrangle-angles .qa-panel {
     width: 100%;
     border-top: none;
+    border-left: 1px solid var(--border-color-base, #a2a9b1);
     overflow-y: visible;
   }
 }
@@ -54,8 +77,8 @@
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--color-subtle, #999);
-  border-bottom: 1px solid var(--border-color-base, #eee);
+  color: var(--color-subtle, #54595d);
+  border-bottom: 1px solid var(--border-color-base, #a2a9b1);
   padding-bottom: 8px;
   margin: 0 0 2px 0;
 }
@@ -82,7 +105,7 @@
 .quadrangle-angles .qa-bar-wrap {
   flex: 1;
   height: 5px;
-  background: var(--border-color-base, #eee);
+  background: var(--background-color-neutral, #eaecf0);
   border-radius: 3px;
   overflow: hidden;
 }
@@ -98,10 +121,11 @@
   font-weight: bold;
   min-width: 46px;
   text-align: right;
+  color: var(--color-base, #202122);
 }
 
 .quadrangle-angles .qa-sum-section {
-  border-top: 1px solid var(--border-color-base, #eee);
+  border-top: 1px solid var(--border-color-base, #a2a9b1);
   padding-top: 10px;
   display: flex;
   flex-direction: column;
@@ -113,7 +137,7 @@
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--color-subtle, #999);
+  color: var(--color-subtle, #54595d);
 }
 
 .quadrangle-angles .qa-equation {
@@ -121,10 +145,11 @@
   font-weight: bold;
   text-align: center;
   line-height: 1.6;
+  color: var(--color-base, #202122);
 }
 
 .quadrangle-angles .qa-total-row {
-  border-top: 1px solid var(--border-color-base, #eee);
+  border-top: 1px solid var(--border-color-base, #a2a9b1);
   padding-top: 8px;
   display: flex;
   justify-content: space-between;
@@ -135,20 +160,21 @@
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--color-subtle, #999);
+  color: var(--color-subtle, #54595d);
 }
 
 .quadrangle-angles .qa-total-val {
   font-size: 18px;
   font-weight: bold;
-  color: var(--color-base, #333);
+  color: var(--color-base, #202122);
 }
 
+/* Reset button — Codex destructive pattern */
 .quadrangle-angles .qa-reset-btn {
   font-size: 12px;
-background-color: var(--background-color-destructive, #bf3c2c);
-  border: 1px solid var(--border-color-base, #ccc);
-  color: white;
+  background-color: var(--background-color-destructive, #d73333);
+  border: 1px solid var(--background-color-destructive--active, #9f3526);
+  color: var(--color-inverted-fixed, #ffffff);
   padding: 6px;
   cursor: pointer;
   border-radius: 4px;
@@ -156,12 +182,12 @@ background-color: var(--background-color-destructive, #bf3c2c);
 }
 
 .quadrangle-angles .qa-reset-btn:hover {
-  border-color: var(--color-base, #333);
- background-color: var(--background-color-destructive--hover, #9f3526);
+  background-color: var(--background-color-destructive--hover, #fc493b);
+  border-color: var(--background-color-destructive--active, #9f3526);
 }
 
 .quadrangle-angles .qa-reset-btn:active {
-	background-color: var(--background-color-destructive--active, #612419);
+  background-color: var(--background-color-destructive--active, #9f3526);
 }
 
 .quadrangle-angles .hw-footer {
