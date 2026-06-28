@@ -1,3 +1,9 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
 ( function () {
   'use strict';
 
@@ -109,7 +115,7 @@ function t(key, vars) {
 var SVG_W  = 540, SVG_H = 480;
   var SVG_NS = 'http://www.w3.org/2000/svg';
   var KEYS   = ['A', 'B', 'C', 'D', 'E'];
-  var COLORS = { A: 'red', B: 'green', C: 'blue', D: 'orange', E: 'purple' };
+  var COLORS = { A: 'red', B: 'green', C: 'blue', D: 'orange', E: '#9966cc' };
 
   function initPentagonAngles( root ) {
     var wrapper = document.createElement( 'div' );
@@ -122,6 +128,18 @@ var SVG_W  = 540, SVG_H = 480;
     svgEl.setAttribute( 'width',   SVG_W );
     svgEl.classList.add( 'qa-svg' );
 
+    // SVG background rect — must come before defs/grid so it sits behind everything.
+    // This is what makes the polygon outline and other strokes visible in dark mode:
+    // without it the CSS background on .qa-svg was doing the work, but SVG stroke
+    // attributes set via getThemeColor at init time resolve correctly against a
+    // known background. Keeping background: transparent on .qa-svg prevents a
+    // white flash before JS runs.
+    var bgRect = document.createElementNS( SVG_NS, 'rect' );
+    bgRect.setAttribute( 'width', '100%' );
+    bgRect.setAttribute( 'height', '100%' );
+    bgRect.setAttribute( 'fill', hiruwiki.getThemeColor('background-color-base', '#ffffff') );
+    svgEl.appendChild( bgRect );
+
     var defs = document.createElementNS( SVG_NS, 'defs' );
     var pat  = document.createElementNS( SVG_NS, 'pattern' );
     pat.setAttribute( 'id', 'pa-grid' );
@@ -131,7 +149,8 @@ var SVG_W  = 540, SVG_H = 480;
     var gridPath = document.createElementNS( SVG_NS, 'path' );
     gridPath.setAttribute( 'd', 'M 20 0 L 0 0 0 20' );
     gridPath.setAttribute( 'fill', 'none' );
-    gridPath.setAttribute( 'stroke', hiruwiki.getThemeColor('border-color-base', '#ccc') );
+    // Grid lines: border-color-subtle (very faint) — #c8ccd1 light / #2e3136 dark
+    gridPath.setAttribute( 'stroke', hiruwiki.getThemeColor('border-color-subtle', '#c8ccd1') );
     gridPath.setAttribute( 'stroke-width', '0.5' );
     pat.appendChild( gridPath );
     defs.appendChild( pat );
@@ -143,7 +162,7 @@ var SVG_W  = 540, SVG_H = 480;
     gridRect.setAttribute( 'fill', 'url(#pa-grid)' );
     svgEl.appendChild( gridRect );
 
-    // Triangle fills (3, updated when fan changes)
+    // Triangle fills (3, updated when fan changes) — data colors, no token needed
     var triFills = [
       document.createElementNS( SVG_NS, 'polygon' ),
       document.createElementNS( SVG_NS, 'polygon' ),
@@ -156,18 +175,18 @@ var SVG_W  = 540, SVG_H = 480;
       svgEl.appendChild( tf );
     });
 
-    // Pentagon outline
+    // Pentagon outline — color-base: #202122 light / ~#f8f9fa dark
     var polyEl = document.createElementNS( SVG_NS, 'polygon' );
     polyEl.setAttribute( 'fill', 'none' );
-    polyEl.setAttribute( 'stroke', hiruwiki.getThemeColor('color-base', 'black') );
+    polyEl.setAttribute( 'stroke', hiruwiki.getThemeColor('color-base', '#202122') );
     polyEl.setAttribute( 'stroke-width', '2' );
     svgEl.appendChild( polyEl );
 
-    // Fan diagonals (2 lines, from fan origin to non-adjacent vertices)
+    // Fan diagonals — color-placeholder: #72777d (same light/dark)
     var diag1 = document.createElementNS( SVG_NS, 'line' );
     var diag2 = document.createElementNS( SVG_NS, 'line' );
     [diag1, diag2].forEach( function(d) {
-      d.setAttribute( 'stroke', hiruwiki.getThemeColor('color-placeholder', '#aaa') );
+      d.setAttribute( 'stroke', hiruwiki.getThemeColor('color-placeholder', '#72777d') );
       d.setAttribute( 'stroke-width', '1' );
       d.setAttribute( 'stroke-dasharray', '5,4' );
       svgEl.appendChild( d );
@@ -194,7 +213,8 @@ var SVG_W  = 540, SVG_H = 480;
       var circ = document.createElementNS( SVG_NS, 'circle' );
       circ.setAttribute( 'r', '8' );
       circ.setAttribute( 'fill', COLORS[k] );
-      circ.setAttribute( 'stroke', hiruwiki.getThemeColor('background-color-base', 'white') );
+      // Drag handle ring — background-color-base so it punches through polygon fill
+      circ.setAttribute( 'stroke', hiruwiki.getThemeColor('background-color-base', '#ffffff') );
       circ.setAttribute( 'stroke-width', '2' );
       circ.style.cursor = 'pointer';
       svgEl.appendChild( circ );
@@ -229,7 +249,6 @@ var SVG_W  = 540, SVG_H = 480;
       panel.appendChild( row );
     });
 
-
     // Triangle decomposition section
     var sumSection = document.createElement('div');
     sumSection.className = 'qa-sum-section';
@@ -238,12 +257,10 @@ var SVG_W  = 540, SVG_H = 480;
     sumLabel.textContent = t('3triangles');
     sumSection.appendChild(sumLabel);
 
-    // Three triangle bars — label and SVG bar per triangle
-    // These get updated dynamically when fan origin changes
-    var triRowLabels = [];  // the "△ XYZ" text elements
-    var triBarBgs    = [];  // background rect (to gray out)
-    var triBarSegs   = [];  // [ [rect,rect,rect], ... ] colored segments
-    var triBarLbls   = [];  // "180°" text label per bar
+    var triRowLabels = [];
+    var triBarBgs    = [];
+    var triBarSegs   = [];
+    var triBarLbls   = [];
 
     for (var ti = 0; ti < 3; ti++) {
       var rowWrap = document.createElement('div');
@@ -262,11 +279,12 @@ var SVG_W  = 540, SVG_H = 480;
       var bg = document.createElementNS(SVG_NS, 'rect');
       bg.setAttribute('x','0'); bg.setAttribute('y','0');
       bg.setAttribute('width','160'); bg.setAttribute('height','14');
-      bg.setAttribute('fill',hiruwiki.getThemeColor('border-color-base', '#eee')); bg.setAttribute('rx','3');
+      // Bar track: background-color-neutral (#eaecf0 / #2a2d34)
+      bg.setAttribute('fill', hiruwiki.getThemeColor('background-color-neutral', '#eaecf0'));
+      bg.setAttribute('rx','3');
       barSVG.appendChild(bg);
       triBarBgs.push(bg);
 
-      // 3 colored segment rects per bar
       var segs = [];
       for (var si = 0; si < 3; si++) {
         var seg = document.createElementNS(SVG_NS, 'rect');
@@ -281,13 +299,17 @@ var SVG_W  = 540, SVG_H = 480;
       var border = document.createElementNS(SVG_NS, 'rect');
       border.setAttribute('x','0'); border.setAttribute('y','0');
       border.setAttribute('width','160'); border.setAttribute('height','14');
-      border.setAttribute('fill','none'); border.setAttribute('stroke',hiruwiki.getThemeColor('border-color-base', '#ccc'));
+      border.setAttribute('fill','none');
+      // Bar outline: border-color-base (#a2a9b1 / #3d424d)
+      border.setAttribute('stroke', hiruwiki.getThemeColor('border-color-base', '#a2a9b1'));
       border.setAttribute('stroke-width','1'); border.setAttribute('rx','3');
       barSVG.appendChild(border);
 
       var lbl180 = document.createElementNS(SVG_NS, 'text');
       lbl180.setAttribute('x','164'); lbl180.setAttribute('y','11');
-      lbl180.setAttribute('font-size','10'); lbl180.setAttribute('fill','#999');
+      lbl180.setAttribute('font-size','10');
+      // "180°" label: color-placeholder (#72777d, same in both modes)
+      lbl180.setAttribute('fill', hiruwiki.getThemeColor('color-placeholder', '#72777d'));
       lbl180.setAttribute('font-family','Arial,sans-serif');
       lbl180.textContent = '180\u00b0';
       barSVG.appendChild(lbl180);
@@ -303,7 +325,7 @@ var SVG_W  = 540, SVG_H = 480;
                    '<span style="color:green">B</span> + ' +
                    '<span style="color:blue">C</span> + ' +
                    '<span style="color:orange">D</span> + ' +
-                   '<span style="color:purple">E</span> = 540\u00b0';
+                   '<span style="color:#9966cc">E</span> = 540\u00b0';
     sumSection.appendChild(eq);
     panel.appendChild(sumSection);
 
@@ -405,8 +427,6 @@ var SVG_W  = 540, SVG_H = 480;
              ' A'+radius+','+radius+' 0 '+large+' 1 '+x2+','+y2+' Z';
     }
 
-    // Find the fan origin vertex index (0-4 into KEYS) such that all 3 fan
-    // triangles have the same winding as the polygon. Returns rotated key array.
     function findFanKeys(p, polyArea) {
       for (var i=0; i<5; i++) {
         var idx=[];
@@ -417,7 +437,7 @@ var SVG_W  = 540, SVG_H = 480;
         var valid=polyArea>0?(sa0>0&&sa1>0&&sa2>0):(sa0<0&&sa1<0&&sa2<0);
         if (valid) return idx;
       }
-      return [KEYS[0],KEYS[1],KEYS[2],KEYS[3],KEYS[4]]; // fallback
+      return [KEYS[0],KEYS[1],KEYS[2],KEYS[3],KEYS[4]];
     }
 
     function pts2str(arr) {
@@ -439,7 +459,6 @@ var SVG_W  = 540, SVG_H = 480;
         verts[k]={ V:p[k], P:p[KEYS[(i+n-1)%n]], N:p[KEYS[(i+1)%n]] };
       });
 
-      // Pentagon interior angles and arcs
       var angles={}, isReflex={};
       KEYS.forEach( function(k) {
         var V=verts[k].V, P=verts[k].P, N=verts[k].N;
@@ -449,7 +468,6 @@ var SVG_W  = 540, SVG_H = 480;
         arcs[k].setAttribute('d',drawAngleArc(V,P,N,36,isReflex[k]));
       });
 
-      // Angle labels along bisector toward centroid
       var centX=0,centY=0;
       KEYS.forEach(function(k){centX+=p[k].x;centY+=p[k].y;}); centX/=5;centY/=5;
       KEYS.forEach( function(k) {
@@ -464,30 +482,23 @@ var SVG_W  = 540, SVG_H = 480;
         lbls[k].textContent=angles[k].toFixed(1)+'\u00b0';
       });
 
-      // Fan triangulation — find valid origin
       var fk = findFanKeys(p, area);
-      // fk[0]=origin, triangles: (0,1,2), (0,2,3), (0,3,4)
-      // Diagonals: origin→fk[2] and origin→fk[3]
       diag1.setAttribute('x1',p[fk[0]].x); diag1.setAttribute('y1',p[fk[0]].y);
       diag1.setAttribute('x2',p[fk[2]].x); diag1.setAttribute('y2',p[fk[2]].y);
       diag2.setAttribute('x1',p[fk[0]].x); diag2.setAttribute('y1',p[fk[0]].y);
       diag2.setAttribute('x2',p[fk[3]].x); diag2.setAttribute('y2',p[fk[3]].y);
 
-      // Triangle fills
       triFills[0].setAttribute('points',pts2str([p[fk[0]],p[fk[1]],p[fk[2]]]));
       triFills[1].setAttribute('points',pts2str([p[fk[0]],p[fk[2]],p[fk[3]]]));
       triFills[2].setAttribute('points',pts2str([p[fk[0]],p[fk[3]],p[fk[4]]]));
 
-      // Triangle bars: label and colored segments
       var triDefs = [
         [fk[0],fk[1],fk[2]],
         [fk[0],fk[2],fk[3]],
         [fk[0],fk[3],fk[4]]
       ];
       triDefs.forEach( function(tri, ti) {
-        // Update row label
         triRowLabels[ti].textContent = '\u25b3 ' + tri[0]+tri[1]+tri[2];
-        // Compute angles inside this triangle
         var angAt0 = triAngle(p[tri[0]], p[tri[1]], p[tri[2]]);
         var angAt1 = triAngle(p[tri[1]], p[tri[0]], p[tri[2]]);
         var angAt2 = triAngle(p[tri[2]], p[tri[0]], p[tri[1]]);
@@ -501,12 +512,13 @@ var SVG_W  = 540, SVG_H = 480;
           triBarSegs[ti][si].setAttribute('width', w);
           x += w;
         });
-        triBarBgs[ti].setAttribute('fill',hiruwiki.getThemeColor('border-color-base', '#eee'));
-        triBarLbls[ti].setAttribute('fill','#999');
+        // Bar track background re-applied each frame — keep token consistent with init
+        triBarBgs[ti].setAttribute('fill', hiruwiki.getThemeColor('background-color-neutral', '#eaecf0'));
+        // "180°" label color — color-placeholder (#72777d)
+        triBarLbls[ti].setAttribute('fill', hiruwiki.getThemeColor('color-placeholder', '#72777d'));
         triBarLbls[ti].textContent = '180\u00b0';
       });
 
-      // Panel values
       var sum=0;
       KEYS.forEach( function(k) {
         sum+=angles[k];
@@ -547,11 +559,11 @@ var SVG_W  = 540, SVG_H = 480;
     svgEl.addEventListener('mouseup',    function(){dragKey=null;});
     svgEl.addEventListener('mouseleave', function(){dragKey=null;});
 
-    // Touch — listener on SVG for reliable mobile hit detection
+    // Touch
     svgEl.addEventListener('touchstart', function(e) {
       e.preventDefault();
       var pt = svgPoint(e.touches[0].clientX, e.touches[0].clientY);
-      var best = null, bestDist = 40; // 40px hit radius in SVG coords
+      var best = null, bestDist = 40;
       KEYS.forEach(function(k) {
         var d = Math.hypot(pos[k].x - pt.x, pos[k].y - pt.y);
         if (d < bestDist) { bestDist = d; best = k; }
@@ -567,7 +579,7 @@ var SVG_W  = 540, SVG_H = 480;
     svgEl.addEventListener('touchend',    function() { dragKey = null; });
     svgEl.addEventListener('touchcancel', function() { dragKey = null; });
 
-    resetBtn.addEventListener('click',   function(){resetPos(initPos);updatePoly();});
+    resetBtn.addEventListener('click', function(){resetPos(initPos);updatePoly();});
 
     updatePoly();
 
