@@ -1,7 +1,36 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
 /* =========================================================
  * Hiruwiki module: triangle-angles — stylesheet
  * Requires: hiruwiki-shared.css
  * ========================================================= */
+
+/*
+ * This module uses Codex tokens directly rather than custom --hw-* variables,
+ * so dark mode is handled automatically by Vector 2022 / Minerva without
+ * needing extra class selectors.
+ *
+ * Codex token legend (light → dark):
+ *   --color-base                        #202122  → ~#f8f9fa
+ *   --color-subtle                      #54595d  → ~#a2a9b1
+ *   --color-placeholder                 #72777d  → ~#72777d
+ *   --color-progressive                 #36c     → #6e85cf
+ *   --background-color-base             #ffffff  → #101418
+ *   --background-color-neutral-subtle   #f8f9fa  → #202122
+ *   --border-color-base                 #a2a9b1  → #3d424d
+ *   --border-color-subtle               #c8ccd1  → #2e3136
+ *   --background-color-destructive           #d73333
+ *   --background-color-destructive--hover    #fc493b
+ *   --background-color-destructive--active   #9f3526
+ *   --color-inverted-fixed              #ffffff  (always white)
+ *
+ * Data colors (angle A/B/C) are kept as fixed values — they encode meaning
+ * and must remain visually distinct in both modes.
+ */
 
 .hiruwiki[data-module="triangle-angles"] {
     font-family: sans-serif;
@@ -12,10 +41,12 @@
 .hiruwiki[data-module="triangle-angles"] .hw-angles-wrap {
     width: 100%;
     min-height: 300px;
-    border: 0.5px solid var(--hw-border, #D3D1C7);
-    border-radius: var(--hw-radius-sm, 4px) var(--hw-radius-sm, 4px) 0 0;
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    border-radius: 4px 4px 0 0;
     overflow: hidden;
-    background: var(--hw-bg-canvas, #F8F9FA);
+    /* Background is painted by JS via getThemeColor on the SVG bgRect;
+       transparent here avoids a white flash before JS runs. */
+    background: transparent;
     line-height: 0;
 }
 
@@ -33,13 +64,14 @@
     flex-wrap: wrap;
     gap: 12px;
     padding: 9px 14px;
-    border: 0.5px solid var(--hw-border, #D3D1C7);
+    border: 1px solid var(--border-color-base, #a2a9b1);
     border-top: none;
-    border-radius: 0 0 var(--hw-radius-sm, 4px) var(--hw-radius-sm, 4px);
-    background: var(--hw-bg-subtle, #F1EFE8);
+    border-radius: 0 0 4px 4px;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
+    color: var(--color-base, #202122);
 }
 
-/* ── Shared info block — same as area module ── */
+/* ── Shared info block ── */
 .hiruwiki[data-module="triangle-angles"] .hw-info {
     display: flex;
     flex-direction: column;
@@ -50,7 +82,7 @@
 
 .hiruwiki[data-module="triangle-angles"] .hw-lbl {
     font-size: 10.5px;
-    color: var(--hw-text-placeholder, #888780);
+    color: var(--color-placeholder, #72777d);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-weight: 500;
@@ -59,31 +91,36 @@
 .hiruwiki[data-module="triangle-angles"] .hw-val {
     font-size: 19px;
     font-weight: 600;
-    color: var(--hw-text-base, #1A1A18);
+    /* Angle values use inline color set from COL.A/B/C — no override needed */
     font-variant-numeric: tabular-nums;
 }
 
 .hiruwiki[data-module="triangle-angles"] .hw-formula {
     font-size: 11.5px;
-    color: var(--hw-text-placeholder, #888780);
+    color: var(--color-placeholder, #72777d);
 }
 
-/* ── Reset button ── */
+/* ── Reset button — Codex destructive pattern ── */
 .hiruwiki[data-module="triangle-angles"] .hw-angles-btn-reset {
     padding: 6px 14px;
-    border-radius: var(--hw-radius-sm, 4px);
-    border: none;
-    background: var(--hw-color-destructive, #BF3C2C);
-    color: #fff;
+    border-radius: 4px;
+    border: 1px solid var(--background-color-destructive--active, #9f3526);
+    background: var(--background-color-destructive, #d73333);
+    color: var(--color-inverted-fixed, #ffffff);
     font-size: 12px;
     font-weight: 600;
     cursor: pointer;
     font-family: sans-serif;
-    transition: background 0.15s;
 }
 
-.hiruwiki[data-module="triangle-angles"] .hw-angles-btn-reset:hover  { background: #9f3526; }
-.hiruwiki[data-module="triangle-angles"] .hw-angles-btn-reset:active { background: #612419; }
+.hiruwiki[data-module="triangle-angles"] .hw-angles-btn-reset:hover {
+    background: var(--background-color-destructive--hover, #fc493b);
+    border-color: var(--background-color-destructive--active, #9f3526);
+}
+
+.hiruwiki[data-module="triangle-angles"] .hw-angles-btn-reset:active {
+    background: var(--background-color-destructive--active, #9f3526);
+}
 
 /* ── Footer ── */
 .hiruwiki[data-module="triangle-angles"] .hw-footer {
@@ -92,11 +129,11 @@
     gap: 8px;
     margin-top: 8px;
     padding: 7px 12px;
-    border: 0.5px solid var(--hw-border, #D3D1C7);
-    border-radius: var(--hw-radius-sm, 4px);
-    background: var(--hw-bg-subtle, #F1EFE8);
+    border: 1px solid var(--border-color-base, #a2a9b1);
+    border-radius: 4px;
+    background: var(--background-color-neutral-subtle, #f8f9fa);
     font-size: 11.5px;
-    color: var(--hw-text-muted, #5F5E5A);
+    color: var(--color-subtle, #54595d);
     line-height: 1.4;
     font-family: sans-serif;
 }
@@ -109,20 +146,6 @@
 }
 
 .hiruwiki[data-module="triangle-angles"] .hw-footer strong {
-    color: var(--hw-color-primary, #534AB7);
+    color: var(--color-progressive, #36c);
     font-weight: 600;
-}
-
-/* ── Dark mode ── */
-html.skin-theme-clientpref-night .hiruwiki[data-module="triangle-angles"],
-html.client-dark-mode            .hiruwiki[data-module="triangle-angles"],
-.mw-dark-mode                    .hiruwiki[data-module="triangle-angles"] {
-    --hw-border:            #444441;
-    --hw-bg-canvas:         #1e1e1c;
-    --hw-bg-subtle:         #2C2C2A;
-    --hw-text-base:         #E8E6DC;
-    --hw-text-muted:        #B4B2A9;
-    --hw-text-placeholder:  #888780;
-    --hw-color-primary:     #AFA9EC;
-    --hw-color-destructive: #BF3C2C;
 }
