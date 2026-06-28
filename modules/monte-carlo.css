@@ -1,4 +1,11 @@
+/* 
+ * DO NOT EDIT THIS PAGE DIRECTLY ON-WIKI!
+ * This page is automatically deployed from GitHub.
+ * Any changes made here will be overwritten by the next deployment.
+ * Source: https://github.com/ItsNyoty/Hiruwiki
+ */
 /* monte-carlo.css — Hiruwiki module */
+
 
 .mc-wrap {
     display: flex;
@@ -18,7 +25,7 @@
 
 .mc-canvas {
     display: block;
-    border: 1px solid var(--color-placeholder, #a2a9b1);
+    border: 1px solid var(--border-color-base, #a2a9b1);
     border-radius: 4px;
 }
 
@@ -26,7 +33,7 @@
     display: flex;
     gap: 16px;
     font-size: 12px;
-    color: var(--color-subtle, #555);
+    color: var(--color-subtle, #54595d);
     align-items: center;
     padding: 0 2px;
 }
@@ -39,8 +46,9 @@
     flex-shrink: 0;
 }
 
-.mc-legend-dot--inside  { background: #D05538; }
-.mc-legend-dot--outside { background: var(--color-progressive, #185FA5); }
+/* Use Codex semantic tokens so dots match the canvas point colors exactly */
+.mc-legend-dot--inside  { background: var(--color-destructive, #d73333); }
+.mc-legend-dot--outside { background: var(--color-progressive, #36c); }
 
 .mc-panel {
     flex: 1 1 200px;
@@ -52,7 +60,7 @@
 
 .mc-formula-box {
     background: var(--background-color-neutral-subtle, #f8f9fa);
-    border: 1px solid var(--color-placeholder, #a2a9b1);
+    border: 1px solid var(--border-color-base, #a2a9b1);
     border-radius: 4px;
     padding: 14px;
 }
@@ -82,8 +90,9 @@
 .mc-frac-num {
     font-size: 13px;
     font-weight: bold;
-    color: #D05538;
-    border-bottom: 1.5px solid var(--color-placeholder, #a2a9b1);
+    /* numerator = "inside" = destructive color */
+    color: var(--color-destructive, #d73333);
+    border-bottom: 1.5px solid var(--border-color-base, #a2a9b1);
     padding: 0 6px 2px;
     min-width: 60px;
     text-align: center;
@@ -101,7 +110,8 @@
 .mc-approx-result {
     font-size: 15px;
     font-weight: bold;
-    color: var(--color-progressive, #185FA5);
+    /* π result = progressive, consistent with outside-circle color */
+    color: var(--color-progressive, #36c);
 }
 
 .mc-stats-row {
@@ -111,7 +121,7 @@
 
 .mc-stat-card {
     background: var(--background-color-neutral-subtle, #f8f9fa);
-    border: 1px solid var(--color-placeholder, #a2a9b1);
+    border: 1px solid var(--border-color-base, #a2a9b1);
     border-radius: 4px;
     padding: 10px 12px;
     flex: 1;
@@ -134,8 +144,9 @@
     color: var(--color-base, #202122);
 }
 
-.mc-stat-value--inside  { color: #D05538; }
-.mc-stat-value--outside { color: var(--color-progressive, #185FA5); }
+/* Stat value colors match legend dots and canvas points */
+.mc-stat-value--inside  { color: var(--color-destructive, #d73333); }
+.mc-stat-value--outside { color: var(--color-progressive, #36c); }
 
 .mc-controls {
     display: flex;
@@ -157,6 +168,7 @@
 
 .mc-slider {
     flex: 1;
+    accent-color: var(--color-progressive, #36c);
 }
 
 .mc-ctrl-val {
@@ -172,34 +184,35 @@
     font-size: 13px;
     padding: 7px 0;
     cursor: pointer;
-    background: var(--background-color-neutral-subtle, #f8f9fa);
-    border: 1px solid var(--color-placeholder, #a2a9b1);
+    background: var(--background-color-interactive-subtle, #f8f9fa);
+    border: 1px solid var(--border-color-base, #a2a9b1);
     border-radius: 2px;
     color: var(--color-base, #202122);
 }
 
 .mc-btn:hover {
-    background: #eaecf0;
+    background: var(--background-color-interactive, #eaecf0);
+    border-color: var(--color-base, #202122);
 }
 
 .mc-btn--reset {
-  font-size: 12px;
-background-color: var(--background-color-destructive, #bf3c2c);
-  border: 1px solid var(--border-color-base, #ccc);
-  color: white;
-  padding: 6px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-family: Arial, sans-serif;
+    font-size: 12px;
+    background-color: var(--background-color-destructive, #d73333);
+    border: 1px solid var(--background-color-destructive--active, #9f3526);
+    color: var(--color-inverted-fixed, #fff);
+    padding: 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: Arial, sans-serif;
 }
 
 .mc-btn--reset:hover {
-  border-color: var(--color-base, #333);
- background-color: var(--background-color-destructive--hover, #9f3526);
+    background-color: var(--background-color-destructive--hover, #fc493b);
+    border-color: var(--background-color-destructive--active, #9f3526);
 }
 
 .mc-btn--reset:active {
-	background-color: var(--background-color-destructive--active, #612419);
+    background-color: var(--background-color-destructive--active, #9f3526);
 }
 
 @media (max-width: 600px) {
