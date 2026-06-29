@@ -1,0 +1,423 @@
+# Messages for Slovak (slovenčina)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Wizzard
+---
+sk:
+  angle-guess:
+    _name: Hádanie uhla
+    difference: 'Rozdiel:'
+    finalScore: Konečné skóre
+    hint: Posuňte modrý bod na nastavenie uhla
+    nextAngle: Ďalší uhol &rsaquo;
+    points: 'Body:'
+    pts: b
+    round: 'Kolo:'
+    roundOver: Koniec hry
+    target: 'Cieľ:'
+    tryAgain: Skúsiť znova
+    yourGuess: 'Váš odhad:'
+  angles:
+    _name: Uhly
+    bisector: Os uhla
+    bisectorResult: 'Os uhla: $1°'
+    complement: Doplnkový
+    explement: Explementárny
+    notDefined: Nie je definovaný pre tento uhol
+    resultAngle: '$1 uhol: $2°'
+    supplement: Vedľajší
+    hint: Potiahnutím rukoväte zmeníte uhol
+  circle-proof:
+    _name: Dôkaz pre kruh
+    animStopped: Animácia zastavená.
+    area: Obsah
+    areaAnimStatus: 'Sektory sa preskladajú do obdĺžnika: šírka = πr, výška = r.'
+    areaReviewStatus: ✓ Šírka = πr, výška = r → A = πr².
+    circAnimStatus: Každý polkruh (πr) sa rozvinie do priamky, spolu tvoria 2πr.
+    circReviewStatus: ✓ Horný πr + dolný πr = C = 2πr.
+    circumference: Obvod
+    initStatus: Vyberte dôkaz a kliknite na „Dokázať“.
+    proveIt: Dokázať ▶
+    radius: Polomer
+    readyStatus: Kliknutím na „Dokázať“ spustíte animáciu.
+    review: Zopakovať ▶
+    stop: Zastaviť ■
+    tabArea: Obsah
+    tabCirc: Obvod
+    title: Kalkulačka kruhu
+    visualProof: Vizuálny dôkaz
+    hint: Potiahnutím posuvníka polomeru zobrazíte výpočet
+  circumcentre:
+    _name: Stred opísanej kružnice
+    hint: Potiahnutím ľubovoľného vrcholu preskúmate stred opísanej kružnice
+  dividend:
+    _name: Delenec a deliteľ
+    eq_lbl_dividend: delenec
+    eq_lbl_divisor: deliteľ
+    eq_lbl_quotient: podiel
+    eq_lbl_remainder: zvyšok
+    insight_exact: <strong>$1 ÷ $2 = $3</strong> presne — bez zvyšku. Pruh sa dokonale
+      zaplní na <strong>$3</strong> rovnakých častí. To znamená, že <strong>$2</strong>
+      je deliteľom čísla <strong>$1</strong>.
+    insight_less: <strong>$1</strong> je menšie ako deliteľ <strong>$2</strong>, takže
+      sa doň zmestí <strong>0</strong> celých častí. Celá hodnota je zvyškom. Zvyšok
+      je vždy menší ako deliteľ.
+    insight_normal: '<strong>$1 ÷ $2 = $3</strong> zvyšok <strong>$4</strong>. Všimnite
+      si, že červený kúsok (<strong>$4</strong>) je vždy kratší ako jedna modrá časť
+      (<strong>$2</strong>). Zvyšok je vždy ostro menší ako deliteľ. Kontrola: <strong>$3
+      × $2 + $4 = $5 + $4 = $1</strong> ✓'
+    label_bar_description: Pruhové zobrazenie — každá modrá časť = {{PLURAL:$1|$1
+      jednotka|$1 jednotky|$1 jednotiek}}
+    label_choose: Vyberte delenec a deliteľ
+    label_dividend: Delenec (číslo, ktoré sa delí)
+    label_divisor: Deliteľ (veľkosť časti)
+    label_equation: Rovnica delenia
+    label_repadd: Opakované sčítanie
+    repadd_exact: — delí sa presne!
+    repadd_leftover: zostáva
+    repadd_less: $1 je menšie ako $2, takže podiel je 0 a celá hodnota je zvyškom.
+    hint: Upravte delenec a deliteľ a zobrazí sa rozklad delenia
+  factors:
+    _name: Prvočíselné činitele
+    gcd_formula_eq: ' ='
+    gcd_none: (žiadne — nesúdeliteľné)
+    gcd_title: NSD — ponechať len spoločné činitele
+    insight_coprime: '<strong>$1</strong> a <strong>$2</strong> sú nesúdeliteľné —
+      nemajú spoločné prvočíselné činitele, takže NSD = 1. NSN je jednoducho ich súčin.
+      Vždy platí: <strong>$1 × $2 = $5</strong> = NSD × NSN = <strong>1 × $4 = $4</strong>.'
+    insight_shared_many: '<strong>$1</strong> a <strong>$2</strong> majú spoločné
+      prvočísla <strong>$7</strong>. NSD berie len zelené spoločné bloky. NSN berie
+      všetky bloky — zelené spoločné, modré navyše z A, červené navyše z B — pričom
+      žiadne prvočíslo sa nezapočíta dvakrát. Vždy platí: <strong>$1 × $2 = $5</strong>
+      = NSD × NSN = <strong>$3 × $4 = $6</strong>.'
+    insight_shared_one: '<strong>$1</strong> a <strong>$2</strong> majú spoločné prvočíslo
+      <strong>$7</strong>. NSD berie len zelené spoločné bloky. NSN berie všetky bloky
+      — zelené spoločné, modré navyše z A, červené navyše z B — pričom žiadne prvočíslo
+      sa nezapočíta dvakrát. Vždy platí: <strong>$1 × $2 = $5</strong> = NSD × NSN
+      = <strong>$3 × $4 = $6</strong>.'
+    label_choose: Vyberte dve čísla
+    label_factors: Prvočíselné činitele
+    label_how: Ako sa tvoria NSD a NSN
+    lcm_formula_eq: ' ='
+    lcm_title: NSN — zjednotenie všetkých činiteľov
+    legend_onlyA: len v A
+    legend_onlyB: len v B
+    legend_shared: spoločné (použité pre NSD)
+    hint: Vyberte čísla a zobrazia sa ich prvočíselné činitele
+  fibonacci:
+    _name: Fibonacciho postupnosť
+    card_phi_lbl: Zlatý rez φ
+    card_phi_sub: (1 + √5) / 2 = 1.6180339887…
+    card_ratio_error: 'odchýlka od φ:'
+    card_ratio_lbl: Aktuálny pomer F(n+1) ÷ F(n)
+    chart_step: krok
+    diff: 'rozdiel:'
+    insight_close: <strong>$1 + $2 = $3</strong>. Pomer = <strong>$4</strong> — vzdialený
+      od φ o <strong>$5</strong>. Takmer úplne skonvergoval.
+    insight_converged: <strong>$1 + $2 = $3</strong>. Pomer = <strong>$4</strong>
+      — vzdialený od φ o <strong>$5</strong>. Postupnosť skonvergovala na 6 desatinných
+      miest.
+    insight_normal: <strong>$1 + $2 = $3</strong>. Pomer = <strong>$4</strong>, stále
+      <strong>$5</strong> od φ = 1.61803…
+    insight_step1: Začíname s <strong>1 + 1 = 2</strong>. Pomer 2 ÷ 1 = <strong>2.000000</strong>
+      — stále ďaleko od φ ≈ 1.61803.
+    insight_step2: <strong>1 + 2 = 3</strong>. Pomer 3 ÷ 2 = <strong>1.500000</strong>
+      — už bližšie. Každý krok ďalej zmenšuje rozdiel.
+    sec_addition: Sčítanie
+    sec_chart: Konvergencia k φ
+    sec_sequence: Doterajšia postupnosť
+    sec_steps: Prechádzajte Fibonacciho postupnosťou
+    step_label: Krok $1 z $2
+    hint: Prechádzajte postupnosťou a sledujte konvergenciu
+  hexagon-angles:
+    2quads: 2 štvoruholníky × 360°
+    4triangles: 4 trojuholníky × 180°
+    _name: Uhly šesťuholníka
+    interiorAngles: Vnútorné uhly
+    reset: ↺ Vynulovať
+    total: Spolu
+    hint: Rozložte šesťuholník na trojuholníky alebo štvoruholníky
+  incentre:
+    _name: Stred vpísanej kružnice
+    hint: Potiahnutím ľubovoľného vrcholu preskúmate vpísanú kružnicu
+  euler-line:
+    _name: Eulerova priamka
+    triangle: Trojuholník
+    eulerLine: Eulerova priamka
+    hint: 'Potiahnite ľubovoľný vrchol · Mierka: 1 cm = 40 px'
+    sideA: Strana a (BC)
+    sideB: Strana b (CA)
+    sideC: Strana c (AB)
+    perimeter: Obvod
+    circumcenter: Stred opísanej kružnice O
+    centroid: Ťažisko G
+    orthocentre: Ortocentrum H
+    scaleUnit: cm
+  marble-jar:
+    _name: Nádoba pravdepodobnosti
+    colorBlue: Modrá
+    colorGreen: Zelená
+    colorRed: Červená
+    colorYellow: Žltá
+    impossible: Nemožné
+    probTitle: Pravdepodobnosť vytiahnutia guľôčky a uhádnutia jej farby…
+    shake: Zatraste!
+    total: Spolu
+    hint: Zatraste nádobou a uvidíte pravdepodobnosť v praxi
+  monte-carlo:
+    _name: Monte Carlo π
+    addPoints: + Pridať body
+    approxPi: Aproximácia π
+    insideCircle: V kruhu
+    insideRed: Vnútri (červené)
+    outsideBlue: Vonku (modré)
+    outsideCircle: Mimo kruhu
+    pointsPerStep: Body na krok
+    reset: ↺ Vynulovať
+    totalPoints: Body spolu
+    hint: Pridávajte body a aproximujte π pomocou pravdepodobnosti
+  nine-point-circle:
+    _name: Kružnica deviatich bodov
+    hint: Potiahnutím ľubovoľného vrcholu preskúmate kružnicu deviatich bodov
+    legendM: M_a/b/c — stredy strán
+    legendH: H_a/b/c — päty výšok
+    legendE: E_a/b/c — stredy úsečiek AH, BH, CH
+  orthocentre:
+    _name: Ortocentrum
+    hint: Potiahnutím ľubovoľného vrcholu uvidíte, ako sa ortocentrum mení
+  pentagon-angles:
+    3triangles: 3 trojuholníky × 180°
+    _name: Uhly päťuholníka
+    interiorAngles: Vnútorné uhly
+    reset: ↺ Vynulovať
+    total: Spolu
+    hint: Rozložte päťuholník na trojuholníky
+  percent:
+    _name: Percentá
+    axis_neg: −100%
+    axis_pos: +100%
+    axis_zero: 0%
+    hint: Potiahnite posuvník vľavo pre stratu, vpravo pre zisk.
+    insight_full_loss: Strata <strong>100%</strong> zníži hodnotu na <strong>0</strong>.
+      Zotavenie z nuly je <strong>nemožné</strong> — akékoľvek percento z 0 je stále
+      0.
+    insight_gain: Zisk <strong>+$1%</strong> zvýši 100 na <strong>$2</strong>. Zelený
+      úsek nad a červený úsek pod sú rovnako široké — no percentá sa líšia. Návrat
+      na 100 vyžaduje len <strong>$3%</strong>, nie −$1%.
+    insight_loss: Strata <strong>$1%</strong> zníži 100 na <strong>$2</strong>. Červený
+      úsek nad a zelený úsek pod pokrývajú rovnakú fyzickú vzdialenosť — no percentá
+      sa líšia, pretože sa vzťahujú na odlišné základy. Zotavenie vyžaduje <strong>+$3%</strong>,
+      nie +$1%.
+    insight_zero: Nebola použitá žiadna zmena. Posúvaním posuvníka skúmajte.
+    label_after: po zmene
+    label_apply: POUŽIŤ PERCENTUÁLNU ZMENU
+    label_recovered: zotavené
+    label_scale: 'MIERKA: PLNÁ ŠÍRKA PRUHU = 200'
+    label_start: začiatok
+  pythagoras:
+    _name: Pytagorova veta
+    angleDeg: uhol =
+    lockRight: pravý uhol
+    reset: Vynulovať
+    hint: Potiahnutím vrcholov overíte a² + b² = c²
+    controls: Ovládanie
+    triangle: Trojuholník
+    sideA: a
+    sideB: b
+    hypot: c (prepona)
+    angOrigin: ∠ počiatok
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: a²+b²=c²
+    badgeCos: c²=a²+b²−2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    cosTheta: cosθ
+    cosThetaEx: kosínus uhla pri počiatku
+    scaleUnit: cm
+  quadrangle-angles:
+    _name: Uhly štvoruholníka
+    interiorAngles: Vnútorné uhly
+    reset: Vynulovať
+    sum: Súčet
+    total: Spolu
+    hint: Potiahnutím vrcholov uvidíte súčet vnútorných uhlov
+  quadrangles:
+    _name: Štvoruholníky
+    areaDiagHalf: 'Vzorec: A = (d₁ × d₂) / 2 d₁ (AC) = $1 cm d₂ (BD) = $2 cm = ($1
+      × $2) / 2'
+    areaGaussHeader: 'Gaussov vzorec (šnurovací): A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|'
+    areaGaussSum: ' Σ = $1 A = ½ × |$1|'
+    areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
+    areaParallelogram: 'Vzorec: A = základňa × výška základňa (AB) = $1 cm výška =
+      $2 cm = $1 × $2'
+    areaRectangle: 'Vzorec: A = šírka × výška = $1 × $2'
+    areaSquare: 'Vzorec: A = strana² = $1²'
+    areaTrapezoid: 'Vzorec: A = (b₁ + b₂) / 2 × h b₁ (AB) = $1 cm b₂ (CD) = $2 cm
+      výška = $3 cm = ($1 + $2) / 2 × $3'
+    headingArea: Obsah
+    headingClassification: Klasifikácia
+    headingSides: Strany a uhlopriečky
+    labelDiag1: d₁ (AC)
+    labelDiag2: d₂ (BD)
+    labelPerimeter: Obvod
+    presetKite: Deltoid
+    presetParallelogram: Rovnobežník
+    presetRectangle: Obdĺžnik
+    presetSquare: Štvorec
+    presetTrapezoid: Lichobežník
+    shapeCrossed: skrížený štvoruholník
+    shapeGeneral: všeobecný štvoruholník
+    shapeKite: deltoid
+    shapeParallelogram: rovnobežník
+    shapeRectangle: obdĺžnik
+    shapeRhombus: kosoštvorec
+    shapeSquare: štvorec
+    shapeTrapezoid: lichobežník
+    unitCm: cm
+    unitCm2: cm²
+    hint: Potiahnutím vrcholov klasifikujete štvoruholník
+  radian:
+    _name: Radiány
+    rad: rad
+    hint: Potiahnutím rukoväte uvidíte vzťah medzi stupňami a radiánmi
+  slope:
+    _name: Smernica
+    undefined: Zvislá priamka → smernica nie je definovaná
+    hint: Potiahnutím bodov zobrazíte výpočet smernice
+    point1: Bod P₁
+    point2: Bod P₂
+    coords1: Súradnice P₁
+    coords2: Súradnice P₂
+    rise: Zmena y (Δy)
+    run: Zmena x (Δx)
+    slope: Smernica (m)
+    slopeCard: Smernica
+    pointsCard: Body
+  transformation:
+    _name: Transformácie
+    angle: Uhol
+    enlargement: Rovnoľahlosť
+    hintEnlargement: Posuňte oranžový bod na nastavenie stredu rovnoľahlosti.
+    hintReflection: Posuňte oba oranžové body na vytvorenie osi súmernosti.
+    hintRotation: Posuňte oranžový bod na nastavenie stredu otočenia.
+    hintTranslation: Pomocou posuvníkov posuňte objekt.
+    horizontal: Vodorovne
+    reflection: Osová súmernosť
+    rotation: Otočenie
+    transformations: Transformácie
+    translation: Posunutie
+    vertical: Zvisle
+    hint: Vyberte transformáciu a uvidíte ju v akcii. Pomocou modrých bodov zmeníte
+      tvar trojuholníka
+  triangle-angles:
+    _name: Uhly trojuholníka
+    reset: Vynulovať
+    hint: Potiahnutím vrcholov zmeníte trojuholník · Súčet uhlov je vždy 180°
+    labelAngleA: Uhol A
+    labelAngleB: Uhol B
+    labelAngleC: Uhol C
+    labelSum: Súčet
+    formula: A + B + C = 180°
+  triangle-area:
+    _name: Obsah trojuholníka
+    btnProve: Dokázať
+    btnReset: Vynulovať
+    labelArea: Obsah
+    labelBase: Základňa (b)
+    labelHeight: Výška (h)
+    labelBaseShort: b
+    labelHeightShort: h
+    proofResultPara: Obsah rovnobežníka = b × h = <strong>$1 × $2 = $3 cm²</strong>
+    proofResultTri: ' → Trojuholník = ½ × $1 = <strong>$2 cm²</strong>'
+    unitCm: cm
+    unitCm2: cm²
+    hint: Potiahnutím vrcholov zmeníte tvar trojuholníka
+  triangle-centroid:
+    _name: Ťažisko trojuholníka
+    hint: Potiahnutím ľubovoľného vrcholu preskúmate ťažisko
+  triangles:
+    _name: Trojuholníky
+    acute: ostrouhlý
+    angles: Uhly
+    area: Obsah
+    byAngles: 'Podľa uhlov:'
+    bySides: 'Podľa strán:'
+    classification: Klasifikácia
+    equilateral: rovnostranný
+    isosceles: rovnoramenný
+    measurements: Rozmery
+    obtuse: tupouhlý
+    perimeter: Obvod
+    reset: Vynulovať ↺
+    right: pravouhlý
+    scalene: rôznostranný
+    sides: Strany
+    sideA: strana a (BC)
+    sideB: strana b (CA)
+    sideC: strana c (AB)
+    unitCm: cm
+    unitCm2: cm²
+    hint: Potiahnutím vrcholov zmeníte tvar a klasifikáciu
+  trigonometry:
+    _name: Trigonometria
+    angle: Uhol &theta;
+    cosDesc: Modrá čiara je <strong>priľahlá</strong> strana &mdash; vodorovná vzdialenosť
+      od počiatku k päte kolmice. cos&nbsp;&theta;&nbsp;=&nbsp;priľahlá&nbsp;&divide;&nbsp;prepona&nbsp;(=&nbsp;1).
+    cosFormula: priľahlá / prepona
+    hideProof: Skryť dôkaz
+    prove: Dokázať
+    sinDesc: Zelená čiara je <strong>protiľahlá</strong> strana &mdash; zvislá vzdialenosť
+      od bodu na kružnici k osi x. sin&nbsp;&theta;&nbsp;=&nbsp;protiľahlá&nbsp;&divide;&nbsp;prepona&nbsp;(=&nbsp;1).
+    sinFormula: protiľahlá / prepona
+    tanDesc: Oranžová čiara je nakreslená pri x&nbsp;=&nbsp;1, dotyčnica ku kružnici.
+      Jej výška je tan&nbsp;&theta;, keďže tan&nbsp;&theta;&nbsp;=&nbsp;protiľahlá&nbsp;&divide;&nbsp;priľahlá&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.
+    tanFormula: protiľahlá / priľahlá
+    hint: Pomocou posuvníka zmeníte uhol
+  integer-coordinates:
+    _name: Celočíselné súradnice
+    btnChallenge: "\U0001F3AF Výzva"
+    btnCheck: Skontrolovať ✓
+    btnExplore: "\U0001F52D Skúmať"
+    btnNext: Ďalej →
+    feedbackCorrect: ✓ Správne!
+    feedbackWrong: ✗ Nesprávne. Správnou odpoveďou bola bledá hviezda.
+    hintChallenge: Presuňte ★ na navrhnuté súradnice a kliknite na Skontrolovať
+    hintExplore: Presuňte ★ kliknutím naň — prichytí sa na celé čísla
+    movePrompt: Presuňte ★ na:<br>($1, $2)
+    pointLabel: 'Bod:'
+    titleExplore: Skúmať súradnicovú sústavu
+    hint: Presúvaním hviezdy skúmajte súradnice
+  positive-coordinates:
+    _name: Kladné súradnice
+    btnChallenge: "\U0001F3AF Výzva"
+    btnCheck: Skontrolovať ✓
+    btnExplore: "\U0001F52D Skúmať"
+    btnNext: Ďalej →
+    feedbackCorrect: ✓ Správne!
+    feedbackWrong: ✗ Nesprávne. Správnou odpoveďou bola bledá hviezda.
+    hintChallenge: Presuňte ★ na navrhnuté súradnice a kliknite na Skontrolovať
+    hintExplore: Presuňte ★ kliknutím naň — prichytí sa na celé čísla
+    movePrompt: Presuňte ★ na:<br>($1, $2)
+    pointLabel: 'Bod:'
+    titleExplore: Skúmať súradnicovú sústavu
+    hint: Presúvaním hviezdy skúmajte súradnice
+  gauss-legendre:
+    _name: Gaussov-Legendrov algoritmus
+    iteration: Iterácia
+    variable_a: Aritmetický priemer (a)
+    variable_b: Geometrický priemer (b)
+    variable_t: Chybový člen (t)
+    variable_p: Mocninový člen (p)
+    step: Ďalší krok
+    reset: Vynulovať
+    pi_approx: Aproximácia π
+    correct_digits: '{{PLURAL:$1|$1 správna číslica|$1 správne číslice|$1 správnych
+      číslic}}'
+    precision_note: 'Konverguje kvadraticky: počet číslic sa každým krokom zdvojnásobí.'
+    calculation_heading: Ako sa to počíta
+    formula_label: Vzorec
+    update_rules_heading: Pravidlá aktualizácie
+    hint: Vypočítajte iterácie a uvidíte kvadratickú konvergenciu
+...
