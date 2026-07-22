@@ -128,6 +128,18 @@ var messages = /* I18N_START */ {
         "total": "Label for the total number of marbles",
         "hint": "Instruction text for the probability jar interaction"
     },
+    "sk": {
+        "_name": "Nádoba pravdepodobnosti",
+        "colorBlue": "Modrá",
+        "colorGreen": "Zelená",
+        "colorRed": "Červená",
+        "colorYellow": "Žltá",
+        "impossible": "Nemožné",
+        "probTitle": "Pravdepodobnosť vytiahnutia guľôčky a uhádnutia jej farby…",
+        "shake": "Zatraste!",
+        "total": "Spolu",
+        "hint": "Zatraste nádobou a uvidíte pravdepodobnosť v praxi"
+    },
     "tr": {
         "_name": "Olasılık Kavanozu",
         "colorBlue": "Mavi",

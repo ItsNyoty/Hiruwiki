@@ -233,6 +233,27 @@ var messages = /* I18N_START */ {
         "visualProof": "Section heading for the visual proof controls",
         "hint": "Instruction text explaining that the radius slider is interactive"
     },
+    "sk": {
+        "_name": "Dôkaz pre kruh",
+        "animStopped": "Animácia zastavená.",
+        "area": "Obsah",
+        "areaAnimStatus": "Sektory sa preskladajú do obdĺžnika: šírka = πr, výška = r.",
+        "areaReviewStatus": "✓ Šírka = πr, výška = r → A = πr².",
+        "circAnimStatus": "Každý polkruh (πr) sa rozvinie do priamky, spolu tvoria 2πr.",
+        "circReviewStatus": "✓ Horný πr + dolný πr = C = 2πr.",
+        "circumference": "Obvod",
+        "initStatus": "Vyberte dôkaz a kliknite na „Dokázať“.",
+        "proveIt": "Dokázať ▶",
+        "radius": "Polomer",
+        "readyStatus": "Kliknutím na „Dokázať“ spustíte animáciu.",
+        "review": "Zopakovať ▶",
+        "stop": "Zastaviť ■",
+        "tabArea": "Obsah",
+        "tabCirc": "Obvod",
+        "title": "Kalkulačka kruhu",
+        "visualProof": "Vizuálny dôkaz",
+        "hint": "Potiahnutím posuvníka polomeru zobrazíte výpočet"
+    },
     "tr": {
         "_name": "Daire Kanıtı",
         "animStopped": "Animasyon durduruldu.",

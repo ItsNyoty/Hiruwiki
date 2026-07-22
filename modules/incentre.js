@@ -32,11 +32,14 @@ var messages = /* I18N_START */ {
     },
     "fr": {
         "_name": "Incentre",
-        "hint": "Faites glisser un sommet · Échelle : 1 cm = 40 px"
+        "hint": "Tirez n'importe quel sommet pour explorer l'circoncircle"
     },
     "ga": {
         "_name": "Lárionad",
         "hint": "Tarraing aon bhuaicphointe · Scála: 1 cm = 40 px"
+    },
+    "it": {
+        "hint": "Trascina un vertice qualsiasi per esplorare il cerchio"
     },
     "ko": {
         "_name": "내심",
@@ -44,7 +47,7 @@ var messages = /* I18N_START */ {
     },
     "mk": {
         "_name": "Центар на впишана кружница",
-        "hint": "Повлечете некое теме · Размер: 1 п = 40 п"
+        "hint": "Повлечете некое теме за да ја истражите впишаната кружница"
     },
     "nl": {
         "_name": "Aangeschreven middelpunt",
@@ -53,6 +56,10 @@ var messages = /* I18N_START */ {
     "qqq": {
         "_name": "Name of the Incentre module",
         "hint": "Instruction text for the interactive triangle."
+    },
+    "sk": {
+        "_name": "Stred vpísanej kružnice",
+        "hint": "Potiahnutím ľubovoľného vrcholu preskúmate vpísanú kružnicu"
     },
     "tr": {
         "_name": "İç teğet çemberi merkezi",

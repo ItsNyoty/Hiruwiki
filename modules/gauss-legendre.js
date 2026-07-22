@@ -156,6 +156,23 @@
         "formula_label": "Label for the mathematical formula being used",
         "update_rules_heading": "Heading for the section explaining how variables change each step",
         "hint": "Instruction text for the Gauss-Legendre algorithm interaction"
+    },
+    "sk": {
+        "_name": "Gaussov-Legendrov algoritmus",
+        "iteration": "Iterácia",
+        "variable_a": "Aritmetický priemer (a)",
+        "variable_b": "Geometrický priemer (b)",
+        "variable_t": "Chybový člen (t)",
+        "variable_p": "Mocninový člen (p)",
+        "step": "Ďalší krok",
+        "reset": "Vynulovať",
+        "pi_approx": "Aproximácia π",
+        "correct_digits": "{{PLURAL:$1|$1 správna číslica|$1 správne číslice|$1 správnych číslic}}",
+        "precision_note": "Konverguje kvadraticky: počet číslic sa každým krokom zdvojnásobí.",
+        "calculation_heading": "Ako sa to počíta",
+        "formula_label": "Vzorec",
+        "update_rules_heading": "Pravidlá aktualizácie",
+        "hint": "Vypočítajte iterácie a uvidíte kvadratickú konvergenciu"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

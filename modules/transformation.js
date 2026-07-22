@@ -160,6 +160,22 @@ var messages = /* I18N_START */ {
         "translation": "Button label and heading for the translation transformation",
         "vertical": "Label for the vertical translation slider",
         "hint": "Instruction text for the transformation module"
+    },
+    "sk": {
+        "_name": "Transformácie",
+        "angle": "Uhol",
+        "enlargement": "Rovnoľahlosť",
+        "hintEnlargement": "Posuňte oranžový bod na nastavenie stredu rovnoľahlosti.",
+        "hintReflection": "Posuňte oba oranžové body na vytvorenie osi súmernosti.",
+        "hintRotation": "Posuňte oranžový bod na nastavenie stredu otočenia.",
+        "hintTranslation": "Pomocou posuvníkov posuňte objekt.",
+        "horizontal": "Vodorovne",
+        "reflection": "Osová súmernosť",
+        "rotation": "Otočenie",
+        "transformations": "Transformácie",
+        "translation": "Posunutie",
+        "vertical": "Zvisle",
+        "hint": "Vyberte transformáciu a uvidíte ju v akcii. Pomocou modrých bodov zmeníte tvar trojuholníka"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

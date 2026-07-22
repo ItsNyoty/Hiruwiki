@@ -137,6 +137,19 @@ var messages = /* I18N_START */ {
         "tanDesc": "Description of the tangent function shown in the proof panel. Uses HTML entities and formatting.",
         "tanFormula": "Formula for tangent (opposite / adjacent)",
         "hint": "Instruction text for the unit circle interaction"
+    },
+    "sk": {
+        "_name": "Trigonometria",
+        "angle": "Uhol &theta;",
+        "cosDesc": "Modrá čiara je <strong>priľahlá</strong> strana &mdash; vodorovná vzdialenosť od počiatku k päte kolmice. cos&nbsp;&theta;&nbsp;=&nbsp;priľahlá&nbsp;&divide;&nbsp;prepona&nbsp;(=&nbsp;1).",
+        "cosFormula": "priľahlá / prepona",
+        "hideProof": "Skryť dôkaz",
+        "prove": "Dokázať",
+        "sinDesc": "Zelená čiara je <strong>protiľahlá</strong> strana &mdash; zvislá vzdialenosť od bodu na kružnici k osi x. sin&nbsp;&theta;&nbsp;=&nbsp;protiľahlá&nbsp;&divide;&nbsp;prepona&nbsp;(=&nbsp;1).",
+        "sinFormula": "protiľahlá / prepona",
+        "tanDesc": "Oranžová čiara je nakreslená pri x&nbsp;=&nbsp;1, dotyčnica ku kružnici. Jej výška je tan&nbsp;&theta;, keďže tan&nbsp;&theta;&nbsp;=&nbsp;protiľahlá&nbsp;&divide;&nbsp;priľahlá&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;.",
+        "tanFormula": "protiľahlá / priľahlá",
+        "hint": "Pomocou posuvníka zmeníte uhol"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

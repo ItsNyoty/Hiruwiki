@@ -31,7 +31,7 @@ var messages = /* I18N_START */ {
     },
     "fr": {
         "_name": "Centre de gravité du triangle",
-        "hint": "Faites glisser un sommet · Échelle : 1 cm = 40 px"
+        "hint": "Faites glisser n'importe quel sommet pour explorer le centroïde"
     },
     "ga": {
         "_name": "Lárphointe Triantáin",
@@ -43,7 +43,7 @@ var messages = /* I18N_START */ {
     },
     "mk": {
         "_name": "Тежиште на триаголник",
-        "hint": "Повлечете некое теме · Размер: 1 см = 40 п"
+        "hint": "Повлечете некое теме за да го истражите тежиштето"
     },
     "nl": {
         "_name": "Zwaartepunt van een driehoek",
@@ -52,6 +52,10 @@ var messages = /* I18N_START */ {
     "qqq": {
         "_name": "Name of the Triangle Centroid module",
         "hint": "Instruction text shown in the footer."
+    },
+    "sk": {
+        "_name": "Ťažisko trojuholníka",
+        "hint": "Potiahnutím ľubovoľného vrcholu preskúmate ťažisko"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

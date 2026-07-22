@@ -31,19 +31,23 @@ var messages = /* I18N_START */ {
     },
     "fr": {
         "_name": "Circoncentre",
-        "hint": "Faites glisser un sommet · Échelle : 1 cm = 40 px"
+        "hint": "Tirez n'importe quel sommet pour explorer le circoncentre"
     },
     "ga": {
         "_name": "Ciorcalár",
         "hint": "Tarraing aon rinn · Scála: 1 cm = 40 px"
+    },
+    "it": {
+        "_name": "Circumcentro",
+        "hint": "Trascina un vertice qualsiasi per esplorare il circocentro"
     },
     "ko": {
         "_name": "외심",
         "hint": "꼭짓점을 드래그해서 외심을 탐구하세요"
     },
     "mk": {
-        "_name": "центар на опишана кружница",
-        "hint": "Повлечете некое теме · Размер: 1 см = 40 п"
+        "_name": "Центар на опишана кружница",
+        "hint": "Повлечете некое теме за да го истражите центарот на опишаната кружница"
     },
     "nl": {
         "_name": "Middelpunt omgeschreven cirkel",
@@ -53,8 +57,12 @@ var messages = /* I18N_START */ {
         "_name": "Name of the circumcentre module",
         "hint": "Instruction text shown in the footer."
     },
+    "sk": {
+        "_name": "Stred opísanej kružnice",
+        "hint": "Potiahnutím ľubovoľného vrcholu preskúmate stred opísanej kružnice"
+    },
     "tr": {
-        "_name": "çevre merkezi",
+        "_name": "Çevre merkezi",
         "hint": "Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 px"
     }
 } /* I18N_END */

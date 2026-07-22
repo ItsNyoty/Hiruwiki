@@ -165,6 +165,20 @@ var messages = /* I18N_START */ {
         "tryAgain": "Button label to start a new game after all rounds are complete",
         "yourGuess": "Label for the angle the player guessed. Followed by a value in degrees."
     },
+    "sk": {
+        "_name": "Hádanie uhla",
+        "difference": "Rozdiel:",
+        "finalScore": "Konečné skóre",
+        "hint": "Posuňte modrý bod na nastavenie uhla",
+        "nextAngle": "Ďalší uhol &rsaquo;",
+        "points": "Body:",
+        "pts": "b",
+        "round": "Kolo:",
+        "roundOver": "Koniec hry",
+        "target": "Cieľ:",
+        "tryAgain": "Skúsiť znova",
+        "yourGuess": "Váš odhad:"
+    },
     "tr": {
         "_name": "Açı Tahmini",
         "difference": "Fark:",

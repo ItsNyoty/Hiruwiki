@@ -24,7 +24,7 @@
     },
     "fr": {
         "_name": "Orthocentre",
-        "hint": "Faites glisser n'importe quel sommet pour voir comment l'orthocentre change (Échelle : 1 cm = 40 px)"
+        "hint": "Tirez n'importe quel sommet pour voir comment l' orthocentre change"
     },
     "ga": {
         "_name": "Ortalár",
@@ -36,7 +36,7 @@
     },
     "mk": {
         "_name": "Ортоцентар",
-        "hint": "Повлечете некое теме за да видите како се менува ортоцентарот (Размер: 1 см = 40 п)"
+        "hint": "Повлечете некое теме за да видите како се менува ортоцентарот"
     },
     "nl": {
         "_name": "Hoogtepunt van een driehoek",
@@ -45,6 +45,10 @@
     "qqq": {
         "_name": "Name of the Orthocentre module",
         "hint": "Instruction text shown in the footer."
+    },
+    "sk": {
+        "_name": "Ortocentrum",
+        "hint": "Potiahnutím ľubovoľného vrcholu uvidíte, ako sa ortocentrum mení"
     },
     "tr": {
         "_name": "Yükseklik merkezi",

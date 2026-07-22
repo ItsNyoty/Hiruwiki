@@ -202,6 +202,24 @@ var messages = /* I18N_START */ {
         "legend_shared": "Legend label for factor blocks shared between A and B (used for GCD)",
         "hint": "Instruction text explaining how to use the number sliders"
     },
+    "sk": {
+        "_name": "Prvočíselné činitele",
+        "gcd_formula_eq": "=",
+        "gcd_none": "(žiadne — nesúdeliteľné)",
+        "gcd_title": "NSD — ponechať len spoločné činitele",
+        "insight_coprime": "<strong>$1</strong> a <strong>$2</strong> sú nesúdeliteľné — nemajú spoločné prvočíselné činitele, takže NSD = 1. NSN je jednoducho ich súčin. Vždy platí: <strong>$1 × $2 = $5</strong> = NSD × NSN = <strong>1 × $4 = $4</strong>.",
+        "insight_shared_many": "<strong>$1</strong> a <strong>$2</strong> majú spoločné prvočísla <strong>$7</strong>. NSD berie len zelené spoločné bloky. NSN berie všetky bloky — zelené spoločné, modré navyše z A, červené navyše z B — pričom žiadne prvočíslo sa nezapočíta dvakrát. Vždy platí: <strong>$1 × $2 = $5</strong> = NSD × NSN = <strong>$3 × $4 = $6</strong>.",
+        "insight_shared_one": "<strong>$1</strong> a <strong>$2</strong> majú spoločné prvočíslo <strong>$7</strong>. NSD berie len zelené spoločné bloky. NSN berie všetky bloky — zelené spoločné, modré navyše z A, červené navyše z B — pričom žiadne prvočíslo sa nezapočíta dvakrát. Vždy platí: <strong>$1 × $2 = $5</strong> = NSD × NSN = <strong>$3 × $4 = $6</strong>.",
+        "label_choose": "Vyberte dve čísla",
+        "label_factors": "Prvočíselné činitele",
+        "label_how": "Ako sa tvoria NSD a NSN",
+        "lcm_formula_eq": "=",
+        "lcm_title": "NSN — zjednotenie všetkých činiteľov",
+        "legend_onlyA": "len v A",
+        "legend_onlyB": "len v B",
+        "legend_shared": "spoločné (použité pre NSD)",
+        "hint": "Vyberte čísla a zobrazia sa ich prvočíselné činitele"
+    },
     "tr": {
         "_name": "Asal Çarpanlar",
         "gcd_formula_eq": "=",

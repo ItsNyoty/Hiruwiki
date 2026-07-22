@@ -88,6 +88,14 @@ var messages = /* I18N_START */ {
         "total": "Label for the total sum of interior angles",
         "hint": "Instruction text for the pentagon angle decomposition applet"
     },
+    "sk": {
+        "3triangles": "3 trojuholníky × 180°",
+        "_name": "Uhly päťuholníka",
+        "interiorAngles": "Vnútorné uhly",
+        "reset": "↺ Vynulovať",
+        "total": "Spolu",
+        "hint": "Rozložte päťuholník na trojuholníky"
+    },
     "tr": {
         "3triangles": "3 üçgen × 180°",
         "_name": "Beşgen Açıları",

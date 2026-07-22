@@ -134,6 +134,19 @@ var messages = /* I18N_START */ {
         "totalPoints": "Label for the total number of points",
         "hint": "Instruction text for the Monte Carlo simulation interaction"
     },
+    "sk": {
+        "_name": "Monte Carlo π",
+        "addPoints": "+ Pridať body",
+        "approxPi": "Aproximácia π",
+        "insideCircle": "V kruhu",
+        "insideRed": "Vnútri (červené)",
+        "outsideBlue": "Vonku (modré)",
+        "outsideCircle": "Mimo kruhu",
+        "pointsPerStep": "Body na krok",
+        "reset": "↺ Vynulovať",
+        "totalPoints": "Body spolu",
+        "hint": "Pridávajte body a aproximujte π pomocou pravdepodobnosti"
+    },
     "tr": {
         "_name": "Monte Carlo Pi",
         "addPoints": "+ Nokta Ekle",

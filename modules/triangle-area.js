@@ -159,6 +159,21 @@ var messages = /* I18N_START */ {
         "unitCm": "Unit of length (centimeters)",
         "unitCm2": "Unit of area (square centimeters)",
         "hint": "Explanation about how the module is interactive"
+    },
+    "sk": {
+        "_name": "Obsah trojuholníka",
+        "btnProve": "Dokázať",
+        "btnReset": "Vynulovať",
+        "labelArea": "Obsah",
+        "labelBase": "Základňa (b)",
+        "labelHeight": "Výška (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Obsah rovnobežníka = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ Trojuholník = ½ × $1 = <strong>$2 cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²",
+        "hint": "Potiahnutím vrcholov zmeníte tvar trojuholníka"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

@@ -243,6 +243,30 @@ var messages = /* I18N_START */ {
         "unitCm": "Unit of length (centimeters)",
         "unitCm2": "Unit of area (square centimeters)",
         "hint": "Explanation about how the module is interactive"
+    },
+    "sk": {
+        "_name": "Trojuholníky",
+        "acute": "ostrouhlý",
+        "angles": "Uhly",
+        "area": "Obsah",
+        "byAngles": "Podľa uhlov:",
+        "bySides": "Podľa strán:",
+        "classification": "Klasifikácia",
+        "equilateral": "rovnostranný",
+        "isosceles": "rovnoramenný",
+        "measurements": "Rozmery",
+        "obtuse": "tupouhlý",
+        "perimeter": "Obvod",
+        "reset": "Vynulovať ↺",
+        "right": "pravouhlý",
+        "scalene": "rôznostranný",
+        "sides": "Strany",
+        "sideA": "strana a (BC)",
+        "sideB": "strana b (CA)",
+        "sideC": "strana c (AB)",
+        "unitCm": "cm",
+        "unitCm2": "cm²",
+        "hint": "Potiahnutím vrcholov zmeníte tvar a klasifikáciu"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

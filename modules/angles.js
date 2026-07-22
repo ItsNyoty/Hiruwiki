@@ -130,6 +130,17 @@ var messages = /* I18N_START */ {
         "supplement": "Button label for the supplementary angle mode",
         "hint": "Instruction text explaining how to interact with the angle applet"
     },
+    "sk": {
+        "_name": "Uhly",
+        "bisector": "Os uhla",
+        "bisectorResult": "Os uhla: $1°",
+        "complement": "Doplnkový",
+        "explement": "Explementárny",
+        "notDefined": "Nie je definovaný pre tento uhol",
+        "resultAngle": "$1 uhol: $2°",
+        "supplement": "Vedľajší",
+        "hint": "Potiahnutím rukoväte zmeníte uhol"
+    },
     "tr": {
         "_name": "Açılar",
         "bisector": "Açıortay",

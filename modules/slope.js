@@ -150,6 +150,20 @@ var messages = /* I18N_START */ {
         "slopeCard": "title of the slope section",
         "pointsCard": "title used in the points section"
     },
+    "sk": {
+        "_name": "Smernica",
+        "undefined": "Zvislá priamka → smernica nie je definovaná",
+        "hint": "Potiahnutím bodov zobrazíte výpočet smernice",
+        "point1": "Bod P₁",
+        "point2": "Bod P₂",
+        "coords1": "Súradnice P₁",
+        "coords2": "Súradnice P₂",
+        "rise": "Zmena y (Δy)",
+        "run": "Zmena x (Δx)",
+        "slope": "Smernica (m)",
+        "slopeCard": "Smernica",
+        "pointsCard": "Body"
+    },
     "tr": {
         "_name": "Eğim",
         "undefined": "Dikey çizgi → eğim belirsiz",

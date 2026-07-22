@@ -225,6 +225,26 @@ var messages = /* I18N_START */ {
         "repadd_less": "Text shown in the repeated addition section when the dividend is less than the divisor. Parameters: $1 = dividend, $2 = divisor.",
         "hint": "Instruction text explaining how to use the division sliders"
     },
+    "sk": {
+        "_name": "Delenec a deliteľ",
+        "eq_lbl_dividend": "delenec",
+        "eq_lbl_divisor": "deliteľ",
+        "eq_lbl_quotient": "podiel",
+        "eq_lbl_remainder": "zvyšok",
+        "insight_exact": "<strong>$1 ÷ $2 = $3</strong> presne — bez zvyšku. Pruh sa dokonale zaplní na <strong>$3</strong> rovnakých častí. To znamená, že <strong>$2</strong> je deliteľom čísla <strong>$1</strong>.",
+        "insight_less": "<strong>$1</strong> je menšie ako deliteľ <strong>$2</strong>, takže sa doň zmestí <strong>0</strong> celých častí. Celá hodnota je zvyškom. Zvyšok je vždy menší ako deliteľ.",
+        "insight_normal": "<strong>$1 ÷ $2 = $3</strong> zvyšok <strong>$4</strong>. Všimnite si, že červený kúsok (<strong>$4</strong>) je vždy kratší ako jedna modrá časť (<strong>$2</strong>). Zvyšok je vždy ostro menší ako deliteľ. Kontrola: <strong>$3 × $2 + $4 = $5 + $4 = $1</strong> ✓",
+        "label_bar_description": "Pruhové zobrazenie — každá modrá časť = {{PLURAL:$1|$1 jednotka|$1 jednotky|$1 jednotiek}}",
+        "label_choose": "Vyberte delenec a deliteľ",
+        "label_dividend": "Delenec (číslo, ktoré sa delí)",
+        "label_divisor": "Deliteľ (veľkosť časti)",
+        "label_equation": "Rovnica delenia",
+        "label_repadd": "Opakované sčítanie",
+        "repadd_exact": "— delí sa presne!",
+        "repadd_leftover": "zostáva",
+        "repadd_less": "$1 je menšie ako $2, takže podiel je 0 a celá hodnota je zvyškom.",
+        "hint": "Upravte delenec a deliteľ a zobrazí sa rozklad delenia"
+    },
     "tr": {
         "_name": "Bölünen ve Bölen",
         "eq_lbl_dividend": "bölünen",

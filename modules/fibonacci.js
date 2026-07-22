@@ -214,6 +214,26 @@ var messages = /* I18N_START */ {
         "step_label": "Label showing the current step. Parameters: $1 = current step number, $2 = total number of steps.",
         "hint": "Instruction text for the Fibonacci step-through controls"
     },
+    "sk": {
+        "_name": "Fibonacciho postupnosť",
+        "card_phi_lbl": "Zlatý rez φ",
+        "card_phi_sub": "(1 + √5) / 2 = 1.6180339887…",
+        "card_ratio_error": "odchýlka od φ:",
+        "card_ratio_lbl": "Aktuálny pomer F(n+1) ÷ F(n)",
+        "chart_step": "krok",
+        "diff": "rozdiel:",
+        "insight_close": "<strong>$1 + $2 = $3</strong>. Pomer = <strong>$4</strong> — vzdialený od φ o <strong>$5</strong>. Takmer úplne skonvergoval.",
+        "insight_converged": "<strong>$1 + $2 = $3</strong>. Pomer = <strong>$4</strong> — vzdialený od φ o <strong>$5</strong>. Postupnosť skonvergovala na 6 desatinných miest.",
+        "insight_normal": "<strong>$1 + $2 = $3</strong>. Pomer = <strong>$4</strong>, stále <strong>$5</strong> od φ = 1.61803…",
+        "insight_step1": "Začíname s <strong>1 + 1 = 2</strong>. Pomer 2 ÷ 1 = <strong>2.000000</strong> — stále ďaleko od φ ≈ 1.61803.",
+        "insight_step2": "<strong>1 + 2 = 3</strong>. Pomer 3 ÷ 2 = <strong>1.500000</strong> — už bližšie. Každý krok ďalej zmenšuje rozdiel.",
+        "sec_addition": "Sčítanie",
+        "sec_chart": "Konvergencia k φ",
+        "sec_sequence": "Doterajšia postupnosť",
+        "sec_steps": "Prechádzajte Fibonacciho postupnosťou",
+        "step_label": "Krok $1 z $2",
+        "hint": "Prechádzajte postupnosťou a sledujte konvergenciu"
+    },
     "tr": {
         "_name": "Fibonacci Dizisi",
         "card_phi_lbl": "Altın oran φ",

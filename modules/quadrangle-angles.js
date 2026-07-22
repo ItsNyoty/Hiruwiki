@@ -88,6 +88,14 @@ var messages = /* I18N_START */ {
         "total": "Label for the total sum of interior angles",
         "hint": "Instruction text for the quadrangle angle interaction"
     },
+    "sk": {
+        "_name": "Uhly štvoruholníka",
+        "interiorAngles": "Vnútorné uhly",
+        "reset": "Vynulovať",
+        "sum": "Súčet",
+        "total": "Spolu",
+        "hint": "Potiahnutím vrcholov uvidíte súčet vnútorných uhlov"
+    },
     "tr": {
         "_name": "Dörtgen Açıları",
         "interiorAngles": "İç açılar",

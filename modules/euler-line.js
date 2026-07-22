@@ -145,6 +145,20 @@ var messages = /* I18N_START */ {
         "orthocentre": "Label for the orthocentre point H",
         "scaleUnit": "Unit abbreviation used for measurements (centimetres)"
     },
+    "sk": {
+        "_name": "Eulerova priamka",
+        "triangle": "Trojuholník",
+        "eulerLine": "Eulerova priamka",
+        "hint": "Potiahnite ľubovoľný vrchol · Mierka: 1 cm = 40 px",
+        "sideA": "Strana a (BC)",
+        "sideB": "Strana b (CA)",
+        "sideC": "Strana c (AB)",
+        "perimeter": "Obvod",
+        "circumcenter": "Stred opísanej kružnice O",
+        "centroid": "Ťažisko G",
+        "orthocentre": "Ortocentrum H",
+        "scaleUnit": "cm"
+    },
     "tr": {
         "_name": "Euler Doğrusu",
         "triangle": "Üçgen",

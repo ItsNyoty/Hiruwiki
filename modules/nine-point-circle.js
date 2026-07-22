@@ -49,7 +49,7 @@ var messages = /* I18N_START */ {
     },
     "fr": {
         "_name": "Cercle des neuf points",
-        "hint": "Faites glisser un sommet · Échelle : 1 cm = 40 px",
+        "hint": "Faites glisser n'importe quel sommet pour explorer le cercle à neuf points",
         "legendM": "M_a/b/c — milieux des côtés",
         "legendH": "H_a/b/c — pieds des hauteurs",
         "legendE": "E_a/b/c — milieux de AH, BH, CH"
@@ -69,8 +69,8 @@ var messages = /* I18N_START */ {
         "legendE": "E_a/b/c — 각 AH, BH, CH의 중점들"
     },
     "mk": {
-        "_name": "Кружница со девет точки",
-        "hint": "Повлечете некое теме · Размер: 1 см = 40 п",
+        "_name": "Кружница низ девет точки",
+        "hint": "Повлечете некое теме за да ја истражите кружницата низ девет точки",
         "legendM": "M_a/b/c — средишни точки на страните",
         "legendH": "H_a/b/c — подножја на висините",
         "legendE": "E_a/b/c — средишни точки на AH, BH, CH"
@@ -88,6 +88,13 @@ var messages = /* I18N_START */ {
         "legendM": "Legend entry for M_a/b/c — midpoints of the sides",
         "legendH": "Legend entry for H_a/b/c — feet of the altitudes",
         "legendE": "Legend entry for E_a/b/c — midpoints of AH, BH, CH"
+    },
+    "sk": {
+        "_name": "Kružnica deviatich bodov",
+        "hint": "Potiahnutím ľubovoľného vrcholu preskúmate kružnicu deviatich bodov",
+        "legendM": "M_a/b/c — stredy strán",
+        "legendH": "H_a/b/c — päty výšok",
+        "legendE": "E_a/b/c — stredy úsečiek AH, BH, CH"
     },
     "tr": {
         "_name": "Dokuz Noktalı Çember",

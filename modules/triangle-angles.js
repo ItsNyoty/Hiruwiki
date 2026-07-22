@@ -109,6 +109,16 @@
         "labelAngleC": "Label for angle C",
         "labelSum": "Label for the sum of angles",
         "formula": "Text showing the formula A + B + C = 180°"
+    },
+    "sk": {
+        "_name": "Uhly trojuholníka",
+        "reset": "Vynulovať",
+        "hint": "Potiahnutím vrcholov zmeníte trojuholník · Súčet uhlov je vždy 180°",
+        "labelAngleA": "Uhol A",
+        "labelAngleB": "Uhol B",
+        "labelAngleC": "Uhol C",
+        "labelSum": "Súčet",
+        "formula": "A + B + C = 180°"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

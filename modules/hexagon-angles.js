@@ -43,7 +43,7 @@ var messages = /* I18N_START */ {
     "fr": {
         "2quads": "2 quadrilatères × 360°",
         "4triangles": "4 triangles × 180°",
-        "_name": "Angles de l'hexagone",
+        "_name": "Angles de l’hexagone",
         "interiorAngles": "Angles intérieurs",
         "reset": "↺ Réinitialiser",
         "total": "Total",
@@ -93,6 +93,15 @@ var messages = /* I18N_START */ {
         "reset": "Button label to reset the visualisation",
         "total": "Label for the total sum of interior angles",
         "hint": "Instruction text for the hexagon angle decomposition applet"
+    },
+    "sk": {
+        "2quads": "2 štvoruholníky × 360°",
+        "4triangles": "4 trojuholníky × 180°",
+        "_name": "Uhly šesťuholníka",
+        "interiorAngles": "Vnútorné uhly",
+        "reset": "↺ Vynulovať",
+        "total": "Spolu",
+        "hint": "Rozložte šesťuholník na trojuholníky alebo štvoruholníky"
     },
     "tr": {
         "2quads": "2 dörtgen × 360°",

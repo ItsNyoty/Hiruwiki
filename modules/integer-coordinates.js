@@ -151,6 +151,21 @@ var messages = /* I18N_START */ {
         "pointLabel": "Label for the current point coordinates. Followed by coordinate values.",
         "titleExplore": "Title shown in explore mode",
         "hint": "Instruction text for the coordinate system interaction"
+    },
+    "sk": {
+        "_name": "Celočíselné súradnice",
+        "btnChallenge": "🎯 Výzva",
+        "btnCheck": "Skontrolovať ✓",
+        "btnExplore": "🔭 Skúmať",
+        "btnNext": "Ďalej →",
+        "feedbackCorrect": "✓ Správne!",
+        "feedbackWrong": "✗ Nesprávne. Správnou odpoveďou bola bledá hviezda.",
+        "hintChallenge": "Presuňte ★ na navrhnuté súradnice a kliknite na Skontrolovať",
+        "hintExplore": "Presuňte ★ kliknutím naň — prichytí sa na celé čísla",
+        "movePrompt": "Presuňte ★ na:<br>($1, $2)",
+        "pointLabel": "Bod:",
+        "titleExplore": "Skúmať súradnicovú sústavu",
+        "hint": "Presúvaním hviezdy skúmajte súradnice"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

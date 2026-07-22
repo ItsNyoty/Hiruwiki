@@ -52,6 +52,11 @@ var messages = /* I18N_START */ {
         "rad": "Abbreviation for radians",
         "hint": "Instruction text for the radian-degree relationship applet"
     },
+    "sk": {
+        "_name": "Radiány",
+        "rad": "rad",
+        "hint": "Potiahnutím rukoväte uvidíte vzťah medzi stupňami a radiánmi"
+    },
     "tr": {
         "_name": "Radyanlar",
         "rad": "rad",

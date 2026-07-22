@@ -180,6 +180,22 @@ var messages = /* I18N_START */ {
         "label_scale": "Label explaining the scale of the bar visualisation",
         "label_start": "Label on the bar visualisation for the starting value"
     },
+    "sk": {
+        "_name": "Percentá",
+        "axis_neg": "−100%",
+        "axis_pos": "+100%",
+        "axis_zero": "0%",
+        "hint": "Potiahnite posuvník vľavo pre stratu, vpravo pre zisk.",
+        "insight_full_loss": "Strata <strong>100%</strong> zníži hodnotu na <strong>0</strong>. Zotavenie z nuly je <strong>nemožné</strong> — akékoľvek percento z 0 je stále 0.",
+        "insight_gain": "Zisk <strong>+$1%</strong> zvýši 100 na <strong>$2</strong>. Zelený úsek nad a červený úsek pod sú rovnako široké — no percentá sa líšia. Návrat na 100 vyžaduje len <strong>$3%</strong>, nie −$1%.",
+        "insight_loss": "Strata <strong>$1%</strong> zníži 100 na <strong>$2</strong>. Červený úsek nad a zelený úsek pod pokrývajú rovnakú fyzickú vzdialenosť — no percentá sa líšia, pretože sa vzťahujú na odlišné základy. Zotavenie vyžaduje <strong>+$3%</strong>, nie +$1%.",
+        "insight_zero": "Nebola použitá žiadna zmena. Posúvaním posuvníka skúmajte.",
+        "label_after": "po zmene",
+        "label_apply": "POUŽIŤ PERCENTUÁLNU ZMENU",
+        "label_recovered": "zotavené",
+        "label_scale": "MIERKA: PLNÁ ŠÍRKA PRUHU = 200",
+        "label_start": "začiatok"
+    },
     "tr": {
         "_name": "Yüzdeler",
         "axis_neg": "−%100",
