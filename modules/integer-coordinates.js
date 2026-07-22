@@ -256,9 +256,35 @@ document.querySelectorAll( '.hiruwiki[data-module="integer-coordinates"]' ).forE
     var Y_MAX      =  8;
     var X_STEPS    = X_MAX - X_MIN;   /* 24 */
     var Y_STEPS    = Y_MAX - Y_MIN;   /* 16 */
-    var COLOR_X    = hiruwiki.getThemeColor('color-destructive', '#e74c3c');
-    var COLOR_Y    = hiruwiki.getThemeColor('color-progressive', '#2980b9');
-    var COLOR_AXIS = hiruwiki.getThemeColor('color-base', '#2c3e50');
+
+    function isDark() {
+      var root = document.documentElement;
+      if ( root.classList.contains( 'skin-theme-clientpref-night' ) ||
+           root.classList.contains( 'client-dark-mode' ) ||
+           document.body.classList.contains( 'mw-dark-mode' ) ) {
+        return true;
+      }
+      return !!( window.matchMedia && window.matchMedia( '(prefers-color-scheme: dark)' ).matches );
+    }
+
+    function themeColor( token, lightFallback, darkFallback ) {
+      return hiruwiki.getThemeColor( token, isDark() ? darkFallback : lightFallback );
+    }
+
+    function palette() {
+      return {
+        x: themeColor( 'color-destructive', '#e74c3c', '#ff7f73' ),
+        y: themeColor( 'color-progressive', '#2980b9', '#7aa8ff' ),
+        axis: themeColor( 'color-base', '#2c3e50', '#e8e6dc' ),
+        bg: themeColor( 'background-color-base', '#fafcff', '#1e1e1c' ),
+        grid: themeColor( 'border-color-base', '#d5e0ec', '#4a4a48' ),
+        tickText: themeColor( 'color-subtle', '#555', '#b4b2a9' ),
+        tickMark: themeColor( 'color-placeholder', '#888', '#888780' ),
+        minorTick: themeColor( 'border-color-base', '#ccc', '#555552' ),
+        labelBg: themeColor( 'background-color-base', 'rgba(255,255,255,0.92)', 'rgba(30,30,28,0.95)' ),
+        labelBorder: themeColor( 'border-color-base', '#bdc3c7', '#555552' )
+      };
+    }
 
     var PAD_LEFT   = 46;
     var PAD_RIGHT  = 20;
@@ -380,7 +406,7 @@ document.querySelectorAll( '.hiruwiki[data-module="integer-coordinates"]' ).forE
       ctx.restore();
     }
 
-    function drawCoordLabel( gx, gy, alpha, xColor, yColor ) {
+    function drawCoordLabel( gx, gy, alpha, xColor, yColor, pal ) {
       var pt = toCanvas( gx, gy );
       var FS = 12, xStr = String( gx ), yStr = String( gy );
       var p1 = '(', cm = ', ', p2 = ')';
@@ -396,67 +422,68 @@ document.querySelectorAll( '.hiruwiki[data-module="integer-coordinates"]' ).forE
       if ( lx + totalW + 6 > CW - 2 ) { lx = pt.x - totalW - 14; }
       if ( lx < 2 )                   { lx = pt.x + 14; }
       if ( ly - FS < 2 )              { ly = pt.y + 20; }
-      ctx.fillStyle = hiruwiki.getThemeColor('background-color-base', 'rgba(255,255,255,0.92)');
+      ctx.fillStyle = pal.labelBg;
       ctx.beginPath(); ctx.roundRect( lx - 3, ly - FS, totalW + 6, FS + 5, 3 ); ctx.fill();
-      ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', '#bdc3c7'); ctx.lineWidth = 0.8; ctx.stroke();
+      ctx.strokeStyle = pal.labelBorder; ctx.lineWidth = 0.8; ctx.stroke();
       cx2 = lx;
-      ctx.fillStyle = hiruwiki.getThemeColor('color-base', '#2c3e50'); ctx.fillText( p1,   cx2, ly ); cx2 += wP1;
+      ctx.fillStyle = pal.axis; ctx.fillText( p1,   cx2, ly ); cx2 += wP1;
       ctx.fillStyle = xColor;    ctx.fillText( xStr, cx2, ly ); cx2 += wX;
-      ctx.fillStyle = hiruwiki.getThemeColor('color-base', '#2c3e50'); ctx.fillText( cm,   cx2, ly ); cx2 += wCm;
+      ctx.fillStyle = pal.axis; ctx.fillText( cm,   cx2, ly ); cx2 += wCm;
       ctx.fillStyle = yColor;    ctx.fillText( yStr, cx2, ly ); cx2 += wY;
-      ctx.fillStyle = hiruwiki.getThemeColor('color-base', '#2c3e50'); ctx.fillText( p2,   cx2, ly );
+      ctx.fillStyle = pal.axis; ctx.fillText( p2,   cx2, ly );
       ctx.restore();
     }
 
     /* ---- Main draw ---- */
     function draw() {
       var i, v, x, y, originC, p, pc, tp;
+      var pal = palette();
       ctx.clearRect( 0, 0, CW, CH );
-      ctx.fillStyle = hiruwiki.getThemeColor('background-color-base', '#fafcff'); ctx.fillRect( 0, 0, CW, CH );
+      ctx.fillStyle = pal.bg; ctx.fillRect( 0, 0, CW, CH );
       originC = toCanvas( 0, 0 );
 
       /* Grid lines */
       for ( i = X_MIN; i <= X_MAX; i++ ) {
         x = PAD_LEFT + ( i - X_MIN ) * CELL;
         ctx.beginPath();
-        ctx.strokeStyle = ( i === 0 ) ? COLOR_AXIS : hiruwiki.getThemeColor('border-color-base', '#d5e0ec');
+        ctx.strokeStyle = ( i === 0 ) ? pal.axis : pal.grid;
         ctx.lineWidth   = ( i === 0 ) ? 1.8 : 1;
         ctx.moveTo( x, PAD_TOP ); ctx.lineTo( x, PAD_TOP + Y_STEPS * CELL ); ctx.stroke();
       }
       for ( i = Y_MIN; i <= Y_MAX; i++ ) {
         y = PAD_TOP + ( Y_MAX - i ) * CELL;
         ctx.beginPath();
-        ctx.strokeStyle = ( i === 0 ) ? COLOR_AXIS : hiruwiki.getThemeColor('border-color-base', '#d5e0ec');
+        ctx.strokeStyle = ( i === 0 ) ? pal.axis : pal.grid;
         ctx.lineWidth   = ( i === 0 ) ? 1.8 : 1;
         ctx.moveTo( PAD_LEFT, y ); ctx.lineTo( PAD_LEFT + X_STEPS * CELL, y ); ctx.stroke();
       }
 
       /* Axis arrows — both directions */
-      drawArrow( PAD_LEFT,              originC.y, PAD_LEFT + X_STEPS * CELL + 12, originC.y, COLOR_AXIS, 1.8 );
-      drawArrow( PAD_LEFT + X_STEPS * CELL, originC.y, PAD_LEFT - 2,              originC.y, COLOR_AXIS, 1.8 );
-      drawArrow( originC.x, PAD_TOP + Y_STEPS * CELL, originC.x, PAD_TOP - 10,   COLOR_AXIS, 1.8 );
-      drawArrow( originC.x, PAD_TOP,                  originC.x, PAD_TOP + Y_STEPS * CELL + 10, COLOR_AXIS, 1.8 );
+      drawArrow( PAD_LEFT,              originC.y, PAD_LEFT + X_STEPS * CELL + 12, originC.y, pal.axis, 1.8 );
+      drawArrow( PAD_LEFT + X_STEPS * CELL, originC.y, PAD_LEFT - 2,              originC.y, pal.axis, 1.8 );
+      drawArrow( originC.x, PAD_TOP + Y_STEPS * CELL, originC.x, PAD_TOP - 10,   pal.axis, 1.8 );
+      drawArrow( originC.x, PAD_TOP,                  originC.x, PAD_TOP + Y_STEPS * CELL + 10, pal.axis, 1.8 );
 
       /* Axis labels */
       ctx.save();
       ctx.font = 'italic bold 12px Montserrat, Arial, sans-serif';
-      ctx.fillStyle = COLOR_AXIS; ctx.textAlign = 'center';
+      ctx.fillStyle = pal.axis; ctx.textAlign = 'center';
       ctx.fillText( 'x', PAD_LEFT + X_STEPS * CELL + 20, originC.y + 4 );
       ctx.fillText( 'y', originC.x, PAD_TOP - 14 );
       ctx.restore();
 
       /* Ticks and labels */
       ctx.save();
-      ctx.font = '9px Montserrat, Arial, sans-serif'; ctx.fillStyle = hiruwiki.getThemeColor('color-subtle', '#555');
+      ctx.font = '9px Montserrat, Arial, sans-serif'; ctx.fillStyle = pal.tickText;
       for ( v = X_MIN; v <= X_MAX; v++ ) {
         x = PAD_LEFT + ( v - X_MIN ) * CELL;
         if ( v !== 0 && v % 5 === 0 ) {
           ctx.textAlign = 'center';
           ctx.fillText( v, x, originC.y + 13 );
-          ctx.beginPath(); ctx.strokeStyle = hiruwiki.getThemeColor('color-placeholder', '#888'); ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.strokeStyle = pal.tickMark; ctx.lineWidth = 1;
           ctx.moveTo( x, originC.y - 3 ); ctx.lineTo( x, originC.y + 3 ); ctx.stroke();
         } else if ( v !== 0 ) {
-          ctx.beginPath(); ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', '#ccc'); ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.strokeStyle = pal.minorTick; ctx.lineWidth = 1;
           ctx.moveTo( x, originC.y - 2 ); ctx.lineTo( x, originC.y + 2 ); ctx.stroke();
         }
       }
@@ -465,44 +492,44 @@ document.querySelectorAll( '.hiruwiki[data-module="integer-coordinates"]' ).forE
         if ( v !== 0 && v % 5 === 0 ) {
           ctx.textAlign = 'right';
           ctx.fillText( v, originC.x - 4, y + 3 );
-          ctx.beginPath(); ctx.strokeStyle = hiruwiki.getThemeColor('color-placeholder', '#888'); ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.strokeStyle = pal.tickMark; ctx.lineWidth = 1;
           ctx.moveTo( originC.x - 3, y ); ctx.lineTo( originC.x + 3, y ); ctx.stroke();
         } else if ( v !== 0 ) {
-          ctx.beginPath(); ctx.strokeStyle = hiruwiki.getThemeColor('border-color-base', '#ccc'); ctx.lineWidth = 1;
+          ctx.beginPath(); ctx.strokeStyle = pal.minorTick; ctx.lineWidth = 1;
           ctx.moveTo( originC.x - 2, y ); ctx.lineTo( originC.x + 2, y ); ctx.stroke();
         }
       }
-      ctx.textAlign = 'right'; ctx.fillStyle = hiruwiki.getThemeColor('color-subtle', '#555');
+      ctx.textAlign = 'right'; ctx.fillStyle = pal.tickText;
       ctx.fillText( '0', originC.x - 4, originC.y + 12 );
       ctx.restore();
 
       /* Mode rendering */
       if ( mode === 'explorer' ) {
-        drawProjectionLines( ptX, ptY, COLOR_X, COLOR_Y );
-        drawDimensionBrackets( ptX, ptY, COLOR_X, COLOR_Y );
+        drawProjectionLines( ptX, ptY, pal.x, pal.y );
+        drawDimensionBrackets( ptX, ptY, pal.x, pal.y );
         p = toCanvas( ptX, ptY );
         drawStar( p.x, p.y, 11, '#f1c40f', '#b7950b', 'rgba(241,196,15,0.55)', 10 );
-        drawCoordLabel( ptX, ptY, 1, COLOR_X, COLOR_Y );
-        spCX.style.color = COLOR_X; spCX.textContent = ptX;
-        spCY.style.color = COLOR_Y; spCY.textContent = ptY;
+        drawCoordLabel( ptX, ptY, 1, pal.x, pal.y, pal );
+        spCX.style.color = pal.x; spCX.textContent = ptX;
+        spCY.style.color = pal.y; spCY.textContent = ptY;
       }
 
       if ( mode === 'challenge' ) {
         if ( checked && !correct ) {
-          drawProjectionLines( targetX, targetY, COLOR_X, COLOR_Y, 0.22 );
+          drawProjectionLines( targetX, targetY, pal.x, pal.y, 0.22 );
           tp = toCanvas( targetX, targetY );
           drawStar( tp.x, tp.y, 11, 'rgba(241,196,15,0.28)', 'rgba(183,149,11,0.35)', null, 0, 1 );
-          drawCoordLabel( targetX, targetY, 0.28, COLOR_X, COLOR_Y );
+          drawCoordLabel( targetX, targetY, 0.28, pal.x, pal.y, pal );
         }
-        drawProjectionLines( ptX, ptY, COLOR_X, COLOR_Y );
-        drawDimensionBrackets( ptX, ptY, COLOR_X, COLOR_Y );
+        drawProjectionLines( ptX, ptY, pal.x, pal.y );
+        drawDimensionBrackets( ptX, ptY, pal.x, pal.y );
         pc = toCanvas( ptX, ptY );
         if ( checked && correct ) {
           drawStar( pc.x, pc.y, 13, '#2ecc71', '#1a9456', 'rgba(46,204,113,0.8)', 20 );
         } else {
           drawStar( pc.x, pc.y, 11, '#f1c40f', '#b7950b', 'rgba(241,196,15,0.55)', 10 );
         }
-        drawCoordLabel( ptX, ptY, 1, COLOR_X, COLOR_Y );
+        drawCoordLabel( ptX, ptY, 1, pal.x, pal.y, pal );
       }
     }
 
@@ -608,6 +635,13 @@ document.querySelectorAll( '.hiruwiki[data-module="integer-coordinates"]' ).forE
 
     checkBtn.addEventListener( 'click', checkAnswer );
     nextBtn.addEventListener(  'click', nextChallenge );
+
+    var observer = new MutationObserver( draw );
+    observer.observe( document.documentElement, { attributes: true, attributeFilter: [ 'class' ] } );
+    observer.observe( document.body, { attributes: true, attributeFilter: [ 'class' ] } );
+    if ( window.matchMedia ) {
+      window.matchMedia( '(prefers-color-scheme: dark)' ).addEventListener( 'change', draw );
+    }
 
     /* Initial state */
     explorerPanel.style.display  = 'flex';

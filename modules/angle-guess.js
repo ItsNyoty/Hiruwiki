@@ -510,6 +510,16 @@ function t(key, vars) {
   nextBtn    .addEventListener( 'click', nextRound );
   newRoundBtn.addEventListener( 'click', startGame );
 
+  // ── Live theme updates (MediaWiki / OS preference) ───────────
+  var themeObserver = new MutationObserver( draw );
+  themeObserver.observe( document.documentElement, { attributes: true, attributeFilter: [ 'class' ] } );
+  if ( document.body ) {
+    themeObserver.observe( document.body, { attributes: true, attributeFilter: [ 'class' ] } );
+  }
+  if ( window.matchMedia ) {
+    window.matchMedia( '(prefers-color-scheme: dark)' ).addEventListener( 'change', draw );
+  }
+
   // ── Boot ──────────────────────────────────────────────────────
   startGame();
   
