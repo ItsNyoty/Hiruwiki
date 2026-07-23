@@ -97,5 +97,8 @@ lb:
     hideProof: Beweis verstoppen
     prove: Beweisen
   integer-coordinates:
+    _name: Ganzzueleg Koordinaten
     pointLabel: 'Punkt:'
+  positive-coordinates:
+    _name: Positiv Koordinaten
 ...
