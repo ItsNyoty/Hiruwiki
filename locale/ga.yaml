@@ -50,8 +50,8 @@ ga:
     visualProof: Cruthúnas amhairc
     hint: Tarraing an sleamhnán gha chun an ríomh a fheiceáil
   circumcentre:
-    _name: Ciorcalár
-    hint: 'Tarraing aon rinn · Scála: 1 cm = 40 px'
+    _name: Lár-imlíne
+    hint: Tarraing aon bhuaicphointe chun an t-imlár a iniúchadh
   dividend:
     _name: Díbhinn agus Roinnteoir
     eq_lbl_dividend: díbhinn
@@ -146,7 +146,7 @@ ga:
     hint: Déan an heicseagán a dhíscaoileadh ina thriantáin nó ina cheathairshleasáin
   incentre:
     _name: Lárionad
-    hint: 'Tarraing aon bhuaicphointe · Scála: 1 cm = 40 px'
+    hint: Tarraing aon bhuaicphointe chun an ciorcal istigh a iniúchadh
   euler-line:
     _name: Líne Euler
     triangle: Triantán
@@ -185,14 +185,13 @@ ga:
     hint: Cuir pointí leis chun π a mheasúnú ag baint úsáide as dóchúlacht
   nine-point-circle:
     _name: Ciorcal Naoi bPointe
-    hint: 'Tarraing aon bhuaicphointe · Scála: 1 cm = 40 px'
+    hint: Tarraing aon bhuaicphointe chun an ciorcal naoi bpointe a iniúchadh
     legendM: M_a/b/c — lárphointí na dtaobhanna
     legendH: H_a/b/c — troigh na n-airde
     legendE: E_a/b/c — lárphointí AH, BH, CH
   orthocentre:
     _name: Ortalár
-    hint: 'Tarraing aon rinn chun a fheiceáil conas a athraíonn an t-ortalár (Scála:
-      1 cm = 40 px)'
+    hint: Tarraing aon bhuaicphointe chun a fheiceáil conas a athraíonn an t-ortha-lárionad
   pentagon-angles:
     3triangles: 3 thriantán × 180°
     _name: Uillinneacha an Pheinteagáin
@@ -352,7 +351,7 @@ ga:
     hint: Tarraing na buaicphointí chun cruth an triantáin a athrú
   triangle-centroid:
     _name: Lárphointe Triantáin
-    hint: 'Bog na buaicphointí · Scála: 1 cm = 40 px'
+    hint: Tarraing aon bhuaicphointe chun an lárphointe a iniúchadh
   triangles:
     _name: Triantáin
     acute: géarmhíochaine
