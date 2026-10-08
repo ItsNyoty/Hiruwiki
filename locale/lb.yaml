@@ -96,6 +96,7 @@ lb:
     _name: Trigonometrie
     hideProof: Beweis verstoppen
     prove: Beweisen
+    hint: Benotzt de Slider, fir de Wénkel z'änneren
   integer-coordinates:
     _name: Ganzzueleg Koordinaten
     pointLabel: 'Punkt:'
