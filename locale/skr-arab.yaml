@@ -1,0 +1,422 @@
+# Messages for Saraiki (Arabic script) (سرائیکی)
+# Exported from translatewiki.net
+# Export driver: phpyaml
+# Author: Saraiki
+# Author: Tauqeerkhansurani
+---
+skr-arab:
+  angle-guess:
+    _name: زاویہ دا اندازہ
+    difference: 'فرق:'
+    finalScore: آخری نمبر
+    hint: زاویہ ٹھہراؤݨ کیتے نیلے نقطے کوں سرکاؤ
+    nextAngle: اگلا زاویہ ‹
+    points: 'نمبر:'
+    pts: نمبر
+    round: 'چکر:'
+    roundOver: کھیل مک ڳیا
+    target: 'نشانہ:'
+    tryAgain: ولا کوشش کرو
+    yourGuess: 'تہاݙا اندازہ:'
+  angles:
+    _name: زاویے
+    bisector: ونڈݨ آلا
+    bisectorResult: 'ونڈݨ آلا: $1°'
+    complement: تکمیلی
+    explement: معکوس
+    notDefined: ایں زاویے کیتے مقرر نئیں
+    resultAngle: '$1 زاویہ: $2°'
+    supplement: متمم
+    hint: زاویہ بدلݨ کیتے ہینڈل کوں گھسیٹو
+  circle-proof:
+    _name: دائرے دا ثبوت
+    animStopped: اینیمیشن رک ڳئی۔
+    area: رقبہ
+    areaAnimStatus: 'ٹکڑے جڑ کے مستطیل بݨ ویندن: چوڑائی = πr، اُچائی = r۔'
+    areaReviewStatus: ✓ چوڑائی = πr، اُچائی = r → A = πr²۔
+    circAnimStatus: ہر ادھ دائرہ (πr) کھل کے لکیر بݨ ویندے، کل ملا کے 2πr۔
+    circReviewStatus: ✓ اُتے πr + تھلے πr = C = 2πr۔
+    circumference: دائرے دا گھیر
+    initStatus: کوئی ثبوت چُݨو تے 'ثابت کرو' تے کلک کرو۔
+    proveIt: ثابت کرو ◀
+    radius: رداس
+    readyStatus: اینیمیشن ݙیکھݨ کیتے 'ثابت کرو' تے کلک کرو۔
+    review: ولا ݙیکھو ◀
+    stop: روکو ■
+    tabArea: رقبہ
+    tabCirc: دائرے دا گھیر
+    title: دائرے دا حساب کتاب
+    visualProof: بصری ثبوت
+    hint: حساب کتاب ݙیکھݨ کیتے رداس دے سلائیڈر کوں گھسیٹو
+  circumcentre:
+    _name: گرد مرکز
+    hint: گرد مرکز کوں کھوجݨ کیتے کہیں وی سرے کوں گھسیٹو
+  dividend:
+    _name: مقسوم تے مقسوم علیہ
+    eq_lbl_dividend: مقسوم
+    eq_lbl_divisor: مقسوم علیہ
+    eq_lbl_quotient: حاصل تقسیم
+    eq_lbl_remainder: باقی
+    insight_exact: <strong>$1 ÷ $2 = $3</strong> بالکل — کوئی باقی نئیں۔ پٹی <strong>$3</strong>
+      برابر حصیاں وچ پوری بھر ویندی اے۔ ایں دا مطلب اے جو <strong>$2</strong> <strong>$1</strong>
+      دا مقسوم علیہ اے۔
+    insight_less: <strong>$1</strong> مقسوم علیہ <strong>$2</strong> توں چھوٹا اے،
+      ایں کیتے <strong>0</strong> پورے حصے بݨدن۔ ساری قیمت باقی اے۔ باقی ہمیشہ مقسوم
+      علیہ توں گھٹ ہوندی اے۔
+    insight_normal: '<strong>$1 ÷ $2 = $3</strong> باقی <strong>$4</strong>۔ غور کرو
+      سرخ ٹکڑا (<strong>$4</strong>) ہمیشہ ہک نیلے ٹکڑے (<strong>$2</strong>) توں
+      چھوٹا ہوندے۔ باقی ہمیشہ مقسوم علیہ توں سختی نال گھٹ ہوندے۔ جانچ: <strong>$3
+      × $2 + $4 = $5 + $4 = $1</strong> ✓'
+    label_bar_description: پٹی ویکھو — ہر نیلا ٹکڑا = {{PLURAL:$1|$1 اکائی|$1 اکائیاں}}
+    label_choose: مقسوم تے مقسوم علیہ چݨو
+    label_dividend: مقسوم (جیندا حصہ کیتا ویندے)
+    label_divisor: مقسوم علیہ (حصے دا ناپ)
+    label_equation: تقسیم دا فارمولا
+    label_repadd: مسلسل جمع
+    repadd_exact: — پوری طرح وںݙیندی اے!
+    repadd_leftover: باقی بچیا ہویا
+    repadd_less: $1 $2 توں گھٹ اے، ایں کیتے حاصل تقسیم 0 اے تے ساری قیمت باقی اے۔
+    hint: تقسیم دا تفصیل ݙیکھݨ کیتے مقسوم تے مقسوم علیہ کوں ٹھہراؤ
+  factors:
+    _name: اولی عوامل
+    gcd_formula_eq: =
+    gcd_none: (کوئی نئیں — ہم اول)
+    gcd_title: عاد اعظم — صرف سانجھے عوامل رکھو
+    insight_coprime: '<strong>$1</strong> تے <strong>$2</strong> ہم اول ہن — انہاں
+      دا کوئی اولی عامل سانجھا نئیں، ایں کیتے عاد اعظم = 1 اے۔ زو اضعاف صرف انہاں
+      دی ضرب اے۔ ہمیشہ سچ اے: <strong>$1 × $2 = $5</strong> = عاد اعظم × زو اضعاف
+      = <strong>1 × $4 = $4</strong>۔'
+    insight_shared_many: '<strong>$1</strong> تے <strong>$2</strong> وچ اولی عامل
+      <strong>$7</strong> سانجھے ہن۔ عاد اعظم صرف سانجھے ہرے بلاک گھندے۔ زو اضعاف
+      سارے بلاک گھندا اے — ہرے سانجھے، A دے نیلے وادھو، B دے سرخ وادھو — کوئی اولی
+      عامل ٻہ واری شمار نئیں تھیندا۔ ہمیشہ سچ اے: <strong>$1 × $2 = $5</strong> =
+      عاد اعظم × زو اضعاف = <strong>$3 × $4 = $6</strong>۔'
+    insight_shared_one: '<strong>$1</strong> تے <strong>$2</strong> وچ اولی عامل <strong>$7</strong>
+      سانجھا اے۔ عاد اعظم صرف سانجھے ہرے بلاک گھندے۔ زو اضعاف سارے بلاک گھندا اے —
+      ہرے سانجھے، A دے نیلے وادھو، B دے سرخ وادھو — کوئی اولی عامل ٻہ واری شمار نئیں
+      تھیندا۔ ہمیشہ سچ اے: <strong>$1 × $2 = $5</strong> = عاد اعظم × زو اضعاف = <strong>$3
+      × $4 = $6</strong>۔'
+    label_choose: ٻہ نمبر چݨو
+    label_factors: اولی عوامل
+    label_how: عاد اعظم تے زو اضعاف کیویں بݨدن
+    lcm_formula_eq: ' ='
+    lcm_title: زو اضعاف — سارے عوامل دا ملاپ
+    legend_onlyA: A کیتے نرالے
+    legend_onlyB: B کیتے نرالے
+    legend_shared: سانجھے (عاد اعظم کیتے)
+    hint: اولی عوامل ݙیکھݨ کیتے نمبر چݨو
+  fibonacci:
+    _name: فبوناچی تسلسل
+    card_phi_lbl: سنہری تناسب φ
+    card_phi_sub: (1 + √5) / 2 = 1.6180339887…
+    card_ratio_error: 'φ توں غلطی:'
+    card_ratio_lbl: موجودہ تناسب F(n+1) ÷ F(n)
+    chart_step: قدم
+    diff: 'فرق:'
+    insight_close: <strong>$1 + $2 = $3</strong>۔ تناسب = <strong>$4</strong> — φ
+      توں <strong>$5</strong> اندر۔ تقریباً پوری طرح ملݨ تئیں پہنچ ڳیا۔
+    insight_converged: <strong>$1 + $2 = $3</strong>۔ تناسب = <strong>$4</strong>
+      — φ توں <strong>$5</strong> اندر۔ تسلسل 6 اعشاریہ مقام تئیں مل ڳیا اے۔
+    insight_normal: <strong>$1 + $2 = $3</strong>۔ تناسب = <strong>$4</strong>، اڄاں
+      φ = 1.61803… توں <strong>$5</strong> پرے۔
+    insight_step1: اساں <strong>1 + 1 = 2</strong> نال شروع کریندے ہیں۔ تناسب 2 ÷
+      1 = <strong>2.000000</strong> — اڄاں φ ≈ 1.61803 توں پرے۔
+    insight_step2: <strong>1 + 2 = 3</strong>۔ تناسب 3 ÷ 2 = <strong>1.500000</strong>
+      — پہلے ہی نیڑے۔ ہر قدم فرق کوں ٻیا تنگ کریندے۔
+    sec_addition: جمع
+    sec_chart: φ تئیں ملݨ
+    sec_sequence: اڄ تئیں دا تسلسل
+    sec_steps: فبوناچی تسلسل وچ قدم بہ قدم چلو
+    step_label: قدم $1 وچوں $2
+    hint: ملݨ ݙیکھݨ کیتے تسلسل وچ قدم بہ قدم چلو
+  hexagon-angles:
+    2quads: 2 چوکور × 360°
+    4triangles: 4 مثلث × 180°
+    _name: مسدس زاویے
+    interiorAngles: اندرونی زاویے
+    reset: ↺ دوبارہ
+    total: کل
+    hint: مسدس کوں مثلثاں یا چوکوراں وچ ونڈو
+  incentre:
+    _name: اندرونی گرد مرکز
+    hint: اندرونی دائرہ ݙیکھݨ کیتے کوئی وی سرا گھسیٹو
+  euler-line:
+    _name: آئلر لکیر
+    triangle: مثلث
+    eulerLine: آئلر لکیر
+    hint: 'کوئی وی سرا گھسیٹو · پیمانہ: 1 cm = 40 px'
+    sideA: ضلع a (BC)
+    sideB: ضلع b (CA)
+    sideC: ضلع c (AB)
+    perimeter: گھیر
+    circumcenter: گرد مرکز O
+    centroid: ثقل مرکز G
+    orthocentre: قائم مرکز H
+    scaleUnit: cm
+  marble-jar:
+    _name: احتمال دا مرتبان
+    colorBlue: نیلا
+    colorGreen: ساوا
+    colorRed: رتا
+    colorYellow: پیلا
+    impossible: نا ممکن
+    probTitle: گولی چݨݨ تے اوندے رنگ دا اندازہ لاوݨ دا احتمال…
+    shake: ہلاؤ!
+    total: کل
+    hint: احتمال کوں عمل وچ ݙیکھݨ کیتے مرتبان کوں ہلاؤ
+  monte-carlo:
+    _name: مونٹے کارلو پائی
+    addPoints: + نقطے ودھاؤ
+    approxPi: π دا تقریبا
+    insideCircle: دائرے دے اندر
+    insideRed: اندر (رتا)
+    outsideBlue: باہر (نیلا)
+    outsideCircle: دائرے دے باہر
+    pointsPerStep: فی قدم نقطے
+    reset: ↺ دوبارہ
+    totalPoints: کل نقطے
+    hint: احتمال دی مدد نال π دا تقریبا لاوݨ کیتے نقطے ودھاؤ
+  nine-point-circle:
+    _name: نوں نکاتی دائرہ
+    hint: نوں نکاتی دائرہ ݙیکھݨ کیتے کوئی وی سرا گھسیٹو
+    legendM: M_a/b/c — ضلعیاں دے درمیان نقطے
+    legendH: H_a/b/c — بلندی دے پیر
+    legendE: E_a/b/c — AH، BH، CH دے درمیان نقطے
+  orthocentre:
+    _name: قائم مرکز
+    hint: قائم مرکز کین٘ویں بدلدے اے ݙیکھݨ کیتے کوئی وی سرا گھسیٹو
+  pentagon-angles:
+    3triangles: 3 مثلث × 180°
+    _name: پینٹاگون زاویے
+    interiorAngles: اندرونی زاویے
+    reset: ↺ دوبارہ
+    total: کل
+    hint: پینٹاگون کوں مثلثاں وچ ونڈو
+  percent:
+    _name: فیصد
+    axis_neg: −100%
+    axis_pos: +100%
+    axis_zero: 0%
+    hint: نقصان کیتے سلائیڈر کوں کھبے پاسے تے نفع کیتے سڄے پاسے گھسیٹو۔
+    insight_full_loss: <strong>100%</strong> دا نقصان قیمت کوں <strong>0</strong>
+      تے گھن آندے۔ صفر توں بحالی <strong>نا ممکن</strong> اے — 0 دا کوئی وی فیصد اڄاں
+      0 ہی ہوندے۔
+    insight_gain: <strong>+$1%</strong> دا نفع 100 کوں <strong>$2</strong> تے گھن
+      ویندے۔ اُتے ساوی پٹی تے تھلے رتی پٹی دی چوڑائی ہکو جیہی اے — پر فیصد وکھرے ہن۔
+      100 تے واپس آوݨ کیتے صرف <strong>$3%</strong> چاہیدا اے، −$1% نئیں۔
+    insight_loss: <strong>$1%</strong> دا نقصان 100 کوں <strong>$2</strong> تے گھن
+      آندے۔ اُتے رتی پٹی تے تھلے ساوی پٹی ہکو جیہی جسمانی دوری چڑھیندن — پر فیصد وکھرے
+      ہن کیوں جو ایہ وکھریاں بنیاداں تے لڳدن۔ بحالی کیتے <strong>+$3%</strong> چاہیدا
+      اے، +$1% نئیں۔
+    insight_zero: کوئی تبدیلی نئیں لڳی۔ ڳول کرݨ کیتے سلائیڈر گھسیٹو۔
+    label_after: تبدیلی توں بعد
+    label_apply: فیصد دی تبدیلی لاؤ
+    label_recovered: بحال
+    label_scale: 'پیمانہ: پٹی دی پوری چوڑائی = 200'
+    label_start: شروع
+  pythagoras:
+    _name: فیثاغورث دا قضیہ
+    angleDeg: زاویہ =
+    lockRight: سِدھا زاویہ
+    reset: ↺ دوبارہ
+    hint: a² + b² = c² کوں پرکھݨ کیتے سراں کوں گھسیٹو
+    controls: کنٹرول
+    triangle: مثلث
+    sideA: a
+    sideB: b
+    hypot: c (hyp.)
+    angOrigin: ∠ مبدا
+    angA: ∠ A
+    angB: ∠ B
+    badgeRight: a²+b²=c²
+    badgeCos: c²=a²+b²−2ab·cosθ
+    sqA: a²
+    sqB: b²
+    sqC: c²
+    cosTheta: cosθ
+    cosThetaEx: مبدا تے زاویے دا کوسائن
+    scaleUnit: cm
+  quadrangle-angles:
+    _name: چوکور زاویے
+    interiorAngles: اندرونی زاوے
+    reset: ↺ دوبارہ
+    sum: مجموعہ
+    total: کل
+    hint: اندرونی زاویاں دا مجموعہ ویکھݨ کیتے سراں کوں گھسیٹو
+  quadrangles:
+    _name: چوکوراں
+    areaDiagHalf: 'فارمولا: A = (d₁ × d₂) / 2 d₁ (AC) = $1 cm d₂ (BD) = $2 cm = ($1
+      × $2) / 2'
+    areaGaussHeader: 'گاؤس فارمولا (شو لیس): A = ½ |Σ(xᵢ·yᵢ₊₁ − xᵢ₊₁·yᵢ)|'
+    areaGaussSum: Σ = $1 A = ½ × |$1|
+    areaGaussTerm: (x$1·y$2 − x$2·y$1) = $3
+    areaParallelogram: 'فارمولا: A = قاعدہ × اُچائی قاعدہ (AB) = $1 cm اُچائی = $2
+      cm = $1 × $2'
+    areaRectangle: 'فارمولا: A = چوڑائی × اُچائی = $1 × $2'
+    areaSquare: 'فارمولا: A = ضلع² = $1²'
+    areaTrapezoid: 'فارمولا: A = (b₁ + b₂) / 2 × h b₁ (AB) = $1 cm b₂ (CD) = $2 cm
+      اُچائی = $3 cm = ($1 + $2) / 2 × $3'
+    headingArea: رقبہ
+    headingClassification: درجہ بندی
+    headingSides: ضلعے تے قطر
+    labelDiag1: d₁ (AC)
+    labelDiag2: d₂ (BD)
+    labelPerimeter: گھیر
+    presetKite: پتنگ
+    presetParallelogram: متوازی الاضلاع
+    presetRectangle: مستطیل
+    presetSquare: مربع
+    presetTrapezoid: منحرف
+    shapeCrossed: کراس چوکور
+    shapeGeneral: عام چوکور
+    shapeKite: پتنگ
+    shapeParallelogram: متوازی الاضلاع
+    shapeRectangle: مستطیل
+    shapeRhombus: معین
+    shapeSquare: مربع
+    shapeTrapezoid: منحرف
+    unitCm: سم
+    unitCm2: سم²
+    hint: چوکور دی درجہ بندی کیتے سر گھسیٹو
+  radian:
+    _name: ریڈین
+    rad: rad
+    hint: ڈگریاں تے ریڈین دے وچکار تعلق ویکھݨ کیتے ہینڈل گھسیٹو
+  slope:
+    _name: ڈھلوان
+    undefined: عمودی لکیر → ڈھلوان غیر متعین
+    hint: نقطے گھسیٹ کے ڈھلوان دا حساب ویکھو
+    point1: نقطہ P₁
+    point2: نقطہ P₂
+    coords1: P₁ دے نقاط
+    coords2: P₂ دے نقاط
+    rise: اُچائی (Δy)
+    run: افقی فاصلہ (Δx)
+    slope: ڈھلوان (m)
+    slopeCard: ڈھلوان
+    pointsCard: نقطے
+  transformation:
+    _name: تبدیلی
+    angle: زاویہ
+    enlargement: وݙیائی
+    hintEnlargement: وݙیائی دا مرکز مقرر کرݨ کیتے نارنجی نقطہ گھسیٹو۔
+    hintReflection: شیشے آلی لکیر بݨاوݨ کیتے ݙوہیں نارنجی نقطے گھسیٹو۔
+    hintRotation: گھماؤ دا مرکز مقرر کرݨ کیتے نارنجی نقطہ گھسیٹو۔
+    hintTranslation: شے کوں منتقل کرݨ کیتے سلائیڈر استعمال کرو۔
+    horizontal: افقی
+    reflection: انعکاس
+    rotation: گھماؤ
+    transformations: تبدیلی
+    translation: منتقلی
+    vertical: عمودی
+    hint: عمل وچ ویکھݨ کیتے کوئی تبدیلی چݨو۔ مثلث دی شکل بدلݨ کیتے نیلے نقطے استعمال
+      کرو۔
+  triangle-angles:
+    _name: مثلث دے زاویے
+    reset: دوبارہ
+    hint: مثلث بدلݨ کیتے سر گھسیٹو · زاویاں دا جوڑ ہمیشہ 180° ہوندے
+    labelAngleA: زاویہ A
+    labelAngleB: زاویہ B
+    labelAngleC: زاویہ C
+    labelSum: جوڑ
+    formula: A + B + C = 180°
+  triangle-area:
+    _name: مثلث دا رقبہ
+    btnProve: ثابت کرو
+    btnReset: دوبارہ
+    labelArea: رقبہ
+    labelBase: قاعدہ (b)
+    labelHeight: اُچائی (h)
+    labelBaseShort: b
+    labelHeightShort: h
+    proofResultPara: متوازی الاضلاع دا رقبہ = b × h = <strong>$1 × $2 = $3 cm²</strong>
+    proofResultTri: → مثلث = ½ × $1 = <strong>$2 cm²</strong>
+    unitCm: سم
+    unitCm2: سم²
+    hint: مثلث دی شکل بدلݨ کیتے سر گھسیٹو
+  triangle-centroid:
+    _name: مثلث دا مرکزِ ثقل
+    hint: مرکزِ ثقل کوں ݙیکھݨ کیتے کوئی وی سرا گھسیٹو
+  triangles:
+    _name: مثلثیں
+    acute: حاد الزاویہ
+    angles: زاویے
+    area: رقبہ
+    byAngles: 'زاویے دے لحاظ نال:'
+    bySides: 'ضلعے دے لحاظ نال:'
+    classification: درجہ بندی
+    equilateral: مساوی الاضلاع
+    isosceles: مساوی الساقین
+    measurements: پیمائشاں
+    obtuse: منفرج الزاویہ
+    perimeter: گھیر
+    reset: دوبارہ ↺
+    right: قائم الزاویہ
+    scalene: مختلف الاضلاع
+    sides: ضلعے
+    sideA: ضلع a (BC)
+    sideB: ضلع b (CA)
+    sideC: ضلع c (AB)
+    unitCm: سم
+    unitCm2: سم²
+    hint: شکل تے درجہ بندی بدلݨ کیتے سرے گھسیٹو
+  trigonometry:
+    _name: مثلثیات
+    angle: زاویہ &theta;
+    cosDesc: نیلی لکیر <strong>مجاور</strong> ضلع اے &mdash; مبدا توں عمود دے قاعدے
+      تائیں افقی فاصلہ۔ cos&nbsp;&theta;&nbsp;=&nbsp;مجاور&nbsp;&divide;&nbsp;وتر&nbsp;(=&nbsp;1)۔
+    cosFormula: مجاور / وتر
+    hideProof: ثبوت لکاؤ
+    prove: ثابت کرو
+    sinDesc: سبز لکیر <strong>مقابل</strong> ضلع اے &mdash; دائرے تے نقطے توں x-محور
+      تائیں عمودی فاصلہ۔ sin&nbsp;&theta;&nbsp;=&nbsp;مقابل&nbsp;&divide;&nbsp;وتر&nbsp;(=&nbsp;1)۔
+    sinFormula: مقابل / وتر
+    tanDesc: نارنجی لکیر x&nbsp;=&nbsp;1 تے بنائی گئی اے، دائرے کوں مماس۔ ایندی اُچائی
+      tan&nbsp;&theta; اے، کیوں جو tan&nbsp;&theta;&nbsp;=&nbsp;مقابل&nbsp;&divide;&nbsp;مجاور&nbsp;=&nbsp;sin&nbsp;&theta;&nbsp;&divide;&nbsp;cos&nbsp;&theta;۔
+    tanFormula: مقابل / مجاور
+    hint: زاویہ بدلݨ کیتے سلائیڈر ورتو
+  integer-coordinates:
+    _name: صحیح مختصات
+    btnChallenge: "\U0001F3AF چیلنج"
+    btnCheck: چیک کرو ✓
+    btnExplore: "\U0001F52D کھوج"
+    btnNext: اڳلا ←
+    feedbackCorrect: ✓ ٹھیک!
+    feedbackWrong: ✗ غلط۔ مدھم ستارا ٹھیک جواب ہا۔
+    hintChallenge: ★ کوں مجوزہ مختصات تے گھن ونجو تے چیک دباؤ
+    hintExplore: ★ تے کلک کر کے اونکوں ہلاو — اوہ صحیح اعداد تے ٹک ویندے
+    movePrompt: ★ کوں اتھاں گھن ونجو:<br>($1, $2)
+    pointLabel: 'نقطہ:'
+    titleExplore: مختصاتی نظام دی کھوج
+    hint: ستارے کوں ہلا کے مختصات دی کھوج کرو
+  positive-coordinates:
+    _name: مثبت مختصات
+    btnChallenge: "\U0001F3AF چیلنج"
+    btnCheck: چیک کرو ✓
+    btnExplore: "\U0001F52D کھوج"
+    btnNext: اڳلا ←
+    feedbackCorrect: ✓ ٹھیک!
+    feedbackWrong: ✗ غلط۔ مدھم ستارا ٹھیک جواب ہا۔
+    hintChallenge: ★ کوں مجوزہ مختصات تے گھن ونجو تے چیک دباؤ
+    hintExplore: ★ تے کلک کر کے اونکوں ہلاو — اوہ صحیح اعداد تے ٹک ویندے
+    movePrompt: ★ کوں اتھاں گھن ونجو:<br>($1, $2)
+    pointLabel: 'نقطہ:'
+    titleExplore: مختصاتی نظام دی کھوج
+    hint: ستارے کوں ہلا کے مختصات دی کھوج کرو
+  gauss-legendre:
+    _name: گاؤس-لیجندر الگوردم
+    iteration: تکرار
+    variable_a: حسابی اوسط (a)
+    variable_b: ہندسی اوسط (b)
+    variable_t: غلطی رقم (t)
+    variable_p: طاقت رقم (p)
+    step: اڳلا قدم
+    reset: دوبارہ
+    pi_approx: π دا تقریبا
+    correct_digits: '{{PLURAL:$1|$1 صحیح ہندسہ|$1 صحیح ہندسے}}'
+    precision_note: 'دوڑی مطابقت: ہر قدم تے ہندسے ݙگݨے تھی ویندن۔'
+    calculation_heading: ایندا حساب
+    formula_label: کلیہ
+    update_rules_heading: اپ ڈیٹ دے اصول
+    hint: تکراراں دا حساب کر کے دوڑی مطابقت ݙیکھو
+...
