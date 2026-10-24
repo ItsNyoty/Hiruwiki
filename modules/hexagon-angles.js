@@ -10,36 +10,6 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {
-        "total": "Total"
-    },
-    "en": {
-        "2quads": "2 quadrilaterals × 360°",
-        "4triangles": "4 triangles × 180°",
-        "_name": "Hexagon Angles",
-        "interiorAngles": "Interior angles",
-        "reset": "↺ Reset",
-        "total": "Total",
-        "hint": "Decompose the hexagon into triangles or quadrilaterals"
-    },
-    "es": {
-        "2quads": "2 cuadriláteros × 360°",
-        "4triangles": "4 triángulos × 180°",
-        "_name": "Ángulos del hexágono",
-        "interiorAngles": "Ángulos interiores",
-        "reset": "↺ Reiniciar",
-        "total": "Total",
-        "hint": "Descompone el hexágono en triángulos o cuadrangulares"
-    },
-    "eu": {
-        "2quads": "2 lauki × 360°",
-        "4triangles": "4 triangelu × 180°",
-        "_name": "Hexagonoaren angeluak",
-        "interiorAngles": "Barne angeluak",
-        "reset": "↺ Berrezarri",
-        "total": "Guztira",
-        "hint": "Hexagonoa triangelu edo laukizuzenetan deskonposatu"
-    },
     "fr": {
         "2quads": "2 quadrilatères × 360°",
         "4triangles": "4 triangles × 180°",
@@ -48,33 +18,6 @@ var messages = /* I18N_START */ {
         "reset": "↺ Réinitialiser",
         "total": "Total",
         "hint": "Décomposer l'hexagone en triangles ou quadrilatères"
-    },
-    "ga": {
-        "2quads": "2 cheathairshleasán × 360°",
-        "4triangles": "4 thriantán × 180°",
-        "_name": "Uillinneacha Heicseagáin",
-        "interiorAngles": "Uillinneacha inmheánacha",
-        "reset": "↺ Athshocraigh",
-        "total": "Iomlán",
-        "hint": "Déan an heicseagán a dhíscaoileadh ina thriantáin nó ina cheathairshleasáin"
-    },
-    "ko": {
-        "2quads": "2개의 사각형 × 360°",
-        "4triangles": "4개의 삼각형 × 180°",
-        "_name": "육각형의 각들",
-        "interiorAngles": "내부 각들",
-        "reset": "↺ 초기화",
-        "total": "합계",
-        "hint": "육각형을 삼각형이나 사각형으로 분해하세요."
-    },
-    "mk": {
-        "2quads": "2 четириаголника × 360°",
-        "4triangles": "4 триаголници × 180°",
-        "_name": "Агли на шестаголник",
-        "interiorAngles": "Внатрешни агли",
-        "reset": "↺ Одново",
-        "total": "Вкупно",
-        "hint": "Разложете го шестаголникот на триаголници или четириаголници"
     },
     "nl": {
         "2quads": "2 vierhoeken × 360°",
@@ -94,14 +37,14 @@ var messages = /* I18N_START */ {
         "total": "Label for the total sum of interior angles",
         "hint": "Instruction text for the hexagon angle decomposition applet"
     },
-    "sk": {
-        "2quads": "2 štvoruholníky × 360°",
-        "4triangles": "4 trojuholníky × 180°",
-        "_name": "Uhly šesťuholníka",
-        "interiorAngles": "Vnútorné uhly",
-        "reset": "↺ Vynulovať",
-        "total": "Spolu",
-        "hint": "Rozložte šesťuholník na trojuholníky alebo štvoruholníky"
+    "es": {
+        "2quads": "2 cuadriláteros × 360°",
+        "4triangles": "4 triángulos × 180°",
+        "_name": "Ángulos del hexágono",
+        "interiorAngles": "Ángulos interiores",
+        "reset": "↺ Reiniciar",
+        "total": "Total",
+        "hint": "Descompone el hexágono en triángulos o cuadrangulares"
     },
     "tr": {
         "2quads": "2 dörtgen × 360°",
@@ -111,6 +54,72 @@ var messages = /* I18N_START */ {
         "reset": "↺ Sıfırla",
         "total": "Toplam",
         "hint": "Altgeni, üçgenlere veya dörtgenlere ayırın"
+    },
+    "ko": {
+        "2quads": "2개의 사각형 × 360°",
+        "4triangles": "4개의 삼각형 × 180°",
+        "_name": "육각형의 각들",
+        "interiorAngles": "내부 각들",
+        "reset": "↺ 초기화",
+        "total": "합계",
+        "hint": "육각형을 삼각형이나 사각형으로 분해하세요."
+    },
+    "skr-arab": {
+        "2quads": "2 چوکور × 360°",
+        "4triangles": "4 مثلث × 180°",
+        "_name": "مسدس زاویے",
+        "interiorAngles": "اندرونی زاویے",
+        "reset": "↺ دوبارہ",
+        "total": "کل",
+        "hint": "مسدس کوں مثلثاں یا چوکوراں وچ ونڈو"
+    },
+    "sk": {
+        "2quads": "2 štvoruholníky × 360°",
+        "4triangles": "4 trojuholníky × 180°",
+        "_name": "Uhly šesťuholníka",
+        "interiorAngles": "Vnútorné uhly",
+        "reset": "↺ Vynulovať",
+        "total": "Spolu",
+        "hint": "Rozložte šesťuholník na trojuholníky alebo štvoruholníky"
+    },
+    "ca": {
+        "total": "Total"
+    },
+    "ga": {
+        "2quads": "2 cheathairshleasán × 360°",
+        "4triangles": "4 thriantán × 180°",
+        "_name": "Uillinneacha Heicseagáin",
+        "interiorAngles": "Uillinneacha inmheánacha",
+        "reset": "↺ Athshocraigh",
+        "total": "Iomlán",
+        "hint": "Déan an heicseagán a dhíscaoileadh ina thriantáin nó ina cheathairshleasáin"
+    },
+    "en": {
+        "2quads": "2 quadrilaterals × 360°",
+        "4triangles": "4 triangles × 180°",
+        "_name": "Hexagon Angles",
+        "interiorAngles": "Interior angles",
+        "reset": "↺ Reset",
+        "total": "Total",
+        "hint": "Decompose the hexagon into triangles or quadrilaterals"
+    },
+    "eu": {
+        "2quads": "2 lauki × 360°",
+        "4triangles": "4 triangelu × 180°",
+        "_name": "Hexagonoaren angeluak",
+        "interiorAngles": "Barne angeluak",
+        "reset": "↺ Berrezarri",
+        "total": "Guztira",
+        "hint": "Hexagonoa triangelu edo laukizuzenetan deskonposatu"
+    },
+    "mk": {
+        "2quads": "2 четириаголника × 360°",
+        "4triangles": "4 триаголници × 180°",
+        "_name": "Агли на шестаголник",
+        "interiorAngles": "Внатрешни агли",
+        "reset": "↺ Одново",
+        "total": "Вкупно",
+        "hint": "Разложете го шестаголникот на триаголници или четириаголници"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

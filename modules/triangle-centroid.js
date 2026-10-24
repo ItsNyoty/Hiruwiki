@@ -17,33 +17,9 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Triangle Centroid",
-        "hint": "Drag any vertex to explore the centroid"
-    },
-    "es": {
-        "_name": "Baricentro del triángulo",
-        "hint": "Arrastra un vértice para explorar el baricentro"
-    },
-    "eu": {
-        "_name": "Hirukiaren barizentroa",
-        "hint": "Erpinak mugitu ditzakezu barizentroa ikusteko"
-    },
     "fr": {
         "_name": "Centre de gravité du triangle",
         "hint": "Faites glisser n'importe quel sommet pour explorer le centroïde"
-    },
-    "ga": {
-        "_name": "Lárphointe Triantáin",
-        "hint": "Bog na buaicphointí · Scála: 1 cm = 40 px"
-    },
-    "ko": {
-        "_name": "삼각형 무게중심",
-        "hint": "꼭짓점을 드래그해서 무게중심을 탐구하세요"
-    },
-    "mk": {
-        "_name": "Тежиште на триаголник",
-        "hint": "Повлечете некое теме за да го истражите тежиштето"
     },
     "nl": {
         "_name": "Zwaartepunt van een driehoek",
@@ -53,9 +29,37 @@ var messages = /* I18N_START */ {
         "_name": "Name of the Triangle Centroid module",
         "hint": "Instruction text shown in the footer."
     },
+    "es": {
+        "_name": "Baricentro del triángulo",
+        "hint": "Arrastra un vértice para explorar el baricentro"
+    },
+    "ko": {
+        "_name": "삼각형 무게중심",
+        "hint": "꼭짓점을 드래그해서 무게중심을 탐구하세요"
+    },
+    "skr-arab": {
+        "_name": "مثلث دا مرکزِ ثقل",
+        "hint": "مرکزِ ثقل کوں ݙیکھݨ کیتے کوئی وی سرا گھسیٹو"
+    },
     "sk": {
         "_name": "Ťažisko trojuholníka",
         "hint": "Potiahnutím ľubovoľného vrcholu preskúmate ťažisko"
+    },
+    "ga": {
+        "_name": "Lárphointe Triantáin",
+        "hint": "Tarraing aon bhuaicphointe chun an lárphointe a iniúchadh"
+    },
+    "en": {
+        "_name": "Triangle Centroid",
+        "hint": "Drag any vertex to explore the centroid"
+    },
+    "eu": {
+        "_name": "Hirukiaren barizentroa",
+        "hint": "Erpinak mugitu ditzakezu barizentroa ikusteko"
+    },
+    "mk": {
+        "_name": "Тежиште на триаголник",
+        "hint": "Повлечете некое теме за да го истражите тежиштето"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

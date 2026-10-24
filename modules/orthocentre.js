@@ -10,33 +10,9 @@
 (function () {
   /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
   var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Orthocentre",
-        "hint": "Drag any vertex to see how the orthocentre changes"
-    },
-    "es": {
-        "_name": "Ortocentro",
-        "hint": "Arrastra un vértice para ver cómo se mueve el ortocentro"
-    },
-    "eu": {
-        "_name": "Ortozentro",
-        "hint": "Edozein erpin mugitu ortozentroa nola mugitzen den ikusteko"
-    },
     "fr": {
         "_name": "Orthocentre",
         "hint": "Tirez n'importe quel sommet pour voir comment l' orthocentre change"
-    },
-    "ga": {
-        "_name": "Ortalár",
-        "hint": "Tarraing aon rinn chun a fheiceáil conas a athraíonn an t-ortalár (Scála: 1 cm = 40 px)"
-    },
-    "ko": {
-        "_name": "수심",
-        "hint": "꼭짓점을 드래그해서 수심이 어떻게 바뀌는지를 확인하세요"
-    },
-    "mk": {
-        "_name": "Ортоцентар",
-        "hint": "Повлечете некое теме за да видите како се менува ортоцентарот"
     },
     "nl": {
         "_name": "Hoogtepunt van een driehoek",
@@ -46,13 +22,41 @@
         "_name": "Name of the Orthocentre module",
         "hint": "Instruction text shown in the footer."
     },
-    "sk": {
-        "_name": "Ortocentrum",
-        "hint": "Potiahnutím ľubovoľného vrcholu uvidíte, ako sa ortocentrum mení"
+    "es": {
+        "_name": "Ortocentro",
+        "hint": "Arrastra un vértice para ver cómo se mueve el ortocentro"
     },
     "tr": {
         "_name": "Yükseklik merkezi",
         "hint": "Herhangi bir köşeyi sürükleyerek yükseklik merkezinin nasıl değiştiğini görün (Ölçek: 1 cm = 40 px)"
+    },
+    "ko": {
+        "_name": "수심",
+        "hint": "꼭짓점을 드래그해서 수심이 어떻게 바뀌는지를 확인하세요"
+    },
+    "skr-arab": {
+        "_name": "قائم مرکز",
+        "hint": "قائم مرکز کین٘ویں بدلدے اے ݙیکھݨ کیتے کوئی وی سرا گھسیٹو"
+    },
+    "sk": {
+        "_name": "Ortocentrum",
+        "hint": "Potiahnutím ľubovoľného vrcholu uvidíte, ako sa ortocentrum mení"
+    },
+    "ga": {
+        "_name": "Ortalár",
+        "hint": "Tarraing aon bhuaicphointe chun a fheiceáil conas a athraíonn an t-ortha-lárionad"
+    },
+    "en": {
+        "_name": "Orthocentre",
+        "hint": "Drag any vertex to see how the orthocentre changes"
+    },
+    "eu": {
+        "_name": "Ortozentro",
+        "hint": "Edozein erpin mugitu ortozentroa nola mugitzen den ikusteko"
+    },
+    "mk": {
+        "_name": "Ортоцентар",
+        "hint": "Повлечете некое теме за да видите како се менува ортоцентарот"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

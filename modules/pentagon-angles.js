@@ -10,36 +10,6 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {
-        "3triangles": "3 triangles × 180°",
-        "_name": "Angles del Pentàgon",
-        "interiorAngles": "Angles interiors",
-        "total": "Total"
-    },
-    "en": {
-        "3triangles": "3 triangles × 180°",
-        "_name": "Pentagon Angles",
-        "interiorAngles": "Interior angles",
-        "reset": "↺ Reset",
-        "total": "Total",
-        "hint": "Decompose the pentagon into triangles"
-    },
-    "es": {
-        "3triangles": "3 triángulos × 180°",
-        "_name": "Ángulos del pentágono",
-        "interiorAngles": "Ángulos interiores",
-        "reset": "↺ Reiniciar",
-        "total": "Total",
-        "hint": "Descompone el pentágono en triángulos"
-    },
-    "eu": {
-        "3triangles": "3 triangelu × 180°",
-        "_name": "Pentagonoaren angeluak",
-        "interiorAngles": "Barne angeluak",
-        "reset": "↺ Berrezarri",
-        "total": "Guztira",
-        "hint": "Pentagonoa triangeluetan deskonposatu"
-    },
     "fr": {
         "3triangles": "3 triangles × 180°",
         "_name": "Angles du pentagone",
@@ -47,30 +17,6 @@ var messages = /* I18N_START */ {
         "reset": "↺ Réinitialiser",
         "total": "Total",
         "hint": "Décomposer le pentagone en triangles"
-    },
-    "ga": {
-        "3triangles": "3 thriantán × 180°",
-        "_name": "Uillinneacha an Pheinteagáin",
-        "interiorAngles": "Uillinneacha inmheánacha",
-        "reset": "↺ Athshocraigh",
-        "total": "Iomlán",
-        "hint": "Déan an peinteagán a dhíscaoileadh ina thriantáin"
-    },
-    "ko": {
-        "3triangles": "3개의 삼각형 × 180°",
-        "_name": "오각형의 각들",
-        "interiorAngles": "내부 각들",
-        "reset": "↺ 초기화",
-        "total": "합계",
-        "hint": "오각형을 삼각형으로 분해하세요"
-    },
-    "mk": {
-        "3triangles": "3 триаголници × 180°",
-        "_name": "Агли на петаголник",
-        "interiorAngles": "Внатрешни агли",
-        "reset": "↺ Одново",
-        "total": "Вкупно",
-        "hint": "Разложи го петаголникот на триаголници"
     },
     "nl": {
         "3triangles": "3 driehoeken × 180°",
@@ -88,13 +34,13 @@ var messages = /* I18N_START */ {
         "total": "Label for the total sum of interior angles",
         "hint": "Instruction text for the pentagon angle decomposition applet"
     },
-    "sk": {
-        "3triangles": "3 trojuholníky × 180°",
-        "_name": "Uhly päťuholníka",
-        "interiorAngles": "Vnútorné uhly",
-        "reset": "↺ Vynulovať",
-        "total": "Spolu",
-        "hint": "Rozložte päťuholník na trojuholníky"
+    "es": {
+        "3triangles": "3 triángulos × 180°",
+        "_name": "Ángulos del pentágono",
+        "interiorAngles": "Ángulos interiores",
+        "reset": "↺ Reiniciar",
+        "total": "Total",
+        "hint": "Descompone el pentágono en triángulos"
     },
     "tr": {
         "3triangles": "3 üçgen × 180°",
@@ -103,6 +49,68 @@ var messages = /* I18N_START */ {
         "reset": "↺ Sıfırla",
         "total": "Toplam",
         "hint": "Beşgeni üçgenlere ayırın"
+    },
+    "ko": {
+        "3triangles": "3개의 삼각형 × 180°",
+        "_name": "오각형의 각들",
+        "interiorAngles": "내부 각들",
+        "reset": "↺ 초기화",
+        "total": "합계",
+        "hint": "오각형을 삼각형으로 분해하세요"
+    },
+    "skr-arab": {
+        "3triangles": "3 مثلث × 180°",
+        "_name": "پینٹاگون زاویے",
+        "interiorAngles": "اندرونی زاویے",
+        "reset": "↺ دوبارہ",
+        "total": "کل",
+        "hint": "پینٹاگون کوں مثلثاں وچ ونڈو"
+    },
+    "sk": {
+        "3triangles": "3 trojuholníky × 180°",
+        "_name": "Uhly päťuholníka",
+        "interiorAngles": "Vnútorné uhly",
+        "reset": "↺ Vynulovať",
+        "total": "Spolu",
+        "hint": "Rozložte päťuholník na trojuholníky"
+    },
+    "ca": {
+        "3triangles": "3 triangles × 180°",
+        "_name": "Angles del Pentàgon",
+        "interiorAngles": "Angles interiors",
+        "total": "Total"
+    },
+    "ga": {
+        "3triangles": "3 thriantán × 180°",
+        "_name": "Uillinneacha an Pheinteagáin",
+        "interiorAngles": "Uillinneacha inmheánacha",
+        "reset": "↺ Athshocraigh",
+        "total": "Iomlán",
+        "hint": "Déan an peinteagán a dhíscaoileadh ina thriantáin"
+    },
+    "en": {
+        "3triangles": "3 triangles × 180°",
+        "_name": "Pentagon Angles",
+        "interiorAngles": "Interior angles",
+        "reset": "↺ Reset",
+        "total": "Total",
+        "hint": "Decompose the pentagon into triangles"
+    },
+    "eu": {
+        "3triangles": "3 triangelu × 180°",
+        "_name": "Pentagonoaren angeluak",
+        "interiorAngles": "Barne angeluak",
+        "reset": "↺ Berrezarri",
+        "total": "Guztira",
+        "hint": "Pentagonoa triangeluetan deskonposatu"
+    },
+    "mk": {
+        "3triangles": "3 триаголници × 180°",
+        "_name": "Агли на петаголник",
+        "interiorAngles": "Внатрешни агли",
+        "reset": "↺ Одново",
+        "total": "Вкупно",
+        "hint": "Разложи го петаголникот на триаголници"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

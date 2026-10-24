@@ -9,47 +9,8 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {
-        "_name": "Angles",
-        "bisector": "Bisectriu",
-        "bisectorResult": "Bisectriu: $1°",
-        "complement": "Complementari",
-        "explement": "Explementari",
-        "notDefined": "No definit per a aquest angle",
-        "supplement": "Suplementari"
-    },
-    "en": {
-        "_name": "Angles",
-        "bisector": "Bisector",
-        "bisectorResult": "Bisector: $1°",
-        "complement": "Complementary",
-        "explement": "Explementary",
-        "notDefined": "Not defined for this angle",
-        "resultAngle": "$1 angle: $2°",
-        "supplement": "Supplementary",
-        "hint": "Drag the handle to change the angle"
-    },
-    "es": {
-        "_name": "Ángulos",
-        "bisector": "Bisectriz",
-        "bisectorResult": "Bisectriz: $1°",
-        "complement": "Complementario",
-        "explement": "Explementario",
-        "notDefined": "No definido para este ángulo",
-        "resultAngle": "Ángulo $1: $2°",
-        "supplement": "Suplementario",
-        "hint": "Arrastra para cambiar el ángulo."
-    },
-    "eu": {
-        "_name": "Angeluak",
-        "bisector": "Erdikaria",
-        "bisectorResult": "Erdikaria: $1°",
-        "complement": "Osagarria",
-        "explement": "Konjubatua",
-        "notDefined": "Angelu honentzat definitu gabe",
-        "resultAngle": "Angelu $1: $2°",
-        "supplement": "Betegarria",
-        "hint": "Mugitu heldulekua angelua aldatzeko"
+    "lb": {
+        "resultAngle": "$1 Wénkel: $2°"
     },
     "fr": {
         "_name": "Angles",
@@ -61,52 +22,6 @@ var messages = /* I18N_START */ {
         "resultAngle": "Angle $1 : $2°",
         "supplement": "Supplémentaire",
         "hint": "Tirez la poignée pour changer l'angle"
-    },
-    "ga": {
-        "_name": "Uillinneacha",
-        "bisector": "Déroinnteoir",
-        "bisectorResult": "Déroinnteoir: $1°",
-        "complement": "Comhlántach",
-        "explement": "Turgnamhach",
-        "notDefined": "Gan sainmhíniú don uillinn seo",
-        "resultAngle": "Uillinn $1: $2°",
-        "supplement": "Forlíontach",
-        "hint": "Tarraing an láimhseáil chun an uillinn a athrú"
-    },
-    "it": {
-        "_name": "Angoli",
-        "bisector": "Bisettrice",
-        "bisectorResult": "Bisettrice: $1°",
-        "complement": "Complementare",
-        "explement": "Esplementare",
-        "notDefined": "Non definito per questo angolo",
-        "resultAngle": "Angolo $1: $2°",
-        "supplement": "Supplementare"
-    },
-    "ko": {
-        "_name": "각도",
-        "bisector": "이등분",
-        "bisectorResult": "이등분: $1°",
-        "complement": "여각",
-        "explement": "공액각",
-        "notDefined": "이 각도에 대해서는 정의되지 않았습니다",
-        "resultAngle": "$1: $2°",
-        "supplement": "보각",
-        "hint": "손잡이를 드래그하여 각도를 변경하세요"
-    },
-    "lb": {
-        "resultAngle": "$1 Wénkel: $2°"
-    },
-    "mk": {
-        "_name": "Агли",
-        "bisector": "Симетрала",
-        "bisectorResult": "Симетрала: $1°",
-        "complement": "Комплементен",
-        "explement": "Експлементен",
-        "notDefined": "Не е дефинирано за овој агол",
-        "resultAngle": "$1 агол: $2°",
-        "supplement": "Суплементен",
-        "hint": "Повлечете ја рачката за да го измените аголот"
     },
     "nl": {
         "_name": "Hoeken",
@@ -130,16 +45,16 @@ var messages = /* I18N_START */ {
         "supplement": "Button label for the supplementary angle mode",
         "hint": "Instruction text explaining how to interact with the angle applet"
     },
-    "sk": {
-        "_name": "Uhly",
-        "bisector": "Os uhla",
-        "bisectorResult": "Os uhla: $1°",
-        "complement": "Doplnkový",
-        "explement": "Explementárny",
-        "notDefined": "Nie je definovaný pre tento uhol",
-        "resultAngle": "$1 uhol: $2°",
-        "supplement": "Vedľajší",
-        "hint": "Potiahnutím rukoväte zmeníte uhol"
+    "es": {
+        "_name": "Ángulos",
+        "bisector": "Bisectriz",
+        "bisectorResult": "Bisectriz: $1°",
+        "complement": "Complementario",
+        "explement": "Explementario",
+        "notDefined": "No definido para este ángulo",
+        "resultAngle": "Ángulo $1: $2°",
+        "supplement": "Suplementario",
+        "hint": "Arrastra para cambiar el ángulo."
     },
     "tr": {
         "_name": "Açılar",
@@ -151,6 +66,102 @@ var messages = /* I18N_START */ {
         "resultAngle": "$1 açı: $2°",
         "supplement": "Bütünler",
         "hint": "Açıyı değiştirmek için tutup sürükleyin"
+    },
+    "ko": {
+        "_name": "각도",
+        "bisector": "이등분",
+        "bisectorResult": "이등분: $1°",
+        "complement": "여각",
+        "explement": "공액각",
+        "notDefined": "이 각도에 대해서는 정의되지 않았습니다",
+        "resultAngle": "$1: $2°",
+        "supplement": "보각",
+        "hint": "손잡이를 드래그하여 각도를 변경하세요"
+    },
+    "skr-arab": {
+        "_name": "زاویے",
+        "bisector": "ونڈݨ آلا",
+        "bisectorResult": "ونڈݨ آلا: $1°",
+        "complement": "تکمیلی",
+        "explement": "معکوس",
+        "notDefined": "ایں زاویے کیتے مقرر نئیں",
+        "resultAngle": "$1 زاویہ: $2°",
+        "supplement": "متمم",
+        "hint": "زاویہ بدلݨ کیتے ہینڈل کوں گھسیٹو"
+    },
+    "sk": {
+        "_name": "Uhly",
+        "bisector": "Os uhla",
+        "bisectorResult": "Os uhla: $1°",
+        "complement": "Doplnkový",
+        "explement": "Explementárny",
+        "notDefined": "Nie je definovaný pre tento uhol",
+        "resultAngle": "$1 uhol: $2°",
+        "supplement": "Vedľajší",
+        "hint": "Potiahnutím rukoväte zmeníte uhol"
+    },
+    "ca": {
+        "_name": "Angles",
+        "bisector": "Bisectriu",
+        "bisectorResult": "Bisectriu: $1°",
+        "complement": "Complementari",
+        "explement": "Explementari",
+        "notDefined": "No definit per a aquest angle",
+        "supplement": "Suplementari"
+    },
+    "ga": {
+        "_name": "Uillinneacha",
+        "bisector": "Déroinnteoir",
+        "bisectorResult": "Déroinnteoir: $1°",
+        "complement": "Comhlántach",
+        "explement": "Turgnamhach",
+        "notDefined": "Gan sainmhíniú don uillinn seo",
+        "resultAngle": "Uillinn $1: $2°",
+        "supplement": "Forlíontach",
+        "hint": "Tarraing an láimhseáil chun an uillinn a athrú"
+    },
+    "en": {
+        "_name": "Angles",
+        "bisector": "Bisector",
+        "bisectorResult": "Bisector: $1°",
+        "complement": "Complementary",
+        "explement": "Explementary",
+        "notDefined": "Not defined for this angle",
+        "resultAngle": "$1 angle: $2°",
+        "supplement": "Supplementary",
+        "hint": "Drag the handle to change the angle"
+    },
+    "eu": {
+        "_name": "Angeluak",
+        "bisector": "Erdikaria",
+        "bisectorResult": "Erdikaria: $1°",
+        "complement": "Osagarria",
+        "explement": "Konjubatua",
+        "notDefined": "Angelu honentzat definitu gabe",
+        "resultAngle": "Angelu $1: $2°",
+        "supplement": "Betegarria",
+        "hint": "Mugitu heldulekua angelua aldatzeko"
+    },
+    "it": {
+        "_name": "Angoli",
+        "bisector": "Bisettrice",
+        "bisectorResult": "Bisettrice: $1°",
+        "complement": "Complementare",
+        "explement": "Esplementare",
+        "notDefined": "Non definito per questo angolo",
+        "resultAngle": "Angolo $1: $2°",
+        "supplement": "Supplementare"
+    },
+    "mk": {
+        "_name": "Агли",
+        "bisector": "Симетрала",
+        "bisectorResult": "Симетрала: $1°",
+        "complement": "Комплементен",
+        "explement": "Експлементен",
+        "notDefined": "Не е дефинирано за овој агол",
+        "resultAngle": "$1 агол: $2°",
+        "supplement": "Суплементен",
+        "hint": "Повлечете ја рачката за да го измените аголот"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

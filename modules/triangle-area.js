@@ -7,58 +7,11 @@
     
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {
-        "btnReset": "Reinicia",
-        "labelArea": "Àrea",
-        "labelBaseShort": "b",
+    "lb": {
+        "labelArea": "Fläch",
         "labelHeightShort": "h",
         "unitCm": "cm",
         "unitCm2": "cm²"
-    },
-    "en": {
-        "_name": "Triangle Area",
-        "btnProve": "Prove it",
-        "btnReset": "Reset",
-        "labelArea": "Area",
-        "labelBase": "Base (b)",
-        "labelHeight": "Height (h)",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "proofResultPara": "Parallelogram area = b × h = <strong>$1 × $2 = $3 cm²</strong>",
-        "proofResultTri": "→ Triangle = ½ × $1 = <strong>$2 cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²",
-        "hint": "Drag the vertices to change the triangle's shape"
-    },
-    "es": {
-        "_name": "Área del triángulo",
-        "btnProve": "Pruébalo",
-        "btnReset": "Reiniciar",
-        "labelArea": "Área",
-        "labelBase": "Base (b)",
-        "labelHeight": "Altura (h)",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "proofResultPara": "Área del paralelogramo = b × h = <strong>$1 × $2 = $3 cm²</strong>",
-        "proofResultTri": "→ Triángulo = ½ × $1 = <strong>$2 cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²",
-        "hint": "Arrastra los vértices para cambiar la forma del triángulo"
-    },
-    "eu": {
-        "_name": "Hirukiaren azalera",
-        "btnProve": "Froga ezazu",
-        "btnReset": "Berrezarri",
-        "labelArea": "Azalera",
-        "labelBase": "Oinarria (b)",
-        "labelHeight": "Altuera (h)",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "proofResultPara": "Paralelogramoaren azalera = b × h = <strong>$1 × $2 = $3 cm²</strong>",
-        "proofResultTri": "→ Triangeluarena = ½ × $1 = <strong>$2 cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²",
-        "hint": "Arrastatu erpinak triangeluaren forma aldatzeko"
     },
     "fr": {
         "_name": "Aire du triangle",
@@ -74,61 +27,6 @@ var messages = /* I18N_START */ {
         "unitCm": "cm",
         "unitCm2": "cm²",
         "hint": "Tirez les sommets pour changer la forme du triangle"
-    },
-    "ga": {
-        "_name": "Limistéar an Triantáin",
-        "btnProve": "Cruthaigh é",
-        "btnReset": "Athshocraigh",
-        "labelArea": "Limistéar",
-        "labelBase": "Bonn (b)",
-        "labelHeight": "Airde (u)",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "proofResultPara": "Achar comhthreomharáin = b × h = <strong>$1 × $2 = $3 cm²</strong>",
-        "proofResultTri": "→ Triantán = ½ × $1 = <strong>$2 cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²",
-        "hint": "Tarraing na buaicphointí chun cruth an triantáin a athrú"
-    },
-    "it": {
-        "unitCm": "cm",
-        "unitCm2": "cm²"
-    },
-    "ko": {
-        "_name": "삼각형 면적",
-        "btnProve": "증명하기",
-        "btnReset": "초기화",
-        "labelArea": "면적",
-        "labelBase": "밑변 (b)",
-        "labelHeight": "높이 (h)",
-        "labelBaseShort": "밑변",
-        "labelHeightShort": "높이",
-        "proofResultPara": "평행사변형 넓이 = b × h = <strong>$1 × $2 = $3 cm²</strong>",
-        "proofResultTri": "→ 삼각형 = ½ × $1 = <strong>$2 cm²</strong>",
-        "unitCm": "cm",
-        "unitCm2": "cm²",
-        "hint": "꼭짓점을 드래그하여 삼각형의 모양을 변경하기"
-    },
-    "lb": {
-        "labelArea": "Fläch",
-        "labelHeightShort": "h",
-        "unitCm": "cm",
-        "unitCm2": "cm²"
-    },
-    "mk": {
-        "_name": "Плоштина на триаголник",
-        "btnProve": "Докажи",
-        "btnReset": "Одново",
-        "labelArea": "Плоштина",
-        "labelBase": "Основа (b)",
-        "labelHeight": "Висина (h)",
-        "labelBaseShort": "b",
-        "labelHeightShort": "h",
-        "proofResultPara": "Плоштина на паралелограм = b × h = <strong>$1 × $2 = $3 см²</strong>",
-        "proofResultTri": "→ Триаголник = ½ × $1 = <strong>$2 см²</strong>",
-        "unitCm": "см",
-        "unitCm2": "см²",
-        "hint": "Повлечете ги темињата за да го смените обликот на триаголникот"
     },
     "nl": {
         "_name": "Oppervlakte van een driehoek",
@@ -160,6 +58,51 @@ var messages = /* I18N_START */ {
         "unitCm2": "Unit of area (square centimeters)",
         "hint": "Explanation about how the module is interactive"
     },
+    "es": {
+        "_name": "Área del triángulo",
+        "btnProve": "Pruébalo",
+        "btnReset": "Reiniciar",
+        "labelArea": "Área",
+        "labelBase": "Base (b)",
+        "labelHeight": "Altura (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Área del paralelogramo = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ Triángulo = ½ × $1 = <strong>$2 cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²",
+        "hint": "Arrastra los vértices para cambiar la forma del triángulo"
+    },
+    "ko": {
+        "_name": "삼각형 면적",
+        "btnProve": "증명하기",
+        "btnReset": "초기화",
+        "labelArea": "면적",
+        "labelBase": "밑변 (b)",
+        "labelHeight": "높이 (h)",
+        "labelBaseShort": "밑변",
+        "labelHeightShort": "높이",
+        "proofResultPara": "평행사변형 넓이 = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ 삼각형 = ½ × $1 = <strong>$2 cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²",
+        "hint": "꼭짓점을 드래그하여 삼각형의 모양을 변경하기"
+    },
+    "skr-arab": {
+        "_name": "مثلث دا رقبہ",
+        "btnProve": "ثابت کرو",
+        "btnReset": "دوبارہ",
+        "labelArea": "رقبہ",
+        "labelBase": "قاعدہ (b)",
+        "labelHeight": "اُچائی (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "متوازی الاضلاع دا رقبہ = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ مثلث = ½ × $1 = <strong>$2 cm²</strong>",
+        "unitCm": "سم",
+        "unitCm2": "سم²",
+        "hint": "مثلث دی شکل بدلݨ کیتے سر گھسیٹو"
+    },
     "sk": {
         "_name": "Obsah trojuholníka",
         "btnProve": "Dokázať",
@@ -174,6 +117,78 @@ var messages = /* I18N_START */ {
         "unitCm": "cm",
         "unitCm2": "cm²",
         "hint": "Potiahnutím vrcholov zmeníte tvar trojuholníka"
+    },
+    "ca": {
+        "btnReset": "Reinicia",
+        "labelArea": "Àrea",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "unitCm": "cm",
+        "unitCm2": "cm²"
+    },
+    "ga": {
+        "_name": "Limistéar an Triantáin",
+        "btnProve": "Cruthaigh é",
+        "btnReset": "Athshocraigh",
+        "labelArea": "Limistéar",
+        "labelBase": "Bonn (b)",
+        "labelHeight": "Airde (u)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Achar comhthreomharáin = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ Triantán = ½ × $1 = <strong>$2 cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²",
+        "hint": "Tarraing na buaicphointí chun cruth an triantáin a athrú"
+    },
+    "en": {
+        "_name": "Triangle Area",
+        "btnProve": "Prove it",
+        "btnReset": "Reset",
+        "labelArea": "Area",
+        "labelBase": "Base (b)",
+        "labelHeight": "Height (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Parallelogram area = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ Triangle = ½ × $1 = <strong>$2 cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²",
+        "hint": "Drag the vertices to change the triangle's shape"
+    },
+    "eu": {
+        "_name": "Hirukiaren azalera",
+        "btnProve": "Froga ezazu",
+        "btnReset": "Berrezarri",
+        "labelArea": "Azalera",
+        "labelBase": "Oinarria (b)",
+        "labelHeight": "Altuera (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Paralelogramoaren azalera = b × h = <strong>$1 × $2 = $3 cm²</strong>",
+        "proofResultTri": "→ Triangeluarena = ½ × $1 = <strong>$2 cm²</strong>",
+        "unitCm": "cm",
+        "unitCm2": "cm²",
+        "hint": "Arrastatu erpinak triangeluaren forma aldatzeko"
+    },
+    "it": {
+        "unitCm": "cm",
+        "unitCm2": "cm²"
+    },
+    "mk": {
+        "_name": "Плоштина на триаголник",
+        "btnProve": "Докажи",
+        "btnReset": "Одново",
+        "labelArea": "Плоштина",
+        "labelBase": "Основа (b)",
+        "labelHeight": "Висина (h)",
+        "labelBaseShort": "b",
+        "labelHeightShort": "h",
+        "proofResultPara": "Плоштина на паралелограм = b × h = <strong>$1 × $2 = $3 см²</strong>",
+        "proofResultTri": "→ Триаголник = ½ × $1 = <strong>$2 см²</strong>",
+        "unitCm": "см",
+        "unitCm2": "см²",
+        "hint": "Повлечете ги темињата за да го смените обликот на триаголникот"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

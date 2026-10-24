@@ -18,36 +18,9 @@
 	
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "en": {
-        "_name": "Incentre",
-        "hint": "Drag any vertex to explore the incircle"
-    },
-    "es": {
-        "_name": "Incentro",
-        "hint": "Arrastra un vértice para explorar el incírculo"
-    },
-    "eu": {
-        "_name": "Inzentroa",
-        "hint": "Erpinak mugitu ditzakezu zirkulu inskribuatua ikusteko"
-    },
     "fr": {
         "_name": "Incentre",
         "hint": "Tirez n'importe quel sommet pour explorer l'circoncircle"
-    },
-    "ga": {
-        "_name": "Lárionad",
-        "hint": "Tarraing aon bhuaicphointe · Scála: 1 cm = 40 px"
-    },
-    "it": {
-        "hint": "Trascina un vertice qualsiasi per esplorare il cerchio"
-    },
-    "ko": {
-        "_name": "내심",
-        "hint": "꼭짓점을 드래그해서 내접원을 탐구하세요"
-    },
-    "mk": {
-        "_name": "Центар на впишана кружница",
-        "hint": "Повлечете некое теме за да ја истражите впишаната кружница"
     },
     "nl": {
         "_name": "Aangeschreven middelpunt",
@@ -57,13 +30,44 @@ var messages = /* I18N_START */ {
         "_name": "Name of the Incentre module",
         "hint": "Instruction text for the interactive triangle."
     },
-    "sk": {
-        "_name": "Stred vpísanej kružnice",
-        "hint": "Potiahnutím ľubovoľného vrcholu preskúmate vpísanú kružnicu"
+    "es": {
+        "_name": "Incentro",
+        "hint": "Arrastra un vértice para explorar el incírculo"
     },
     "tr": {
         "_name": "İç teğet çemberi merkezi",
         "hint": "Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 px"
+    },
+    "ko": {
+        "_name": "내심",
+        "hint": "꼭짓점을 드래그해서 내접원을 탐구하세요"
+    },
+    "skr-arab": {
+        "_name": "اندرونی گرد مرکز",
+        "hint": "اندرونی دائرہ ݙیکھݨ کیتے کوئی وی سرا گھسیٹو"
+    },
+    "sk": {
+        "_name": "Stred vpísanej kružnice",
+        "hint": "Potiahnutím ľubovoľného vrcholu preskúmate vpísanú kružnicu"
+    },
+    "ga": {
+        "_name": "Lárionad",
+        "hint": "Tarraing aon bhuaicphointe chun an ciorcal istigh a iniúchadh"
+    },
+    "en": {
+        "_name": "Incentre",
+        "hint": "Drag any vertex to explore the incircle"
+    },
+    "eu": {
+        "_name": "Inzentroa",
+        "hint": "Erpinak mugitu ditzakezu zirkulu inskribuatua ikusteko"
+    },
+    "it": {
+        "hint": "Trascina un vertice qualsiasi per esplorare il cerchio"
+    },
+    "mk": {
+        "_name": "Центар на впишана кружница",
+        "hint": "Повлечете некое теме за да ја истражите впишаната кружница"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';

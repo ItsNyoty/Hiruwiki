@@ -10,36 +10,6 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "ca": {
-        "interiorAngles": "Angles interiors",
-        "reset": "Reinicia",
-        "sum": "Suma",
-        "total": "Total"
-    },
-    "en": {
-        "_name": "Quadrangle Angles",
-        "interiorAngles": "Interior angles",
-        "reset": "Reset",
-        "sum": "Sum",
-        "total": "Total",
-        "hint": "Drag vertices to see the sum of interior angles"
-    },
-    "es": {
-        "_name": "Ángulos del cuadrilátero",
-        "interiorAngles": "Ángulos interiores",
-        "reset": "Reiniciar",
-        "sum": "Suma",
-        "total": "Total",
-        "hint": "Arrastra los vértices para ver la suma de los ángulos interiores"
-    },
-    "eu": {
-        "_name": "Koadrilateroaren angeluak",
-        "interiorAngles": "Barne angeluak",
-        "reset": "Berrezarri",
-        "sum": "Batuketa",
-        "total": "Guztira",
-        "hint": "Arrastatu erpinak barne-angeluen batura ikusteko"
-    },
     "fr": {
         "_name": "Angles du quadrilatère",
         "interiorAngles": "Angles intérieurs",
@@ -47,30 +17,6 @@ var messages = /* I18N_START */ {
         "sum": "Somme",
         "total": "Total",
         "hint": "Faites glisser les sommets pour voir la somme des angles intérieurs."
-    },
-    "ga": {
-        "_name": "Uillinneacha Ceathairshleasacha",
-        "interiorAngles": "Uillinneacha inmheánacha",
-        "reset": "Athshocraigh",
-        "sum": "Suim",
-        "total": "Iomlán",
-        "hint": "Tarraing buaicphointí chun suim na n-uillinneacha inmheánacha a fheiceáil"
-    },
-    "ko": {
-        "_name": "사각형의 각도",
-        "interiorAngles": "내부 각들",
-        "reset": "초기화",
-        "sum": "총합",
-        "total": "합계",
-        "hint": "꼭짓점을 드래그하여 내각의 합을 확인하세요."
-    },
-    "mk": {
-        "_name": "Агли на четириаголник",
-        "interiorAngles": "Внатрешни агли",
-        "reset": "Одново",
-        "sum": "Збир",
-        "total": "Вкупно",
-        "hint": "Повлечете ги темињата за да го видите збирот на внатрешните агли"
     },
     "nl": {
         "_name": "Hoeken van een vierhoek",
@@ -88,13 +34,13 @@ var messages = /* I18N_START */ {
         "total": "Label for the total sum of interior angles",
         "hint": "Instruction text for the quadrangle angle interaction"
     },
-    "sk": {
-        "_name": "Uhly štvoruholníka",
-        "interiorAngles": "Vnútorné uhly",
-        "reset": "Vynulovať",
-        "sum": "Súčet",
-        "total": "Spolu",
-        "hint": "Potiahnutím vrcholov uvidíte súčet vnútorných uhlov"
+    "es": {
+        "_name": "Ángulos del cuadrilátero",
+        "interiorAngles": "Ángulos interiores",
+        "reset": "Reiniciar",
+        "sum": "Suma",
+        "total": "Total",
+        "hint": "Arrastra los vértices para ver la suma de los ángulos interiores"
     },
     "tr": {
         "_name": "Dörtgen Açıları",
@@ -103,6 +49,68 @@ var messages = /* I18N_START */ {
         "sum": "Toplam",
         "total": "Toplam",
         "hint": "Köşeleri sürükleyerek iç açıların toplamını görün."
+    },
+    "ko": {
+        "_name": "사각형의 각도",
+        "interiorAngles": "내부 각들",
+        "reset": "초기화",
+        "sum": "총합",
+        "total": "합계",
+        "hint": "꼭짓점을 드래그하여 내각의 합을 확인하세요."
+    },
+    "skr-arab": {
+        "_name": "چوکور زاویے",
+        "interiorAngles": "اندرونی زاوے",
+        "reset": "↺ دوبارہ",
+        "sum": "مجموعہ",
+        "total": "کل",
+        "hint": "اندرونی زاویاں دا مجموعہ ویکھݨ کیتے سراں کوں گھسیٹو"
+    },
+    "sk": {
+        "_name": "Uhly štvoruholníka",
+        "interiorAngles": "Vnútorné uhly",
+        "reset": "Vynulovať",
+        "sum": "Súčet",
+        "total": "Spolu",
+        "hint": "Potiahnutím vrcholov uvidíte súčet vnútorných uhlov"
+    },
+    "ca": {
+        "interiorAngles": "Angles interiors",
+        "reset": "Reinicia",
+        "sum": "Suma",
+        "total": "Total"
+    },
+    "ga": {
+        "_name": "Uillinneacha Ceathairshleasacha",
+        "interiorAngles": "Uillinneacha inmheánacha",
+        "reset": "Athshocraigh",
+        "sum": "Suim",
+        "total": "Iomlán",
+        "hint": "Tarraing buaicphointí chun suim na n-uillinneacha inmheánacha a fheiceáil"
+    },
+    "en": {
+        "_name": "Quadrangle Angles",
+        "interiorAngles": "Interior angles",
+        "reset": "Reset",
+        "sum": "Sum",
+        "total": "Total",
+        "hint": "Drag vertices to see the sum of interior angles"
+    },
+    "eu": {
+        "_name": "Koadrilateroaren angeluak",
+        "interiorAngles": "Barne angeluak",
+        "reset": "Berrezarri",
+        "sum": "Batuketa",
+        "total": "Guztira",
+        "hint": "Arrastatu erpinak barne-angeluen batura ikusteko"
+    },
+    "mk": {
+        "_name": "Агли на четириаголник",
+        "interiorAngles": "Внатрешни агли",
+        "reset": "Одново",
+        "sum": "Збир",
+        "total": "Вкупно",
+        "hint": "Повлечете ги темињата за да го видите збирот на внатрешните агли"
     }
 } /* I18N_END */
 var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
