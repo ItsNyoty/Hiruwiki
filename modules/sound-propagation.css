@@ -1,0 +1,160 @@
+/* =========================================================
+ * Hiruwiki module: sound-propagation — stylesheet
+ * Colours come from the --hw-* tokens in hiruwiki-shared.css,
+ * which the core loads first and which handle dark mode.
+ * The .hw-sound__* rules are repeated in every sound module's
+ * stylesheet (sound-wave, harmonics, sound-propagation) because
+ * the core loads one CSS file per module; keep them in sync.
+ * ========================================================= */
+
+/* Card */
+.hw-sound {
+	font-family: var(--hw-font);
+	font-size: 14px;
+	line-height: 1.4;
+	color: var(--hw-text-base);
+	background: var(--hw-bg-base);
+	border: 0.5px solid var(--hw-border);
+	border-radius: var(--hw-radius-lg);
+	padding: 12px 16px;
+	margin: 1em 0 0;
+	box-sizing: border-box;
+}
+
+.hw-sound__bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 8px;
+}
+
+.hw-sound__note,
+.hw-sound__axis {
+	font-size: 12px;
+	color: var(--hw-text-muted);
+}
+
+/* Canvas */
+.hw-sound__canvas {
+	display: block;
+	width: 100%;
+	border-radius: var(--hw-radius-sm);
+	background: var(--hw-bg-subtle);
+	touch-action: pan-y;
+}
+
+.hw-sound__axis {
+	display: flex;
+	justify-content: space-between;
+	margin: 4px 0 12px;
+}
+
+/* Control rows */
+.hw-sound__row {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 8px 12px;
+	margin: 0 0 10px;
+}
+
+.hw-sound__row--disabled {
+	opacity: 0.4;
+}
+
+.hw-sound__label {
+	min-width: 110px;
+	color: var(--hw-text-muted);
+}
+
+.hw-sound__range {
+	flex: 1;
+	min-width: 120px;
+	accent-color: var(--hw-color-primary);
+}
+
+.hw-sound__out {
+	min-width: 72px;
+	text-align: right;
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+}
+
+/* Buttons and segmented choices */
+.hw-sound__seg {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+}
+
+.hw-sound__btn {
+	font: inherit;
+	font-size: 13px;
+	padding: 4px 12px;
+	border: 0.5px solid var(--hw-border);
+	border-radius: var(--hw-radius-sm);
+	background: var(--hw-bg-base);
+	color: var(--hw-text-base);
+	cursor: pointer;
+}
+
+.hw-sound__btn:hover {
+	background: var(--hw-bg-subtle);
+}
+
+.hw-sound__btn[aria-pressed="true"] {
+	background: var(--hw-color-primary-subtle);
+	border-color: var(--hw-color-primary);
+	color: var(--hw-color-primary);
+}
+
+.hw-sound__btn:focus-visible,
+.hw-sound__range:focus-visible {
+	outline: 2px solid var(--hw-color-primary);
+	outline-offset: 1px;
+}
+
+.hw-sound__play {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.hw-sound__icon {
+	font-size: 11px;
+	width: 12px;
+	text-align: center;
+}
+
+/* Stat cards */
+.hw-sound__stats {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	gap: 8px;
+	margin: 8px 0 4px;
+}
+
+.hw-sound__stat {
+	background: var(--hw-bg-subtle);
+	border-radius: var(--hw-radius-sm);
+	padding: 8px 10px;
+}
+
+.hw-sound__stat span {
+	display: block;
+	font-size: 12px;
+	color: var(--hw-text-muted);
+}
+
+.hw-sound__stat b {
+	font-size: 17px;
+	font-variant-numeric: tabular-nums;
+}
+
+@media print {
+	.hw-sound__btn {
+		display: none;
+	}
+}
