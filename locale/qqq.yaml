@@ -437,4 +437,110 @@ qqq:
     update_rules_heading: Heading for the section explaining how variables change
       each step
     hint: Instruction text for the Gauss-Legendre algorithm interaction
+  sound-wave:
+    _name: Name of the Sound wave module
+    hint: Instruction text shown in the footer.
+    play: Label of the button that starts the sound.
+    stop: Label of the button that stops the sound.
+    noAudio: Shown when the browser has no Web Audio support.
+    frequency: Label of the frequency slider.
+    amplitude: Label of the amplitude slider.
+    waveform: Label of the waveform selector.
+    sine: 'Waveform option: sine wave.'
+    triangle: 'Waveform option: triangle wave.'
+    square: 'Waveform option: square wave.'
+    sawtooth: 'Waveform option: sawtooth wave.'
+    period: 'Stat card: duration of one cycle.'
+    wavelength: 'Stat card: wavelength in air at 343 m/s.'
+    note: 'Stat card: nearest musical note.'
+    window: Note above the graph explaining the time scale.
+    timeAxis: Label under the horizontal axis.
+    pressurePlus: Canvas label at the top of the vertical axis.
+    pressureMinus: Canvas label at the bottom of the vertical axis.
+    amplitudeMark: Canvas label next to the dashed amplitude line.
+    noteNames: Twelve note names from C upwards, separated by single spaces.
+    octaveOffset: Integer added to octave numbers. 0 = A4 is 440 Hz; -1 = La3 is 440
+      Hz.
+  harmonics:
+    _name: Name of the Harmonics module
+    hint: Instruction text shown in the footer.
+    play: Label of the button that starts the sound.
+    stop: Label of the button that stops the sound.
+    noAudio: Shown when the browser has no Web Audio support.
+    showComponents: 'Checkbox: draw each harmonic as a faint curve under the total.'
+    presets: Label of the preset selector.
+    presetSine: 'Preset: only the fundamental.'
+    presetFlute: 'Preset: stylised flute spectrum.'
+    presetClarinet: 'Preset: stylised clarinet spectrum (odd harmonics only).'
+    presetViolin: 'Preset: stylised violin spectrum (all harmonics, 1/n).'
+    presetOboe: 'Preset: stylised oboe spectrum (weak fundamental).'
+    harmonics: Label above the eight harmonic sliders.
+    removeFundamental: Button that sets the first harmonic to zero (missing-fundamental
+      demo).
+    harmonicAria: Accessible label of each harmonic slider. $1 = harmonic number.
+    fundamental: Label of the fundamental frequency slider.
+    periods: 'Left label under the graph: how many periods are shown.'
+    timeAxis: Centre label under the graph.
+    silence: Canvas message when all harmonics are zero.
+  sound-propagation:
+    _name: Name of the Sound propagation module
+    hint: Instruction text shown in the footer.
+    pause: Button that pauses the animation.
+    resume: Button that resumes the animation.
+    slowNote: Note above the graph explaining the time scale.
+    medium: Label of the medium selector.
+    air: 'Medium option: air (speed depends on temperature).'
+    water: 'Medium option: water at about 20 °C (1482 m/s).'
+    steel: 'Medium option: steel (5100 m/s, thin-bar value).'
+    frequency: Label of the frequency slider.
+    temperature: Label of the air temperature slider (only active for air).
+    speed: 'Stat card: speed of sound in the chosen medium.'
+    wavelength: 'Stat card: wavelength.'
+    time100: 'Stat card: time sound needs to travel 100 metres.'
+    distanceAxis: Centre label under the horizontal axis.
+    particles: Canvas label above the particle band.
+    pressure: Canvas label above the pressure curve.
+    compression: Canvas label at the top of the pressure axis.
+    rarefaction: Canvas label at the bottom of the pressure axis.
+  doppler:
+    _name: Name of the Doppler module
+    hint: Instruction text shown in the footer.
+    play: Label of the button that starts the sound.
+    stop: Label of the button that stops the sound.
+    restart: Button that restarts the source's pass from the left.
+    noAudio: Shown when the browser has no Web Audio support.
+    dragNote: 'Note above the canvas: the listener can be dragged; the motion is slowed
+      down.'
+    speed: Label of the source speed slider (shown in m/s and as a Mach number).
+    emitted: 'Stat card: frequency emitted by the source.'
+    received: 'Stat card: frequency heard by the listener.'
+    change: 'Stat card: percentage change between emitted and received frequency.'
+    silence: Received-frequency value when no sound has reached the listener.
+    notArrived: Change value when no sound has reached the listener.
+    shock: Received-frequency value at the moment the shock wave arrives.
+    pileUp: Change value at the moment the shock wave arrives.
+    higher: Suffix after a positive percentage change (higher pitch).
+    lower: Suffix after a negative percentage change (lower pitch).
+    listener: Canvas label above the listener dot.
+    source: Canvas label under the moving source.
+    cone: Canvas label for the Mach cone, shown above Mach 1.
+    canvasLabel: Accessible label of the canvas, including the keyboard hint.
+  echo:
+    _name: Name of the Echo module
+    hint: Instruction text shown in the footer. Explains the 0.1 s / 17 m threshold.
+    clap: Button that plays a hand clap and its echo, and starts the animation.
+    noAudio: Shown when the browser has no Web Audio support.
+    note: 'Note above the canvas: the sound and the drawn wave both run in real time.'
+    distance: Label of the wall distance slider.
+    delay: 'Stat card: time between the clap and its echo.'
+    heard: 'Stat card: whether the reflection is heard as an echo or as reverberation.'
+    echo: Stat value when the delay is 0.1 s or more.
+    reverb: Stat value when the delay is under 0.1 s.
+    person: Canvas label under the person who claps (addressing the reader).
+    wall: Canvas label under the wall.
+    timeAxis: Label of the timeline's horizontal axis.
+    fusion: Label of the shaded first 0.1 s on the timeline, where two sounds merge.
+    direct: Timeline label of the original clap.
+    reflected: Timeline label of the reflected sound.
+    canvasLabel: Accessible label of the canvas.
 ...
