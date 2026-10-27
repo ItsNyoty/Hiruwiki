@@ -447,4 +447,113 @@ fr:
     formula_label: Formule
     update_rules_heading: Règles de mise à jour
     hint: Calculez les itérations pour voir la convergence quadratique
+  sound-wave:
+    _name: Onde sonore
+    hint: Déplacez les curseurs et appuyez sur « Écouter » pour entendre le changement
+    play: Écouter
+    stop: Arrêter
+    noAudio: Votre navigateur ne peut pas jouer de son
+    frequency: Fréquence
+    amplitude: Amplitude
+    waveform: Forme d'onde
+    sine: Sinusoïdale
+    triangle: Triangulaire
+    square: Carrée
+    sawtooth: Dent de scie
+    period: Période
+    wavelength: Longueur d'onde dans l'air
+    note: Note la plus proche
+    window: 'Fenêtre temporelle : 10 ms · animation ralentie'
+    timeAxis: temps →
+    pressurePlus: + pression
+    pressureMinus: − pression
+    amplitudeMark: amplitude
+    noteNames: Do Do♯ Ré Ré♯ Mi Fa Fa♯ Sol Sol♯ La La♯ Si
+    octaveOffset: '-1'
+  harmonics:
+    _name: Harmoniques et timbre
+    hint: 'Même hauteur et même intensité, timbre différent : modifiez les harmoniques
+      et écoutez'
+    play: Écouter
+    stop: Arrêter
+    noAudio: Votre navigateur ne peut pas jouer de son
+    showComponents: Afficher les composantes
+    presets: Préréglages
+    presetSine: Sinus pur
+    presetFlute: Flûte
+    presetClarinet: Clarinette
+    presetViolin: Violon
+    presetOboe: Hautbois
+    harmonics: Harmoniques (intensité)
+    removeFundamental: Supprimer la fondamentale
+    harmonicAria: Intensité de l'harmonique $1
+    fundamental: Fréquence fondamentale
+    periods: 3 périodes
+    timeAxis: temps →
+    silence: 'Silence : toutes les harmoniques sont à zéro'
+  sound-propagation:
+    _name: Propagation du son
+    hint: 'La particule mise en évidence n''avance pas : elle vibre sur place. C''est
+      l''onde qui se propage.'
+    pause: Pause
+    resume: Reprendre
+    slowNote: Animation ralentie 500 fois (de la même façon dans tous les milieux)
+    medium: Milieu
+    air: Air
+    water: Eau
+    steel: Acier
+    frequency: Fréquence
+    temperature: Température de l'air
+    speed: Vitesse du son
+    wavelength: Longueur d'onde (λ = v / f)
+    time100: Temps pour parcourir 100 m
+    distanceAxis: distance →
+    particles: particules
+    pressure: pression
+    compression: compression
+    rarefaction: raréfaction
+  doppler:
+    _name: Effet Doppler
+    hint: En approchant, les ondes se resserrent (son plus aigu) ; en s'éloignant, elles
+      s'espacent (plus grave)
+    play: Écouter
+    stop: Arrêter
+    restart: Recommencer
+    noAudio: Votre navigateur ne peut pas jouer de son
+    dragNote: Faites glisser l'auditeur · animation ralentie
+    speed: Vitesse de la source
+    emitted: Émise par la source
+    received: Reçue par l'auditeur
+    change: Variation
+    silence: Silence
+    notArrived: Le son n'est pas encore arrivé
+    shock: Onde de choc !
+    pileUp: Fronts d'onde empilés
+    higher: plus aigu
+    lower: plus grave
+    listener: auditeur
+    source: source
+    cone: Cône de Mach (onde de choc)
+    canvasLabel: Une source sonore en mouvement et un auditeur. Utilisez les flèches
+      pour déplacer l'auditeur.
+  echo:
+    _name: Écho et réverbération
+    hint: 'L''oreille a besoin d''environ 0,1 s entre deux sons pour les distinguer
+      : le mur doit être à plus de 17 m pour entendre un écho'
+    clap: Taper dans les mains
+    noAudio: Votre navigateur ne peut pas jouer de son
+    note: Son et onde en temps réel
+    distance: Distance au mur
+    delay: Retard de l'écho
+    heard: Ce que vous entendez
+    echo: 'Écho : deux sons'
+    reverb: 'Réverbération : un son plus long'
+    person: vous
+    wall: mur
+    timeAxis: temps (ms)
+    fusion: fusionnés par l'oreille
+    direct: claquement
+    reflected: écho
+    canvasLabel: Une personne devant un mur, et une ligne de temps avec le claquement
+      et son écho.
 ...
