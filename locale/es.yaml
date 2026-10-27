@@ -433,4 +433,111 @@ es:
     formula_label: Fórmula
     update_rules_heading: Reglas de actualización
     hint: Calcula las iteraciones para observar la convergencia cuadrática
+  sound-wave:
+    _name: Onda sonora
+    hint: Mueve los controles y pulsa «Escuchar» para oír el cambio
+    play: Escuchar
+    stop: Detener
+    noAudio: Tu navegador no puede reproducir sonido
+    frequency: Frecuencia
+    amplitude: Amplitud
+    waveform: Forma de onda
+    sine: Sinusoidal
+    triangle: Triangular
+    square: Cuadrada
+    sawtooth: Diente de sierra
+    period: Periodo
+    wavelength: Longitud de onda en el aire
+    note: Nota más cercana
+    window: 'Ventana de tiempo: 10 ms · animación ralentizada'
+    timeAxis: tiempo →
+    pressurePlus: + presión
+    pressureMinus: − presión
+    amplitudeMark: amplitud
+    noteNames: Do Do♯ Re Re♯ Mi Fa Fa♯ Sol Sol♯ La La♯ Si
+    octaveOffset: '-1'
+  harmonics:
+    _name: Armónicos y timbre
+    hint: 'Misma altura e intensidad, distinto timbre: cambia los armónicos y escucha'
+    play: Escuchar
+    stop: Detener
+    noAudio: Tu navegador no puede reproducir sonido
+    showComponents: Mostrar componentes
+    presets: Ajustes
+    presetSine: Seno puro
+    presetFlute: Flauta
+    presetClarinet: Clarinete
+    presetViolin: Violín
+    presetOboe: Oboe
+    harmonics: Armónicos (intensidad)
+    removeFundamental: Quitar la fundamental
+    harmonicAria: Intensidad del armónico $1
+    fundamental: Frecuencia fundamental
+    periods: 3 periodos
+    timeAxis: tiempo →
+    silence: 'Silencio: todos los armónicos están a cero'
+  sound-propagation:
+    _name: Propagación del sonido
+    hint: 'La partícula resaltada no avanza: vibra en su sitio. Lo que viaja es la onda.'
+    pause: Pausar
+    resume: Continuar
+    slowNote: Animación ralentizada 500 veces (igual en todos los medios)
+    medium: Medio
+    air: Aire
+    water: Agua
+    steel: Acero
+    frequency: Frecuencia
+    temperature: Temperatura del aire
+    speed: Velocidad del sonido
+    wavelength: Longitud de onda (λ = v / f)
+    time100: Tiempo para recorrer 100 m
+    distanceAxis: distancia →
+    particles: partículas
+    pressure: presión
+    compression: compresión
+    rarefaction: rarefacción
+  doppler:
+    _name: Efecto Doppler
+    hint: Al acercarse, las ondas se apiñan (sonido más agudo); al alejarse, se separan
+      (más grave)
+    play: Escuchar
+    stop: Detener
+    restart: Reiniciar
+    noAudio: Tu navegador no puede reproducir sonido
+    dragNote: Arrastra al oyente · animación ralentizada
+    speed: Velocidad de la fuente
+    emitted: Emitida por la fuente
+    received: Recibida por el oyente
+    change: Cambio
+    silence: Silencio
+    notArrived: El sonido aún no ha llegado
+    shock: ¡Onda de choque!
+    pileUp: Frentes de onda apilados
+    higher: más agudo
+    lower: más grave
+    listener: oyente
+    source: fuente
+    cone: Cono de Mach (onda de choque)
+    canvasLabel: Una fuente de sonido en movimiento y un oyente. Usa las flechas para
+      mover al oyente.
+  echo:
+    _name: Eco y reverberación
+    hint: 'El oído necesita unos 0,1 s entre dos sonidos para distinguirlos: la pared
+      debe estar a más de 17 m para oír eco'
+    clap: Dar una palmada
+    noAudio: Tu navegador no puede reproducir sonido
+    note: Sonido y onda en tiempo real
+    distance: Distancia a la pared
+    delay: Retraso del eco
+    heard: Lo que oyes
+    echo: 'Eco: dos sonidos'
+    reverb: 'Reverberación: un sonido más largo'
+    person: tú
+    wall: pared
+    timeAxis: tiempo (ms)
+    fusion: el oído los une
+    direct: palmada
+    reflected: eco
+    canvasLabel: Una persona frente a una pared y una línea de tiempo con la palmada
+      y su eco.
 ...
