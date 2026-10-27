@@ -446,4 +446,112 @@ eu:
     formula_label: Formula
     update_rules_heading: Eguneratze arauak
     hint: Kalkulatu iterazioak konbergentzia kuadratikoa ikusteko
+  sound-wave:
+    _name: Soinu-uhina
+    hint: Mugitu graduatzaileak eta sakatu «Entzun» aldaketa entzuteko
+    play: Entzun
+    stop: Gelditu
+    noAudio: Zure nabigatzaileak ezin du soinurik erreproduzitu
+    frequency: Maiztasuna
+    amplitude: Anplitudea
+    waveform: Uhin mota
+    sine: Sinusoidala
+    triangle: Triangeluarra
+    square: Karratua
+    sawtooth: Zerra-hortza
+    period: Periodoa
+    wavelength: Uhin-luzera airean
+    note: Nota hurbilena
+    window: 'Denbora-leihoa: 10 ms · animazioa moteldua'
+    timeAxis: denbora →
+    pressurePlus: + presioa
+    pressureMinus: − presioa
+    amplitudeMark: anplitudea
+    noteNames: Do Do♯ Re Re♯ Mi Fa Fa♯ Sol Sol♯ La La♯ Si
+    octaveOffset: '-1'
+  harmonics:
+    _name: Harmonikoak eta tinbrea
+    hint: 'Altuera eta intentsitate bera, tinbre desberdina: aldatu harmonikoak eta
+      entzun'
+    play: Entzun
+    stop: Gelditu
+    noAudio: Zure nabigatzaileak ezin du soinurik erreproduzitu
+    showComponents: Osagaiak erakutsi
+    presets: Aurrezarpenak
+    presetSine: Sinu hutsa
+    presetFlute: Txirula
+    presetClarinet: Klarinetea
+    presetViolin: Biolina
+    presetOboe: Oboea
+    harmonics: Harmonikoak (indarra)
+    removeFundamental: Oinarrizkoa kendu
+    harmonicAria: $1. harmonikoaren indarra
+    fundamental: Oinarrizko maiztasuna
+    periods: 3 periodo
+    timeAxis: denbora →
+    silence: 'Isiltasuna: harmoniko guztiak zeroan'
+  sound-propagation:
+    _name: Soinuaren hedapena
+    hint: 'Nabarmendutako partikula ez da aurrera joaten: bere lekuan dardaratzen da.
+      Uhina da hedatzen dena.'
+    pause: Pausatu
+    resume: Jarraitu
+    slowNote: Animazioa 500 aldiz moteldua (ingurune guztietan berdin)
+    medium: Ingurunea
+    air: Airea
+    water: Ura
+    steel: Altzairua
+    frequency: Maiztasuna
+    temperature: Airearen tenperatura
+    speed: Soinuaren abiadura
+    wavelength: Uhin-luzera (λ = v / f)
+    time100: 100 m egiteko denbora
+    distanceAxis: distantzia →
+    particles: partikulak
+    pressure: presioa
+    compression: konpresioa
+    rarefaction: enrarezimendua
+  doppler:
+    _name: Doppler efektua
+    hint: Hurbiltzean uhinak estutu egiten dira (goi-soinua); urruntzean, zabaldu (behe-soinua)
+    play: Entzun
+    stop: Gelditu
+    restart: Berriro
+    noAudio: Zure nabigatzaileak ezin du soinurik erreproduzitu
+    dragNote: Arrastatu entzulea · animazioa moteldua
+    speed: Iturriaren abiadura
+    emitted: Iturriak igorria
+    received: Entzuleak jasoa
+    change: Aldaketa
+    silence: Isiltasuna
+    notArrived: Soinua ez da iritsi
+    shock: Talka-uhina!
+    pileUp: Uhinak pilatuta
+    higher: altuago
+    lower: baxuago
+    listener: entzulea
+    source: iturria
+    cone: Mach-en konoa (talka-uhina)
+    canvasLabel: Mugitzen ari den soinu-iturri bat eta entzule bat. Erabili geziak entzulea
+      mugitzeko.
+  echo:
+    _name: Oihartzuna eta erreberberazioa
+    hint: 'Belarriak 0,1 s inguru behar ditu bi soinu bereizteko: horma 17 m baino urrunago
+      egon behar da oihartzuna entzuteko'
+    clap: Txalo egin
+    noAudio: Zure nabigatzaileak ezin du soinurik erreproduzitu
+    note: Soinua eta uhina denbora errealean
+    distance: Hormarainoko distantzia
+    delay: Oihartzunaren atzerapena
+    heard: Entzuten duzuna
+    echo: 'Oihartzuna: bi soinu'
+    reverb: 'Erreberberazioa: soinu luzeago bat'
+    person: zu
+    wall: horma
+    timeAxis: denbora (ms)
+    fusion: belarriak batzen ditu
+    direct: txaloa
+    reflected: oihartzuna
+    canvasLabel: Pertsona bat horma baten aurrean, eta denbora-lerro bat txaloarekin
+      eta haren oihartzunarekin.
 ...
