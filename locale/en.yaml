@@ -425,3 +425,110 @@ en:
     formula_label: Formula
     update_rules_heading: Update Rules
     hint: 'Compute iterations to see quadratic convergence'
+  sound-wave:
+    _name: Sound wave
+    hint: Move the sliders and press “Listen” to hear the change
+    play: Listen
+    stop: Stop
+    noAudio: Your browser can't play sound
+    frequency: Frequency
+    amplitude: Amplitude
+    waveform: Waveform
+    sine: Sine
+    triangle: Triangle
+    square: Square
+    sawtooth: Sawtooth
+    period: Period
+    wavelength: Wavelength in air
+    note: Nearest note
+    window: 'Time window: 10 ms · animation slowed down'
+    timeAxis: time →
+    pressurePlus: + pressure
+    pressureMinus: − pressure
+    amplitudeMark: amplitude
+    noteNames: C C♯ D D♯ E F F♯ G G♯ A A♯ B
+    octaveOffset: '0'
+  harmonics:
+    _name: Harmonics and timbre
+    hint: 'Same pitch and loudness, different timbre: change the harmonics and listen'
+    play: Listen
+    stop: Stop
+    noAudio: Your browser can't play sound
+    showComponents: Show components
+    presets: Presets
+    presetSine: Pure sine
+    presetFlute: Flute
+    presetClarinet: Clarinet
+    presetViolin: Violin
+    presetOboe: Oboe
+    harmonics: Harmonics (strength)
+    removeFundamental: Remove the fundamental
+    harmonicAria: Strength of harmonic $1
+    fundamental: Fundamental frequency
+    periods: 3 periods
+    timeAxis: time →
+    silence: 'Silence: every harmonic is at zero'
+  sound-propagation:
+    _name: Sound propagation
+    hint: 'The highlighted particle doesn''t move forward: it vibrates in place. What
+      travels is the wave.'
+    pause: Pause
+    resume: Resume
+    slowNote: Animation slowed down 500× (equally in every medium)
+    medium: Medium
+    air: Air
+    water: Water
+    steel: Steel
+    frequency: Frequency
+    temperature: Air temperature
+    speed: Speed of sound
+    wavelength: Wavelength (λ = v / f)
+    time100: Time to travel 100 m
+    distanceAxis: distance →
+    particles: particles
+    pressure: pressure
+    compression: compression
+    rarefaction: rarefaction
+  doppler:
+    _name: Doppler effect
+    hint: Approaching, the waves bunch up (higher pitch); moving away, they spread out
+      (lower pitch)
+    play: Listen
+    stop: Stop
+    restart: Restart
+    noAudio: Your browser can't play sound
+    dragNote: Drag the listener · animation slowed down
+    speed: Source speed
+    emitted: Emitted by the source
+    received: Received by the listener
+    change: Change
+    silence: Silence
+    notArrived: The sound hasn't arrived yet
+    shock: Shock wave!
+    pileUp: Wavefronts piled up
+    higher: higher
+    lower: lower
+    listener: listener
+    source: source
+    cone: Mach cone (shock wave)
+    canvasLabel: A moving sound source and a listener. Use the arrow keys to move the
+      listener.
+  echo:
+    _name: Echo and reverberation
+    hint: 'The ear needs about 0.1 s between two sounds to tell them apart: the wall
+      must be more than 17 m away to hear an echo'
+    clap: Clap
+    noAudio: Your browser can't play sound
+    note: Sound and wave in real time
+    distance: Distance to the wall
+    delay: Echo delay
+    heard: What you hear
+    echo: 'Echo: two sounds'
+    reverb: 'Reverberation: one longer sound'
+    person: you
+    wall: wall
+    timeAxis: time (ms)
+    fusion: fused by the ear
+    direct: clap
+    reflected: echo
+    canvasLabel: A person in front of a wall, and a timeline with the clap and its echo.
