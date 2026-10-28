@@ -17,45 +17,45 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "fr": {
-        "_name": "Centre de gravité du triangle",
-        "hint": "Faites glisser n'importe quel sommet pour explorer le centroïde"
-    },
     "nl": {
         "_name": "Zwaartepunt van een driehoek",
         "hint": "Sleep een hoekpunt om het zwaartepunt te verkennen"
     },
-    "qqq": {
-        "_name": "Name of the Triangle Centroid module",
-        "hint": "Instruction text shown in the footer."
+    "fr": {
+        "_name": "Centre de gravité du triangle",
+        "hint": "Faites glisser n'importe quel sommet pour explorer le centroïde"
     },
-    "es": {
-        "_name": "Baricentro del triángulo",
-        "hint": "Arrastra un vértice para explorar el baricentro"
-    },
-    "ko": {
-        "_name": "삼각형 무게중심",
-        "hint": "꼭짓점을 드래그해서 무게중심을 탐구하세요"
-    },
-    "skr-arab": {
-        "_name": "مثلث دا مرکزِ ثقل",
-        "hint": "مرکزِ ثقل کوں ݙیکھݨ کیتے کوئی وی سرا گھسیٹو"
+    "eu": {
+        "_name": "Hirukiaren barizentroa",
+        "hint": "Erpinak mugitu ditzakezu barizentroa ikusteko"
     },
     "sk": {
         "_name": "Ťažisko trojuholníka",
         "hint": "Potiahnutím ľubovoľného vrcholu preskúmate ťažisko"
     },
-    "ga": {
-        "_name": "Lárphointe Triantáin",
-        "hint": "Tarraing aon bhuaicphointe chun an lárphointe a iniúchadh"
+    "skr-arab": {
+        "_name": "مثلث دا مرکزِ ثقل",
+        "hint": "مرکزِ ثقل کوں ݙیکھݨ کیتے کوئی وی سرا گھسیٹو"
+    },
+    "ko": {
+        "_name": "삼각형 무게중심",
+        "hint": "꼭짓점을 드래그해서 무게중심을 탐구하세요"
     },
     "en": {
         "_name": "Triangle Centroid",
         "hint": "Drag any vertex to explore the centroid"
     },
-    "eu": {
-        "_name": "Hirukiaren barizentroa",
-        "hint": "Erpinak mugitu ditzakezu barizentroa ikusteko"
+    "qqq": {
+        "_name": "Name of the Triangle Centroid module",
+        "hint": "Instruction text shown in the footer."
+    },
+    "ga": {
+        "_name": "Lárphointe Triantáin",
+        "hint": "Tarraing aon bhuaicphointe chun an lárphointe a iniúchadh"
+    },
+    "es": {
+        "_name": "Baricentro del triángulo",
+        "hint": "Arrastra un vértice para explorar el baricentro"
     },
     "mk": {
         "_name": "Тежиште на триаголник",

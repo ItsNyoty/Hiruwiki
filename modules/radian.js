@@ -3,64 +3,64 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "fr": {
-        "_name": "Radians",
-        "rad": "rad",
-        "hint": "Faites glisser la poignée pour visualiser la relation entre les degrés et les radians"
-    },
     "nl": {
         "_name": "Radialen",
         "rad": "rad",
         "hint": "Sleep de hendel om de relatie tussen graden en radialen te zien"
     },
-    "qqq": {
-        "_name": "Name of the Radians module",
-        "rad": "Abbreviation for radians",
-        "hint": "Instruction text for the radian-degree relationship applet"
-    },
-    "es": {
-        "_name": "Radianes",
+    "fr": {
+        "_name": "Radians",
         "rad": "rad",
-        "hint": "Arrastra el controlador para ver la relación entre grados y radianes"
+        "hint": "Faites glisser la poignée pour visualiser la relation entre les degrés et les radians"
     },
     "tr": {
         "_name": "Radyanlar",
         "rad": "rad",
         "hint": "Derece ve radyan arasındaki ilişkiyi görmek için imleci sürükleyin"
     },
-    "ko": {
-        "_name": "라디안",
+    "eu": {
+        "_name": "Radianak",
         "rad": "rad",
-        "hint": "핸들을 드래그하여 도(°)와 라디안(radian) 사이의 관계를 확인하세요."
-    },
-    "skr-arab": {
-        "_name": "ریڈین",
-        "rad": "rad",
-        "hint": "ڈگریاں تے ریڈین دے وچکار تعلق ویکھݨ کیتے ہینڈل گھسیٹو"
+        "hint": "Arrastatu heldulekua graduen eta radianen arteko erlazioa ikusteko"
     },
     "sk": {
         "_name": "Radiány",
         "rad": "rad",
         "hint": "Potiahnutím rukoväte uvidíte vzťah medzi stupňami a radiánmi"
     },
-    "ca": {
-        "_name": "Radians",
-        "rad": "rad"
-    },
-    "ga": {
-        "_name": "Raidiáin",
+    "skr-arab": {
+        "_name": "ریڈین",
         "rad": "rad",
-        "hint": "Tarraing an láimhseáil chun an gaol idir céimeanna agus raidiáin a fheiceáil"
+        "hint": "ڈگریاں تے ریڈین دے وچکار تعلق ویکھݨ کیتے ہینڈل گھسیٹو"
+    },
+    "ko": {
+        "_name": "라디안",
+        "rad": "rad",
+        "hint": "핸들을 드래그하여 도(°)와 라디안(radian) 사이의 관계를 확인하세요."
     },
     "en": {
         "_name": "Radians",
         "rad": "rad",
         "hint": "Drag the handle to see the relationship between degrees and radians"
     },
-    "eu": {
-        "_name": "Radianak",
+    "ca": {
+        "_name": "Radians",
+        "rad": "rad"
+    },
+    "qqq": {
+        "_name": "Name of the Radians module",
+        "rad": "Abbreviation for radians",
+        "hint": "Instruction text for the radian-degree relationship applet"
+    },
+    "ga": {
+        "_name": "Raidiáin",
         "rad": "rad",
-        "hint": "Arrastatu heldulekua graduen eta radianen arteko erlazioa ikusteko"
+        "hint": "Tarraing an láimhseáil chun an gaol idir céimeanna agus raidiáin a fheiceáil"
+    },
+    "es": {
+        "_name": "Radianes",
+        "rad": "rad",
+        "hint": "Arrastra el controlador para ver la relación entre grados y radianes"
     },
     "mk": {
         "_name": "Радијани",

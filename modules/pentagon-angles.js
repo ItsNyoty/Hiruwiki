@@ -10,14 +10,6 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "fr": {
-        "3triangles": "3 triangles × 180°",
-        "_name": "Angles du pentagone",
-        "interiorAngles": "Angles intérieurs",
-        "reset": "↺ Réinitialiser",
-        "total": "Total",
-        "hint": "Décomposer le pentagone en triangles"
-    },
     "nl": {
         "3triangles": "3 driehoeken × 180°",
         "_name": "Hoeken van een vijfhoek",
@@ -26,21 +18,13 @@ var messages = /* I18N_START */ {
         "total": "Totaal",
         "hint": "Verplaats de hoeken om de figuur te vervormen"
     },
-    "qqq": {
-        "3triangles": "Decomposition label showing 3 triangles × 180°",
-        "_name": "Name of the Pentagon Angles module",
-        "interiorAngles": "Heading for the interior angles section",
-        "reset": "Button label to reset the visualisation",
-        "total": "Label for the total sum of interior angles",
-        "hint": "Instruction text for the pentagon angle decomposition applet"
-    },
-    "es": {
-        "3triangles": "3 triángulos × 180°",
-        "_name": "Ángulos del pentágono",
-        "interiorAngles": "Ángulos interiores",
-        "reset": "↺ Reiniciar",
+    "fr": {
+        "3triangles": "3 triangles × 180°",
+        "_name": "Angles du pentagone",
+        "interiorAngles": "Angles intérieurs",
+        "reset": "↺ Réinitialiser",
         "total": "Total",
-        "hint": "Descompone el pentágono en triángulos"
+        "hint": "Décomposer le pentagone en triangles"
     },
     "tr": {
         "3triangles": "3 üçgen × 180°",
@@ -50,21 +34,13 @@ var messages = /* I18N_START */ {
         "total": "Toplam",
         "hint": "Beşgeni üçgenlere ayırın"
     },
-    "ko": {
-        "3triangles": "3개의 삼각형 × 180°",
-        "_name": "오각형의 각들",
-        "interiorAngles": "내부 각들",
-        "reset": "↺ 초기화",
-        "total": "합계",
-        "hint": "오각형을 삼각형으로 분해하세요"
-    },
-    "skr-arab": {
-        "3triangles": "3 مثلث × 180°",
-        "_name": "پینٹاگون زاویے",
-        "interiorAngles": "اندرونی زاویے",
-        "reset": "↺ دوبارہ",
-        "total": "کل",
-        "hint": "پینٹاگون کوں مثلثاں وچ ونڈو"
+    "eu": {
+        "3triangles": "3 triangelu × 180°",
+        "_name": "Pentagonoaren angeluak",
+        "interiorAngles": "Barne angeluak",
+        "reset": "↺ Berrezarri",
+        "total": "Guztira",
+        "hint": "Pentagonoa triangeluetan deskonposatu"
     },
     "sk": {
         "3triangles": "3 trojuholníky × 180°",
@@ -74,19 +50,21 @@ var messages = /* I18N_START */ {
         "total": "Spolu",
         "hint": "Rozložte päťuholník na trojuholníky"
     },
-    "ca": {
-        "3triangles": "3 triangles × 180°",
-        "_name": "Angles del Pentàgon",
-        "interiorAngles": "Angles interiors",
-        "total": "Total"
+    "skr-arab": {
+        "3triangles": "3 مثلث × 180°",
+        "_name": "پینٹاگون زاویے",
+        "interiorAngles": "اندرونی زاویے",
+        "reset": "↺ دوبارہ",
+        "total": "کل",
+        "hint": "پینٹاگون کوں مثلثاں وچ ونڈو"
     },
-    "ga": {
-        "3triangles": "3 thriantán × 180°",
-        "_name": "Uillinneacha an Pheinteagáin",
-        "interiorAngles": "Uillinneacha inmheánacha",
-        "reset": "↺ Athshocraigh",
-        "total": "Iomlán",
-        "hint": "Déan an peinteagán a dhíscaoileadh ina thriantáin"
+    "ko": {
+        "3triangles": "3개의 삼각형 × 180°",
+        "_name": "오각형의 각들",
+        "interiorAngles": "내부 각들",
+        "reset": "↺ 초기화",
+        "total": "합계",
+        "hint": "오각형을 삼각형으로 분해하세요"
     },
     "en": {
         "3triangles": "3 triangles × 180°",
@@ -96,13 +74,35 @@ var messages = /* I18N_START */ {
         "total": "Total",
         "hint": "Decompose the pentagon into triangles"
     },
-    "eu": {
-        "3triangles": "3 triangelu × 180°",
-        "_name": "Pentagonoaren angeluak",
-        "interiorAngles": "Barne angeluak",
-        "reset": "↺ Berrezarri",
-        "total": "Guztira",
-        "hint": "Pentagonoa triangeluetan deskonposatu"
+    "ca": {
+        "3triangles": "3 triangles × 180°",
+        "_name": "Angles del Pentàgon",
+        "interiorAngles": "Angles interiors",
+        "total": "Total"
+    },
+    "qqq": {
+        "3triangles": "Decomposition label showing 3 triangles × 180°",
+        "_name": "Name of the Pentagon Angles module",
+        "interiorAngles": "Heading for the interior angles section",
+        "reset": "Button label to reset the visualisation",
+        "total": "Label for the total sum of interior angles",
+        "hint": "Instruction text for the pentagon angle decomposition applet"
+    },
+    "ga": {
+        "3triangles": "3 thriantán × 180°",
+        "_name": "Uillinneacha an Pheinteagáin",
+        "interiorAngles": "Uillinneacha inmheánacha",
+        "reset": "↺ Athshocraigh",
+        "total": "Iomlán",
+        "hint": "Déan an peinteagán a dhíscaoileadh ina thriantáin"
+    },
+    "es": {
+        "3triangles": "3 triángulos × 180°",
+        "_name": "Ángulos del pentágono",
+        "interiorAngles": "Ángulos interiores",
+        "reset": "↺ Reiniciar",
+        "total": "Total",
+        "hint": "Descompone el pentágono en triángulos"
     },
     "mk": {
         "3triangles": "3 триаголници × 180°",

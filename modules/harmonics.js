@@ -28,116 +28,126 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-	"en": {
-		"_name": "Harmonics and timbre",
-		"hint": "Same pitch and loudness, different timbre: change the harmonics and listen",
-		"play": "Listen",
-		"stop": "Stop",
-		"noAudio": "Your browser can't play sound",
-		"showComponents": "Show components",
-		"presets": "Presets",
-		"presetSine": "Pure sine",
-		"presetFlute": "Flute",
-		"presetClarinet": "Clarinet",
-		"presetViolin": "Violin",
-		"presetOboe": "Oboe",
-		"harmonics": "Harmonics (strength)",
-		"removeFundamental": "Remove the fundamental",
-		"harmonicAria": "Strength of harmonic $1",
-		"fundamental": "Fundamental frequency",
-		"periods": "3 periods",
-		"timeAxis": "time →",
-		"silence": "Silence: every harmonic is at zero"
-	},
-	"es": {
-		"_name": "Armónicos y timbre",
-		"hint": "Misma altura e intensidad, distinto timbre: cambia los armónicos y escucha",
-		"play": "Escuchar",
-		"stop": "Detener",
-		"noAudio": "Tu navegador no puede reproducir sonido",
-		"showComponents": "Mostrar componentes",
-		"presets": "Ajustes",
-		"presetSine": "Seno puro",
-		"presetFlute": "Flauta",
-		"presetClarinet": "Clarinete",
-		"presetViolin": "Violín",
-		"presetOboe": "Oboe",
-		"harmonics": "Armónicos (intensidad)",
-		"removeFundamental": "Quitar la fundamental",
-		"harmonicAria": "Intensidad del armónico $1",
-		"fundamental": "Frecuencia fundamental",
-		"periods": "3 periodos",
-		"timeAxis": "tiempo →",
-		"silence": "Silencio: todos los armónicos están a cero"
-	},
-	"eu": {
-		"_name": "Harmonikoak eta tinbrea",
-		"hint": "Altuera eta intentsitate bera, tinbre desberdina: aldatu harmonikoak eta entzun",
-		"play": "Entzun",
-		"stop": "Gelditu",
-		"noAudio": "Zure nabigatzaileak ezin du soinurik erreproduzitu",
-		"showComponents": "Osagaiak erakutsi",
-		"presets": "Aurrezarpenak",
-		"presetSine": "Sinu hutsa",
-		"presetFlute": "Txirula",
-		"presetClarinet": "Klarinetea",
-		"presetViolin": "Biolina",
-		"presetOboe": "Oboea",
-		"harmonics": "Harmonikoak (indarra)",
-		"removeFundamental": "Oinarrizkoa kendu",
-		"harmonicAria": "$1. harmonikoaren indarra",
-		"fundamental": "Oinarrizko maiztasuna",
-		"periods": "3 periodo",
-		"timeAxis": "denbora →",
-		"silence": "Isiltasuna: harmoniko guztiak zeroan"
-	},
-	"fr": {
-		"_name": "Harmoniques et timbre",
-		"hint": "Même hauteur et même intensité, timbre différent : modifiez les harmoniques et écoutez",
-		"play": "Écouter",
-		"stop": "Arrêter",
-		"noAudio": "Votre navigateur ne peut pas jouer de son",
-		"showComponents": "Afficher les composantes",
-		"presets": "Préréglages",
-		"presetSine": "Sinus pur",
-		"presetFlute": "Flûte",
-		"presetClarinet": "Clarinette",
-		"presetViolin": "Violon",
-		"presetOboe": "Hautbois",
-		"harmonics": "Harmoniques (intensité)",
-		"removeFundamental": "Supprimer la fondamentale",
-		"harmonicAria": "Intensité de l'harmonique $1",
-		"fundamental": "Fréquence fondamentale",
-		"periods": "3 périodes",
-		"timeAxis": "temps →",
-		"silence": "Silence : toutes les harmoniques sont à zéro"
-	},
-	"qqq": {
-		"_name": "Name of the Harmonics module",
-		"hint": "Instruction text shown in the footer.",
-		"play": "Label of the button that starts the sound.",
-		"stop": "Label of the button that stops the sound.",
-		"noAudio": "Shown when the browser has no Web Audio support.",
-		"showComponents": "Checkbox: draw each harmonic as a faint curve under the total.",
-		"presets": "Label of the preset selector.",
-		"presetSine": "Preset: only the fundamental.",
-		"presetFlute": "Preset: stylised flute spectrum.",
-		"presetClarinet": "Preset: stylised clarinet spectrum (odd harmonics only).",
-		"presetViolin": "Preset: stylised violin spectrum (all harmonics, 1/n).",
-		"presetOboe": "Preset: stylised oboe spectrum (weak fundamental).",
-		"harmonics": "Label above the eight harmonic sliders.",
-		"removeFundamental": "Button that sets the first harmonic to zero (missing-fundamental demo).",
-		"harmonicAria": "Accessible label of each harmonic slider. $1 = harmonic number.",
-		"fundamental": "Label of the fundamental frequency slider.",
-		"periods": "Left label under the graph: how many periods are shown.",
-		"timeAxis": "Centre label under the graph.",
-		"silence": "Canvas message when all harmonics are zero."
-	}
-} /* I18N_END */;
+    "fr": {
+        "_name": "Harmoniques et timbre",
+        "hint": "Même hauteur et même intensité, timbre différent : modifiez les harmoniques et écoutez",
+        "play": "Écouter",
+        "stop": "Arrêter",
+        "noAudio": "Votre navigateur ne peut pas jouer de son",
+        "showComponents": "Afficher les composantes",
+        "presets": "Préréglages",
+        "presetSine": "Sinus pur",
+        "presetFlute": "Flûte",
+        "presetClarinet": "Clarinette",
+        "presetViolin": "Violon",
+        "presetOboe": "Hautbois",
+        "harmonics": "Harmoniques (intensité)",
+        "removeFundamental": "Supprimer la fondamentale",
+        "harmonicAria": "Intensité de l'harmonique $1",
+        "fundamental": "Fréquence fondamentale",
+        "periods": "3 périodes",
+        "timeAxis": "temps →",
+        "silence": "Silence : toutes les harmoniques sont à zéro"
+    },
+    "eu": {
+        "_name": "Harmonikoak eta tinbrea",
+        "hint": "Altuera eta intentsitate bera, tinbre desberdina: aldatu harmonikoak eta entzun",
+        "play": "Entzun",
+        "stop": "Gelditu",
+        "noAudio": "Zure nabigatzaileak ezin du soinurik erreproduzitu",
+        "showComponents": "Osagaiak erakutsi",
+        "presets": "Aurrezarpenak",
+        "presetSine": "Sinu hutsa",
+        "presetFlute": "Txirula",
+        "presetClarinet": "Klarinetea",
+        "presetViolin": "Biolina",
+        "presetOboe": "Oboea",
+        "harmonics": "Harmonikoak (indarra)",
+        "removeFundamental": "Oinarrizkoa kendu",
+        "harmonicAria": "$1. harmonikoaren indarra",
+        "fundamental": "Oinarrizko maiztasuna",
+        "periods": "3 periodo",
+        "timeAxis": "denbora →",
+        "silence": "Isiltasuna: harmoniko guztiak zeroan"
+    },
+    "en": {
+        "_name": "Harmonics and timbre",
+        "hint": "Same pitch and loudness, different timbre: change the harmonics and listen",
+        "play": "Listen",
+        "stop": "Stop",
+        "noAudio": "Your browser can't play sound",
+        "showComponents": "Show components",
+        "presets": "Presets",
+        "presetSine": "Pure sine",
+        "presetFlute": "Flute",
+        "presetClarinet": "Clarinet",
+        "presetViolin": "Violin",
+        "presetOboe": "Oboe",
+        "harmonics": "Harmonics (strength)",
+        "removeFundamental": "Remove the fundamental",
+        "harmonicAria": "Strength of harmonic $1",
+        "fundamental": "Fundamental frequency",
+        "periods": "3 periods",
+        "timeAxis": "time →",
+        "silence": "Silence: every harmonic is at zero"
+    },
+    "qqq": {
+        "_name": "Name of the Harmonics module",
+        "hint": "Instruction text shown in the footer.",
+        "play": "Label of the button that starts the sound.",
+        "stop": "Label of the button that stops the sound.",
+        "noAudio": "Shown when the browser has no Web Audio support.",
+        "showComponents": "Checkbox: draw each harmonic as a faint curve under the total.",
+        "presets": "Label of the preset selector.",
+        "presetSine": "Preset: only the fundamental.",
+        "presetFlute": "Preset: stylised flute spectrum.",
+        "presetClarinet": "Preset: stylised clarinet spectrum (odd harmonics only).",
+        "presetViolin": "Preset: stylised violin spectrum (all harmonics, 1/n).",
+        "presetOboe": "Preset: stylised oboe spectrum (weak fundamental).",
+        "harmonics": "Label above the eight harmonic sliders.",
+        "removeFundamental": "Button that sets the first harmonic to zero (missing-fundamental demo).",
+        "harmonicAria": "Accessible label of each harmonic slider. $1 = harmonic number.",
+        "fundamental": "Label of the fundamental frequency slider.",
+        "periods": "Left label under the graph: how many periods are shown.",
+        "timeAxis": "Centre label under the graph.",
+        "silence": "Canvas message when all harmonics are zero."
+    },
+    "es": {
+        "_name": "Armónicos y timbre",
+        "hint": "Misma altura e intensidad, distinto timbre: cambia los armónicos y escucha",
+        "play": "Escuchar",
+        "stop": "Detener",
+        "noAudio": "Tu navegador no puede reproducir sonido",
+        "showComponents": "Mostrar componentes",
+        "presets": "Ajustes",
+        "presetSine": "Seno puro",
+        "presetFlute": "Flauta",
+        "presetClarinet": "Clarinete",
+        "presetViolin": "Violín",
+        "presetOboe": "Oboe",
+        "harmonics": "Armónicos (intensidad)",
+        "removeFundamental": "Quitar la fundamental",
+        "harmonicAria": "Intensidad del armónico $1",
+        "fundamental": "Frecuencia fundamental",
+        "periods": "3 periodos",
+        "timeAxis": "tiempo →",
+        "silence": "Silencio: todos los armónicos están a cero"
+    }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
 
-var lang = ( ( window.mw && mw.config.get( 'wgUserLanguage' ) ) || 'en' ).split( '-' )[ 0 ];
-var banana = new Banana( lang );
-banana.load( messages );
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
+    }
+    return str;
+}
 
 function t( key, params ) {
 	return banana.i18n.apply( banana, [ key ].concat( params || [] ) );

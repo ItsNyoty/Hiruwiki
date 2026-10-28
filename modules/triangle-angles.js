@@ -11,10 +11,14 @@
 
     /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
     var messages = /* I18N_START */ {
-    "lb": {
-        "labelAngleA": "Wénkel A",
-        "labelAngleB": "Wénkel B",
-        "labelAngleC": "Wénkel C",
+    "nl": {
+        "_name": "Hoeken van een driehoek",
+        "reset": "Opnieuw instellen",
+        "hint": "Sleep hoekpunten om de driehoek te wijzigen · Som van de hoeken is altijd 180°",
+        "labelAngleA": "Hoek A",
+        "labelAngleB": "Hoek B",
+        "labelAngleC": "Hoek C",
+        "labelSum": "Som",
         "formula": "A + B + C = 180°"
     },
     "fr": {
@@ -27,54 +31,14 @@
         "labelSum": "Somme",
         "formula": "A + B + C = 180°"
     },
-    "nl": {
-        "_name": "Hoeken van een driehoek",
-        "reset": "Opnieuw instellen",
-        "hint": "Sleep hoekpunten om de driehoek te wijzigen · Som van de hoeken is altijd 180°",
-        "labelAngleA": "Hoek A",
-        "labelAngleB": "Hoek B",
-        "labelAngleC": "Hoek C",
-        "labelSum": "Som",
-        "formula": "A + B + C = 180°"
-    },
-    "qqq": {
-        "_name": "Name of the Triangle Angles module",
-        "reset": "Button label to reset the triangle",
-        "hint": "Explanation about how the module is interactive",
-        "labelAngleA": "Label for angle A",
-        "labelAngleB": "Label for angle B",
-        "labelAngleC": "Label for angle C",
-        "labelSum": "Label for the sum of angles",
-        "formula": "Text showing the formula A + B + C = 180°"
-    },
-    "es": {
-        "_name": "Ángulos del triángulo",
-        "reset": "Reiniciar",
-        "hint": "Arrastra los vértices para cambiar el triángulo · La suma de los ángulos es siempre 180°",
-        "labelAngleA": "Ángulo A",
-        "labelAngleB": "Ángulo B",
-        "labelAngleC": "Ángulo C",
-        "labelSum": "Suma",
-        "formula": "A + B + C = 180°"
-    },
-    "ko": {
-        "_name": "삼각형의 각도",
-        "reset": "초기화",
-        "hint": "꼭짓점을 드래그하여 삼각형의 모양을 변경하세요. 각의 합은 항상 180°입니다.",
-        "labelAngleA": "각 A",
-        "labelAngleB": "각 B",
-        "labelAngleC": "각 C",
-        "labelSum": "총합",
-        "formula": "A + B + C = 180°"
-    },
-    "skr-arab": {
-        "_name": "مثلث دے زاویے",
-        "reset": "دوبارہ",
-        "hint": "مثلث بدلݨ کیتے سر گھسیٹو · زاویاں دا جوڑ ہمیشہ 180° ہوندے",
-        "labelAngleA": "زاویہ A",
-        "labelAngleB": "زاویہ B",
-        "labelAngleC": "زاویہ C",
-        "labelSum": "جوڑ",
+    "eu": {
+        "_name": "Hirukiaren angeluak",
+        "reset": "Berrezarri",
+        "hint": "Arrastatu erpinak hirukia aldatzeko · Angeluen batura beti 180° da",
+        "labelAngleA": "A angelua",
+        "labelAngleB": "B angelua",
+        "labelAngleC": "C angelua",
+        "labelSum": "Batura",
         "formula": "A + B + C = 180°"
     },
     "sk": {
@@ -87,17 +51,30 @@
         "labelSum": "Súčet",
         "formula": "A + B + C = 180°"
     },
-    "ca": {
-        "reset": "Reinicia"
+    "skr-arab": {
+        "_name": "مثلث دے زاویے",
+        "reset": "دوبارہ",
+        "hint": "مثلث بدلݨ کیتے سر گھسیٹو · زاویاں دا جوڑ ہمیشہ 180° ہوندے",
+        "labelAngleA": "زاویہ A",
+        "labelAngleB": "زاویہ B",
+        "labelAngleC": "زاویہ C",
+        "labelSum": "جوڑ",
+        "formula": "A + B + C = 180°"
     },
-    "ga": {
-        "_name": "Uillinneacha Triantáin",
-        "reset": "Athshocraigh",
-        "hint": "Tarraing na rinn chun an triantán a athrú · Is é suim na n-uillinneacha ná 180° i gcónaí",
-        "labelAngleA": "Uillinn A",
-        "labelAngleB": "Uillinn B",
-        "labelAngleC": "Uillinn C",
-        "labelSum": "Suim",
+    "lb": {
+        "labelAngleA": "Wénkel A",
+        "labelAngleB": "Wénkel B",
+        "labelAngleC": "Wénkel C",
+        "formula": "A + B + C = 180°"
+    },
+    "ko": {
+        "_name": "삼각형의 각도",
+        "reset": "초기화",
+        "hint": "꼭짓점을 드래그하여 삼각형의 모양을 변경하세요. 각의 합은 항상 180°입니다.",
+        "labelAngleA": "각 A",
+        "labelAngleB": "각 B",
+        "labelAngleC": "각 C",
+        "labelSum": "총합",
         "formula": "A + B + C = 180°"
     },
     "en": {
@@ -110,14 +87,37 @@
         "labelSum": "Sum",
         "formula": "A + B + C = 180°"
     },
-    "eu": {
-        "_name": "Hirukiaren angeluak",
-        "reset": "Berrezarri",
-        "hint": "Arrastatu erpinak hirukia aldatzeko · Angeluen batura beti 180° da",
-        "labelAngleA": "A angelua",
-        "labelAngleB": "B angelua",
-        "labelAngleC": "C angelua",
-        "labelSum": "Batura",
+    "ca": {
+        "reset": "Reinicia"
+    },
+    "qqq": {
+        "_name": "Name of the Triangle Angles module",
+        "reset": "Button label to reset the triangle",
+        "hint": "Explanation about how the module is interactive",
+        "labelAngleA": "Label for angle A",
+        "labelAngleB": "Label for angle B",
+        "labelAngleC": "Label for angle C",
+        "labelSum": "Label for the sum of angles",
+        "formula": "Text showing the formula A + B + C = 180°"
+    },
+    "ga": {
+        "_name": "Uillinneacha Triantáin",
+        "reset": "Athshocraigh",
+        "hint": "Tarraing na rinn chun an triantán a athrú · Is é suim na n-uillinneacha ná 180° i gcónaí",
+        "labelAngleA": "Uillinn A",
+        "labelAngleB": "Uillinn B",
+        "labelAngleC": "Uillinn C",
+        "labelSum": "Suim",
+        "formula": "A + B + C = 180°"
+    },
+    "es": {
+        "_name": "Ángulos del triángulo",
+        "reset": "Reiniciar",
+        "hint": "Arrastra los vértices para cambiar el triángulo · La suma de los ángulos es siempre 180°",
+        "labelAngleA": "Ángulo A",
+        "labelAngleB": "Ángulo B",
+        "labelAngleC": "Ángulo C",
+        "labelSum": "Suma",
         "formula": "A + B + C = 180°"
     },
     "mk": {

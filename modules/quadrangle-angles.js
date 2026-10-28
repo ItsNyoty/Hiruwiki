@@ -10,14 +10,6 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "fr": {
-        "_name": "Angles du quadrilatère",
-        "interiorAngles": "Angles intérieurs",
-        "reset": "Réinitialiser",
-        "sum": "Somme",
-        "total": "Total",
-        "hint": "Faites glisser les sommets pour voir la somme des angles intérieurs."
-    },
     "nl": {
         "_name": "Hoeken van een vierhoek",
         "interiorAngles": "Binnenhoeken",
@@ -26,21 +18,13 @@ var messages = /* I18N_START */ {
         "total": "Totaal",
         "hint": "Sleep de hoekpunten om de som van de binnenhoeken te zien"
     },
-    "qqq": {
-        "_name": "Name of the Quadrangle Angles module",
-        "interiorAngles": "Heading for the interior angles section",
-        "reset": "Button label to reset the visualisation",
-        "sum": "Label for the sum of angles",
-        "total": "Label for the total sum of interior angles",
-        "hint": "Instruction text for the quadrangle angle interaction"
-    },
-    "es": {
-        "_name": "Ángulos del cuadrilátero",
-        "interiorAngles": "Ángulos interiores",
-        "reset": "Reiniciar",
-        "sum": "Suma",
+    "fr": {
+        "_name": "Angles du quadrilatère",
+        "interiorAngles": "Angles intérieurs",
+        "reset": "Réinitialiser",
+        "sum": "Somme",
         "total": "Total",
-        "hint": "Arrastra los vértices para ver la suma de los ángulos interiores"
+        "hint": "Faites glisser les sommets pour voir la somme des angles intérieurs."
     },
     "tr": {
         "_name": "Dörtgen Açıları",
@@ -50,21 +34,13 @@ var messages = /* I18N_START */ {
         "total": "Toplam",
         "hint": "Köşeleri sürükleyerek iç açıların toplamını görün."
     },
-    "ko": {
-        "_name": "사각형의 각도",
-        "interiorAngles": "내부 각들",
-        "reset": "초기화",
-        "sum": "총합",
-        "total": "합계",
-        "hint": "꼭짓점을 드래그하여 내각의 합을 확인하세요."
-    },
-    "skr-arab": {
-        "_name": "چوکور زاویے",
-        "interiorAngles": "اندرونی زاوے",
-        "reset": "↺ دوبارہ",
-        "sum": "مجموعہ",
-        "total": "کل",
-        "hint": "اندرونی زاویاں دا مجموعہ ویکھݨ کیتے سراں کوں گھسیٹو"
+    "eu": {
+        "_name": "Koadrilateroaren angeluak",
+        "interiorAngles": "Barne angeluak",
+        "reset": "Berrezarri",
+        "sum": "Batuketa",
+        "total": "Guztira",
+        "hint": "Arrastatu erpinak barne-angeluen batura ikusteko"
     },
     "sk": {
         "_name": "Uhly štvoruholníka",
@@ -74,19 +50,21 @@ var messages = /* I18N_START */ {
         "total": "Spolu",
         "hint": "Potiahnutím vrcholov uvidíte súčet vnútorných uhlov"
     },
-    "ca": {
-        "interiorAngles": "Angles interiors",
-        "reset": "Reinicia",
-        "sum": "Suma",
-        "total": "Total"
+    "skr-arab": {
+        "_name": "چوکور زاویے",
+        "interiorAngles": "اندرونی زاوے",
+        "reset": "↺ دوبارہ",
+        "sum": "مجموعہ",
+        "total": "کل",
+        "hint": "اندرونی زاویاں دا مجموعہ ویکھݨ کیتے سراں کوں گھسیٹو"
     },
-    "ga": {
-        "_name": "Uillinneacha Ceathairshleasacha",
-        "interiorAngles": "Uillinneacha inmheánacha",
-        "reset": "Athshocraigh",
-        "sum": "Suim",
-        "total": "Iomlán",
-        "hint": "Tarraing buaicphointí chun suim na n-uillinneacha inmheánacha a fheiceáil"
+    "ko": {
+        "_name": "사각형의 각도",
+        "interiorAngles": "내부 각들",
+        "reset": "초기화",
+        "sum": "총합",
+        "total": "합계",
+        "hint": "꼭짓점을 드래그하여 내각의 합을 확인하세요."
     },
     "en": {
         "_name": "Quadrangle Angles",
@@ -96,13 +74,35 @@ var messages = /* I18N_START */ {
         "total": "Total",
         "hint": "Drag vertices to see the sum of interior angles"
     },
-    "eu": {
-        "_name": "Koadrilateroaren angeluak",
-        "interiorAngles": "Barne angeluak",
-        "reset": "Berrezarri",
-        "sum": "Batuketa",
-        "total": "Guztira",
-        "hint": "Arrastatu erpinak barne-angeluen batura ikusteko"
+    "ca": {
+        "interiorAngles": "Angles interiors",
+        "reset": "Reinicia",
+        "sum": "Suma",
+        "total": "Total"
+    },
+    "qqq": {
+        "_name": "Name of the Quadrangle Angles module",
+        "interiorAngles": "Heading for the interior angles section",
+        "reset": "Button label to reset the visualisation",
+        "sum": "Label for the sum of angles",
+        "total": "Label for the total sum of interior angles",
+        "hint": "Instruction text for the quadrangle angle interaction"
+    },
+    "ga": {
+        "_name": "Uillinneacha Ceathairshleasacha",
+        "interiorAngles": "Uillinneacha inmheánacha",
+        "reset": "Athshocraigh",
+        "sum": "Suim",
+        "total": "Iomlán",
+        "hint": "Tarraing buaicphointí chun suim na n-uillinneacha inmheánacha a fheiceáil"
+    },
+    "es": {
+        "_name": "Ángulos del cuadrilátero",
+        "interiorAngles": "Ángulos interiores",
+        "reset": "Reiniciar",
+        "sum": "Suma",
+        "total": "Total",
+        "hint": "Arrastra los vértices para ver la suma de los ángulos interiores"
     },
     "mk": {
         "_name": "Агли на четириаголник",

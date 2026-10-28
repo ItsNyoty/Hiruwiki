@@ -40,106 +40,116 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-	"en": {
-		"_name": "Echo and reverberation",
-		"hint": "The ear needs about 0.1 s between two sounds to tell them apart: the wall must be more than 17 m away to hear an echo",
-		"clap": "Clap",
-		"noAudio": "Your browser can't play sound",
-		"note": "Sound and wave in real time",
-		"distance": "Distance to the wall",
-		"delay": "Echo delay",
-		"heard": "What you hear",
-		"echo": "Echo: two sounds",
-		"reverb": "Reverberation: one longer sound",
-		"person": "you",
-		"wall": "wall",
-		"timeAxis": "time (ms)",
-		"fusion": "fused by the ear",
-		"direct": "clap",
-		"reflected": "echo",
-		"canvasLabel": "A person in front of a wall, and a timeline with the clap and its echo."
-	},
-	"es": {
-		"_name": "Eco y reverberación",
-		"hint": "El oído necesita unos 0,1 s entre dos sonidos para distinguirlos: la pared debe estar a más de 17 m para oír eco",
-		"clap": "Dar una palmada",
-		"noAudio": "Tu navegador no puede reproducir sonido",
-		"note": "Sonido y onda en tiempo real",
-		"distance": "Distancia a la pared",
-		"delay": "Retraso del eco",
-		"heard": "Lo que oyes",
-		"echo": "Eco: dos sonidos",
-		"reverb": "Reverberación: un sonido más largo",
-		"person": "tú",
-		"wall": "pared",
-		"timeAxis": "tiempo (ms)",
-		"fusion": "el oído los une",
-		"direct": "palmada",
-		"reflected": "eco",
-		"canvasLabel": "Una persona frente a una pared y una línea de tiempo con la palmada y su eco."
-	},
-	"eu": {
-		"_name": "Oihartzuna eta erreberberazioa",
-		"hint": "Belarriak 0,1 s inguru behar ditu bi soinu bereizteko: horma 17 m baino urrunago egon behar da oihartzuna entzuteko",
-		"clap": "Txalo egin",
-		"noAudio": "Zure nabigatzaileak ezin du soinurik erreproduzitu",
-		"note": "Soinua eta uhina denbora errealean",
-		"distance": "Hormarainoko distantzia",
-		"delay": "Oihartzunaren atzerapena",
-		"heard": "Entzuten duzuna",
-		"echo": "Oihartzuna: bi soinu",
-		"reverb": "Erreberberazioa: soinu luzeago bat",
-		"person": "zu",
-		"wall": "horma",
-		"timeAxis": "denbora (ms)",
-		"fusion": "belarriak batzen ditu",
-		"direct": "txaloa",
-		"reflected": "oihartzuna",
-		"canvasLabel": "Pertsona bat horma baten aurrean, eta denbora-lerro bat txaloarekin eta haren oihartzunarekin."
-	},
-	"fr": {
-		"_name": "Écho et réverbération",
-		"hint": "L'oreille a besoin d'environ 0,1 s entre deux sons pour les distinguer : le mur doit être à plus de 17 m pour entendre un écho",
-		"clap": "Taper dans les mains",
-		"noAudio": "Votre navigateur ne peut pas jouer de son",
-		"note": "Son et onde en temps réel",
-		"distance": "Distance au mur",
-		"delay": "Retard de l'écho",
-		"heard": "Ce que vous entendez",
-		"echo": "Écho : deux sons",
-		"reverb": "Réverbération : un son plus long",
-		"person": "vous",
-		"wall": "mur",
-		"timeAxis": "temps (ms)",
-		"fusion": "fusionnés par l'oreille",
-		"direct": "claquement",
-		"reflected": "écho",
-		"canvasLabel": "Une personne devant un mur, et une ligne de temps avec le claquement et son écho."
-	},
-	"qqq": {
-		"_name": "Name of the Echo module",
-		"hint": "Instruction text shown in the footer. Explains the 0.1 s / 17 m threshold.",
-		"clap": "Button that plays a hand clap and its echo, and starts the animation.",
-		"noAudio": "Shown when the browser has no Web Audio support.",
-		"note": "Note above the canvas: the sound and the drawn wave both run in real time.",
-		"distance": "Label of the wall distance slider.",
-		"delay": "Stat card: time between the clap and its echo.",
-		"heard": "Stat card: whether the reflection is heard as an echo or as reverberation.",
-		"echo": "Stat value when the delay is 0.1 s or more.",
-		"reverb": "Stat value when the delay is under 0.1 s.",
-		"person": "Canvas label under the person who claps (addressing the reader).",
-		"wall": "Canvas label under the wall.",
-		"timeAxis": "Label of the timeline's horizontal axis.",
-		"fusion": "Label of the shaded first 0.1 s on the timeline, where two sounds merge.",
-		"direct": "Timeline label of the original clap.",
-		"reflected": "Timeline label of the reflected sound.",
-		"canvasLabel": "Accessible label of the canvas."
-	}
-} /* I18N_END */;
+    "fr": {
+        "_name": "Écho et réverbération",
+        "hint": "L'oreille a besoin d'environ 0,1 s entre deux sons pour les distinguer : le mur doit être à plus de 17 m pour entendre un écho",
+        "clap": "Taper dans les mains",
+        "noAudio": "Votre navigateur ne peut pas jouer de son",
+        "note": "Son et onde en temps réel",
+        "distance": "Distance au mur",
+        "delay": "Retard de l'écho",
+        "heard": "Ce que vous entendez",
+        "echo": "Écho : deux sons",
+        "reverb": "Réverbération : un son plus long",
+        "person": "vous",
+        "wall": "mur",
+        "timeAxis": "temps (ms)",
+        "fusion": "fusionnés par l'oreille",
+        "direct": "claquement",
+        "reflected": "écho",
+        "canvasLabel": "Une personne devant un mur, et une ligne de temps avec le claquement et son écho."
+    },
+    "eu": {
+        "_name": "Oihartzuna eta erreberberazioa",
+        "hint": "Belarriak 0,1 s inguru behar ditu bi soinu bereizteko: horma 17 m baino urrunago egon behar da oihartzuna entzuteko",
+        "clap": "Txalo egin",
+        "noAudio": "Zure nabigatzaileak ezin du soinurik erreproduzitu",
+        "note": "Soinua eta uhina denbora errealean",
+        "distance": "Hormarainoko distantzia",
+        "delay": "Oihartzunaren atzerapena",
+        "heard": "Entzuten duzuna",
+        "echo": "Oihartzuna: bi soinu",
+        "reverb": "Erreberberazioa: soinu luzeago bat",
+        "person": "zu",
+        "wall": "horma",
+        "timeAxis": "denbora (ms)",
+        "fusion": "belarriak batzen ditu",
+        "direct": "txaloa",
+        "reflected": "oihartzuna",
+        "canvasLabel": "Pertsona bat horma baten aurrean, eta denbora-lerro bat txaloarekin eta haren oihartzunarekin."
+    },
+    "en": {
+        "_name": "Echo and reverberation",
+        "hint": "The ear needs about 0.1 s between two sounds to tell them apart: the wall must be more than 17 m away to hear an echo",
+        "clap": "Clap",
+        "noAudio": "Your browser can't play sound",
+        "note": "Sound and wave in real time",
+        "distance": "Distance to the wall",
+        "delay": "Echo delay",
+        "heard": "What you hear",
+        "echo": "Echo: two sounds",
+        "reverb": "Reverberation: one longer sound",
+        "person": "you",
+        "wall": "wall",
+        "timeAxis": "time (ms)",
+        "fusion": "fused by the ear",
+        "direct": "clap",
+        "reflected": "echo",
+        "canvasLabel": "A person in front of a wall, and a timeline with the clap and its echo."
+    },
+    "qqq": {
+        "_name": "Name of the Echo module",
+        "hint": "Instruction text shown in the footer. Explains the 0.1 s / 17 m threshold.",
+        "clap": "Button that plays a hand clap and its echo, and starts the animation.",
+        "noAudio": "Shown when the browser has no Web Audio support.",
+        "note": "Note above the canvas: the sound and the drawn wave both run in real time.",
+        "distance": "Label of the wall distance slider.",
+        "delay": "Stat card: time between the clap and its echo.",
+        "heard": "Stat card: whether the reflection is heard as an echo or as reverberation.",
+        "echo": "Stat value when the delay is 0.1 s or more.",
+        "reverb": "Stat value when the delay is under 0.1 s.",
+        "person": "Canvas label under the person who claps (addressing the reader).",
+        "wall": "Canvas label under the wall.",
+        "timeAxis": "Label of the timeline's horizontal axis.",
+        "fusion": "Label of the shaded first 0.1 s on the timeline, where two sounds merge.",
+        "direct": "Timeline label of the original clap.",
+        "reflected": "Timeline label of the reflected sound.",
+        "canvasLabel": "Accessible label of the canvas."
+    },
+    "es": {
+        "_name": "Eco y reverberación",
+        "hint": "El oído necesita unos 0,1 s entre dos sonidos para distinguirlos: la pared debe estar a más de 17 m para oír eco",
+        "clap": "Dar una palmada",
+        "noAudio": "Tu navegador no puede reproducir sonido",
+        "note": "Sonido y onda en tiempo real",
+        "distance": "Distancia a la pared",
+        "delay": "Retraso del eco",
+        "heard": "Lo que oyes",
+        "echo": "Eco: dos sonidos",
+        "reverb": "Reverberación: un sonido más largo",
+        "person": "tú",
+        "wall": "pared",
+        "timeAxis": "tiempo (ms)",
+        "fusion": "el oído los une",
+        "direct": "palmada",
+        "reflected": "eco",
+        "canvasLabel": "Una persona frente a una pared y una línea de tiempo con la palmada y su eco."
+    }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
 
-var lang = ( ( window.mw && mw.config.get( 'wgUserLanguage' ) ) || 'en' ).split( '-' )[ 0 ];
-var banana = new Banana( lang );
-banana.load( messages );
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
+    }
+    return str;
+}
 
 function t( key, params ) {
 	return banana.i18n.apply( banana, [ key ].concat( params || [] ) );

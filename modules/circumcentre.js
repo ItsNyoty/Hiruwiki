@@ -17,53 +17,53 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "fr": {
-        "_name": "Circoncentre",
-        "hint": "Tirez n'importe quel sommet pour explorer le circoncentre"
-    },
     "nl": {
         "_name": "Middelpunt omgeschreven cirkel",
         "hint": "Sleep een hoekpunt om het middelpunt van de omgeschreven cirkel te verkennen"
     },
-    "qqq": {
-        "_name": "Name of the circumcentre module",
-        "hint": "Instruction text shown in the footer."
-    },
-    "es": {
-        "_name": "Circuncentro",
-        "hint": "Arrastra un vértice para explorar el circuncentro"
+    "fr": {
+        "_name": "Circoncentre",
+        "hint": "Tirez n'importe quel sommet pour explorer le circoncentre"
     },
     "tr": {
         "_name": "Çevre merkezi",
         "hint": "Herhangi bir köşeyi sürükleyin · Ölçek: 1 cm = 40 px"
     },
-    "ko": {
-        "_name": "외심",
-        "hint": "꼭짓점을 드래그해서 외심을 탐구하세요"
-    },
-    "skr-arab": {
-        "_name": "گرد مرکز",
-        "hint": "گرد مرکز کوں کھوجݨ کیتے کہیں وی سرے کوں گھسیٹو"
+    "eu": {
+        "_name": "Zirkunzentroa",
+        "hint": "Erpinak mugitu ditzakezu zirkunzentroa ikusteko"
     },
     "sk": {
         "_name": "Stred opísanej kružnice",
         "hint": "Potiahnutím ľubovoľného vrcholu preskúmate stred opísanej kružnice"
     },
-    "ga": {
-        "_name": "Lár-imlíne",
-        "hint": "Tarraing aon bhuaicphointe chun an t-imlár a iniúchadh"
+    "skr-arab": {
+        "_name": "گرد مرکز",
+        "hint": "گرد مرکز کوں کھوجݨ کیتے کہیں وی سرے کوں گھسیٹو"
+    },
+    "ko": {
+        "_name": "외심",
+        "hint": "꼭짓점을 드래그해서 외심을 탐구하세요"
     },
     "en": {
         "_name": "Circumcentre",
         "hint": "Drag any vertex to explore the circumcentre"
     },
-    "eu": {
-        "_name": "Zirkunzentroa",
-        "hint": "Erpinak mugitu ditzakezu zirkunzentroa ikusteko"
-    },
     "it": {
         "_name": "Circumcentro",
         "hint": "Trascina un vertice qualsiasi per esplorare il circocentro"
+    },
+    "qqq": {
+        "_name": "Name of the circumcentre module",
+        "hint": "Instruction text shown in the footer."
+    },
+    "ga": {
+        "_name": "Lár-imlíne",
+        "hint": "Tarraing aon bhuaicphointe chun an t-imlár a iniúchadh"
+    },
+    "es": {
+        "_name": "Circuncentro",
+        "hint": "Arrastra un vértice para explorar el circuncentro"
     },
     "mk": {
         "_name": "Центар на опишана кружница",

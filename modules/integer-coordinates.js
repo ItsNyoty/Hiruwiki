@@ -4,9 +4,20 @@
   
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "lb": {
-        "_name": "Ganzzueleg Koordinaten",
-        "pointLabel": "Punkt:"
+    "nl": {
+        "_name": "Integercoördinaten",
+        "btnChallenge": "🎯 Uitdaging",
+        "btnCheck": "Controleren ✓",
+        "btnExplore": "🔭 Verkennen",
+        "btnNext": "Volgende →",
+        "feedbackCorrect": "✓ Klopt!",
+        "feedbackWrong": "✗ Onjuist. De zwakke ster was het juiste antwoord.",
+        "hintChallenge": "Verplaats ★ naar de voorgestelde coördinaten en klik op Controleren",
+        "hintExplore": "Verplaats ★ door erop te klikken — springt naar hele getallen",
+        "movePrompt": "Verplaats ★ naar:<br>($1, $2)",
+        "pointLabel": "Punt:",
+        "titleExplore": "Verken het coördinatensysteem",
+        "hint": "Verplaats de ster om de coördinaten te verkennen"
     },
     "fr": {
         "_name": "Coordonnées entières",
@@ -23,80 +34,20 @@ var messages = /* I18N_START */ {
         "titleExplore": "Explorer le système de coordonnées",
         "hint": "Déplacez l'étoile pour explorer les coordonnées"
     },
-    "nl": {
-        "_name": "Integercoördinaten",
-        "btnChallenge": "🎯 Uitdaging",
-        "btnCheck": "Controleren ✓",
-        "btnExplore": "🔭 Verkennen",
-        "btnNext": "Volgende →",
-        "feedbackCorrect": "✓ Klopt!",
-        "feedbackWrong": "✗ Onjuist. De zwakke ster was het juiste antwoord.",
-        "hintChallenge": "Verplaats ★ naar de voorgestelde coördinaten en klik op Controleren",
-        "hintExplore": "Verplaats ★ door erop te klikken — springt naar hele getallen",
-        "movePrompt": "Verplaats ★ naar:<br>($1, $2)",
-        "pointLabel": "Punt:",
-        "titleExplore": "Verken het coördinatensysteem",
-        "hint": "Verplaats de ster om de coördinaten te verkennen"
-    },
-    "qqq": {
-        "_name": "Name of the Positive Coordinates module (integer grid variant)",
-        "btnChallenge": "Button label to switch to challenge mode",
-        "btnCheck": "Button label to check the player's answer",
-        "btnExplore": "Button label to switch to explore mode",
-        "btnNext": "Button label to proceed to the next challenge",
-        "feedbackCorrect": "Feedback shown when the player places the star correctly",
-        "feedbackWrong": "Feedback shown when the player places the star incorrectly",
-        "hintChallenge": "Instruction text shown in challenge mode",
-        "hintExplore": "Instruction text shown in explore mode",
-        "movePrompt": "Prompt telling the player where to move the star. Uses HTML. Parameters: $1 = target X coordinate, $2 = target Y coordinate.",
-        "pointLabel": "Label for the current point coordinates. Followed by coordinate values.",
-        "titleExplore": "Title shown in explore mode",
-        "hint": "Instruction text for the coordinate system interaction"
-    },
-    "es": {
-        "_name": "Coordenadas positivas",
-        "btnChallenge": "🎯 Reto",
-        "btnCheck": "Comprobar ✓",
-        "btnExplore": "🔭 Explorar",
-        "btnNext": "Siguiente →",
-        "feedbackCorrect": "✓ ¡Correcto!",
-        "feedbackWrong": "✗ Incorrecto. La estrella tenue era la respuesta correcta.",
-        "hintChallenge": "Mueve ★ a las coordenadas propuestas y pulsa Comprobar",
-        "hintExplore": "Mueve ★ haciendo clic en él — se ajusta a enteros",
-        "movePrompt": "Mueve ★ a:<br>($1, $2)",
-        "pointLabel": "Punto:",
-        "titleExplore": "Explorar el sistema de coordenadas",
-        "hint": "Mueve la estrella para explorar las coordenadas"
-    },
-    "ko": {
-        "_name": "정수 좌표",
-        "btnChallenge": "🎯 도전",
-        "btnCheck": "확인 ✓",
-        "btnExplore": "🔭 탐색",
-        "btnNext": "다음 →",
-        "feedbackCorrect": "✓ 정답입니다!",
-        "feedbackWrong": "✗ 틀렸습니다. 희미한 별이 정답입니다.",
-        "hintChallenge": "★ 표시를 제시된 좌표로 이동한 후 확인을 클릭하세요",
-        "hintExplore": "★를 클릭하여 이동하세요. 정수 위치에 맞춰집니다",
-        "movePrompt": "★을 다음으로 이동:<br>($1, $2)",
-        "pointLabel": "점수:",
-        "titleExplore": "좌표계를 탐색하세요",
-        "hint": "별을 움직여 좌표를 탐색하세요"
-    },
-    "skr-arab": {
-        "_name": "صحیح مختصات",
-        "btnChallenge": "🎯 چیلنج",
-        "btnCheck": "چیک کرو ✓",
-        "btnExplore": "🔭 کھوج",
-        "btnNext": "اڳلا ←",
-        "feedbackCorrect": "✓ ٹھیک!",
-        "feedbackWrong": "✗ غلط۔ مدھم ستارا ٹھیک جواب ہا۔",
-        "hintChallenge": "★ کوں مجوزہ مختصات تے گھن ونجو تے چیک دباؤ",
-        "hintExplore": "★ تے کلک کر کے اونکوں ہلاو — اوہ صحیح اعداد تے ٹک ویندے",
-        "movePrompt": "★ کوں اتھاں گھن ونجو:<br>($1, $2)",
-        "pointLabel": "نقطہ:",
-        "titleExplore": "مختصاتی نظام دی کھوج",
-        "hint": "ستارے کوں ہلا کے مختصات دی کھوج کرو"
+    "eu": {
+        "_name": "Koordenatu positiboak",
+        "btnChallenge": "🎯 Erronka",
+        "btnCheck": "Zuzendu ✓",
+        "btnExplore": "🔭 Esploratu",
+        "btnNext": "Hurrengoa →",
+        "feedbackCorrect": "✓ Zuzen!",
+        "feedbackWrong": "✗ Ez da zuzena. Izar ahula zen erantzun zuzena.",
+        "hintChallenge": "Mugi ezazu ★ proposatutako koordenatuetara eta klik egin Zuzendu botoian",
+        "hintExplore": "Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen ditu",
+        "movePrompt": "Mugitu ★ hona:<br>($1, $2)",
+        "pointLabel": "Puntua:",
+        "titleExplore": "Esploratu koordenatuen sistema",
+        "hint": "Mugitu izarra koordenatuak aztertzeko"
     },
     "sk": {
         "_name": "Celočíselné súradnice",
@@ -113,24 +64,39 @@ var messages = /* I18N_START */ {
         "titleExplore": "Skúmať súradnicovú sústavu",
         "hint": "Presúvaním hviezdy skúmajte súradnice"
     },
-    "ca": {
-        "btnNext": "Endavant →",
-        "feedbackCorrect": "✓ Correcte!"
+    "skr-arab": {
+        "_name": "صحیح مختصات",
+        "btnChallenge": "🎯 چیلنج",
+        "btnCheck": "چیک کرو ✓",
+        "btnExplore": "🔭 کھوج",
+        "btnNext": "اڳلا ←",
+        "feedbackCorrect": "✓ ٹھیک!",
+        "feedbackWrong": "✗ غلط۔ مدھم ستارا ٹھیک جواب ہا۔",
+        "hintChallenge": "★ کوں مجوزہ مختصات تے گھن ونجو تے چیک دباؤ",
+        "hintExplore": "★ تے کلک کر کے اونکوں ہلاو — اوہ صحیح اعداد تے ٹک ویندے",
+        "movePrompt": "★ کوں اتھاں گھن ونجو:<br>($1, $2)",
+        "pointLabel": "نقطہ:",
+        "titleExplore": "مختصاتی نظام دی کھوج",
+        "hint": "ستارے کوں ہلا کے مختصات دی کھوج کرو"
     },
-    "ga": {
-        "_name": "Comhordanáidí Slánuimhreacha",
-        "btnChallenge": "🎯 Dúshlán",
-        "btnCheck": "Seiceáil ✓",
-        "btnExplore": "🔭 Taiscéal",
-        "btnNext": "Ar Aghaidh →",
-        "feedbackCorrect": "✓ Ceart!",
-        "feedbackWrong": "✗ Mícheart. Ba é an réalta lag an freagra ceart.",
-        "hintChallenge": "Bog ★ go dtí na comhordanáidí atá beartaithe agus cliceáil Seiceáil",
-        "hintExplore": "Bog ★ trí chliceáil air — snapálann sé chuig slánuimhreacha",
-        "movePrompt": "Bog ★ go:<br>($1, $2)",
-        "pointLabel": "Pointe:",
-        "titleExplore": "Iniúchadh a dhéanamh ar an gCóras Comhordanáidí",
-        "hint": "Bog an réalta chun comhordanáidí a iniúchadh"
+    "lb": {
+        "_name": "Ganzzueleg Koordinaten",
+        "pointLabel": "Punkt:"
+    },
+    "ko": {
+        "_name": "정수 좌표",
+        "btnChallenge": "🎯 도전",
+        "btnCheck": "확인 ✓",
+        "btnExplore": "🔭 탐색",
+        "btnNext": "다음 →",
+        "feedbackCorrect": "✓ 정답입니다!",
+        "feedbackWrong": "✗ 틀렸습니다. 희미한 별이 정답입니다.",
+        "hintChallenge": "★ 표시를 제시된 좌표로 이동한 후 확인을 클릭하세요",
+        "hintExplore": "★를 클릭하여 이동하세요. 정수 위치에 맞춰집니다",
+        "movePrompt": "★을 다음으로 이동:<br>($1, $2)",
+        "pointLabel": "점수:",
+        "titleExplore": "좌표계를 탐색하세요",
+        "hint": "별을 움직여 좌표를 탐색하세요"
     },
     "en": {
         "_name": "Integer Coordinates",
@@ -147,26 +113,60 @@ var messages = /* I18N_START */ {
         "titleExplore": "Explore Coordinate System",
         "hint": "Move the star to explore coordinates"
     },
-    "eu": {
-        "_name": "Koordenatu positiboak",
-        "btnChallenge": "🎯 Erronka",
-        "btnCheck": "Zuzendu ✓",
-        "btnExplore": "🔭 Esploratu",
-        "btnNext": "Hurrengoa →",
-        "feedbackCorrect": "✓ Zuzen!",
-        "feedbackWrong": "✗ Ez da zuzena. Izar ahula zen erantzun zuzena.",
-        "hintChallenge": "Mugi ezazu ★ proposatutako koordenatuetara eta klik egin Zuzendu botoian",
-        "hintExplore": "Mugi ezazu ★ bere gainean klik eginez — zenbaki arruntak erabiltzen ditu",
-        "movePrompt": "Mugitu ★ hona:<br>($1, $2)",
-        "pointLabel": "Puntua:",
-        "titleExplore": "Esploratu koordenatuen sistema",
-        "hint": "Mugitu izarra koordenatuak aztertzeko"
-    },
     "it": {
         "_name": "Coordinate intere",
         "btnNext": "Successivo →",
         "feedbackCorrect": "✓ Corretto!",
         "pointLabel": "Punto:"
+    },
+    "ca": {
+        "btnNext": "Endavant →",
+        "feedbackCorrect": "✓ Correcte!"
+    },
+    "qqq": {
+        "_name": "Name of the Positive Coordinates module (integer grid variant)",
+        "btnChallenge": "Button label to switch to challenge mode",
+        "btnCheck": "Button label to check the player's answer",
+        "btnExplore": "Button label to switch to explore mode",
+        "btnNext": "Button label to proceed to the next challenge",
+        "feedbackCorrect": "Feedback shown when the player places the star correctly",
+        "feedbackWrong": "Feedback shown when the player places the star incorrectly",
+        "hintChallenge": "Instruction text shown in challenge mode",
+        "hintExplore": "Instruction text shown in explore mode",
+        "movePrompt": "Prompt telling the player where to move the star. Uses HTML. Parameters: $1 = target X coordinate, $2 = target Y coordinate.",
+        "pointLabel": "Label for the current point coordinates. Followed by coordinate values.",
+        "titleExplore": "Title shown in explore mode",
+        "hint": "Instruction text for the coordinate system interaction"
+    },
+    "ga": {
+        "_name": "Comhordanáidí Slánuimhreacha",
+        "btnChallenge": "🎯 Dúshlán",
+        "btnCheck": "Seiceáil ✓",
+        "btnExplore": "🔭 Taiscéal",
+        "btnNext": "Ar Aghaidh →",
+        "feedbackCorrect": "✓ Ceart!",
+        "feedbackWrong": "✗ Mícheart. Ba é an réalta lag an freagra ceart.",
+        "hintChallenge": "Bog ★ go dtí na comhordanáidí atá beartaithe agus cliceáil Seiceáil",
+        "hintExplore": "Bog ★ trí chliceáil air — snapálann sé chuig slánuimhreacha",
+        "movePrompt": "Bog ★ go:<br>($1, $2)",
+        "pointLabel": "Pointe:",
+        "titleExplore": "Iniúchadh a dhéanamh ar an gCóras Comhordanáidí",
+        "hint": "Bog an réalta chun comhordanáidí a iniúchadh"
+    },
+    "es": {
+        "_name": "Coordenadas positivas",
+        "btnChallenge": "🎯 Reto",
+        "btnCheck": "Comprobar ✓",
+        "btnExplore": "🔭 Explorar",
+        "btnNext": "Siguiente →",
+        "feedbackCorrect": "✓ ¡Correcto!",
+        "feedbackWrong": "✗ Incorrecto. La estrella tenue era la respuesta correcta.",
+        "hintChallenge": "Mueve ★ a las coordenadas propuestas y pulsa Comprobar",
+        "hintExplore": "Mueve ★ haciendo clic en él — se ajusta a enteros",
+        "movePrompt": "Mueve ★ a:<br>($1, $2)",
+        "pointLabel": "Punto:",
+        "titleExplore": "Explorar el sistema de coordenadas",
+        "hint": "Mueve la estrella para explorar las coordenadas"
     },
     "mk": {
         "_name": "Целобројни координати",

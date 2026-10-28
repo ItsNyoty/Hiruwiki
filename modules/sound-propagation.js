@@ -34,116 +34,126 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-	"en": {
-		"_name": "Sound propagation",
-		"hint": "The highlighted particle doesn't move forward: it vibrates in place. What travels is the wave.",
-		"pause": "Pause",
-		"resume": "Resume",
-		"slowNote": "Animation slowed down 500× (equally in every medium)",
-		"medium": "Medium",
-		"air": "Air",
-		"water": "Water",
-		"steel": "Steel",
-		"frequency": "Frequency",
-		"temperature": "Air temperature",
-		"speed": "Speed of sound",
-		"wavelength": "Wavelength (λ = v / f)",
-		"time100": "Time to travel 100 m",
-		"distanceAxis": "distance →",
-		"particles": "particles",
-		"pressure": "pressure",
-		"compression": "compression",
-		"rarefaction": "rarefaction"
-	},
-	"es": {
-		"_name": "Propagación del sonido",
-		"hint": "La partícula resaltada no avanza: vibra en su sitio. Lo que viaja es la onda.",
-		"pause": "Pausar",
-		"resume": "Continuar",
-		"slowNote": "Animación ralentizada 500 veces (igual en todos los medios)",
-		"medium": "Medio",
-		"air": "Aire",
-		"water": "Agua",
-		"steel": "Acero",
-		"frequency": "Frecuencia",
-		"temperature": "Temperatura del aire",
-		"speed": "Velocidad del sonido",
-		"wavelength": "Longitud de onda (λ = v / f)",
-		"time100": "Tiempo para recorrer 100 m",
-		"distanceAxis": "distancia →",
-		"particles": "partículas",
-		"pressure": "presión",
-		"compression": "compresión",
-		"rarefaction": "rarefacción"
-	},
-	"eu": {
-		"_name": "Soinuaren hedapena",
-		"hint": "Nabarmendutako partikula ez da aurrera joaten: bere lekuan dardaratzen da. Uhina da hedatzen dena.",
-		"pause": "Pausatu",
-		"resume": "Jarraitu",
-		"slowNote": "Animazioa 500 aldiz moteldua (ingurune guztietan berdin)",
-		"medium": "Ingurunea",
-		"air": "Airea",
-		"water": "Ura",
-		"steel": "Altzairua",
-		"frequency": "Maiztasuna",
-		"temperature": "Airearen tenperatura",
-		"speed": "Soinuaren abiadura",
-		"wavelength": "Uhin-luzera (λ = v / f)",
-		"time100": "100 m egiteko denbora",
-		"distanceAxis": "distantzia →",
-		"particles": "partikulak",
-		"pressure": "presioa",
-		"compression": "konpresioa",
-		"rarefaction": "enrarezimendua"
-	},
-	"fr": {
-		"_name": "Propagation du son",
-		"hint": "La particule mise en évidence n'avance pas : elle vibre sur place. C'est l'onde qui se propage.",
-		"pause": "Pause",
-		"resume": "Reprendre",
-		"slowNote": "Animation ralentie 500 fois (de la même façon dans tous les milieux)",
-		"medium": "Milieu",
-		"air": "Air",
-		"water": "Eau",
-		"steel": "Acier",
-		"frequency": "Fréquence",
-		"temperature": "Température de l'air",
-		"speed": "Vitesse du son",
-		"wavelength": "Longueur d'onde (λ = v / f)",
-		"time100": "Temps pour parcourir 100 m",
-		"distanceAxis": "distance →",
-		"particles": "particules",
-		"pressure": "pression",
-		"compression": "compression",
-		"rarefaction": "raréfaction"
-	},
-	"qqq": {
-		"_name": "Name of the Sound propagation module",
-		"hint": "Instruction text shown in the footer.",
-		"pause": "Button that pauses the animation.",
-		"resume": "Button that resumes the animation.",
-		"slowNote": "Note above the graph explaining the time scale.",
-		"medium": "Label of the medium selector.",
-		"air": "Medium option: air (speed depends on temperature).",
-		"water": "Medium option: water at about 20 °C (1482 m/s).",
-		"steel": "Medium option: steel (5100 m/s, thin-bar value).",
-		"frequency": "Label of the frequency slider.",
-		"temperature": "Label of the air temperature slider (only active for air).",
-		"speed": "Stat card: speed of sound in the chosen medium.",
-		"wavelength": "Stat card: wavelength.",
-		"time100": "Stat card: time sound needs to travel 100 metres.",
-		"distanceAxis": "Centre label under the horizontal axis.",
-		"particles": "Canvas label above the particle band.",
-		"pressure": "Canvas label above the pressure curve.",
-		"compression": "Canvas label at the top of the pressure axis.",
-		"rarefaction": "Canvas label at the bottom of the pressure axis."
-	}
-} /* I18N_END */;
+    "fr": {
+        "_name": "Propagation du son",
+        "hint": "La particule mise en évidence n'avance pas : elle vibre sur place. C'est l'onde qui se propage.",
+        "pause": "Pause",
+        "resume": "Reprendre",
+        "slowNote": "Animation ralentie 500 fois (de la même façon dans tous les milieux)",
+        "medium": "Milieu",
+        "air": "Air",
+        "water": "Eau",
+        "steel": "Acier",
+        "frequency": "Fréquence",
+        "temperature": "Température de l'air",
+        "speed": "Vitesse du son",
+        "wavelength": "Longueur d'onde (λ = v / f)",
+        "time100": "Temps pour parcourir 100 m",
+        "distanceAxis": "distance →",
+        "particles": "particules",
+        "pressure": "pression",
+        "compression": "compression",
+        "rarefaction": "raréfaction"
+    },
+    "eu": {
+        "_name": "Soinuaren hedapena",
+        "hint": "Nabarmendutako partikula ez da aurrera joaten: bere lekuan dardaratzen da. Uhina da hedatzen dena.",
+        "pause": "Pausatu",
+        "resume": "Jarraitu",
+        "slowNote": "Animazioa 500 aldiz moteldua (ingurune guztietan berdin)",
+        "medium": "Ingurunea",
+        "air": "Airea",
+        "water": "Ura",
+        "steel": "Altzairua",
+        "frequency": "Maiztasuna",
+        "temperature": "Airearen tenperatura",
+        "speed": "Soinuaren abiadura",
+        "wavelength": "Uhin-luzera (λ = v / f)",
+        "time100": "100 m egiteko denbora",
+        "distanceAxis": "distantzia →",
+        "particles": "partikulak",
+        "pressure": "presioa",
+        "compression": "konpresioa",
+        "rarefaction": "enrarezimendua"
+    },
+    "en": {
+        "_name": "Sound propagation",
+        "hint": "The highlighted particle doesn't move forward: it vibrates in place. What travels is the wave.",
+        "pause": "Pause",
+        "resume": "Resume",
+        "slowNote": "Animation slowed down 500× (equally in every medium)",
+        "medium": "Medium",
+        "air": "Air",
+        "water": "Water",
+        "steel": "Steel",
+        "frequency": "Frequency",
+        "temperature": "Air temperature",
+        "speed": "Speed of sound",
+        "wavelength": "Wavelength (λ = v / f)",
+        "time100": "Time to travel 100 m",
+        "distanceAxis": "distance →",
+        "particles": "particles",
+        "pressure": "pressure",
+        "compression": "compression",
+        "rarefaction": "rarefaction"
+    },
+    "qqq": {
+        "_name": "Name of the Sound propagation module",
+        "hint": "Instruction text shown in the footer.",
+        "pause": "Button that pauses the animation.",
+        "resume": "Button that resumes the animation.",
+        "slowNote": "Note above the graph explaining the time scale.",
+        "medium": "Label of the medium selector.",
+        "air": "Medium option: air (speed depends on temperature).",
+        "water": "Medium option: water at about 20 °C (1482 m/s).",
+        "steel": "Medium option: steel (5100 m/s, thin-bar value).",
+        "frequency": "Label of the frequency slider.",
+        "temperature": "Label of the air temperature slider (only active for air).",
+        "speed": "Stat card: speed of sound in the chosen medium.",
+        "wavelength": "Stat card: wavelength.",
+        "time100": "Stat card: time sound needs to travel 100 metres.",
+        "distanceAxis": "Centre label under the horizontal axis.",
+        "particles": "Canvas label above the particle band.",
+        "pressure": "Canvas label above the pressure curve.",
+        "compression": "Canvas label at the top of the pressure axis.",
+        "rarefaction": "Canvas label at the bottom of the pressure axis."
+    },
+    "es": {
+        "_name": "Propagación del sonido",
+        "hint": "La partícula resaltada no avanza: vibra en su sitio. Lo que viaja es la onda.",
+        "pause": "Pausar",
+        "resume": "Continuar",
+        "slowNote": "Animación ralentizada 500 veces (igual en todos los medios)",
+        "medium": "Medio",
+        "air": "Aire",
+        "water": "Agua",
+        "steel": "Acero",
+        "frequency": "Frecuencia",
+        "temperature": "Temperatura del aire",
+        "speed": "Velocidad del sonido",
+        "wavelength": "Longitud de onda (λ = v / f)",
+        "time100": "Tiempo para recorrer 100 m",
+        "distanceAxis": "distancia →",
+        "particles": "partículas",
+        "pressure": "presión",
+        "compression": "compresión",
+        "rarefaction": "rarefacción"
+    }
+} /* I18N_END */
+var lang = (window.mw && mw.config.get('wgUserLanguage')) || 'en';
+var banana = new Banana(lang.split('-')[0]);
+banana.load(messages);
 
-var lang = ( ( window.mw && mw.config.get( 'wgUserLanguage' ) ) || 'en' ).split( '-' )[ 0 ];
-var banana = new Banana( lang );
-banana.load( messages );
+function t(key, vars) {
+    var args = Array.isArray(vars) ? vars : [];
+    var str = banana.i18n(key, ...args);
+    if (vars && typeof vars === 'object' && !Array.isArray(vars)) {
+        Object.keys(vars).forEach(function(k) {
+            str = str.replace(new RegExp('\\{' + k + '\\}', 'g'), vars[k]);
+        });
+    }
+    return str;
+}
 
 function t( key, params ) {
 	return banana.i18n.apply( banana, [ key ].concat( params || [] ) );

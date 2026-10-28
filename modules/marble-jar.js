@@ -4,12 +4,17 @@
     
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "lb": {
-        "colorBlue": "Blo",
-        "colorGreen": "Gréng",
-        "colorRed": "Rout",
-        "colorYellow": "Giel",
-        "impossible": "Onméiglech"
+    "nl": {
+        "_name": "Kanspot",
+        "colorBlue": "Blauw",
+        "colorGreen": "Groen",
+        "colorRed": "Rood",
+        "colorYellow": "Geel",
+        "impossible": "Onmogelijk",
+        "probTitle": "Kans om een knikker te pakken en de kleur te raden…",
+        "shake": "Schudden!",
+        "total": "Totaal",
+        "hint": "Schud de pot om de waarschijnlijkheid in actie te zien"
     },
     "fr": {
         "_name": "Pot de probabilités",
@@ -23,42 +28,6 @@ var messages = /* I18N_START */ {
         "total": "Total",
         "hint": "Secouez le récipient pour voir la probabilité en action"
     },
-    "nl": {
-        "_name": "Kanspot",
-        "colorBlue": "Blauw",
-        "colorGreen": "Groen",
-        "colorRed": "Rood",
-        "colorYellow": "Geel",
-        "impossible": "Onmogelijk",
-        "probTitle": "Kans om een knikker te pakken en de kleur te raden…",
-        "shake": "Schudden!",
-        "total": "Totaal",
-        "hint": "Schud de pot om de waarschijnlijkheid in actie te zien"
-    },
-    "qqq": {
-        "_name": "Name of the Probability Jar module",
-        "colorBlue": "Name of the blue marble colour",
-        "colorGreen": "Name of the green marble colour",
-        "colorRed": "Name of the red marble colour",
-        "colorYellow": "Name of the yellow marble colour",
-        "impossible": "Label shown when the probability is zero (impossible event)",
-        "probTitle": "Heading describing the probability scenario",
-        "shake": "Button label to shake the jar and randomise marbles",
-        "total": "Label for the total number of marbles",
-        "hint": "Instruction text for the probability jar interaction"
-    },
-    "es": {
-        "_name": "Frasco de probabilidades",
-        "colorBlue": "Azul",
-        "colorGreen": "Verde",
-        "colorRed": "Rojo",
-        "colorYellow": "Amarillo",
-        "impossible": "Imposible",
-        "probTitle": "Probabilidad de sacar una canica y adivinar su color…",
-        "shake": "¡Agitar!",
-        "total": "Total",
-        "hint": "Agita el frasco para ver la probabilidad en acción."
-    },
     "tr": {
         "_name": "Olasılık Kavanozu",
         "colorBlue": "Mavi",
@@ -70,69 +39,6 @@ var messages = /* I18N_START */ {
         "shake": "Salla!",
         "total": "Toplam",
         "hint": "Kavanozu sallayın ve olasılığın nasıl işlediğini görün"
-    },
-    "ko": {
-        "_name": "확률 항아리",
-        "colorBlue": "파란색",
-        "colorGreen": "녹색",
-        "colorRed": "빨간색",
-        "colorYellow": "노란색",
-        "impossible": "불가능",
-        "probTitle": "구슬을 하나 집어 들고 그 색깔을 맞출 확률…",
-        "shake": "흔들기!",
-        "total": "합계",
-        "hint": "병을 흔들어 확률이 어떻게 작용하는지 확인해 보세요"
-    },
-    "skr-arab": {
-        "_name": "احتمال دا مرتبان",
-        "colorBlue": "نیلا",
-        "colorGreen": "ساوا",
-        "colorRed": "رتا",
-        "colorYellow": "پیلا",
-        "impossible": "نا ممکن",
-        "probTitle": "گولی چݨݨ تے اوندے رنگ دا اندازہ لاوݨ دا احتمال…",
-        "shake": "ہلاؤ!",
-        "total": "کل",
-        "hint": "احتمال کوں عمل وچ ݙیکھݨ کیتے مرتبان کوں ہلاؤ"
-    },
-    "sk": {
-        "_name": "Nádoba pravdepodobnosti",
-        "colorBlue": "Modrá",
-        "colorGreen": "Zelená",
-        "colorRed": "Červená",
-        "colorYellow": "Žltá",
-        "impossible": "Nemožné",
-        "probTitle": "Pravdepodobnosť vytiahnutia guľôčky a uhádnutia jej farby…",
-        "shake": "Zatraste!",
-        "total": "Spolu",
-        "hint": "Zatraste nádobou a uvidíte pravdepodobnosť v praxi"
-    },
-    "ca": {
-        "total": "Total"
-    },
-    "ga": {
-        "_name": "Jar Dóchúlachta",
-        "colorBlue": "Gorm",
-        "colorGreen": "Glas",
-        "colorRed": "Dearg",
-        "colorYellow": "Buí",
-        "impossible": "Dodhéanta",
-        "probTitle": "An dóchúlacht go roghnófar marmair agus go mbuailfear a dhath…",
-        "shake": "Croith!",
-        "total": "Iomlán",
-        "hint": "Croith an próca chun an dóchúlacht i mbun gnímh a fheiceáil"
-    },
-    "en": {
-        "_name": "Probability Jar",
-        "colorBlue": "Blue",
-        "colorGreen": "Green",
-        "colorRed": "Red",
-        "colorYellow": "Yellow",
-        "impossible": "Impossible",
-        "probTitle": "Probability of picking a marble and guessing its color…",
-        "shake": "Shake!",
-        "total": "Total",
-        "hint": "Shake the jar to see the probability in action"
     },
     "eu": {
         "_name": "Probabilitate ontzia",
@@ -146,11 +52,105 @@ var messages = /* I18N_START */ {
         "total": "Guztira",
         "hint": "Astindu ontzia probabilitatea martxan ikusteko"
     },
+    "sk": {
+        "_name": "Nádoba pravdepodobnosti",
+        "colorBlue": "Modrá",
+        "colorGreen": "Zelená",
+        "colorRed": "Červená",
+        "colorYellow": "Žltá",
+        "impossible": "Nemožné",
+        "probTitle": "Pravdepodobnosť vytiahnutia guľôčky a uhádnutia jej farby…",
+        "shake": "Zatraste!",
+        "total": "Spolu",
+        "hint": "Zatraste nádobou a uvidíte pravdepodobnosť v praxi"
+    },
+    "skr-arab": {
+        "_name": "احتمال دا مرتبان",
+        "colorBlue": "نیلا",
+        "colorGreen": "ساوا",
+        "colorRed": "رتا",
+        "colorYellow": "پیلا",
+        "impossible": "نا ممکن",
+        "probTitle": "گولی چݨݨ تے اوندے رنگ دا اندازہ لاوݨ دا احتمال…",
+        "shake": "ہلاؤ!",
+        "total": "کل",
+        "hint": "احتمال کوں عمل وچ ݙیکھݨ کیتے مرتبان کوں ہلاؤ"
+    },
+    "lb": {
+        "colorBlue": "Blo",
+        "colorGreen": "Gréng",
+        "colorRed": "Rout",
+        "colorYellow": "Giel",
+        "impossible": "Onméiglech"
+    },
+    "ko": {
+        "_name": "확률 항아리",
+        "colorBlue": "파란색",
+        "colorGreen": "녹색",
+        "colorRed": "빨간색",
+        "colorYellow": "노란색",
+        "impossible": "불가능",
+        "probTitle": "구슬을 하나 집어 들고 그 색깔을 맞출 확률…",
+        "shake": "흔들기!",
+        "total": "합계",
+        "hint": "병을 흔들어 확률이 어떻게 작용하는지 확인해 보세요"
+    },
+    "en": {
+        "_name": "Probability Jar",
+        "colorBlue": "Blue",
+        "colorGreen": "Green",
+        "colorRed": "Red",
+        "colorYellow": "Yellow",
+        "impossible": "Impossible",
+        "probTitle": "Probability of picking a marble and guessing its color…",
+        "shake": "Shake!",
+        "total": "Total",
+        "hint": "Shake the jar to see the probability in action"
+    },
     "it": {
         "colorBlue": "Blu",
         "colorGreen": "Verde",
         "colorRed": "Rosso",
         "colorYellow": "Giallo"
+    },
+    "ca": {
+        "total": "Total"
+    },
+    "qqq": {
+        "_name": "Name of the Probability Jar module",
+        "colorBlue": "Name of the blue marble colour",
+        "colorGreen": "Name of the green marble colour",
+        "colorRed": "Name of the red marble colour",
+        "colorYellow": "Name of the yellow marble colour",
+        "impossible": "Label shown when the probability is zero (impossible event)",
+        "probTitle": "Heading describing the probability scenario",
+        "shake": "Button label to shake the jar and randomise marbles",
+        "total": "Label for the total number of marbles",
+        "hint": "Instruction text for the probability jar interaction"
+    },
+    "ga": {
+        "_name": "Jar Dóchúlachta",
+        "colorBlue": "Gorm",
+        "colorGreen": "Glas",
+        "colorRed": "Dearg",
+        "colorYellow": "Buí",
+        "impossible": "Dodhéanta",
+        "probTitle": "An dóchúlacht go roghnófar marmair agus go mbuailfear a dhath…",
+        "shake": "Croith!",
+        "total": "Iomlán",
+        "hint": "Croith an próca chun an dóchúlacht i mbun gnímh a fheiceáil"
+    },
+    "es": {
+        "_name": "Frasco de probabilidades",
+        "colorBlue": "Azul",
+        "colorGreen": "Verde",
+        "colorRed": "Rojo",
+        "colorYellow": "Amarillo",
+        "impossible": "Imposible",
+        "probTitle": "Probabilidad de sacar una canica y adivinar su color…",
+        "shake": "¡Agitar!",
+        "total": "Total",
+        "hint": "Agita el frasco para ver la probabilidad en acción."
     },
     "mk": {
         "_name": "Тегла на веројатност",

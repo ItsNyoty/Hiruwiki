@@ -26,13 +26,6 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "fr": {
-        "_name": "Cercle des neuf points",
-        "hint": "Faites glisser n'importe quel sommet pour explorer le cercle à neuf points",
-        "legendM": "M_a/b/c — milieux des côtés",
-        "legendH": "H_a/b/c — pieds des hauteurs",
-        "legendE": "E_a/b/c — milieux de AH, BH, CH"
-    },
     "nl": {
         "_name": "Cirkel van de negen punten",
         "hint": "Sleep een hoekpunt om de cirkel van de negen punten te verkennen",
@@ -40,19 +33,12 @@ var messages = /* I18N_START */ {
         "legendH": "H_a/b/c — voetpunten van de hoogtelijnen",
         "legendE": "E_a/b/c — middens van AH, BH, CH"
     },
-    "qqq": {
-        "_name": "Name of the Nine-Point Circle module",
-        "hint": "Instruction text shown in the footer.",
-        "legendM": "Legend entry for M_a/b/c — midpoints of the sides",
-        "legendH": "Legend entry for H_a/b/c — feet of the altitudes",
-        "legendE": "Legend entry for E_a/b/c — midpoints of AH, BH, CH"
-    },
-    "es": {
-        "_name": "Círculo de los nueve puntos",
-        "hint": "Arrastra un vértice para explorar el círculo de los nueve puntos",
-        "legendM": "M_a/b/c — puntos medios de los lados",
-        "legendH": "H_a/b/c — pies de las alturas",
-        "legendE": "E_a/b/c — puntos medios de AH, BH, CH"
+    "fr": {
+        "_name": "Cercle des neuf points",
+        "hint": "Faites glisser n'importe quel sommet pour explorer le cercle à neuf points",
+        "legendM": "M_a/b/c — milieux des côtés",
+        "legendH": "H_a/b/c — pieds des hauteurs",
+        "legendE": "E_a/b/c — milieux de AH, BH, CH"
     },
     "tr": {
         "_name": "Dokuz Noktalı Çember",
@@ -61,19 +47,12 @@ var messages = /* I18N_START */ {
         "legendH": "H_a/b/c - yüksekliklerin fit cinsinden uzunlukları",
         "legendE": "E_a/b/c — AH, BH ve CH'nin orta noktaları"
     },
-    "ko": {
-        "_name": "구점원",
-        "hint": "꼭짓점을 드래그해서 구점원을 탐구하세요",
-        "legendM": "M_a/b/c — 변들의 중점들",
-        "legendH": "M_a/b/c — 수선의 발들",
-        "legendE": "E_a/b/c — 각 AH, BH, CH의 중점들"
-    },
-    "skr-arab": {
-        "_name": "نوں نکاتی دائرہ",
-        "hint": "نوں نکاتی دائرہ ݙیکھݨ کیتے کوئی وی سرا گھسیٹو",
-        "legendM": "M_a/b/c — ضلعیاں دے درمیان نقطے",
-        "legendH": "H_a/b/c — بلندی دے پیر",
-        "legendE": "E_a/b/c — AH، BH، CH دے درمیان نقطے"
+    "eu": {
+        "_name": "Bederatzi puntuko zirkulua",
+        "hint": "Erpinak mugitu ditzakezu bederatzi puntuko zirkulua ikusteko",
+        "legendM": "M_a/b/c — aldeen erdipuntuak",
+        "legendH": "H_a/b/c — alturen oinak",
+        "legendE": "E_a/b/c — AH, BH, CH erdipuntuak"
     },
     "sk": {
         "_name": "Kružnica deviatich bodov",
@@ -82,12 +61,19 @@ var messages = /* I18N_START */ {
         "legendH": "H_a/b/c — päty výšok",
         "legendE": "E_a/b/c — stredy úsečiek AH, BH, CH"
     },
-    "ga": {
-        "_name": "Ciorcal Naoi bPointe",
-        "hint": "Tarraing aon bhuaicphointe chun an ciorcal naoi bpointe a iniúchadh",
-        "legendM": "M_a/b/c — lárphointí na dtaobhanna",
-        "legendH": "H_a/b/c — troigh na n-airde",
-        "legendE": "E_a/b/c — lárphointí AH, BH, CH"
+    "skr-arab": {
+        "_name": "نوں نکاتی دائرہ",
+        "hint": "نوں نکاتی دائرہ ݙیکھݨ کیتے کوئی وی سرا گھسیٹو",
+        "legendM": "M_a/b/c — ضلعیاں دے درمیان نقطے",
+        "legendH": "H_a/b/c — بلندی دے پیر",
+        "legendE": "E_a/b/c — AH، BH، CH دے درمیان نقطے"
+    },
+    "ko": {
+        "_name": "구점원",
+        "hint": "꼭짓점을 드래그해서 구점원을 탐구하세요",
+        "legendM": "M_a/b/c — 변들의 중점들",
+        "legendH": "M_a/b/c — 수선의 발들",
+        "legendE": "E_a/b/c — 각 AH, BH, CH의 중점들"
     },
     "en": {
         "_name": "Nine-Point Circle",
@@ -96,12 +82,26 @@ var messages = /* I18N_START */ {
         "legendH": "H_a/b/c — feet of the altitudes",
         "legendE": "E_a/b/c — midpoints of AH, BH, CH"
     },
-    "eu": {
-        "_name": "Bederatzi puntuko zirkulua",
-        "hint": "Erpinak mugitu ditzakezu bederatzi puntuko zirkulua ikusteko",
-        "legendM": "M_a/b/c — aldeen erdipuntuak",
-        "legendH": "H_a/b/c — alturen oinak",
-        "legendE": "E_a/b/c — AH, BH, CH erdipuntuak"
+    "qqq": {
+        "_name": "Name of the Nine-Point Circle module",
+        "hint": "Instruction text shown in the footer.",
+        "legendM": "Legend entry for M_a/b/c — midpoints of the sides",
+        "legendH": "Legend entry for H_a/b/c — feet of the altitudes",
+        "legendE": "Legend entry for E_a/b/c — midpoints of AH, BH, CH"
+    },
+    "ga": {
+        "_name": "Ciorcal Naoi bPointe",
+        "hint": "Tarraing aon bhuaicphointe chun an ciorcal naoi bpointe a iniúchadh",
+        "legendM": "M_a/b/c — lárphointí na dtaobhanna",
+        "legendH": "H_a/b/c — troigh na n-airde",
+        "legendE": "E_a/b/c — lárphointí AH, BH, CH"
+    },
+    "es": {
+        "_name": "Círculo de los nueve puntos",
+        "hint": "Arrastra un vértice para explorar el círculo de los nueve puntos",
+        "legendM": "M_a/b/c — puntos medios de los lados",
+        "legendH": "H_a/b/c — pies de las alturas",
+        "legendE": "E_a/b/c — puntos medios de AH, BH, CH"
     },
     "mk": {
         "_name": "Кружница низ девет точки",

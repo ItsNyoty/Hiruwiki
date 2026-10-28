@@ -11,19 +11,6 @@
     
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "fr": {
-        "_name": "Monte Carlo Pi",
-        "addPoints": "+ Ajouter des points",
-        "approxPi": "Approximation de π",
-        "insideCircle": "Dans le cercle",
-        "insideRed": "Intérieur (rouge)",
-        "outsideBlue": "Extérieur (bleu)",
-        "outsideCircle": "Hors du cercle",
-        "pointsPerStep": "Points par étape",
-        "reset": "↺ Réinitialiser",
-        "totalPoints": "Total des points",
-        "hint": "Ajoutez des points pour approximer π en utilisant les probabilités"
-    },
     "nl": {
         "_name": "Monte Carlo Pi",
         "addPoints": "+ Punten toevoegen",
@@ -37,31 +24,18 @@ var messages = /* I18N_START */ {
         "totalPoints": "Totaal aantal punten",
         "hint": "Voeg punten toe om π te benaderen met kansberekening"
     },
-    "qqq": {
-        "_name": "Name of the Monte Carlo Pi module",
-        "addPoints": "Button label to add more random points to the simulation",
-        "approxPi": "Label for the current approximation of π",
-        "insideCircle": "Label for the count of points inside the circle",
-        "insideRed": "Legend label for points inside the circle (shown in red)",
-        "outsideBlue": "Legend label for points outside the circle (shown in blue)",
-        "outsideCircle": "Label for the count of points outside the circle",
-        "pointsPerStep": "Label for the number of points added per step",
-        "reset": "Button label to reset the simulation",
-        "totalPoints": "Label for the total number of points",
-        "hint": "Instruction text for the Monte Carlo simulation interaction"
-    },
-    "es": {
-        "_name": "Pi de Monte Carlo",
-        "addPoints": "+ Añadir puntos",
-        "approxPi": "Aproximación de π",
-        "insideCircle": "Dentro del círculo",
-        "insideRed": "Dentro (rojo)",
-        "outsideBlue": "Fuera (azul)",
-        "outsideCircle": "Fuera del círculo",
-        "pointsPerStep": "Puntos por paso",
-        "reset": "↺ Reiniciar",
-        "totalPoints": "Puntos totales",
-        "hint": "Añade puntos para aproximar π usando probabilidad"
+    "fr": {
+        "_name": "Monte Carlo Pi",
+        "addPoints": "+ Ajouter des points",
+        "approxPi": "Approximation de π",
+        "insideCircle": "Dans le cercle",
+        "insideRed": "Intérieur (rouge)",
+        "outsideBlue": "Extérieur (bleu)",
+        "outsideCircle": "Hors du cercle",
+        "pointsPerStep": "Points par étape",
+        "reset": "↺ Réinitialiser",
+        "totalPoints": "Total des points",
+        "hint": "Ajoutez des points pour approximer π en utilisant les probabilités"
     },
     "tr": {
         "_name": "Monte Carlo Pi",
@@ -76,31 +50,18 @@ var messages = /* I18N_START */ {
         "totalPoints": "Toplam nokta",
         "hint": "Olasılık kullanarak π'ye yakın bir sayı bulmak için nokta ekleyin"
     },
-    "ko": {
-        "_name": "몬테카를로 파이",
-        "addPoints": "+ 포인트 추가",
-        "approxPi": "π의 근사값",
-        "insideCircle": "원 안쪽",
-        "insideRed": "안쪽 (빨간색)",
-        "outsideBlue": "바깥쪽 (파란색)",
-        "outsideCircle": "원 바깥쪽",
-        "pointsPerStep": "단계당 점수",
-        "reset": "↺ 초기화",
-        "totalPoints": "총점",
-        "hint": "확률을 이용하여 π를 근사하기 위해 점을 추가합니다"
-    },
-    "skr-arab": {
-        "_name": "مونٹے کارلو پائی",
-        "addPoints": "+ نقطے ودھاؤ",
-        "approxPi": "π دا تقریبا",
-        "insideCircle": "دائرے دے اندر",
-        "insideRed": "اندر (رتا)",
-        "outsideBlue": "باہر (نیلا)",
-        "outsideCircle": "دائرے دے باہر",
-        "pointsPerStep": "فی قدم نقطے",
-        "reset": "↺ دوبارہ",
-        "totalPoints": "کل نقطے",
-        "hint": "احتمال دی مدد نال π دا تقریبا لاوݨ کیتے نقطے ودھاؤ"
+    "eu": {
+        "_name": "Monte Carlo Pi",
+        "addPoints": "+ Puntuak gehitu",
+        "approxPi": "π-ren hurbilketa",
+        "insideCircle": "Zirkulu barruan",
+        "insideRed": "Barruan (gorria)",
+        "outsideBlue": "Kanpoan (urdina)",
+        "outsideCircle": "Zirkulu kanpoan",
+        "pointsPerStep": "Puntuak urratseko",
+        "reset": "↺ Berrezarri",
+        "totalPoints": "Puntu kopurua",
+        "hint": "Gehitu puntuak probabilitatea erabiliz π hurbiltzeko"
     },
     "sk": {
         "_name": "Monte Carlo π",
@@ -115,21 +76,31 @@ var messages = /* I18N_START */ {
         "totalPoints": "Body spolu",
         "hint": "Pridávajte body a aproximujte π pomocou pravdepodobnosti"
     },
-    "ca": {
-        "totalPoints": "Punts totals"
+    "skr-arab": {
+        "_name": "مونٹے کارلو پائی",
+        "addPoints": "+ نقطے ودھاؤ",
+        "approxPi": "π دا تقریبا",
+        "insideCircle": "دائرے دے اندر",
+        "insideRed": "اندر (رتا)",
+        "outsideBlue": "باہر (نیلا)",
+        "outsideCircle": "دائرے دے باہر",
+        "pointsPerStep": "فی قدم نقطے",
+        "reset": "↺ دوبارہ",
+        "totalPoints": "کل نقطے",
+        "hint": "احتمال دی مدد نال π دا تقریبا لاوݨ کیتے نقطے ودھاؤ"
     },
-    "ga": {
-        "_name": "Pi Monte Carlo",
-        "addPoints": "+ Cuir Pointí leis",
-        "approxPi": "Measúnú ar π",
-        "insideCircle": "Ciorcal Taobh Istigh",
-        "insideRed": "Taobh istigh (dearg)",
-        "outsideBlue": "Lasmuigh (gorm)",
-        "outsideCircle": "Ciorcal Lasmuigh",
-        "pointsPerStep": "Pointí in aghaidh an chéime",
-        "reset": "↺ Athshocraigh",
-        "totalPoints": "Iomlán na bpointí",
-        "hint": "Cuir pointí leis chun π a mheasúnú ag baint úsáide as dóchúlacht"
+    "ko": {
+        "_name": "몬테카를로 파이",
+        "addPoints": "+ 포인트 추가",
+        "approxPi": "π의 근사값",
+        "insideCircle": "원 안쪽",
+        "insideRed": "안쪽 (빨간색)",
+        "outsideBlue": "바깥쪽 (파란색)",
+        "outsideCircle": "원 바깥쪽",
+        "pointsPerStep": "단계당 점수",
+        "reset": "↺ 초기화",
+        "totalPoints": "총점",
+        "hint": "확률을 이용하여 π를 근사하기 위해 점을 추가합니다"
     },
     "en": {
         "_name": "Monte Carlo Pi",
@@ -144,21 +115,50 @@ var messages = /* I18N_START */ {
         "totalPoints": "Total points",
         "hint": "Add points to approximate π using probability"
     },
-    "eu": {
-        "_name": "Monte Carlo Pi",
-        "addPoints": "+ Puntuak gehitu",
-        "approxPi": "π-ren hurbilketa",
-        "insideCircle": "Zirkulu barruan",
-        "insideRed": "Barruan (gorria)",
-        "outsideBlue": "Kanpoan (urdina)",
-        "outsideCircle": "Zirkulu kanpoan",
-        "pointsPerStep": "Puntuak urratseko",
-        "reset": "↺ Berrezarri",
-        "totalPoints": "Puntu kopurua",
-        "hint": "Gehitu puntuak probabilitatea erabiliz π hurbiltzeko"
-    },
     "it": {
         "approxPi": "Approssimazione di π"
+    },
+    "ca": {
+        "totalPoints": "Punts totals"
+    },
+    "qqq": {
+        "_name": "Name of the Monte Carlo Pi module",
+        "addPoints": "Button label to add more random points to the simulation",
+        "approxPi": "Label for the current approximation of π",
+        "insideCircle": "Label for the count of points inside the circle",
+        "insideRed": "Legend label for points inside the circle (shown in red)",
+        "outsideBlue": "Legend label for points outside the circle (shown in blue)",
+        "outsideCircle": "Label for the count of points outside the circle",
+        "pointsPerStep": "Label for the number of points added per step",
+        "reset": "Button label to reset the simulation",
+        "totalPoints": "Label for the total number of points",
+        "hint": "Instruction text for the Monte Carlo simulation interaction"
+    },
+    "ga": {
+        "_name": "Pi Monte Carlo",
+        "addPoints": "+ Cuir Pointí leis",
+        "approxPi": "Measúnú ar π",
+        "insideCircle": "Ciorcal Taobh Istigh",
+        "insideRed": "Taobh istigh (dearg)",
+        "outsideBlue": "Lasmuigh (gorm)",
+        "outsideCircle": "Ciorcal Lasmuigh",
+        "pointsPerStep": "Pointí in aghaidh an chéime",
+        "reset": "↺ Athshocraigh",
+        "totalPoints": "Iomlán na bpointí",
+        "hint": "Cuir pointí leis chun π a mheasúnú ag baint úsáide as dóchúlacht"
+    },
+    "es": {
+        "_name": "Pi de Monte Carlo",
+        "addPoints": "+ Añadir puntos",
+        "approxPi": "Aproximación de π",
+        "insideCircle": "Dentro del círculo",
+        "insideRed": "Dentro (rojo)",
+        "outsideBlue": "Fuera (azul)",
+        "outsideCircle": "Fuera del círculo",
+        "pointsPerStep": "Puntos por paso",
+        "reset": "↺ Reiniciar",
+        "totalPoints": "Puntos totales",
+        "hint": "Añade puntos para aproximar π usando probabilidad"
     },
     "mk": {
         "_name": "Монте Карло Пи",

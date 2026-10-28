@@ -17,12 +17,19 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "lb": {
-        "point1": "Punkt P₁",
-        "point2": "Punkt P₂",
-        "coords1": "Koordinate vu P₁",
-        "coords2": "Koordinate vu P₂",
-        "pointsCard": "Punkten"
+    "nl": {
+        "_name": "Helling",
+        "undefined": "Verticale lijn → helling ongedefinieerd",
+        "hint": "Sleep de punten om de hellingsberekening te zien",
+        "point1": "Punt P₁",
+        "point2": "Punt P₂",
+        "coords1": "Coördinaten van P₁",
+        "coords2": "Coördinaten van P₂",
+        "rise": "Stijging (Δy)",
+        "run": "Aanloop (Δx)",
+        "slope": "Helling (m)",
+        "slopeCard": "Helling",
+        "pointsCard": "Punten"
     },
     "fr": {
         "_name": "Pente",
@@ -38,48 +45,6 @@ var messages = /* I18N_START */ {
         "slopeCard": "Pente",
         "pointsCard": "Points"
     },
-    "nl": {
-        "_name": "Helling",
-        "undefined": "Verticale lijn → helling ongedefinieerd",
-        "hint": "Sleep de punten om de hellingsberekening te zien",
-        "point1": "Punt P₁",
-        "point2": "Punt P₂",
-        "coords1": "Coördinaten van P₁",
-        "coords2": "Coördinaten van P₂",
-        "rise": "Stijging (Δy)",
-        "run": "Aanloop (Δx)",
-        "slope": "Helling (m)",
-        "slopeCard": "Helling",
-        "pointsCard": "Punten"
-    },
-    "qqq": {
-        "_name": "Name of the Slope module",
-        "undefined": "Message shown when the line is vertical and the slope is undefined",
-        "hint": "Instruction text for the slope calculation interaction",
-        "point1": "name of the first point",
-        "point2": "name of the second point",
-        "coords1": "coordinates of first point",
-        "coords2": "coordinates of second point",
-        "rise": "message for the vertical distance",
-        "run": "message for the horizontal distance",
-        "slope": "name of the division of both",
-        "slopeCard": "title of the slope section",
-        "pointsCard": "title used in the points section"
-    },
-    "es": {
-        "_name": "Pendiente",
-        "undefined": "Línea vertical → pendiente indefinida",
-        "hint": "Arrastra los puntos para ver el cálculo de la pendiente",
-        "point1": "Punto P₁",
-        "point2": "Punto P₂",
-        "coords1": "Coordenadas de P₁",
-        "coords2": "Coordenadas de P₂",
-        "rise": "Elevación (Δy)",
-        "run": "Avance (Δx)",
-        "slope": "Pendiente (m)",
-        "slopeCard": "Pendiente",
-        "pointsCard": "Puntos"
-    },
     "tr": {
         "_name": "Eğim",
         "undefined": "Dikey çizgi → eğim belirsiz",
@@ -90,33 +55,19 @@ var messages = /* I18N_START */ {
         "coords2": "P₂ koordinatları",
         "rise": "Yükseklik artışı (Δy)"
     },
-    "ko": {
-        "_name": "기울기",
-        "undefined": "수직선 → 기울기 정의 안 됨",
-        "hint": "점을 드래그하여 기울기 계산을 확인하세요",
-        "point1": "점 P₁",
-        "point2": "점 P₂",
-        "coords1": "P₁ 좌표",
-        "coords2": "P₂ 좌표",
-        "rise": "상승 (Δy)",
-        "run": "이동 (Δx)",
-        "slope": "기울기 (m)",
-        "slopeCard": "기울기",
-        "pointsCard": "점"
-    },
-    "skr-arab": {
-        "_name": "ڈھلوان",
-        "undefined": "عمودی لکیر → ڈھلوان غیر متعین",
-        "hint": "نقطے گھسیٹ کے ڈھلوان دا حساب ویکھو",
-        "point1": "نقطہ P₁",
-        "point2": "نقطہ P₂",
-        "coords1": "P₁ دے نقاط",
-        "coords2": "P₂ دے نقاط",
-        "rise": "اُچائی (Δy)",
-        "run": "افقی فاصلہ (Δx)",
-        "slope": "ڈھلوان (m)",
-        "slopeCard": "ڈھلوان",
-        "pointsCard": "نقطے"
+    "eu": {
+        "_name": "Maldia",
+        "undefined": "Lerro bertikala → malda ezarri gabe",
+        "hint": "Puntu zatiak arrastatu maldaren kalkulua ikusteko",
+        "point1": "P₁ puntua",
+        "point2": "P₂ puntua",
+        "coords1": "P₁ koordenatuak",
+        "coords2": "P₂ koordenatuak",
+        "rise": "Igoera (Δy)",
+        "run": "Ibilbidea (Δx)",
+        "slope": "Malda (m)",
+        "slopeCard": "Malda",
+        "pointsCard": "Puntuak"
     },
     "sk": {
         "_name": "Smernica",
@@ -132,19 +83,40 @@ var messages = /* I18N_START */ {
         "slopeCard": "Smernica",
         "pointsCard": "Body"
     },
-    "ga": {
-        "_name": "Fána",
-        "undefined": "Líne ingearach → fána neamhshainithe",
-        "hint": "Tarraing na pointí chun ríomh an fhána a fheiceáil",
-        "point1": "Pointe P₁",
-        "point2": "Pointe P₂",
-        "coords1": "Comhordanáidí P₁",
-        "coords2": "Comhordanáidí P₂",
-        "rise": "Ardú (Δy)",
-        "run": "Rith (Δx)",
-        "slope": "Fána (m)",
-        "slopeCard": "Fána",
-        "pointsCard": "Pointí"
+    "skr-arab": {
+        "_name": "ڈھلوان",
+        "undefined": "عمودی لکیر → ڈھلوان غیر متعین",
+        "hint": "نقطے گھسیٹ کے ڈھلوان دا حساب ویکھو",
+        "point1": "نقطہ P₁",
+        "point2": "نقطہ P₂",
+        "coords1": "P₁ دے نقاط",
+        "coords2": "P₂ دے نقاط",
+        "rise": "اُچائی (Δy)",
+        "run": "افقی فاصلہ (Δx)",
+        "slope": "ڈھلوان (m)",
+        "slopeCard": "ڈھلوان",
+        "pointsCard": "نقطے"
+    },
+    "lb": {
+        "point1": "Punkt P₁",
+        "point2": "Punkt P₂",
+        "coords1": "Koordinate vu P₁",
+        "coords2": "Koordinate vu P₂",
+        "pointsCard": "Punkten"
+    },
+    "ko": {
+        "_name": "기울기",
+        "undefined": "수직선 → 기울기 정의 안 됨",
+        "hint": "점을 드래그하여 기울기 계산을 확인하세요",
+        "point1": "점 P₁",
+        "point2": "점 P₂",
+        "coords1": "P₁ 좌표",
+        "coords2": "P₂ 좌표",
+        "rise": "상승 (Δy)",
+        "run": "이동 (Δx)",
+        "slope": "기울기 (m)",
+        "slopeCard": "기울기",
+        "pointsCard": "점"
     },
     "en": {
         "_name": "Slope",
@@ -160,19 +132,47 @@ var messages = /* I18N_START */ {
         "slopeCard": "Slope",
         "pointsCard": "Points"
     },
-    "eu": {
-        "_name": "Maldia",
-        "undefined": "Lerro bertikala → malda ezarri gabe",
-        "hint": "Puntu zatiak arrastatu maldaren kalkulua ikusteko",
-        "point1": "P₁ puntua",
-        "point2": "P₂ puntua",
-        "coords1": "P₁ koordenatuak",
-        "coords2": "P₂ koordenatuak",
-        "rise": "Igoera (Δy)",
-        "run": "Ibilbidea (Δx)",
-        "slope": "Malda (m)",
-        "slopeCard": "Malda",
-        "pointsCard": "Puntuak"
+    "qqq": {
+        "_name": "Name of the Slope module",
+        "undefined": "Message shown when the line is vertical and the slope is undefined",
+        "hint": "Instruction text for the slope calculation interaction",
+        "point1": "name of the first point",
+        "point2": "name of the second point",
+        "coords1": "coordinates of first point",
+        "coords2": "coordinates of second point",
+        "rise": "message for the vertical distance",
+        "run": "message for the horizontal distance",
+        "slope": "name of the division of both",
+        "slopeCard": "title of the slope section",
+        "pointsCard": "title used in the points section"
+    },
+    "ga": {
+        "_name": "Fána",
+        "undefined": "Líne ingearach → fána neamhshainithe",
+        "hint": "Tarraing na pointí chun ríomh an fhána a fheiceáil",
+        "point1": "Pointe P₁",
+        "point2": "Pointe P₂",
+        "coords1": "Comhordanáidí P₁",
+        "coords2": "Comhordanáidí P₂",
+        "rise": "Ardú (Δy)",
+        "run": "Rith (Δx)",
+        "slope": "Fána (m)",
+        "slopeCard": "Fána",
+        "pointsCard": "Pointí"
+    },
+    "es": {
+        "_name": "Pendiente",
+        "undefined": "Línea vertical → pendiente indefinida",
+        "hint": "Arrastra los puntos para ver el cálculo de la pendiente",
+        "point1": "Punto P₁",
+        "point2": "Punto P₂",
+        "coords1": "Coordenadas de P₁",
+        "coords2": "Coordenadas de P₂",
+        "rise": "Elevación (Δy)",
+        "run": "Avance (Δx)",
+        "slope": "Pendiente (m)",
+        "slopeCard": "Pendiente",
+        "pointsCard": "Puntos"
     },
     "mk": {
         "_name": "Наклон",

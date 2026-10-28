@@ -10,49 +10,49 @@
 (function () {
   /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
   var messages = /* I18N_START */ {
-    "fr": {
-        "_name": "Orthocentre",
-        "hint": "Tirez n'importe quel sommet pour voir comment l' orthocentre change"
-    },
     "nl": {
         "_name": "Hoogtepunt van een driehoek",
         "hint": "Sleep een hoekpunt om te zien hoe het hoogtepunt verandert"
     },
-    "qqq": {
-        "_name": "Name of the Orthocentre module",
-        "hint": "Instruction text shown in the footer."
-    },
-    "es": {
-        "_name": "Ortocentro",
-        "hint": "Arrastra un vértice para ver cómo se mueve el ortocentro"
+    "fr": {
+        "_name": "Orthocentre",
+        "hint": "Tirez n'importe quel sommet pour voir comment l' orthocentre change"
     },
     "tr": {
         "_name": "Yükseklik merkezi",
         "hint": "Herhangi bir köşeyi sürükleyerek yükseklik merkezinin nasıl değiştiğini görün (Ölçek: 1 cm = 40 px)"
     },
-    "ko": {
-        "_name": "수심",
-        "hint": "꼭짓점을 드래그해서 수심이 어떻게 바뀌는지를 확인하세요"
-    },
-    "skr-arab": {
-        "_name": "قائم مرکز",
-        "hint": "قائم مرکز کین٘ویں بدلدے اے ݙیکھݨ کیتے کوئی وی سرا گھسیٹو"
+    "eu": {
+        "_name": "Ortozentro",
+        "hint": "Edozein erpin mugitu ortozentroa nola mugitzen den ikusteko"
     },
     "sk": {
         "_name": "Ortocentrum",
         "hint": "Potiahnutím ľubovoľného vrcholu uvidíte, ako sa ortocentrum mení"
     },
-    "ga": {
-        "_name": "Ortalár",
-        "hint": "Tarraing aon bhuaicphointe chun a fheiceáil conas a athraíonn an t-ortha-lárionad"
+    "skr-arab": {
+        "_name": "قائم مرکز",
+        "hint": "قائم مرکز کین٘ویں بدلدے اے ݙیکھݨ کیتے کوئی وی سرا گھسیٹو"
+    },
+    "ko": {
+        "_name": "수심",
+        "hint": "꼭짓점을 드래그해서 수심이 어떻게 바뀌는지를 확인하세요"
     },
     "en": {
         "_name": "Orthocentre",
         "hint": "Drag any vertex to see how the orthocentre changes"
     },
-    "eu": {
-        "_name": "Ortozentro",
-        "hint": "Edozein erpin mugitu ortozentroa nola mugitzen den ikusteko"
+    "qqq": {
+        "_name": "Name of the Orthocentre module",
+        "hint": "Instruction text shown in the footer."
+    },
+    "ga": {
+        "_name": "Ortalár",
+        "hint": "Tarraing aon bhuaicphointe chun a fheiceáil conas a athraíonn an t-ortha-lárionad"
+    },
+    "es": {
+        "_name": "Ortocentro",
+        "hint": "Arrastra un vértice para ver cómo se mueve el ortocentro"
     },
     "mk": {
         "_name": "Ортоцентар",

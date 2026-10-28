@@ -12,11 +12,18 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
-    "lb": {
-        "triangle": "Dräieck",
-        "sideA": "Säit a (BC)",
-        "sideB": "Säit b (CA)",
-        "sideC": "Säit c (AB)",
+    "nl": {
+        "_name": "Rechte van Euler",
+        "triangle": "Driehoek",
+        "eulerLine": "Rechte van Euler",
+        "hint": "Sleep een hoekpunt · Schaal: 1 cm = 40 px",
+        "sideA": "Zijde a (BC)",
+        "sideB": "Zijde b (CA)",
+        "sideC": "Zijde c (AB)",
+        "perimeter": "Omtrek",
+        "circumcenter": "Middelpunt omgeschreven cirkel O",
+        "centroid": "Zwaartepunt G",
+        "orthocentre": "Hoogtepunt H",
         "scaleUnit": "cm"
     },
     "fr": {
@@ -33,48 +40,6 @@ var messages = /* I18N_START */ {
         "orthocentre": "Orthocentre H",
         "scaleUnit": "cm"
     },
-    "nl": {
-        "_name": "Rechte van Euler",
-        "triangle": "Driehoek",
-        "eulerLine": "Rechte van Euler",
-        "hint": "Sleep een hoekpunt · Schaal: 1 cm = 40 px",
-        "sideA": "Zijde a (BC)",
-        "sideB": "Zijde b (CA)",
-        "sideC": "Zijde c (AB)",
-        "perimeter": "Omtrek",
-        "circumcenter": "Middelpunt omgeschreven cirkel O",
-        "centroid": "Zwaartepunt G",
-        "orthocentre": "Hoogtepunt H",
-        "scaleUnit": "cm"
-    },
-    "qqq": {
-        "_name": "Name of the Euler Line module",
-        "triangle": "Section heading for the triangle properties card",
-        "eulerLine": "Section heading for the Euler line properties card",
-        "hint": "Instruction text shown in the footer. Includes scale information.",
-        "sideA": "Label for side a (BC) of the triangle",
-        "sideB": "Label for side b (CA) of the triangle",
-        "sideC": "Label for side c (AB) of the triangle",
-        "perimeter": "Label for the triangle perimeter",
-        "circumcenter": "Label for the circumcenter point O",
-        "centroid": "Label for the centroid point G",
-        "orthocentre": "Label for the orthocentre point H",
-        "scaleUnit": "Unit abbreviation used for measurements (centimetres)"
-    },
-    "es": {
-        "_name": "Recta de Euler",
-        "triangle": "Triángulo",
-        "eulerLine": "Recta de Euler",
-        "hint": "Arrastra un vértice · Escala: 1 cm = 40 px",
-        "sideA": "Lado a (BC)",
-        "sideB": "Lado b (CA)",
-        "sideC": "Lado c (AB)",
-        "perimeter": "Perímetro",
-        "circumcenter": "Circuncentro O",
-        "centroid": "Baricentro G",
-        "orthocentre": "Ortocentro H",
-        "scaleUnit": "cm"
-    },
     "tr": {
         "_name": "Euler Doğrusu",
         "triangle": "Üçgen",
@@ -89,32 +54,18 @@ var messages = /* I18N_START */ {
         "orthocentre": "Yükseklik merkezi H",
         "scaleUnit": "cm"
     },
-    "ko": {
-        "_name": "오일러 선",
-        "triangle": "삼각형",
-        "eulerLine": "오일러 선",
-        "hint": "꼭짓점을 드래그하세요 · 축척: 1 cm = 40 px",
-        "sideA": "변 a (BC)",
-        "sideB": "변 b (CA)",
-        "sideC": "변 c (AB)",
-        "perimeter": "둘레",
-        "circumcenter": "외심 O",
-        "centroid": "무게중심 G",
-        "orthocentre": "수심 H",
-        "scaleUnit": "cm"
-    },
-    "skr-arab": {
-        "_name": "آئلر لکیر",
-        "triangle": "مثلث",
-        "eulerLine": "آئلر لکیر",
-        "hint": "کوئی وی سرا گھسیٹو · پیمانہ: 1 cm = 40 px",
-        "sideA": "ضلع a (BC)",
-        "sideB": "ضلع b (CA)",
-        "sideC": "ضلع c (AB)",
-        "perimeter": "گھیر",
-        "circumcenter": "گرد مرکز O",
-        "centroid": "ثقل مرکز G",
-        "orthocentre": "قائم مرکز H",
+    "eu": {
+        "_name": "Eulerren zuzenea",
+        "triangle": "Triangelua",
+        "eulerLine": "Eulerren zuzenea",
+        "hint": "Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px",
+        "sideA": "a aldea (BC)",
+        "sideB": "b aldea (CA)",
+        "sideC": "c aldea (AB)",
+        "perimeter": "Perimetroa",
+        "circumcenter": "Zirkunzentroa O",
+        "centroid": "Zentroidea G",
+        "orthocentre": "Ortozentro H",
         "scaleUnit": "cm"
     },
     "sk": {
@@ -131,18 +82,39 @@ var messages = /* I18N_START */ {
         "orthocentre": "Ortocentrum H",
         "scaleUnit": "cm"
     },
-    "ga": {
-        "_name": "Líne Euler",
-        "triangle": "Triantán",
-        "eulerLine": "Líne Euler",
-        "hint": "Tarraing aon bhuaicphointe · Scála: 1 cm = 40 px",
-        "sideA": "Taobh a (BC)",
-        "sideB": "Taobh b (CA)",
-        "sideC": "Taobh c (AB)",
-        "perimeter": "Imlíne",
-        "circumcenter": "Lárphointe imlíne O",
-        "centroid": "Lárphointe G",
-        "orthocentre": "Lárphointe ortaipéideach H",
+    "skr-arab": {
+        "_name": "آئلر لکیر",
+        "triangle": "مثلث",
+        "eulerLine": "آئلر لکیر",
+        "hint": "کوئی وی سرا گھسیٹو · پیمانہ: 1 cm = 40 px",
+        "sideA": "ضلع a (BC)",
+        "sideB": "ضلع b (CA)",
+        "sideC": "ضلع c (AB)",
+        "perimeter": "گھیر",
+        "circumcenter": "گرد مرکز O",
+        "centroid": "ثقل مرکز G",
+        "orthocentre": "قائم مرکز H",
+        "scaleUnit": "cm"
+    },
+    "lb": {
+        "triangle": "Dräieck",
+        "sideA": "Säit a (BC)",
+        "sideB": "Säit b (CA)",
+        "sideC": "Säit c (AB)",
+        "scaleUnit": "cm"
+    },
+    "ko": {
+        "_name": "오일러 선",
+        "triangle": "삼각형",
+        "eulerLine": "오일러 선",
+        "hint": "꼭짓점을 드래그하세요 · 축척: 1 cm = 40 px",
+        "sideA": "변 a (BC)",
+        "sideB": "변 b (CA)",
+        "sideC": "변 c (AB)",
+        "perimeter": "둘레",
+        "circumcenter": "외심 O",
+        "centroid": "무게중심 G",
+        "orthocentre": "수심 H",
         "scaleUnit": "cm"
     },
     "en": {
@@ -159,18 +131,46 @@ var messages = /* I18N_START */ {
         "orthocentre": "Orthocentre H",
         "scaleUnit": "cm"
     },
-    "eu": {
-        "_name": "Eulerren zuzenea",
-        "triangle": "Triangelua",
-        "eulerLine": "Eulerren zuzenea",
-        "hint": "Erpinak mugitu ditzakezu · Eskala: 1 cm = 40 px",
-        "sideA": "a aldea (BC)",
-        "sideB": "b aldea (CA)",
-        "sideC": "c aldea (AB)",
-        "perimeter": "Perimetroa",
-        "circumcenter": "Zirkunzentroa O",
-        "centroid": "Zentroidea G",
-        "orthocentre": "Ortozentro H",
+    "qqq": {
+        "_name": "Name of the Euler Line module",
+        "triangle": "Section heading for the triangle properties card",
+        "eulerLine": "Section heading for the Euler line properties card",
+        "hint": "Instruction text shown in the footer. Includes scale information.",
+        "sideA": "Label for side a (BC) of the triangle",
+        "sideB": "Label for side b (CA) of the triangle",
+        "sideC": "Label for side c (AB) of the triangle",
+        "perimeter": "Label for the triangle perimeter",
+        "circumcenter": "Label for the circumcenter point O",
+        "centroid": "Label for the centroid point G",
+        "orthocentre": "Label for the orthocentre point H",
+        "scaleUnit": "Unit abbreviation used for measurements (centimetres)"
+    },
+    "ga": {
+        "_name": "Líne Euler",
+        "triangle": "Triantán",
+        "eulerLine": "Líne Euler",
+        "hint": "Tarraing aon bhuaicphointe · Scála: 1 cm = 40 px",
+        "sideA": "Taobh a (BC)",
+        "sideB": "Taobh b (CA)",
+        "sideC": "Taobh c (AB)",
+        "perimeter": "Imlíne",
+        "circumcenter": "Lárphointe imlíne O",
+        "centroid": "Lárphointe G",
+        "orthocentre": "Lárphointe ortaipéideach H",
+        "scaleUnit": "cm"
+    },
+    "es": {
+        "_name": "Recta de Euler",
+        "triangle": "Triángulo",
+        "eulerLine": "Recta de Euler",
+        "hint": "Arrastra un vértice · Escala: 1 cm = 40 px",
+        "sideA": "Lado a (BC)",
+        "sideB": "Lado b (CA)",
+        "sideC": "Lado c (AB)",
+        "perimeter": "Perímetro",
+        "circumcenter": "Circuncentro O",
+        "centroid": "Baricentro G",
+        "orthocentre": "Ortocentro H",
         "scaleUnit": "cm"
     },
     "mk": {
