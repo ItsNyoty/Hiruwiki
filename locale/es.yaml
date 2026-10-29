@@ -455,7 +455,7 @@ es:
     pressureMinus: − presión
     amplitudeMark: amplitud
     noteNames: Do Do♯ Re Re♯ Mi Fa Fa♯ Sol Sol♯ La La♯ Si
-    octaveOffset: '-1'
+    octaveOffset: "-1"
   harmonics:
     _name: Armónicos y timbre
     hint: 'Misma altura e intensidad, distinto timbre: cambia los armónicos y escucha'
@@ -478,7 +478,8 @@ es:
     silence: 'Silencio: todos los armónicos están a cero'
   sound-propagation:
     _name: Propagación del sonido
-    hint: 'La partícula resaltada no avanza: vibra en su sitio. Lo que viaja es la onda.'
+    hint: 'La partícula resaltada no avanza: vibra en su sitio. Lo que viaja es la
+      onda.'
     pause: Pausar
     resume: Continuar
     slowNote: Animación ralentizada 500 veces (igual en todos los medios)

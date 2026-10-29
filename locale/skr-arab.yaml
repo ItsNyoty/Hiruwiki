@@ -419,4 +419,27 @@ skr-arab:
     formula_label: کلیہ
     update_rules_heading: اپ ڈیٹ دے اصول
     hint: تکراراں دا حساب کر کے دوڑی مطابقت ݙیکھو
+  sound-wave:
+    stop: روکو
+    square: مربع
+    period: دورانیہ
+    pressurePlus: + دباؤ
+    pressureMinus: − دباؤ
+  harmonics:
+    play: سݨو
+  sound-propagation:
+    pause: اجھکو
+    medium: درمیانہ
+    air: ہوا
+    water: پاݨی
+    pressure: دباؤ
+    compression: کمپریشن
+  doppler:
+    play: سݨو
+    restart: ولدا چلاؤ
+    change: وٹاؤ
+    source: ماخذ
+  echo:
+    person: تساں
+    wall: کندھ
 ...

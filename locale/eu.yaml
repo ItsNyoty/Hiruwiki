@@ -468,7 +468,7 @@ eu:
     pressureMinus: − presioa
     amplitudeMark: anplitudea
     noteNames: Do Do♯ Re Re♯ Mi Fa Fa♯ Sol Sol♯ La La♯ Si
-    octaveOffset: '-1'
+    octaveOffset: "-1"
   harmonics:
     _name: Harmonikoak eta tinbrea
     hint: 'Altuera eta intentsitate bera, tinbre desberdina: aldatu harmonikoak eta
@@ -492,8 +492,8 @@ eu:
     silence: 'Isiltasuna: harmoniko guztiak zeroan'
   sound-propagation:
     _name: Soinuaren hedapena
-    hint: 'Nabarmendutako partikula ez da aurrera joaten: bere lekuan dardaratzen da.
-      Uhina da hedatzen dena.'
+    hint: 'Nabarmendutako partikula ez da aurrera joaten: bere lekuan dardaratzen
+      da. Uhina da hedatzen dena.'
     pause: Pausatu
     resume: Jarraitu
     slowNote: Animazioa 500 aldiz moteldua (ingurune guztietan berdin)
@@ -513,7 +513,8 @@ eu:
     rarefaction: enrarezimendua
   doppler:
     _name: Doppler efektua
-    hint: Hurbiltzean uhinak estutu egiten dira (goi-soinua); urruntzean, zabaldu (behe-soinua)
+    hint: Hurbiltzean uhinak estutu egiten dira (goi-soinua); urruntzean, zabaldu
+      (behe-soinua)
     play: Entzun
     stop: Gelditu
     restart: Berriro
@@ -532,12 +533,12 @@ eu:
     listener: entzulea
     source: iturria
     cone: Mach-en konoa (talka-uhina)
-    canvasLabel: Mugitzen ari den soinu-iturri bat eta entzule bat. Erabili geziak entzulea
-      mugitzeko.
+    canvasLabel: Mugitzen ari den soinu-iturri bat eta entzule bat. Erabili geziak
+      entzulea mugitzeko.
   echo:
     _name: Oihartzuna eta erreberberazioa
-    hint: 'Belarriak 0,1 s inguru behar ditu bi soinu bereizteko: horma 17 m baino urrunago
-      egon behar da oihartzuna entzuteko'
+    hint: 'Belarriak 0,1 s inguru behar ditu bi soinu bereizteko: horma 17 m baino
+      urrunago egon behar da oihartzuna entzuteko'
     clap: Txalo egin
     noAudio: Zure nabigatzaileak ezin du soinurik erreproduzitu
     note: Soinua eta uhina denbora errealean

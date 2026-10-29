@@ -469,7 +469,7 @@ fr:
     pressureMinus: − pression
     amplitudeMark: amplitude
     noteNames: Do Do♯ Ré Ré♯ Mi Fa Fa♯ Sol Sol♯ La La♯ Si
-    octaveOffset: '-1'
+    octaveOffset: "-1"
   harmonics:
     _name: Harmoniques et timbre
     hint: 'Même hauteur et même intensité, timbre différent : modifiez les harmoniques
@@ -514,8 +514,8 @@ fr:
     rarefaction: raréfaction
   doppler:
     _name: Effet Doppler
-    hint: En approchant, les ondes se resserrent (son plus aigu) ; en s'éloignant, elles
-      s'espacent (plus grave)
+    hint: En approchant, les ondes se resserrent (son plus aigu) ; en s'éloignant,
+      elles s'espacent (plus grave)
     play: Écouter
     stop: Arrêter
     restart: Recommencer

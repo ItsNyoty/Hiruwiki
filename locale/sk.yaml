@@ -420,4 +420,109 @@ sk:
     formula_label: Vzorec
     update_rules_heading: Pravidlá aktualizácie
     hint: Vypočítajte iterácie a uvidíte kvadratickú konvergenciu
+  sound-wave:
+    _name: Zvuková vlna
+    hint: Posúvajte posuvníky a stlačením „Počúvať“ si vypočujte zmenu
+    play: Počúvať
+    stop: Zastaviť
+    noAudio: Váš prehliadač nevie prehrávať zvuk
+    frequency: Frekvencia
+    amplitude: Amplitúda
+    waveform: Tvar vlny
+    sine: Sínusoida
+    triangle: Trojuholník
+    square: Obdĺžnik
+    sawtooth: Píla
+    period: Perióda
+    wavelength: Vlnová dĺžka vo vzduchu
+    note: Najbližší tón
+    window: 'Časové okno: 10 ms · animácia spomalená'
+    timeAxis: čas →
+    pressurePlus: + tlak
+    pressureMinus: − tlak
+    amplitudeMark: amplitúda
+    noteNames: C Cis D Dis E F Fis G Gis A Ais H
+    octaveOffset: "0"
+  harmonics:
+    _name: Harmonické a farba tónu
+    hint: 'Rovnaká výška aj hlasitosť, iná farba tónu: zmeňte harmonické a počúvajte'
+    play: Počúvať
+    stop: Zastaviť
+    noAudio: Váš prehliadač nevie prehrávať zvuk
+    showComponents: Zobraziť zložky
+    presets: Predvoľby
+    presetSine: Čistá sínusoida
+    presetFlute: Flauta
+    presetClarinet: Klarinet
+    presetViolin: Husle
+    presetOboe: Hoboj
+    harmonics: Harmonické (sila)
+    removeFundamental: Odstrániť základný tón
+    harmonicAria: Sila $1. harmonickej
+    fundamental: Základná frekvencia
+    periods: 3 periódy
+    timeAxis: čas →
+    silence: 'Ticho: všetky harmonické sú na nule'
+  sound-propagation:
+    _name: Šírenie zvuku
+    hint: 'Zvýraznená častica sa nepohybuje dopredu: kmitá na mieste. Šíri sa vlna.'
+    pause: Pozastaviť
+    resume: Pokračovať
+    slowNote: Animácia spomalená 500× (rovnako v každom prostredí)
+    medium: Prostredie
+    air: Vzduch
+    water: Voda
+    steel: Oceľ
+    frequency: Frekvencia
+    temperature: Teplota vzduchu
+    speed: Rýchlosť zvuku
+    wavelength: Vlnová dĺžka (λ = v / f)
+    time100: Čas na prejdenie 100 m
+    distanceAxis: vzdialenosť →
+    particles: častice
+    pressure: tlak
+    compression: zhustenie
+    rarefaction: zriedenie
+  doppler:
+    _name: Dopplerov jav
+    hint: Pri približovaní sa vlny zhusťujú (vyšší tón), pri vzďaľovaní sa roztiahnu
+      (nižší tón)
+    play: Počúvať
+    stop: Zastaviť
+    restart: Znova
+    noAudio: Váš prehliadač nevie prehrávať zvuk
+    dragNote: Potiahnite poslucháča · animácia spomalená
+    speed: Rýchlosť zdroja
+    emitted: Vyžarované zdrojom
+    received: Prijímané poslucháčom
+    change: Zmena
+    silence: Ticho
+    notArrived: Zvuk ešte nedorazil
+    shock: Rázová vlna!
+    pileUp: Čelá vĺn sa nahromadili
+    higher: vyššie
+    lower: nižšie
+    listener: poslucháč
+    source: zdroj
+    cone: Machov kužeľ (rázová vlna)
+    canvasLabel: Pohybujúci sa zdroj zvuku a poslucháč. Poslucháča posúvajte šípkami.
+  echo:
+    _name: Ozvena a dozvuk
+    hint: 'Ucho potrebuje medzi dvoma zvukmi približne 0,1 s, aby ich rozlíšilo: stena
+      musí byť ďalej ako 17 m, aby ste počuli ozvenu'
+    clap: Tlesknúť
+    noAudio: Váš prehliadač nevie prehrávať zvuk
+    note: Zvuk aj vlna v reálnom čase
+    distance: Vzdialenosť od steny
+    delay: Oneskorenie ozveny
+    heard: Čo počujete
+    echo: 'Ozvena: dva zvuky'
+    reverb: 'Dozvuk: jeden dlhší zvuk'
+    person: vy
+    wall: stena
+    timeAxis: čas (ms)
+    fusion: ucho splynie
+    direct: tlesknutie
+    reflected: ozvena
+    canvasLabel: Človek pred stenou a časová os s tlesknutím a jeho ozvenou.
 ...

@@ -1,6 +1,7 @@
 # Messages for Dutch (Nederlands)
 # Exported from translatewiki.net
 # Export driver: phpyaml
+# Author: ItsNyoty
 # Author: Siebrand
 # Author: Sneeuwvlakte
 ---
@@ -429,4 +430,114 @@ nl:
     formula_label: Formule
     update_rules_heading: Updateregels
     hint: Bereken iteraties om kwadratische convergentie te zien
+  sound-wave:
+    _name: Geluidsgolf
+    hint: Verschuif de schuifregelaars en druk op 'Luister' om de verandering te horen.
+    play: Luister
+    stop: Stop
+    noAudio: Uw browser kan geen geluid afspelen.
+    frequency: Frequentie
+    amplitude: Amplitude
+    waveform: Golfvorm
+    sine: Sinus
+    triangle: Driehoek
+    square: Vierkant
+    sawtooth: Zaagtand
+    period: Periode
+    wavelength: Golflengte in lucht
+    note: Dichtstbijzijnde noot
+    window: 'Tijdsvenster: 10 ms · animatie vertraagd'
+    timeAxis: tijd →
+    pressurePlus: + druk
+    pressureMinus: − druk
+    amplitudeMark: amplitude
+    noteNames: C C♯ D D♯ E F F♯ G G♯ A A♯ B
+    octaveOffset: "0"
+  harmonics:
+    _name: Harmonischen en klankkleur
+    hint: 'Dezelfde toonhoogte en luidheid, maar een andere klankkleur: verander de
+      harmonischen en luister.'
+    play: Luister
+    stop: Stop
+    noAudio: Uw browser kan geen geluid afspelen.
+    showComponents: Toon componenten
+    presets: Voorinstellingen
+    presetSine: Echte sinus
+    presetFlute: Fluit
+    presetClarinet: Klarinet
+    presetViolin: Viool
+    presetOboe: Hobo
+    harmonics: Harmonische (sterkte)
+    removeFundamental: Verwijder de fundamentele
+    harmonicAria: Sterkte van de harmonische $1
+    fundamental: Grondfrequentie
+    periods: 3 periodes
+    timeAxis: tijd →
+    silence: 'Stilte: elke harmonische is nul.'
+  sound-propagation:
+    _name: Geluidsvoortplanting
+    hint: 'Het gemarkeerde deeltje beweegt niet vooruit: het trilt op zijn plaats.
+      Wat zich voortplant, is de golf.'
+    pause: Pauze
+    resume: Hervatten
+    slowNote: Animatie 500 keer vertraagd (gelijk in elk medium)
+    medium: Middel
+    air: Lucht
+    water: Water
+    steel: Staal
+    frequency: Frequentie
+    temperature: Luchttemperatuur
+    speed: Snelheid van het geluid
+    wavelength: Golflengte (λ = v / f)
+    time100: 'Reistijd: 100 m'
+    distanceAxis: afstand →
+    particles: deeltjes
+    pressure: druk
+    compression: compressie
+    rarefaction: verdunning
+  doppler:
+    _name: Doppler-effect
+    hint: Bij het naderen klonteren de golven samen (hogere toonhoogte); bij het verwijderen
+      spreiden ze zich uit (lagere toonhoogte).
+    play: Luister
+    stop: Stop
+    restart: Herstart
+    noAudio: Uw browser kan geen geluid afspelen.
+    dragNote: Sleep de luisteraar · animatie vertraagd
+    speed: Bronsnelheid
+    emitted: Uitgestoten door de bron
+    received: Ontvangen door de luisteraar
+    change: Wijzig
+    silence: Stilte
+    notArrived: Het geluid is nog niet aangekomen.
+    shock: Schokgolf!
+    pileUp: Golffronten stapelden zich op.
+    higher: hoger
+    lower: lager
+    listener: luisteraar
+    source: bron
+    cone: Mach-kegel (schokgolf)
+    canvasLabel: Een bewegende geluidsbron en een luisteraar. Gebruik de pijltjes
+      toetsen om de luisteraar te bewegen.
+  echo:
+    _name: Echo en nagalm
+    hint: 'Het oor heeft ongeveer 0,1 seconde nodig tussen twee geluiden om ze van
+      elkaar te onderscheiden: de muur moet meer dan 17 meter verderop staan om een
+      echo te kunnen horen.'
+    clap: Klap
+    noAudio: Uw browser kan geen geluid afspelen.
+    note: Geluid en golven in werkelijke tijd
+    distance: Afstand tot de muur
+    delay: Echovertraging
+    heard: Wat u hoort
+    echo: 'Echo: twee geluiden'
+    reverb: 'Nagalm: een langer geluid'
+    person: U
+    wall: muur
+    timeAxis: tijd (ms)
+    fusion: samengesmolten door het oor
+    direct: Klap
+    reflected: echo
+    canvasLabel: Een persoon voor een muur, en een tijdlijn met het applaus en de
+      echo ervan.
 ...
