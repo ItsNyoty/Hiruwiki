@@ -102,4 +102,35 @@ lb:
     pointLabel: 'Punkt:'
   positive-coordinates:
     _name: Positiv Koordinaten
+  sound-wave:
+    _name: Schallwell
+    play: Lauschteren
+    frequency: Frequenz
+    waveform: Welleform
+    timeAxis: Zäit →
+    pressurePlus: + Drock
+    pressureMinus: − Drock
+  harmonics:
+    play: Lauschteren
+    presets: Virastellungen
+    presetFlute: Flütt
+    presetClarinet: Klarinett
+    presetViolin: Gei
+    periods: 3 Perioden
+    timeAxis: Zäit →
+  sound-propagation:
+    medium: Medium
+    air: Loft
+    water: Waasser
+    steel: Stol
+    frequency: Frequenz
+    temperature: Lofttemperatur
+    wavelength: Wellelängt (λ = v / f)
+    distanceAxis: Distanz →
+    particles: Partikelen
+  doppler:
+    play: Lauschteren
+    shock: Schockwell!
+  echo:
+    timeAxis: Zäit (ms)
 ...

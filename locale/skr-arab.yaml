@@ -427,6 +427,8 @@ skr-arab:
     pressureMinus: − دباؤ
   harmonics:
     play: سݨو
+    presets: پہلے توں طے شدہ
+    presetViolin: وایلن
   sound-propagation:
     pause: اجھکو
     medium: درمیانہ
