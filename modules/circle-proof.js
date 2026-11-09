@@ -132,6 +132,7 @@ var messages = /* I18N_START */ {
     },
     "lb": {
         "area": "Fläch",
+        "areaReviewStatus": "✓ Breet = πr, Héicht = r → A = πr².",
         "circumference": "Ëmfang",
         "proveIt": "Beweisen ▶",
         "radius": "Radius",

@@ -34,6 +34,27 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "nl": {
+        "_name": "Geluidsvoortplanting",
+        "hint": "Het gemarkeerde deeltje beweegt niet vooruit: het trilt op zijn plaats. Wat zich voortplant, is de golf.",
+        "pause": "Pauze",
+        "resume": "Hervatten",
+        "slowNote": "Animatie 500 keer vertraagd (gelijk in elk medium)",
+        "medium": "Middel",
+        "air": "Lucht",
+        "water": "Water",
+        "steel": "Staal",
+        "frequency": "Frequentie",
+        "temperature": "Luchttemperatuur",
+        "speed": "Snelheid van het geluid",
+        "wavelength": "Golflengte (λ = v / f)",
+        "time100": "Reistijd: 100 m",
+        "distanceAxis": "afstand →",
+        "particles": "deeltjes",
+        "pressure": "druk",
+        "compression": "compressie",
+        "rarefaction": "verdunning"
+    },
     "fr": {
         "_name": "Propagation du son",
         "hint": "La particule mise en évidence n'avance pas : elle vibre sur place. C'est l'onde qui se propage.",
@@ -75,6 +96,46 @@ var messages = /* I18N_START */ {
         "pressure": "presioa",
         "compression": "konpresioa",
         "rarefaction": "enrarezimendua"
+    },
+    "sk": {
+        "_name": "Šírenie zvuku",
+        "hint": "Zvýraznená častica sa nepohybuje dopredu: kmitá na mieste. Šíri sa vlna.",
+        "pause": "Pozastaviť",
+        "resume": "Pokračovať",
+        "slowNote": "Animácia spomalená 500× (rovnako v každom prostredí)",
+        "medium": "Prostredie",
+        "air": "Vzduch",
+        "water": "Voda",
+        "steel": "Oceľ",
+        "frequency": "Frekvencia",
+        "temperature": "Teplota vzduchu",
+        "speed": "Rýchlosť zvuku",
+        "wavelength": "Vlnová dĺžka (λ = v / f)",
+        "time100": "Čas na prejdenie 100 m",
+        "distanceAxis": "vzdialenosť →",
+        "particles": "častice",
+        "pressure": "tlak",
+        "compression": "zhustenie",
+        "rarefaction": "zriedenie"
+    },
+    "skr-arab": {
+        "pause": "اجھکو",
+        "medium": "درمیانہ",
+        "air": "ہوا",
+        "water": "پاݨی",
+        "pressure": "دباؤ",
+        "compression": "کمپریشن"
+    },
+    "lb": {
+        "medium": "Medium",
+        "air": "Loft",
+        "water": "Waasser",
+        "steel": "Stol",
+        "frequency": "Frequenz",
+        "temperature": "Lofttemperatur",
+        "wavelength": "Wellelängt (λ = v / f)",
+        "distanceAxis": "Distanz →",
+        "particles": "Partikelen"
     },
     "en": {
         "_name": "Sound propagation",

@@ -75,6 +75,7 @@ var messages = /* I18N_START */ {
     },
     "lb": {
         "_name": "Trigonometrie",
+        "angle": "Wénkel &theta;",
         "hideProof": "Beweis verstoppen",
         "prove": "Beweisen",
         "hint": "Benotzt de Slider, fir de Wénkel z'änneren"

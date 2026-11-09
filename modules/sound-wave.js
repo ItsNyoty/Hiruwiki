@@ -33,6 +33,30 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "nl": {
+        "_name": "Geluidsgolf",
+        "hint": "Verschuif de schuifregelaars en druk op 'Luister' om de verandering te horen.",
+        "play": "Luister",
+        "stop": "Stop",
+        "noAudio": "Uw browser kan geen geluid afspelen.",
+        "frequency": "Frequentie",
+        "amplitude": "Amplitude",
+        "waveform": "Golfvorm",
+        "sine": "Sinus",
+        "triangle": "Driehoek",
+        "square": "Vierkant",
+        "sawtooth": "Zaagtand",
+        "period": "Periode",
+        "wavelength": "Golflengte in lucht",
+        "note": "Dichtstbijzijnde noot",
+        "window": "Tijdsvenster: 10 ms · animatie vertraagd",
+        "timeAxis": "tijd →",
+        "pressurePlus": "+ druk",
+        "pressureMinus": "− druk",
+        "amplitudeMark": "amplitude",
+        "noteNames": "C C♯ D D♯ E F F♯ G G♯ A A♯ B",
+        "octaveOffset": "0"
+    },
     "fr": {
         "_name": "Onde sonore",
         "hint": "Déplacez les curseurs et appuyez sur « Écouter » pour entendre le changement",
@@ -80,6 +104,47 @@ var messages = /* I18N_START */ {
         "amplitudeMark": "anplitudea",
         "noteNames": "Do Do♯ Re Re♯ Mi Fa Fa♯ Sol Sol♯ La La♯ Si",
         "octaveOffset": "-1"
+    },
+    "sk": {
+        "_name": "Zvuková vlna",
+        "hint": "Posúvajte posuvníky a stlačením „Počúvať“ si vypočujte zmenu",
+        "play": "Počúvať",
+        "stop": "Zastaviť",
+        "noAudio": "Váš prehliadač nevie prehrávať zvuk",
+        "frequency": "Frekvencia",
+        "amplitude": "Amplitúda",
+        "waveform": "Tvar vlny",
+        "sine": "Sínusoida",
+        "triangle": "Trojuholník",
+        "square": "Obdĺžnik",
+        "sawtooth": "Píla",
+        "period": "Perióda",
+        "wavelength": "Vlnová dĺžka vo vzduchu",
+        "note": "Najbližší tón",
+        "window": "Časové okno: 10 ms · animácia spomalená",
+        "timeAxis": "čas →",
+        "pressurePlus": "+ tlak",
+        "pressureMinus": "− tlak",
+        "amplitudeMark": "amplitúda",
+        "noteNames": "C Cis D Dis E F Fis G Gis A Ais H",
+        "octaveOffset": "0"
+    },
+    "skr-arab": {
+        "stop": "روکو",
+        "square": "مربع",
+        "period": "دورانیہ",
+        "pressurePlus": "+ دباؤ",
+        "pressureMinus": "− دباؤ"
+    },
+    "lb": {
+        "_name": "Schallwell",
+        "play": "Lauschteren",
+        "frequency": "Frequenz",
+        "waveform": "Welleform",
+        "triangle": "Dräieck",
+        "timeAxis": "Zäit →",
+        "pressurePlus": "+ Drock",
+        "pressureMinus": "− Drock"
     },
     "en": {
         "_name": "Sound wave",

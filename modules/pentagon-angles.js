@@ -58,6 +58,9 @@ var messages = /* I18N_START */ {
         "total": "کل",
         "hint": "پینٹاگون کوں مثلثاں وچ ونڈو"
     },
+    "lb": {
+        "3triangles": "3 Dräiecken × 180°"
+    },
     "ko": {
         "3triangles": "3개의 삼각형 × 180°",
         "_name": "오각형의 각들",

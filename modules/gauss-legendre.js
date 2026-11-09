@@ -89,6 +89,9 @@
         "update_rules_heading": "اپ ڈیٹ دے اصول",
         "hint": "تکراراں دا حساب کر کے دوڑی مطابقت ݙیکھو"
     },
+    "lb": {
+        "formula_label": "Formel"
+    },
     "ko": {
         "_name": "가우스-르장드르 알고리즘",
         "iteration": "반복 횟수",

@@ -124,10 +124,15 @@ var messages = /* I18N_START */ {
         "hint": "شکل تے درجہ بندی بدلݨ کیتے سرے گھسیٹو"
     },
     "lb": {
+        "_name": "Dräiecken",
         "angles": "Wénkelen",
         "area": "Fläch",
+        "classification": "Klassifikatioun",
         "perimeter": "Ëmfang",
         "sides": "Säiten",
+        "sideA": "Säit a (BC)",
+        "sideB": "Säit b (CA)",
+        "sideC": "Säit c (AB)",
         "unitCm": "cm",
         "unitCm2": "cm²"
     },

@@ -40,6 +40,25 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "nl": {
+        "_name": "Echo en nagalm",
+        "hint": "Het oor heeft ongeveer 0,1 seconde nodig tussen twee geluiden om ze van elkaar te onderscheiden: de muur moet meer dan 17 meter verderop staan om een echo te kunnen horen.",
+        "clap": "Klap",
+        "noAudio": "Uw browser kan geen geluid afspelen.",
+        "note": "Geluid en golven in werkelijke tijd",
+        "distance": "Afstand tot de muur",
+        "delay": "Echovertraging",
+        "heard": "Wat u hoort",
+        "echo": "Echo: twee geluiden",
+        "reverb": "Nagalm: een langer geluid",
+        "person": "U",
+        "wall": "muur",
+        "timeAxis": "tijd (ms)",
+        "fusion": "samengesmolten door het oor",
+        "direct": "Klap",
+        "reflected": "echo",
+        "canvasLabel": "Een persoon voor een muur, en een tijdlijn met het applaus en de echo ervan."
+    },
     "fr": {
         "_name": "Écho et réverbération",
         "hint": "L'oreille a besoin d'environ 0,1 s entre deux sons pour les distinguer : le mur doit être à plus de 17 m pour entendre un écho",
@@ -77,6 +96,32 @@ var messages = /* I18N_START */ {
         "direct": "txaloa",
         "reflected": "oihartzuna",
         "canvasLabel": "Pertsona bat horma baten aurrean, eta denbora-lerro bat txaloarekin eta haren oihartzunarekin."
+    },
+    "sk": {
+        "_name": "Ozvena a dozvuk",
+        "hint": "Ucho potrebuje medzi dvoma zvukmi približne 0,1 s, aby ich rozlíšilo: stena musí byť ďalej ako 17 m, aby ste počuli ozvenu",
+        "clap": "Tlesknúť",
+        "noAudio": "Váš prehliadač nevie prehrávať zvuk",
+        "note": "Zvuk aj vlna v reálnom čase",
+        "distance": "Vzdialenosť od steny",
+        "delay": "Oneskorenie ozveny",
+        "heard": "Čo počujete",
+        "echo": "Ozvena: dva zvuky",
+        "reverb": "Dozvuk: jeden dlhší zvuk",
+        "person": "vy",
+        "wall": "stena",
+        "timeAxis": "čas (ms)",
+        "fusion": "ucho splynie",
+        "direct": "tlesknutie",
+        "reflected": "ozvena",
+        "canvasLabel": "Človek pred stenou a časová os s tlesknutím a jeho ozvenou."
+    },
+    "skr-arab": {
+        "person": "تساں",
+        "wall": "کندھ"
+    },
+    "lb": {
+        "timeAxis": "Zäit (ms)"
     },
     "en": {
         "_name": "Echo and reverberation",

@@ -208,6 +208,8 @@
         "hint": "چوکور دی درجہ بندی کیتے سر گھسیٹو"
     },
     "lb": {
+        "areaGaussSum": "Σ = $1 A = ½ × |$1|",
+        "areaGaussTerm": "(x$1·y$2 − x$2·y$1) = $3",
         "areaRectangle": "Formel: A = Breet × Héicht = $1 × $2",
         "areaSquare": "Formel: A = Säit² = $1²",
         "headingArea": "Fläch",
@@ -215,6 +217,7 @@
         "presetRectangle": "Rechteck",
         "presetSquare": "Quadrat",
         "shapeRectangle": "Rechteck",
+        "shapeSquare": "Quadrat",
         "unitCm": "cm",
         "unitCm2": "cm²"
     },

@@ -151,9 +151,12 @@ var messages = /* I18N_START */ {
         "scaleUnit": "cm"
     },
     "lb": {
+        "angleDeg": "Wénkel =",
         "triangle": "Dräieck",
         "sideA": "a",
         "sideB": "b",
+        "angA": "∠ A",
+        "angB": "∠ B",
         "badgeRight": "a² + b² = c²",
         "badgeCos": "c² = a² + b² − 2ab·cosθ",
         "sqA": "a²",

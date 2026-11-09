@@ -76,6 +76,7 @@ var messages = /* I18N_START */ {
         "hint": "زاویہ بدلݨ کیتے ہینڈل کوں گھسیٹو"
     },
     "lb": {
+        "_name": "Wénkelen",
         "resultAngle": "$1 Wénkel: $2°"
     },
     "ko": {

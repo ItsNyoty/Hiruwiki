@@ -28,6 +28,27 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "nl": {
+        "_name": "Harmonischen en klankkleur",
+        "hint": "Dezelfde toonhoogte en luidheid, maar een andere klankkleur: verander de harmonischen en luister.",
+        "play": "Luister",
+        "stop": "Stop",
+        "noAudio": "Uw browser kan geen geluid afspelen.",
+        "showComponents": "Toon componenten",
+        "presets": "Voorinstellingen",
+        "presetSine": "Echte sinus",
+        "presetFlute": "Fluit",
+        "presetClarinet": "Klarinet",
+        "presetViolin": "Viool",
+        "presetOboe": "Hobo",
+        "harmonics": "Harmonische (sterkte)",
+        "removeFundamental": "Verwijder de fundamentele",
+        "harmonicAria": "Sterkte van de harmonische $1",
+        "fundamental": "Grondfrequentie",
+        "periods": "3 periodes",
+        "timeAxis": "tijd →",
+        "silence": "Stilte: elke harmonische is nul."
+    },
     "fr": {
         "_name": "Harmoniques et timbre",
         "hint": "Même hauteur et même intensité, timbre différent : modifiez les harmoniques et écoutez",
@@ -69,6 +90,41 @@ var messages = /* I18N_START */ {
         "periods": "3 periodo",
         "timeAxis": "denbora →",
         "silence": "Isiltasuna: harmoniko guztiak zeroan"
+    },
+    "sk": {
+        "_name": "Harmonické a farba tónu",
+        "hint": "Rovnaká výška aj hlasitosť, iná farba tónu: zmeňte harmonické a počúvajte",
+        "play": "Počúvať",
+        "stop": "Zastaviť",
+        "noAudio": "Váš prehliadač nevie prehrávať zvuk",
+        "showComponents": "Zobraziť zložky",
+        "presets": "Predvoľby",
+        "presetSine": "Čistá sínusoida",
+        "presetFlute": "Flauta",
+        "presetClarinet": "Klarinet",
+        "presetViolin": "Husle",
+        "presetOboe": "Hoboj",
+        "harmonics": "Harmonické (sila)",
+        "removeFundamental": "Odstrániť základný tón",
+        "harmonicAria": "Sila $1. harmonickej",
+        "fundamental": "Základná frekvencia",
+        "periods": "3 periódy",
+        "timeAxis": "čas →",
+        "silence": "Ticho: všetky harmonické sú na nule"
+    },
+    "skr-arab": {
+        "play": "سݨو",
+        "presets": "پہلے توں طے شدہ",
+        "presetViolin": "وایلن"
+    },
+    "lb": {
+        "play": "Lauschteren",
+        "presets": "Virastellungen",
+        "presetFlute": "Flütt",
+        "presetClarinet": "Klarinett",
+        "presetViolin": "Gei",
+        "periods": "3 Perioden",
+        "timeAxis": "Zäit →"
     },
     "en": {
         "_name": "Harmonics and timbre",

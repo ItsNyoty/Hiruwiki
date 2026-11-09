@@ -84,7 +84,10 @@ var messages = /* I18N_START */ {
     },
     "lb": {
         "labelArea": "Fläch",
+        "labelHeight": "Héicht (h)",
+        "labelBaseShort": "b",
         "labelHeightShort": "h",
+        "proofResultTri": "→ Dräieck = ½ × $1 = <strong>$2 cm²</strong>",
         "unitCm": "cm",
         "unitCm2": "cm²"
     },

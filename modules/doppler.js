@@ -35,6 +35,29 @@
 
 /* ── I18N ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ── */
 var messages = /* I18N_START */ {
+    "nl": {
+        "_name": "Doppler-effect",
+        "hint": "Bij het naderen klonteren de golven samen (hogere toonhoogte); bij het verwijderen spreiden ze zich uit (lagere toonhoogte).",
+        "play": "Luister",
+        "stop": "Stop",
+        "restart": "Herstart",
+        "noAudio": "Uw browser kan geen geluid afspelen.",
+        "dragNote": "Sleep de luisteraar · animatie vertraagd",
+        "speed": "Bronsnelheid",
+        "emitted": "Uitgestoten door de bron",
+        "received": "Ontvangen door de luisteraar",
+        "change": "Wijzig",
+        "silence": "Stilte",
+        "notArrived": "Het geluid is nog niet aangekomen.",
+        "shock": "Schokgolf!",
+        "pileUp": "Golffronten stapelden zich op.",
+        "higher": "hoger",
+        "lower": "lager",
+        "listener": "luisteraar",
+        "source": "bron",
+        "cone": "Mach-kegel (schokgolf)",
+        "canvasLabel": "Een bewegende geluidsbron en een luisteraar. Gebruik de pijltjes toetsen om de luisteraar te bewegen."
+    },
     "fr": {
         "_name": "Effet Doppler",
         "hint": "En approchant, les ondes se resserrent (son plus aigu) ; en s'éloignant, elles s'espacent (plus grave)",
@@ -80,6 +103,39 @@ var messages = /* I18N_START */ {
         "source": "iturria",
         "cone": "Mach-en konoa (talka-uhina)",
         "canvasLabel": "Mugitzen ari den soinu-iturri bat eta entzule bat. Erabili geziak entzulea mugitzeko."
+    },
+    "sk": {
+        "_name": "Dopplerov jav",
+        "hint": "Pri približovaní sa vlny zhusťujú (vyšší tón), pri vzďaľovaní sa roztiahnu (nižší tón)",
+        "play": "Počúvať",
+        "stop": "Zastaviť",
+        "restart": "Znova",
+        "noAudio": "Váš prehliadač nevie prehrávať zvuk",
+        "dragNote": "Potiahnite poslucháča · animácia spomalená",
+        "speed": "Rýchlosť zdroja",
+        "emitted": "Vyžarované zdrojom",
+        "received": "Prijímané poslucháčom",
+        "change": "Zmena",
+        "silence": "Ticho",
+        "notArrived": "Zvuk ešte nedorazil",
+        "shock": "Rázová vlna!",
+        "pileUp": "Čelá vĺn sa nahromadili",
+        "higher": "vyššie",
+        "lower": "nižšie",
+        "listener": "poslucháč",
+        "source": "zdroj",
+        "cone": "Machov kužeľ (rázová vlna)",
+        "canvasLabel": "Pohybujúci sa zdroj zvuku a poslucháč. Poslucháča posúvajte šípkami."
+    },
+    "skr-arab": {
+        "play": "سݨو",
+        "restart": "ولدا چلاؤ",
+        "change": "وٹاؤ",
+        "source": "ماخذ"
+    },
+    "lb": {
+        "play": "Lauschteren",
+        "shock": "Schockwell!"
     },
     "en": {
         "_name": "Doppler effect",

@@ -64,6 +64,9 @@ var messages = /* I18N_START */ {
         "total": "کل",
         "hint": "مسدس کوں مثلثاں یا چوکوراں وچ ونڈو"
     },
+    "lb": {
+        "4triangles": "4 Dräiecken × 180°"
+    },
     "ko": {
         "2quads": "2개의 사각형 × 360°",
         "4triangles": "4개의 삼각형 × 180°",
