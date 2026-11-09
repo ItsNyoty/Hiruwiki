@@ -10,9 +10,11 @@ lb:
     target: 'Zil:'
     tryAgain: Nach eng Kéier probéieren
   angles:
+    _name: Wénkelen
     resultAngle: '$1 Wénkel: $2°'
   circle-proof:
     area: Fläch
+    areaReviewStatus: ✓ Breet = πr, Héicht = r → A = πr².
     circumference: Ëmfang
     proveIt: Beweisen ▶
     radius: Radius
@@ -30,6 +32,8 @@ lb:
     chart_step: Schrëtt
     sec_addition: Additioun
     step_label: Schrëtt $1 vu(n) $2
+  hexagon-angles:
+    4triangles: 4 Dräiecken × 180°
   euler-line:
     triangle: Dräieck
     sideA: Säit a (BC)
@@ -42,12 +46,17 @@ lb:
     colorRed: Rout
     colorYellow: Giel
     impossible: Onméiglech
+  pentagon-angles:
+    3triangles: 3 Dräiecken × 180°
   percent:
     axis_zero: 0 %
   pythagoras:
+    angleDeg: Wénkel =
     triangle: Dräieck
     sideA: a
     sideB: b
+    angA: ∠ A
+    angB: ∠ B
     badgeRight: a² + b² = c²
     badgeCos: c² = a² + b² − 2ab·cosθ
     sqA: a²
@@ -55,6 +64,8 @@ lb:
     sqC: c²
     scaleUnit: cm
   quadrangles:
+    areaGaussSum: ' Σ = $1 A = ½ × |$1|'
+    areaGaussTerm: '  (x$1·y$2 − x$2·y$1) = $3'
     areaRectangle: 'Formel: A = Breet × Héicht = $1 × $2'
     areaSquare: 'Formel: A = Säit² = $1²'
     headingArea: Fläch
@@ -62,6 +73,7 @@ lb:
     presetRectangle: Rechteck
     presetSquare: Quadrat
     shapeRectangle: Rechteck
+    shapeSquare: Quadrat
     unitCm: cm
     unitCm2: cm²
   slope:
@@ -82,18 +94,27 @@ lb:
     formula: A + B + C = 180°
   triangle-area:
     labelArea: Fläch
+    labelHeight: Héicht (h)
+    labelBaseShort: b
     labelHeightShort: h
+    proofResultTri: ' → Dräieck = ½ × $1 = <strong>$2 cm²</strong>'
     unitCm: cm
     unitCm2: cm²
   triangles:
+    _name: Dräiecken
     angles: Wénkelen
     area: Fläch
+    classification: Klassifikatioun
     perimeter: Ëmfang
     sides: Säiten
+    sideA: Säit a (BC)
+    sideB: Säit b (CA)
+    sideC: Säit c (AB)
     unitCm: cm
     unitCm2: cm²
   trigonometry:
     _name: Trigonometrie
+    angle: Wénkel &theta;
     hideProof: Beweis verstoppen
     prove: Beweisen
     hint: Benotzt de Slider, fir de Wénkel z'änneren
@@ -102,11 +123,15 @@ lb:
     pointLabel: 'Punkt:'
   positive-coordinates:
     _name: Positiv Koordinaten
+    pointLabel: 'Punkt:'
+  gauss-legendre:
+    formula_label: Formel
   sound-wave:
     _name: Schallwell
     play: Lauschteren
     frequency: Frequenz
     waveform: Welleform
+    triangle: Dräieck
     timeAxis: Zäit →
     pressurePlus: + Drock
     pressureMinus: − Drock
